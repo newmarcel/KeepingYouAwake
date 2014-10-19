@@ -17,10 +17,13 @@ You can toggle the state directly from your menu bar.
 This utility is just a small wrapper around Apple's caffeinate command line utilty. Any modern Mac ships this tool by default. You can read the manpage [here](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/caffeinate.8.html).
 
 ## Is this dangerous? ##
-Just to make it clear: This utility shouldn't harm your Mac because it is using an official command line tool from Apple, **but** I cannot guarantee anything, so use this tool ON YOUR OWN RISK.
+Just to make it clear: This utility shouldn't harm your Mac because it is using an official command line tool from Apple, **BUT** I cannot guarantee anything, so use this tool **AT YOUR OWN RISK**.
 
 ## What's working? What's missing? ##
 Everything seems to be working in this version. The only thing missing right now is Developer ID signing, which will follow soon.
+
+## Help Needed! ##
+Do you want to improve the app or add any useful features? Please go ahead and create pull requests. I'm thankful for any help.
 
 ## Disclaimer ##
 
