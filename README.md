@@ -6,7 +6,7 @@
 
 You can toggle the state directly from your menu bar.
 
-![Screenshots](https://raw.githubusercontent.com/newmarcel/KeepingYouAwake/master/Screenshots.jpg)
+![Screenshots](./Screenshots.jpg)
 
 ## Why does this project exist, Caffeine.app works perfectly fine? ##
 
