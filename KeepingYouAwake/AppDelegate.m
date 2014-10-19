@@ -18,6 +18,9 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     self.sleepWakeController = [[KYASleepWakeController alloc] init];
+    
+    // Request to resume on login
+    [[NSApplication sharedApplication] enableRelaunchOnLogin];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification

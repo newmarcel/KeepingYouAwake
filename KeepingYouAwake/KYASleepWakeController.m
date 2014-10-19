@@ -9,11 +9,17 @@
 #import "KYASleepWakeController.h"
 
 @interface KYASleepWakeController () <NSMenuDelegate>
-@property (strong, nonatomic) NSMenu *menu;
 @property (strong, nonatomic) NSTask *caffeinateTask;
+
+// Status Item
 @property (strong, nonatomic) NSStatusItem *statusItem;
+
+// Menu
+@property (strong, nonatomic) NSMenu *menu;
+@property (weak, nonatomic) NSMenuItem *activateOnLaunchMenuItem;
 @end
 
+NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch";
 
 @implementation KYASleepWakeController
 
@@ -23,6 +29,13 @@
     if(self)
     {
         [self configureStatusItem];
+        
+        // Check Activate on Launch state
+        if([self shouldActivateOnLaunch])
+        {
+            [self spawnCaffeinateTask];
+            [self setStatusItemActive:YES];
+        }
         
         // Terminate all remaining tasks on Quit
         __weak typeof(self) weakSelf = self;
@@ -40,7 +53,6 @@
     
     NSStatusBarButton *button = statusItem.button;
     
-    button.toolTip = NSLocalizedString(@"Caffeinate…", nil);
     button.target = self;
     button.action = @selector(toggleStatus:);
     
@@ -52,23 +64,69 @@
     [self setStatusItemActive:NO];
 }
 
+#pragma mark - Menu Handling
+
 - (void)addMenuToStatusItem:(NSStatusItem *)statusItem
 {
-    NSMenu *menu = [[NSMenu alloc] initWithTitle:@"MENU!!!!"];
+    NSMenu *menu = [[NSMenu alloc] initWithTitle:NSLocalizedString(@"Default Menu", nil)];
     
-    [menu addItemWithTitle:@"About" action:NULL keyEquivalent:@""];
+    [menu addItemWithTitle:NSLocalizedString(@"About", nil)
+                    action:@selector(orderFrontStandardAboutPanel:)
+             keyEquivalent:@""];
     [menu addItem:[NSMenuItem separatorItem]];
-    [menu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@"q"];
+    
+    NSMenuItem *activateOnLaunchItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Activate on Launch",nil)
+                                                                  action:@selector(toggleActivateOnLaunch:)
+                                                           keyEquivalent:@""];
+    activateOnLaunchItem.target = self;
+    
+    if([self shouldActivateOnLaunch])
+        activateOnLaunchItem.state = NSOnState;
+    else
+        activateOnLaunchItem.state = NSOffState;
+    
+    [menu addItem:activateOnLaunchItem];
+    self.activateOnLaunchMenuItem = activateOnLaunchItem;
+    
+    [menu addItem:[NSMenuItem separatorItem]];
+    [menu addItemWithTitle:NSLocalizedString(@"Quit", nil)
+                    action:@selector(terminate:)
+             keyEquivalent:@"q"];
     
     self.menu = menu;
 }
 
-- (IBAction)showMenu:(id)sender
+- (void)showMenu:(id)sender
 {
     [self.statusItem popUpStatusItemMenu:self.menu];
 }
 
-- (IBAction)toggleStatus:(id)sender
+#pragma mark - Activate On Launch
+
+- (BOOL)shouldActivateOnLaunch
+{
+    return [[NSUserDefaults standardUserDefaults] boolForKey:KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch];
+}
+
+- (void)toggleActivateOnLaunch:(id)sender
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *key = KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch;
+    
+    BOOL activateOnLaunch = [defaults boolForKey:key];
+    activateOnLaunch = !activateOnLaunch;
+    [defaults setBool:activateOnLaunch forKey:key];
+    [defaults synchronize];
+    
+    if(activateOnLaunch)
+        self.activateOnLaunchMenuItem.state = NSOnState;
+    else
+        self.activateOnLaunchMenuItem.state = NSOffState;
+}
+
+#pragma mark - Toggle Handling
+
+- (void)toggleStatus:(id)sender
 {
     NSEvent *event = [NSApp currentEvent];
     if(event.type == NSRightMouseUp)
@@ -96,11 +154,13 @@
     {
         button.image = [NSImage imageNamed:@"ActiveIcon"];
         button.appearsDisabled = NO;
+        button.toolTip = NSLocalizedString(@"Click to allow sleep\nRight click to show menu", nil);
     }
     else
     {
         button.image = [NSImage imageNamed:@"InactiveIcon"];
         button.appearsDisabled = YES;
+        button.toolTip = NSLocalizedString(@"Click to prevent sleep\nRight click to show menu", nil);
     }
 }
 
