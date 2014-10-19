@@ -6,6 +6,8 @@
 
 You can toggle the state directly from your menu bar.
 
+![Screenshots](https://raw.githubusercontent.com/newmarcel/KeepingYouAwake/master/Screenshots.jpg)
+
 ## Why does this project exist, Caffeine.app works perfectly fine? ##
 
 *[Caffeine](http://lightheadsw.com/caffeine/)* from *Lighthead Software* is a great utility and I used it for many years, but it hasn't been updated in a while. Its icons are not Retina-compatible and do not look nice in Yosemite's dark menubar mode.
