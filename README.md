@@ -20,6 +20,9 @@ Just to make it clear: This utility shouldn't harm your Mac because it is using 
 ## What's working? What's missing? ##
 Everything seems to be working in this version. The only thing missing right now is Developer ID signing, which will follow soon.
 
+## Disclaimer ##
+
+This is my first Mac application in a long while. I am an iOS developer and don't know the AppKit APIs very well, so please bare with me.
 
 ## License ##
 
