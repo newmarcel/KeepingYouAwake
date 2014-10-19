@@ -12,6 +12,7 @@
 		DA637B4419F14693004C8838 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4319F14693004C8838 /* Images.xcassets */; };
 		DA637B4719F14693004C8838 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4519F14693004C8838 /* MainMenu.xib */; };
 		DA637B5E19F146B6004C8838 /* KYASleepWakeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B5D19F146B6004C8838 /* KYASleepWakeController.m */; };
+		DA787EF119F40B2E00D1476A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA787EF019F40B2E00D1476A /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DA637B4619F14693004C8838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DA637B5C19F146B6004C8838 /* KYASleepWakeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYASleepWakeController.h; sourceTree = "<group>"; };
 		DA637B5D19F146B6004C8838 /* KYASleepWakeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYASleepWakeController.m; sourceTree = "<group>"; };
+		DA787EF019F40B2E00D1476A /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			children = (
 				DA637B3D19F14693004C8838 /* Info.plist */,
 				DA637B3E19F14693004C8838 /* main.m */,
+				DA787EF019F40B2E00D1476A /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			path = KeepingYouAwake;
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA637B4419F14693004C8838 /* Images.xcassets in Resources */,
+				DA787EF119F40B2E00D1476A /* Credits.rtf in Resources */,
 				DA637B4719F14693004C8838 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
