@@ -72,11 +72,13 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
 {
     NSMenu *menu = [[NSMenu alloc] initWithTitle:NSLocalizedString(@"Default Menu", nil)];
     
+    // About item
     [menu addItemWithTitle:NSLocalizedString(@"About", nil)
                     action:@selector(orderFrontStandardAboutPanel:)
              keyEquivalent:@""];
     [menu addItem:[NSMenuItem separatorItem]];
     
+    // Activate on Launch item
     NSMenuItem *activateOnLaunchItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Activate on Launch",nil)
                                                                   action:@selector(toggleActivateOnLaunch:)
                                                            keyEquivalent:@""];
@@ -90,6 +92,7 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
     [menu addItem:activateOnLaunchItem];
     self.activateOnLaunchMenuItem = activateOnLaunchItem;
     
+    // Start at Login item
     NSMenuItem *startAtLoginItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Start at Login",nil)
                                                               action:@selector(toggleStartAtLogin:)
                                                        keyEquivalent:@""];
@@ -103,10 +106,12 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
     [menu addItem:startAtLoginItem];
     self.startAtLoginMenuItem = startAtLoginItem;
     
+    // Quit item
     [menu addItem:[NSMenuItem separatorItem]];
     [menu addItemWithTitle:NSLocalizedString(@"Quit", nil)
                     action:@selector(terminate:)
              keyEquivalent:@"q"];
+    
     
     self.menu = menu;
 }
@@ -116,7 +121,7 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
     [self.statusItem popUpStatusItemMenu:self.menu];
 }
 
-#pragma mark - Activate On Launch
+#pragma mark - Activate on Launch
 
 - (BOOL)shouldActivateOnLaunch
 {
@@ -138,6 +143,8 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
     else
         self.activateOnLaunchMenuItem.state = NSOffState;
 }
+
+#pragma mark - Start at Login
 
 - (void)toggleStartAtLogin:(id)sender
 {
