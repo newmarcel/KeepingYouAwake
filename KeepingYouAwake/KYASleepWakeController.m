@@ -7,6 +7,7 @@
 //
 
 #import "KYASleepWakeController.h"
+#import "NSApplication+LoginItem.h"
 
 @interface KYASleepWakeController () <NSMenuDelegate>
 @property (strong, nonatomic) NSTask *caffeinateTask;
@@ -17,6 +18,7 @@
 // Menu
 @property (strong, nonatomic) NSMenu *menu;
 @property (weak, nonatomic) NSMenuItem *activateOnLaunchMenuItem;
+@property (weak, nonatomic) NSMenuItem *startAtLoginMenuItem;
 @end
 
 NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch";
@@ -88,6 +90,19 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
     [menu addItem:activateOnLaunchItem];
     self.activateOnLaunchMenuItem = activateOnLaunchItem;
     
+    NSMenuItem *startAtLoginItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Start at Login",nil)
+                                                              action:@selector(toggleStartAtLogin:)
+                                                       keyEquivalent:@""];
+    startAtLoginItem.target = self;
+    
+    if([[NSApplication sharedApplication] kya_isStartingAtLogin])
+        startAtLoginItem.state = NSOnState;
+    else
+        startAtLoginItem.state = NSOffState;
+    
+    [menu addItem:startAtLoginItem];
+    self.startAtLoginMenuItem = startAtLoginItem;
+    
     [menu addItem:[NSMenuItem separatorItem]];
     [menu addItemWithTitle:NSLocalizedString(@"Quit", nil)
                     action:@selector(terminate:)
@@ -122,6 +137,17 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
         self.activateOnLaunchMenuItem.state = NSOnState;
     else
         self.activateOnLaunchMenuItem.state = NSOffState;
+}
+
+- (void)toggleStartAtLogin:(id)sender
+{
+    BOOL shouldStartAtLogin = ![[NSApplication sharedApplication] kya_isStartingAtLogin];
+    [NSApplication sharedApplication].kya_startAtLogin = shouldStartAtLogin;
+    
+    if(shouldStartAtLogin)
+        self.startAtLoginMenuItem.state = NSOnState;
+    else
+        self.startAtLoginMenuItem.state = NSOffState;
 }
 
 #pragma mark - Toggle Handling
