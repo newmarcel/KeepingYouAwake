@@ -6,6 +6,8 @@
 
 You can toggle the state directly from your menu bar.
 
+**[Download the latest version here.](https://github.com/newmarcel/KeepingYouAwake/releases)**
+
 ![Screenshots](./Screenshots.jpg)
 
 ## Why does this project exist, Caffeine.app works perfectly fine? ##
