@@ -29,7 +29,7 @@ Do you want to improve the app or add any useful features? Please go ahead and c
 
 ## Disclaimer ##
 
-This is my first Mac application in a long while. I am an iOS developer and don't know the AppKit APIs very well, so please bare with me.
+This is my first Mac application in a long while. I am an iOS developer and don't know the AppKit APIs very well, so please bear with me.
 
 ## License ##
 
