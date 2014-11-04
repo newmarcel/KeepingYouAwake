@@ -10,15 +10,13 @@
 #import "KYASleepWakeController.h"
 
 @interface AppDelegate ()
-@property (strong, nonatomic) KYASleepWakeController *sleepWakeController;
+@property (weak, nonatomic) IBOutlet KYASleepWakeController *sleepWakeController;
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    self.sleepWakeController = [[KYASleepWakeController alloc] init];
-    
     // Request to resume on login
     [[NSApplication sharedApplication] enableRelaunchOnLogin];
 }

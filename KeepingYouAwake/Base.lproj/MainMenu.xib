@@ -11,7 +11,11 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="sleepWakeController" destination="bOj-Ka-Izn" id="Ecp-l4-bQI"/>
+            </connections>
+        </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
@@ -662,5 +666,74 @@
                 </menuItem>
             </items>
         </menu>
+        <customObject id="bOj-Ka-Izn" customClass="KYASleepWakeController">
+            <connections>
+                <outlet property="menu" destination="RrS-wX-j75" id="Qkd-Lu-ekl"/>
+                <outlet property="startAtLoginMenuItem" destination="oTo-tg-l4S" id="CkW-sP-hdR"/>
+            </connections>
+        </customObject>
+        <menu id="RrS-wX-j75">
+            <items>
+                <menuItem title="About" id="DPy-P9-6Bp">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="orderFrontStandardAboutPanel:" target="-1" id="YLs-dd-1wZ"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="qcJ-iT-ez4"/>
+                <menuItem title="Activate on Launch" id="gew-bn-Dlr">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleActivateOnLaunch:" target="bOj-Ka-Izn" id="KCE-kg-Mwc"/>
+                        <binding destination="LNf-Tj-sS5" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch" id="zfO-hv-UO5"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Start at Login" id="oTo-tg-l4S">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleStartAtLogin:" target="bOj-Ka-Izn" id="mH6-Vf-BwM"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Activate for Duration" hidden="YES" id="Bo6-IE-IbX">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Activate for Duration" id="uTe-0S-BFw">
+                        <items>
+                            <menuItem title="1 minute (DEBUG)" id="9Is-Mt-oit">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="5 minutes" id="NkC-w0-mfU">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="10 minutes" id="PWL-2v-TSS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="15 minutes" id="kTz-g8-t11">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="30 minutes" id="sft-bA-FTz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="1 hour" id="fUA-NX-hxF">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="2 hours" id="n3h-ZB-CLV">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="5 hours" id="tAq-iH-rdw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="uIp-Lg-WoB"/>
+                <menuItem title="Quit" keyEquivalent="q" id="7is-vc-kz7">
+                    <connections>
+                        <action selector="terminate:" target="-1" id="iDM-BK-Z3F"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="478.5" y="238.5"/>
+        </menu>
+        <userDefaultsController representsSharedInstance="YES" id="LNf-Tj-sS5"/>
     </objects>
 </document>
