@@ -1,19 +1,17 @@
 //
-//  AppDelegate.m
+//  KYAAppDelegate.m
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 17.10.14.
 //  Copyright (c) 2014 Marcel Dierkes. All rights reserved.
 //
 
-#import "AppDelegate.h"
-#import "KYASleepWakeController.h"
+#import "KYAAppDelegate.h"
 
-@interface AppDelegate ()
-@property (weak, nonatomic) IBOutlet KYASleepWakeController *sleepWakeController;
+@interface KYAAppDelegate ()
 @end
 
-@implementation AppDelegate
+@implementation KYAAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {

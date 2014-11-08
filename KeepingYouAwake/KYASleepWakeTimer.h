@@ -34,6 +34,11 @@ typedef void(^KYASleepWakeTimerCompletionBlock)(BOOL cancelled);
 @property (copy, nonatomic, readonly) NSDate *fireDate;
 
 /**
+ *  The initial time interval that was set to schedule the timer.
+ */
+@property (assign, nonatomic, readonly) NSTimeInterval scheduledTimeInterval;
+
+/**
  *  Returns YES if a task is scheduled and running.
  */
 @property (readonly, nonatomic, getter = isScheduled) BOOL scheduled;

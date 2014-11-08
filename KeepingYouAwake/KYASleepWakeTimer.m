@@ -12,6 +12,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 
 @interface KYASleepWakeTimer ()
 @property (copy, nonatomic, readwrite) NSDate *fireDate;
+@property (assign, nonatomic, readwrite) NSTimeInterval scheduledTimeInterval;
 
 @property (strong, nonatomic) NSTask *caffeinateTask;
 @end
@@ -48,6 +49,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     }
     
     // Set the fireDate
+    self.scheduledTimeInterval = timeInterval;
     if(timeInterval != KYASleepWakeTimeIntervalIndefinite)
         self.fireDate = [NSDate dateWithTimeIntervalSinceNow:timeInterval];
     
@@ -58,6 +60,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 - (void)invalidate
 {
     self.fireDate = nil;
+    self.scheduledTimeInterval = KYASleepWakeTimeIntervalIndefinite;
     [self terminateCaffeinateTask];
 }
 
@@ -81,7 +84,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     
     [arguments addObject:[NSString stringWithFormat:@"-w %i", [[NSProcessInfo processInfo] processIdentifier]]];
     
-    self.caffeinateTask = [NSTask launchedTaskWithLaunchPath:@"/usr/bin/caffeinate" arguments:arguments];
+    self.caffeinateTask = [NSTask launchedTaskWithLaunchPath:@"/usr/bin/caffeinate" arguments:[arguments copy]];
     
     // Termination Handler
     __weak typeof(self) weakSelf = self;

@@ -1,16 +1,17 @@
 //
-//  KYASleepWakeController.m
+//  KYAAppController.m
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 17.10.14.
 //  Copyright (c) 2014 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYASleepWakeController.h"
+#import "KYAAppController.h"
+#import "KYASleepWakeTimer.h"
 #import "NSApplication+LoginItem.h"
 
-@interface KYASleepWakeController () <NSMenuDelegate>
-@property (strong, nonatomic) NSTask *caffeinateTask;
+@interface KYAAppController () <NSMenuDelegate>
+@property (strong, nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
 
 // Status Item
 @property (strong, nonatomic) NSStatusItem *statusItem;
@@ -22,7 +23,7 @@
 
 NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch";
 
-@implementation KYASleepWakeController
+@implementation KYAAppController
 
 - (instancetype)init
 {
@@ -31,19 +32,14 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
     {
         [self configureStatusItem];
         
+        self.sleepWakeTimer = [KYASleepWakeTimer new];
+        
         // Check activate on launch state
         if([self shouldActivateOnLaunch])
         {
-            [self spawnCaffeinateTask];
+            [self activateTimer];
             [self setStatusItemActive:YES];
         }
-        
-        // Terminate all remaining tasks on Quit
-        __weak typeof(self) weakSelf = self;
-        [[NSNotificationCenter defaultCenter] addObserverForName:NSApplicationWillTerminateNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
-            weakSelf.caffeinateTask.terminationHandler = nil;
-            [weakSelf terminateCaffeinateTask];
-        }];
     }
     return self;
 }
@@ -123,14 +119,14 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
         return;
     }
     
-    if(self.caffeinateTask)
+    if([self.sleepWakeTimer isScheduled])
     {
-        [self terminateCaffeinateTask];
+        [self terminateTimer];
         [self setStatusItemActive:NO];
     }
     else
     {
-        [self spawnCaffeinateTask];
+        [self activateTimer];
         [self setStatusItemActive:YES];
     }
 }
@@ -152,27 +148,45 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
     }
 }
 
-#pragma mark - Caffeinate Task Handling
+#pragma mark - Sleep Wake Timer Handling
 
-- (void)spawnCaffeinateTask
+- (void)activateTimer
 {
-    NSArray *args = @[
-                      @"-disu",
-                      [NSString stringWithFormat:@"-w %i", [[NSProcessInfo processInfo] processIdentifier]],
-                      ];
-    self.caffeinateTask = [NSTask launchedTaskWithLaunchPath:@"/usr/bin/caffeinate" arguments:args];
-    
-    // Termination Handler
     __weak typeof(self) weakSelf = self;
-    self.caffeinateTask.terminationHandler = ^(NSTask *task) {
-        weakSelf.caffeinateTask = nil;
+    [self.sleepWakeTimer scheduleWithTimeInterval:KYASleepWakeTimeIntervalIndefinite completion:^(BOOL cancelled) {
         [weakSelf setStatusItemActive:NO];
-    };
+    }];
 }
 
-- (void)terminateCaffeinateTask
+- (void)terminateTimer
 {
-    [self.caffeinateTask terminate];
+    [self.sleepWakeTimer invalidate];
+}
+
+#pragma mark - Menu Delegate
+
+- (void)menuWillOpen:(NSMenu *)menu
+{
+    NSMenuItem *timeRemainingItem = menu.itemArray[5];
+    
+    static NSDateFormatter *dateFormatter;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [NSDateFormatter new];
+        dateFormatter.doesRelativeDateFormatting = YES;
+        dateFormatter.dateStyle = NSDateFormatterNoStyle;
+        dateFormatter.timeStyle = NSDateFormatterShortStyle;
+    });
+    
+    if(self.sleepWakeTimer.fireDate)
+    {
+        timeRemainingItem.hidden = NO;
+        timeRemainingItem.title = [dateFormatter stringFromDate:self.sleepWakeTimer.fireDate];
+    }
+    else
+    {
+        timeRemainingItem.hidden = YES;
+    }
 }
 
 @end
