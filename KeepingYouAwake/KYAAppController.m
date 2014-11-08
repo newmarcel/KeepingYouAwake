@@ -10,7 +10,7 @@
 #import "KYASleepWakeTimer.h"
 #import "NSApplication+LoginItem.h"
 
-@interface KYAAppController () <NSMenuDelegate>
+@interface KYAAppController () <NSUserNotificationCenterDelegate>
 @property (strong, nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
 
 // Status Item
@@ -18,6 +18,7 @@
 
 // Menu
 @property (weak, nonatomic) IBOutlet NSMenu *menu;
+@property (weak, nonatomic) IBOutlet NSMenu *timerMenu;
 @property (weak, nonatomic) IBOutlet NSMenuItem *startAtLoginMenuItem;
 @end
 
@@ -38,7 +39,6 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
         if([self shouldActivateOnLaunch])
         {
             [self activateTimer];
-            [self setStatusItemActive:YES];
         }
     }
     return self;
@@ -53,6 +53,8 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
         self.startAtLoginMenuItem.state = NSOnState;
     else
         self.startAtLoginMenuItem.state = NSOffState;
+    
+    [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
 }
 
 - (void)configureStatusItem
@@ -112,7 +114,7 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
 
 - (void)toggleStatus:(id)sender
 {
-    NSEvent *event = [NSApp currentEvent];
+    NSEvent *event = [[NSApplication sharedApplication] currentEvent];
     if(event.type == NSRightMouseUp)
     {
         [self showMenu:nil];
@@ -122,12 +124,10 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
     if([self.sleepWakeTimer isScheduled])
     {
         [self terminateTimer];
-        [self setStatusItemActive:NO];
     }
     else
     {
         [self activateTimer];
-        [self setStatusItemActive:YES];
     }
 }
 
@@ -152,18 +152,72 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
 
 - (void)activateTimer
 {
+    [self activateTimerWithTimeInterval:KYASleepWakeTimeIntervalIndefinite];
+}
+
+- (void)activateTimerWithTimeInterval:(NSTimeInterval)timeInterval
+{
+    [self setStatusItemActive:YES];
+    
     __weak typeof(self) weakSelf = self;
-    [self.sleepWakeTimer scheduleWithTimeInterval:KYASleepWakeTimeIntervalIndefinite completion:^(BOOL cancelled) {
+    [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:^(BOOL cancelled) {
         [weakSelf setStatusItemActive:NO];
+        
+        // Post notifications
+        NSUserNotification *n = [NSUserNotification new];
+        n.informativeText = NSLocalizedString(@"Stopped preventing your Mac from sleeping…", nil);
+        [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
     }];
+    
+    // Post notifications
+    NSUserNotification *n = [NSUserNotification new];
+    
+    if(timeInterval == KYASleepWakeTimeIntervalIndefinite)
+        n.informativeText = NSLocalizedString(@"Preventing your Mac from sleeping…", nil);
+    else
+    {
+        n.informativeText = [NSString stringWithFormat:NSLocalizedString(@"Started preventing your Mac from sleeping for %.0f seconds…", nil), timeInterval];
+    }
+    
+    [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
 }
 
 - (void)terminateTimer
 {
+    [self setStatusItemActive:NO];
+    
     [self.sleepWakeTimer invalidate];
 }
 
 #pragma mark - Menu Delegate
+
+- (IBAction)selectTimeInterval:(id)sender
+{
+    if([self.sleepWakeTimer isScheduled])
+        [self.sleepWakeTimer invalidate];
+    
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSTimeInterval seconds = (NSTimeInterval)[sender tag];
+        [weakSelf activateTimerWithTimeInterval:seconds];
+    });
+}
+
+- (BOOL)menu:(NSMenu *)menu updateItem:(NSMenuItem *)item atIndex:(NSInteger)index shouldCancel:(BOOL)shouldCancel
+{
+    item.state = NSOffState;
+    
+    NSTimeInterval seconds = (NSTimeInterval)item.tag;
+    if(seconds > 0)
+    {
+        if(self.sleepWakeTimer.scheduledTimeInterval == seconds)
+        {
+            item.state = NSOnState;
+        }
+    }
+    
+    return YES;
+}
 
 - (void)menuWillOpen:(NSMenu *)menu
 {
@@ -187,6 +241,23 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
     {
         timeRemainingItem.hidden = YES;
     }
+}
+
+#pragma mark - User Notification Center Delegate
+
+- (void)userNotificationCenter:(NSUserNotificationCenter *)center didDeliverNotification:(NSUserNotification *)notification
+{
+    
+}
+
+- (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification
+{
+    
+}
+
+- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification
+{
+    return YES;
 }
 
 @end
