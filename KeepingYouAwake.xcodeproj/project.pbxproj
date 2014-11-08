@@ -14,6 +14,7 @@
 		DA637B4719F14693004C8838 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4519F14693004C8838 /* MainMenu.xib */; };
 		DA637B5E19F146B6004C8838 /* KYASleepWakeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B5D19F146B6004C8838 /* KYASleepWakeController.m */; };
 		DA787EF119F40B2E00D1476A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA787EF019F40B2E00D1476A /* Credits.rtf */; };
+		DAB268721A0D6BC600B58AD6 /* KYASleepWakeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		DA637B5C19F146B6004C8838 /* KYASleepWakeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYASleepWakeController.h; sourceTree = "<group>"; };
 		DA637B5D19F146B6004C8838 /* KYASleepWakeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYASleepWakeController.m; sourceTree = "<group>"; };
 		DA787EF019F40B2E00D1476A /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYASleepWakeTimer.h; sourceTree = "<group>"; };
+		DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYASleepWakeTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				DA637B4119F14693004C8838 /* AppDelegate.m */,
 				DA637B5C19F146B6004C8838 /* KYASleepWakeController.h */,
 				DA637B5D19F146B6004C8838 /* KYASleepWakeController.m */,
+				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,
+				DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */,
 				DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */,
 				DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */,
 				DA637B4319F14693004C8838 /* Images.xcassets */,
@@ -159,6 +164,7 @@
 				DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */,
 				DA637B4219F14693004C8838 /* AppDelegate.m in Sources */,
 				DA637B5E19F146B6004C8838 /* KYASleepWakeController.m in Sources */,
+				DAB268721A0D6BC600B58AD6 /* KYASleepWakeTimer.m in Sources */,
 				DA637B3F19F14693004C8838 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
