@@ -23,6 +23,7 @@
 @end
 
 NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch";
+NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled";
 
 @implementation KYAAppController
 
@@ -164,22 +165,28 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
         [weakSelf setStatusItemActive:NO];
         
         // Post notifications
-        NSUserNotification *n = [NSUserNotification new];
-        n.informativeText = NSLocalizedString(@"Stopped preventing your Mac from sleeping…", nil);
-        [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
+        if([[NSUserDefaults standardUserDefaults] boolForKey:KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled])
+        {
+            NSUserNotification *n = [NSUserNotification new];
+            n.informativeText = NSLocalizedString(@"Stopped preventing your Mac from sleeping…", nil);
+            [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
+        }
     }];
     
     // Post notifications
-    NSUserNotification *n = [NSUserNotification new];
-    
-    if(timeInterval == KYASleepWakeTimeIntervalIndefinite)
-        n.informativeText = NSLocalizedString(@"Preventing your Mac from sleeping…", nil);
-    else
+    if([[NSUserDefaults standardUserDefaults] boolForKey:KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled])
     {
-        n.informativeText = [NSString stringWithFormat:NSLocalizedString(@"Started preventing your Mac from sleeping for %.0f seconds…", nil), timeInterval];
+        NSUserNotification *n = [NSUserNotification new];
+        
+        if(timeInterval == KYASleepWakeTimeIntervalIndefinite)
+            n.informativeText = NSLocalizedString(@"Preventing your Mac from sleeping…", nil);
+        else
+        {
+            n.informativeText = [NSString stringWithFormat:NSLocalizedString(@"Started preventing your Mac from sleeping for %.0f seconds…", nil), timeInterval];
+        }
+        
+        [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
     }
-    
-    [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
 }
 
 - (void)terminateTimer
@@ -244,16 +251,6 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.
 }
 
 #pragma mark - User Notification Center Delegate
-
-- (void)userNotificationCenter:(NSUserNotificationCenter *)center didDeliverNotification:(NSUserNotification *)notification
-{
-    
-}
-
-- (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification
-{
-    
-}
 
 - (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification
 {
