@@ -676,11 +676,11 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Activate for Duration" id="uTe-0S-BFw">
                         <items>
-                            <menuItem title="Time Remaining" enabled="NO" id="pVH-VY-YkW">
+                            <menuItem title="Active" tag="-1" enabled="NO" id="pVH-VY-YkW">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="5C3-7N-wlg"/>
-                            <menuItem title="10 seconds (DEBUG)" tag="10" id="9Is-Mt-oit">
+                            <menuItem title="10 seconds (DEBUG)" tag="10" hidden="YES" id="9Is-Mt-oit">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="Wdl-Q4-pPq"/>
@@ -729,6 +729,9 @@
                                 </connections>
                             </menuItem>
                         </items>
+                        <connections>
+                            <outlet property="delegate" destination="bOj-Ka-Izn" id="a4Z-Eb-Q0j"/>
+                        </connections>
                     </menu>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="qcJ-iT-ez4"/>

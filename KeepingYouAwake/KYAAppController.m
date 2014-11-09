@@ -210,43 +210,43 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
     });
 }
 
-- (BOOL)menu:(NSMenu *)menu updateItem:(NSMenuItem *)item atIndex:(NSInteger)index shouldCancel:(BOOL)shouldCancel
+- (void)menuNeedsUpdate:(NSMenu *)menu
 {
-    item.state = NSOffState;
+    if(![menu isEqual:self.timerMenu])
+        return;
     
-    NSTimeInterval seconds = (NSTimeInterval)item.tag;
-    if(seconds > 0)
+    for(NSMenuItem *item in menu.itemArray)
     {
-        if(self.sleepWakeTimer.scheduledTimeInterval == seconds)
+        item.state = NSOffState;
+        
+        NSTimeInterval seconds = (NSTimeInterval)item.tag;
+        if(seconds > 0)
         {
-            item.state = NSOnState;
+            if(self.sleepWakeTimer.scheduledTimeInterval == seconds)
+            {
+                item.state = NSOnState;
+            }
         }
-    }
-    
-    return YES;
-}
-
-- (void)menuWillOpen:(NSMenu *)menu
-{
-    NSMenuItem *timeRemainingItem = menu.itemArray[5];
-    
-    static NSDateFormatter *dateFormatter;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        dateFormatter = [NSDateFormatter new];
-        dateFormatter.doesRelativeDateFormatting = YES;
-        dateFormatter.dateStyle = NSDateFormatterNoStyle;
-        dateFormatter.timeStyle = NSDateFormatterShortStyle;
-    });
-    
-    if(self.sleepWakeTimer.fireDate)
-    {
-        timeRemainingItem.hidden = NO;
-        timeRemainingItem.title = [dateFormatter stringFromDate:self.sleepWakeTimer.fireDate];
-    }
-    else
-    {
-        timeRemainingItem.hidden = YES;
+        else
+        {
+            // The display menu item
+            static NSDateFormatter *dateFormatter;
+            static dispatch_once_t onceToken;
+            dispatch_once(&onceToken, ^{
+                dateFormatter = [NSDateFormatter new];
+                dateFormatter.doesRelativeDateFormatting = YES;
+                dateFormatter.dateStyle = NSDateFormatterNoStyle;
+                dateFormatter.timeStyle = NSDateFormatterShortStyle;
+            });
+            
+            item.hidden = YES;
+            if(self.sleepWakeTimer.fireDate)
+            {
+                item.hidden = NO;
+                NSString *fireDateString = [dateFormatter stringFromDate:self.sleepWakeTimer.fireDate];
+                item.title = [NSString stringWithFormat:NSLocalizedString(@"Active until %@", nil), fireDateString];
+            }
+        }
     }
 }
 
