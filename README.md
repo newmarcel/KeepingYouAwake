@@ -1,8 +1,8 @@
-# Keeping You Awake #
+# KeepingYouAwake #
 
 ## A *Caffeine* clone for OS X Yosemite (and Dark Mode). ##
 
-*Keeping You Awake* is a small menu bar utility for OS X Yosemite and above that can be activated to prevent your Mac from going into sleep.
+*KeepingYouAwake* is a small menu bar utility for OS X Yosemite and above that can be activated to prevent your Mac from going into sleep.
 
 You can toggle the state directly from your menu bar.
 
