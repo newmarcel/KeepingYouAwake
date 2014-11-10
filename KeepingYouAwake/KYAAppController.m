@@ -227,6 +227,12 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
                 item.state = NSOnState;
             }
         }
+        else if((seconds == 0) && ![item isSeparatorItem])
+        {
+            item.state = NSOffState;
+            if([self.sleepWakeTimer isScheduled] && (self.sleepWakeTimer.scheduledTimeInterval == KYASleepWakeTimeIntervalIndefinite))
+                item.state = NSOnState;
+        }
         else
         {
             // The display menu item

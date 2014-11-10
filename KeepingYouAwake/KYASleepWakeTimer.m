@@ -66,7 +66,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 
 - (BOOL)isScheduled
 {
-    if(self.caffeinateTask)
+    if(self.caffeinateTask && [self.caffeinateTask isRunning])
         return YES;
     
     return NO;

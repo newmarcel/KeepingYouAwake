@@ -680,12 +680,6 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="5C3-7N-wlg"/>
-                            <menuItem title="10 seconds (DEBUG)" tag="10" hidden="YES" id="9Is-Mt-oit">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="Wdl-Q4-pPq"/>
-                                </connections>
-                            </menuItem>
                             <menuItem title="5 minutes" tag="300" id="NkC-w0-mfU">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
@@ -726,6 +720,12 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="bFW-MQ-As3"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Indefinitely" id="VeD-dm-81B">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="AXg-m2-mId"/>
                                 </connections>
                             </menuItem>
                         </items>
