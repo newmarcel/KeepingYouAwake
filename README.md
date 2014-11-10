@@ -21,9 +21,6 @@ This utility is just a small wrapper around Apple's caffeinate command line util
 ## Is this dangerous? ##
 Just to make it clear: This utility shouldn't harm your Mac because it is using an official command line tool from Apple, **BUT** I cannot guarantee anything, so use this tool **AT YOUR OWN RISK**.
 
-## What's working? What's missing? ##
-Everything seems to be working in this version. ~~The only thing missing right now is Developer ID signing, which will follow soon.~~
-
 ## Help Needed! ##
 Do you want to improve the app or add any useful features? Please go ahead and create pull requests. I'm thankful for any help.
 
