@@ -236,21 +236,20 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
         else
         {
             // The display menu item
-            static NSDateFormatter *dateFormatter;
+            static NSDateComponentsFormatter *dateFormatter;
             static dispatch_once_t onceToken;
             dispatch_once(&onceToken, ^{
-                dateFormatter = [NSDateFormatter new];
-                dateFormatter.doesRelativeDateFormatting = YES;
-                dateFormatter.dateStyle = NSDateFormatterNoStyle;
-                dateFormatter.timeStyle = NSDateFormatterShortStyle;
+                dateFormatter = [NSDateComponentsFormatter new];
+                dateFormatter.allowedUnits = NSCalendarUnitSecond|NSCalendarUnitMinute|NSCalendarUnitHour;
+                dateFormatter.unitsStyle = NSDateComponentsFormatterUnitsStyleShort;
+                dateFormatter.includesTimeRemainingPhrase = YES;
             });
             
             item.hidden = YES;
             if(self.sleepWakeTimer.fireDate)
             {
                 item.hidden = NO;
-                NSString *fireDateString = [dateFormatter stringFromDate:self.sleepWakeTimer.fireDate];
-                item.title = [NSString stringWithFormat:NSLocalizedString(@"Active until %@", nil), fireDateString];
+                item.title = [dateFormatter stringFromDate:[NSDate date] toDate:self.sleepWakeTimer.fireDate];
             }
         }
     }
