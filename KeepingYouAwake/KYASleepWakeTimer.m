@@ -105,6 +105,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 {
     self.caffeinateTask = nil;
     self.scheduledTimeInterval = KYASleepWakeTimeIntervalIndefinite;
+    self.fireDate = nil;
     
     if(self.completionBlock)
     {
