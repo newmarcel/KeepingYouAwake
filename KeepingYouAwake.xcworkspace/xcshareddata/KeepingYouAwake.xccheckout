@@ -16,13 +16,13 @@
 		<string>github.com:sparkle-project/Sparkle.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>KeepingYouAwake.xcodeproj</string>
+	<string>KeepingYouAwake.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4964385AF94252B953BAA1B704150A49BBC74796</key>
-		<string>../..</string>
+		<string>..</string>
 		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
-		<string>../../Libraries/Sparkle</string>
+		<string>..Libraries/Sparkle</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:newmarcel/KeepingYouAwake.git</string>

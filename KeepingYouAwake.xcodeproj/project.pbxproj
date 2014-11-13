@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3C1C751A1532A50079A195 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3C1C741A1532A50079A195 /* Sparkle.framework */; };
+		DA3C1C781A1533320079A195 /* Sparkle.framework in Copy Sparkle */ = {isa = PBXBuildFile; fileRef = DA3C1C741A1532A50079A195 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */; };
 		DA637B3F19F14693004C8838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B3E19F14693004C8838 /* main.m */; };
 		DA637B4219F14693004C8838 /* KYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B4119F14693004C8838 /* KYAAppDelegate.m */; };
@@ -17,7 +19,22 @@
 		DAB268721A0D6BC600B58AD6 /* KYASleepWakeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DA3C1C771A1533200079A195 /* Copy Sparkle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA3C1C781A1533320079A195 /* Sparkle.framework in Copy Sparkle */,
+			);
+			name = "Copy Sparkle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DA3C1C741A1532A50079A195 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "../../../Library/Developer/Xcode/DerivedData/KeepingYouAwake-apbqcjufkliladgytieudutryeno/Build/Products/Debug/Sparkle.framework"; sourceTree = "<group>"; };
 		DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+LoginItem.h"; sourceTree = "<group>"; };
 		DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+LoginItem.m"; sourceTree = "<group>"; };
 		DA637B3919F14693004C8838 /* KeepingYouAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepingYouAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3C1C751A1532A50079A195 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				DA637B3B19F14693004C8838 /* KeepingYouAwake */,
+				DA66CF9F1A12A7D700336CDC /* Frameworks */,
 				DA637B3C19F14693004C8838 /* Supporting Files */,
 				DA637B3A19F14693004C8838 /* Products */,
 			);
@@ -90,6 +109,15 @@
 			path = KeepingYouAwake;
 			sourceTree = "<group>";
 		};
+		DA66CF9F1A12A7D700336CDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA3C1C741A1532A50079A195 /* Sparkle.framework */,
+			);
+			name = Frameworks;
+			path = KeepingYouAwake;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,6 +128,7 @@
 				DA637B3519F14693004C8838 /* Sources */,
 				DA637B3619F14693004C8838 /* Frameworks */,
 				DA637B3719F14693004C8838 /* Resources */,
+				DA3C1C771A1533200079A195 /* Copy Sparkle */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,39 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				ca,
+				cs,
+				cy,
+				da,
+				de,
+				el,
+				es,
+				fi,
+				fr,
+				he,
+				hu,
+				id,
+				is,
+				it,
+				ja,
+				ko,
+				nb,
+				nl,
+				no,
+				pl,
+				pt_BR,
+				pt_PT,
+				ro,
+				ru,
+				sk,
+				sl,
+				sv,
+				th,
+				tr,
+				uk,
+				zh_CN,
+				zh_TW,
 			);
 			mainGroup = DA637B3019F14693004C8838;
 			productRefGroup = DA637B3A19F14693004C8838 /* Products */;
@@ -220,6 +282,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -255,6 +318,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -264,6 +328,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-cklcldsdbdatshgntfzvtahduewq/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KeepingYouAwake-apbqcjufkliladgytieudutryeno/Build/Products/Debug",
+				);
 				INFOPLIST_FILE = KeepingYouAwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +344,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-cklcldsdbdatshgntfzvtahduewq/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KeepingYouAwake-apbqcjufkliladgytieudutryeno/Build/Products/Debug",
+				);
 				INFOPLIST_FILE = KeepingYouAwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

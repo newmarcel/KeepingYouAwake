@@ -670,6 +670,7 @@
                 <outlet property="timerMenu" destination="uTe-0S-BFw" id="uJl-Rb-elA"/>
             </connections>
         </customObject>
+        <customObject id="8QH-MG-rpV" customClass="SUUpdater"/>
         <menu id="RrS-wX-j75">
             <items>
                 <menuItem title="Activate for Duration" id="Bo6-IE-IbX">
@@ -753,6 +754,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="orderFrontStandardAboutPanel:" target="-1" id="YLs-dd-1wZ"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Check for Updates…" id="srV-qg-fvz">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="checkForUpdates:" target="8QH-MG-rpV" id="M12-ZI-Ydb"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Quit" keyEquivalent="q" id="7is-vc-kz7">

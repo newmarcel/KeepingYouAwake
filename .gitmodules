@@ -1,0 +1,3 @@
+[submodule "Libraries/Sparkle"]
+	path = Libraries/Sparkle
+	url = git@github.com:sparkle-project/Sparkle.git
