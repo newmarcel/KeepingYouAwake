@@ -31,7 +31,7 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
-	<string>http://keepingyouawake.dev/appcast.xml</string>
+	<string>https://newmarcel.github.io/KeepingYouAwake/appcast.xml</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 </dict>
