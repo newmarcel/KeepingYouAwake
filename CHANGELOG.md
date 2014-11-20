@@ -2,6 +2,17 @@
 
 ## Changelog ##
 
+### v1.2 ###
+- Tweaked the experimental *(and hidden)* notifications
+- You can enable the notifications preview by pasting the following snippet into *Terminal.app*:
+
+		defaults write info.marcel-dierkes.KeepingYouAwake info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled -bool YES
+		
+- and to disable it again:
+	
+		defaults write info.marcel-dierkes.KeepingYouAwake info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled -bool NO
+
+
 ### v1.2beta1 ###
 - Activation timer
 - [Sparkle](http://sparkle-project.org) integration for updates
