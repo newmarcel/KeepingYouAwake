@@ -168,7 +168,7 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
         if([[NSUserDefaults standardUserDefaults] boolForKey:KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled])
         {
             NSUserNotification *n = [NSUserNotification new];
-            n.informativeText = NSLocalizedString(@"Stopped preventing your Mac from sleeping…", nil);
+            n.informativeText = NSLocalizedString(@"Allowing your Mac to go to sleep…", nil);
             [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
         }
     }];
@@ -179,10 +179,17 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
         NSUserNotification *n = [NSUserNotification new];
         
         if(timeInterval == KYASleepWakeTimeIntervalIndefinite)
-            n.informativeText = NSLocalizedString(@"Preventing your Mac from sleeping…", nil);
+        {
+            n.informativeText = NSLocalizedString(@"Preventing your Mac from going to sleep…", nil);
+        }
         else
         {
-            n.informativeText = [NSString stringWithFormat:NSLocalizedString(@"Started preventing your Mac from sleeping for %.0f seconds…", nil), timeInterval];
+            NSDateComponentsFormatter *formatter = [self dateComponentsFormatter];
+            formatter.includesTimeRemainingPhrase = NO;
+            NSString *remainingTimeString = [formatter stringFromDate:[NSDate date] toDate:self.sleepWakeTimer.fireDate];
+            formatter.includesTimeRemainingPhrase = YES;
+            
+            n.informativeText = [NSString stringWithFormat:NSLocalizedString(@"Preventing your Mac from going to sleep for\n%@…", nil), remainingTimeString];
         }
         
         [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
@@ -236,23 +243,32 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
         else
         {
             // The display menu item
-            static NSDateComponentsFormatter *dateFormatter;
-            static dispatch_once_t onceToken;
-            dispatch_once(&onceToken, ^{
-                dateFormatter = [NSDateComponentsFormatter new];
-                dateFormatter.allowedUnits = NSCalendarUnitSecond|NSCalendarUnitMinute|NSCalendarUnitHour;
-                dateFormatter.unitsStyle = NSDateComponentsFormatterUnitsStyleShort;
-                dateFormatter.includesTimeRemainingPhrase = YES;
-            });
-            
             item.hidden = YES;
             if(self.sleepWakeTimer.fireDate)
             {
                 item.hidden = NO;
-                item.title = [dateFormatter stringFromDate:[NSDate date] toDate:self.sleepWakeTimer.fireDate];
+                item.title = [[self dateComponentsFormatter] stringFromDate:[NSDate date]
+                                                                     toDate:self.sleepWakeTimer.fireDate
+                              ];
             }
         }
     }
+}
+
+#pragma mark - Date Components Formatter
+
+- (NSDateComponentsFormatter *)dateComponentsFormatter
+{
+    static NSDateComponentsFormatter *dateFormatter;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [NSDateComponentsFormatter new];
+        dateFormatter.allowedUnits = NSCalendarUnitSecond|NSCalendarUnitMinute|NSCalendarUnitHour;
+        dateFormatter.unitsStyle = NSDateComponentsFormatterUnitsStyleShort;
+        dateFormatter.includesTimeRemainingPhrase = YES;
+    });
+    
+    return dateFormatter;
 }
 
 #pragma mark - User Notification Center Delegate
