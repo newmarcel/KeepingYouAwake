@@ -3,6 +3,7 @@
 ## Changelog ##
 
 ### v1.2 ###
+- There are no significant changes since beta1
 - Tweaked the experimental *(and hidden)* notifications
 - You can enable the notifications preview by pasting the following snippet into *Terminal.app*:
 
