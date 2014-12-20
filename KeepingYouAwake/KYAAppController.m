@@ -116,7 +116,7 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 - (void)toggleStatus:(id)sender
 {
     NSEvent *event = [[NSApplication sharedApplication] currentEvent];
-    if(event.type == NSRightMouseUp)
+    if((event.modifierFlags & NSControlKeyMask) || (event.type == NSRightMouseUp))
     {
         [self showMenu:nil];
         return;
