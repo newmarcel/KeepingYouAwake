@@ -22,14 +22,14 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		DA3C1C771A1533200079A195 /* Copy Sparkle */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
 				DA3C1C781A1533320079A195 /* Sparkle.framework in Copy Sparkle */,
 			);
 			name = "Copy Sparkle";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 

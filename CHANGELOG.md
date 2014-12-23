@@ -2,6 +2,13 @@
 
 ## Changelog ##
 
+### v1.2.1 ###
+- Less aggressive awake handling when the MacBook lid is closed by using the `caffeinate -di` command instead of `caffeinate -disu`
+- You can revert back to the previous behaviour by pasting the following snippet into *Terminal.app*:
+
+		defaults write info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower -bool YES
+
+
 ### v1.2 ###
 - There are no significant changes since beta1
 - Tweaked the experimental *(and hidden)* notifications
