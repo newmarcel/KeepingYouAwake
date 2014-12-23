@@ -8,6 +8,7 @@
 
 		defaults write info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower -bool YES
 
+- `ctrl` + `click` will now display the menu
 
 ### v1.2 ###
 - There are no significant changes since beta1
