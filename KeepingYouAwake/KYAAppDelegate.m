@@ -15,8 +15,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Request to resume on login
-    [[NSApplication sharedApplication] enableRelaunchOnLogin];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification
