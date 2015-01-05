@@ -15,6 +15,13 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self andSelector:@selector(handleGetURLEvent:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
+}
+
+- (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)reply
+{
+    NSString *value = [event paramDescriptorForKeyword:keyDirectObject].stringValue;
+    NSLog(@"Event: %@", value);
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification
