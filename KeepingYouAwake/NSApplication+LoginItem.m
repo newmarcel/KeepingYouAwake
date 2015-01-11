@@ -103,12 +103,9 @@
             LSSharedFileListItemRef fileListItem = (__bridge LSSharedFileListItemRef)loginItems[i];
             
             NSURL *itemURL = (__bridge_transfer NSURL *)LSSharedFileListItemCopyResolvedURL(fileListItem, 0, NULL);
-            if(itemURL)
+            if([bundleURL isEqual:itemURL])
             {
-                if([bundleURL isEqual:itemURL])
-                {
-                    loginItem = fileListItem;
-                }
+                loginItem = fileListItem;
             }
         }
         

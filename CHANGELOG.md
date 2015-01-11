@@ -3,6 +3,8 @@
 ## Changelog ##
 
 ### v1.2.1 ###
+
+- Fixed an issue where "Start at Login" would crash when clicked multiple times in a row *(Fixed by [registered99](https://github.com/registered99), thank you!)*
 - Less aggressive awake handling when the MacBook lid is closed by using the `caffeinate -di` command instead of `caffeinate -disu`
 - You can revert back to the previous behaviour by pasting the following snippet into *Terminal.app*:
 
