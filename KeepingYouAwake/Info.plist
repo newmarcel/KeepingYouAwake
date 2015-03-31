@@ -24,7 +24,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>Keeping You Awake</string>
+			<string>KeepingYouAwake</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>keepingyouawake</string>

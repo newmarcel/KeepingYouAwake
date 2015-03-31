@@ -43,8 +43,8 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
         }
         
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(applicationDidFinishLaunching:)
-                                                     name:NSApplicationDidFinishLaunchingNotification
+                                                 selector:@selector(applicationWillFinishLaunching:)
+                                                     name:NSApplicationWillFinishLaunchingNotification
                                                    object:nil
          ];
     }
@@ -291,7 +291,7 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 
 #pragma mark - Apple Event Manager
 
-- (void)applicationDidFinishLaunching:(NSNotification *)notification
+- (void)applicationWillFinishLaunching:(NSNotification *)notification
 {
     [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self
                                                        andSelector:@selector(handleGetURLEvent:withReplyEvent:)
