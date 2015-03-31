@@ -49,6 +49,7 @@
 		DA7931C31A575C6000B6DEC4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Carthage/Build/Mac/Sparkle.framework; sourceTree = SOURCE_ROOT; };
 		DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYASleepWakeTimer.h; sourceTree = "<group>"; };
 		DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYASleepWakeTimer.m; sourceTree = "<group>"; };
+		DAD272581ACB21D000CDD620 /* SharedConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SharedConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		DA637B3C19F14693004C8838 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DAD272581ACB21D000CDD620 /* SharedConfig.xcconfig */,
 				DA637B3D19F14693004C8838 /* Info.plist */,
 				DA637B3E19F14693004C8838 /* main.m */,
 				DA787EF019F40B2E00D1476A /* Credits.rtf */,
@@ -266,6 +268,7 @@
 /* Begin XCBuildConfiguration section */
 		DA637B5419F14694004C8838 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD272581ACB21D000CDD620 /* SharedConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -308,6 +311,7 @@
 		};
 		DA637B5519F14694004C8838 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD272581ACB21D000CDD620 /* SharedConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
