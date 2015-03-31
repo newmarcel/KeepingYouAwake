@@ -8,6 +8,7 @@
 
 #import "KYAAppController.h"
 #import "KYASleepWakeTimer.h"
+#import "KYAEventHandler.h"
 #import "NSApplication+LoginItem.h"
 
 @interface KYAAppController () <NSUserNotificationCenterDelegate>
@@ -47,6 +48,8 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
                                                      name:NSApplicationWillFinishLaunchingNotification
                                                    object:nil
          ];
+        
+        [self configureEventHandler];
     }
     return self;
 }
@@ -304,7 +307,19 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 - (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)reply
 {
     NSString *value = [event paramDescriptorForKeyword:keyDirectObject].stringValue;
-    NSLog(@"Event: %@", value);
+    
+    [[KYAEventHandler mainHandler] handleEventForURL:[NSURL URLWithString:value]];
+}
+
+- (void)configureEventHandler
+{
+    __weak typeof(self) weakSelf = self;
+    [[KYAEventHandler mainHandler] registerActionNamed:@"activate" block:^(KYAEvent *event) {
+        NSDictionary *parameters = event.arguments;
+    }];
+    [[KYAEventHandler mainHandler] registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
+        [weakSelf terminateTimer];
+    }];
 }
 
 @end
