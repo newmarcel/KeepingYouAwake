@@ -28,6 +28,8 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 
 @implementation KYAAppController
 
+#pragma mark - Life Cycle
+
 - (instancetype)init
 {
     self = [super init];
@@ -36,6 +38,7 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
         [self configureStatusItem];
         
         self.sleepWakeTimer = [KYASleepWakeTimer new];
+        [self.sleepWakeTimer addObserver:self forKeyPath:@"scheduled" options:NSKeyValueObservingOptionNew context:NULL];
         
         // Check activate on launch state
         if([self shouldActivateOnLaunch])
@@ -75,6 +78,19 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
     
     [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
 }
+
+#pragma mark - KVO
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if([object isEqual:self.sleepWakeTimer] && [keyPath isEqualToString:@"scheduled"])
+    {
+        // Update the status item for scheduling changes
+        [self setStatusItemActive:[change[NSKeyValueChangeNewKey] boolValue]];
+    }
+}
+
+#pragma mark - Setup
 
 - (void)configureStatusItem
 {
@@ -186,12 +202,7 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
         return;
     }
     
-    [self setStatusItemActive:YES];
-    
-    __weak typeof(self) weakSelf = self;
     [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:^(BOOL cancelled) {
-        [weakSelf setStatusItemActive:NO];
-        
         // Post notifications
         if([[NSUserDefaults standardUserDefaults] boolForKey:KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled])
         {
@@ -226,8 +237,6 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 
 - (void)terminateTimer
 {
-    [self setStatusItemActive:NO];
-    
     [self.sleepWakeTimer invalidate];
 }
 
