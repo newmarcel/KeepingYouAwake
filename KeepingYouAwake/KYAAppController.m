@@ -172,6 +172,12 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 
 - (void)activateTimerWithTimeInterval:(NSTimeInterval)timeInterval
 {
+    // Do not allow negative time intervals
+    if(timeInterval < 0)
+    {
+        return;
+    }
+    
     [self setStatusItemActive:YES];
     
     __weak typeof(self) weakSelf = self;
