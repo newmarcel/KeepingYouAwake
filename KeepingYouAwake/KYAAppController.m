@@ -65,9 +65,13 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
     
     // Check start at login state
     if([[NSApplication sharedApplication] kya_isStartingAtLogin])
+    {
         self.startAtLoginMenuItem.state = NSOnState;
+    }
     else
+    {
         self.startAtLoginMenuItem.state = NSOffState;
+    }
     
     [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
 }
@@ -120,9 +124,13 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
     [NSApplication sharedApplication].kya_startAtLogin = shouldStartAtLogin;
     
     if(shouldStartAtLogin)
+    {
         self.startAtLoginMenuItem.state = NSOnState;
+    }
     else
+    {
         self.startAtLoginMenuItem.state = NSOffState;
+    }
 }
 
 #pragma mark - Toggle Handling
@@ -228,7 +236,9 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 - (IBAction)selectTimeInterval:(id)sender
 {
     if([self.sleepWakeTimer isScheduled])
+    {
         [self.sleepWakeTimer invalidate];
+    }
     
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -240,7 +250,9 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 - (void)menuNeedsUpdate:(NSMenu *)menu
 {
     if(![menu isEqual:self.timerMenu])
+    {
         return;
+    }
     
     for(NSMenuItem *item in menu.itemArray)
     {
@@ -322,6 +334,32 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
     __weak typeof(self) weakSelf = self;
     [[KYAEventHandler mainHandler] registerActionNamed:@"activate" block:^(KYAEvent *event) {
         NSDictionary *parameters = event.arguments;
+        NSNumber *seconds = parameters[@"seconds"];
+        NSNumber *minutes = parameters[@"minutes"];
+        NSNumber *hours = parameters[@"hours"];
+        
+        if([self.sleepWakeTimer isScheduled])
+        {
+            [self.sleepWakeTimer invalidate];
+        }
+        
+        // Activate indefinitely if there are no parameters
+        if(parameters.count == 0)
+        {
+            [weakSelf activateTimer];
+        }
+        else if(seconds)
+        {
+            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)seconds.doubleValue];
+        }
+        else if(minutes)
+        {
+            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(minutes.doubleValue)];
+        }
+        else if(hours)
+        {
+            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(hours.doubleValue)];
+        }
     }];
     [[KYAEventHandler mainHandler] registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
         [weakSelf terminateTimer];
