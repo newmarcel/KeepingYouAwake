@@ -2,6 +2,22 @@
 
 ## Changelog ##
 
+### v1.2.2 ###
+
+- Basic command line interface through URI schemes
+	- *Thank you [KyleKing](https://github.com/KyleKing) for the suggestion!*
+	- you can activate/deactivate the sleep timer with unlimited time intervals
+	- you can open *KeepingYouAwake* from the command line with a custom sleep timer duration
+	- the *seconds*, *minutes* and *hours* parameters accept integer numbers and cannot be combined at the moment
+
+	open keepingyouawake://  
+	open keepingyouawake:///activate    # indefinite duration  
+	open keepingyouawake:///activate?seconds=5  
+	open keepingyouawake:///activate?minutes=5  
+	open keepingyouawake:///activate?hours=5  
+	open keepingyouawake:///deactivate
+
+
 ### v1.2.1 ###
 
 - Fixed an issue where "Start at Login" would crash when clicked multiple times in a row *(Fixed by [registered99](https://github.com/registered99), thank you!)*
