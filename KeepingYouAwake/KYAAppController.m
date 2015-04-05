@@ -359,15 +359,15 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
         }
         else if(seconds)
         {
-            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)seconds.doubleValue];
+            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)ceil(seconds.doubleValue)];
         }
         else if(minutes)
         {
-            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(minutes.doubleValue)];
+            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(ceil(minutes.doubleValue))];
         }
         else if(hours)
         {
-            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(hours.doubleValue)];
+            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
         }
     }];
     [[KYAEventHandler mainHandler] registerActionNamed:@"deactivate" block:^(KYAEvent *event) {

@@ -8,7 +8,7 @@
 	- *Thank you [KyleKing](https://github.com/KyleKing) for the suggestion!*
 	- you can activate/deactivate the sleep timer with unlimited time intervals
 	- you can open *KeepingYouAwake* from the command line with a custom sleep timer duration
-	- the *seconds*, *minutes* and *hours* parameters accept integer numbers and cannot be combined at the moment
+	- the *seconds*, *minutes* and *hours* parameters are rounded up to the nearest integer number and cannot be combined at the moment
 
 	open keepingyouawake://  
 	open keepingyouawake:///activate    # indefinite duration  
