@@ -8,6 +8,7 @@
 
 #import "KYAAppController.h"
 #import "KYASleepWakeTimer.h"
+#import "KYAEventHandler.h"
 #import "NSApplication+LoginItem.h"
 
 @interface KYAAppController () <NSUserNotificationCenterDelegate>
@@ -27,6 +28,8 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 
 @implementation KYAAppController
 
+#pragma mark - Life Cycle
+
 - (instancetype)init
 {
     self = [super init];
@@ -35,14 +38,28 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
         [self configureStatusItem];
         
         self.sleepWakeTimer = [KYASleepWakeTimer new];
+        [self.sleepWakeTimer addObserver:self forKeyPath:@"scheduled" options:NSKeyValueObservingOptionNew context:NULL];
         
         // Check activate on launch state
         if([self shouldActivateOnLaunch])
         {
             [self activateTimer];
         }
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(applicationWillFinishLaunching:)
+                                                     name:NSApplicationWillFinishLaunchingNotification
+                                                   object:nil
+         ];
+        
+        [self configureEventHandler];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
 }
 
 - (void)awakeFromNib
@@ -51,12 +68,29 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
     
     // Check start at login state
     if([[NSApplication sharedApplication] kya_isStartingAtLogin])
+    {
         self.startAtLoginMenuItem.state = NSOnState;
+    }
     else
+    {
         self.startAtLoginMenuItem.state = NSOffState;
+    }
     
     [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
 }
+
+#pragma mark - KVO
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if([object isEqual:self.sleepWakeTimer] && [keyPath isEqualToString:@"scheduled"])
+    {
+        // Update the status item for scheduling changes
+        [self setStatusItemActive:[change[NSKeyValueChangeNewKey] boolValue]];
+    }
+}
+
+#pragma mark - Setup
 
 - (void)configureStatusItem
 {
@@ -106,9 +140,13 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
     [NSApplication sharedApplication].kya_startAtLogin = shouldStartAtLogin;
     
     if(shouldStartAtLogin)
+    {
         self.startAtLoginMenuItem.state = NSOnState;
+    }
     else
+    {
         self.startAtLoginMenuItem.state = NSOffState;
+    }
 }
 
 #pragma mark - Toggle Handling
@@ -158,12 +196,13 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 
 - (void)activateTimerWithTimeInterval:(NSTimeInterval)timeInterval
 {
-    [self setStatusItemActive:YES];
+    // Do not allow negative time intervals
+    if(timeInterval < 0)
+    {
+        return;
+    }
     
-    __weak typeof(self) weakSelf = self;
     [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:^(BOOL cancelled) {
-        [weakSelf setStatusItemActive:NO];
-        
         // Post notifications
         if([[NSUserDefaults standardUserDefaults] boolForKey:KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled])
         {
@@ -198,8 +237,6 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 
 - (void)terminateTimer
 {
-    [self setStatusItemActive:NO];
-    
     [self.sleepWakeTimer invalidate];
 }
 
@@ -208,7 +245,9 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 - (IBAction)selectTimeInterval:(id)sender
 {
     if([self.sleepWakeTimer isScheduled])
+    {
         [self.sleepWakeTimer invalidate];
+    }
     
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -220,7 +259,9 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 - (void)menuNeedsUpdate:(NSMenu *)menu
 {
     if(![menu isEqual:self.timerMenu])
+    {
         return;
+    }
     
     for(NSMenuItem *item in menu.itemArray)
     {
@@ -276,6 +317,62 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 - (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification
 {
     return YES;
+}
+
+#pragma mark - Apple Event Manager
+
+- (void)applicationWillFinishLaunching:(NSNotification *)notification
+{
+    [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self
+                                                       andSelector:@selector(handleGetURLEvent:withReplyEvent:)
+                                                     forEventClass:kInternetEventClass
+                                                        andEventID:kAEGetURL
+     ];
+}
+
+
+- (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)reply
+{
+    NSString *value = [event paramDescriptorForKeyword:keyDirectObject].stringValue;
+    
+    [[KYAEventHandler mainHandler] handleEventForURL:[NSURL URLWithString:value]];
+}
+
+- (void)configureEventHandler
+{
+    __weak typeof(self) weakSelf = self;
+    [[KYAEventHandler mainHandler] registerActionNamed:@"activate" block:^(KYAEvent *event) {
+        NSDictionary *parameters = event.arguments;
+        NSString *seconds = parameters[@"seconds"];
+        NSString *minutes = parameters[@"minutes"];
+        NSString *hours = parameters[@"hours"];
+        
+        if([self.sleepWakeTimer isScheduled])
+        {
+            [self.sleepWakeTimer invalidate];
+        }
+        
+        // Activate indefinitely if there are no parameters
+        if(parameters.count == 0)
+        {
+            [weakSelf activateTimer];
+        }
+        else if(seconds)
+        {
+            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)ceil(seconds.doubleValue)];
+        }
+        else if(minutes)
+        {
+            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(ceil(minutes.doubleValue))];
+        }
+        else if(hours)
+        {
+            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
+        }
+    }];
+    [[KYAEventHandler mainHandler] registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
+        [weakSelf terminateTimer];
+    }];
 }
 
 @end

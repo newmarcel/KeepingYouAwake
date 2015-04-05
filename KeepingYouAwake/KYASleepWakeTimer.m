@@ -53,7 +53,9 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     // Set the fireDate
     self.scheduledTimeInterval = timeInterval;
     if(timeInterval != KYASleepWakeTimeIntervalIndefinite)
+    {
         self.fireDate = [NSDate dateWithTimeIntervalSinceNow:timeInterval];
+    }
     
     // Spawn caffeinate
     [self spawnCaffeinateTaskForTimeInterval:timeInterval];
@@ -69,7 +71,9 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 - (BOOL)isScheduled
 {
     if(self.caffeinateTask && [self.caffeinateTask isRunning])
+    {
         return YES;
+    }
     
     return NO;
 }
@@ -90,10 +94,13 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     }
     
     if(timeInterval != KYASleepWakeTimeIntervalIndefinite)
+    {
         [arguments addObject:[NSString stringWithFormat:@"-t %.f", timeInterval]];
+    }
     
     [arguments addObject:[NSString stringWithFormat:@"-w %i", [[NSProcessInfo processInfo] processIdentifier]]];
     
+    [self willChangeValueForKey:@"scheduled"];
     self.caffeinateTask = [NSTask launchedTaskWithLaunchPath:@"/usr/bin/caffeinate" arguments:[arguments copy]];
     
     // Termination Handler
@@ -101,6 +108,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     self.caffeinateTask.terminationHandler = ^(NSTask *task) {
         [weakSelf terminateWithForce:NO];
     };
+    [self didChangeValueForKey:@"scheduled"];
 }
 
 - (void)terminateCaffeinateTask
@@ -113,9 +121,11 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 
 - (void)terminateWithForce:(BOOL)forcedTermination
 {
+    [self willChangeValueForKey:@"scheduled"];
     self.caffeinateTask = nil;
     self.scheduledTimeInterval = KYASleepWakeTimeIntervalIndefinite;
     self.fireDate = nil;
+    [self didChangeValueForKey:@"scheduled"];
     
     if(self.completionBlock)
     {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */; };
+		DA5A50941ACC5C5400A444C8 /* KYAEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A50931ACC5C5400A444C8 /* KYAEvent.m */; };
 		DA637B3F19F14693004C8838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B3E19F14693004C8838 /* main.m */; };
 		DA637B4219F14693004C8838 /* KYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B4119F14693004C8838 /* KYAAppDelegate.m */; };
 		DA637B4419F14693004C8838 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4319F14693004C8838 /* Images.xcassets */; };
@@ -17,6 +18,7 @@
 		DA8CB49D1A5767CC00BC6F73 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7931C31A575C6000B6DEC4 /* Sparkle.framework */; };
 		DA8CB49E1A5767CC00BC6F73 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA7931C31A575C6000B6DEC4 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAB268721A0D6BC600B58AD6 /* KYASleepWakeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */; };
+		DAD2725B1ACB266800CDD620 /* KYAEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD2725A1ACB266800CDD620 /* KYAEventHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +38,8 @@
 /* Begin PBXFileReference section */
 		DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+LoginItem.h"; sourceTree = "<group>"; };
 		DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+LoginItem.m"; sourceTree = "<group>"; };
+		DA5A50921ACC5C5400A444C8 /* KYAEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEvent.h; sourceTree = "<group>"; };
+		DA5A50931ACC5C5400A444C8 /* KYAEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAEvent.m; sourceTree = "<group>"; };
 		DA637B3919F14693004C8838 /* KeepingYouAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepingYouAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA637B3D19F14693004C8838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA637B3E19F14693004C8838 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +53,9 @@
 		DA7931C31A575C6000B6DEC4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Carthage/Build/Mac/Sparkle.framework; sourceTree = SOURCE_ROOT; };
 		DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYASleepWakeTimer.h; sourceTree = "<group>"; };
 		DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYASleepWakeTimer.m; sourceTree = "<group>"; };
+		DAD272581ACB21D000CDD620 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
+		DAD272591ACB266800CDD620 /* KYAEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEventHandler.h; sourceTree = "<group>"; };
+		DAD2725A1ACB266800CDD620 /* KYAEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAEventHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA4919C51ACFFF8D00D44F6A /* Event Handler */ = {
+			isa = PBXGroup;
+			children = (
+				DAD272591ACB266800CDD620 /* KYAEventHandler.h */,
+				DAD2725A1ACB266800CDD620 /* KYAEventHandler.m */,
+				DA5A50921ACC5C5400A444C8 /* KYAEvent.h */,
+				DA5A50931ACC5C5400A444C8 /* KYAEvent.m */,
+			);
+			name = "Event Handler";
+			sourceTree = "<group>";
+		};
+		DA4919C61ACFFF9600D44F6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */,
+				DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		DA637B3019F14693004C8838 = {
 			isa = PBXGroup;
 			children = (
@@ -85,15 +112,15 @@
 			isa = PBXGroup;
 			children = (
 				DA637B4519F14693004C8838 /* MainMenu.xib */,
+				DA637B4319F14693004C8838 /* Images.xcassets */,
 				DA637B4019F14693004C8838 /* KYAAppDelegate.h */,
 				DA637B4119F14693004C8838 /* KYAAppDelegate.m */,
 				DA637B5C19F146B6004C8838 /* KYAAppController.h */,
 				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
 				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,
 				DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */,
-				DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */,
-				DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */,
-				DA637B4319F14693004C8838 /* Images.xcassets */,
+				DA4919C51ACFFF8D00D44F6A /* Event Handler */,
+				DA4919C61ACFFF9600D44F6A /* Extensions */,
 			);
 			path = KeepingYouAwake;
 			sourceTree = "<group>";
@@ -101,6 +128,7 @@
 		DA637B3C19F14693004C8838 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DAD272581ACB21D000CDD620 /* Configuration.xcconfig */,
 				DA637B3D19F14693004C8838 /* Info.plist */,
 				DA637B3E19F14693004C8838 /* main.m */,
 				DA787EF019F40B2E00D1476A /* Credits.rtf */,
@@ -244,9 +272,11 @@
 			files = (
 				DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */,
 				DA637B4219F14693004C8838 /* KYAAppDelegate.m in Sources */,
+				DA5A50941ACC5C5400A444C8 /* KYAEvent.m in Sources */,
 				DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */,
 				DAB268721A0D6BC600B58AD6 /* KYASleepWakeTimer.m in Sources */,
 				DA637B3F19F14693004C8838 /* main.m in Sources */,
+				DAD2725B1ACB266800CDD620 /* KYAEventHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +296,7 @@
 /* Begin XCBuildConfiguration section */
 		DA637B5419F14694004C8838 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD272581ACB21D000CDD620 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -308,6 +339,7 @@
 		};
 		DA637B5519F14694004C8838 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD272581ACB21D000CDD620 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
