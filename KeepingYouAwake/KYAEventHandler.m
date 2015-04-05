@@ -66,7 +66,10 @@
 #if DEBUG
             NSLog(@"Handling event:\n%@\nfor URL: %@", event, URL);
 #endif
-            actionBlock(event);
+            // Perform the action block on main queue, but in sync with the event queue
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                actionBlock(event);
+            });
         }
     });
 }
@@ -77,6 +80,7 @@
 
     NSString *path = URL.lastPathComponent;
     
+    // Destructure NSURLQueryItems into basic dictionary values
     NSMutableDictionary *arguments = [NSMutableDictionary dictionary];
     for(NSURLQueryItem *queryItem in URLComponents.queryItems) {
         arguments[queryItem.name] = queryItem.value;
@@ -84,8 +88,6 @@
     
     return [[KYAEvent alloc] initWithName:path arguments:arguments];
 }
-
-#pragma mark - URL Components
 
 #pragma mark - Event Registration
 
