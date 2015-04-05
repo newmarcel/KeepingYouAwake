@@ -343,9 +343,9 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
     __weak typeof(self) weakSelf = self;
     [[KYAEventHandler mainHandler] registerActionNamed:@"activate" block:^(KYAEvent *event) {
         NSDictionary *parameters = event.arguments;
-        NSNumber *seconds = parameters[@"seconds"];
-        NSNumber *minutes = parameters[@"minutes"];
-        NSNumber *hours = parameters[@"hours"];
+        NSString *seconds = parameters[@"seconds"];
+        NSString *minutes = parameters[@"minutes"];
+        NSString *hours = parameters[@"hours"];
         
         if([self.sleepWakeTimer isScheduled])
         {

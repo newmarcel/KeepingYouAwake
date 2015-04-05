@@ -83,7 +83,13 @@
     // Destructure NSURLQueryItems into basic dictionary values
     NSMutableDictionary *arguments = [NSMutableDictionary dictionary];
     for(NSURLQueryItem *queryItem in URLComponents.queryItems) {
-        arguments[queryItem.name] = queryItem.value;
+        id value = queryItem.value;
+        if(!value)
+        {
+            // fall back to an empty string if the value is nil
+            value = @"";
+        }
+        arguments[queryItem.name] = value;
     }
     
     return [[KYAEvent alloc] initWithName:path arguments:arguments];
