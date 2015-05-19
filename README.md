@@ -6,7 +6,11 @@
 
 You can toggle the state directly from your menu bar.
 
+## Installation
+
 **[Download the latest version here.](https://github.com/newmarcel/KeepingYouAwake/releases)**
+
+or install it via [cask](http://caskroom.io/): `brew cask install keepingyouawake`.
 
 ![Screenshots](./Screenshots.jpg)
 
