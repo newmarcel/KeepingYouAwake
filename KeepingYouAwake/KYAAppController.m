@@ -25,6 +25,7 @@
 
 NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch";
 NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled";
+NSString * const KYASleepWakeControllerUserDefaultsTimeInterval = @"info.marcel-dierkes.KeepingYouAwake.TimeInterval";
 
 @implementation KYAAppController
 
@@ -114,6 +115,17 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
     [self.statusItem popUpStatusItemMenu:self.menu];
 }
 
+#pragma mark - Default Time Interval
+- (NSTimeInterval) defaultTimeInterval
+{
+	return [[NSUserDefaults standardUserDefaults] integerForKey:KYASleepWakeControllerUserDefaultsTimeInterval];
+}
+
+- (void) setDefaultTimeInterval: (NSTimeInterval) interval
+{
+	[[NSUserDefaults standardUserDefaults] setInteger:interval forKey:KYASleepWakeControllerUserDefaultsTimeInterval];
+}
+
 #pragma mark - Activate on Launch
 
 - (BOOL)shouldActivateOnLaunch
@@ -191,7 +203,7 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 
 - (void)activateTimer
 {
-    [self activateTimerWithTimeInterval:KYASleepWakeTimeIntervalIndefinite];
+    [self activateTimerWithTimeInterval: self.defaultTimeInterval];
 }
 
 - (void)activateTimerWithTimeInterval:(NSTimeInterval)timeInterval
@@ -242,18 +254,25 @@ NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"i
 
 #pragma mark - Menu Delegate
 
-- (IBAction)selectTimeInterval:(id)sender
+- (IBAction)selectTimeInterval:(NSMenuItem *)sender
 {
     if([self.sleepWakeTimer isScheduled])
     {
         [self.sleepWakeTimer invalidate];
     }
-    
-    __weak typeof(self) weakSelf = self;
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSTimeInterval seconds = (NSTimeInterval)[sender tag];
-        [weakSelf activateTimerWithTimeInterval:seconds];
-    });
+	
+	if (sender.alternate)
+	{
+		[self setDefaultTimeInterval: sender.tag];
+	} else {
+		
+		__weak typeof(self) weakSelf = self;
+		dispatch_async(dispatch_get_main_queue(), ^{
+			NSTimeInterval seconds = (NSTimeInterval)[sender tag];
+			[weakSelf activateTimerWithTimeInterval:seconds];
+		});
+	}
+	
 }
 
 - (void)menuNeedsUpdate:(NSMenu *)menu
