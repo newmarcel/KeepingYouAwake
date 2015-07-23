@@ -681,22 +681,16 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="5C3-7N-wlg"/>
-                            <menuItem title="Set Default: 5 minutes" tag="300" alternate="YES" id="NkC-w0-mfU">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="tsQ-oW-5rO"/>
-                                </connections>
-                            </menuItem>
                             <menuItem title="5 minutes" tag="300" id="kO2-hM-cAT">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="fgM-gO-MXa"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Set Default: 10 minutes" tag="600" alternate="YES" id="PWL-2v-TSS">
-                                <modifierMask key="keyEquivalentModifierMask"/>
+                            <menuItem title="Set Default: 5 minutes" tag="300" alternate="YES" id="NkC-w0-mfU">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
                                 <connections>
-                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="1Di-oI-tSy"/>
+                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="tsQ-oW-5rO"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="10 minutes" tag="600" id="WWd-z5-2Xu">
@@ -705,10 +699,10 @@
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="59n-2x-IYx"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Set Default: 15 minutes" tag="900" alternate="YES" id="kTz-g8-t11">
-                                <modifierMask key="keyEquivalentModifierMask"/>
+                            <menuItem title="Set Default: 10 minutes" tag="600" alternate="YES" id="PWL-2v-TSS">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
                                 <connections>
-                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="BYX-BS-cvW"/>
+                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="1Di-oI-tSy"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="15 minutes" tag="900" id="bCY-Vy-8QT">
@@ -717,10 +711,10 @@
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="dw9-7R-2Kw"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Set Default: 30 minutes" tag="1800" alternate="YES" id="sft-bA-FTz">
-                                <modifierMask key="keyEquivalentModifierMask"/>
+                            <menuItem title="Set Default: 15 minutes" tag="900" alternate="YES" id="kTz-g8-t11">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
                                 <connections>
-                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="Vt0-Xv-4sL"/>
+                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="BYX-BS-cvW"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="30 minutes" tag="1800" id="YNB-qE-TzE">
@@ -729,10 +723,10 @@
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="xev-ny-g90"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Set Default: 1 hour" tag="3600" alternate="YES" id="fUA-NX-hxF">
-                                <modifierMask key="keyEquivalentModifierMask"/>
+                            <menuItem title="Set Default: 30 minutes" tag="1800" alternate="YES" id="sft-bA-FTz">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
                                 <connections>
-                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="5K0-m6-2ol"/>
+                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="Vt0-Xv-4sL"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="1 hour" tag="3600" id="3tu-5G-YQt">
@@ -741,10 +735,10 @@
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="1FF-vc-y1N"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Set Default: 2 hours" tag="7200" alternate="YES" id="n3h-ZB-CLV">
-                                <modifierMask key="keyEquivalentModifierMask"/>
+                            <menuItem title="Set Default: 1 hour" tag="3600" alternate="YES" id="fUA-NX-hxF">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
                                 <connections>
-                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="IGV-0t-w8P"/>
+                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="5K0-m6-2ol"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="2 hours" tag="7200" id="T5i-64-xaV">
@@ -753,10 +747,10 @@
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="hFf-G6-uPk"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Set Default: 5 hours" tag="18000" alternate="YES" id="tAq-iH-rdw">
-                                <modifierMask key="keyEquivalentModifierMask"/>
+                            <menuItem title="Set Default: 2 hours" tag="7200" alternate="YES" id="n3h-ZB-CLV">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
                                 <connections>
-                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="bFW-MQ-As3"/>
+                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="IGV-0t-w8P"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="5 hours" tag="18000" id="18N-iz-aod">
@@ -765,16 +759,22 @@
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="lCt-Xc-iRp"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Set Default: Indefinite" alternate="YES" id="VeD-dm-81B">
-                                <modifierMask key="keyEquivalentModifierMask"/>
+                            <menuItem title="Set Default: 5 hours" tag="18000" alternate="YES" id="tAq-iH-rdw">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
                                 <connections>
-                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="AXg-m2-mId"/>
+                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="bFW-MQ-As3"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Indefinitely" id="5EU-sH-Q12">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="00X-0X-WzP"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Set Default: Indefinite" alternate="YES" id="VeD-dm-81B">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                <connections>
+                                    <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="AXg-m2-mId"/>
                                 </connections>
                             </menuItem>
                         </items>
