@@ -771,7 +771,7 @@
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="00X-0X-WzP"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Set Default: Indefinite" alternate="YES" id="VeD-dm-81B">
+                            <menuItem title="Set Default: Indefinitely" alternate="YES" id="VeD-dm-81B">
                                 <modifierMask key="keyEquivalentModifierMask" option="YES"/>
                                 <connections>
                                     <action selector="selectTimeInterval:" target="bOj-Ka-Izn" id="AXg-m2-mId"/>

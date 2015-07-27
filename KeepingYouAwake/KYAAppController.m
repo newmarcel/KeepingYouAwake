@@ -116,6 +116,7 @@ NSString * const KYASleepWakeControllerUserDefaultsTimeInterval = @"info.marcel-
 }
 
 #pragma mark - Default Time Interval
+
 - (NSTimeInterval) defaultTimeInterval
 {
 	return [[NSUserDefaults standardUserDefaults] integerForKey:KYASleepWakeControllerUserDefaultsTimeInterval];
@@ -264,7 +265,9 @@ NSString * const KYASleepWakeControllerUserDefaultsTimeInterval = @"info.marcel-
 	if (sender.alternate)
 	{
 		[self setDefaultTimeInterval: sender.tag];
-	} else {
+	}
+	else
+	{
 		
 		__weak typeof(self) weakSelf = self;
 		dispatch_async(dispatch_get_main_queue(), ^{
