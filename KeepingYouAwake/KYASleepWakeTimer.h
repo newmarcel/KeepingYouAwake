@@ -31,12 +31,12 @@ typedef void(^KYASleepWakeTimerCompletionBlock)(BOOL cancelled);
  *
  *  If the timer was scheduled for 0 seconds (Infinity), the fireDate is nil.
  */
-@property (copy, nonatomic, readonly) NSDate *fireDate;
+@property (copy, nonatomic, readonly, nullable) NSDate *fireDate;
 
 /**
  *  The initial time interval that was set to schedule the timer.
  */
-@property (assign, nonatomic, readonly) NSTimeInterval scheduledTimeInterval;
+@property (nonatomic, readonly) NSTimeInterval scheduledTimeInterval;
 
 /**
  *  Returns YES if a task is scheduled and running.
@@ -47,7 +47,7 @@ typedef void(^KYASleepWakeTimerCompletionBlock)(BOOL cancelled);
  *  An optional completion block when the task finishes at the fireDate
  *  or when invalidate is called manually.
  */
-@property (copy, nonatomic) KYASleepWakeTimerCompletionBlock completionBlock;
+@property (copy, nonatomic, nullable) KYASleepWakeTimerCompletionBlock completionBlock;
 
 /**
  *  Schedule the Caffeinate Task for a given amount of seconds.
@@ -60,7 +60,7 @@ typedef void(^KYASleepWakeTimerCompletionBlock)(BOOL cancelled);
  *  @param timeInterval A time interval in seconds.
  *  @param completion   An optional completion block.
  */
-- (void)scheduleWithTimeInterval:(NSTimeInterval)timeInterval completion:(KYASleepWakeTimerCompletionBlock)completion;
+- (void)scheduleWithTimeInterval:(NSTimeInterval)timeInterval completion:(nullable KYASleepWakeTimerCompletionBlock)completion;
 
 /**
  *  Invalidates the timer, cancels the Caffeinate Task and resets

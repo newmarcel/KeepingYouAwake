@@ -11,6 +11,10 @@
 @class KYASleepWakeTimer;
 
 @interface KYAAppController : NSObject <NSMenuDelegate>
-@property (strong, nonatomic, readonly) KYASleepWakeTimer *sleepWakeTimer;
+
+/**
+ *  The associated KYASleepWakeTimer instance of this app controller.
+ */
+@property (nonatomic, readonly, nonnull) KYASleepWakeTimer *sleepWakeTimer;
 
 @end

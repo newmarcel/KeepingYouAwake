@@ -117,14 +117,14 @@ NSString * const KYASleepWakeControllerUserDefaultsTimeInterval = @"info.marcel-
 
 #pragma mark - Default Time Interval
 
-- (NSTimeInterval) defaultTimeInterval
+- (NSTimeInterval)defaultTimeInterval
 {
-	return [[NSUserDefaults standardUserDefaults] integerForKey:KYASleepWakeControllerUserDefaultsTimeInterval];
+	return (NSTimeInterval)[[NSUserDefaults standardUserDefaults] integerForKey:KYASleepWakeControllerUserDefaultsTimeInterval];
 }
 
-- (void) setDefaultTimeInterval: (NSTimeInterval) interval
+- (void)setDefaultTimeInterval:(NSTimeInterval)interval
 {
-	[[NSUserDefaults standardUserDefaults] setInteger:interval forKey:KYASleepWakeControllerUserDefaultsTimeInterval];
+	[[NSUserDefaults standardUserDefaults] setInteger:(NSInteger)interval forKey:KYASleepWakeControllerUserDefaultsTimeInterval];
 }
 
 #pragma mark - Activate on Launch
