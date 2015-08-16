@@ -39,6 +39,7 @@
     if(loginItem)
     {
         result = YES;
+        CFRelease(loginItem);
     }
     
     return result;
@@ -53,8 +54,8 @@
                                                                         kLSSharedFileListSessionLoginItems,
                                                                         NULL);
         LSSharedFileListItemRemove(loginItemsFileList,loginItem);
+
         CFRelease(loginItemsFileList);
-        
         CFRelease(loginItem);
     }
 }
@@ -106,6 +107,7 @@
             if([bundleURL isEqual:itemURL])
             {
                 loginItem = fileListItem;
+                CFRetain(loginItem);
             }
         }
         
