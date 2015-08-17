@@ -192,13 +192,11 @@ NSString * const KYASleepWakeControllerUserDefaultsTimeInterval = @"info.marcel-
     if(active)
     {
         button.image = menubarIcon.activeIcon;
-        button.appearsDisabled = NO;
         button.toolTip = NSLocalizedString(@"Click to allow sleep\nRight click to show menu", nil);
     }
     else
     {
         button.image = menubarIcon.inactiveIcon;
-        button.appearsDisabled = YES;
         button.toolTip = NSLocalizedString(@"Click to prevent sleep\nRight click to show menu", nil);
     }
 }
