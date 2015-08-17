@@ -9,6 +9,7 @@
 #import "KYAAppController.h"
 #import "KYASleepWakeTimer.h"
 #import "KYAEventHandler.h"
+#import "KYAMenuBarIcon.h"
 #import "NSApplication+LoginItem.h"
 
 @interface KYAAppController () <NSUserNotificationCenterDelegate>
@@ -186,15 +187,17 @@ NSString * const KYASleepWakeControllerUserDefaultsTimeInterval = @"info.marcel-
 - (void)setStatusItemActive:(BOOL)active
 {
     NSStatusBarButton *button = self.statusItem.button;
+    KYAMenuBarIcon *menubarIcon = [KYAMenuBarIcon currentIcon];
+    
     if(active)
     {
-        button.image = [NSImage imageNamed:@"ActiveIcon"];
+        button.image = menubarIcon.activeIcon;
         button.appearsDisabled = NO;
         button.toolTip = NSLocalizedString(@"Click to allow sleep\nRight click to show menu", nil);
     }
     else
     {
-        button.image = [NSImage imageNamed:@"InactiveIcon"];
+        button.image = menubarIcon.inactiveIcon;
         button.appearsDisabled = YES;
         button.toolTip = NSLocalizedString(@"Click to prevent sleep\nRight click to show menu", nil);
     }
