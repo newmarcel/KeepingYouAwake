@@ -28,6 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
  *  or a set of custom icons from the application support
  *  directory.
  *
+ *  This class method will always return the same KYAMenuBarIcon
+ *  instance during the lifetime of the app.
+ *
  *  @return A KYAMenuBarIcon instance.
  */
 + (instancetype)currentIcon;
@@ -49,6 +52,9 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return A KYAMenuBarIcon instance.
  */
 - (instancetype)initWithActiveIcon:(nullable NSImage *)activeIcon inactiveIcon:(nullable NSImage *)inactiveIcon NS_DESIGNATED_INITIALIZER;
+
+// It is preferred to not use -init, use -initWithActiveIcon:inactiveIcon: instead.
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

@@ -20,17 +20,24 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
 
 + (instancetype)currentIcon
 {
-    if([self hasCustomIcons])
-    {
-        id activeIcon = [self customActiveIcon];
-        id inactiveIcon = [self customInactiveIcon];
-        return [[self alloc] initWithActiveIcon:activeIcon inactiveIcon:inactiveIcon];
-    }
-    else
-    {
-        // There are no costum image files, fall back to the default icon.
-        return [self defaultIcon];
-    }
+    static KYAMenuBarIcon *currentIcon;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        if([self hasCustomIcons])
+        {
+            id activeIcon = [self customActiveIcon];
+            id inactiveIcon = [self customInactiveIcon];
+            currentIcon = [[self alloc] initWithActiveIcon:activeIcon inactiveIcon:inactiveIcon];
+        }
+        else
+        {
+            // There are no costum image files, fall back to the default icon.
+            currentIcon = [self defaultIcon];
+        }
+    });
+    
+    return currentIcon;
 }
 
 + (instancetype)defaultIcon

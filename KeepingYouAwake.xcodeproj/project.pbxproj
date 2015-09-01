@@ -73,13 +73,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA2691CF1B8230AB00B15779 /* MenubarIcon */ = {
+		DA2691CF1B8230AB00B15779 /* MenuBar Icon */ = {
 			isa = PBXGroup;
 			children = (
 				DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */,
 				DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */,
 			);
-			name = MenubarIcon;
+			name = "MenuBar Icon";
 			sourceTree = "<group>";
 		};
 		DA4919C51ACFFF8D00D44F6A /* Event Handler */ = {
@@ -131,7 +131,7 @@
 				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
 				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,
 				DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */,
-				DA2691CF1B8230AB00B15779 /* MenubarIcon */,
+				DA2691CF1B8230AB00B15779 /* MenuBar Icon */,
 				DA4919C51ACFFF8D00D44F6A /* Event Handler */,
 				DA4919C61ACFFF9600D44F6A /* Extensions */,
 			);
