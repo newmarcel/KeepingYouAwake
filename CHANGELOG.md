@@ -17,6 +17,8 @@
 	open keepingyouawake:///activate?hours=5  
 	open keepingyouawake:///deactivate
 
+- Support for custom menu bar icons. Just place four images named `ActiveIcon.png`, `ActiveIcon@2x.png`, `InactiveIcon.png`, `InactiveIcon@2x.png` in your `~/Library/Application Support/KeepingYouAwake/` folder. The recommended size for these images is 22x20 pts.
+
 
 ### v1.2.1 ###
 
