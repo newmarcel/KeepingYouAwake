@@ -11,6 +11,7 @@
 #import "KYAEventHandler.h"
 #import "KYAMenuBarIcon.h"
 #import "NSApplication+LoginItem.h"
+#import "NSUserDefaults+Keys.h"
 
 @interface KYAAppController () <NSUserNotificationCenterDelegate>
 @property (strong, nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
@@ -23,10 +24,6 @@
 @property (weak, nonatomic) IBOutlet NSMenu *timerMenu;
 @property (weak, nonatomic) IBOutlet NSMenuItem *startAtLoginMenuItem;
 @end
-
-NSString * const KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch";
-NSString * const KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled = @"info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled";
-NSString * const KYASleepWakeControllerUserDefaultsTimeInterval = @"info.marcel-dierkes.KeepingYouAwake.TimeInterval";
 
 @implementation KYAAppController
 
@@ -120,29 +117,25 @@ NSString * const KYASleepWakeControllerUserDefaultsTimeInterval = @"info.marcel-
 
 - (NSTimeInterval)defaultTimeInterval
 {
-	return (NSTimeInterval)[[NSUserDefaults standardUserDefaults] integerForKey:KYASleepWakeControllerUserDefaultsTimeInterval];
+    return [NSUserDefaults standardUserDefaults].kya_defaultTimeInterval;
 }
 
 - (void)setDefaultTimeInterval:(NSTimeInterval)interval
 {
-	[[NSUserDefaults standardUserDefaults] setInteger:(NSInteger)interval forKey:KYASleepWakeControllerUserDefaultsTimeInterval];
+    [NSUserDefaults standardUserDefaults].kya_defaultTimeInterval = interval;
 }
 
 #pragma mark - Activate on Launch
 
 - (BOOL)shouldActivateOnLaunch
 {
-    return [[NSUserDefaults standardUserDefaults] boolForKey:KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch];
+    return [[NSUserDefaults standardUserDefaults] kya_isActivatedOnLaunch];
 }
 
 - (IBAction)toggleActivateOnLaunch:(id)sender
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *key = KYASleepWakeControllerUserDefaultsKeyActivateOnLaunch;
-    
-    BOOL activateOnLaunch = [defaults boolForKey:key];
-    activateOnLaunch = !activateOnLaunch;
-    [defaults setBool:activateOnLaunch forKey:key];
+    defaults.kya_activateOnLaunch = ![defaults kya_isActivatedOnLaunch];
     [defaults synchronize];
 }
 
@@ -218,7 +211,7 @@ NSString * const KYASleepWakeControllerUserDefaultsTimeInterval = @"info.marcel-
     
     [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:^(BOOL cancelled) {
         // Post notifications
-        if([[NSUserDefaults standardUserDefaults] boolForKey:KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled])
+        if([[NSUserDefaults standardUserDefaults] kya_areNotificationsEnabled])
         {
             NSUserNotification *n = [NSUserNotification new];
             n.informativeText = NSLocalizedString(@"Allowing your Mac to go to sleep…", nil);
@@ -227,7 +220,7 @@ NSString * const KYASleepWakeControllerUserDefaultsTimeInterval = @"info.marcel-
     }];
     
     // Post notifications
-    if([[NSUserDefaults standardUserDefaults] boolForKey:KYASleepWakeControllerUserDefaultsKeyNotificationsEnabled])
+    if([[NSUserDefaults standardUserDefaults] kya_areNotificationsEnabled])
     {
         NSUserNotification *n = [NSUserNotification new];
         

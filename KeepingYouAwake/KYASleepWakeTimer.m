@@ -7,8 +7,7 @@
 //
 
 #import "KYASleepWakeTimer.h"
-
-NSString * const KYASleepWakeTimerUserDefaultsKeyPreventSleepOnACPower = @"info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower";
+#import "NSUserDefaults+Keys.h"
 
 NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 
@@ -84,7 +83,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 {
     NSMutableArray *arguments = [NSMutableArray new];
     
-    if([[NSUserDefaults standardUserDefaults] boolForKey:KYASleepWakeTimerUserDefaultsKeyPreventSleepOnACPower])
+    if([[NSUserDefaults standardUserDefaults] kya_isPreventingSleepOnACPower])
     {
         [arguments addObject:@"-disu"];
     }
