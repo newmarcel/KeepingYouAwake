@@ -94,6 +94,7 @@
 - (void)configureStatusItem
 {
     NSStatusItem *statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    statusItem.highlightMode = ![NSUserDefaults standardUserDefaults].kya_menuBarIconHighlightDisabled;
     
     NSStatusBarButton *button = statusItem.button;
     

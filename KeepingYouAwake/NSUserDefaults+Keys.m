@@ -13,10 +13,12 @@ NSString * const KYAUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.Keep
 NSString * const KYAUserDefaultsKeyNotificationsEnabled = @"info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled";
 NSString * const KYAUserDefaultsKeyDefaultTimeInterval = @"info.marcel-dierkes.KeepingYouAwake.TimeInterval";
 NSString * const KYAUserDefaultsKeyPreventSleepOnACPower = @"info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower";
+NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled = @"info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled";
 
 
 @implementation NSUserDefaults (Keys)
-@dynamic kya_activateOnLaunch, kya_defaultTimeInterval, kya_notificationsEnabled, kya_preventSleepOnACPower;
+@dynamic kya_activateOnLaunch, kya_defaultTimeInterval, kya_notificationsEnabled;
+@dynamic kya_preventSleepOnACPower, kya_menuBarIconHighlightDisabled;
 
 #pragma mark - Activate on Launch
 
@@ -64,6 +66,18 @@ NSString * const KYAUserDefaultsKeyPreventSleepOnACPower = @"info.marcel-dierkes
 - (void)setKya_preventSleepOnACPower:(BOOL)preventSleepOnACPower
 {
     [self setBool:preventSleepOnACPower forKey:KYAUserDefaultsKeyPreventSleepOnACPower];
+}
+
+#pragma mark - Menu Bar Icon Highlight Disabled
+
+- (BOOL)kya_isMenuBarIconHighlightDisabled
+{
+    return [self boolForKey:KYAUserDefaultsKeyMenuBarIconHighlightDisabled];
+}
+
+- (void)setKya_menuBarIconHighlightDisabled:(BOOL)menuBarIconHighlightDisabled
+{
+    [self setBool:menuBarIconHighlightDisabled forKey:KYAUserDefaultsKeyMenuBarIconHighlightDisabled];
 }
 
 @end

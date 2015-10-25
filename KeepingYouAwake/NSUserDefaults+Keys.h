@@ -32,6 +32,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, getter = kya_isPreventingSleepOnACPower) BOOL kya_preventSleepOnACPower;
 
+/**
+ *  Returns YES if the menu bar icon should not be highlighted on left and right click.
+ */
+@property (nonatomic, getter = kya_isMenuBarIconHighlightDisabled) BOOL kya_menuBarIconHighlightDisabled;
+
 @end
 
 NS_ASSUME_NONNULL_END
