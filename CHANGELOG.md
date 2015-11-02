@@ -2,7 +2,7 @@
 
 ## Changelog ##
 
-### v1.2.2 ###
+### v1.3 ###
 
 - Basic command line interface through URI schemes
 	- *Thank you [KyleKing](https://github.com/KyleKing) for the suggestion!*
@@ -17,7 +17,8 @@
 	open keepingyouawake:///activate?hours=5  
 	open keepingyouawake:///deactivate
 
-- Support for custom menu bar icons. Just place four images named `ActiveIcon.png`, `ActiveIcon@2x.png`, `InactiveIcon.png`, `InactiveIcon@2x.png` in your `~/Library/Application Support/KeepingYouAwake/` folder. The recommended size for these images is 22x20 pts.
+- Support for custom menu bar icons. Just place four images named `ActiveIcon.png`, `ActiveIcon@2x.png`, `InactiveIcon.png`, `InactiveIcon@2x.png` in your `~/Library/Application Support/KeepingYouAwake/` folder. The recommended size for these images is 22x20 pts
+- hold down the option key and click inside the *"Activate for Duration"* menu to set the default duration for the menu bar icon
 
 
 ### v1.2.1 ###
