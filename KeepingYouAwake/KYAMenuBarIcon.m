@@ -158,6 +158,7 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
 {
     NSImage *image = [[NSImage alloc] initWithContentsOfURL:[self iconFileURLWithName:name
                                                                          isRetinaIcon:NO]];
+    image.template = YES;
     NSImageRep *retinaRep = [NSImageRep imageRepWithContentsOfURL:[self iconFileURLWithName:name
                                                                                isRetinaIcon:YES]];
     if(retinaRep)
