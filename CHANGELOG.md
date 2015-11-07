@@ -2,6 +2,15 @@
 
 ## Changelog ##
 
+### v1.3.1 ###
+
+- Fixed rendering for custom icons: They are now rendered as template images
+- Added advanced settings to disable the blue highlight rectangle on click. Enable it with *(replace YES with NO to disable it again)*:
+
+		defaults write info.marcel-dierkes.KeepingYouAwake info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled -bool YES
+
+
+
 ### v1.3 ###
 
 - Basic command line interface through URI schemes
