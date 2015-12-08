@@ -48,6 +48,11 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>https://newmarcel.github.io/KeepingYouAwake/appcast.xml</string>
+	<string>http://newmarcel.github.io/KeepingYouAwake/appcast.xml</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
