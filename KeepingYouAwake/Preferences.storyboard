@@ -60,6 +60,9 @@
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <binding destination="32v-ae-OOv" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch" id="5qA-a3-Dy4"/>
+                                </connections>
                             </button>
                             <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-zk-bvV">
                                 <rect key="frame" x="20" y="77" width="410" height="5"/>
@@ -152,8 +155,12 @@
                             <constraint firstItem="cLy-zk-bvV" firstAttribute="leading" secondItem="zCr-XH-hAt" secondAttribute="leading" constant="20" id="zO7-HW-hQn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="startAtLoginCheckBoxButton" destination="LrG-qH-het" id="Upu-Dz-YOT"/>
+                    </connections>
                 </viewController>
                 <customObject id="0p2-wI-Dec" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="32v-ae-OOv"/>
             </objects>
             <point key="canvasLocation" x="1015" y="629"/>
         </scene>
