@@ -13,7 +13,7 @@
 
 @implementation KYAAppDelegate
 {
-    id _preferencesWindowController;  // TODO: Make a property
+    NSWindowController *_preferencesWindowController;  // TODO: Make a property
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -29,7 +29,12 @@
 
 - (IBAction)showPreferencesWindow:(id)sender
 {
-    _preferencesWindowController = [[NSStoryboard storyboardWithName:@"Preferences" bundle:nil] instantiateInitialController];
+    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+    
+    if(_preferencesWindowController == nil)
+    {
+        _preferencesWindowController = [[NSStoryboard storyboardWithName:@"Preferences" bundle:nil] instantiateInitialController];
+    }
     [_preferencesWindowController showWindow:sender];
 }
 
