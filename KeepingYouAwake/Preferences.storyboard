@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="uZF-hQ-SQu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Window Controller-->
@@ -9,7 +10,7 @@
             <objects>
                 <windowController id="uZF-hQ-SQu" sceneMemberID="viewController">
                     <window key="window" title="KeepingYouAwake – Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="AvX-7Q-Bvc">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowCollectionBehavior key="collectionBehavior" managed="YES" participatesInCycle="YES" fullScreenPrimary="YES" fullScreenAllowsTiling="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
                         <rect key="contentRect" x="150" y="430" width="480" height="320"/>
@@ -48,10 +49,108 @@
         <!--General-->
         <scene sceneID="HXE-tu-uVV">
             <objects>
-                <viewController title="General" id="lGE-74-XwP" sceneMemberID="viewController">
+                <viewController title="General" id="lGE-74-XwP" customClass="KYAGeneralPreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="zCr-XH-hAt">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="204"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Ley-qF-w1u">
+                                <rect key="frame" x="78" y="116" width="138" height="18"/>
+                                <buttonCell key="cell" type="check" title="Activate on Launch" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="IOU-Hs-S4r">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-zk-bvV">
+                                <rect key="frame" x="20" y="77" width="410" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="410" id="2dg-Fx-9yM"/>
+                                </constraints>
+                                <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <font key="titleFont" metaFont="system"/>
+                            </box>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="LrG-qH-het">
+                                <rect key="frame" x="78" y="168" width="104" height="18"/>
+                                <buttonCell key="cell" type="check" title="Start at Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="QIk-WP-qH1">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kMX-Le-Pla">
+                                <rect key="frame" x="193" y="39" width="240" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Qe4-Se-I2n"/>
+                                </constraints>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="jtC-7z-zRZ" id="Tgt-3G-yNm">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="Srj-RL-Qbx">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="jtC-7z-zRZ"/>
+                                            <menuItem title="Item 2" id="RyM-Zd-4Wv"/>
+                                            <menuItem title="Item 3" id="fp6-vj-Vkn"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="miN-zK-UeB">
+                                <rect key="frame" x="18" y="45" width="171" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default Activation Duration:" id="UVY-8B-q5H">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n6j-JQ-b36">
+                                <rect key="frame" x="78" y="148" width="354" height="14"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Automatically opens the app when you start your Mac." id="x6s-XD-lBU">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="K2V-hO-Kz5">
+                                <rect key="frame" x="78" y="96" width="354" height="14"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Immediately starts preventing sleep when launched." id="S6p-h0-H5B">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zqK-Ur-M49">
+                                <rect key="frame" x="18" y="20" width="414" height="14"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sets the default activation duration for the menu bar icon." id="nnA-d3-VV6">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="LrG-qH-het" firstAttribute="top" secondItem="zCr-XH-hAt" secondAttribute="top" constant="20" id="029-YL-gYv"/>
+                            <constraint firstItem="K2V-hO-Kz5" firstAttribute="top" secondItem="Ley-qF-w1u" secondAttribute="bottom" constant="8" id="5HO-zy-DXq"/>
+                            <constraint firstAttribute="trailing" secondItem="n6j-JQ-b36" secondAttribute="trailing" constant="20" id="5WF-yl-U9E"/>
+                            <constraint firstItem="kMX-Le-Pla" firstAttribute="top" secondItem="cLy-zk-bvV" secondAttribute="bottom" constant="16" id="7KV-jt-z0h"/>
+                            <constraint firstItem="Ley-qF-w1u" firstAttribute="top" secondItem="n6j-JQ-b36" secondAttribute="bottom" constant="16" id="7i9-2N-ldj"/>
+                            <constraint firstItem="K2V-hO-Kz5" firstAttribute="leading" secondItem="Ley-qF-w1u" secondAttribute="leading" id="9me-5c-whU"/>
+                            <constraint firstAttribute="trailing" secondItem="K2V-hO-Kz5" secondAttribute="trailing" constant="20" id="KDM-sy-kzE"/>
+                            <constraint firstAttribute="trailing" secondItem="kMX-Le-Pla" secondAttribute="trailing" constant="20" id="MWB-pG-hJ1"/>
+                            <constraint firstItem="zqK-Ur-M49" firstAttribute="top" secondItem="kMX-Le-Pla" secondAttribute="bottom" constant="8" id="Rxc-Cb-waZ"/>
+                            <constraint firstItem="zqK-Ur-M49" firstAttribute="trailing" secondItem="kMX-Le-Pla" secondAttribute="trailing" id="S0u-zS-TaE"/>
+                            <constraint firstItem="n6j-JQ-b36" firstAttribute="leading" secondItem="LrG-qH-het" secondAttribute="leading" id="Su6-S8-xOn"/>
+                            <constraint firstItem="n6j-JQ-b36" firstAttribute="top" secondItem="LrG-qH-het" secondAttribute="bottom" constant="8" id="TyJ-VF-Amk"/>
+                            <constraint firstAttribute="bottom" secondItem="zqK-Ur-M49" secondAttribute="bottom" constant="20" id="bdu-tk-jni"/>
+                            <constraint firstItem="miN-zK-UeB" firstAttribute="firstBaseline" secondItem="kMX-Le-Pla" secondAttribute="firstBaseline" id="c6g-pr-F7D"/>
+                            <constraint firstItem="miN-zK-UeB" firstAttribute="leading" secondItem="zCr-XH-hAt" secondAttribute="leading" constant="20" id="d3J-0q-EjS"/>
+                            <constraint firstAttribute="trailing" secondItem="cLy-zk-bvV" secondAttribute="trailing" constant="20" id="dsh-yY-yBt"/>
+                            <constraint firstItem="Ley-qF-w1u" firstAttribute="leading" secondItem="LrG-qH-het" secondAttribute="leading" id="ha3-ZY-DdM"/>
+                            <constraint firstItem="LrG-qH-het" firstAttribute="leading" secondItem="zCr-XH-hAt" secondAttribute="leading" constant="80" id="rW8-Dz-JBB"/>
+                            <constraint firstItem="zqK-Ur-M49" firstAttribute="leading" secondItem="miN-zK-UeB" secondAttribute="leading" id="sCo-Ms-Nyp"/>
+                            <constraint firstItem="kMX-Le-Pla" firstAttribute="leading" secondItem="miN-zK-UeB" secondAttribute="trailing" constant="8" id="sVD-WW-iJU"/>
+                            <constraint firstItem="cLy-zk-bvV" firstAttribute="top" secondItem="K2V-hO-Kz5" secondAttribute="bottom" constant="16" id="yGj-XB-Cud"/>
+                            <constraint firstItem="cLy-zk-bvV" firstAttribute="leading" secondItem="zCr-XH-hAt" secondAttribute="leading" constant="20" id="zO7-HW-hQn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="0p2-wI-Dec" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
