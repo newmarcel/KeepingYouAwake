@@ -12,9 +12,13 @@
 @end
 
 @implementation KYAAppDelegate
+{
+    id _preferencesWindowController;  // TODO: Make a property
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    [self showPreferencesWindow:nil];  // TODO: Remove
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification
@@ -27,6 +31,12 @@
 {
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [[NSApplication sharedApplication] orderFrontStandardAboutPanel:sender];
+}
+
+- (IBAction)showPreferencesWindow:(id)sender
+{
+    _preferencesWindowController = [[NSStoryboard storyboardWithName:@"Preferences" bundle:nil] instantiateInitialController];
+    [_preferencesWindowController showWindow:sender];
 }
 
 @end
