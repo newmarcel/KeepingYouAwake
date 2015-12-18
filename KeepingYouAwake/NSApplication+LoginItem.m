@@ -15,6 +15,7 @@
 
 - (void)setKya_startAtLogin:(BOOL)startAtLogin
 {
+    [self willChangeValueForKey:@"kya_startAtLogin"];
     if(startAtLogin)
     {
         [self kya_addToLoginItems];
@@ -23,9 +24,16 @@
     {
         [self kya_removeFromLoginItems];
     }
+    [self didChangeValueForKey:@"kya_startAtLogin"];
 }
 
 - (BOOL)kya_isStartingAtLogin
+{
+    return [self kya_startAtLogin];
+}
+
+// private KVC-compliant getter for kya_startAtLogin
+- (BOOL)kya_startAtLogin
 {
     return [self kya_hasLoginItem];
 }
