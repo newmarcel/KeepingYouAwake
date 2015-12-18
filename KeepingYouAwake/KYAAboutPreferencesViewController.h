@@ -9,5 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface KYAAboutPreferencesViewController : NSViewController
+@property (copy, nonatomic, readonly, nonnull) NSString *versionText;
+@property (copy, nonatomic, readonly, nonnull) NSString *copyrightText;
 
 @end

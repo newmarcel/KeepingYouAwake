@@ -23,6 +23,7 @@
 		DA8CB49E1A5767CC00BC6F73 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA7931C31A575C6000B6DEC4 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAB128691C2453F600831045 /* KYAAdvancedPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128681C2453F600831045 /* KYAAdvancedPreferencesViewController.m */; };
 		DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */; };
+		DAB128711C245F1B00831045 /* NSApplication+Versions.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128701C245F1B00831045 /* NSApplication+Versions.m */; };
 		DAB268721A0D6BC600B58AD6 /* KYASleepWakeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */; };
 		DAD2725B1ACB266800CDD620 /* KYAEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD2725A1ACB266800CDD620 /* KYAEventHandler.m */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,9 @@
 		DAB128681C2453F600831045 /* KYAAdvancedPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAdvancedPreferencesViewController.m; sourceTree = "<group>"; };
 		DAB1286A1C24540200831045 /* KYAAboutPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAboutPreferencesViewController.h; sourceTree = "<group>"; };
 		DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAboutPreferencesViewController.m; sourceTree = "<group>"; };
+		DAB1286D1C245A6C00831045 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = SOURCE_ROOT; };
+		DAB1286F1C245F1B00831045 /* NSApplication+Versions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+Versions.h"; sourceTree = "<group>"; };
+		DAB128701C245F1B00831045 /* NSApplication+Versions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+Versions.m"; sourceTree = "<group>"; };
 		DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYASleepWakeTimer.h; sourceTree = "<group>"; };
 		DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYASleepWakeTimer.m; sourceTree = "<group>"; };
 		DAD272581ACB21D000CDD620 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 			children = (
 				DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */,
 				DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */,
+				DAB1286F1C245F1B00831045 /* NSApplication+Versions.h */,
+				DAB128701C245F1B00831045 /* NSApplication+Versions.m */,
 				DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */,
 				DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */,
 			);
@@ -180,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				DA82B1121C24231C00FA46E0 /* Preferences.storyboard */,
+				DAB1286D1C245A6C00831045 /* Credits.rtf */,
 				DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */,
 				DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */,
 				DAB128671C2453F600831045 /* KYAAdvancedPreferencesViewController.h */,
@@ -321,6 +328,7 @@
 				DA5A50941ACC5C5400A444C8 /* KYAEvent.m in Sources */,
 				DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */,
 				DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */,
+				DAB128711C245F1B00831045 /* NSApplication+Versions.m in Sources */,
 				DAB128691C2453F600831045 /* KYAAdvancedPreferencesViewController.m in Sources */,
 				DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */,
 				DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */,
