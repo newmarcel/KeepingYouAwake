@@ -284,7 +284,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="410" id="hB7-I9-hGr"/>
                                         </constraints>
-                                        <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Copyright Label" id="siu-CP-Bg1">
+                                        <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Copyright Label" id="siu-CP-Bg1">
                                             <font key="font" metaFont="miniSystem"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -317,7 +317,7 @@
                 </viewController>
                 <customObject id="nue-Ke-7hD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343" y="1279.5"/>
+            <point key="canvasLocation" x="345" y="1298"/>
         </scene>
     </scenes>
     <resources>
