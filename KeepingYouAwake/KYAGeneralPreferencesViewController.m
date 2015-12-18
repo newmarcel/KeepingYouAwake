@@ -30,6 +30,13 @@
      ];
 }
 
+- (void)viewWillAppear
+{
+    [super viewWillAppear];
+    
+    self.preferredContentSize = self.view.fittingSize;
+}
+
 - (void)dealloc
 {
     [self.startAtLoginCheckBoxButton unbind:@"state"];
