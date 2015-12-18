@@ -666,7 +666,6 @@
         <customObject id="bOj-Ka-Izn" customClass="KYAAppController">
             <connections>
                 <outlet property="menu" destination="RrS-wX-j75" id="Qkd-Lu-ekl"/>
-                <outlet property="startAtLoginMenuItem" destination="oTo-tg-l4S" id="CkW-sP-hdR"/>
                 <outlet property="timerMenu" destination="uTe-0S-BFw" id="uJl-Rb-elA"/>
             </connections>
         </customObject>
@@ -784,20 +783,6 @@
                     </menu>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="qcJ-iT-ez4"/>
-                <menuItem title="Activate on Launch" id="gew-bn-Dlr">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="toggleActivateOnLaunch:" target="bOj-Ka-Izn" id="KCE-kg-Mwc"/>
-                        <binding destination="LNf-Tj-sS5" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch" id="zfO-hv-UO5"/>
-                    </connections>
-                </menuItem>
-                <menuItem title="Start at Login" id="oTo-tg-l4S">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="toggleStartAtLogin:" target="bOj-Ka-Izn" id="mH6-Vf-BwM"/>
-                    </connections>
-                </menuItem>
-                <menuItem isSeparatorItem="YES" id="uIp-Lg-WoB"/>
                 <menuItem title="About" id="DPy-P9-6Bp">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -815,6 +800,7 @@
                         <action selector="checkForUpdates:" target="8QH-MG-rpV" id="M12-ZI-Ydb"/>
                     </connections>
                 </menuItem>
+                <menuItem isSeparatorItem="YES" id="uIp-Lg-WoB"/>
                 <menuItem title="Quit" keyEquivalent="q" id="7is-vc-kz7">
                     <connections>
                         <action selector="terminate:" target="-1" id="iDM-BK-Z3F"/>

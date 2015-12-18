@@ -10,7 +10,6 @@
 #import "KYASleepWakeTimer.h"
 #import "KYAEventHandler.h"
 #import "KYAMenuBarIcon.h"
-#import "NSApplication+LoginItem.h"
 #import "NSUserDefaults+Keys.h"
 
 @interface KYAAppController () <NSUserNotificationCenterDelegate>
@@ -22,7 +21,6 @@
 // Menu
 @property (weak, nonatomic) IBOutlet NSMenu *menu;
 @property (weak, nonatomic) IBOutlet NSMenu *timerMenu;
-@property (weak, nonatomic) IBOutlet NSMenuItem *startAtLoginMenuItem;
 @end
 
 @implementation KYAAppController
@@ -64,16 +62,6 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    
-    // Check start at login state
-    if([[NSApplication sharedApplication] kya_isStartingAtLogin])
-    {
-        self.startAtLoginMenuItem.state = NSOnState;
-    }
-    else
-    {
-        self.startAtLoginMenuItem.state = NSOffState;
-    }
     
     [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
 }
@@ -138,23 +126,6 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     defaults.kya_activateOnLaunch = ![defaults kya_isActivatedOnLaunch];
     [defaults synchronize];
-}
-
-#pragma mark - Start at Login
-
-- (IBAction)toggleStartAtLogin:(id)sender
-{
-    BOOL shouldStartAtLogin = ![[NSApplication sharedApplication] kya_isStartingAtLogin];
-    [NSApplication sharedApplication].kya_startAtLogin = shouldStartAtLogin;
-    
-    if(shouldStartAtLogin)
-    {
-        self.startAtLoginMenuItem.state = NSOnState;
-    }
-    else
-    {
-        self.startAtLoginMenuItem.state = NSOffState;
-    }
 }
 
 #pragma mark - Toggle Handling
