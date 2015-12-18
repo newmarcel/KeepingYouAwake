@@ -25,13 +25,7 @@
 {
 }
 
-#pragma mark - About Window
-
-- (IBAction)showAboutWindow:(id)sender
-{
-    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
-    [[NSApplication sharedApplication] orderFrontStandardAboutPanel:sender];
-}
+#pragma mark - Preferences Window
 
 - (IBAction)showPreferencesWindow:(id)sender
 {

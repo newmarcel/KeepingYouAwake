@@ -783,12 +783,6 @@
                     </menu>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="qcJ-iT-ez4"/>
-                <menuItem title="About" id="DPy-P9-6Bp">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="showAboutWindow:" target="Voe-Tx-rLC" id="RoT-XM-AaB"/>
-                    </connections>
-                </menuItem>
                 <menuItem title="Preferences…" keyEquivalent="," id="OT5-lg-IM6">
                     <connections>
                         <action selector="showPreferencesWindow:" target="Voe-Tx-rLC" id="DTK-lU-Ruk"/>
