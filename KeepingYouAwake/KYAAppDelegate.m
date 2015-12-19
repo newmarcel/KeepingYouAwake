@@ -8,13 +8,11 @@
 
 #import "KYAAppDelegate.h"
 
-@interface KYAAppDelegate ()
+@interface KYAAppDelegate () <NSWindowDelegate>
+@property (nonatomic, nullable) NSWindowController *preferencesWindowController;
 @end
 
 @implementation KYAAppDelegate
-{
-    NSWindowController *_preferencesWindowController;  // TODO: Make a property
-}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -27,15 +25,28 @@
 
 #pragma mark - Preferences Window
 
-- (IBAction)showPreferencesWindow:(id)sender
+- (NSWindowController *)preferencesWindowController
 {
-    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
-    
     if(_preferencesWindowController == nil)
     {
         _preferencesWindowController = [[NSStoryboard storyboardWithName:@"Preferences" bundle:nil] instantiateInitialController];
     }
-    [_preferencesWindowController showWindow:sender];
+    return _preferencesWindowController;
+}
+
+- (IBAction)showPreferencesWindow:(id)sender
+{
+    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+    
+    [self.preferencesWindowController showWindow:sender];
+    self.preferencesWindowController.window.delegate = self;
+}
+
+#pragma mark - Window Delegate
+
+- (void)windowWillClose:(NSNotification *)notification
+{
+    self.preferencesWindowController = nil;
 }
 
 @end
