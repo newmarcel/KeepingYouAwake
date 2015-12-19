@@ -16,7 +16,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [self showPreferencesWindow:nil];  // TODO: Remove
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification
