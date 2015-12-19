@@ -99,9 +99,9 @@
                                     </menu>
                                 </popUpButtonCell>
                                 <connections>
-                                    <binding destination="6f7-uW-vAA" name="content" keyPath="arrangedObjects" id="8oC-ed-0ge"/>
-                                    <binding destination="6f7-uW-vAA" name="contentValues" keyPath="arrangedObjects.localizedTitle" previousBinding="8oC-ed-0ge" id="deV-Vp-aTM"/>
-                                    <binding destination="lGE-74-XwP" name="selectedObject" keyPath="selectedActivationDuration" previousBinding="deV-Vp-aTM" id="S3Y-hh-yA4"/>
+                                    <binding destination="lGE-74-XwP" name="content" keyPath="self.activationDurations" id="cUd-30-KOv"/>
+                                    <binding destination="lGE-74-XwP" name="contentValues" keyPath="self.activationDurations.localizedTitle" previousBinding="cUd-30-KOv" id="Ktp-II-hgO"/>
+                                    <binding destination="lGE-74-XwP" name="selectedObject" keyPath="self.selectedActivationDuration" previousBinding="Ktp-II-hgO" id="w9x-4x-CwU"/>
                                 </connections>
                             </popUpButton>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="miN-zK-UeB">
@@ -168,11 +168,6 @@
                 </viewController>
                 <customObject id="0p2-wI-Dec" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="32v-ae-OOv"/>
-                <arrayController objectClassName="KYAActivationDuration" id="6f7-uW-vAA" userLabel="Durations Array Controller">
-                    <connections>
-                        <binding destination="lGE-74-XwP" name="contentArray" keyPath="activationDurations" id="Fhd-ej-QwY"/>
-                    </connections>
-                </arrayController>
             </objects>
             <point key="canvasLocation" x="1015" y="629"/>
         </scene>
