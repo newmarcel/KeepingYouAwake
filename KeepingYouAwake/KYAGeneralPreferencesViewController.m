@@ -9,6 +9,7 @@
 #import "KYAGeneralPreferencesViewController.h"
 #import "NSApplication+LoginItem.h"
 #import "KYAActivationDuration.h"
+#import "NSUserDefaults+Keys.h"
 
 #define KYA_MINUTES(m) (m*60.0f)
 #define KYA_HOURS(h) (h*3600.0f)
@@ -19,10 +20,12 @@
 
 @interface KYAGeneralPreferencesViewController ()
 @property (nonatomic) NSArray<KYAActivationDuration *> *activationDurations;
+@property (nonatomic) KYAActivationDuration *selectedActivationDuration;
 @property (weak, nonatomic) IBOutlet NSButton *startAtLoginCheckBoxButton;
 @end
 
 @implementation KYAGeneralPreferencesViewController
+@dynamic selectedActivationDuration;
 
 - (void)viewDidLoad
 {
@@ -56,6 +59,23 @@
 - (void)dealloc
 {
     [self.startAtLoginCheckBoxButton unbind:@"value"];
+}
+#pragma mark - Selected Activation Duration
+
+- (KYAActivationDuration *)selectedActivationDuration
+{
+    NSTimeInterval storedDefaultInterval = [NSUserDefaults standardUserDefaults].kya_defaultTimeInterval;
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"seconds == %@", @(storedDefaultInterval)];
+    KYAActivationDuration *defaultDuration = [self.activationDurations filteredArrayUsingPredicate:predicate].firstObject;
+    return defaultDuration;
+}
+
+- (void)setSelectedActivationDuration:(KYAActivationDuration *)selectedActivationDuration
+{
+    [self willChangeValueForKey:@"selectedActivationDuration"];
+    [NSUserDefaults standardUserDefaults].kya_defaultTimeInterval = selectedActivationDuration.seconds;
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [self didChangeValueForKey:@"selectedActivationDuration"];
 }
 
 @end

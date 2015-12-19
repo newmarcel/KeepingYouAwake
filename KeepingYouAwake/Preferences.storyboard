@@ -101,6 +101,7 @@
                                 <connections>
                                     <binding destination="6f7-uW-vAA" name="content" keyPath="arrangedObjects" id="8oC-ed-0ge"/>
                                     <binding destination="6f7-uW-vAA" name="contentValues" keyPath="arrangedObjects.localizedTitle" previousBinding="8oC-ed-0ge" id="deV-Vp-aTM"/>
+                                    <binding destination="lGE-74-XwP" name="selectedObject" keyPath="selectedActivationDuration" previousBinding="deV-Vp-aTM" id="S3Y-hh-yA4"/>
                                 </connections>
                             </popUpButton>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="miN-zK-UeB">
