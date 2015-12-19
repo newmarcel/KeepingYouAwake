@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic, readonly) NSString *defaultsKey;
 @property (nonatomic, readwrite) BOOL value;
 
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithTitle:(NSString *)title defaultsKey:(NSString *)defaultsKey;
 
 @end

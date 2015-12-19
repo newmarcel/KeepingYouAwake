@@ -98,6 +98,10 @@
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
+                                <connections>
+                                    <binding destination="6f7-uW-vAA" name="content" keyPath="arrangedObjects" id="8oC-ed-0ge"/>
+                                    <binding destination="6f7-uW-vAA" name="contentValues" keyPath="arrangedObjects.localizedTitle" previousBinding="8oC-ed-0ge" id="deV-Vp-aTM"/>
+                                </connections>
                             </popUpButton>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="miN-zK-UeB">
                                 <rect key="frame" x="18" y="45" width="171" height="17"/>
@@ -163,6 +167,11 @@
                 </viewController>
                 <customObject id="0p2-wI-Dec" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="32v-ae-OOv"/>
+                <arrayController objectClassName="KYAActivationDuration" id="6f7-uW-vAA" userLabel="Durations Array Controller">
+                    <connections>
+                        <binding destination="lGE-74-XwP" name="contentArray" keyPath="activationDurations" id="Fhd-ej-QwY"/>
+                    </connections>
+                </arrayController>
             </objects>
             <point key="canvasLocation" x="1015" y="629"/>
         </scene>
@@ -181,7 +190,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="30" viewBased="YES" id="AXu-53-kJt">
-                                            <rect key="frame" x="0.0" y="0.0" width="451" height="225"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="451" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -352,8 +361,8 @@
                                             <size key="minSize" width="450" height="272"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                             <connections>
-                                                <binding destination="uUP-5n-ykj" name="editable" keyPath="isEditable" id="PvE-UH-iQL"/>
                                                 <binding destination="uUP-5n-ykj" name="valueURL" keyPath="creditsFileURL" id="Rxg-9s-cN1"/>
+                                                <binding destination="uUP-5n-ykj" name="editable" keyPath="isEditable" id="PvE-UH-iQL"/>
                                             </connections>
                                         </textView>
                                     </subviews>

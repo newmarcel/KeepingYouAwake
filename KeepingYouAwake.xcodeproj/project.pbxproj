@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
 		DA46C1EE1BDCDFB00050357C /* NSUserDefaults+Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */; };
+		DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */; };
 		DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */; };
 		DA5A50941ACC5C5400A444C8 /* KYAEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A50931ACC5C5400A444C8 /* KYAEvent.m */; };
 		DA637B3F19F14693004C8838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B3E19F14693004C8838 /* main.m */; };
@@ -48,6 +49,8 @@
 		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
 		DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Keys.h"; sourceTree = "<group>"; };
 		DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Keys.m"; sourceTree = "<group>"; };
+		DA51E7DC1C2562A2008AA96C /* KYAActivationDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAActivationDuration.h; sourceTree = "<group>"; };
+		DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAActivationDuration.m; sourceTree = "<group>"; };
 		DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+LoginItem.h"; sourceTree = "<group>"; };
 		DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+LoginItem.m"; sourceTree = "<group>"; };
 		DA5A50921ACC5C5400A444C8 /* KYAEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEvent.h; sourceTree = "<group>"; };
@@ -126,6 +129,38 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		DA51E7DF1C2562BE008AA96C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */,
+				DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */,
+				DA51E7DC1C2562A2008AA96C /* KYAActivationDuration.h */,
+				DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		DA51E7E01C2562C4008AA96C /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				DAB128671C2453F600831045 /* KYAAdvancedPreferencesViewController.h */,
+				DAB128681C2453F600831045 /* KYAAdvancedPreferencesViewController.m */,
+				DAB128741C2493DB00831045 /* KYAPreference.h */,
+				DAB128751C2493DB00831045 /* KYAPreference.m */,
+			);
+			name = Advanced;
+			sourceTree = "<group>";
+		};
+		DA51E7E11C2562CA008AA96C /* About */ = {
+			isa = PBXGroup;
+			children = (
+				DAB1286A1C24540200831045 /* KYAAboutPreferencesViewController.h */,
+				DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */,
+				DAB1286D1C245A6C00831045 /* Credits.rtf */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
 		DA637B3019F14693004C8838 = {
 			isa = PBXGroup;
 			children = (
@@ -187,15 +222,9 @@
 			isa = PBXGroup;
 			children = (
 				DA82B1121C24231C00FA46E0 /* Preferences.storyboard */,
-				DAB1286D1C245A6C00831045 /* Credits.rtf */,
-				DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */,
-				DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */,
-				DAB128671C2453F600831045 /* KYAAdvancedPreferencesViewController.h */,
-				DAB128681C2453F600831045 /* KYAAdvancedPreferencesViewController.m */,
-				DAB128741C2493DB00831045 /* KYAPreference.h */,
-				DAB128751C2493DB00831045 /* KYAPreference.m */,
-				DAB1286A1C24540200831045 /* KYAAboutPreferencesViewController.h */,
-				DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */,
+				DA51E7DF1C2562BE008AA96C /* General */,
+				DA51E7E01C2562C4008AA96C /* Advanced */,
+				DA51E7E11C2562CA008AA96C /* About */,
 			);
 			name = Preferences;
 			sourceTree = "<group>";
@@ -335,6 +364,7 @@
 				DAB128711C245F1B00831045 /* NSApplication+Versions.m in Sources */,
 				DAB128691C2453F600831045 /* KYAAdvancedPreferencesViewController.m in Sources */,
 				DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */,
+				DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.m in Sources */,
 				DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */,
 				DAB268721A0D6BC600B58AD6 /* KYASleepWakeTimer.m in Sources */,
 				DA637B3F19F14693004C8838 /* main.m in Sources */,
