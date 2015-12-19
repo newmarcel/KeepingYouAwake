@@ -33,7 +33,7 @@
     
     // Pre-populate the activation durations
     self.activationDurations = @[
-                                 KYA_DURATION_S(0), KYA_DURATION_S(10),
+                                 KYA_DURATION_S(0),
                                  KYA_DURATION_M(5), KYA_DURATION_M(10), KYA_DURATION_M(15), KYA_DURATION_M(30),
                                  KYA_DURATION_H(1), KYA_DURATION_H(2), KYA_DURATION_H(5)
                                  ];
