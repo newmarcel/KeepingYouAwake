@@ -39,7 +39,7 @@
 
 - (void)dealloc
 {
-    [self.startAtLoginCheckBoxButton unbind:@"state"];
+    [self.startAtLoginCheckBoxButton unbind:@"value"];
 }
 
 @end
