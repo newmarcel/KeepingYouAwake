@@ -9,5 +9,4 @@
 #import <Cocoa/Cocoa.h>
 
 @interface KYAAdvancedPreferencesViewController : NSViewController
-
 @end
