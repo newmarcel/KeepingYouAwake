@@ -8,6 +8,8 @@
 
 #import "KYAActivationDuration.h"
 
+NSTimeInterval const KYAActivationDurationIndefinite = 0.0;
+
 @interface KYAActivationDuration ()
 @property (nonatomic, readwrite) NSTimeInterval seconds;
 @property (nonatomic, readwrite) NSCalendarUnit displayUnit;
@@ -65,3 +67,30 @@
 }
 
 @end
+
+#pragma mark - Convenience Helper Functions
+
+static inline NSTimeInterval KYAMinutesToSeconds(NSInteger minutes)
+{
+    return (NSTimeInterval)(minutes * 60.0f);
+}
+
+static inline NSTimeInterval KYAHoursToSeconds(NSInteger hours)
+{
+    return (NSTimeInterval)(hours * 3600.0f);
+}
+
+KYAActivationDuration * KYADurationForSeconds(NSInteger seconds)
+{
+    return [[KYAActivationDuration alloc] initWithSeconds:seconds];
+}
+
+KYAActivationDuration * KYADurationForMinutes(NSInteger minutes)
+{
+    return [[KYAActivationDuration alloc] initWithSeconds:KYAMinutesToSeconds(minutes) displayUnit:NSCalendarUnitMinute];
+}
+
+KYAActivationDuration * KYADurationForHours(NSInteger hours)
+{
+    return [[KYAActivationDuration alloc] initWithSeconds:KYAHoursToSeconds(hours) displayUnit:NSCalendarUnitHour];
+}
