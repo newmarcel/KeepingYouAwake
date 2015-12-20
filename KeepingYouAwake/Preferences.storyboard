@@ -176,23 +176,23 @@
             <objects>
                 <viewController title="Advanced" id="5bL-cI-YIY" customClass="KYAAdvancedPreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="MoT-zz-pka">
-                        <rect key="frame" x="0.0" y="0.0" width="451" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="32" horizontalPageScroll="10" verticalLineScroll="32" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acy-aE-rAZ">
-                                <rect key="frame" x="-1" y="-1" width="453" height="227"/>
+                                <rect key="frame" x="-1" y="-1" width="452" height="227"/>
                                 <clipView key="contentView" id="0HM-dh-kcL">
-                                    <rect key="frame" x="1" y="1" width="451" height="225"/>
+                                    <rect key="frame" x="1" y="1" width="450" height="225"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="30" viewBased="YES" id="AXu-53-kJt">
-                                            <rect key="frame" x="0.0" y="0.0" width="451" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="225"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="448" minWidth="40" maxWidth="1000" id="hVr-Yp-5fd">
+                                                <tableColumn width="447" minWidth="40" maxWidth="1000" id="hVr-Yp-5fd">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -206,7 +206,7 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="0sK-FS-WIT">
-                                                            <rect key="frame" x="1" y="1" width="448" height="30"/>
+                                                            <rect key="frame" x="1" y="1" width="447" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <button translatesAutoresizingMaskIntoConstraints="NO" id="Tya-Od-8Cw">
@@ -253,7 +253,7 @@
                                 </scroller>
                             </scrollView>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="410" translatesAutoresizingMaskIntoConstraints="NO" id="0Ex-7I-4ay">
-                                <rect key="frame" x="18" y="246" width="415" height="34"/>
+                                <rect key="frame" x="18" y="246" width="414" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="410" id="UYq-Nu-y03"/>
                                 </constraints>
