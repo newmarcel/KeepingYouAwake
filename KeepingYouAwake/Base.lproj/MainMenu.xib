@@ -788,12 +788,6 @@
                         <action selector="showPreferencesWindow:" target="Voe-Tx-rLC" id="DTK-lU-Ruk"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Check for Updates…" id="srV-qg-fvz">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="checkForUpdates:" target="8QH-MG-rpV" id="M12-ZI-Ydb"/>
-                    </connections>
-                </menuItem>
                 <menuItem isSeparatorItem="YES" id="uIp-Lg-WoB"/>
                 <menuItem title="Quit" keyEquivalent="q" id="7is-vc-kz7">
                     <connections>
