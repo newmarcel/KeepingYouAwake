@@ -39,10 +39,6 @@
                                                     defaultsKey:@"info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled"
                             ]];
     
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Prevent sleep with closed lid when on AC power (dangerous!)", nil)
-                                                    defaultsKey:@"info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower"
-                            ]];
-    
     [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Enable experimental Notification Center integration", nil)
                                                     defaultsKey:@"info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled"
                             ]];
