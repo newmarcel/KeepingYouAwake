@@ -24,7 +24,7 @@ This utility is just a small wrapper around Apple's caffeinate command line util
 
 ## Is this dangerous? ##
 
-Just to make it clear: This utility shouldn't harm your Mac because it is using an official command line tool from Apple, **BUT** I cannot guarantee anything, so use this tool **AT YOUR OWN RISK**.
+Just to make it clear: this utility shouldn't harm your Mac because it is using an official command line tool from Apple, **BUT** I cannot guarantee anything, so use this tool **AT YOUR OWN RISK**.
 
 ## Help Needed! ##
 
