@@ -6,6 +6,8 @@
 
 - Added a preferences window that replaces seldom used menu items and surfaces advanced and experimental preferences
 - You can now set the default activation duration for the menu bar icon in preferences
+- Removed the advanced preference for `info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower`
+- Added an advanced preference to allow display sleep while still preventing system sleep ([Issue #25](https://github.com/newmarcel/KeepingYouAwake/issues/25))
 - …
 
 ### v1.3.1 ###

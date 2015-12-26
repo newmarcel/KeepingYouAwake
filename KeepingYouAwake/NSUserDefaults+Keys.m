@@ -12,13 +12,13 @@
 NSString * const KYAUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch";
 NSString * const KYAUserDefaultsKeyNotificationsEnabled = @"info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled";
 NSString * const KYAUserDefaultsKeyDefaultTimeInterval = @"info.marcel-dierkes.KeepingYouAwake.TimeInterval";
-NSString * const KYAUserDefaultsKeyPreventSleepOnACPower = @"info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower";
+NSString * const KYAUserDefaultsKeyAllowDisplaySleep = @"info.marcel-dierkes.KeepingYouAwake.AllowDisplaySleep";
 NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled = @"info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled";
 
 
 @implementation NSUserDefaults (Keys)
 @dynamic kya_activateOnLaunch, kya_defaultTimeInterval, kya_notificationsEnabled;
-@dynamic kya_preventSleepOnACPower, kya_menuBarIconHighlightDisabled;
+@dynamic kya_allowDisplaySleep, kya_menuBarIconHighlightDisabled;
 
 #pragma mark - Activate on Launch
 
@@ -56,16 +56,16 @@ NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled = @"info.marcel-
     [self setInteger:(NSInteger)defaultTimeInterval forKey:KYAUserDefaultsKeyDefaultTimeInterval];  // decimal places will be cut-off
 }
 
-#pragma mark - Prevent Sleep On AC Power
+#pragma mark - Allow Display Sleep
 
-- (BOOL)kya_isPreventingSleepOnACPower
+- (BOOL)kya_shouldAllowDisplaySleep
 {
-    return [self boolForKey:KYAUserDefaultsKeyPreventSleepOnACPower];
+    return [self boolForKey:KYAUserDefaultsKeyAllowDisplaySleep];
 }
 
-- (void)setKya_preventSleepOnACPower:(BOOL)preventSleepOnACPower
+- (void)setKya_allowDisplaySleep:(BOOL)allowDisplaySleep
 {
-    [self setBool:preventSleepOnACPower forKey:KYAUserDefaultsKeyPreventSleepOnACPower];
+    [self setBool:allowDisplaySleep forKey:KYAUserDefaultsKeyAllowDisplaySleep];
 }
 
 #pragma mark - Menu Bar Icon Highlight Disabled

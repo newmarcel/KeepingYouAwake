@@ -8,6 +8,7 @@
 
 #import "KYAAdvancedPreferencesViewController.h"
 #import "KYAPreference.h"
+#import "NSUserDefaults+Keys.h"
 
 @interface KYAAdvancedPreferencesViewController () <NSTableViewDataSource, NSTableViewDelegate>
 @property (nonatomic, nonnull) NSArray<KYAPreference *> *preferences;
@@ -36,11 +37,15 @@
     NSMutableArray *preferences = [NSMutableArray new];
     
     [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Disable menu bar icon highlight color", nil)
-                                                    defaultsKey:@"info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled"
+                                                    defaultsKey:KYAUserDefaultsKeyMenuBarIconHighlightDisabled
                             ]];
     
     [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Enable experimental Notification Center integration", nil)
-                                                    defaultsKey:@"info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled"
+                                                    defaultsKey:KYAUserDefaultsKeyNotificationsEnabled
+                            ]];
+    
+    [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Allow the display to sleep (when connected to AC power)", nil)
+                                                    defaultsKey:KYAUserDefaultsKeyAllowDisplaySleep
                             ]];
     
     self.preferences = [preferences copy];

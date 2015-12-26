@@ -10,6 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// User Default Keys
+NSString * const KYAUserDefaultsKeyActivateOnLaunch;
+NSString * const KYAUserDefaultsKeyNotificationsEnabled;
+NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
+NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
+NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
+
+
 @interface NSUserDefaults (Keys)
 
 /**
@@ -28,9 +36,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSTimeInterval kya_defaultTimeInterval;
 
 /**
- *  Returns YES if the app should prevent sleep when connected to AC power with the lid closed.
+ *  Returns YES if the app should allow the display to sleep while still keeping the system awake (AC-only). This exposes the `caffeinate -s` command.
  */
-@property (nonatomic, getter = kya_isPreventingSleepOnACPower) BOOL kya_preventSleepOnACPower;
+@property (nonatomic, getter = kya_shouldAllowDisplaySleep) BOOL kya_allowDisplaySleep;
 
 /**
  *  Returns YES if the menu bar icon should not be highlighted on left and right click.
