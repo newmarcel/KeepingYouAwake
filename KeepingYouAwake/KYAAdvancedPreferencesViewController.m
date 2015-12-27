@@ -51,6 +51,18 @@
     self.preferences = [preferences copy];
 }
 
+#pragma mark - Reset Advanced Preferences
+
+- (IBAction)resetAdvancedPreferences:(id)sender
+{
+    for(KYAPreference *pref in self.preferences)
+    {
+        [pref reset];
+    }
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table View Delegate & Data Source
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView

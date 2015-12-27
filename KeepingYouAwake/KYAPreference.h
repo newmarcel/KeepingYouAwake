@@ -18,6 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithTitle:(NSString *)title defaultsKey:(NSString *)defaultsKey;
 
+/**
+ *  Reset the preference to its default value. Do not forget to synchronize user defaults afterwards.
+ */
+- (void)reset;
+
 @end
 
 NS_ASSUME_NONNULL_END

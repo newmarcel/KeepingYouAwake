@@ -48,4 +48,11 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+#pragma mark - Reset
+
+- (void)reset
+{
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:self.defaultsKey];
+}
+
 @end

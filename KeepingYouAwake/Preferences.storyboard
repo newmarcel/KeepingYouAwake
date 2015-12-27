@@ -176,17 +176,17 @@
             <objects>
                 <viewController title="Advanced" id="5bL-cI-YIY" customClass="KYAAdvancedPreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="MoT-zz-pka">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="322"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="328"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="32" horizontalPageScroll="10" verticalLineScroll="32" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acy-aE-rAZ">
-                                <rect key="frame" x="-1" y="-1" width="452" height="202"/>
+                                <rect key="frame" x="-1" y="-1" width="452" height="200"/>
                                 <clipView key="contentView" id="0HM-dh-kcL">
-                                    <rect key="frame" x="1" y="1" width="450" height="200"/>
+                                    <rect key="frame" x="1" y="1" width="450" height="198"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="30" viewBased="YES" id="AXu-53-kJt">
-                                            <rect key="frame" x="0.0" y="0.0" width="450" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="198"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -252,19 +252,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="410" translatesAutoresizingMaskIntoConstraints="NO" id="0Ex-7I-4ay">
-                                <rect key="frame" x="18" y="217" width="414" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="410" id="UYq-Nu-y03"/>
-                                </constraints>
+                            <textField horizontalHuggingPriority="200" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="0Ex-7I-4ay">
+                                <rect key="frame" x="18" y="215" width="272" height="42"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart." id="OsK-jX-EzO">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="um7-0A-CIi">
-                                <rect key="frame" x="20" y="265" width="410" height="5"/>
+                                <rect key="frame" x="20" y="271" width="410" height="5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="410" id="SXj-gC-D56"/>
                                 </constraints>
@@ -273,7 +270,7 @@
                                 <font key="titleFont" metaFont="system"/>
                             </box>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-id-7AV">
-                                <rect key="frame" x="18" y="286" width="221" height="18"/>
+                                <rect key="frame" x="18" y="292" width="221" height="18"/>
                                 <buttonCell key="cell" type="check" title="Automatically Check for Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="RY6-7F-Z7R">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -283,13 +280,23 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GY5-gO-OmB">
-                                <rect key="frame" x="327" y="277" width="109" height="32"/>
+                                <rect key="frame" x="327" y="283" width="109" height="32"/>
                                 <buttonCell key="cell" type="push" title="Check Now" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Icg-VI-pC8">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="checkForUpdates:" target="xbZ-zI-2sg" id="Tbk-N3-4SE"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hJJ-q4-63o">
+                                <rect key="frame" x="298" y="208" width="138" height="32"/>
+                                <buttonCell key="cell" type="push" title="Reset to Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EXv-vC-wyo">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="resetAdvancedPreferences:" target="5bL-cI-YIY" id="LZy-0l-1S4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -302,15 +309,20 @@
                             <constraint firstItem="Acy-aE-rAZ" firstAttribute="trailing" secondItem="MoT-zz-pka" secondAttribute="trailing" constant="1" id="Lkr-hZ-OFa"/>
                             <constraint firstItem="0Ex-7I-4ay" firstAttribute="leading" secondItem="MoT-zz-pka" secondAttribute="leading" constant="20" id="Ma1-MQ-xu6"/>
                             <constraint firstItem="um7-0A-CIi" firstAttribute="leading" secondItem="MoT-zz-pka" secondAttribute="leading" constant="20" id="Ord-rc-hZ4"/>
+                            <constraint firstItem="hJJ-q4-63o" firstAttribute="leading" secondItem="0Ex-7I-4ay" secondAttribute="trailing" constant="16" id="YF3-sh-k7b"/>
+                            <constraint firstItem="hJJ-q4-63o" firstAttribute="bottom" secondItem="0Ex-7I-4ay" secondAttribute="bottom" id="Ztb-Oo-9gk"/>
                             <constraint firstItem="yhJ-id-7AV" firstAttribute="leading" secondItem="MoT-zz-pka" secondAttribute="leading" constant="20" id="aia-hO-eCS"/>
                             <constraint firstItem="Acy-aE-rAZ" firstAttribute="bottom" secondItem="MoT-zz-pka" secondAttribute="bottom" constant="1" id="alY-0M-QrW"/>
                             <constraint firstItem="Acy-aE-rAZ" firstAttribute="top" secondItem="0Ex-7I-4ay" secondAttribute="bottom" constant="16" id="evx-BF-Oqj"/>
                             <constraint firstItem="0Ex-7I-4ay" firstAttribute="top" secondItem="um7-0A-CIi" secondAttribute="bottom" constant="16" id="iCR-cj-Xmg"/>
                             <constraint firstAttribute="trailing" secondItem="GY5-gO-OmB" secondAttribute="trailing" constant="20" id="k7E-5d-mDP"/>
                             <constraint firstItem="yhJ-id-7AV" firstAttribute="top" secondItem="MoT-zz-pka" secondAttribute="top" constant="20" id="vUM-IT-NWd"/>
-                            <constraint firstAttribute="trailing" secondItem="0Ex-7I-4ay" secondAttribute="trailing" constant="20" id="vzN-Kg-A46"/>
+                            <constraint firstAttribute="trailing" secondItem="hJJ-q4-63o" secondAttribute="trailing" constant="20" id="vyS-ob-s3o"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="AXu-53-kJt" id="Wjd-v1-Bmj"/>
+                    </connections>
                 </viewController>
                 <customObject id="t0A-Qw-fEU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <customObject id="xbZ-zI-2sg" customClass="SUUpdater"/>

@@ -9,4 +9,13 @@
 #import <Cocoa/Cocoa.h>
 
 @interface KYAAdvancedPreferencesViewController : NSViewController
+@property (weak, nonatomic, nullable) IBOutlet NSTableView *tableView;
+
+/**
+ *  Resets all advanced preferences to their default value.
+ *
+ *  @param sender A sender.
+ */
+- (IBAction)resetAdvancedPreferences:(id)sender;
+
 @end
