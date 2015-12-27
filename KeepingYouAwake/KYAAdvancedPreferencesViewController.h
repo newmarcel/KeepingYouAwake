@@ -16,6 +16,6 @@
  *
  *  @param sender A sender.
  */
-- (IBAction)resetAdvancedPreferences:(id)sender;
+- (IBAction)resetAdvancedPreferences:(nullable id)sender;
 
 @end
