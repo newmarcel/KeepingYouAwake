@@ -15,10 +15,13 @@ NSString * const KYAUserDefaultsKeyDefaultTimeInterval = @"info.marcel-dierkes.K
 NSString * const KYAUserDefaultsKeyAllowDisplaySleep = @"info.marcel-dierkes.KeepingYouAwake.AllowDisplaySleep";
 NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled = @"info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled";
 
+NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled = @"info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled";
+NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold = @"info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThreshold";
 
 @implementation NSUserDefaults (Keys)
 @dynamic kya_activateOnLaunch, kya_defaultTimeInterval, kya_notificationsEnabled;
 @dynamic kya_allowDisplaySleep, kya_menuBarIconHighlightDisabled;
+@dynamic kya_batteryCapacityThresholdEnabled, kya_batteryCapacityThreshold;
 
 #pragma mark - Activate on Launch
 
@@ -78,6 +81,29 @@ NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled = @"info.marcel-
 - (void)setKya_menuBarIconHighlightDisabled:(BOOL)menuBarIconHighlightDisabled
 {
     [self setBool:menuBarIconHighlightDisabled forKey:KYAUserDefaultsKeyMenuBarIconHighlightDisabled];
+}
+
+#pragma mark - Battery Capacity Threshold
+
+- (BOOL)kya_isBatteryCapacityThresholdEnabled
+{
+    return [self boolForKey:KYAUserDefaultsKeyBatteryCapacityThresholdEnabled];
+}
+
+- (void)setKya_batteryCapacityThresholdEnabled:(BOOL)batteryCapacityThresholdEnabled
+{
+    [self setBool:batteryCapacityThresholdEnabled forKey:KYAUserDefaultsKeyBatteryCapacityThresholdEnabled];
+}
+
+- (CGFloat)kya_batteryCapacityThreshold
+{
+    CGFloat threshold = [self floatForKey:KYAUserDefaultsKeyBatteryCapacityThreshold];
+    return MAX(10.0f , threshold);
+}
+
+- (void)setKya_batteryCapacityThreshold:(CGFloat)batteryCapacityThreshold
+{
+    [self setFloat:(float)batteryCapacityThreshold forKey:KYAUserDefaultsKeyBatteryCapacityThreshold];
 }
 
 @end

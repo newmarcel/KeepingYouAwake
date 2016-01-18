@@ -16,7 +16,8 @@ NSString * const KYAUserDefaultsKeyNotificationsEnabled;
 NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
 NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
 NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
-
+NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
+NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
 
 @interface NSUserDefaults (Keys)
 
@@ -44,6 +45,18 @@ NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
  *  Returns YES if the menu bar icon should not be highlighted on left and right click.
  */
 @property (nonatomic, getter = kya_isMenuBarIconHighlightDisabled) BOOL kya_menuBarIconHighlightDisabled;
+
+/**
+ *  Returns YES if the sleep wake timer should deactivate below a defined battery capacity threshold.
+ */
+@property (nonatomic, getter = kya_isBatteryCapacityThresholdEnabled) BOOL kya_batteryCapacityThresholdEnabled;
+
+/**
+ *  A battery capacity threshold.
+ *
+ *  If the user defaults value is below 10.0, 10.0 will be returned.
+ */
+@property (nonatomic) CGFloat kya_batteryCapacityThreshold;
 
 @end
 
