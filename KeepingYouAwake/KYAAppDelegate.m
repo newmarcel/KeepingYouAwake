@@ -14,14 +14,6 @@
 
 @implementation KYAAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-}
-
-- (void)applicationWillTerminate:(NSNotification *)aNotification
-{
-}
-
 #pragma mark - Preferences Window
 
 - (NSWindowController *)preferencesWindowController

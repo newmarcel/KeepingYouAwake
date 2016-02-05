@@ -196,8 +196,6 @@
 		DA637B3B19F14693004C8838 /* KeepingYouAwake */ = {
 			isa = PBXGroup;
 			children = (
-				DA637B4519F14693004C8838 /* MainMenu.xib */,
-				DA637B4319F14693004C8838 /* Images.xcassets */,
 				DA637B4019F14693004C8838 /* KYAAppDelegate.h */,
 				DA637B4119F14693004C8838 /* KYAAppDelegate.m */,
 				DA637B5C19F146B6004C8838 /* KYAAppController.h */,
@@ -209,6 +207,7 @@
 				DA5B5A241C28612800EE45C6 /* Battery Status */,
 				DA4919C51ACFFF8D00D44F6A /* Event Handler */,
 				DA4919C61ACFFF9600D44F6A /* Extensions */,
+				DAC322C91C65199300DF8B63 /* Resources */,
 			);
 			path = KeepingYouAwake;
 			sourceTree = "<group>";
@@ -242,6 +241,15 @@
 				DA51E7E11C2562CA008AA96C /* About */,
 			);
 			name = Preferences;
+			sourceTree = "<group>";
+		};
+		DAC322C91C65199300DF8B63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA637B4519F14693004C8838 /* MainMenu.xib */,
+				DA637B4319F14693004C8838 /* Images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
