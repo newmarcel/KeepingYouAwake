@@ -17,11 +17,13 @@ NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled = @"info.marcel-
 
 NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled = @"info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled";
 NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold = @"info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThreshold";
+NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dierkes.KeepingYouAwake.PreReleaseUpdatesEnabled";
 
 @implementation NSUserDefaults (Keys)
 @dynamic kya_activateOnLaunch, kya_defaultTimeInterval, kya_notificationsEnabled;
 @dynamic kya_allowDisplaySleep, kya_menuBarIconHighlightDisabled;
 @dynamic kya_batteryCapacityThresholdEnabled, kya_batteryCapacityThreshold;
+@dynamic kya_preReleaseUpdatesEnabled;
 
 #pragma mark - Activate on Launch
 
@@ -104,6 +106,18 @@ NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold = @"info.marcel-dier
 - (void)setKya_batteryCapacityThreshold:(CGFloat)batteryCapacityThreshold
 {
     [self setFloat:(float)batteryCapacityThreshold forKey:KYAUserDefaultsKeyBatteryCapacityThreshold];
+}
+
+#pragma mark - Pre-Release Updates Enabled
+
+- (BOOL)kya_arePreReleaseUpdatesEnabled
+{
+    return [self boolForKey:KYAUserDefaultsKeyPreReleaseUpdatesEnabled];
+}
+
+- (void)setKya_preReleaseUpdatesEnabled:(BOOL)preReleaseUpdatesEnabled
+{
+    [self setBool:preReleaseUpdatesEnabled forKey:KYAUserDefaultsKeyPreReleaseUpdatesEnabled];
 }
 
 @end

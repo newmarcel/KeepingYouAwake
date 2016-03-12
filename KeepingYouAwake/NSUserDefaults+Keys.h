@@ -18,6 +18,7 @@ NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
 NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
 NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
 NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
+NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
 
 @interface NSUserDefaults (Keys)
 
@@ -57,6 +58,11 @@ NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
  *  If the user defaults value is below 10.0, 10.0 will be returned.
  */
 @property (nonatomic) CGFloat kya_batteryCapacityThreshold;
+
+/**
+ *  Returns YES if Sparkle should check for pre-release updates.
+ */
+@property (nonatomic, getter = kya_arePreReleaseUpdatesEnabled) BOOL kya_preReleaseUpdatesEnabled;
 
 @end
 

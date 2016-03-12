@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="uZF-hQ-SQu">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10115" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="uZF-hQ-SQu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10115"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -176,7 +176,7 @@
             <objects>
                 <viewController title="Advanced" id="5bL-cI-YIY" customClass="KYAAdvancedPreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="MoT-zz-pka">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="376"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="396"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="32" horizontalPageScroll="10" verticalLineScroll="32" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acy-aE-rAZ">
@@ -186,7 +186,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="30" viewBased="YES" id="AXu-53-kJt">
-                                            <rect key="frame" x="0.0" y="0.0" width="450" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="118"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -270,7 +270,7 @@
                                 <font key="titleFont" metaFont="system"/>
                             </box>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-id-7AV">
-                                <rect key="frame" x="18" y="340" width="221" height="18"/>
+                                <rect key="frame" x="18" y="360" width="221" height="18"/>
                                 <buttonCell key="cell" type="check" title="Automatically Check for Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="RY6-7F-Z7R">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -280,7 +280,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GY5-gO-OmB">
-                                <rect key="frame" x="327" y="331" width="109" height="32"/>
+                                <rect key="frame" x="327" y="351" width="109" height="32"/>
                                 <buttonCell key="cell" type="push" title="Check Now" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Icg-VI-pC8">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -380,10 +380,20 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="7g9-Dq-r9G">
+                                <rect key="frame" x="38" y="336" width="213" height="18"/>
+                                <buttonCell key="cell" type="check" title="Check for Pre-Release Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="0Fs-xW-EeB">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="oKX-YF-h6g" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.PreReleaseUpdatesEnabled" id="Jsc-zl-kbe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="um7-0A-CIi" firstAttribute="top" secondItem="7g9-Dq-r9G" secondAttribute="bottom" constant="16" id="0cC-1j-spX"/>
                             <constraint firstAttribute="trailing" secondItem="um7-0A-CIi" secondAttribute="trailing" constant="20" id="1B2-fK-Vo9"/>
-                            <constraint firstItem="um7-0A-CIi" firstAttribute="top" secondItem="GY5-gO-OmB" secondAttribute="bottom" constant="16" id="49B-Rw-ohk"/>
                             <constraint firstItem="XC5-67-b50" firstAttribute="top" secondItem="um7-0A-CIi" secondAttribute="bottom" constant="16" id="6aJ-HW-lhf"/>
                             <constraint firstItem="XC5-67-b50" firstAttribute="leading" secondItem="MoT-zz-pka" secondAttribute="leading" constant="20" id="7AY-lL-rtG"/>
                             <constraint firstItem="GY5-gO-OmB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yhJ-id-7AV" secondAttribute="trailing" constant="8" id="9l3-We-wAk"/>
@@ -396,6 +406,7 @@
                             <constraint firstItem="0Ex-7I-4ay" firstAttribute="leading" secondItem="MoT-zz-pka" secondAttribute="leading" constant="20" id="Ma1-MQ-xu6"/>
                             <constraint firstItem="Dhm-17-m0f" firstAttribute="leading" secondItem="MoT-zz-pka" secondAttribute="leading" constant="20" id="OM0-Cy-etU"/>
                             <constraint firstItem="um7-0A-CIi" firstAttribute="leading" secondItem="MoT-zz-pka" secondAttribute="leading" constant="20" id="Ord-rc-hZ4"/>
+                            <constraint firstItem="7g9-Dq-r9G" firstAttribute="top" secondItem="yhJ-id-7AV" secondAttribute="bottom" constant="10" id="PTN-sl-6BU"/>
                             <constraint firstItem="hJJ-q4-63o" firstAttribute="leading" secondItem="0Ex-7I-4ay" secondAttribute="trailing" constant="16" id="YF3-sh-k7b"/>
                             <constraint firstItem="hJJ-q4-63o" firstAttribute="bottom" secondItem="0Ex-7I-4ay" secondAttribute="bottom" id="Ztb-Oo-9gk"/>
                             <constraint firstItem="yhJ-id-7AV" firstAttribute="leading" secondItem="MoT-zz-pka" secondAttribute="leading" constant="20" id="aia-hO-eCS"/>
@@ -405,6 +416,7 @@
                             <constraint firstItem="Dhm-17-m0f" firstAttribute="top" secondItem="pV5-ai-NpG" secondAttribute="bottom" constant="16" id="fdd-Ig-Ey9"/>
                             <constraint firstAttribute="trailing" secondItem="GY5-gO-OmB" secondAttribute="trailing" constant="20" id="k7E-5d-mDP"/>
                             <constraint firstAttribute="trailing" secondItem="Dhm-17-m0f" secondAttribute="trailing" constant="20" id="mTu-O6-16k"/>
+                            <constraint firstItem="7g9-Dq-r9G" firstAttribute="leading" secondItem="MoT-zz-pka" secondAttribute="leading" constant="40" id="ov3-Zt-97p"/>
                             <constraint firstItem="X9f-RZ-Fws" firstAttribute="top" secondItem="XC5-67-b50" secondAttribute="bottom" constant="8" id="qIC-by-SZc"/>
                             <constraint firstItem="pV5-ai-NpG" firstAttribute="trailing" secondItem="X9f-RZ-Fws" secondAttribute="trailing" id="sxF-Q3-rw4"/>
                             <constraint firstItem="pV5-ai-NpG" firstAttribute="top" secondItem="X9f-RZ-Fws" secondAttribute="bottom" constant="8" id="uVM-Qt-Yes"/>
@@ -422,7 +434,7 @@
                 <customObject id="xbZ-zI-2sg" customClass="SUUpdater"/>
                 <userDefaultsController representsSharedInstance="YES" id="oKX-YF-h6g"/>
             </objects>
-            <point key="canvasLocation" x="1015" y="973"/>
+            <point key="canvasLocation" x="1015" y="991"/>
         </scene>
         <!--About-->
         <scene sceneID="M8G-nL-VpE">

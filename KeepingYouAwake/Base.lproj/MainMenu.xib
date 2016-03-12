@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10115" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10115"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -18,7 +18,11 @@
                 <outlet property="timerMenu" destination="uTe-0S-BFw" id="uJl-Rb-elA"/>
             </connections>
         </customObject>
-        <customObject id="8QH-MG-rpV" customClass="SUUpdater"/>
+        <customObject id="8QH-MG-rpV" customClass="SUUpdater">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="UqK-d2-hFU"/>
+            </connections>
+        </customObject>
         <menu id="RrS-wX-j75">
             <items>
                 <menuItem title="Activate for Duration" id="Bo6-IE-IbX">

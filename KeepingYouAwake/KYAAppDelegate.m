@@ -7,8 +7,10 @@
 //
 
 #import "KYAAppDelegate.h"
+#import <Sparkle/Sparkle.h>
+#import "NSUserDefaults+Keys.h"
 
-@interface KYAAppDelegate () <NSWindowDelegate>
+@interface KYAAppDelegate () <NSWindowDelegate, SUUpdaterDelegate>
 @property (nonatomic, nullable) NSWindowController *preferencesWindowController;
 @end
 
@@ -38,6 +40,23 @@
 - (void)windowWillClose:(NSNotification *)notification
 {
     self.preferencesWindowController = nil;
+}
+
+#pragma mark - Updater Delegate
+
+- (NSString *)feedURLStringForUpdater:(SUUpdater *)updater
+{
+    NSString *feedURLString = [NSBundle mainBundle].infoDictionary[@"SUFeedURL"];
+    NSAssert(feedURLString != nil, @"A feed URL should be set in Info.plist");
+    
+    if([[NSUserDefaults standardUserDefaults] kya_arePreReleaseUpdatesEnabled])
+    {
+        NSString *lastComponent = feedURLString.lastPathComponent;
+        NSString *baseURLString = feedURLString.stringByDeletingLastPathComponent;
+        return [NSString stringWithFormat:@"%@/prerelease-%@", baseURLString, lastComponent];
+    }
+    
+    return feedURLString;
 }
 
 @end
