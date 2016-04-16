@@ -10,6 +10,7 @@
 - Added an advanced preference to allow display sleep while still preventing system sleep ([Issue #25](https://github.com/newmarcel/KeepingYouAwake/issues/25))
 - Ability to set a battery level on MacBooks where the app will deactivate itself ([Issue #24](https://github.com/newmarcel/KeepingYouAwake/issues/24))
 	- *Thank you [timbru31](https://github.com/timbru31) for the suggestion!*
+- Upgraded to Sparkle 1.14.0 to fix potential security issues
 
 ### v1.3.1 ###
 
