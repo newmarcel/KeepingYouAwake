@@ -3,7 +3,7 @@
 "0Fs-xW-EeB.title" = "Inclure les pré-versions";
 
 /* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
-"5bL-cI-YIY.title" = "Advancées";
+"5bL-cI-YIY.title" = "Avancées";
 
 /* Class = "NSTabViewItem"; label = "About"; ObjectID = "7SI-Ao-IyM"; */
 "7SI-Ao-IyM.label" = "À propos";
@@ -18,19 +18,19 @@
 "Dhm-17-m0f.title" = "Boîte";
 
 /* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo"; */
-"EXv-vC-wyo.title" = "Régler sur défaut";
+"EXv-vC-wyo.title" = "Rétablir les réglages par défaut";
 
 /* Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX"; */
 "G1k-8T-EcX.title" = "Version 2016";
 
 /* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r"; */
-"IOU-Hs-S4r.title" = "Activer au démarrage";
+"IOU-Hs-S4r.title" = "Activer au lancement";
 
 /* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "Icg-VI-pC8"; */
-"Icg-VI-pC8.title" = "Vérifier maintenant";
+"Icg-VI-pC8.title" = "Maintenant";
 
 /* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO"; */
-"OsK-jX-EzO.title" = "Ne modifiez ces préférences avancées que si vous savez ce que vous faites.  La plupart de ces options requièrent un redémarrage de l'application.";
+"OsK-jX-EzO.title" = "Ces préférences avancées sont à vos risques et périls et requièrent un redémarrage de KeepingYouAwake.";
 
 /* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1"; */
 "QIk-WP-qH1.title" = "Lancer au démarrage";
@@ -42,7 +42,7 @@
 "Rb3-Sm-byr.title" = "90 %";
 
 /* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B"; */
-"S6p-h0-H5B.title" = "Empêcher la mise ne veille dès le lancement.";
+"S6p-h0-H5B.title" = "Empêche la mise en veille dès le lancement de KeepingYouAwake.";
 
 /* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
 "UVY-8B-q5H.title" = "Durée d'activation par défaut :";
@@ -63,7 +63,7 @@
 "jtC-7z-zRZ.title" = "Non disponible";
 
 /* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l"; */
-"k65-yi-85l.title" = "Cette valeur sera ignorée quand vous lancer l'application manuellement en dessous de ce niveau de batterie.";
+"k65-yi-85l.title" = "Cette réglage sera ignoré si vous lancez l'application manuellement et que la batterie se trouve en dessous de cette valeur.";
 
 /* Class = "NSButtonCell"; title = "Check"; ObjectID = "kG2-Tz-t51"; */
 "kG2-Tz-t51.title" = "Vérifier";
@@ -75,7 +75,7 @@
 "mWq-RG-yCf.label" = "Avancées";
 
 /* Class = "NSTextFieldCell"; title = "Sets the default activation duration for the menu bar icon."; ObjectID = "nnA-d3-VV6"; */
-"nnA-d3-VV6.title" = "Définir la durée d'activation par défaut pour le menu de la barre d'état.";
+"nnA-d3-VV6.title" = "Définit la durée d'activation par défaut pour le menu Activer pour...";
 
 /* Class = "NSTextFieldCell"; title = "KeepingYouAwake"; ObjectID = "nsg-DI-kE2"; */
 "nsg-DI-kE2.title" = "KeepingYouAwake";
@@ -93,4 +93,23 @@
 "um7-0A-CIi.title" = "Box";
 
 /* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU"; */
-"x6s-XD-lBU.title" = "Lancer l'application au démarrage du Mac.";
+"x6s-XD-lBU.title" = "Lance KeepingYouAwake au démarrage du Mac.";
+
+
+// Other strings
+//
+
+// KYAActivationDuration.m line 42
+"Indefinitely" = "Indéfiniment";
+
+// KYAAdvancedPreferencesViewController.m line 46
+"Enable experimental Notification Center integration" = "Intégrer avec le centre de notification (beta)";
+
+// KYAAdvancedPreferencesViewController.m line 50
+"Allow the display to sleep (when connected to AC power)" = "Mettre l'écran en veille (quand alimenté sur secteur)";
+
+// KYAAdvancedPreferencesViewController.m line 54
+"Disable menu bar icon highlight color" = "Ne pas mettre l'icône de la barre de menu en surbrillance ";
+
+
+
