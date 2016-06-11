@@ -1,9 +1,9 @@
 
 /* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "0Fs-xW-EeB"; */
-"0Fs-xW-EeB.title" = "Inclure les pré-versions";
+"0Fs-xW-EeB.title" = "Inclure les versions beta";
 
 /* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
-"5bL-cI-YIY.title" = "Avancées";
+"5bL-cI-YIY.title" = "Avancé";
 
 /* Class = "NSTabViewItem"; label = "About"; ObjectID = "7SI-Ao-IyM"; */
 "7SI-Ao-IyM.label" = "À propos";
@@ -27,13 +27,13 @@
 "IOU-Hs-S4r.title" = "Activer au lancement";
 
 /* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "Icg-VI-pC8"; */
-"Icg-VI-pC8.title" = "Maintenant";
+"Icg-VI-pC8.title" = "Vérifier maintenant";
 
 /* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO"; */
 "OsK-jX-EzO.title" = "Ces préférences avancées sont à vos risques et périls et requièrent un redémarrage de KeepingYouAwake.";
 
 /* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1"; */
-"QIk-WP-qH1.title" = "Lancer au démarrage";
+"QIk-WP-qH1.title" = "Lancer au démarrage de la session";
 
 /* Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "RY6-7F-Z7R"; */
 "RY6-7F-Z7R.title" = "Vérifier les mise-à-jour automatiquement";
@@ -42,7 +42,7 @@
 "Rb3-Sm-byr.title" = "90 %";
 
 /* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B"; */
-"S6p-h0-H5B.title" = "Empêche la mise en veille dès le lancement de KeepingYouAwake.";
+"S6p-h0-H5B.title" = "Empêcher la mise en veille dès le lancement de KeepingYouAwake.";
 
 /* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
 "UVY-8B-q5H.title" = "Durée d'activation par défaut :";
@@ -63,16 +63,16 @@
 "jtC-7z-zRZ.title" = "Non disponible";
 
 /* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l"; */
-"k65-yi-85l.title" = "Cette réglage sera ignoré si vous lancez l'application manuellement et que la batterie se trouve en dessous de cette valeur.";
+"k65-yi-85l.title" = "Ce réglage sera ignoré si vous lancez l'application manuellement et que la batterie se trouve en dessous de cette valeur.";
 
 /* Class = "NSButtonCell"; title = "Check"; ObjectID = "kG2-Tz-t51"; */
 "kG2-Tz-t51.title" = "Vérifier";
 
 /* Class = "NSViewController"; title = "General"; ObjectID = "lGE-74-XwP"; */
-"lGE-74-XwP.title" = "Générales";
+"lGE-74-XwP.title" = "Général";
 
 /* Class = "NSTabViewItem"; label = "Advanced"; ObjectID = "mWq-RG-yCf"; */
-"mWq-RG-yCf.label" = "Avancées";
+"mWq-RG-yCf.label" = "Avancé";
 
 /* Class = "NSTextFieldCell"; title = "Sets the default activation duration for the menu bar icon."; ObjectID = "nnA-d3-VV6"; */
 "nnA-d3-VV6.title" = "Définit la durée d'activation par défaut pour le menu Activer pour...";
@@ -81,7 +81,7 @@
 "nsg-DI-kE2.title" = "KeepingYouAwake";
 
 /* Class = "NSTabViewItem"; label = "General"; ObjectID = "sEc-4w-F7u"; */
-"sEc-4w-F7u.label" = "Générales";
+"sEc-4w-F7u.label" = "Général";
 
 /* Class = "NSTextFieldCell"; title = "Copyright Label"; ObjectID = "siu-CP-Bg1"; */
 "siu-CP-Bg1.title" = "Copyright";
@@ -90,7 +90,7 @@
 "uUP-5n-ykj.title" = "À propos";
 
 /* Class = "NSBox"; title = "Box"; ObjectID = "um7-0A-CIi"; */
-"um7-0A-CIi.title" = "Box";
+"um7-0A-CIi.title" = "Boîte";
 
 /* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU"; */
 "x6s-XD-lBU.title" = "Lance KeepingYouAwake au démarrage du Mac.";
@@ -103,13 +103,10 @@
 "Indefinitely" = "Indéfiniment";
 
 // KYAAdvancedPreferencesViewController.m line 46
-"Enable experimental Notification Center integration" = "Intégrer avec le centre de notification (beta)";
+"Enable experimental Notification Center integration" = "Intégrer avec le Centre de notifications (beta)";
 
 // KYAAdvancedPreferencesViewController.m line 50
-"Allow the display to sleep (when connected to AC power)" = "Mettre l'écran en veille (quand alimenté sur secteur)";
+"Allow the display to sleep (when connected to AC power)" = "Permettre l'écran à se mettre en veille (lorsque alimenté sur une prise électrique)";
 
 // KYAAdvancedPreferencesViewController.m line 54
-"Disable menu bar icon highlight color" = "Ne pas mettre l'icône de la barre de menu en surbrillance ";
-
-
-
+"Disable menu bar icon highlight color" = "Désactiver la surbrillance de l'icône de la barre de menu";
