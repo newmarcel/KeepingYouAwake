@@ -27,13 +27,13 @@
 "IOU-Hs-S4r.title" = "Activer au lancement";
 
 /* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "Icg-VI-pC8"; */
-"Icg-VI-pC8.title" = "Vérifier maintenant";
+"Icg-VI-pC8.title" = "Maintenant";
 
 /* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO"; */
 "OsK-jX-EzO.title" = "Ces préférences avancées sont à vos risques et périls et requièrent un redémarrage de KeepingYouAwake.";
 
 /* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1"; */
-"QIk-WP-qH1.title" = "Lancer au démarrage de la session";
+"QIk-WP-qH1.title" = "Lancer au démarrage";
 
 /* Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "RY6-7F-Z7R"; */
 "RY6-7F-Z7R.title" = "Vérifier les mise-à-jour automatiquement";
@@ -42,7 +42,7 @@
 "Rb3-Sm-byr.title" = "90 %";
 
 /* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B"; */
-"S6p-h0-H5B.title" = "Empêcher la mise en veille dès le lancement de KeepingYouAwake.";
+"S6p-h0-H5B.title" = "Empêche la mise en veille dès le lancement de KeepingYouAwake.";
 
 /* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
 "UVY-8B-q5H.title" = "Durée d'activation par défaut :";
@@ -106,7 +106,7 @@
 "Enable experimental Notification Center integration" = "Intégrer avec le Centre de notifications (beta)";
 
 // KYAAdvancedPreferencesViewController.m line 50
-"Allow the display to sleep (when connected to AC power)" = "Permettre l'écran à se mettre en veille (lorsque alimenté sur une prise électrique)";
+"Allow the display to sleep (when connected to AC power)" = "Autoriser la mise en veille de l'écran (avec alimentation sur secteur)";
 
 // KYAAdvancedPreferencesViewController.m line 54
 "Disable menu bar icon highlight color" = "Désactiver la surbrillance de l'icône de la barre de menu";
