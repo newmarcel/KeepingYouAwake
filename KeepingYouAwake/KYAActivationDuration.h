@@ -11,7 +11,7 @@
 /**
  An indefinite activation duration (represents a time interval of 0.0).
  */
-NSTimeInterval const KYAActivationDurationIndefinite;
+extern NSTimeInterval const KYAActivationDurationIndefinite;
 
 NS_ASSUME_NONNULL_BEGIN
 
