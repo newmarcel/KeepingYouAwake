@@ -107,9 +107,9 @@
         UInt32 snapshotSeed;
         NSArray *loginItems = (__bridge_transfer NSArray *)(LSSharedFileListCopySnapshot(loginItemsFileList, &snapshotSeed));
         
-        for(NSInteger i = 0; i < loginItems.count; i++)
+        for(NSInteger i = 0; i < (NSInteger)loginItems.count; i++)
         {
-            LSSharedFileListItemRef fileListItem = (__bridge LSSharedFileListItemRef)loginItems[i];
+            LSSharedFileListItemRef fileListItem = (__bridge LSSharedFileListItemRef)loginItems[(NSUInteger)i];
             
             NSURL *itemURL = (__bridge_transfer NSURL *)LSSharedFileListItemCopyResolvedURL(fileListItem, 0, NULL);
             if([bundleURL isEqual:itemURL])

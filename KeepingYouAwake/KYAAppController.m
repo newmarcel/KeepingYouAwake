@@ -418,6 +418,8 @@
 {
     __weak typeof(self) weakSelf = self;
     [[KYAEventHandler mainHandler] registerActionNamed:@"activate" block:^(KYAEvent *event) {
+        typeof(self) strongSelf = weakSelf;
+        
         NSDictionary *parameters = event.arguments;
         NSString *seconds = parameters[@"seconds"];
         NSString *minutes = parameters[@"minutes"];
@@ -428,19 +430,19 @@
         // Activate indefinitely if there are no parameters
         if(parameters.count == 0)
         {
-            [weakSelf activateTimer];
+            [strongSelf activateTimer];
         }
         else if(seconds)
         {
-            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)ceil(seconds.doubleValue)];
+            [strongSelf activateTimerWithTimeInterval:(NSTimeInterval)ceil(seconds.doubleValue)];
         }
         else if(minutes)
         {
-            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(ceil(minutes.doubleValue))];
+            [strongSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(ceil(minutes.doubleValue))];
         }
         else if(hours)
         {
-            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
+            [strongSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
         }
     }];
     [[KYAEventHandler mainHandler] registerActionNamed:@"deactivate" block:^(KYAEvent *event) {

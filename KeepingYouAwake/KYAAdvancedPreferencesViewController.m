@@ -87,12 +87,12 @@
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return self.preferences.count;
+    return (NSInteger)self.preferences.count;
 }
 
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    return self.preferences[row];
+    return self.preferences[(NSUInteger)row];
 }
 
 @end

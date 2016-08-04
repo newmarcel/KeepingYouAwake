@@ -26,7 +26,7 @@
     
     // Pre-populate the activation durations
     self.activationDurations = @[
-                                 KYADurationForSeconds(KYAActivationDurationIndefinite),
+                                 KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite),
                                  KYADurationForMinutes(5), KYADurationForMinutes(10), KYADurationForMinutes(15),
                                  KYADurationForMinutes(30),
                                  KYADurationForHours(1), KYADurationForHours(2), KYADurationForHours(5)
