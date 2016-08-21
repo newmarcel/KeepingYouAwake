@@ -39,7 +39,7 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0;
     
     if(interval == 0)
     {
-        return NSLocalizedString(@"Indefinitely", nil);
+        return NSLocalizedString(@"Indefinitely", @"Indefinitely");
     }
     
     NSDateComponentsFormatter *formatter = [self sharedDateComponentsFormatter];

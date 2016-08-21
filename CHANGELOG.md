@@ -2,6 +2,12 @@
 
 ## Changelog ##
 
+### v1.4.1 ###
+
+- Localization support
+	- German
+	- …
+
 ### v1.4 ###
 
 - Added a preferences window that replaces seldom used menu items and surfaces advanced and experimental preferences

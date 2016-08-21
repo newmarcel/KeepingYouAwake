@@ -10,6 +10,9 @@
 		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
 		DA46C1EE1BDCDFB00050357C /* NSUserDefaults+Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */; };
 		DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */; };
+		DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */; };
+		DA54C12A1D69C55400AF9E9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C12C1D69C55400AF9E9D /* Localizable.strings */; };
+		DA54C1311D69CA0000AF9E9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */; };
 		DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */; };
 		DA5A50941ACC5C5400A444C8 /* KYAEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A50931ACC5C5400A444C8 /* KYAEvent.m */; };
 		DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5B5A221C28612100EE45C6 /* KYABatteryStatus.m */; };
@@ -18,7 +21,6 @@
 		DA637B4419F14693004C8838 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4319F14693004C8838 /* Images.xcassets */; };
 		DA637B4719F14693004C8838 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4519F14693004C8838 /* MainMenu.xib */; };
 		DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B5D19F146B6004C8838 /* KYAAppController.m */; };
-		DA82B1131C24231C00FA46E0 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA82B1121C24231C00FA46E0 /* Preferences.storyboard */; };
 		DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */; };
 		DA8CB49D1A5767CC00BC6F73 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7931C31A575C6000B6DEC4 /* Sparkle.framework */; };
 		DA8CB49E1A5767CC00BC6F73 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA7931C31A575C6000B6DEC4 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -52,6 +54,13 @@
 		DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Keys.m"; sourceTree = "<group>"; };
 		DA51E7DC1C2562A2008AA96C /* KYAActivationDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAActivationDuration.h; sourceTree = "<group>"; };
 		DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAActivationDuration.m; sourceTree = "<group>"; };
+		DA54C1101D69C20F00AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
+		DA54C1221D69C55300AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DA54C12B1D69C55400AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA54C12D1D69C55400AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DA54C12E1D69C9BC00AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA54C1321D69CA0000AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA54C1341D69CA0700AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+LoginItem.h"; sourceTree = "<group>"; };
 		DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+LoginItem.m"; sourceTree = "<group>"; };
 		DA5A50921ACC5C5400A444C8 /* KYAEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEvent.h; sourceTree = "<group>"; };
@@ -69,7 +78,6 @@
 		DA637B5D19F146B6004C8838 /* KYAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAppController.m; sourceTree = "<group>"; };
 		DA753D391C3714A800955BE3 /* KYABatteryCapacityThreshold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYABatteryCapacityThreshold.h; sourceTree = "<group>"; };
 		DA7931C31A575C6000B6DEC4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Carthage/Build/Mac/Sparkle.framework; sourceTree = SOURCE_ROOT; };
-		DA82B1121C24231C00FA46E0 /* Preferences.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
 		DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAGeneralPreferencesViewController.h; sourceTree = "<group>"; };
 		DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAGeneralPreferencesViewController.m; sourceTree = "<group>"; };
 		DAB128671C2453F600831045 /* KYAAdvancedPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAdvancedPreferencesViewController.h; sourceTree = "<group>"; };
@@ -215,6 +223,8 @@
 		DA637B3C19F14693004C8838 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */,
+				DA54C12C1D69C55400AF9E9D /* Localizable.strings */,
 				DAD272581ACB21D000CDD620 /* Configuration.xcconfig */,
 				DA637B3D19F14693004C8838 /* Info.plist */,
 				DA637B3E19F14693004C8838 /* main.m */,
@@ -235,7 +245,7 @@
 		DA82B1111C2422F600FA46E0 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
-				DA82B1121C24231C00FA46E0 /* Preferences.storyboard */,
+				DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */,
 				DA51E7DF1C2562BE008AA96C /* General */,
 				DA51E7E01C2562C4008AA96C /* Advanced */,
 				DA51E7E11C2562CA008AA96C /* About */,
@@ -315,9 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA637B4419F14693004C8838 /* Images.xcassets in Resources */,
+				DA54C1311D69CA0000AF9E9D /* InfoPlist.strings in Resources */,
+				DA54C12A1D69C55400AF9E9D /* Localizable.strings in Resources */,
 				DAB128731C2469F300831045 /* Credits.rtf in Resources */,
 				DA637B4719F14693004C8838 /* MainMenu.xib in Resources */,
-				DA82B1131C24231C00FA46E0 /* Preferences.storyboard in Resources */,
+				DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,10 +380,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA54C1101D69C20F00AF9E9D /* Base */,
+				DA54C1221D69C55300AF9E9D /* de */,
+			);
+			name = Preferences.storyboard;
+			sourceTree = "<group>";
+		};
+		DA54C12C1D69C55400AF9E9D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA54C12B1D69C55400AF9E9D /* de */,
+				DA54C12E1D69C9BC00AF9E9D /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA54C1321D69CA0000AF9E9D /* de */,
+				DA54C1341D69CA0700AF9E9D /* Base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		DA637B4519F14693004C8838 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DA637B4619F14693004C8838 /* Base */,
+				DA54C12D1D69C55400AF9E9D /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";

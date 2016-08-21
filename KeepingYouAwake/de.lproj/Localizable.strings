@@ -1,0 +1,26 @@
+/* Allowing your Mac to go to sleep… */
+"Allowing your Mac to go to sleep…" = "Ruhezustand erlauben…";
+
+/* Click to allow sleep\nRight click to show menu */
+"Click to allow sleep
+Right click to show menu" = "Klicken, um den Ruhezustand zu erlauben
+Rechtsklick, um das Menü anzuzeigen";
+
+/* Click to prevent sleep\nRight click to show menu */
+"Click to prevent sleep
+Right click to show menu" = "Klicken, um den Ruhezustand zu verhindern
+Rechtsklick, um das Menü anzuzeigen";
+
+/* Indefinitely */
+"Indefinitely" = "Unbegrenzt";
+
+/* Preventing your Mac from going to sleep for\n%@… */
+"Preventing your Mac from going to sleep for
+%@…" = "Ruhezustand für %@ verhindern…";
+
+/* Preventing your Mac from going to sleep… */
+"Preventing your Mac from going to sleep…" = "Ruhezustand verhindern…";
+
+/* Version */
+"Version" = "Version";
+

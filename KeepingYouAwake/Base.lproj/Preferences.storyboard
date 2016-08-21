@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10115" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="uZF-hQ-SQu">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="uZF-hQ-SQu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10115"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11198.2"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -29,9 +29,9 @@
             <objects>
                 <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="GMl-BM-cxm" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem label="General" identifier="" image="NSPreferencesGeneral" id="sEc-4w-F7u"/>
-                        <tabViewItem label="Advanced" image="NSAdvanced" id="mWq-RG-yCf"/>
-                        <tabViewItem label="About" image="NSApplicationIcon" id="7SI-Ao-IyM"/>
+                        <tabViewItem identifier="" image="NSPreferencesGeneral" id="sEc-4w-F7u" userLabel="General"/>
+                        <tabViewItem image="NSAdvanced" id="mWq-RG-yCf" userLabel="Advanced"/>
+                        <tabViewItem image="NSApplicationIcon" id="7SI-Ao-IyM" userLabel="About"/>
                     </tabViewItems>
                     <viewControllerTransitionOptions key="transitionOptions" crossfade="YES" slideDown="YES"/>
                     <tabView key="tabView" type="noTabsNoBorder" id="DPl-Gh-PdY">
@@ -68,14 +68,11 @@
                                     <binding destination="32v-ae-OOv" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch" id="5qA-a3-Dy4"/>
                                 </connections>
                             </button>
-                            <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-zk-bvV">
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-zk-bvV">
                                 <rect key="frame" x="20" y="77" width="410" height="5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="410" id="2dg-Fx-9yM"/>
                                 </constraints>
-                                <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <font key="titleFont" metaFont="system"/>
                             </box>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="LrG-qH-het">
                                 <rect key="frame" x="78" y="168" width="104" height="18"/>
@@ -89,14 +86,10 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Qe4-Se-I2n"/>
                                 </constraints>
-                                <popUpButtonCell key="cell" type="push" title="Not Implemented" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="jtC-7z-zRZ" id="Tgt-3G-yNm">
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="Tgt-3G-yNm">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
-                                    <menu key="menu" id="Srj-RL-Qbx">
-                                        <items>
-                                            <menuItem title="Not Implemented" state="on" id="jtC-7z-zRZ"/>
-                                        </items>
-                                    </menu>
+                                    <menu key="menu" id="Srj-RL-Qbx"/>
                                 </popUpButtonCell>
                                 <connections>
                                     <binding destination="lGE-74-XwP" name="content" keyPath="self.activationDurations" id="cUd-30-KOv"/>
@@ -105,7 +98,7 @@
                                 </connections>
                             </popUpButton>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="miN-zK-UeB">
-                                <rect key="frame" x="18" y="45" width="171" height="17"/>
+                                <rect key="frame" x="18" y="46" width="171" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default Activation Duration:" id="UVY-8B-q5H">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -237,7 +230,6 @@
                                             </connections>
                                         </tableView>
                                     </subviews>
-                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="BP9-gn-7CY"/>
@@ -260,14 +252,11 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="um7-0A-CIi">
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="um7-0A-CIi">
                                 <rect key="frame" x="20" y="319" width="410" height="5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="410" id="SXj-gC-D56"/>
                                 </constraints>
-                                <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <font key="titleFont" metaFont="system"/>
                             </box>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-id-7AV">
                                 <rect key="frame" x="18" y="360" width="221" height="18"/>
@@ -299,14 +288,11 @@
                                     <action selector="resetAdvancedPreferences:" target="5bL-cI-YIY" id="LZy-0l-1S4"/>
                                 </connections>
                             </button>
-                            <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Dhm-17-m0f">
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Dhm-17-m0f">
                                 <rect key="frame" x="20" y="191" width="410" height="5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="410" id="CJr-2I-if9"/>
                                 </constraints>
-                                <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <font key="titleFont" metaFont="system"/>
                             </box>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="XC5-67-b50">
                                 <rect key="frame" x="18" y="289" width="278" height="18"/>
@@ -504,15 +490,13 @@
                                     <rect key="frame" x="1" y="1" width="450" height="272"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView editable="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="2Xr-NH-E55">
+                                        <textView editable="NO" importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="2Xr-NH-E55">
                                             <rect key="frame" x="0.0" y="0.0" width="450" height="272"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="minSize" width="450" height="272"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="450" height="272"/>
-                                            <size key="maxSize" width="463" height="10000000"/>
                                             <connections>
                                                 <binding destination="uUP-5n-ykj" name="valueURL" keyPath="creditsFileURL" id="Rxg-9s-cN1"/>
                                                 <binding destination="uUP-5n-ykj" name="editable" keyPath="isEditable" id="PvE-UH-iQL"/>
