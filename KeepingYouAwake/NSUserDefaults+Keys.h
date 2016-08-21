@@ -10,6 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// User Default Keys
+extern NSString * const KYAUserDefaultsKeyActivateOnLaunch;
+extern NSString * const KYAUserDefaultsKeyNotificationsEnabled;
+extern NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
+extern NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
+extern NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
+extern NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
+extern NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
+extern NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
+
 @interface NSUserDefaults (Keys)
 
 /**
@@ -28,14 +38,31 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSTimeInterval kya_defaultTimeInterval;
 
 /**
- *  Returns YES if the app should prevent sleep when connected to AC power with the lid closed.
+ *  Returns YES if the app should allow the display to sleep while still keeping the system awake (AC-only). This exposes the `caffeinate -s` command.
  */
-@property (nonatomic, getter = kya_isPreventingSleepOnACPower) BOOL kya_preventSleepOnACPower;
+@property (nonatomic, getter = kya_shouldAllowDisplaySleep) BOOL kya_allowDisplaySleep;
 
 /**
  *  Returns YES if the menu bar icon should not be highlighted on left and right click.
  */
 @property (nonatomic, getter = kya_isMenuBarIconHighlightDisabled) BOOL kya_menuBarIconHighlightDisabled;
+
+/**
+ *  Returns YES if the sleep wake timer should deactivate below a defined battery capacity threshold.
+ */
+@property (nonatomic, getter = kya_isBatteryCapacityThresholdEnabled) BOOL kya_batteryCapacityThresholdEnabled;
+
+/**
+ *  A battery capacity threshold.
+ *
+ *  If the user defaults value is below 10.0, 10.0 will be returned.
+ */
+@property (nonatomic) CGFloat kya_batteryCapacityThreshold;
+
+/**
+ *  Returns YES if Sparkle should check for pre-release updates.
+ */
+@property (nonatomic, getter = kya_arePreReleaseUpdatesEnabled) BOOL kya_preReleaseUpdatesEnabled;
 
 @end
 

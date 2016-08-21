@@ -2,6 +2,22 @@
 
 ## Changelog ##
 
+### v1.4.1 ###
+
+- Localization support
+	- German
+	- …
+
+### v1.4 ###
+
+- Added a preferences window that replaces seldom used menu items and surfaces advanced and experimental preferences
+- You can now set the default activation duration for the menu bar icon in preferences
+- Removed the advanced preference for `info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower`
+- Added an advanced preference to allow display sleep while still preventing system sleep ([Issue #25](https://github.com/newmarcel/KeepingYouAwake/issues/25))
+- Ability to set a battery level on MacBooks where the app will deactivate itself ([Issue #24](https://github.com/newmarcel/KeepingYouAwake/issues/24))
+	- *Thank you [timbru31](https://github.com/timbru31) for the suggestion!*
+- Upgraded to Sparkle 1.14.0 to fix potential security issues
+
 ### v1.3.1 ###
 
 - Fixed Sparkle Updates *(Broken thanks to App Transport Security in OS X 10.11 and GitHub disabling HTTPS for pages)* If you know someone with Version 1.3.0, please let them know that 1.3.1 is available and can be downloaded manually to receive future updates. This is a nightmare come true… 😱

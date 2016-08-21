@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>KeepingYouAwake Changelog</title>
+		<link>https://newmarcel.github.io/KeepingYouAwake/appcast.xml</link>
+		<description>The most recent changes for KeepingYouAwake.</description>
+		<language>en</language>
+		<item>
+			<title><![CDATA[Version 1.4.0: Preferences Update]]></title>
+			<description><![CDATA[<ul>
+<li>Added a preferences window that replaces seldom used menu items and surfaces advanced and experimental preferences</li>
+<li>You can now set the default activation duration for the menu bar icon in preferences</li>
+<li>Removed the advanced preference for <code>info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower</code></li>
+<li>Added an advanced preference to allow display sleep while still preventing system sleep (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/25">Issue #25</a>)</li>
+<li>Ability to set a battery level on MacBooks where the app will deactivate itself (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/24">Issue #24</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/timbru31">timbru31</a> for the suggestion!</em></li>
+</ul></li>
+<li>Upgraded to Sparkle 1.14.0 to fix potential security issues</li>
+</ul>
+]]></description>
+			<pubDate>Sat, 16 Apr 2016 12:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.4.0/KeepingYouAwake-1.4.0.zip" length="1591141" type="application/octet-stream" sparkle:version="140" sparkle:shortVersionString="1.4.0">
+			</enclosure>
+		</item>
+		<item>
+			<title><![CDATA[Version 1.4.0beta1: Preferences Beta]]></title>
+			<description><![CDATA[<ul>
+<li>Added a preferences window that replaces seldom used menu items and surfaces advanced and experimental preferences</li>
+<li>You can now set the default activation duration for the menu bar icon in preferences</li>
+<li>Removed the advanced preference for <code>info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower</code></li>
+<li>Added an advanced preference to allow display sleep while still preventing system sleep (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/25">Issue #25</a>)</li>
+<li>Ability to set a battery level on MacBooks where the app will deactivate itself (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/24">Issue #24</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/timbru31">timbru31</a> for the suggestion!</em></li>
+</ul></li>
+</ul>
+]]></description>
+			<pubDate>Fri, 05 Feb 2016 13:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.4beta1/KeepingYouAwake-1.4beta1.zip" length="1566314" type="application/octet-stream" sparkle:version="133" sparkle:shortVersionString="1.4.0beta1">
+			</enclosure>
+		</item>
+		<item>
+			<title><![CDATA[Version 1.3.1: Updater and Icon Fixes]]></title>
+			<description><![CDATA[<ul>
+<li>Fixed Sparkle Updates <em>(Broken thanks to App Transport Security in OS X 10.11 and GitHub disabling HTTPS for pages)</em> <strong>If you know someone with Version 1.3.0, please let them know that 1.3.1 is available and can be downloaded manually to receive future updates.</strong> This is a nightmare come true… 😱</li>
+<li>Fixed rendering for custom icons: They are now rendered as template images</li>
+<li>Added advanced settings to disable the blue highlight rectangle on click. Enable it with <em>(replace YES with NO to disable it again)</em>:
+<ul>
+<li><code>defaults write info.marcel-dierkes.KeepingYouAwake info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled -bool YES</code></li>
+</ul></li>
+</ul>
+]]></description>
+			<pubDate>Tue, 08 Dec 2015 09:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.3.1/KeepingYouAwake-1.3.1.zip" length="1487664" type="application/octet-stream" sparkle:version="131" sparkle:shortVersionString="1.3.1">
+			</enclosure>
+		</item>
+		<item>
+			<title><![CDATA[Version 1.3: Scripting and Custom Icons Update]]></title>
+			<description><![CDATA[<ul>
+<li>Basic command line interface through URI schemes
+<ul>
+<li><em>Thank you <a href="https://github.com/KyleKing">KyleKing</a> for the suggestion!</em></li>
+<li>you can activate/deactivate the sleep timer with unlimited time intervals</li>
+<li>you can open <em>KeepingYouAwake</em> from the command line with a custom sleep timer duration</li>
+<li>the <em>seconds</em>, <em>minutes</em> and <em>hours</em> parameters are rounded up to the nearest integer number and cannot be combined at the moment</li>
+</ul></li>
+</ul>
+
+<p><code>
+open keepingyouawake://<br />
+open keepingyouawake:///activate    # indefinite duration<br />
+open keepingyouawake:///activate?seconds=5<br />
+open keepingyouawake:///activate?minutes=5<br />
+open keepingyouawake:///activate?hours=5<br />
+open keepingyouawake:///deactivate
+</code></p>
+
+<ul>
+<li>Support for custom menu bar icons. Just place four images named <code>ActiveIcon.png</code>, <code>ActiveIcon@2x.png</code>, <code>InactiveIcon.png</code>, <code>InactiveIcon@2x.png</code> in your <code>~/Library/Application Support/KeepingYouAwake/</code> folder. The recommended size for these images is 22x20 points</li>
+<li>hold down the option key and click inside the <em>"Activate for Duration"</em> menu to set the default duration for the menu bar icon</li>
+</ul>
+]]></description>
+			<pubDate>Mon, 02 Nov 2015 09:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.3/KeepingYouAwake-1.3.zip" length="1483228" type="application/octet-stream" sparkle:version="130" sparkle:shortVersionString="1.3">
+			</enclosure>
+		</item>
+		<item>
+			<title><![CDATA[Version 1.2.1: AC Power Update]]></title>
+			<description><![CDATA[<ul>
+<li>Fixed an issue where "Start at Login" would crash when clicked multiple times in a row <em>(Fixed by <a href="https://github.com/registered99">registered99</a>, thank you!)</em></li>
+<li>Less aggressive awake handling when the MacBook lid is closed by using the <code>caffeinate -di</code> command instead of <code>caffeinate -disu</code></li>
+<li>You can revert back to the previous behaviour by pasting the following snippet into <em>Terminal.app</em>:
+<ul>
+<li><code>defaults write info.marcel-dierkes.KeepingYouAwake.PreventSleepOnACPower -bool YES</code></li>
+</ul></li>
+<li><code>ctrl</code> + <code>click</code> will now display the menu</li>
+</ul>
+]]></description>
+			<pubDate>Sun, 11 Jan 2015 19:20:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.2.1/KeepingYouAwake-1.2.1.zip" length="1482545" type="application/octet-stream" sparkle:version="122" sparkle:shortVersionString="1.2.1">
+			</enclosure>
+		</item>
+		<item>
+			<title><![CDATA[Version 1.2: Activation Timer]]></title>
+			<description><![CDATA[<ul>
+<li>There are no significant changes since beta1</li>
+<li>Tweaked the experimental <em>(and hidden)</em> notifications</li>
+</ul>
+
+<p>You can enable the notifications preview by pasting the following snippet into <em>Terminal.app</em>:</p>
+
+<pre><code>    defaults write info.marcel-dierkes.KeepingYouAwake info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled -bool YES
+</code></pre>
+
+<p>and to disable it again:</p>
+
+<pre><code>    defaults write info.marcel-dierkes.KeepingYouAwake info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled -bool NO
+</code></pre>
+]]></description>
+			<pubDate>Sun, 23 Nov 2014 10:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.2/KeepingYouAwake-1.2.zip" length="1516803" type="application/octet-stream" sparkle:version="120" sparkle:shortVersionString="1.2">
+			</enclosure>
+		</item>
+		<item>
+			<title><![CDATA[Version 1.2beta1: Activation Timer]]></title>
+			<description><![CDATA[<ul>
+<li>Activation timer</li>
+<li><a href="http://sparkle-project.org">Sparkle</a> integration for updates
+<ul>
+<li>Sparkle will check for updates once a day</li>
+<li>A second beta will follow in the coming days to test automatic updates</li>
+</ul></li>
+<li>This is <strong>beta</strong> software. If you notice any issues, please report them <a href="https://github.com/newmarcel/KeepingYouAwake/issues/">here</a></li>
+</ul>
+]]></description>
+			<pubDate>Thu, 13 Nov 2014 18:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.2beta1/KeepingYouAwake-1.2beta1.zip" length="1512924" type="application/octet-stream" sparkle:version="112" sparkle:shortVersionString="1.2beta1">
+			</enclosure>
+		</item>
+		<item>
+			<title><![CDATA[Version 1.1: Start at Login & Developer ID]]></title>
+			<description><![CDATA[<p>This release adds a <em>"Start at Login"</em> menu item.</p>
+
+<ul>
+<li>Added Developer ID signing</li>
+</ul>
+]]></description>
+			<pubDate>Thu, 13 Nov 2014 10:11:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.1/KeepingYouAwake-1.1.zip" length="357603" type="application/octet-stream" sparkle:version="110" sparkle:shortVersionString="1.1">
+			</enclosure>
+		</item>
+	</channel>
+</rss>

@@ -7,26 +7,56 @@
 //
 
 #import "KYAAppDelegate.h"
+#import <Sparkle/Sparkle.h>
+#import "NSUserDefaults+Keys.h"
 
-@interface KYAAppDelegate ()
+@interface KYAAppDelegate () <NSWindowDelegate, SUUpdaterDelegate>
+@property (nonatomic, nullable) NSWindowController *preferencesWindowController;
 @end
 
 @implementation KYAAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+#pragma mark - Preferences Window
+
+- (NSWindowController *)preferencesWindowController
 {
+    if(_preferencesWindowController == nil)
+    {
+        _preferencesWindowController = [[NSStoryboard storyboardWithName:@"Preferences" bundle:nil] instantiateInitialController];
+    }
+    return _preferencesWindowController;
 }
 
-- (void)applicationWillTerminate:(NSNotification *)aNotification
-{
-}
-
-#pragma mark - About Window
-
-- (IBAction)showAboutWindow:(id)sender
+- (IBAction)showPreferencesWindow:(id)sender
 {
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
-    [[NSApplication sharedApplication] orderFrontStandardAboutPanel:sender];
+    
+    [self.preferencesWindowController showWindow:sender];
+    self.preferencesWindowController.window.delegate = self;
+}
+
+#pragma mark - Window Delegate
+
+- (void)windowWillClose:(NSNotification *)notification
+{
+    self.preferencesWindowController = nil;
+}
+
+#pragma mark - Updater Delegate
+
+- (NSString *)feedURLStringForUpdater:(SUUpdater *)updater
+{
+    NSString *feedURLString = [NSBundle mainBundle].infoDictionary[@"SUFeedURL"];
+    NSAssert(feedURLString != nil, @"A feed URL should be set in Info.plist");
+    
+    if([[NSUserDefaults standardUserDefaults] kya_arePreReleaseUpdatesEnabled])
+    {
+        NSString *lastComponent = feedURLString.lastPathComponent;
+        NSString *baseURLString = feedURLString.stringByDeletingLastPathComponent;
+        return [NSString stringWithFormat:@"%@/prerelease-%@", baseURLString, lastComponent];
+    }
+    
+    return feedURLString;
 }
 
 @end

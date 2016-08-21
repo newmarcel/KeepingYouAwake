@@ -15,6 +15,7 @@
 
 - (void)setKya_startAtLogin:(BOOL)startAtLogin
 {
+    [self willChangeValueForKey:@"kya_startAtLogin"];
     if(startAtLogin)
     {
         [self kya_addToLoginItems];
@@ -23,9 +24,16 @@
     {
         [self kya_removeFromLoginItems];
     }
+    [self didChangeValueForKey:@"kya_startAtLogin"];
 }
 
 - (BOOL)kya_isStartingAtLogin
+{
+    return [self kya_startAtLogin];
+}
+
+// private KVC-compliant getter for kya_startAtLogin
+- (BOOL)kya_startAtLogin
 {
     return [self kya_hasLoginItem];
 }
@@ -99,9 +107,9 @@
         UInt32 snapshotSeed;
         NSArray *loginItems = (__bridge_transfer NSArray *)(LSSharedFileListCopySnapshot(loginItemsFileList, &snapshotSeed));
         
-        for(NSInteger i = 0; i < loginItems.count; i++)
+        for(NSInteger i = 0; i < (NSInteger)loginItems.count; i++)
         {
-            LSSharedFileListItemRef fileListItem = (__bridge LSSharedFileListItemRef)loginItems[i];
+            LSSharedFileListItemRef fileListItem = (__bridge LSSharedFileListItemRef)loginItems[(NSUInteger)i];
             
             NSURL *itemURL = (__bridge_transfer NSURL *)LSSharedFileListItemCopyResolvedURL(fileListItem, 0, NULL);
             if([bundleURL isEqual:itemURL])

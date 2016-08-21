@@ -83,9 +83,9 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 {
     NSMutableArray *arguments = [NSMutableArray new];
     
-    if([[NSUserDefaults standardUserDefaults] kya_isPreventingSleepOnACPower])
+    if([[NSUserDefaults standardUserDefaults] kya_shouldAllowDisplaySleep])
     {
-        [arguments addObject:@"-disu"];
+        [arguments addObject:@"-s"];
     }
     else
     {
