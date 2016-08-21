@@ -43,15 +43,15 @@
 {
     NSMutableArray *preferences = [NSMutableArray new];
     
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Enable experimental Notification Center integration", nil)
+    [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Enable experimental Notification Center integration", @"Enable experimental Notification Center integration")
                                                     defaultsKey:KYAUserDefaultsKeyNotificationsEnabled
                             ]];
     
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Allow the display to sleep (when connected to AC power)", nil)
+    [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Allow the display to sleep (when connected to AC power)", @"Allow the display to sleep (when connected to AC power)")
                                                     defaultsKey:KYAUserDefaultsKeyAllowDisplaySleep
                             ]];
     
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Disable menu bar icon highlight color", nil)
+    [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Disable menu bar icon highlight color", @"Disable menu bar icon highlight color")
                                                     defaultsKey:KYAUserDefaultsKeyMenuBarIconHighlightDisabled
                             ]];
     
@@ -87,12 +87,12 @@
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return self.preferences.count;
+    return (NSInteger)self.preferences.count;
 }
 
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    return self.preferences[row];
+    return self.preferences[(NSUInteger)row];
 }
 
 @end

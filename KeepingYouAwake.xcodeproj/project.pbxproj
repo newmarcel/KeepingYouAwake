@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2EC53A1D1CCBB5F100044616 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC53A1F1CCBB5F100044616 /* Preferences.storyboard */; };
 		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
 		DA46C1EE1BDCDFB00050357C /* NSUserDefaults+Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */; };
 		DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */; };
+		DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */; };
+		DA54C12A1D69C55400AF9E9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C12C1D69C55400AF9E9D /* Localizable.strings */; };
+		DA54C1311D69CA0000AF9E9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */; };
 		DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */; };
 		DA5A50941ACC5C5400A444C8 /* KYAEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A50931ACC5C5400A444C8 /* KYAEvent.m */; };
 		DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5B5A221C28612100EE45C6 /* KYABatteryStatus.m */; };
@@ -46,15 +48,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2EC53A1C1CCBB55B00044616 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		2EC53A1E1CCBB5F100044616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
-		2EC53A211CCBB5F500044616 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Preferences.strings; sourceTree = "<group>"; };
 		DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAMenuBarIcon.h; sourceTree = "<group>"; };
 		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
 		DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Keys.h"; sourceTree = "<group>"; };
 		DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Keys.m"; sourceTree = "<group>"; };
 		DA51E7DC1C2562A2008AA96C /* KYAActivationDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAActivationDuration.h; sourceTree = "<group>"; };
 		DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAActivationDuration.m; sourceTree = "<group>"; };
+		DA54C1101D69C20F00AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
+		DA54C1221D69C55300AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DA54C12B1D69C55400AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA54C12D1D69C55400AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DA54C12E1D69C9BC00AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA54C1321D69CA0000AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA54C1341D69CA0700AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+LoginItem.h"; sourceTree = "<group>"; };
 		DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+LoginItem.m"; sourceTree = "<group>"; };
 		DA5A50921ACC5C5400A444C8 /* KYAEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEvent.h; sourceTree = "<group>"; };
@@ -217,6 +223,8 @@
 		DA637B3C19F14693004C8838 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */,
+				DA54C12C1D69C55400AF9E9D /* Localizable.strings */,
 				DAD272581ACB21D000CDD620 /* Configuration.xcconfig */,
 				DA637B3D19F14693004C8838 /* Info.plist */,
 				DA637B3E19F14693004C8838 /* main.m */,
@@ -237,7 +245,7 @@
 		DA82B1111C2422F600FA46E0 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
-				2EC53A1F1CCBB5F100044616 /* Preferences.storyboard */,
+				DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */,
 				DA51E7DF1C2562BE008AA96C /* General */,
 				DA51E7E01C2562C4008AA96C /* Advanced */,
 				DA51E7E11C2562CA008AA96C /* About */,
@@ -282,7 +290,7 @@
 		DA637B3119F14693004C8838 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Marcel Dierkes";
 				TargetAttributes = {
 					DA637B3819F14693004C8838 = {
@@ -317,9 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA637B4419F14693004C8838 /* Images.xcassets in Resources */,
+				DA54C1311D69CA0000AF9E9D /* InfoPlist.strings in Resources */,
+				DA54C12A1D69C55400AF9E9D /* Localizable.strings in Resources */,
 				DAB128731C2469F300831045 /* Credits.rtf in Resources */,
 				DA637B4719F14693004C8838 /* MainMenu.xib in Resources */,
-				2EC53A1D1CCBB5F100044616 /* Preferences.storyboard in Resources */,
+				DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,20 +380,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2EC53A1F1CCBB5F100044616 /* Preferences.storyboard */ = {
+		DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2EC53A1E1CCBB5F100044616 /* Base */,
-				2EC53A211CCBB5F500044616 /* fr */,
+				DA54C1101D69C20F00AF9E9D /* Base */,
+				DA54C1221D69C55300AF9E9D /* de */,
 			);
 			name = Preferences.storyboard;
+			sourceTree = "<group>";
+		};
+		DA54C12C1D69C55400AF9E9D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA54C12B1D69C55400AF9E9D /* de */,
+				DA54C12E1D69C9BC00AF9E9D /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA54C1321D69CA0000AF9E9D /* de */,
+				DA54C1341D69CA0700AF9E9D /* Base */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		DA637B4519F14693004C8838 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DA637B4619F14693004C8838 /* Base */,
-				2EC53A1C1CCBB55B00044616 /* fr */,
+				DA54C12D1D69C55400AF9E9D /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -396,25 +424,41 @@
 			baseConfigurationReference = DAD272581ACB21D000CDD620 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -422,7 +466,12 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -440,27 +489,48 @@
 			baseConfigurationReference = DAD272581ACB21D000CDD620 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;

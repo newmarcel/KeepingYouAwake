@@ -11,14 +11,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // User Default Keys
-NSString * const KYAUserDefaultsKeyActivateOnLaunch;
-NSString * const KYAUserDefaultsKeyNotificationsEnabled;
-NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
-NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
-NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
-NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
-NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
-NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
+extern NSString * const KYAUserDefaultsKeyActivateOnLaunch;
+extern NSString * const KYAUserDefaultsKeyNotificationsEnabled;
+extern NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
+extern NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
+extern NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
+extern NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
+extern NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
+extern NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
 
 @interface NSUserDefaults (Keys)
 

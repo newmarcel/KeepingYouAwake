@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-const CGFloat KYABatteryStatusUnavailable;
+extern const CGFloat KYABatteryStatusUnavailable;
 
 typedef void(^KYABatteryStatusChangeBlock)(CGFloat capacity);
 

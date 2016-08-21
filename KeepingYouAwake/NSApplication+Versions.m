@@ -22,7 +22,7 @@
 
 - (NSString * _Nonnull)kya_localizedVersionString
 {
-    NSString *localizedVersionText = NSLocalizedString(@"Version", nil);
+    NSString *localizedVersionText = NSLocalizedString(@"Version", @"Version");
     return [NSString stringWithFormat:@"%@ %@ (%@)", localizedVersionText, self.kya_shortVersionString, self.kya_buildVersionString];
 }
 

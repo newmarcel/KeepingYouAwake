@@ -166,12 +166,12 @@
     if(active)
     {
         button.image = menubarIcon.activeIcon;
-        button.toolTip = NSLocalizedString(@"Click to allow sleep\nRight click to show menu", nil);
+        button.toolTip = NSLocalizedString(@"Click to allow sleep\nRight click to show menu", @"Click to allow sleep\nRight click to show menu");
     }
     else
     {
         button.image = menubarIcon.inactiveIcon;
-        button.toolTip = NSLocalizedString(@"Click to prevent sleep\nRight click to show menu", nil);
+        button.toolTip = NSLocalizedString(@"Click to prevent sleep\nRight click to show menu", @"Click to prevent sleep\nRight click to show menu");
     }
 }
 
@@ -202,7 +202,7 @@
         if([[NSUserDefaults standardUserDefaults] kya_areNotificationsEnabled])
         {
             NSUserNotification *n = [NSUserNotification new];
-            n.informativeText = NSLocalizedString(@"Allowing your Mac to go to sleep…", nil);
+            n.informativeText = NSLocalizedString(@"Allowing your Mac to go to sleep…", @"Allowing your Mac to go to sleep…");
             [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
         }
     }];
@@ -214,7 +214,7 @@
         
         if(timeInterval == KYASleepWakeTimeIntervalIndefinite)
         {
-            n.informativeText = NSLocalizedString(@"Preventing your Mac from going to sleep…", nil);
+            n.informativeText = NSLocalizedString(@"Preventing your Mac from going to sleep…", @"Preventing your Mac from going to sleep…");
         }
         else
         {
@@ -223,7 +223,7 @@
             NSString *remainingTimeString = [formatter stringFromDate:[NSDate date] toDate:self.sleepWakeTimer.fireDate];
             formatter.includesTimeRemainingPhrase = YES;
             
-            n.informativeText = [NSString stringWithFormat:NSLocalizedString(@"Preventing your Mac from going to sleep for\n%@…", nil), remainingTimeString];
+            n.informativeText = [NSString stringWithFormat:NSLocalizedString(@"Preventing your Mac from going to sleep for\n%@…", @"Preventing your Mac from going to sleep for\n%@…"), remainingTimeString];
         }
         
         [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
@@ -418,6 +418,8 @@
 {
     __weak typeof(self) weakSelf = self;
     [[KYAEventHandler mainHandler] registerActionNamed:@"activate" block:^(KYAEvent *event) {
+        typeof(self) strongSelf = weakSelf;
+        
         NSDictionary *parameters = event.arguments;
         NSString *seconds = parameters[@"seconds"];
         NSString *minutes = parameters[@"minutes"];
@@ -428,19 +430,19 @@
         // Activate indefinitely if there are no parameters
         if(parameters.count == 0)
         {
-            [weakSelf activateTimer];
+            [strongSelf activateTimer];
         }
         else if(seconds)
         {
-            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)ceil(seconds.doubleValue)];
+            [strongSelf activateTimerWithTimeInterval:(NSTimeInterval)ceil(seconds.doubleValue)];
         }
         else if(minutes)
         {
-            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(ceil(minutes.doubleValue))];
+            [strongSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(ceil(minutes.doubleValue))];
         }
         else if(hours)
         {
-            [weakSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
+            [strongSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
         }
     }];
     [[KYAEventHandler mainHandler] registerActionNamed:@"deactivate" block:^(KYAEvent *event) {

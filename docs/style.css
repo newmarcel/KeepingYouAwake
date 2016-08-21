@@ -1,0 +1,29 @@
+body {
+    margin: 4em;
+    text-align: center;
+    background-color: #fefefe;
+    font: 14px/1.4em "Helvetica Neue", Helvetica, sans-serif;
+}
+
+img#logo {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 1em;
+}
+
+#content {
+    width: 500px;
+    margin: 3em auto;
+}
+
+#content p.intro {
+    margin-bottom: 3em;
+}
+
+#content a, #content a:link, #content a:visited {
+    color: #0f66fe;
+}
+
+#content a:hover {
+    color: #0D3ED4;
+}

@@ -1,0 +1,30 @@
+/* Enable experimental Notification Center integration */
+"Enable experimental Notification Center integration" = "Enable experimental Notification Center integration";
+
+/* Allow the display to sleep (when connected to AC power) */
+"Allow the display to sleep (when connected to AC power)" = "Allow the display to sleep (when connected to AC power)";
+
+/* Disable menu bar icon highlight color */
+"Disable menu bar icon highlight color" = "Disable menu bar icon highlight color";
+
+/* Click to allow sleep\nRight click to show menu */
+"Click to allow sleep\nRight click to show menu" = "Click to allow sleep\nRight click to show menu";
+
+/* Click to prevent sleep\nRight click to show menu */
+"Click to prevent sleep\nRight click to show menu" = "Click to prevent sleep\nRight click to show menu";
+
+/* Allowing your Mac to go to sleep… */
+"Allowing your Mac to go to sleep…" = "Allowing your Mac to go to sleep…";
+
+/* Preventing your Mac from going to sleep… */
+"Preventing your Mac from going to sleep…" = "Preventing your Mac from going to sleep…";
+
+/* Preventing your Mac from going to sleep for\n%@… */
+"Preventing your Mac from going to sleep for\n%@…" = "Preventing your Mac from going to sleep for\n%@…";
+
+/* Version */
+"Version" = "Version";
+
+/* Indefinitely */
+"Indefinitely" = "Indefinitely";
+
