@@ -48,6 +48,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2EB97EED1D69FD8800BA63A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2EB97EEE1D69FD8900BA63A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2EB97EEF1D69FD8900BA63A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Preferences.strings; sourceTree = "<group>"; };
+		2EB97EF01D69FD8900BA63A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAMenuBarIcon.h; sourceTree = "<group>"; };
 		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
 		DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Keys.h"; sourceTree = "<group>"; };
@@ -385,6 +389,7 @@
 			children = (
 				DA54C1101D69C20F00AF9E9D /* Base */,
 				DA54C1221D69C55300AF9E9D /* de */,
+				2EB97EEF1D69FD8900BA63A0 /* fr */,
 			);
 			name = Preferences.storyboard;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 			children = (
 				DA54C12B1D69C55400AF9E9D /* de */,
 				DA54C12E1D69C9BC00AF9E9D /* Base */,
+				2EB97EED1D69FD8800BA63A0 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -403,6 +409,7 @@
 			children = (
 				DA54C1321D69CA0000AF9E9D /* de */,
 				DA54C1341D69CA0700AF9E9D /* Base */,
+				2EB97EEE1D69FD8900BA63A0 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -412,6 +419,7 @@
 			children = (
 				DA637B4619F14693004C8838 /* Base */,
 				DA54C12D1D69C55400AF9E9D /* de */,
+				2EB97EF01D69FD8900BA63A0 /* fr */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
