@@ -23,7 +23,7 @@
 "Icg-VI-pC8.title" = "Maintenant";
 
 /* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO"; */
-"OsK-jX-EzO.title" = "Ces préférences avancées sont à vos risques et périls et requièrent un redémarrage de KeepingYouAwake.";
+"OsK-jX-EzO.title" = "Vous utilisez ces préférences avancées à vos risques. Ils requièrent un redémarrage de KeepingYouAwake.";
 
 /* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1"; */
 "QIk-WP-qH1.title" = "Lancer au démarrage";
@@ -72,4 +72,3 @@
 
 /* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU"; */
 "x6s-XD-lBU.title" = "Lance KeepingYouAwake au démarrage du Mac.";
-
