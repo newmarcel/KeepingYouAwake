@@ -1,0 +1,35 @@
+/* Allow the display to sleep (when connected to AC power) */
+"Allow the display to sleep (when connected to AC power)" = "Autoriser la mise en veille de l'écran (avec alimentation sur secteur)";
+
+/* Allowing your Mac to go to sleep… */
+"Allowing your Mac to go to sleep…" = "Autoriser la mise en veille du Mac…";
+
+/* Click to allow sleep\nRight click to show menu */
+"Click to allow sleep
+Right click to show menu" = "Click pour autoriser la veille
+Click droit pour le menu";
+
+/* Click to prevent sleep\nRight click to show menu */
+"Click to prevent sleep
+Right click to show menu" = "Click pour empêcher la veille
+Click droit pour le menu";
+
+/* Disable menu bar icon highlight color */
+"Disable menu bar icon highlight color" = "Désactiver la surbrillance de l'icône de la barre de menu";
+
+/* Enable experimental Notification Center integration */
+"Enable experimental Notification Center integration" = "Activer l'intégration avec le centre de notification (beta)";
+
+/* Indefinitely */
+"Indefinitely" = "Indéfiniment";
+
+/* Preventing your Mac from going to sleep for\n%@… */
+"Preventing your Mac from going to sleep for
+%@…" = "Empêcher la mise en veille du Mac pour %@…";
+
+/* Preventing your Mac from going to sleep… */
+"Preventing your Mac from going to sleep…" = "Empêcher la mise en veille du Mac";
+
+/* Version */
+"Version" = "Version";
+
