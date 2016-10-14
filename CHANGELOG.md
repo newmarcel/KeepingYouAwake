@@ -6,7 +6,8 @@
 
 - Localization support
 	- German
-	- …
+	- French ([Issue #51](https://github.com/newmarcel/KeepingYouAwake/issues/51))
+		- *Thank you [rei-vilo](https://github.com/rei-vilo)!*
 
 ### v1.4 ###
 
