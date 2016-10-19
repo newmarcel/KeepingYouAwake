@@ -1,0 +1,63 @@
+/* Class = "NSMenuItem"; title = "1 hour"; ObjectID = "3tu-5G-YQt"; */
+"3tu-5G-YQt.title" = "1시간";
+
+/* Class = "NSMenuItem"; title = "Indefinitely"; ObjectID = "5EU-sH-Q12"; */
+"5EU-sH-Q12.title" = "무기한";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "7is-vc-kz7"; */
+"7is-vc-kz7.title" = "종료";
+
+/* Class = "NSMenuItem"; title = "5 hours"; ObjectID = "18N-iz-aod"; */
+"18N-iz-aod.title" = "5시간";
+
+/* Class = "NSMenuItem"; title = "Activate for Duration"; ObjectID = "Bo6-IE-IbX"; */
+"Bo6-IE-IbX.title" = "활성 기간";
+
+/* Class = "NSMenuItem"; title = "Set Default: 5 minutes"; ObjectID = "NkC-w0-mfU"; */
+"NkC-w0-mfU.title" = "기본값 설정: 5분";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "OT5-lg-IM6"; */
+"OT5-lg-IM6.title" = "환경설정…";
+
+/* Class = "NSMenuItem"; title = "Set Default: 10 minutes"; ObjectID = "PWL-2v-TSS"; */
+"PWL-2v-TSS.title" = "기본값 설정: 10분";
+
+/* Class = "NSMenuItem"; title = "2 hours"; ObjectID = "T5i-64-xaV"; */
+"T5i-64-xaV.title" = "2시간";
+
+/* Class = "NSMenuItem"; title = "Set Default: Indefinitely"; ObjectID = "VeD-dm-81B"; */
+"VeD-dm-81B.title" = "기본값 설정: 무기한";
+
+/* Class = "NSMenuItem"; title = "10 minutes"; ObjectID = "WWd-z5-2Xu"; */
+"WWd-z5-2Xu.title" = "10분";
+
+/* Class = "NSMenuItem"; title = "30 minutes"; ObjectID = "YNB-qE-TzE"; */
+"YNB-qE-TzE.title" = "30분";
+
+/* Class = "NSMenuItem"; title = "15 minutes"; ObjectID = "bCY-Vy-8QT"; */
+"bCY-Vy-8QT.title" = "15분";
+
+/* Class = "NSMenuItem"; title = "Set Default: 1 hour"; ObjectID = "fUA-NX-hxF"; */
+"fUA-NX-hxF.title" = "기본값 설정: 1시간";
+
+/* Class = "NSMenuItem"; title = "5 minutes"; ObjectID = "kO2-hM-cAT"; */
+"kO2-hM-cAT.title" = "5분";
+
+/* Class = "NSMenuItem"; title = "Set Default: 15 minutes"; ObjectID = "kTz-g8-t11"; */
+"kTz-g8-t11.title" = "기본값 설정: 15분";
+
+/* Class = "NSMenuItem"; title = "Set Default: 2 hours"; ObjectID = "n3h-ZB-CLV"; */
+"n3h-ZB-CLV.title" = "기본값 설정: 2시간";
+
+/* Class = "NSMenuItem"; title = "Active"; ObjectID = "pVH-VY-YkW"; */
+"pVH-VY-YkW.title" = "활성화";
+
+/* Class = "NSMenuItem"; title = "Set Default: 30 minutes"; ObjectID = "sft-bA-FTz"; */
+"sft-bA-FTz.title" = "기본값 설정: 30분";
+
+/* Class = "NSMenuItem"; title = "Set Default: 5 hours"; ObjectID = "tAq-iH-rdw"; */
+"tAq-iH-rdw.title" = "기본값 설정: 5시간";
+
+/* Class = "NSMenu"; title = "Activate for Duration"; ObjectID = "uTe-0S-BFw"; */
+"uTe-0S-BFw.title" = "활성 기간";
+
