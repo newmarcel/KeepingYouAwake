@@ -8,6 +8,8 @@
 	- German
 	- French ([Issue #51](https://github.com/newmarcel/KeepingYouAwake/issues/51))
 		- *Thank you [rei-vilo](https://github.com/rei-vilo)!*
+	- Korean ([Issue #64](https://github.com/newmarcel/KeepingYouAwake/pull/64))
+		- *Thank you [Pusnow](https://github.com/Pusnow)!*
 
 ### v1.4 ###
 
