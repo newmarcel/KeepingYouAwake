@@ -3,7 +3,7 @@
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 07.11.14.
-//  Copyright (c) 2014 Marcel Dierkes. All rights reserved.
+//  Copyright (c) 2014 - 2015 Marcel Dierkes. All rights reserved.
 //
 
 #import "KYASleepWakeTimer.h"

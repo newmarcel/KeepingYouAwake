@@ -3,7 +3,7 @@
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 07.11.14.
-//  Copyright (c) 2014 Marcel Dierkes. All rights reserved.
+//  Copyright (c) 2014 - 2015 Marcel Dierkes. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
@@ -52,7 +52,7 @@ typedef void(^KYASleepWakeTimerCompletionBlock)(BOOL cancelled);
 /**
  *  Schedule the Caffeinate Task for a given amount of seconds.
  *  The optional completion block will be called after the interval.
- * 
+ *
  *  If you pass 0 seconds, the task will be scheduled without a fireDate.
  *
  *  After invocation, the fireDate property is set.

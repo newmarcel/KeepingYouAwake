@@ -3,7 +3,7 @@
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 17.10.14.
-//  Copyright (c) 2014 Marcel Dierkes. All rights reserved.
+//  Copyright (c) 2014 - 2015 Marcel Dierkes. All rights reserved.
 //
 
 #import "KYAAppController.h"

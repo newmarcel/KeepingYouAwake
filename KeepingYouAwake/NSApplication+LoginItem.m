@@ -3,7 +3,7 @@
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 24.10.14.
-//  Copyright (c) 2014 Marcel Dierkes. All rights reserved.
+//  Copyright (c) 2014 - 2015 Marcel Dierkes. All rights reserved.
 //
 //  Adapted from this article: http://bdunagan.com/2010/09/25/cocoa-tip-enabling-launch-on-startup/
 //
