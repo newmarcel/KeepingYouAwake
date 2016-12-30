@@ -122,7 +122,7 @@
 				DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */,
 				DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */,
 			);
-			name = "MenuBar Icon";
+			path = "MenuBar Icon";
 			sourceTree = "<group>";
 		};
 		DA4919C51ACFFF8D00D44F6A /* Event Handler */ = {
@@ -133,7 +133,7 @@
 				DA5A50921ACC5C5400A444C8 /* KYAEvent.h */,
 				DA5A50931ACC5C5400A444C8 /* KYAEvent.m */,
 			);
-			name = "Event Handler";
+			path = "Event Handler";
 			sourceTree = "<group>";
 		};
 		DA4919C61ACFFF9600D44F6A /* Extensions */ = {
@@ -146,7 +146,7 @@
 				DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */,
 				DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DA51E7DF1C2562BE008AA96C /* General */ = {
@@ -157,7 +157,7 @@
 				DA51E7DC1C2562A2008AA96C /* KYAActivationDuration.h */,
 				DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */,
 			);
-			name = General;
+			path = General;
 			sourceTree = "<group>";
 		};
 		DA51E7E01C2562C4008AA96C /* Advanced */ = {
@@ -169,7 +169,7 @@
 				DAB128741C2493DB00831045 /* KYAPreference.h */,
 				DAB128751C2493DB00831045 /* KYAPreference.m */,
 			);
-			name = Advanced;
+			path = Advanced;
 			sourceTree = "<group>";
 		};
 		DA51E7E11C2562CA008AA96C /* About */ = {
@@ -179,7 +179,7 @@
 				DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */,
 				DAB1286D1C245A6C00831045 /* Credits.rtf */,
 			);
-			name = About;
+			path = About;
 			sourceTree = "<group>";
 		};
 		DA5B5A241C28612800EE45C6 /* Battery Status */ = {
@@ -188,7 +188,7 @@
 				DA5B5A211C28612100EE45C6 /* KYABatteryStatus.h */,
 				DA5B5A221C28612100EE45C6 /* KYABatteryStatus.m */,
 			);
-			name = "Battery Status";
+			path = "Battery Status";
 			sourceTree = "<group>";
 		};
 		DA637B3019F14693004C8838 = {
@@ -258,7 +258,7 @@
 				DA51E7E01C2562C4008AA96C /* Advanced */,
 				DA51E7E11C2562CA008AA96C /* About */,
 			);
-			name = Preferences;
+			path = Preferences;
 			sourceTree = "<group>";
 		};
 		DAC322C91C65199300DF8B63 /* Resources */ = {
