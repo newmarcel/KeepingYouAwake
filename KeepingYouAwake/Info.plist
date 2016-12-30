@@ -53,6 +53,6 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://newmarcel.github.io/KeepingYouAwake/appcast.xml</string>
+	<string>https://newmarcel.github.io/KeepingYouAwake/appcast.xml</string>
 </dict>
 </plist>
