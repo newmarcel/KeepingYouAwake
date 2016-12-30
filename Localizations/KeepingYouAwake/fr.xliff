@@ -1,118 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" datatype="plaintext" target-language="ko">
+  <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" datatype="plaintext" target-language="fr">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
     </header>
     <body>
       <trans-unit id="3tu-5G-YQt.title">
         <source>1 hour</source>
-        <target>1시간</target>
+        <target>1 heure</target>
         <note>Class = "NSMenuItem"; title = "1 hour"; ObjectID = "3tu-5G-YQt";</note>
       </trans-unit>
       <trans-unit id="5EU-sH-Q12.title">
         <source>Indefinitely</source>
-        <target>무기한</target>
+        <target>Indéfiniment</target>
         <note>Class = "NSMenuItem"; title = "Indefinitely"; ObjectID = "5EU-sH-Q12";</note>
       </trans-unit>
       <trans-unit id="7is-vc-kz7.title">
         <source>Quit</source>
-        <target>종료</target>
+        <target>Quitter</target>
         <note>Class = "NSMenuItem"; title = "Quit"; ObjectID = "7is-vc-kz7";</note>
       </trans-unit>
       <trans-unit id="18N-iz-aod.title">
         <source>5 hours</source>
-        <target>5시간</target>
+        <target>5 heures</target>
         <note>Class = "NSMenuItem"; title = "5 hours"; ObjectID = "18N-iz-aod";</note>
       </trans-unit>
       <trans-unit id="Bo6-IE-IbX.title">
         <source>Activate for Duration</source>
-        <target>활성 기간</target>
+        <target>Activer pour...</target>
         <note>Class = "NSMenuItem"; title = "Activate for Duration"; ObjectID = "Bo6-IE-IbX";</note>
       </trans-unit>
       <trans-unit id="NkC-w0-mfU.title">
         <source>Set Default: 5 minutes</source>
-        <target>기본값 설정: 5분</target>
+        <target>Régler par défaut à 5 minutes</target>
         <note>Class = "NSMenuItem"; title = "Set Default: 5 minutes"; ObjectID = "NkC-w0-mfU";</note>
       </trans-unit>
       <trans-unit id="OT5-lg-IM6.title">
         <source>Preferences…</source>
-        <target>환경설정…</target>
+        <target>Préférences…</target>
         <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "OT5-lg-IM6";</note>
       </trans-unit>
       <trans-unit id="PWL-2v-TSS.title">
         <source>Set Default: 10 minutes</source>
-        <target>기본값 설정: 10분</target>
+        <target>Régler par défaut à 10 minutes</target>
         <note>Class = "NSMenuItem"; title = "Set Default: 10 minutes"; ObjectID = "PWL-2v-TSS";</note>
       </trans-unit>
       <trans-unit id="T5i-64-xaV.title">
         <source>2 hours</source>
-        <target>2시간</target>
+        <target>2 heures</target>
         <note>Class = "NSMenuItem"; title = "2 hours"; ObjectID = "T5i-64-xaV";</note>
       </trans-unit>
       <trans-unit id="VeD-dm-81B.title">
         <source>Set Default: Indefinitely</source>
-        <target>기본값 설정: 무기한</target>
+        <target>Régler par défaut sur Indéfiniment</target>
         <note>Class = "NSMenuItem"; title = "Set Default: Indefinitely"; ObjectID = "VeD-dm-81B";</note>
       </trans-unit>
       <trans-unit id="WWd-z5-2Xu.title">
         <source>10 minutes</source>
-        <target>10분</target>
+        <target>10 minutes</target>
         <note>Class = "NSMenuItem"; title = "10 minutes"; ObjectID = "WWd-z5-2Xu";</note>
       </trans-unit>
       <trans-unit id="YNB-qE-TzE.title">
         <source>30 minutes</source>
-        <target>30분</target>
+        <target>30 minutes</target>
         <note>Class = "NSMenuItem"; title = "30 minutes"; ObjectID = "YNB-qE-TzE";</note>
       </trans-unit>
       <trans-unit id="bCY-Vy-8QT.title">
         <source>15 minutes</source>
-        <target>15분</target>
+        <target>15 minutes</target>
         <note>Class = "NSMenuItem"; title = "15 minutes"; ObjectID = "bCY-Vy-8QT";</note>
       </trans-unit>
       <trans-unit id="fUA-NX-hxF.title">
         <source>Set Default: 1 hour</source>
-        <target>기본값 설정: 1시간</target>
+        <target>Régler par défaut à 1 heure</target>
         <note>Class = "NSMenuItem"; title = "Set Default: 1 hour"; ObjectID = "fUA-NX-hxF";</note>
       </trans-unit>
       <trans-unit id="kO2-hM-cAT.title">
         <source>5 minutes</source>
-        <target>5분</target>
+        <target>5 minutes</target>
         <note>Class = "NSMenuItem"; title = "5 minutes"; ObjectID = "kO2-hM-cAT";</note>
       </trans-unit>
       <trans-unit id="kTz-g8-t11.title">
         <source>Set Default: 15 minutes</source>
-        <target>기본값 설정: 15분</target>
+        <target>Régler par défaut à 15 minutes</target>
         <note>Class = "NSMenuItem"; title = "Set Default: 15 minutes"; ObjectID = "kTz-g8-t11";</note>
       </trans-unit>
       <trans-unit id="n3h-ZB-CLV.title">
         <source>Set Default: 2 hours</source>
-        <target>기본값 설정: 2시간</target>
+        <target>Régler par défaut à 2 heures</target>
         <note>Class = "NSMenuItem"; title = "Set Default: 2 hours"; ObjectID = "n3h-ZB-CLV";</note>
       </trans-unit>
       <trans-unit id="pVH-VY-YkW.title">
         <source>Active</source>
-        <target>활성화</target>
+        <target>Active</target>
         <note>Class = "NSMenuItem"; title = "Active"; ObjectID = "pVH-VY-YkW";</note>
       </trans-unit>
       <trans-unit id="sft-bA-FTz.title">
         <source>Set Default: 30 minutes</source>
-        <target>기본값 설정: 30분</target>
+        <target>Régler par défaut à 30 minutes</target>
         <note>Class = "NSMenuItem"; title = "Set Default: 30 minutes"; ObjectID = "sft-bA-FTz";</note>
       </trans-unit>
       <trans-unit id="tAq-iH-rdw.title">
         <source>Set Default: 5 hours</source>
-        <target>기본값 설정: 5시간</target>
+        <target>Régler par défaut à 5 heures</target>
         <note>Class = "NSMenuItem"; title = "Set Default: 5 hours"; ObjectID = "tAq-iH-rdw";</note>
       </trans-unit>
       <trans-unit id="uTe-0S-BFw.title">
         <source>Activate for Duration</source>
-        <target>활성 기간</target>
+        <target>Activer pour la durée</target>
         <note>Class = "NSMenu"; title = "Activate for Duration"; ObjectID = "uTe-0S-BFw";</note>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Info.plist" source-language="en" datatype="plaintext" target-language="ko">
+  <file original="KeepingYouAwake/Info.plist" source-language="en" datatype="plaintext" target-language="fr">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
     </header>
@@ -128,52 +128,54 @@
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Localizable.strings" source-language="en" datatype="plaintext" target-language="ko">
+  <file original="KeepingYouAwake/Localizable.strings" source-language="en" datatype="plaintext" target-language="fr">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
     </header>
     <body>
       <trans-unit id="Allowing your Mac to go to sleep…">
         <source>Allowing your Mac to go to sleep…</source>
-        <target>잠자기를 허용합니다…</target>
+        <target>Autoriser la mise en veille du Mac…</target>
         <note>Allowing your Mac to go to sleep…</note>
       </trans-unit>
       <trans-unit id="Click to allow sleep\nRight click to show menu">
         <source>Click to allow sleep
 Right click to show menu</source>
-        <target>잠자기를 허용하려면 클릭
-메뉴를 보려면 오른쪽 클릭</target>
+        <target>Click pour autoriser la veille
+Click droit pour le menu</target>
         <note>Click to allow sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Click to prevent sleep\nRight click to show menu">
         <source>Click to prevent sleep
 Right click to show menu</source>
-        <target>잠자기를 비활성화하려면 클릭
-메뉴를 보려면 오른쪽 클릭</target>
+        <target>Click pour empêcher la veille
+Click droit pour le menu</target>
         <note>Click to prevent sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Disable menu bar icon highlight color">
         <source>Disable menu bar icon highlight color</source>
+        <target>Désactiver la surbrillance de l'icône de la barre de menu</target>
         <note>Disable menu bar icon highlight color</note>
       </trans-unit>
       <trans-unit id="Enable experimental Notification Center integration">
         <source>Enable experimental Notification Center integration</source>
+        <target>Activer l'intégration avec le centre de notification (beta)</target>
         <note>Enable experimental Notification Center integration</note>
       </trans-unit>
       <trans-unit id="Indefinitely">
         <source>Indefinitely</source>
-        <target>무기한</target>
+        <target>Indéfiniment</target>
         <note>Indefinitely</note>
       </trans-unit>
       <trans-unit id="Preventing your Mac from going to sleep for\n%@…">
         <source>Preventing your Mac from going to sleep for
 %@…</source>
-        <target>잠자기를 %@ 동안 비활성화합니다…</target>
+        <target>Empêcher la mise en veille du Mac pour %@…</target>
         <note>Preventing your Mac from going to sleep for\n%@…</note>
       </trans-unit>
       <trans-unit id="Preventing your Mac from going to sleep…">
         <source>Preventing your Mac from going to sleep…</source>
-        <target>잠자기를 비활성화합니다.…</target>
+        <target>Empêcher la mise en veille du Mac</target>
         <note>Preventing your Mac from going to sleep…</note>
       </trans-unit>
       <trans-unit id="Version">
@@ -183,63 +185,64 @@ Right click to show menu</source>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="ko">
+  <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="fr">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
     </header>
     <body>
       <trans-unit id="0Fs-xW-EeB.title">
         <source>Check for Pre-Release Updates</source>
-        <target>Pre-Release 업데이트 확인</target>
+        <target>Inclure les versions beta</target>
         <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "0Fs-xW-EeB";</note>
       </trans-unit>
       <trans-unit id="5bL-cI-YIY.title">
         <source>Advanced</source>
-        <target>고급</target>
+        <target>Avancées</target>
         <note>Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY";</note>
       </trans-unit>
       <trans-unit id="AvX-7Q-Bvc.title">
         <source>KeepingYouAwake – Preferences</source>
-        <target>KeepingYouAwake – 환경설정</target>
+        <target>KeepingYouAwake – Préférences</target>
         <note>Class = "NSWindow"; title = "KeepingYouAwake – Preferences"; ObjectID = "AvX-7Q-Bvc";</note>
       </trans-unit>
       <trans-unit id="Ax6-W4-7bK.title">
         <source>Deactivate when battery capacity is below</source>
-        <target>배터리 잔량이 부족하면 비활성화</target>
+        <target>Désactiver quand la batterie est inférieure à </target>
         <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK";</note>
       </trans-unit>
       <trans-unit id="EXv-vC-wyo.title">
         <source>Reset to Default</source>
-        <target>기본값으로 복원</target>
+        <target>Rétablir les réglages par défaut</target>
         <note>Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo";</note>
       </trans-unit>
       <trans-unit id="G1k-8T-EcX.title">
         <source>Version 2016</source>
+        <target>Version 2016</target>
         <note>Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX";</note>
       </trans-unit>
       <trans-unit id="IOU-Hs-S4r.title">
         <source>Activate on Launch</source>
-        <target>실행 시 활성화</target>
+        <target>Activer au lancement</target>
         <note>Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r";</note>
       </trans-unit>
       <trans-unit id="Icg-VI-pC8.title">
         <source>Check Now</source>
-        <target>지금 확인</target>
+        <target>Maintenant</target>
         <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "Icg-VI-pC8";</note>
       </trans-unit>
       <trans-unit id="OsK-jX-EzO.title">
         <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
-        <target>고급 환경설정은 내용을 숙지한 경우만 사용하십시오. 대부분의 고급 환경설정은 재시작이 필요합니다.</target>
+        <target>Ces préférences avancées sont à vos risques et périls et requièrent un redémarrage de KeepingYouAwake.</target>
         <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO";</note>
       </trans-unit>
       <trans-unit id="QIk-WP-qH1.title">
         <source>Start at Login</source>
-        <target>로그인 시 활성화</target>
+        <target>Lancer au démarrage</target>
         <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1";</note>
       </trans-unit>
       <trans-unit id="RY6-7F-Z7R.title">
         <source>Automatically Check for Updates</source>
-        <target>자동으로 업데이트 확인</target>
+        <target>Vérifier les mise-à-jour automatiquement</target>
         <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "RY6-7F-Z7R";</note>
       </trans-unit>
       <trans-unit id="Rb3-Sm-byr.title">
@@ -249,12 +252,12 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="S6p-h0-H5B.title">
         <source>Immediately starts preventing sleep when launched.</source>
-        <target>앱을 실행했을 때 즉시 잠자기를 비활성화합니다.</target>
+        <target>Empêche la mise en veille dès le lancement de KeepingYouAwake.</target>
         <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B";</note>
       </trans-unit>
       <trans-unit id="UVY-8B-q5H.title">
         <source>Default Activation Duration:</source>
-        <target>기본 활성화 시간:</target>
+        <target>Durée d'activation par défaut :</target>
         <note>Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H";</note>
       </trans-unit>
       <trans-unit id="fiQ-AT-I7u.title">
@@ -264,6 +267,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="g2t-CH-TcY.title">
         <source>Text Cell</source>
+        <target>Cellule de texte</target>
         <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "g2t-CH-TcY";</note>
       </trans-unit>
       <trans-unit id="i17-n2-vfw.title">
@@ -273,22 +277,22 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="k65-yi-85l.title">
         <source>This value will be ignored when you manually start the app below this battery capacity.</source>
-        <target>만일 이 배터리 잔량보다 적을 때 활성화한다면 이 값은 무시됩니다.</target>
+        <target>Ce réglage sera ignoré si vous lancez l'application manuellement et que la batterie se trouve en dessous de cette valeur.</target>
         <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l";</note>
       </trans-unit>
       <trans-unit id="kG2-Tz-t51.title">
         <source>Check</source>
-        <target>확인</target>
+        <target>Vérifier</target>
         <note>Class = "NSButtonCell"; title = "Check"; ObjectID = "kG2-Tz-t51";</note>
       </trans-unit>
       <trans-unit id="lGE-74-XwP.title">
         <source>General</source>
-        <target>일반</target>
+        <target>Général</target>
         <note>Class = "NSViewController"; title = "General"; ObjectID = "lGE-74-XwP";</note>
       </trans-unit>
       <trans-unit id="nnA-d3-VV6.title">
         <source>Sets the default activation duration for the menu bar icon.</source>
-        <target>메뉴 막대 아이콘 클릭 시 설정되는 기본 활성화 시간입니다.</target>
+        <target>Définit la durée d'activation par défaut pour le menu Activer pour...</target>
         <note>Class = "NSTextFieldCell"; title = "Sets the default activation duration for the menu bar icon."; ObjectID = "nnA-d3-VV6";</note>
       </trans-unit>
       <trans-unit id="nsg-DI-kE2.title">
@@ -298,16 +302,17 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="siu-CP-Bg1.title">
         <source>Copyright Label</source>
+        <target>Copyright</target>
         <note>Class = "NSTextFieldCell"; title = "Copyright Label"; ObjectID = "siu-CP-Bg1";</note>
       </trans-unit>
       <trans-unit id="uUP-5n-ykj.title">
         <source>About</source>
-        <target>정보</target>
+        <target>À propos</target>
         <note>Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj";</note>
       </trans-unit>
       <trans-unit id="x6s-XD-lBU.title">
         <source>Automatically opens the app when you start your Mac.</source>
-        <target>Mac을 시작했을 때 자동으로 이 앱을 실행합니다.</target>
+        <target>Lance KeepingYouAwake au démarrage du Mac.</target>
         <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU";</note>
       </trans-unit>
     </body>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" datatype="plaintext" target-language="de">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.0" build-num="8S201h"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
     </header>
     <body>
       <trans-unit id="3tu-5G-YQt.title">
@@ -112,9 +112,80 @@
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="de">
+  <file original="KeepingYouAwake/Info.plist" source-language="en" datatype="plaintext" target-language="de">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.0" build-num="8S201h"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.4.1</source>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright">
+        <source>${COPYRIGHT_TEXT}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Localizable.strings" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
+    </header>
+    <body>
+      <trans-unit id="Allowing your Mac to go to sleep…">
+        <source>Allowing your Mac to go to sleep…</source>
+        <target>Ruhezustand erlauben…</target>
+        <note>Allowing your Mac to go to sleep…</note>
+      </trans-unit>
+      <trans-unit id="Click to allow sleep\nRight click to show menu">
+        <source>Click to allow sleep
+Right click to show menu</source>
+        <target>Klicken, um den Ruhezustand zu erlauben
+Rechtsklick, um das Menü anzuzeigen</target>
+        <note>Click to allow sleep\nRight click to show menu</note>
+      </trans-unit>
+      <trans-unit id="Click to prevent sleep\nRight click to show menu">
+        <source>Click to prevent sleep
+Right click to show menu</source>
+        <target>Klicken, um den Ruhezustand zu verhindern
+Rechtsklick, um das Menü anzuzeigen</target>
+        <note>Click to prevent sleep\nRight click to show menu</note>
+      </trans-unit>
+      <trans-unit id="Disable menu bar icon highlight color">
+        <source>Disable menu bar icon highlight color</source>
+        <note>Disable menu bar icon highlight color</note>
+      </trans-unit>
+      <trans-unit id="Enable experimental Notification Center integration">
+        <source>Enable experimental Notification Center integration</source>
+        <note>Enable experimental Notification Center integration</note>
+      </trans-unit>
+      <trans-unit id="Indefinitely">
+        <source>Indefinitely</source>
+        <target>Unbegrenzt</target>
+        <note>Indefinitely</note>
+      </trans-unit>
+      <trans-unit id="Preventing your Mac from going to sleep for\n%@…">
+        <source>Preventing your Mac from going to sleep for
+%@…</source>
+        <target>Ruhezustand für %@ verhindern…</target>
+        <note>Preventing your Mac from going to sleep for\n%@…</note>
+      </trans-unit>
+      <trans-unit id="Preventing your Mac from going to sleep…">
+        <source>Preventing your Mac from going to sleep…</source>
+        <target>Ruhezustand verhindern…</target>
+        <note>Preventing your Mac from going to sleep…</note>
+      </trans-unit>
+      <trans-unit id="Version">
+        <source>Version</source>
+        <target>Version</target>
+        <note>Version</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
     </header>
     <body>
       <trans-unit id="0Fs-xW-EeB.title">
@@ -136,10 +207,6 @@
         <source>Deactivate when battery capacity is below</source>
         <target>Deaktivieren, wenn der Ladestand der Batterie niedriger ist als</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK";</note>
-      </trans-unit>
-      <trans-unit id="Dhm-17-m0f.title">
-        <source>Title</source>
-        <note>Class = "NSBox"; title = "Title"; ObjectID = "Dhm-17-m0f";</note>
       </trans-unit>
       <trans-unit id="EXv-vC-wyo.title">
         <source>Reset to Default</source>
@@ -190,10 +257,6 @@
         <target>Standard-Aktivierungsdauer:</target>
         <note>Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H";</note>
       </trans-unit>
-      <trans-unit id="cLy-zk-bvV.title">
-        <source>Title</source>
-        <note>Class = "NSBox"; title = "Title"; ObjectID = "cLy-zk-bvV";</note>
-      </trans-unit>
       <trans-unit id="fiQ-AT-I7u.title">
         <source>10 %</source>
         <target>10 %</target>
@@ -242,85 +305,10 @@
         <target>Über</target>
         <note>Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj";</note>
       </trans-unit>
-      <trans-unit id="um7-0A-CIi.title">
-        <source>Title</source>
-        <note>Class = "NSBox"; title = "Title"; ObjectID = "um7-0A-CIi";</note>
-      </trans-unit>
       <trans-unit id="x6s-XD-lBU.title">
         <source>Automatically opens the app when you start your Mac.</source>
         <target>Öffnet die App automatisch beim Start Ihres Macs.</target>
         <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU";</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="KeepingYouAwake/Info.plist" source-language="en" datatype="plaintext" target-language="de">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.0" build-num="8S201h"/>
-    </header>
-    <body>
-      <trans-unit id="CFBundleName">
-        <source>$(PRODUCT_NAME)</source>
-      </trans-unit>
-      <trans-unit id="CFBundleShortVersionString">
-        <source>1.4.1</source>
-      </trans-unit>
-      <trans-unit id="NSHumanReadableCopyright">
-        <source>${COPYRIGHT_TEXT}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="KeepingYouAwake/Localizable.strings" source-language="en" datatype="plaintext" target-language="de">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.0" build-num="8S201h"/>
-    </header>
-    <body>
-      <trans-unit id="Allowing your Mac to go to sleep…">
-        <source>Allowing your Mac to go to sleep…</source>
-        <target>Ruhezustand erlauben…</target>
-        <note>Allowing your Mac to go to sleep…</note>
-      </trans-unit>
-      <trans-unit id="Click to allow sleep\nRight click to show menu">
-        <source>Click to allow sleep
-Right click to show menu</source>
-        <target>Klicken, um den Ruhezustand zu erlauben
-Rechtsklick, um das Menü anzuzeigen</target>
-        <note>Click to allow sleep\nRight click to show menu</note>
-      </trans-unit>
-      <trans-unit id="Click to prevent sleep\nRight click to show menu">
-        <source>Click to prevent sleep
-Right click to show menu</source>
-        <target>Klicken, um den Ruhezustand zu verhindern
-Rechtsklick, um das Menü anzuzeigen</target>
-        <note>Click to prevent sleep\nRight click to show menu</note>
-      </trans-unit>
-      <trans-unit id="Disable menu bar icon highlight color">
-        <source>Disable menu bar icon highlight color</source>
-        <note>Disable menu bar icon highlight color</note>
-      </trans-unit>
-      <trans-unit id="Enable experimental Notification Center integration">
-        <source>Enable experimental Notification Center integration</source>
-        <note>Enable experimental Notification Center integration</note>
-      </trans-unit>
-      <trans-unit id="Indefinitely">
-        <source>Indefinitely</source>
-        <target>Unbegrenzt</target>
-        <note>Indefinitely</note>
-      </trans-unit>
-      <trans-unit id="Preventing your Mac from going to sleep for\n%@…">
-        <source>Preventing your Mac from going to sleep for
-%@…</source>
-        <target>Ruhezustand für %@ verhindern…</target>
-        <note>Preventing your Mac from going to sleep for\n%@…</note>
-      </trans-unit>
-      <trans-unit id="Preventing your Mac from going to sleep…">
-        <source>Preventing your Mac from going to sleep…</source>
-        <target>Ruhezustand verhindern…</target>
-        <note>Preventing your Mac from going to sleep…</note>
-      </trans-unit>
-      <trans-unit id="Version">
-        <source>Version</source>
-        <target>Version</target>
-        <note>Version</note>
       </trans-unit>
     </body>
   </file>
