@@ -142,7 +142,7 @@
 - (void)toggleStatus:(id)sender
 {
     NSEvent *event = [[NSApplication sharedApplication] currentEvent];
-    if((event.modifierFlags & NSControlKeyMask) || (event.type == NSRightMouseUp))
+    if((event.modifierFlags & NSEventModifierFlagControl) || (event.modifierFlags & NSEventModifierFlagOption) || (event.type == NSEventTypeRightMouseUp))
     {
         [self showMenu:nil];
         return;
