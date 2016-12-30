@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 extern NSString * const KYAUserDefaultsKeyActivateOnLaunch;
 extern NSString * const KYAUserDefaultsKeyNotificationsEnabled;
 extern NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
-extern NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
 extern NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
 extern NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
 extern NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
@@ -36,11 +35,6 @@ extern NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
  *  Returns the default time interval for the sleep wake timer.
  */
 @property (nonatomic) NSTimeInterval kya_defaultTimeInterval;
-
-/**
- *  Returns YES if the app should allow the display to sleep while still keeping the system awake (AC-only). This exposes the `caffeinate -s` command.
- */
-@property (nonatomic, getter = kya_shouldAllowDisplaySleep) BOOL kya_allowDisplaySleep;
 
 /**
  *  Returns YES if the menu bar icon should not be highlighted on left and right click.

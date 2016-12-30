@@ -12,7 +12,6 @@
 NSString * const KYAUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch";
 NSString * const KYAUserDefaultsKeyNotificationsEnabled = @"info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled";
 NSString * const KYAUserDefaultsKeyDefaultTimeInterval = @"info.marcel-dierkes.KeepingYouAwake.TimeInterval";
-NSString * const KYAUserDefaultsKeyAllowDisplaySleep = @"info.marcel-dierkes.KeepingYouAwake.AllowDisplaySleep";
 NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled = @"info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled";
 
 NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled = @"info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled";
@@ -21,7 +20,7 @@ NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dier
 
 @implementation NSUserDefaults (Keys)
 @dynamic kya_activateOnLaunch, kya_defaultTimeInterval, kya_notificationsEnabled;
-@dynamic kya_allowDisplaySleep, kya_menuBarIconHighlightDisabled;
+@dynamic kya_menuBarIconHighlightDisabled;
 @dynamic kya_batteryCapacityThresholdEnabled, kya_batteryCapacityThreshold;
 @dynamic kya_preReleaseUpdatesEnabled;
 
@@ -59,18 +58,6 @@ NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dier
 - (void)setKya_defaultTimeInterval:(NSTimeInterval)defaultTimeInterval
 {
     [self setInteger:(NSInteger)defaultTimeInterval forKey:KYAUserDefaultsKeyDefaultTimeInterval];  // decimal places will be cut-off
-}
-
-#pragma mark - Allow Display Sleep
-
-- (BOOL)kya_shouldAllowDisplaySleep
-{
-    return [self boolForKey:KYAUserDefaultsKeyAllowDisplaySleep];
-}
-
-- (void)setKya_allowDisplaySleep:(BOOL)allowDisplaySleep
-{
-    [self setBool:allowDisplaySleep forKey:KYAUserDefaultsKeyAllowDisplaySleep];
 }
 
 #pragma mark - Menu Bar Icon Highlight Disabled

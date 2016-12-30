@@ -274,10 +274,6 @@
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.0" build-num="8S201h"/>
     </header>
     <body>
-      <trans-unit id="Allow the display to sleep (when connected to AC power)">
-        <source>Allow the display to sleep (when connected to AC power)</source>
-        <note>Allow the display to sleep (when connected to AC power)</note>
-      </trans-unit>
       <trans-unit id="Allowing your Mac to go to sleep…">
         <source>Allowing your Mac to go to sleep…</source>
         <target>Ruhezustand erlauben…</target>

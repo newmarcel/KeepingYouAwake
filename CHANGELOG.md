@@ -10,6 +10,9 @@
 		- *Thank you [rei-vilo](https://github.com/rei-vilo)!*
 	- Korean ([Issue #64](https://github.com/newmarcel/KeepingYouAwake/pull/64))
 		- *Thank you [Pusnow](https://github.com/Pusnow)!*
+- removed advanced preference to allow the display to sleep *(didn't work properly and lead to confusion)*
+	- the `info.marcel-dierkes.KeepingYouAwake.AllowDisplaySleep` preference was removed
+	- a similar, more powerful replacement feature will be introduced soon
 
 ### v1.4 ###
 
