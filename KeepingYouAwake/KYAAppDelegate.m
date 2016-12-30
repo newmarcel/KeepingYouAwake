@@ -23,6 +23,7 @@
     if(_preferencesWindowController == nil)
     {
         _preferencesWindowController = [[NSStoryboard storyboardWithName:@"Preferences" bundle:nil] instantiateInitialController];
+        _preferencesWindowController.windowFrameAutosaveName = @"PreferencesWindow";
     }
     return _preferencesWindowController;
 }

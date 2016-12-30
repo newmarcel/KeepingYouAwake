@@ -10,10 +10,9 @@
         <scene sceneID="gpw-iS-JVS">
             <objects>
                 <windowController id="uZF-hQ-SQu" sceneMemberID="viewController">
-                    <window key="window" title="KeepingYouAwake – Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="AvX-7Q-Bvc">
+                    <window key="window" title="KeepingYouAwake – Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" id="AvX-7Q-Bvc">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowCollectionBehavior key="collectionBehavior" managed="YES" participatesInCycle="YES" fullScreenPrimary="YES" fullScreenAllowsTiling="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
                         <rect key="contentRect" x="150" y="430" width="480" height="320"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
                     </window>
