@@ -9,7 +9,7 @@
         <!--Window Controller-->
         <scene sceneID="gpw-iS-JVS">
             <objects>
-                <windowController id="uZF-hQ-SQu" sceneMemberID="viewController">
+                <windowController id="uZF-hQ-SQu" customClass="KYAPreferencesWindowController" sceneMemberID="viewController">
                     <window key="window" title="KeepingYouAwake – Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" id="AvX-7Q-Bvc">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowCollectionBehavior key="collectionBehavior" managed="YES" participatesInCycle="YES" fullScreenPrimary="YES" fullScreenAllowsTiling="YES"/>

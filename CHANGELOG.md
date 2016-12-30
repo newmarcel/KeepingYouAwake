@@ -2,6 +2,11 @@
 
 ## Changelog ##
 
+### v1.4.x ###
+
+- support cmd+w and cmd+q keyboard shortcuts in the preferences window ([Issue #56](https://github.com/newmarcel/KeepingYouAwake/issues/56))
+- preferences now remember the window position
+
 ### v1.4.1 ###
 
 - Localization support

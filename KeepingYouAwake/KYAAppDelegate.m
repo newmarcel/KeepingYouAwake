@@ -9,9 +9,10 @@
 #import "KYAAppDelegate.h"
 #import <Sparkle/Sparkle.h>
 #import "NSUserDefaults+Keys.h"
+#import "KYAPreferencesWindowController.h"
 
 @interface KYAAppDelegate () <NSWindowDelegate, SUUpdaterDelegate>
-@property (nonatomic, nullable) NSWindowController *preferencesWindowController;
+@property (nonatomic, nullable) KYAPreferencesWindowController *preferencesWindowController;
 @end
 
 @implementation KYAAppDelegate
@@ -22,8 +23,7 @@
 {
     if(_preferencesWindowController == nil)
     {
-        _preferencesWindowController = [[NSStoryboard storyboardWithName:@"Preferences" bundle:nil] instantiateInitialController];
-        _preferencesWindowController.windowFrameAutosaveName = @"PreferencesWindow";
+        _preferencesWindowController = [KYAPreferencesWindowController defaultPreferencesWindowController];
     }
     return _preferencesWindowController;
 }
