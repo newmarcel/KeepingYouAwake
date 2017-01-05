@@ -154,10 +154,12 @@ Rechtsklick, um das Menü anzuzeigen</target>
       </trans-unit>
       <trans-unit id="Disable menu bar icon highlight color">
         <source>Disable menu bar icon highlight color</source>
+        <target>Keine Auswahlfarbe beim Statusmenü anzeigen</target>
         <note>Disable menu bar icon highlight color</note>
       </trans-unit>
       <trans-unit id="Enable experimental Notification Center integration">
         <source>Enable experimental Notification Center integration</source>
+        <target>Experimentelle Integration mit der Mitteilungszentrale einschalten</target>
         <note>Enable experimental Notification Center integration</note>
       </trans-unit>
       <trans-unit id="Indefinitely">
@@ -190,7 +192,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
     <body>
       <trans-unit id="0Fs-xW-EeB.title">
         <source>Check for Pre-Release Updates</source>
-        <target>Nach Vorschau-Versionen suchen</target>
+        <target>Nach Vorschauversionen suchen</target>
         <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "0Fs-xW-EeB";</note>
       </trans-unit>
       <trans-unit id="5bL-cI-YIY.title">
@@ -229,7 +231,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
       </trans-unit>
       <trans-unit id="OsK-jX-EzO.title">
         <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
-        <target>Ändern Sie diese erweiterten Einstellungen nur, wenn Sie wissen, was Sie tun. Die meisten dieser Einstellungen erfordern einen Neustart.</target>
+        <target>Ändere diese erweiterten Einstellungen nur, wenn du weißt, was du tust. Die meisten dieser Einstellungen erfordern einen Neustart.</target>
         <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO";</note>
       </trans-unit>
       <trans-unit id="QIk-WP-qH1.title">
@@ -254,7 +256,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
       </trans-unit>
       <trans-unit id="UVY-8B-q5H.title">
         <source>Default Activation Duration:</source>
-        <target>Standard-Aktivierungsdauer:</target>
+        <target>Standardaktivierungsdauer:</target>
         <note>Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H";</note>
       </trans-unit>
       <trans-unit id="fiQ-AT-I7u.title">
@@ -273,7 +275,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
       </trans-unit>
       <trans-unit id="k65-yi-85l.title">
         <source>This value will be ignored when you manually start the app below this battery capacity.</source>
-        <target>Dieser Wert wird ignoriert, wenn Sie die App unter dieser Kapazitäts-Grenze starten.</target>
+        <target>Dieser Wert wird ignoriert, wenn du die App unter dieser Kapazitätsgrenze startest.</target>
         <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l";</note>
       </trans-unit>
       <trans-unit id="kG2-Tz-t51.title">
@@ -288,7 +290,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
       </trans-unit>
       <trans-unit id="nnA-d3-VV6.title">
         <source>Sets the default activation duration for the menu bar icon.</source>
-        <target>Setzt die Standard-Aktivierungsdauer des Menüleistensymbols.</target>
+        <target>Setzt die Standardaktivierungsdauer für das Statusmenü.</target>
         <note>Class = "NSTextFieldCell"; title = "Sets the default activation duration for the menu bar icon."; ObjectID = "nnA-d3-VV6";</note>
       </trans-unit>
       <trans-unit id="nsg-DI-kE2.title">
@@ -307,7 +309,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
       </trans-unit>
       <trans-unit id="x6s-XD-lBU.title">
         <source>Automatically opens the app when you start your Mac.</source>
-        <target>Öffnet die App automatisch beim Start Ihres Macs.</target>
+        <target>Öffnet die App automatisch beim Start deines Macs.</target>
         <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU";</note>
       </trans-unit>
     </body>
