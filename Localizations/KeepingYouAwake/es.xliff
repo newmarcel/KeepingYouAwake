@@ -121,10 +121,10 @@
         <source>$(PRODUCT_NAME)</source>
       </trans-unit>
       <trans-unit id="CFBundleShortVersionString">
-        <source>1.4.1</source>
+        <source>$(KYA_BUNDLE_VERSION)</source>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright">
-        <source>${COPYRIGHT_TEXT}</source>
+        <source>${KYA_COPYRIGHT_TEXT}</source>
       </trans-unit>
     </body>
   </file>
