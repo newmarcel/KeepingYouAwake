@@ -141,15 +141,15 @@
       <trans-unit id="Click to allow sleep\nRight click to show menu">
         <source>Click to allow sleep
 Right click to show menu</source>
-        <target>Click pour autoriser la veille
-Click droit pour le menu</target>
+        <target>Cliquer pour autoriser la veille
+Clic droit pour le menu</target>
         <note>Click to allow sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Click to prevent sleep\nRight click to show menu">
         <source>Click to prevent sleep
 Right click to show menu</source>
-        <target>Click pour empêcher la veille
-Click droit pour le menu</target>
+        <target>Cliquer pour empêcher la veille
+Clic droit pour le menu</target>
         <note>Click to prevent sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Disable menu bar icon highlight color">
@@ -159,7 +159,7 @@ Click droit pour le menu</target>
       </trans-unit>
       <trans-unit id="Enable experimental Notification Center integration">
         <source>Enable experimental Notification Center integration</source>
-        <target>Activer l'intégration avec le centre de notification (beta)</target>
+        <target>Activer l'intégration avec le Centre de notification (beta)</target>
         <note>Enable experimental Notification Center integration</note>
       </trans-unit>
       <trans-unit id="Indefinitely">
@@ -232,7 +232,7 @@ Click droit pour le menu</target>
       </trans-unit>
       <trans-unit id="OsK-jX-EzO.title">
         <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
-        <target>Ces préférences avancées sont à vos risques et périls et requièrent un redémarrage de KeepingYouAwake.</target>
+        <target>Vous utilisez ces préférences avancées à vos risques. Ils requièrent un redémarrage de KeepingYouAwake.</target>
         <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO";</note>
       </trans-unit>
       <trans-unit id="QIk-WP-qH1.title">
