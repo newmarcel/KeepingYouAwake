@@ -8,7 +8,7 @@ KeepingYouAwake is a small menu bar utility for macOS Yosemite *(Version 10.10)*
 
 or install it via [cask](http://caskroom.io/): `brew cask install keepingyouawake`.
 
-![Screenshots](./Screenshots.jpg)
+![Screenshots](./Extras/Screenshot.jpg)
 
 ## Why does this project exist, Caffeine.app works perfectly fine? ##
 
