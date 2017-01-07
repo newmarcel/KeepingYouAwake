@@ -97,6 +97,7 @@
 		DA7931C31A575C6000B6DEC4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Carthage/Build/Mac/Sparkle.framework; sourceTree = SOURCE_ROOT; };
 		DA7B53041E16999A00D89A12 /* KYAPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesWindowController.h; sourceTree = "<group>"; };
 		DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAPreferencesWindowController.m; sourceTree = "<group>"; };
+		DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = SOURCE_ROOT; };
 		DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAGeneralPreferencesViewController.h; sourceTree = "<group>"; };
 		DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAGeneralPreferencesViewController.m; sourceTree = "<group>"; };
 		DAB128671C2453F600831045 /* KYAAdvancedPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAdvancedPreferencesViewController.h; sourceTree = "<group>"; };
@@ -110,7 +111,6 @@
 		DAB128751C2493DB00831045 /* KYAPreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAPreference.m; sourceTree = "<group>"; };
 		DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYASleepWakeTimer.h; sourceTree = "<group>"; };
 		DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYASleepWakeTimer.m; sourceTree = "<group>"; };
-		DAD272581ACB21D000CDD620 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
 		DAD272591ACB266800CDD620 /* KYAEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEventHandler.h; sourceTree = "<group>"; };
 		DAD2725A1ACB266800CDD620 /* KYAEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAEventHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,9 +244,9 @@
 			children = (
 				DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */,
 				DA54C12C1D69C55400AF9E9D /* Localizable.strings */,
-				DAD272581ACB21D000CDD620 /* Configuration.xcconfig */,
 				DA637B3D19F14693004C8838 /* Info.plist */,
 				DA637B3E19F14693004C8838 /* main.m */,
+				DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */,
 			);
 			name = "Supporting Files";
 			path = KeepingYouAwake;
@@ -459,7 +459,7 @@
 /* Begin XCBuildConfiguration section */
 		DA637B5419F14694004C8838 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAD272581ACB21D000CDD620 /* Configuration.xcconfig */;
+			baseConfigurationReference = DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
@@ -524,7 +524,7 @@
 		};
 		DA637B5519F14694004C8838 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAD272581ACB21D000CDD620 /* Configuration.xcconfig */;
+			baseConfigurationReference = DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
