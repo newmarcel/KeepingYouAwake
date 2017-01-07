@@ -6,6 +6,31 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.4.2pre: Build 1040200]]></title>
+			<description><![CDATA[<ul>
+<li>support cmd+w and cmd+q keyboard shortcuts in the preferences window (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/56">Issue #56</a>)</li>
+<li>preferences now remember the window position</li>
+<li>allow option-click on the menubar icon (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/59">Issue #59</a>)</li>
+<li>fixed the incorrect fullscreen behavior of the preferences window (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/71">Issue #71</a>), <em>thanks <a href="https://github.com/Eitot">Eitot</a>!</em></li>
+<li>more localization updates
+<ul>
+<li>Spanish (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/70">Issue #70</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/nbalonso">nbalonso</a>!</em></li>
+</ul></li>
+<li>Dutch (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/73">Issue #73</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/Eitot">Eitot</a>!</em></li>
+</ul></li>
+<li>improvements to the French translation by <a href="https://github.com/alexandreleroux">alexandreleroux</a> (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/63">Issue #63</a>)</li>
+</ul></li>
+</ul>
+]]></description>
+			<pubDate>Sat, 07 Jan 2017 19:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/pre%2F1040200/KeepingYouAwake-1040200.zip" length="1562205" type="application/octet-stream" sparkle:version="1040200" sparkle:shortVersionString="1.4.2pre">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.4.1: L10n Update]]></title>
 			<description><![CDATA[<ul>
 <li>Localization support
