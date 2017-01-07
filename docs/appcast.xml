@@ -6,6 +6,32 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.4.1: L10n Update]]></title>
+			<description><![CDATA[<ul>
+<li>Localization support
+<ul>
+<li>German</li>
+<li>French (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/51">Issue #51</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/rei-vilo">rei-vilo</a>!</em></li>
+</ul></li>
+<li>Korean (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/64">Issue #64</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/Pusnow">Pusnow</a>!</em></li>
+</ul></li>
+</ul></li>
+<li>removed advanced preference to allow the display to sleep <em>(didn't work properly and lead to confusion)</em>
+<ul>
+<li>the <code>info.marcel-dierkes.KeepingYouAwake.AllowDisplaySleep</code> preference was removed</li>
+<li>a similar, more powerful replacement feature will be introduced soon</li>
+</ul></li>
+</ul>
+]]></description>
+			<pubDate>Fri, 30 Dec 2016 13:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.4.1/KeepingYouAwake-1.4.1.zip" length="1554152" type="application/octet-stream" sparkle:version="141" sparkle:shortVersionString="1.4.1">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.4.0: Preferences Update]]></title>
 			<description><![CDATA[<ul>
 <li>Added a preferences window that replaces seldom used menu items and surfaces advanced and experimental preferences</li>
