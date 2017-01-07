@@ -1,0 +1,63 @@
+/* Class = "NSMenuItem"; title = "1 hour"; ObjectID = "3tu-5G-YQt"; */
+"3tu-5G-YQt.title" = "1 uur";
+
+/* Class = "NSMenuItem"; title = "Indefinitely"; ObjectID = "5EU-sH-Q12"; */
+"5EU-sH-Q12.title" = "Onbepaalde duur";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "7is-vc-kz7"; */
+"7is-vc-kz7.title" = "Stop";
+
+/* Class = "NSMenuItem"; title = "5 hours"; ObjectID = "18N-iz-aod"; */
+"18N-iz-aod.title" = "5 uur";
+
+/* Class = "NSMenuItem"; title = "Activate for Duration"; ObjectID = "Bo6-IE-IbX"; */
+"Bo6-IE-IbX.title" = "Schakel in voor";
+
+/* Class = "NSMenuItem"; title = "Set Default: 5 minutes"; ObjectID = "NkC-w0-mfU"; */
+"NkC-w0-mfU.title" = "Zet standaard: 5 minuten";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "OT5-lg-IM6"; */
+"OT5-lg-IM6.title" = "Voorkeuren…";
+
+/* Class = "NSMenuItem"; title = "Set Default: 10 minutes"; ObjectID = "PWL-2v-TSS"; */
+"PWL-2v-TSS.title" = "Zet standaard: 10 minuten";
+
+/* Class = "NSMenuItem"; title = "2 hours"; ObjectID = "T5i-64-xaV"; */
+"T5i-64-xaV.title" = "2 uur";
+
+/* Class = "NSMenuItem"; title = "Set Default: Indefinitely"; ObjectID = "VeD-dm-81B"; */
+"VeD-dm-81B.title" = "Zet standaard: onbepaalde duur";
+
+/* Class = "NSMenuItem"; title = "10 minutes"; ObjectID = "WWd-z5-2Xu"; */
+"WWd-z5-2Xu.title" = "10 minuten";
+
+/* Class = "NSMenuItem"; title = "30 minutes"; ObjectID = "YNB-qE-TzE"; */
+"YNB-qE-TzE.title" = "30 minuten";
+
+/* Class = "NSMenuItem"; title = "15 minutes"; ObjectID = "bCY-Vy-8QT"; */
+"bCY-Vy-8QT.title" = "15 minuten";
+
+/* Class = "NSMenuItem"; title = "Set Default: 1 hour"; ObjectID = "fUA-NX-hxF"; */
+"fUA-NX-hxF.title" = "Zet standaard: 1 uur";
+
+/* Class = "NSMenuItem"; title = "5 minutes"; ObjectID = "kO2-hM-cAT"; */
+"kO2-hM-cAT.title" = "5 minuten";
+
+/* Class = "NSMenuItem"; title = "Set Default: 15 minutes"; ObjectID = "kTz-g8-t11"; */
+"kTz-g8-t11.title" = "Zet standaard: 15 minuten";
+
+/* Class = "NSMenuItem"; title = "Set Default: 2 hours"; ObjectID = "n3h-ZB-CLV"; */
+"n3h-ZB-CLV.title" = "Zet standaard: 2 uur";
+
+/* Class = "NSMenuItem"; title = "Active"; ObjectID = "pVH-VY-YkW"; */
+"pVH-VY-YkW.title" = "Ingeschakeld";
+
+/* Class = "NSMenuItem"; title = "Set Default: 30 minutes"; ObjectID = "sft-bA-FTz"; */
+"sft-bA-FTz.title" = "Zet standaard: 30 minuten";
+
+/* Class = "NSMenuItem"; title = "Set Default: 5 hours"; ObjectID = "tAq-iH-rdw"; */
+"tAq-iH-rdw.title" = "Zet standaard: 5 uur";
+
+/* Class = "NSMenu"; title = "Activate for Duration"; ObjectID = "uTe-0S-BFw"; */
+"uTe-0S-BFw.title" = "Schakel in voor";
+

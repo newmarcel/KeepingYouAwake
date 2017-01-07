@@ -61,6 +61,10 @@
 		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
 		DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Keys.h"; sourceTree = "<group>"; };
 		DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Keys.m"; sourceTree = "<group>"; };
+		DA51141C1E214E1600635931 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DA51141D1E214E1600635931 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA51141E1E214E1600635931 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA51141F1E214E1600635931 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		DA51E7DC1C2562A2008AA96C /* KYAActivationDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAActivationDuration.h; sourceTree = "<group>"; };
 		DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAActivationDuration.m; sourceTree = "<group>"; };
 		DA54C1101D69C20F00AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
@@ -406,6 +410,7 @@
 				2EB97EEF1D69FD8900BA63A0 /* fr */,
 				8F6945C61DB7A87B0059C386 /* ko */,
 				DA6439CA1E20F29D0078ECE4 /* es */,
+				DA51141C1E214E1600635931 /* nl */,
 			);
 			name = Preferences.storyboard;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 				2EB97EED1D69FD8800BA63A0 /* fr */,
 				8F6945C81DB7A87D0059C386 /* ko */,
 				DA6439CB1E20F29E0078ECE4 /* es */,
+				DA51141D1E214E1600635931 /* nl */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -430,6 +436,7 @@
 				2EB97EEE1D69FD8900BA63A0 /* fr */,
 				8F6945C71DB7A87C0059C386 /* ko */,
 				DA6439CC1E20F29E0078ECE4 /* es */,
+				DA51141E1E214E1600635931 /* nl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -442,6 +449,7 @@
 				2EB97EF01D69FD8900BA63A0 /* fr */,
 				8F6945C91DB7A87D0059C386 /* ko */,
 				DA6439CD1E20F29E0078ECE4 /* es */,
+				DA51141F1E214E1600635931 /* nl */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";

@@ -11,6 +11,8 @@
 - more localization updates
 	- Spanish ([Issue #70](https://github.com/newmarcel/KeepingYouAwake/pull/70))
 		- *Thank you [nbalonso](https://github.com/nbalonso)!*
+	- Dutch ([Issue #73](https://github.com/newmarcel/KeepingYouAwake/pull/73))
+		- *Thank you [Eitot](https://github.com/Eitot)!*
 	- improvements to the French translation by [alexandreleroux](https://github.com/alexandreleroux) ([Issue #63](https://github.com/newmarcel/KeepingYouAwake/pull/63))
 
 ### v1.4.1 ###
