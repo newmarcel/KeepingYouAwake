@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="uZF-hQ-SQu">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="uZF-hQ-SQu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -11,8 +11,8 @@
             <objects>
                 <windowController id="uZF-hQ-SQu" customClass="KYAPreferencesWindowController" sceneMemberID="viewController">
                     <window key="window" title="KeepingYouAwake – Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" id="AvX-7Q-Bvc">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-                        <windowCollectionBehavior key="collectionBehavior" managed="YES" participatesInCycle="YES" fullScreenPrimary="YES" fullScreenAllowsTiling="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowCollectionBehavior key="collectionBehavior" managed="YES" participatesInCycle="YES" fullScreenNone="YES"/>
                         <rect key="contentRect" x="150" y="430" width="480" height="320"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
                     </window>
