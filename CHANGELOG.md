@@ -7,6 +7,9 @@
 - support cmd+w and cmd+q keyboard shortcuts in the preferences window ([Issue #56](https://github.com/newmarcel/KeepingYouAwake/issues/56))
 - preferences now remember the window position
 - allow option-click on the menubar icon ([Issue #59](https://github.com/newmarcel/KeepingYouAwake/issues/59))
+- more localization updates
+	- Spanish ([Issue #70](https://github.com/newmarcel/KeepingYouAwake/pull/70))
+		- *Thank you [nbalonso](https://github.com/nbalonso)!*
 
 ### v1.4.1 ###
 

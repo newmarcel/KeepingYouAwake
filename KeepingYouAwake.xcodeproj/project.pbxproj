@@ -85,6 +85,10 @@
 		DA637B4619F14693004C8838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DA637B5C19F146B6004C8838 /* KYAAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAppController.h; sourceTree = "<group>"; };
 		DA637B5D19F146B6004C8838 /* KYAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAppController.m; sourceTree = "<group>"; };
+		DA6439CA1E20F29D0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DA6439CB1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA6439CC1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA6439CD1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		DA753D391C3714A800955BE3 /* KYABatteryCapacityThreshold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYABatteryCapacityThreshold.h; sourceTree = "<group>"; };
 		DA7931C31A575C6000B6DEC4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Carthage/Build/Mac/Sparkle.framework; sourceTree = SOURCE_ROOT; };
 		DA7B53041E16999A00D89A12 /* KYAPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesWindowController.h; sourceTree = "<group>"; };
@@ -401,6 +405,7 @@
 				DA54C1221D69C55300AF9E9D /* de */,
 				2EB97EEF1D69FD8900BA63A0 /* fr */,
 				8F6945C61DB7A87B0059C386 /* ko */,
+				DA6439CA1E20F29D0078ECE4 /* es */,
 			);
 			name = Preferences.storyboard;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				DA54C12E1D69C9BC00AF9E9D /* Base */,
 				2EB97EED1D69FD8800BA63A0 /* fr */,
 				8F6945C81DB7A87D0059C386 /* ko */,
+				DA6439CB1E20F29E0078ECE4 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -423,6 +429,7 @@
 				DA54C1341D69CA0700AF9E9D /* Base */,
 				2EB97EEE1D69FD8900BA63A0 /* fr */,
 				8F6945C71DB7A87C0059C386 /* ko */,
+				DA6439CC1E20F29E0078ECE4 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -434,6 +441,7 @@
 				DA54C12D1D69C55400AF9E9D /* de */,
 				2EB97EF01D69FD8900BA63A0 /* fr */,
 				8F6945C91DB7A87D0059C386 /* ko */,
+				DA6439CD1E20F29E0078ECE4 /* es */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
