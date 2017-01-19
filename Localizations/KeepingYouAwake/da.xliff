@@ -42,7 +42,7 @@
       </trans-unit>
       <trans-unit id="PWL-2v-TSS.title">
         <source>Set Default: 10 minutes</source>
-        <target>Sæt standard:: 10 minutter</target>
+        <target>Sæt standard: 10 minutter</target>
         <note>Class = "NSMenuItem"; title = "Set Default: 10 minutes"; ObjectID = "PWL-2v-TSS";</note>
       </trans-unit>
       <trans-unit id="T5i-64-xaV.title">
