@@ -113,6 +113,10 @@
 		DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYASleepWakeTimer.m; sourceTree = "<group>"; };
 		DAD272591ACB266800CDD620 /* KYAEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEventHandler.h; sourceTree = "<group>"; };
 		DAD2725A1ACB266800CDD620 /* KYAEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAEventHandler.m; sourceTree = "<group>"; };
+		DAF3FB0A1EC6F61300B5BB36 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DAF3FB0B1EC6F61300B5BB36 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAF3FB0C1EC6F61300B5BB36 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAF3FB0D1EC6F61300B5BB36 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/MainMenu.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,6 +415,7 @@
 				8F6945C61DB7A87B0059C386 /* ko */,
 				DA6439CA1E20F29D0078ECE4 /* es */,
 				DA51141C1E214E1600635931 /* nl */,
+				DAF3FB0A1EC6F61300B5BB36 /* da */,
 			);
 			name = Preferences.storyboard;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 				8F6945C81DB7A87D0059C386 /* ko */,
 				DA6439CB1E20F29E0078ECE4 /* es */,
 				DA51141D1E214E1600635931 /* nl */,
+				DAF3FB0B1EC6F61300B5BB36 /* da */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 				8F6945C71DB7A87C0059C386 /* ko */,
 				DA6439CC1E20F29E0078ECE4 /* es */,
 				DA51141E1E214E1600635931 /* nl */,
+				DAF3FB0C1EC6F61300B5BB36 /* da */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -450,6 +457,7 @@
 				8F6945C91DB7A87D0059C386 /* ko */,
 				DA6439CD1E20F29E0078ECE4 /* es */,
 				DA51141F1E214E1600635931 /* nl */,
+				DAF3FB0D1EC6F61300B5BB36 /* da */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
