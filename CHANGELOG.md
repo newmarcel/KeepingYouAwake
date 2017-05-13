@@ -16,6 +16,8 @@
 	- improvements to the French translation by [alexandreleroux](https://github.com/alexandreleroux) ([Issue #63](https://github.com/newmarcel/KeepingYouAwake/pull/63))
 	- Danish ([Issue #78](https://github.com/newmarcel/KeepingYouAwake/pull/78))
 		- *Thank you [JacobSchriver](https://github.com/JacobSchriver)!*
+	- Turkish ([Issue #79](https://github.com/newmarcel/KeepingYouAwake/pull/79))
+		- *Thank you [durul](https://github.com/durul)!*
 
 ### v1.4.1 ###
 
