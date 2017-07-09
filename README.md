@@ -6,7 +6,7 @@ KeepingYouAwake is a small menu bar utility for macOS Yosemite *(Version 10.10)*
 
 **[Download the latest version here.](https://github.com/newmarcel/KeepingYouAwake/releases)**
 
-or install it via [cask](http://caskroom.io/): `brew cask install keepingyouawake`.
+or install it via [cask](http://caskroom.github.io/): `brew cask install keepingyouawake`.
 
 ![Screenshots](./Extras/Screenshot.jpg)
 
