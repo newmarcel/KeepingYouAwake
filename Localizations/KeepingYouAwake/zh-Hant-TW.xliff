@@ -233,12 +233,12 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="OsK-jX-EzO.title">
         <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
-        <target>請於了解設定值意義的前提下修改以下設定。多數設定項目需於重啟後方可生效。</target>
+        <target>請於了解設定值意義的前提下修改以下設定。多數設定項目需於重啟後才生效。</target>
         <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO";</note>
       </trans-unit>
       <trans-unit id="QIk-WP-qH1.title">
         <source>Start at Login</source>
-        <target>於登入開啟</target>
+        <target>於登入時開啟</target>
         <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1";</note>
       </trans-unit>
       <trans-unit id="RY6-7F-Z7R.title">
