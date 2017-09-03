@@ -20,7 +20,7 @@
 		- *Thank you [durul](https://github.com/durul)!*
 	- Chinese (Simplified) ([#87](https://github.com/newmarcel/KeepingYouAwake/pull/87))
 		- *Thank you [zangyongyi](https://github.com/zangyongyi)!*
-- updated Sparkle to 1.17.0 ([#80](https://github.com/newmarcel/KeepingYouAwake/pull/80))
+- updated Sparkle to 1.18.1
 
 ### v1.4.1 ###
 
