@@ -31,12 +31,16 @@
 <ul>
 <li><em>Thank you <a href="https://github.com/durul">durul</a>!</em></li>
 </ul></li>
+<li>Chinese (Simplified) (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/87">#87</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/zangyongyi">zangyongyi</a>!</em></li>
 </ul></li>
-<li>updated Sparkle to 1.17.0 (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/80">#80</a>)</li>
+</ul></li>
+<li>updated Sparkle to 1.18.1</li>
 </ul>
 ]]></description>
-			<pubDate>Sat, 13 May 2017 09:00:00 GMT</pubDate>
-			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/pre%2F1040201/KeepingYouAwake-1040201.zip" length="1587034" type="application/octet-stream" sparkle:version="1040201" sparkle:shortVersionString="1.4.2pre">
+			<pubDate>Sun, 03 Sep 2017 11:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/pre%2F1040202/KeepingYouAwake-1040202.zip" length="1593433" type="application/octet-stream" sparkle:version="1040202" sparkle:shortVersionString="1.4.2pre">
 			</enclosure>
 		</item>
 		<item>
