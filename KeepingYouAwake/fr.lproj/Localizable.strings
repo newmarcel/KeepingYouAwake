@@ -2,14 +2,10 @@
 "Allowing your Mac to go to sleep…" = "Autoriser la mise en veille du Mac…";
 
 /* Click to allow sleep\nRight click to show menu */
-"Click to allow sleep
-Right click to show menu" = "Cliquer pour autoriser la veille
-Clic droit pour le menu";
+"Click to allow sleep\nRight click to show menu" = "Cliquer pour autoriser la veille\nClic droit pour le menu";
 
 /* Click to prevent sleep\nRight click to show menu */
-"Click to prevent sleep
-Right click to show menu" = "Cliquer pour empêcher la veille
-Clic droit pour le menu";
+"Click to prevent sleep\nRight click to show menu" = "Cliquer pour empêcher la veille\nClic droit pour le menu";
 
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Désactiver la surbrillance de l'icône de la barre de menu";
@@ -21,11 +17,11 @@ Clic droit pour le menu";
 "Indefinitely" = "Indéfiniment";
 
 /* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for
-%@…" = "Empêcher la mise en veille du Mac pour %@…";
+"Preventing your Mac from going to sleep for\n%@…" = "Empêcher la mise en veille du Mac pour %@…";
 
 /* Preventing your Mac from going to sleep… */
 "Preventing your Mac from going to sleep…" = "Empêcher la mise en veille du Mac";
 
 /* Version */
 "Version" = "Version";
+

@@ -10,9 +10,6 @@
 /* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK"; */
 "Ax6-W4-7bK.title" = "배터리 잔량이 부족하면 비활성화";
 
-/* Class = "NSBox"; title = "Title"; ObjectID = "Dhm-17-m0f"; */
-"Dhm-17-m0f.title" = "제목";
-
 /* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo"; */
 "EXv-vC-wyo.title" = "기본값으로 복원";
 
