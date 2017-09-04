@@ -102,7 +102,7 @@
       </trans-unit>
       <trans-unit id="tAq-iH-rdw.title">
         <source>Set Default: 5 hours</source>
-        <target>5 小時（設為預設值）</target>
+        <target>5 小時（設為預設值）</target>
         <note>Class = "NSMenuItem"; title = "Set Default: 5 hours"; ObjectID = "tAq-iH-rdw";</note>
       </trans-unit>
       <trans-unit id="uTe-0S-BFw.title">
