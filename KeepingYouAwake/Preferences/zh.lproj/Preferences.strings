@@ -1,41 +1,44 @@
 /* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "0Fs-xW-EeB"; */
-"0Fs-xW-EeB.title" = "Pre-Release 업데이트 확인";
+"0Fs-xW-EeB.title" = "检查预发行版本更新";
 
 /* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
-"5bL-cI-YIY.title" = "고급";
+"5bL-cI-YIY.title" = "高级设置";
 
 /* Class = "NSWindow"; title = "KeepingYouAwake – Preferences"; ObjectID = "AvX-7Q-Bvc"; */
-"AvX-7Q-Bvc.title" = "KeepingYouAwake – 환경설정";
+"AvX-7Q-Bvc.title" = "KeepingYouAwake – 偏好设置";
 
 /* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK"; */
-"Ax6-W4-7bK.title" = "배터리 잔량이 부족하면 비활성화";
+"Ax6-W4-7bK.title" = "在电池容量低时停用";
 
 /* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo"; */
-"EXv-vC-wyo.title" = "기본값으로 복원";
+"EXv-vC-wyo.title" = "重置为初始状态";
+
+/* Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX"; */
+"G1k-8T-EcX.title" = "版本 2016";
 
 /* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r"; */
-"IOU-Hs-S4r.title" = "실행 시 활성화";
+"IOU-Hs-S4r.title" = "在启动时开启";
 
 /* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "Icg-VI-pC8"; */
-"Icg-VI-pC8.title" = "지금 확인";
+"Icg-VI-pC8.title" = "现在检查";
 
 /* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO"; */
-"OsK-jX-EzO.title" = "고급 환경설정은 내용을 숙지한 경우만 사용하십시오. 대부분의 고급 환경설정은 재시작이 필요합니다.";
+"OsK-jX-EzO.title" = "请只在了解如下设置的前提下修改。大多数设置都需要重启此软件才能生效。";
 
 /* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1"; */
-"QIk-WP-qH1.title" = "로그인 시 활성화";
+"QIk-WP-qH1.title" = "在登录时开启";
 
 /* Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "RY6-7F-Z7R"; */
-"RY6-7F-Z7R.title" = "자동으로 업데이트 확인";
+"RY6-7F-Z7R.title" = "自动检查更新";
 
 /* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "Rb3-Sm-byr"; */
 "Rb3-Sm-byr.title" = "90 %";
 
 /* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B"; */
-"S6p-h0-H5B.title" = "앱을 실행했을 때 즉시 잠자기를 비활성화합니다.";
+"S6p-h0-H5B.title" = "在开启时立刻阻止睡眠模式运行。";
 
 /* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
-"UVY-8B-q5H.title" = "기본 활성화 시간:";
+"UVY-8B-q5H.title" = "默认开启时长:";
 
 /* Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "fiQ-AT-I7u"; */
 "fiQ-AT-I7u.title" = "10 %";
@@ -44,23 +47,26 @@
 "i17-n2-vfw.title" = "50 %";
 
 /* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l"; */
-"k65-yi-85l.title" = "만일 이 배터리 잔량보다 적을 때 활성화한다면 이 값은 무시됩니다.";
+"k65-yi-85l.title" = "当你在电池容量低于此值时手动开启此软件，这个值会被忽略。";
 
 /* Class = "NSButtonCell"; title = "Check"; ObjectID = "kG2-Tz-t51"; */
-"kG2-Tz-t51.title" = "확인";
+"kG2-Tz-t51.title" = "检查";
 
 /* Class = "NSViewController"; title = "General"; ObjectID = "lGE-74-XwP"; */
-"lGE-74-XwP.title" = "일반";
+"lGE-74-XwP.title" = "通用";
 
 /* Class = "NSTextFieldCell"; title = "Sets the default activation duration for the menu bar icon."; ObjectID = "nnA-d3-VV6"; */
-"nnA-d3-VV6.title" = "메뉴 막대 아이콘 클릭 시 설정되는 기본 활성화 시간입니다.";
+"nnA-d3-VV6.title" = "为菜单栏设置默认开启时长。";
 
 /* Class = "NSTextFieldCell"; title = "KeepingYouAwake"; ObjectID = "nsg-DI-kE2"; */
 "nsg-DI-kE2.title" = "KeepingYouAwake";
 
+/* Class = "NSTextFieldCell"; title = "Copyright Label"; ObjectID = "siu-CP-Bg1"; */
+"siu-CP-Bg1.title" = "版权信息";
+
 /* Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj"; */
-"uUP-5n-ykj.title" = "정보";
+"uUP-5n-ykj.title" = "关于";
 
 /* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU"; */
-"x6s-XD-lBU.title" = "Mac을 시작했을 때 자동으로 이 앱을 실행합니다.";
+"x6s-XD-lBU.title" = "在你的 Mac 开启时自动打开此软件。";
 

@@ -2,12 +2,10 @@
 "Allowing your Mac to go to sleep…" = "Mac'inizin uyku moduna geçmesine izin verin…";
 
 /* Click to allow sleep\nRight click to show menu */
-"Click to allow sleep
-Right click to show menu" = "Uyku moduna izin vermek için sağ menüye tıklayın";
+"Click to allow sleep\nRight click to show menu" = "Uyku moduna izin vermek için sağ menüye tıklayın";
 
 /* Click to prevent sleep\nRight click to show menu */
-"Click to prevent sleep
-Right click to show menu" = "Uyku moduna geçmeyi önleme menüsünü göstermek için sağdaki düğmeye tıklayın";
+"Click to prevent sleep\nRight click to show menu" = "Uyku moduna geçmeyi önleme menüsünü göstermek için sağdaki düğmeye tıklayın";
 
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Menü çubuğu simgesini devre dışı bırak";
