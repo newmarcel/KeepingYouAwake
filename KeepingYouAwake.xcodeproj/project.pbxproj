@@ -104,6 +104,10 @@
 		DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = SOURCE_ROOT; };
 		DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAGeneralPreferencesViewController.h; sourceTree = "<group>"; };
 		DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAGeneralPreferencesViewController.m; sourceTree = "<group>"; };
+		DA8B21961F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/Preferences.strings"; sourceTree = "<group>"; };
+		DA8B21971F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		DA8B21981F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DA8B21991F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DAB128671C2453F600831045 /* KYAAdvancedPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAdvancedPreferencesViewController.h; sourceTree = "<group>"; };
 		DAB128681C2453F600831045 /* KYAAdvancedPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAdvancedPreferencesViewController.m; sourceTree = "<group>"; };
 		DAB1286A1C24540200831045 /* KYAAboutPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAboutPreferencesViewController.h; sourceTree = "<group>"; };
@@ -341,6 +345,7 @@
 				Base,
 				de,
 				fr,
+				"zh-Hant-TW",
 			);
 			mainGroup = DA637B3019F14693004C8838;
 			productRefGroup = DA637B3A19F14693004C8838 /* Products */;
@@ -426,6 +431,7 @@
 				DAF3FB0A1EC6F61300B5BB36 /* da */,
 				DAD3B5761EC6FA5A0022E5D0 /* tr */,
 				DA4121711F5C07130083B6E6 /* zh */,
+				DA8B21961F6057A200BF5013 /* zh-Hant-TW */,
 			);
 			name = Preferences.storyboard;
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 				DAF3FB0B1EC6F61300B5BB36 /* da */,
 				DAD3B5771EC6FA5A0022E5D0 /* tr */,
 				DA4121721F5C07140083B6E6 /* zh */,
+				DA8B21991F6057A200BF5013 /* zh-Hant-TW */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -458,6 +465,7 @@
 				DAF3FB0C1EC6F61300B5BB36 /* da */,
 				DAD3B5781EC6FA5A0022E5D0 /* tr */,
 				DA4121731F5C07140083B6E6 /* zh */,
+				DA8B21981F6057A200BF5013 /* zh-Hant-TW */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -474,6 +482,7 @@
 				DAF3FB0D1EC6F61300B5BB36 /* da */,
 				DAD3B5791EC6FA5A0022E5D0 /* tr */,
 				DA4121741F5C07140083B6E6 /* zh */,
+				DA8B21971F6057A200BF5013 /* zh-Hant-TW */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
