@@ -327,6 +327,7 @@
 		DA637B3119F14693004C8838 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KYA;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Marcel Dierkes";
 				TargetAttributes = {
