@@ -6,7 +6,7 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
-			<title><![CDATA[Version 1.4.2pre: Build 1040201]]></title>
+			<title><![CDATA[Version 1.4.2pre: Build 1040203]]></title>
 			<description><![CDATA[<ul>
 <li>support cmd+w and cmd+q keyboard shortcuts in the preferences window (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/56">#56</a>)</li>
 <li>preferences now remember the window position</li>
@@ -35,12 +35,18 @@
 <ul>
 <li><em>Thank you <a href="https://github.com/zangyongyi">zangyongyi</a>!</em></li>
 </ul></li>
+<li>Chinese (Traditional zh-Hant-TW) (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/89">#89</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/passerbyid">passerbyid</a>!</em></li>
+</ul></li>
 </ul></li>
 <li>updated Sparkle to 1.18.1</li>
 </ul>
+
+<p><em>(final pre-release of 1.4.2)</em></p>
 ]]></description>
-			<pubDate>Sun, 03 Sep 2017 11:00:00 GMT</pubDate>
-			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/pre%2F1040202/KeepingYouAwake-1040202.zip" length="1593433" type="application/octet-stream" sparkle:version="1040202" sparkle:shortVersionString="1.4.2pre">
+			<pubDate>Wed, 06 Sep 2017 17:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/pre%2F1040203/KeepingYouAwake-1040203.zip" length="1598397" type="application/octet-stream" sparkle:version="1040203" sparkle:shortVersionString="1.4.2pre">
 			</enclosure>
 		</item>
 		<item>
