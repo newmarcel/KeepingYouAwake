@@ -6,7 +6,7 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
-			<title><![CDATA[Version 1.4.2pre: Build 1040203]]></title>
+			<title><![CDATA[Version 1.4.2: Additional Localizations]]></title>
 			<description><![CDATA[<ul>
 <li>support cmd+w and cmd+q keyboard shortcuts in the preferences window (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/56">#56</a>)</li>
 <li>preferences now remember the window position</li>
@@ -42,11 +42,9 @@
 </ul></li>
 <li>updated Sparkle to 1.18.1</li>
 </ul>
-
-<p><em>(final pre-release of 1.4.2)</em></p>
 ]]></description>
-			<pubDate>Wed, 06 Sep 2017 17:00:00 GMT</pubDate>
-			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/pre%2F1040203/KeepingYouAwake-1040203.zip" length="1598397" type="application/octet-stream" sparkle:version="1040203" sparkle:shortVersionString="1.4.2pre">
+			<pubDate>Sat, 16 Sep 2017 12:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.4.2/KeepingYouAwake-1.4.2.zip" length="1597493" type="application/octet-stream" sparkle:version="1040204" sparkle:shortVersionString="1.4.2">
 			</enclosure>
 		</item>
 		<item>

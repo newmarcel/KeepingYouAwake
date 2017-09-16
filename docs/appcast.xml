@@ -6,6 +6,48 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.4.2: Additional Localizations]]></title>
+			<description><![CDATA[<ul>
+<li>support cmd+w and cmd+q keyboard shortcuts in the preferences window (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/56">#56</a>)</li>
+<li>preferences now remember the window position</li>
+<li>allow option-click on the menubar icon (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/59">#59</a>)</li>
+<li>fixed the incorrect fullscreen behavior of the preferences window (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/71">#71</a>), <em>thanks <a href="https://github.com/Eitot">Eitot</a>!</em></li>
+<li>more localization updates
+<ul>
+<li>Spanish (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/70">#70</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/nbalonso">nbalonso</a>!</em></li>
+</ul></li>
+<li>Dutch (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/73">#73</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/Eitot">Eitot</a>!</em></li>
+</ul></li>
+<li>improvements to the French translation by <a href="https://github.com/alexandreleroux">alexandreleroux</a> (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/63">#63</a>)</li>
+<li>Danish (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/78">#78</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/JacobSchriver">JacobSchriver</a>!</em></li>
+</ul></li>
+<li>Turkish (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/79">#79</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/durul">durul</a>!</em></li>
+</ul></li>
+<li>Chinese (Simplified) (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/87">#87</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/zangyongyi">zangyongyi</a>!</em></li>
+</ul></li>
+<li>Chinese (Traditional zh-Hant-TW) (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/89">#89</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/passerbyid">passerbyid</a>!</em></li>
+</ul></li>
+</ul></li>
+<li>updated Sparkle to 1.18.1</li>
+</ul>
+]]></description>
+			<pubDate>Sat, 16 Sep 2017 12:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.4.2/KeepingYouAwake-1.4.2.zip" length="1597493" type="application/octet-stream" sparkle:version="1040204" sparkle:shortVersionString="1.4.2">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.4.1: L10n Update]]></title>
 			<description><![CDATA[<ul>
 <li>Localization support
