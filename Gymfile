@@ -1,0 +1,9 @@
+clean true
+silent true
+
+export_options(
+    method: "developer-id",
+    signingStyle: "manual",
+    teamID: "5KESHV9W85",
+    signingCertificate: "Developer ID Application"
+)

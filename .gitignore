@@ -1,5 +1,7 @@
 .DS_Store
 xcuserdata
+build
+dist
 
 # Carthage
 Carthage/

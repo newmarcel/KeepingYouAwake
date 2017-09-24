@@ -1,0 +1,17 @@
+---
+BasedOnStyle: WebKit
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortFunctionsOnASingleLine: None
+BreakBeforeTernaryOperators: false
+BreakConstructorInitializersBeforeComma: false
+PointerAlignment: Right
+BreakBeforeBraces: Allman
+SpacesInContainerLiterals: false
+SpaceBeforeParens: Never
+ColumnLimit: 0
+IndentWidth: 4
+IndentCaseLabels: true
+ObjCSpaceAfterProperty: true
+TabWidth: 4
+SortIncludes: false
+...
