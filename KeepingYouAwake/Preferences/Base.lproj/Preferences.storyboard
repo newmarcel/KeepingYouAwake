@@ -59,8 +59,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Ley-qF-w1u">
-                                <rect key="frame" x="78" y="116" width="138" height="18"/>
-                                <buttonCell key="cell" type="check" title="Activate on Launch" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="IOU-Hs-S4r">
+                                <rect key="frame" x="78" y="116" width="134" height="18"/>
+                                <buttonCell key="cell" type="check" title="Activate on launch" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="IOU-Hs-S4r">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -75,14 +75,14 @@
                                 </constraints>
                             </box>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="LrG-qH-het">
-                                <rect key="frame" x="78" y="168" width="104" height="18"/>
-                                <buttonCell key="cell" type="check" title="Start at Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="QIk-WP-qH1">
+                                <rect key="frame" x="78" y="168" width="101" height="18"/>
+                                <buttonCell key="cell" type="check" title="Start at login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="QIk-WP-qH1">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kMX-Le-Pla" userLabel="Default Activation Duration">
-                                <rect key="frame" x="193" y="39" width="240" height="26"/>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kMX-Le-Pla" userLabel="Default activation duration">
+                                <rect key="frame" x="190" y="39" width="243" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Qe4-Se-I2n"/>
                                 </constraints>
@@ -98,8 +98,8 @@
                                 </connections>
                             </popUpButton>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="miN-zK-UeB">
-                                <rect key="frame" x="18" y="46" width="171" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default Activation Duration:" id="UVY-8B-q5H">
+                                <rect key="frame" x="18" y="46" width="168" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default activation duration:" id="UVY-8B-q5H">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -259,8 +259,8 @@
                                 </constraints>
                             </box>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-id-7AV">
-                                <rect key="frame" x="18" y="360" width="221" height="18"/>
-                                <buttonCell key="cell" type="check" title="Automatically Check for Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="RY6-7F-Z7R">
+                                <rect key="frame" x="18" y="360" width="217" height="18"/>
+                                <buttonCell key="cell" type="check" title="Automatically check for updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="RY6-7F-Z7R">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -367,8 +367,8 @@
                                 </textFieldCell>
                             </textField>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="7g9-Dq-r9G">
-                                <rect key="frame" x="38" y="336" width="213" height="18"/>
-                                <buttonCell key="cell" type="check" title="Check for Pre-Release Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="0Fs-xW-EeB">
+                                <rect key="frame" x="38" y="336" width="207" height="18"/>
+                                <buttonCell key="cell" type="check" title="Check for pre-release updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="0Fs-xW-EeB">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>

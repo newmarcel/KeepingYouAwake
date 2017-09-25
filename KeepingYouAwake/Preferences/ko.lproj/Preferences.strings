@@ -1,4 +1,4 @@
-/* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "0Fs-xW-EeB"; */
+/* Class = "NSButtonCell"; title = "Check for pre-release updates"; ObjectID = "0Fs-xW-EeB"; */
 "0Fs-xW-EeB.title" = "Pre-Release 업데이트 확인";
 
 /* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
@@ -13,7 +13,7 @@
 /* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo"; */
 "EXv-vC-wyo.title" = "기본값으로 복원";
 
-/* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r"; */
+/* Class = "NSButtonCell"; title = "Activate on launch"; ObjectID = "IOU-Hs-S4r"; */
 "IOU-Hs-S4r.title" = "실행 시 활성화";
 
 /* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "Icg-VI-pC8"; */
@@ -22,10 +22,10 @@
 /* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO"; */
 "OsK-jX-EzO.title" = "고급 환경설정은 내용을 숙지한 경우만 사용하십시오. 대부분의 고급 환경설정은 재시작이 필요합니다.";
 
-/* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1"; */
+/* Class = "NSButtonCell"; title = "Start at login"; ObjectID = "QIk-WP-qH1"; */
 "QIk-WP-qH1.title" = "로그인 시 활성화";
 
-/* Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "RY6-7F-Z7R"; */
+/* Class = "NSButtonCell"; title = "Automatically check for updates"; ObjectID = "RY6-7F-Z7R"; */
 "RY6-7F-Z7R.title" = "자동으로 업데이트 확인";
 
 /* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "Rb3-Sm-byr"; */
@@ -34,7 +34,7 @@
 /* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B"; */
 "S6p-h0-H5B.title" = "앱을 실행했을 때 즉시 잠자기를 비활성화합니다.";
 
-/* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
+/* Class = "NSTextFieldCell"; title = "Default activation duration:"; ObjectID = "UVY-8B-q5H"; */
 "UVY-8B-q5H.title" = "기본 활성화 시간:";
 
 /* Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "fiQ-AT-I7u"; */

@@ -188,9 +188,9 @@ Click derecho para mostar el menú</target>
     </header>
     <body>
       <trans-unit id="0Fs-xW-EeB.title">
-        <source>Check for Pre-Release Updates</source>
+        <source>Check for pre-release updates</source>
         <target>Buscar versiones beta</target>
-        <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "0Fs-xW-EeB";</note>
+        <note>Class = "NSButtonCell"; title = "Check for pre-release updates"; ObjectID = "0Fs-xW-EeB";</note>
       </trans-unit>
       <trans-unit id="5bL-cI-YIY.title">
         <source>Advanced</source>
@@ -218,9 +218,9 @@ Click derecho para mostar el menú</target>
         <note>Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX";</note>
       </trans-unit>
       <trans-unit id="IOU-Hs-S4r.title">
-        <source>Activate on Launch</source>
+        <source>Activate on launch</source>
         <target>Activar al abrir</target>
-        <note>Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r";</note>
+        <note>Class = "NSButtonCell"; title = "Activate on launch"; ObjectID = "IOU-Hs-S4r";</note>
       </trans-unit>
       <trans-unit id="Icg-VI-pC8.title">
         <source>Check Now</source>
@@ -233,14 +233,14 @@ Click derecho para mostar el menú</target>
         <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO";</note>
       </trans-unit>
       <trans-unit id="QIk-WP-qH1.title">
-        <source>Start at Login</source>
+        <source>Start at login</source>
         <target>Abrir al iniciar la sesión</target>
-        <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1";</note>
+        <note>Class = "NSButtonCell"; title = "Start at login"; ObjectID = "QIk-WP-qH1";</note>
       </trans-unit>
       <trans-unit id="RY6-7F-Z7R.title">
-        <source>Automatically Check for Updates</source>
+        <source>Automatically check for updates</source>
         <target>Buscar actualizaciones automáticamente</target>
-        <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "RY6-7F-Z7R";</note>
+        <note>Class = "NSButtonCell"; title = "Automatically check for updates"; ObjectID = "RY6-7F-Z7R";</note>
       </trans-unit>
       <trans-unit id="Rb3-Sm-byr.title">
         <source>90 %</source>
@@ -253,9 +253,9 @@ Click derecho para mostar el menú</target>
         <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B";</note>
       </trans-unit>
       <trans-unit id="UVY-8B-q5H.title">
-        <source>Default Activation Duration:</source>
+        <source>Default activation duration:</source>
         <target>Duración por defecto:</target>
-        <note>Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H";</note>
+        <note>Class = "NSTextFieldCell"; title = "Default activation duration:"; ObjectID = "UVY-8B-q5H";</note>
       </trans-unit>
       <trans-unit id="fiQ-AT-I7u.title">
         <source>10 %</source>
