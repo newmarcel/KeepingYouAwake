@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */; };
 		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
 		DA46C1EE1BDCDFB00050357C /* NSUserDefaults+Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */; };
 		DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */; };
@@ -57,6 +58,8 @@
 		8F6945C71DB7A87C0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F6945C81DB7A87D0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8F6945C91DB7A87D0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DA173B351F65B41B00932CE0 /* KYAStatusItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAStatusItemController.h; sourceTree = "<group>"; };
+		DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAStatusItemController.m; sourceTree = "<group>"; };
 		DA249E281F9B7211006BCD2C /* KYADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADefines.h; sourceTree = "<group>"; };
 		DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAMenuBarIcon.h; sourceTree = "<group>"; };
 		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
@@ -223,8 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				DA637B3B19F14693004C8838 /* KeepingYouAwake */,
-				DA66CF9F1A12A7D700336CDC /* Frameworks */,
 				DA637B3C19F14693004C8838 /* Supporting Files */,
+				DA66CF9F1A12A7D700336CDC /* Frameworks */,
 				DA637B3A19F14693004C8838 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -242,12 +245,13 @@
 			children = (
 				DA637B4019F14693004C8838 /* KYAAppDelegate.h */,
 				DA637B4119F14693004C8838 /* KYAAppDelegate.m */,
-				DA249E281F9B7211006BCD2C /* KYADefines.h */,
 				DA637B5C19F146B6004C8838 /* KYAAppController.h */,
 				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
 				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,
 				DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */,
+				DA249E281F9B7211006BCD2C /* KYADefines.h */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
+				DA8F381B1F9BA4360086A84A /* StatusItemController */,
 				DA2691CF1B8230AB00B15779 /* MenuBar Icon */,
 				DA5B5A241C28612800EE45C6 /* Battery Status */,
 				DA4919C51ACFFF8D00D44F6A /* Event Handler */,
@@ -290,6 +294,15 @@
 				DA51E7E11C2562CA008AA96C /* About */,
 			);
 			path = Preferences;
+			sourceTree = "<group>";
+		};
+		DA8F381B1F9BA4360086A84A /* StatusItemController */ = {
+			isa = PBXGroup;
+			children = (
+				DA173B351F65B41B00932CE0 /* KYAStatusItemController.h */,
+				DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */,
+			);
+			path = StatusItemController;
 			sourceTree = "<group>";
 		};
 		DAC322C91C65199300DF8B63 /* Resources */ = {
@@ -416,6 +429,7 @@
 				DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */,
 				DAB268721A0D6BC600B58AD6 /* KYASleepWakeTimer.m in Sources */,
 				DA637B3F19F14693004C8838 /* main.m in Sources */,
+				DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */,
 				DAD2725B1ACB266800CDD620 /* KYAEventHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

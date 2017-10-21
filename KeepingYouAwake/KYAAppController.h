@@ -8,13 +8,22 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class KYASleepWakeTimer;
+NS_ASSUME_NONNULL_BEGIN
+
+@class KYASleepWakeTimer, KYAStatusItemController;
 
 @interface KYAAppController : NSObject <NSMenuDelegate>
 
 /**
- *  The associated KYASleepWakeTimer instance of this app controller.
+ The associated KYASleepWakeTimer instance of this app controller.
  */
-@property (nonatomic, readonly, nonnull) KYASleepWakeTimer *sleepWakeTimer;
+@property (nonatomic, readonly) KYASleepWakeTimer *sleepWakeTimer;
+
+/**
+ Controls the display a action handling for the status bar item.
+ */
+@property (nonatomic, readonly) KYAStatusItemController *statusItemController;
 
 @end
+
+NS_ASSUME_NONNULL_END

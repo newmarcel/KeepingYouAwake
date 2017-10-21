@@ -8,21 +8,19 @@
 
 #import "KYAAppController.h"
 #import "KYASleepWakeTimer.h"
+#import "KYAStatusItemController.h"
 #import "KYAEventHandler.h"
-#import "KYAMenuBarIcon.h"
 #import "KYABatteryStatus.h"
 #import "KYABatteryCapacityThreshold.h"
 #import "NSUserDefaults+Keys.h"
 
-@interface KYAAppController () <NSUserNotificationCenterDelegate>
+@interface KYAAppController () <NSUserNotificationCenterDelegate, KYAStatusItemControllerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
+@property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
 
 // Battery Status
 @property (nonatomic) KYABatteryStatus *batteryStatus;
 @property (nonatomic, getter=isBatteryOverrideEnabled) BOOL batteryOverrideEnabled;
-
-// Status Item
-@property (strong, nonatomic) NSStatusItem *statusItem;
 
 // Menu
 @property (weak, nonatomic) IBOutlet NSMenu *menu;
@@ -38,10 +36,11 @@
     self = [super init];
     if(self)
     {
-        [self configureStatusItem];
-        
         self.sleepWakeTimer = [KYASleepWakeTimer new];
         [self.sleepWakeTimer addObserver:self forKeyPath:@"scheduled" options:NSKeyValueObservingOptionNew context:NULL];
+        
+        self.statusItemController = [KYAStatusItemController new];
+        self.statusItemController.delegate = self;
         
         // Check activate on launch state
         if([self shouldActivateOnLaunch])
@@ -82,33 +81,9 @@
     if([object isEqual:self.sleepWakeTimer] && [keyPath isEqualToString:@"scheduled"])
     {
         // Update the status item for scheduling changes
-        [self setStatusItemActive:[change[NSKeyValueChangeNewKey] boolValue]];
+        BOOL active = [change[NSKeyValueChangeNewKey] boolValue];
+        self.statusItemController.activeAppearanceEnabled = active;
     }
-}
-
-#pragma mark - Setup
-
-- (void)configureStatusItem
-{
-    NSStatusItem *statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    statusItem.highlightMode = !NSUserDefaults.standardUserDefaults.kya_menuBarIconHighlightDisabled;
-    
-    NSStatusBarButton *button = statusItem.button;
-    
-    button.target = self;
-    button.action = @selector(toggleStatus:);
-    
-    [button sendActionOn:NSLeftMouseUpMask|NSRightMouseUpMask];
-    
-    self.statusItem = statusItem;
-    [self setStatusItemActive:NO];
-}
-
-#pragma mark - Menu Handling
-
-- (void)showMenu:(id)sender
-{
-    [self.statusItem popUpStatusItemMenu:self.menu];
 }
 
 #pragma mark - Default Time Interval
@@ -135,44 +110,6 @@
     NSUserDefaults *defaults = NSUserDefaults.standardUserDefaults;
     defaults.kya_activateOnLaunch = ![defaults kya_isActivatedOnLaunch];
     [defaults synchronize];
-}
-
-#pragma mark - Toggle Handling
-
-- (void)toggleStatus:(id)sender
-{
-    NSEvent *event = NSApplication.sharedApplication.currentEvent;
-    if((event.modifierFlags & NSEventModifierFlagControl) || (event.modifierFlags & NSEventModifierFlagOption) || (event.type == NSEventTypeRightMouseUp))
-    {
-        [self showMenu:nil];
-        return;
-    }
-    
-    if([self.sleepWakeTimer isScheduled])
-    {
-        [self terminateTimer];
-    }
-    else
-    {
-        [self activateTimer];
-    }
-}
-
-- (void)setStatusItemActive:(BOOL)active
-{
-    NSStatusBarButton *button = self.statusItem.button;
-    KYAMenuBarIcon *menubarIcon = KYAMenuBarIcon.currentIcon;
-    
-    if(active)
-    {
-        button.image = menubarIcon.activeIcon;
-        button.toolTip = NSLocalizedString(@"Click to allow sleep\nRight click to show menu", @"Click to allow sleep\nRight click to show menu");
-    }
-    else
-    {
-        button.image = menubarIcon.inactiveIcon;
-        button.toolTip = NSLocalizedString(@"Click to prevent sleep\nRight click to show menu", @"Click to prevent sleep\nRight click to show menu");
-    }
 }
 
 #pragma mark - Sleep Wake Timer Handling
@@ -448,6 +385,25 @@
     [KYAEventHandler.defaultHandler registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
         [weakSelf terminateTimer];
     }];
+}
+
+#pragma mark - KYAStatusItemControllerDelegate
+
+- (void)statusItemControllerShouldPerformMainAction:(KYAStatusItemController *)controller
+{
+    if([self.sleepWakeTimer isScheduled])
+    {
+        [self terminateTimer];
+    }
+    else
+    {
+        [self activateTimer];
+    }
+}
+
+- (void)statusItemControllerShouldPerformAlternativeAction:(KYAStatusItemController *)controller
+{
+    [self.statusItemController showMenu:self.menu];
 }
 
 @end

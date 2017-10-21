@@ -23,11 +23,11 @@
 + (instancetype)defaultHandler
 {
     static dispatch_once_t once;
-    static id sharedInstance;
+    static KYAEventHandler *handler;
     dispatch_once(&once, ^{
-        sharedInstance = [[self alloc] init];
+        handler = [self new];
     });
-    return sharedInstance;
+    return handler;
 }
 
 - (instancetype)init
@@ -80,8 +80,9 @@
     
     // Destructure NSURLQueryItems into basic dictionary values
     KYA_AUTO arguments = [NSMutableDictionary dictionary];
-    for(NSURLQueryItem *queryItem in URLComponents.queryItems) {
-        id value = queryItem.value;
+    for(NSURLQueryItem *queryItem in URLComponents.queryItems)
+    {
+        KYA_AUTO value = queryItem.value;
         if(!value)
         {
             // fall back to an empty string if the value is nil
