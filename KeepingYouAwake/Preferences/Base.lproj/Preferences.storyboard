@@ -356,9 +356,11 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="V0H-cG-Tyy" secondAttribute="bottom" id="3qb-Ju-YOu"/>
                                     <constraint firstItem="iMO-xG-PYe" firstAttribute="top" secondItem="vcl-Ty-RWD" secondAttribute="bottom" constant="4" id="Ex2-or-N0W"/>
+                                    <constraint firstItem="V0H-cG-Tyy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qyH-ws-Lna" secondAttribute="trailing" constant="8" symbolic="YES" id="OgW-xG-AUe"/>
                                     <constraint firstAttribute="trailing" secondItem="vcl-Ty-RWD" secondAttribute="trailing" id="RLw-ew-FM3"/>
                                     <constraint firstItem="vcl-Ty-RWD" firstAttribute="leading" secondItem="X9f-RZ-Fws" secondAttribute="leading" id="SFS-ih-EdK"/>
                                     <constraint firstItem="qyH-ws-Lna" firstAttribute="centerX" secondItem="X9f-RZ-Fws" secondAttribute="centerX" id="ZHa-s8-Ytv"/>
+                                    <constraint firstItem="qyH-ws-Lna" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iMO-xG-PYe" secondAttribute="trailing" constant="8" symbolic="YES" id="aMs-gz-5rJ"/>
                                     <constraint firstAttribute="bottom" secondItem="qyH-ws-Lna" secondAttribute="bottom" id="aak-To-JCi"/>
                                     <constraint firstItem="qyH-ws-Lna" firstAttribute="top" secondItem="vcl-Ty-RWD" secondAttribute="bottom" constant="4" id="b4C-CM-czg"/>
                                     <constraint firstItem="iMO-xG-PYe" firstAttribute="leading" secondItem="X9f-RZ-Fws" secondAttribute="leading" id="hXy-W1-gUZ"/>
