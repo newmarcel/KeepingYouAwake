@@ -57,6 +57,7 @@
 		8F6945C71DB7A87C0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F6945C81DB7A87D0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8F6945C91DB7A87D0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DA249E281F9B7211006BCD2C /* KYADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADefines.h; sourceTree = "<group>"; };
 		DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAMenuBarIcon.h; sourceTree = "<group>"; };
 		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
 		DA4121711F5C07130083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Preferences.strings; sourceTree = "<group>"; };
@@ -241,6 +242,7 @@
 			children = (
 				DA637B4019F14693004C8838 /* KYAAppDelegate.h */,
 				DA637B4119F14693004C8838 /* KYAAppDelegate.m */,
+				DA249E281F9B7211006BCD2C /* KYADefines.h */,
 				DA637B5C19F146B6004C8838 /* KYAAppController.h */,
 				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
 				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,

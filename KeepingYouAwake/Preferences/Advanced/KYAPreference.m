@@ -30,29 +30,29 @@
 
 - (BOOL)value
 {
-    return [[NSUserDefaults standardUserDefaults] boolForKey:self.defaultsKey];
+    return [NSUserDefaults.standardUserDefaults boolForKey:self.defaultsKey];
 }
 
 - (void)setValue:(BOOL)value
 {
     [self willChangeValueForKey:@"value"];
     if(value == YES) {
-        [[NSUserDefaults standardUserDefaults] setBool:value forKey:self.defaultsKey];
+        [NSUserDefaults.standardUserDefaults setBool:value forKey:self.defaultsKey];
     }
     else
     {
-        [[NSUserDefaults standardUserDefaults] removeObjectForKey:self.defaultsKey];
+        [NSUserDefaults.standardUserDefaults removeObjectForKey:self.defaultsKey];
     }
     [self didChangeValueForKey:@"value"];
     
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    [NSUserDefaults.standardUserDefaults synchronize];
 }
 
 #pragma mark - Reset
 
 - (void)reset
 {
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:self.defaultsKey];
+    [NSUserDefaults.standardUserDefaults removeObjectForKey:self.defaultsKey];
 }
 
 @end

@@ -70,7 +70,7 @@
 
 - (void)kya_addToLoginItems
 {
-    NSURL *bundleURL = [[NSBundle mainBundle] bundleURL];
+    NSURL *bundleURL = NSBundle.mainBundle.bundleURL;
     
     LSSharedFileListRef loginItemsFileList = LSSharedFileListCreate(kCFAllocatorDefault,
                                                                     kLSSharedFileListSessionLoginItems,
@@ -95,7 +95,7 @@
 
 - (LSSharedFileListItemRef)kya_retainedLoginItem
 {
-    NSURL *bundleURL = [[NSBundle mainBundle] bundleURL];
+    NSURL *bundleURL = NSBundle.mainBundle.bundleURL;
     
     LSSharedFileListRef loginItemsFileList = LSSharedFileListCreate(kCFAllocatorDefault,
                                                                     kLSSharedFileListSessionLoginItems,

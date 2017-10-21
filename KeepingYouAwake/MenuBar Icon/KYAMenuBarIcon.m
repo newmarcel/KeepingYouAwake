@@ -33,7 +33,7 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
         else
         {
             // There are no costum image files, fall back to the default icon.
-            currentIcon = [self defaultIcon];
+            currentIcon = self.defaultIcon;
         }
     });
     

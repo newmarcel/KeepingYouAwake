@@ -15,7 +15,7 @@
 
 #pragma mark - Life Cycle
 
-+ (instancetype)defaultPreferencesWindowController
++ (instancetype)preferencesWindowController
 {
     return [[NSStoryboard storyboardWithName:@"Preferences" bundle:nil] instantiateInitialController];
 }
@@ -35,7 +35,7 @@
     
     if([event.characters isEqualToString:@"q"])
     {
-        [[NSApplication sharedApplication] terminate:self];
+        [NSApplication.sharedApplication terminate:self];
     }
     if([event.characters isEqualToString:@"w"])
     {

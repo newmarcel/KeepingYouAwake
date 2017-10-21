@@ -28,7 +28,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     {
         // Terminate all remaining tasks on app quit
         __weak typeof(self) weakSelf = self;
-        [[NSNotificationCenter defaultCenter] addObserverForName:NSApplicationWillTerminateNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
+        [NSNotificationCenter.defaultCenter addObserverForName:NSApplicationWillTerminateNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
             [weakSelf invalidate];
         }];
     }

@@ -34,7 +34,7 @@
     
     // Bind the start at login checkbox value to NSApplication
     [self.startAtLoginCheckBoxButton bind:@"value"
-                                 toObject:[NSApplication sharedApplication]
+                                 toObject:NSApplication.sharedApplication
                               withKeyPath:@"kya_startAtLogin"
                                   options:@{
                                             NSRaisesForNotApplicableKeysBindingOption: @YES,
@@ -58,7 +58,7 @@
 
 - (KYAActivationDuration *)selectedActivationDuration
 {
-    NSTimeInterval storedDefaultInterval = [NSUserDefaults standardUserDefaults].kya_defaultTimeInterval;
+    NSTimeInterval storedDefaultInterval = NSUserDefaults.standardUserDefaults.kya_defaultTimeInterval;
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"seconds == %@", @(storedDefaultInterval)];
     KYAActivationDuration *defaultDuration = [self.activationDurations filteredArrayUsingPredicate:predicate].firstObject;
     return defaultDuration;
@@ -67,8 +67,8 @@
 - (void)setSelectedActivationDuration:(KYAActivationDuration *)selectedActivationDuration
 {
     [self willChangeValueForKey:@"selectedActivationDuration"];
-    [NSUserDefaults standardUserDefaults].kya_defaultTimeInterval = selectedActivationDuration.seconds;
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSUserDefaults.standardUserDefaults.kya_defaultTimeInterval = selectedActivationDuration.seconds;
+    [NSUserDefaults.standardUserDefaults synchronize];
     [self didChangeValueForKey:@"selectedActivationDuration"];
 }
 

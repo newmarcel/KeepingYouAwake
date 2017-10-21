@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-extern const CGFloat KYABatteryStatusUnavailable;
+NS_ASSUME_NONNULL_BEGIN
+
+FOUNDATION_EXPORT const CGFloat KYABatteryStatusUnavailable;
 
 typedef void(^KYABatteryStatusChangeBlock)(CGFloat capacity);
 
@@ -46,3 +48,5 @@ typedef void(^KYABatteryStatusChangeBlock)(CGFloat capacity);
 - (void)unregisterFromCapacityChanges;
 
 @end
+
+NS_ASSUME_NONNULL_END
