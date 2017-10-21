@@ -7,6 +7,7 @@
 //
 
 #import "KYASleepWakeTimer.h"
+#import "KYADefines.h"
 #import "NSUserDefaults+Keys.h"
 
 NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
@@ -27,7 +28,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     if(self)
     {
         // Terminate all remaining tasks on app quit
-        __weak typeof(self) weakSelf = self;
+        KYA_WEAK weakSelf = self;
         [NSNotificationCenter.defaultCenter addObserverForName:NSApplicationWillTerminateNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
             [weakSelf invalidate];
         }];
@@ -95,7 +96,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     self.caffeinateTask = [NSTask launchedTaskWithLaunchPath:@"/usr/bin/caffeinate" arguments:[arguments copy]];
     
     // Termination Handler
-    __weak typeof(self) weakSelf = self;
+    KYA_WEAK weakSelf = self;
     self.caffeinateTask.terminationHandler = ^(NSTask *task) {
         [weakSelf terminateWithForce:NO];
     };
@@ -120,7 +121,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     
     if(self.completionBlock)
     {
-        __weak typeof(self) weakSelf = self;
+        KYA_WEAK weakSelf = self;
         dispatch_async(dispatch_get_main_queue(), ^{
             weakSelf.completionBlock(forcedTermination);
         });

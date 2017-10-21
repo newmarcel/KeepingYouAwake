@@ -57,7 +57,7 @@
         return;
     }
     
-    __weak typeof(self) weakSelf = self;
+    KYA_WEAK weakSelf = self;
     dispatch_async(self.eventQueue, ^{
         KYA_AUTO event = [weakSelf eventForURL:URL];
         

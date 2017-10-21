@@ -7,6 +7,7 @@
 //
 
 #import "KYAAppController.h"
+#import "KYADefines.h"
 #import "KYASleepWakeTimer.h"
 #import "KYAStatusItemController.h"
 #import "KYAEventHandler.h"
@@ -190,8 +191,7 @@
 	}
 	else
 	{
-		
-		__weak typeof(self) weakSelf = self;
+        KYA_WEAK weakSelf = self;
 		dispatch_async(dispatch_get_main_queue(), ^{
 			NSTimeInterval seconds = (NSTimeInterval)[sender tag];
 			[weakSelf activateTimerWithTimeInterval:seconds];
@@ -271,7 +271,7 @@
     {
         _batteryStatus = [KYABatteryStatus new];
         
-        __weak typeof(self) weakSelf = self;
+        KYA_WEAK weakSelf = self;
         _batteryStatus.capacityChangeHandler = ^(CGFloat capacity) {
             [weakSelf batteryCapacityDidChange:capacity];
         };
@@ -353,7 +353,7 @@
 
 - (void)configureEventHandler
 {
-    __weak typeof(self) weakSelf = self;
+    KYA_WEAK weakSelf = self;
     [KYAEventHandler.defaultHandler registerActionNamed:@"activate" block:^(KYAEvent *event) {
         typeof(self) strongSelf = weakSelf;
         

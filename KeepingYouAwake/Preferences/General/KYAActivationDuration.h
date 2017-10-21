@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  An indefinite activation duration (represents a time interval of 0.0).
  */
-extern NSTimeInterval const KYAActivationDurationIndefinite;
+FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 
 /**
  *  The object representation of an sleep wake timer activation duration.

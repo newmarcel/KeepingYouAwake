@@ -10,6 +10,7 @@
 #define KYA_DEFINES_H
 
 #define KYA_AUTO __auto_type
+#define KYA_WEAK __weak __auto_type
 
 #if DEBUG
     #define KYALog(_args...) NSLog(_args)
