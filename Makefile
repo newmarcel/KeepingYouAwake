@@ -2,17 +2,20 @@ SCHEME = KeepingYouAwake
 PROJECT = KeepingYouAwake.xcodeproj
 VERSION = 1.5.0pre
 
-OUTPUT_DIR = $(shell pwd)/dist
+OUTPUT_DIR = dist
+CARTHAGE_DIR = Carthage
+
+default: dist
 
 clean:
 	rm -rf build
-	rm -rf Carthage
+	rm -rf $(CARTHAGE_DIR)
 	rm -rf $(OUTPUT_DIR)
 
-Carthage:
+$(CARTHAGE_DIR):
 	carthage bootstrap --use-ssh --platform macOS
 
-$(OUTPUT_DIR)/$(SCHEME).app: Carthage
+$(OUTPUT_DIR)/$(SCHEME).app: $(CARTHAGE_DIR)
 	fastlane gym \
 	--project $(PROJECT) \
 	--scheme $(SCHEME) \
