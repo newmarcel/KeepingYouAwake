@@ -33,6 +33,14 @@
 {
     KYA_AUTO statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     statusItem.highlightMode = ![NSUserDefaults standardUserDefaults].kya_menuBarIconHighlightDisabled;
+    if([statusItem respondsToSelector:@selector(behavior)])
+    {
+        statusItem.behavior = NSStatusItemBehaviorTerminationOnRemoval;
+    }
+    if([statusItem respondsToSelector:@selector(isVisible)])
+    {
+        statusItem.visible = YES;
+    }
     
     KYA_AUTO button = statusItem.button;
     
