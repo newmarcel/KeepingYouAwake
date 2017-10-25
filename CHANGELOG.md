@@ -4,7 +4,7 @@
 
 ### v1.5.0pre ###
 
-
+- the icon can be dragged out of the menubar to quit on macOS Sierra and newer ([#82](https://github.com/newmarcel/KeepingYouAwake/issues/82), suggested by [Eitot](https://github.com/Eitot))
 
 ### v1.4.2 ###
 
