@@ -18,6 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface KYAStatusItemController : NSObject
 
 /**
+ Toggle
+ */
+- (void)toggle;
+
+/**
  The underlying system status bar item.
  */
 @property (nonatomic, readonly) NSStatusItem *systemStatusItem;

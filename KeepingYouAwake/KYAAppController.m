@@ -385,6 +385,9 @@
     [KYAEventHandler.defaultHandler registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
         [weakSelf terminateTimer];
     }];
+    [KYAEventHandler.defaultHandler registerActionNamed:@"toggle" block:^(KYAEvent *event) {
+        [self.statusItemController toggle];
+    }];
 }
 
 #pragma mark - KYAStatusItemControllerDelegate

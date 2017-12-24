@@ -52,6 +52,11 @@
     self.activeAppearanceEnabled = NO;
 }
 
+- (void)toggle
+{
+    [self toggleStatus:nil];
+}
+
 - (void)toggleStatus:(id)sender
 {
     KYA_AUTO delegate = self.delegate;
