@@ -101,11 +101,10 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
 
 #pragma mark - Private Helper Methods
 
-+ (nonnull NSURL *)applicationSupportDirectoryURL
++ (nonnull NSURL *)documentsURL
 {
     KYA_AUTO fileManager = NSFileManager.defaultManager;
-    KYA_AUTO appSupportURL = [fileManager URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask].lastObject;
-    return [appSupportURL URLByAppendingPathComponent:@"KeepingYouAwake"];
+    return [fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject;
 }
 
 + (BOOL)hasCustomIcons
@@ -142,7 +141,7 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
 {
     KYA_AUTO suffix = isRetinaIcon ? @"@2x" : @"";
     KYA_AUTO composedName = [NSString stringWithFormat:@"%@%@.png", name, suffix];
-    return [[self applicationSupportDirectoryURL] URLByAppendingPathComponent:composedName];
+    return [[self documentsURL] URLByAppendingPathComponent:composedName];
 }
 
 + (NSImage *)customActiveIcon

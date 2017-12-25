@@ -4,6 +4,10 @@
 
 ### v1.5.0pre ###
 
+- support for App Transport Security and App Sandbox
+	- _launch at login_ uses a helper app now
+	- the previous login item is not compatible anymore and it is recommended to disable _launch at login_ before the update!
+	- custom icons need to be placed in `~/Library/Containers/info.marcel-dierkes.KeepingYouAwake/Data/Documents` now and will be migrated with the update
 - the icon can be dragged out of the menubar to quit on macOS Sierra and newer ([#82](https://github.com/newmarcel/KeepingYouAwake/issues/82), suggested by [Eitot](https://github.com/Eitot))
 - support for the `keepingyouawake:///toggle` action ([#96](https://github.com/newmarcel/KeepingYouAwake/pull/96)), *thanks [code918](https://github.com/code918)*!
 
