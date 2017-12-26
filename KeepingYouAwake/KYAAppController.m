@@ -362,7 +362,7 @@
         NSString *minutes = parameters[@"minutes"];
         NSString *hours = parameters[@"hours"];
         
-        [self terminateTimer];
+        [strongSelf terminateTimer];
         
         // Activate indefinitely if there are no parameters
         if(parameters.count == 0)
@@ -382,11 +382,13 @@
             [strongSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
         }
     }];
+    
     [KYAEventHandler.defaultHandler registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
         [weakSelf terminateTimer];
     }];
+    
     [KYAEventHandler.defaultHandler registerActionNamed:@"toggle" block:^(KYAEvent *event) {
-        [self.statusItemController toggle];
+        [weakSelf.statusItemController toggle];
     }];
 }
 
