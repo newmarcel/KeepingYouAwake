@@ -7,22 +7,21 @@
 //
 
 #import "KYAAppController.h"
+#import "KYADefines.h"
 #import "KYASleepWakeTimer.h"
+#import "KYAStatusItemController.h"
 #import "KYAEventHandler.h"
-#import "KYAMenuBarIcon.h"
 #import "KYABatteryStatus.h"
 #import "KYABatteryCapacityThreshold.h"
 #import "NSUserDefaults+Keys.h"
 
-@interface KYAAppController () <NSUserNotificationCenterDelegate>
+@interface KYAAppController () <NSUserNotificationCenterDelegate, KYAStatusItemControllerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
+@property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
 
 // Battery Status
 @property (nonatomic) KYABatteryStatus *batteryStatus;
 @property (nonatomic, getter=isBatteryOverrideEnabled) BOOL batteryOverrideEnabled;
-
-// Status Item
-@property (strong, nonatomic) NSStatusItem *statusItem;
 
 // Menu
 @property (weak, nonatomic) IBOutlet NSMenu *menu;
@@ -38,10 +37,11 @@
     self = [super init];
     if(self)
     {
-        [self configureStatusItem];
-        
         self.sleepWakeTimer = [KYASleepWakeTimer new];
         [self.sleepWakeTimer addObserver:self forKeyPath:@"scheduled" options:NSKeyValueObservingOptionNew context:NULL];
+        
+        self.statusItemController = [KYAStatusItemController new];
+        self.statusItemController.delegate = self;
         
         // Check activate on launch state
         if([self shouldActivateOnLaunch])
@@ -49,10 +49,10 @@
             [self activateTimer];
         }
         
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(applicationWillFinishLaunching:)
-                                                     name:NSApplicationWillFinishLaunchingNotification
-                                                   object:nil
+        [NSNotificationCenter.defaultCenter addObserver:self
+                                               selector:@selector(applicationWillFinishLaunching:)
+                                                   name:NSApplicationWillFinishLaunchingNotification
+                                                 object:nil
          ];
         
         [self configureBatteryStatus];
@@ -63,16 +63,16 @@
 
 - (void)dealloc
 {
-    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    [notificationCenter removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
-    [notificationCenter removeObserver:self name:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
+    NSNotificationCenter *center = NSNotificationCenter.defaultCenter;
+    [center removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
+    [center removeObserver:self name:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
 }
 
 - (void)awakeFromNib
 {
     [super awakeFromNib];
     
-    [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
+    NSUserNotificationCenter.defaultUserNotificationCenter.delegate = self;
 }
 
 #pragma mark - KVO
@@ -82,97 +82,35 @@
     if([object isEqual:self.sleepWakeTimer] && [keyPath isEqualToString:@"scheduled"])
     {
         // Update the status item for scheduling changes
-        [self setStatusItemActive:[change[NSKeyValueChangeNewKey] boolValue]];
+        BOOL active = [change[NSKeyValueChangeNewKey] boolValue];
+        self.statusItemController.activeAppearanceEnabled = active;
     }
-}
-
-#pragma mark - Setup
-
-- (void)configureStatusItem
-{
-    NSStatusItem *statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    statusItem.highlightMode = ![NSUserDefaults standardUserDefaults].kya_menuBarIconHighlightDisabled;
-    
-    NSStatusBarButton *button = statusItem.button;
-    
-    button.target = self;
-    button.action = @selector(toggleStatus:);
-    
-    [button sendActionOn:NSLeftMouseUpMask|NSRightMouseUpMask];
-    
-    self.statusItem = statusItem;
-    [self setStatusItemActive:NO];
-}
-
-#pragma mark - Menu Handling
-
-- (void)showMenu:(id)sender
-{
-    [self.statusItem popUpStatusItemMenu:self.menu];
 }
 
 #pragma mark - Default Time Interval
 
 - (NSTimeInterval)defaultTimeInterval
 {
-    return [NSUserDefaults standardUserDefaults].kya_defaultTimeInterval;
+    return NSUserDefaults.standardUserDefaults.kya_defaultTimeInterval;
 }
 
 - (void)setDefaultTimeInterval:(NSTimeInterval)interval
 {
-    [NSUserDefaults standardUserDefaults].kya_defaultTimeInterval = interval;
+    NSUserDefaults.standardUserDefaults.kya_defaultTimeInterval = interval;
 }
 
 #pragma mark - Activate on Launch
 
 - (BOOL)shouldActivateOnLaunch
 {
-    return [[NSUserDefaults standardUserDefaults] kya_isActivatedOnLaunch];
+    return [NSUserDefaults.standardUserDefaults kya_isActivatedOnLaunch];
 }
 
 - (IBAction)toggleActivateOnLaunch:(id)sender
 {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *defaults = NSUserDefaults.standardUserDefaults;
     defaults.kya_activateOnLaunch = ![defaults kya_isActivatedOnLaunch];
     [defaults synchronize];
-}
-
-#pragma mark - Toggle Handling
-
-- (void)toggleStatus:(id)sender
-{
-    NSEvent *event = [[NSApplication sharedApplication] currentEvent];
-    if((event.modifierFlags & NSEventModifierFlagControl) || (event.modifierFlags & NSEventModifierFlagOption) || (event.type == NSEventTypeRightMouseUp))
-    {
-        [self showMenu:nil];
-        return;
-    }
-    
-    if([self.sleepWakeTimer isScheduled])
-    {
-        [self terminateTimer];
-    }
-    else
-    {
-        [self activateTimer];
-    }
-}
-
-- (void)setStatusItemActive:(BOOL)active
-{
-    NSStatusBarButton *button = self.statusItem.button;
-    KYAMenuBarIcon *menubarIcon = [KYAMenuBarIcon currentIcon];
-    
-    if(active)
-    {
-        button.image = menubarIcon.activeIcon;
-        button.toolTip = NSLocalizedString(@"Click to allow sleep\nRight click to show menu", @"Click to allow sleep\nRight click to show menu");
-    }
-    else
-    {
-        button.image = menubarIcon.inactiveIcon;
-        button.toolTip = NSLocalizedString(@"Click to prevent sleep\nRight click to show menu", @"Click to prevent sleep\nRight click to show menu");
-    }
 }
 
 #pragma mark - Sleep Wake Timer Handling
@@ -192,23 +130,23 @@
     
     // Check battery overrides and register for capacity changes.
     [self checkAndEnableBatteryOverride];
-    if([[NSUserDefaults standardUserDefaults] kya_isBatteryCapacityThresholdEnabled])
+    if([NSUserDefaults.standardUserDefaults kya_isBatteryCapacityThresholdEnabled])
     {
         [self.batteryStatus registerForCapacityChangesIfNeeded];
     }
     
     [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:^(BOOL cancelled) {
         // Post notifications
-        if([[NSUserDefaults standardUserDefaults] kya_areNotificationsEnabled])
+        if([NSUserDefaults.standardUserDefaults kya_areNotificationsEnabled])
         {
             NSUserNotification *n = [NSUserNotification new];
             n.informativeText = NSLocalizedString(@"Allowing your Mac to go to sleep…", @"Allowing your Mac to go to sleep…");
-            [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
+            [NSUserNotificationCenter.defaultUserNotificationCenter scheduleNotification:n];
         }
     }];
     
     // Post notifications
-    if([[NSUserDefaults standardUserDefaults] kya_areNotificationsEnabled])
+    if([NSUserDefaults.standardUserDefaults kya_areNotificationsEnabled])
     {
         NSUserNotification *n = [NSUserNotification new];
         
@@ -226,7 +164,7 @@
             n.informativeText = [NSString stringWithFormat:NSLocalizedString(@"Preventing your Mac from going to sleep for\n%@…", @"Preventing your Mac from going to sleep for\n%@…"), remainingTimeString];
         }
         
-        [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:n];
+        [NSUserNotificationCenter.defaultUserNotificationCenter scheduleNotification:n];
     }
 }
 
@@ -253,8 +191,7 @@
 	}
 	else
 	{
-		
-		__weak typeof(self) weakSelf = self;
+        KYA_WEAK weakSelf = self;
 		dispatch_async(dispatch_get_main_queue(), ^{
 			NSTimeInterval seconds = (NSTimeInterval)[sender tag];
 			[weakSelf activateTimerWithTimeInterval:seconds];
@@ -334,7 +271,7 @@
     {
         _batteryStatus = [KYABatteryStatus new];
         
-        __weak typeof(self) weakSelf = self;
+        KYA_WEAK weakSelf = self;
         _batteryStatus.capacityChangeHandler = ^(CGFloat capacity) {
             [weakSelf batteryCapacityDidChange:capacity];
         };
@@ -349,14 +286,14 @@
         return;
     }
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(batteryCapacityThresholdDidChange:)
-                                                 name:kKYABatteryCapacityThresholdDidChangeNotification
-                                               object:nil
+    [NSNotificationCenter.defaultCenter addObserver:self
+                                           selector:@selector(batteryCapacityThresholdDidChange:)
+                                               name:kKYABatteryCapacityThresholdDidChangeNotification
+                                             object:nil
      ];
     
     // Start receiving battery status changes
-    if([[NSUserDefaults standardUserDefaults] kya_isBatteryCapacityThresholdEnabled])
+    if([NSUserDefaults.standardUserDefaults kya_isBatteryCapacityThresholdEnabled])
     {
         [self.batteryStatus registerForCapacityChangesIfNeeded];
     }
@@ -365,7 +302,7 @@
 - (void)checkAndEnableBatteryOverride
 {
     CGFloat currentCapacity = self.batteryStatus.currentCapacity;
-    CGFloat threshold = [NSUserDefaults standardUserDefaults].kya_batteryCapacityThreshold;
+    CGFloat threshold = NSUserDefaults.standardUserDefaults.kya_batteryCapacityThreshold;
     
     self.batteryOverrideEnabled = (currentCapacity <= threshold);
 }
@@ -377,7 +314,7 @@
 
 - (void)batteryCapacityDidChange:(CGFloat)capacity
 {
-    CGFloat threshold = [NSUserDefaults standardUserDefaults].kya_batteryCapacityThreshold;
+    CGFloat threshold = NSUserDefaults.standardUserDefaults.kya_batteryCapacityThreshold;
     if([self.sleepWakeTimer isScheduled] && (capacity <= threshold) && ![self isBatteryOverrideEnabled])
     {
         [self terminateTimer];
@@ -411,13 +348,13 @@
 {
     NSString *value = [event paramDescriptorForKeyword:keyDirectObject].stringValue;
     
-    [[KYAEventHandler mainHandler] handleEventForURL:[NSURL URLWithString:value]];
+    [KYAEventHandler.defaultHandler handleEventForURL:[NSURL URLWithString:value]];
 }
 
 - (void)configureEventHandler
 {
-    __weak typeof(self) weakSelf = self;
-    [[KYAEventHandler mainHandler] registerActionNamed:@"activate" block:^(KYAEvent *event) {
+    KYA_WEAK weakSelf = self;
+    [KYAEventHandler.defaultHandler registerActionNamed:@"activate" block:^(KYAEvent *event) {
         typeof(self) strongSelf = weakSelf;
         
         NSDictionary *parameters = event.arguments;
@@ -445,9 +382,31 @@
             [strongSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
         }
     }];
-    [[KYAEventHandler mainHandler] registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
+    [KYAEventHandler.defaultHandler registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
         [weakSelf terminateTimer];
     }];
+    [KYAEventHandler.defaultHandler registerActionNamed:@"toggle" block:^(KYAEvent *event) {
+        [self.statusItemController toggle];
+    }];
+}
+
+#pragma mark - KYAStatusItemControllerDelegate
+
+- (void)statusItemControllerShouldPerformMainAction:(KYAStatusItemController *)controller
+{
+    if([self.sleepWakeTimer isScheduled])
+    {
+        [self terminateTimer];
+    }
+    else
+    {
+        [self activateTimer];
+    }
+}
+
+- (void)statusItemControllerShouldPerformAlternativeAction:(KYAStatusItemController *)controller
+{
+    [self.statusItemController showMenu:self.menu];
 }
 
 @end

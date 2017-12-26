@@ -23,14 +23,14 @@
 {
     if(_preferencesWindowController == nil)
     {
-        _preferencesWindowController = [KYAPreferencesWindowController defaultPreferencesWindowController];
+        _preferencesWindowController = [KYAPreferencesWindowController preferencesWindowController];
     }
     return _preferencesWindowController;
 }
 
 - (IBAction)showPreferencesWindow:(id)sender
 {
-    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+    [NSApplication.sharedApplication activateIgnoringOtherApps:YES];
     
     [self.preferencesWindowController showWindow:sender];
     self.preferencesWindowController.window.delegate = self;
@@ -47,10 +47,10 @@
 
 - (NSString *)feedURLStringForUpdater:(SUUpdater *)updater
 {
-    NSString *feedURLString = [NSBundle mainBundle].infoDictionary[@"SUFeedURL"];
+    NSString *feedURLString = NSBundle.mainBundle.infoDictionary[@"SUFeedURL"];
     NSAssert(feedURLString != nil, @"A feed URL should be set in Info.plist");
     
-    if([[NSUserDefaults standardUserDefaults] kya_arePreReleaseUpdatesEnabled])
+    if([NSUserDefaults.standardUserDefaults kya_arePreReleaseUpdatesEnabled])
     {
         NSString *lastComponent = feedURLString.lastPathComponent;
         NSString *baseURLString = feedURLString.stringByDeletingLastPathComponent;

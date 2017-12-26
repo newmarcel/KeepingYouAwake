@@ -25,17 +25,17 @@
 
 - (NSString *)versionText
 {
-    return [NSApplication sharedApplication].kya_localizedVersionString;
+    return NSApplication.sharedApplication.kya_localizedVersionString;
 }
 
 - (NSString *)copyrightText
 {
-    return [NSApplication sharedApplication].kya_localizedCopyrightString;
+    return NSApplication.sharedApplication.kya_localizedCopyrightString;
 }
 
 - (id)creditsFileURL
 {
-    return [[NSBundle mainBundle] URLForResource:@"Credits" withExtension:@"rtf"];
+    return [NSBundle.mainBundle URLForResource:@"Credits" withExtension:@"rtf"];
 }
 
 - (BOOL)isEditable

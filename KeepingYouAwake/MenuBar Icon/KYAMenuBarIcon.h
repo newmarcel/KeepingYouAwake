@@ -14,46 +14,39 @@ NS_ASSUME_NONNULL_BEGIN
 @interface KYAMenuBarIcon : NSObject
 
 /**
- *  An icon image representing the active state.
+ Returns a menubar icon set for either the default icon or a set
+ of custom icons from the application support directory.
+ 
+ @note This class method will always return the same KYAMenuBarIcon
+       instance during the lifetime of the app.
+ */
+@property (class, nonatomic, readonly) KYAMenuBarIcon *currentIcon;
+
+/**
+ Returns a menubar icon set for the default KeepingYouAwake menubar icon.
+ */
+@property (class, nonatomic, readonly) KYAMenuBarIcon *defaultIcon;
+
+/**
+ An icon image representing the active state.
  */
 @property (nonatomic, readonly) NSImage *activeIcon;
 
 /**
- *  An icon image representing the inactive state.
+ An icon image representing the inactive state.
  */
 @property (nonatomic, readonly) NSImage *inactiveIcon;
 
 /**
- *  Returns a menubar icon set for either the default icon
- *  or a set of custom icons from the application support
- *  directory.
- *
- *  This class method will always return the same KYAMenuBarIcon
- *  instance during the lifetime of the app.
- *
- *  @return A KYAMenuBarIcon instance.
- */
-+ (instancetype)currentIcon;
+ The designated initializer for a menubar icon.
 
-/**
- *  Returns a menubar icon set for the default
- *  KeepingYouAwake menubar icon.
- *
- *  @return A KYAMenuBarIcon instance.
+ @param activeIcon An NSImage representing the active state, a nil value sets the default icon.
+ @param inactiveIcon An NSImage representing the inactive state, a nil value sets the default icon.
+ @return A KYAMenuBarIcon instance.
  */
-+ (instancetype)defaultIcon;
+- (instancetype)initWithActiveIcon:(nullable NSImage *)activeIcon
+                      inactiveIcon:(nullable NSImage *)inactiveIcon NS_DESIGNATED_INITIALIZER;
 
-/**
- *  The designated initializer for a menubar icon.
- *
- *  @param activeIcon   An NSImage representing the active state, a nil value sets the default icon.
- *  @param inactiveIcon An NSImage representing the inactive state, a nil value sets the default icon.
- *
- *  @return A KYAMenuBarIcon instance.
- */
-- (instancetype)initWithActiveIcon:(nullable NSImage *)activeIcon inactiveIcon:(nullable NSImage *)inactiveIcon NS_DESIGNATED_INITIALIZER;
-
-// It is preferred to not use -init, use -initWithActiveIcon:inactiveIcon: instead.
 - (instancetype)init NS_UNAVAILABLE;
 
 @end

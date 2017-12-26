@@ -12,12 +12,12 @@
 
 - (NSString * _Nonnull)kya_shortVersionString
 {
-    return [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
+    return NSBundle.mainBundle.infoDictionary[@"CFBundleShortVersionString"];
 }
 
 - (NSString * _Nonnull)kya_buildVersionString
 {
-    return [NSBundle mainBundle].infoDictionary[@"CFBundleVersion"];
+    return NSBundle.mainBundle.infoDictionary[@"CFBundleVersion"];
 }
 
 - (NSString * _Nonnull)kya_localizedVersionString
@@ -30,7 +30,7 @@
 
 - (NSString * _Nonnull)kya_localizedCopyrightString
 {
-    return [NSBundle mainBundle].infoDictionary[@"NSHumanReadableCopyright"];
+    return NSBundle.mainBundle.infoDictionary[@"NSHumanReadableCopyright"];
 }
 
 @end

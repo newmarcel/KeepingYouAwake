@@ -16,6 +16,6 @@
 
  @return A new instance.
  */
-+ (instancetype)defaultPreferencesWindowController;
++ (instancetype)preferencesWindowController;
 
 @end

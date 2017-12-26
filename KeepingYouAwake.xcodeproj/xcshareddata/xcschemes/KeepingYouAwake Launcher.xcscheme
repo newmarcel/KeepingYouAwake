@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0920"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DA637B3819F14693004C8838"
-               BuildableName = "KeepingYouAwake.app"
-               BlueprintName = "KeepingYouAwake"
+               BlueprintIdentifier = "DA6A8ADA1FF153AD00E7BBFE"
+               BuildableName = "KeepingYouAwake Launcher.app"
+               BlueprintName = "KeepingYouAwake Launcher"
                ReferencedContainer = "container:KeepingYouAwake.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DA637B3819F14693004C8838"
-            BuildableName = "KeepingYouAwake.app"
-            BlueprintName = "KeepingYouAwake"
+            BlueprintIdentifier = "DA6A8ADA1FF153AD00E7BBFE"
+            BuildableName = "KeepingYouAwake Launcher.app"
+            BlueprintName = "KeepingYouAwake Launcher"
             ReferencedContainer = "container:KeepingYouAwake.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -57,9 +57,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DA637B3819F14693004C8838"
-            BuildableName = "KeepingYouAwake.app"
-            BlueprintName = "KeepingYouAwake"
+            BlueprintIdentifier = "DA6A8ADA1FF153AD00E7BBFE"
+            BuildableName = "KeepingYouAwake Launcher.app"
+            BlueprintName = "KeepingYouAwake Launcher"
             ReferencedContainer = "container:KeepingYouAwake.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -76,9 +76,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DA637B3819F14693004C8838"
-            BuildableName = "KeepingYouAwake.app"
-            BlueprintName = "KeepingYouAwake"
+            BlueprintIdentifier = "DA6A8ADA1FF153AD00E7BBFE"
+            BuildableName = "KeepingYouAwake Launcher.app"
+            BlueprintName = "KeepingYouAwake Launcher"
             ReferencedContainer = "container:KeepingYouAwake.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

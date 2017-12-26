@@ -7,6 +7,7 @@
 //
 
 #import "KYAMenuBarIcon.h"
+#import "KYADefines.h"
 
 NSString * const KYAMenubarActiveIconName = @"ActiveIcon";
 NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
@@ -26,14 +27,14 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
     dispatch_once(&onceToken, ^{
         if([self hasCustomIcons])
         {
-            id activeIcon = [self customActiveIcon];
-            id inactiveIcon = [self customInactiveIcon];
+            KYA_AUTO activeIcon = [self customActiveIcon];
+            KYA_AUTO inactiveIcon = [self customInactiveIcon];
             currentIcon = [[self alloc] initWithActiveIcon:activeIcon inactiveIcon:inactiveIcon];
         }
         else
         {
             // There are no costum image files, fall back to the default icon.
-            currentIcon = [self defaultIcon];
+            currentIcon = self.defaultIcon;
         }
     });
     
@@ -100,11 +101,10 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
 
 #pragma mark - Private Helper Methods
 
-+ (nonnull NSURL *)applicationSupportDirectoryURL
++ (nonnull NSURL *)documentsURL
 {
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *appSupportURL = [fileManager URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask].lastObject;
-    return [appSupportURL URLByAppendingPathComponent:@"KeepingYouAwake"];
+    KYA_AUTO fileManager = NSFileManager.defaultManager;
+    return [fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject;
 }
 
 + (BOOL)hasCustomIcons
@@ -133,15 +133,15 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
 
 + (BOOL)iconWithNameExistsAtPath:(NSString *)name isRetinaIcon:(BOOL)isRetinaIcon
 {
-    NSURL *fileURL = [self iconFileURLWithName:name isRetinaIcon:isRetinaIcon];
-    return [[NSFileManager defaultManager] fileExistsAtPath:fileURL.path];
+    KYA_AUTO fileURL = [self iconFileURLWithName:name isRetinaIcon:isRetinaIcon];
+    return [NSFileManager.defaultManager fileExistsAtPath:fileURL.path];
 }
 
 + (NSURL *)iconFileURLWithName:(NSString *)name isRetinaIcon:(BOOL)isRetinaIcon
 {
-    NSString *suffix = isRetinaIcon ? @"@2x" : @"";
-    NSString *composedName = [NSString stringWithFormat:@"%@%@.png", name, suffix];
-    return [[self applicationSupportDirectoryURL] URLByAppendingPathComponent:composedName];
+    KYA_AUTO suffix = isRetinaIcon ? @"@2x" : @"";
+    KYA_AUTO composedName = [NSString stringWithFormat:@"%@%@.png", name, suffix];
+    return [[self documentsURL] URLByAppendingPathComponent:composedName];
 }
 
 + (NSImage *)customActiveIcon
@@ -156,10 +156,10 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
 
 + (NSImage *)customIconNamed:(NSString *)name
 {
-    NSImage *image = [[NSImage alloc] initWithContentsOfURL:[self iconFileURLWithName:name
+    KYA_AUTO image = [[NSImage alloc] initWithContentsOfURL:[self iconFileURLWithName:name
                                                                          isRetinaIcon:NO]];
     image.template = YES;
-    NSImageRep *retinaRep = [NSImageRep imageRepWithContentsOfURL:[self iconFileURLWithName:name
+    KYA_AUTO retinaRep = [NSImageRep imageRepWithContentsOfURL:[self iconFileURLWithName:name
                                                                                isRetinaIcon:YES]];
     if(retinaRep)
     {

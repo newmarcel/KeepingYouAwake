@@ -7,6 +7,7 @@
 //
 
 #import "KYAEventHandler.h"
+#import "KYADefines.h"
 #import "KYAEvent.h"
 
 @interface KYAEventHandler ()
@@ -19,14 +20,14 @@
 
 #pragma mark - Singleton
 
-+ (instancetype)mainHandler
++ (instancetype)defaultHandler
 {
     static dispatch_once_t once;
-    static id sharedInstance;
+    static KYAEventHandler *handler;
     dispatch_once(&once, ^{
-        sharedInstance = [[self alloc] init];
+        handler = [self new];
     });
-    return sharedInstance;
+    return handler;
 }
 
 - (instancetype)init
@@ -56,16 +57,14 @@
         return;
     }
     
-    __weak typeof(self) weakSelf = self;
+    KYA_WEAK weakSelf = self;
     dispatch_async(self.eventQueue, ^{
-        KYAEvent *event = [weakSelf eventForURL:URL];
+        KYA_AUTO event = [weakSelf eventForURL:URL];
         
         KYAEventHandlerActionBlock actionBlock = [self.eventTable objectForKey:event.name];
         if(actionBlock)
         {
-#if DEBUG
-            NSLog(@"Handling event:\n%@\nfor URL: %@", event, URL);
-#endif
+            KYALog(@"Handling event:\n%@\nfor URL: %@", event, URL);
             // Perform the action block on main queue, but in sync with the event queue
             dispatch_sync(dispatch_get_main_queue(), ^{
                 actionBlock(event);
@@ -76,14 +75,14 @@
 
 - (nullable KYAEvent *)eventForURL:(nonnull NSURL *)URL
 {
-    NSURLComponents *URLComponents = [NSURLComponents componentsWithURL:URL resolvingAgainstBaseURL:YES];
-
-    NSString *path = URL.lastPathComponent;
+    KYA_AUTO URLComponents = [NSURLComponents componentsWithURL:URL resolvingAgainstBaseURL:YES];
+    KYA_AUTO path = URL.lastPathComponent;
     
     // Destructure NSURLQueryItems into basic dictionary values
-    NSMutableDictionary *arguments = [NSMutableDictionary dictionary];
-    for(NSURLQueryItem *queryItem in URLComponents.queryItems) {
-        id value = queryItem.value;
+    KYA_AUTO arguments = [NSMutableDictionary dictionary];
+    for(NSURLQueryItem *queryItem in URLComponents.queryItems)
+    {
+        KYA_AUTO value = queryItem.value;
         if(!value)
         {
             // fall back to an empty string if the value is nil

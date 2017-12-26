@@ -20,7 +20,7 @@
 #define KYA_2HOURS KYA_HOURS(2)
 #define KYA_5HOURS KYA_HOURS(5)
 
-extern NSTimeInterval const KYASleepWakeTimeIntervalIndefinite;
+FOUNDATION_EXPORT NSTimeInterval const KYASleepWakeTimeIntervalIndefinite;
 
 typedef void(^KYASleepWakeTimerCompletionBlock)(BOOL cancelled);
 

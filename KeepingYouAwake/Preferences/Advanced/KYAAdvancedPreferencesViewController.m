@@ -62,7 +62,7 @@
     {
         [pref reset];
     }
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    [NSUserDefaults.standardUserDefaults synchronize];
     [self.tableView reloadData];
     
     // Disable battery status integration
@@ -76,7 +76,7 @@
 
 - (void)batteryStatusPreferencesChanged:(id)sender
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
+    [NSNotificationCenter.defaultCenter postNotificationName:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
 }
 
 #pragma mark - Table View Delegate & Data Source
