@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" datatype="plaintext" target-language="es">
+  <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" datatype="plaintext" target-language="pt">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
     </header>
@@ -112,7 +112,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Info.plist" source-language="en" datatype="plaintext" target-language="es">
+  <file original="KeepingYouAwake/Info.plist" source-language="en" datatype="plaintext" target-language="pt">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
     </header>
@@ -125,7 +125,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Localizable.strings" source-language="en" datatype="plaintext" target-language="es">
+  <file original="KeepingYouAwake/Localizable.strings" source-language="en" datatype="plaintext" target-language="pt">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
     </header>
@@ -182,7 +182,7 @@ Clique com o botão direito para exibir o menu</target>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="es">
+  <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="pt">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
     </header>

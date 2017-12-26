@@ -22,6 +22,7 @@
 		DA637B4419F14693004C8838 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4319F14693004C8838 /* Images.xcassets */; };
 		DA637B4719F14693004C8838 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4519F14693004C8838 /* MainMenu.xib */; };
 		DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B5D19F146B6004C8838 /* KYAAppController.m */; };
+		DA6915AB1FF27B8F0062BB17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA6915AD1FF27B8F0062BB17 /* InfoPlist.strings */; };
 		DA6A8ADF1FF153AD00E7BBFE /* KYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6A8ADE1FF153AD00E7BBFE /* KYAAppDelegate.m */; };
 		DA6A8AE71FF153AD00E7BBFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6A8AE61FF153AD00E7BBFE /* main.m */; };
 		DA6A8AED1FF153CD00E7BBFE /* Launcher.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA6A8AEC1FF153CD00E7BBFE /* Launcher.icns */; };
@@ -118,6 +119,11 @@
 		DA6439CB1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA6439CC1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA6439CD1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DA6915A61FF27B8E0062BB17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DA6915A71FF27B8E0062BB17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA6915A81FF27B8E0062BB17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA6915AC1FF27B8F0062BB17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA6915AE1FF27B8F0062BB17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		DA6A8ADB1FF153AD00E7BBFE /* KeepingYouAwake Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KeepingYouAwake Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6A8ADD1FF153AD00E7BBFE /* KYAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAAppDelegate.h; sourceTree = "<group>"; };
 		DA6A8ADE1FF153AD00E7BBFE /* KYAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAppDelegate.m; sourceTree = "<group>"; };
@@ -323,6 +329,7 @@
 		DA6A8ADC1FF153AD00E7BBFE /* KYALauncher */ = {
 			isa = PBXGroup;
 			children = (
+				DA6915AD1FF27B8F0062BB17 /* InfoPlist.strings */,
 				DA6A8AE51FF153AD00E7BBFE /* Info.plist */,
 				DA6A8ADD1FF153AD00E7BBFE /* KYAAppDelegate.h */,
 				DA6A8ADE1FF153AD00E7BBFE /* KYAAppDelegate.m */,
@@ -474,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6A8AED1FF153CD00E7BBFE /* Launcher.icns in Resources */,
+				DA6915AB1FF27B8F0062BB17 /* InfoPlist.strings in Resources */,
 				DA6A8AEF1FF153ED00E7BBFE /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +557,7 @@
 				DAD3B5761EC6FA5A0022E5D0 /* tr */,
 				DA4121711F5C07130083B6E6 /* zh */,
 				DA8B21961F6057A200BF5013 /* zh-Hant-TW */,
+				DA6915A61FF27B8E0062BB17 /* pt */,
 			);
 			name = Preferences.storyboard;
 			sourceTree = "<group>";
@@ -566,6 +575,7 @@
 				DAD3B5771EC6FA5A0022E5D0 /* tr */,
 				DA4121721F5C07140083B6E6 /* zh */,
 				DA8B21991F6057A200BF5013 /* zh-Hant-TW */,
+				DA6915A71FF27B8E0062BB17 /* pt */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -583,6 +593,7 @@
 				DAD3B5781EC6FA5A0022E5D0 /* tr */,
 				DA4121731F5C07140083B6E6 /* zh */,
 				DA8B21981F6057A200BF5013 /* zh-Hant-TW */,
+				DA6915A81FF27B8E0062BB17 /* pt */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -600,8 +611,17 @@
 				DAD3B5791EC6FA5A0022E5D0 /* tr */,
 				DA4121741F5C07140083B6E6 /* zh */,
 				DA8B21971F6057A200BF5013 /* zh-Hant-TW */,
+				DA6915AE1FF27B8F0062BB17 /* pt */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		DA6915AD1FF27B8F0062BB17 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA6915AC1FF27B8F0062BB17 /* pt */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
