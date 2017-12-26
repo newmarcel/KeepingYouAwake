@@ -1,7 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="KYALauncher/Info.plist" source-language="en" datatype="plaintext" target-language="pl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright">
+        <source>${KYA_COPYRIGHT_TEXT}</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" datatype="plaintext" target-language="pl">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="3tu-5G-YQt.title">
@@ -113,20 +127,21 @@
   </file>
   <file original="KeepingYouAwake/Info.plist" source-language="en" datatype="plaintext" target-language="pl">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="CFBundleName">
         <source>$(PRODUCT_NAME)</source>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright">
-        <source>${KYA_COPYRIGHT_TEXT}</source><target></target>
+        <source>${KYA_COPYRIGHT_TEXT}</source>
+        <target/>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Localizable.strings" source-language="en" datatype="plaintext" target-language="pl">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="Allowing your Mac to go to sleep…">
@@ -148,11 +163,13 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Disable menu bar icon highlight color">
         <source>Disable menu bar icon highlight color</source>
-        <note>Disable menu bar icon highlight color</note><target>Wyłącz podświetlenie ikony w menu</target>
+        <target>Wyłącz podświetlenie ikony w menu</target>
+        <note>Disable menu bar icon highlight color</note>
       </trans-unit>
       <trans-unit id="Enable experimental Notification Center integration">
         <source>Enable experimental Notification Center integration</source>
-        <note>Enable experimental Notification Center integration</note><target>Włącz eksperymentalną integrację z powiadomieniami</target>
+        <target>Włącz eksperymentalną integrację z powiadomieniami</target>
+        <note>Enable experimental Notification Center integration</note>
       </trans-unit>
       <trans-unit id="Indefinitely">
         <source>Indefinitely</source>
@@ -179,7 +196,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="pl">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="0Fs-xW-EeB.title">
@@ -209,7 +226,8 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="G1k-8T-EcX.title">
         <source>Version 2016</source>
-        <note>Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX";</note><target>Wersja 2016</target>
+        <target>Wersja 2016</target>
+        <note>Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX";</note>
       </trans-unit>
       <trans-unit id="IOU-Hs-S4r.title">
         <source>Activate on Launch</source>
@@ -258,7 +276,8 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="g2t-CH-TcY.title">
         <source>Text Cell</source>
-        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "g2t-CH-TcY";</note><target>Pole tekstowe</target>
+        <target>Pole tekstowe</target>
+        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "g2t-CH-TcY";</note>
       </trans-unit>
       <trans-unit id="i17-n2-vfw.title">
         <source>50 %</source>
@@ -292,7 +311,8 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="siu-CP-Bg1.title">
         <source>Copyright Label</source>
-        <note>Class = "NSTextFieldCell"; title = "Copyright Label"; ObjectID = "siu-CP-Bg1";</note><target>Prawa autorskie</target>
+        <target>Prawa autorskie</target>
+        <note>Class = "NSTextFieldCell"; title = "Copyright Label"; ObjectID = "siu-CP-Bg1";</note>
       </trans-unit>
       <trans-unit id="uUP-5n-ykj.title">
         <source>About</source>

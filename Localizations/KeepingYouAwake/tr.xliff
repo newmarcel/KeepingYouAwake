@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="KYALauncher/Info.plist" source-language="en" datatype="plaintext" target-language="tr">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright">
+        <source>${KYA_COPYRIGHT_TEXT}</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" datatype="plaintext" target-language="tr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="3tu-5G-YQt.title">
@@ -114,7 +127,7 @@
   </file>
   <file original="KeepingYouAwake/Info.plist" source-language="en" datatype="plaintext" target-language="tr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="CFBundleName">
@@ -127,7 +140,7 @@
   </file>
   <file original="KeepingYouAwake/Localizable.strings" source-language="en" datatype="plaintext" target-language="tr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="Allowing your Mac to go to sleep…">
@@ -181,7 +194,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="tr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.0" build-num="9M214v"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="0Fs-xW-EeB.title">

@@ -6,4 +6,4 @@ PROJECT_NAME="KeepingYouAwake"
 PROJECT_FILE_PATH="${BASE_DIR}/../${PROJECT_NAME}.xcodeproj"
 TARGET_DIR="${BASE_DIR}/${PROJECT_NAME}"
 
-TRANSLATIONS=("da" "de" "es" "fr" "ko" "nl" "tr")
+TRANSLATIONS=("da" "de" "es" "fr" "ko" "nl" "pl" "pt" "tr" "zh-Hant-TW" "zh")
