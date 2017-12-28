@@ -40,6 +40,16 @@
 		DAD29AFB1FF18B3D00B59735 /* NSApplication+KYALauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD29AFA1FF18B3D00B59735 /* NSApplication+KYALauncher.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DA4614CE1FF5455700EFA828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA637B3119F14693004C8838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA6A8ADA1FF153AD00E7BBFE;
+			remoteInfo = "KeepingYouAwake Launcher";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		DA6A8AF31FF154D200E7BBFE /* Copy Launcher */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -376,6 +386,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DA4614CF1FF5455700EFA828 /* PBXTargetDependency */,
 			);
 			name = KeepingYouAwake;
 			productName = KeepingYouAwake;
@@ -527,6 +538,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA4614CF1FF5455700EFA828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA6A8ADA1FF153AD00E7BBFE /* KeepingYouAwake Launcher */;
+			targetProxy = DA4614CE1FF5455700EFA828 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */ = {
