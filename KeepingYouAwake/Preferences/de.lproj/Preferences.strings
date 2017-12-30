@@ -1,5 +1,5 @@
 /* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "0Fs-xW-EeB"; */
-"0Fs-xW-EeB.title" = "Nach Vorschau-Versionen suchen";
+"0Fs-xW-EeB.title" = "Nach Vorschauversionen suchen";
 
 /* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
 "5bL-cI-YIY.title" = "Erweitert";
@@ -20,7 +20,7 @@
 "Icg-VI-pC8.title" = "Jetzt suchen";
 
 /* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO"; */
-"OsK-jX-EzO.title" = "Ändern Sie diese erweiterten Einstellungen nur, wenn Sie wissen, was Sie tun. Die meisten dieser Einstellungen erfordern einen Neustart.";
+"OsK-jX-EzO.title" = "Ändere diese erweiterten Einstellungen nur, wenn du weißt, was du tust. Die meisten dieser Einstellungen erfordern einen Neustart.";
 
 /* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1"; */
 "QIk-WP-qH1.title" = "Beim Anmelden starten";
@@ -35,7 +35,7 @@
 "S6p-h0-H5B.title" = "Verhindert direkt beim Start den Ruhezustand.";
 
 /* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
-"UVY-8B-q5H.title" = "Standard-Aktivierungsdauer:";
+"UVY-8B-q5H.title" = "Standardaktivierungsdauer:";
 
 /* Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "fiQ-AT-I7u"; */
 "fiQ-AT-I7u.title" = "10 %";
@@ -44,7 +44,7 @@
 "i17-n2-vfw.title" = "50 %";
 
 /* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l"; */
-"k65-yi-85l.title" = "Dieser Wert wird ignoriert, wenn Sie die App unter dieser Kapazitäts-Grenze starten.";
+"k65-yi-85l.title" = "Dieser Wert wird ignoriert, wenn du die App unter dieser Kapazitätsgrenze startest.";
 
 /* Class = "NSButtonCell"; title = "Check"; ObjectID = "kG2-Tz-t51"; */
 "kG2-Tz-t51.title" = "Prüfen";
@@ -53,7 +53,7 @@
 "lGE-74-XwP.title" = "Allgemein";
 
 /* Class = "NSTextFieldCell"; title = "Sets the default activation duration for the menu bar icon."; ObjectID = "nnA-d3-VV6"; */
-"nnA-d3-VV6.title" = "Setzt die Standard-Aktivierungsdauer des Menüleistensymbols.";
+"nnA-d3-VV6.title" = "Setzt die Standardaktivierungsdauer für das Statusmenü.";
 
 /* Class = "NSTextFieldCell"; title = "KeepingYouAwake"; ObjectID = "nsg-DI-kE2"; */
 "nsg-DI-kE2.title" = "KeepingYouAwake";
@@ -62,5 +62,5 @@
 "uUP-5n-ykj.title" = "Über";
 
 /* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU"; */
-"x6s-XD-lBU.title" = "Öffnet die App automatisch beim Start Ihres Macs.";
+"x6s-XD-lBU.title" = "Öffnet die App automatisch beim Start deines Macs.";
 

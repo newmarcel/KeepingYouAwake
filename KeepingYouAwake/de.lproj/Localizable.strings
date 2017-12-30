@@ -7,6 +7,12 @@
 /* Click to prevent sleep\nRight click to show menu */
 "Click to prevent sleep\nRight click to show menu" = "Klicken, um den Ruhezustand zu verhindern\nRechtsklick, um das Menü anzuzeigen";
 
+/* Disable menu bar icon highlight color */
+"Disable menu bar icon highlight color" = "Keine Auswahlfarbe beim Statusmenü anzeigen";
+
+/* Enable experimental Notification Center integration */
+"Enable experimental Notification Center integration" = "Experimentelle Integration mit der Mitteilungszentrale einschalten";
+
 /* Indefinitely */
 "Indefinitely" = "Unbegrenzt";
 

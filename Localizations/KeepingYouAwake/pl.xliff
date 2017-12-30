@@ -135,7 +135,6 @@
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright">
         <source>${KYA_COPYRIGHT_TEXT}</source>
-        <target/>
       </trans-unit>
     </body>
   </file>
