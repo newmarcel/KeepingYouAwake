@@ -13,38 +13,20 @@
 /* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo"; */
 "EXv-vC-wyo.title" = "Restaurar valores padrão";
 
+/* Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "fiQ-AT-I7u"; */
+"fiQ-AT-I7u.title" = "10 %";
+
 /* Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX"; */
 "G1k-8T-EcX.title" = "Versão 2016";
 
-/* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r"; */
-"IOU-Hs-S4r.title" = "Ativar ao abrir";
+/* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "i17-n2-vfw"; */
+"i17-n2-vfw.title" = "50 %";
 
 /* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "Icg-VI-pC8"; */
 "Icg-VI-pC8.title" = "Checar agora";
 
-/* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO"; */
-"OsK-jX-EzO.title" = "Modifique estas opções avançadas apenas se souber o que está fazendo. A maioria destas configurações requerem reiniciar a aplicação.";
-
-/* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1"; */
-"QIk-WP-qH1.title" = "Abrir no Login";
-
-/* Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "RY6-7F-Z7R"; */
-"RY6-7F-Z7R.title" = "Buscar atualizações automaticamente";
-
-/* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "Rb3-Sm-byr"; */
-"Rb3-Sm-byr.title" = "90 %";
-
-/* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B"; */
-"S6p-h0-H5B.title" = "Evita que o Mac durma imediatamente quando aberto.";
-
-/* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
-"UVY-8B-q5H.title" = "Duração padrão:";
-
-/* Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "fiQ-AT-I7u"; */
-"fiQ-AT-I7u.title" = "10 %";
-
-/* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "i17-n2-vfw"; */
-"i17-n2-vfw.title" = "50 %";
+/* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r"; */
+"IOU-Hs-S4r.title" = "Ativar ao abrir";
 
 /* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l"; */
 "k65-yi-85l.title" = "Este valor será ignorado quando você inicia manualmente a aplicação abaixo da carga da bateria.";
@@ -61,11 +43,29 @@
 /* Class = "NSTextFieldCell"; title = "KeepingYouAwake"; ObjectID = "nsg-DI-kE2"; */
 "nsg-DI-kE2.title" = "KeepingYouAwake";
 
+/* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO"; */
+"OsK-jX-EzO.title" = "Modifique estas opções avançadas apenas se souber o que está fazendo. A maioria destas configurações requerem reiniciar a aplicação.";
+
+/* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1"; */
+"QIk-WP-qH1.title" = "Abrir no Login";
+
+/* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "Rb3-Sm-byr"; */
+"Rb3-Sm-byr.title" = "90 %";
+
+/* Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "RY6-7F-Z7R"; */
+"RY6-7F-Z7R.title" = "Buscar atualizações automaticamente";
+
+/* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B"; */
+"S6p-h0-H5B.title" = "Evita que o Mac durma imediatamente quando aberto.";
+
 /* Class = "NSTextFieldCell"; title = "Copyright Label"; ObjectID = "siu-CP-Bg1"; */
 "siu-CP-Bg1.title" = "Rótulo de Copyright";
 
 /* Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj"; */
 "uUP-5n-ykj.title" = "Sobre";
+
+/* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
+"UVY-8B-q5H.title" = "Duração padrão:";
 
 /* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU"; */
 "x6s-XD-lBU.title" = "Abre a aplicação automaticamente quando você inicia o Mac.";
