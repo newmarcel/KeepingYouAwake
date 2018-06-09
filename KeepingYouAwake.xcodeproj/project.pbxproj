@@ -252,13 +252,13 @@
 		DA637B3B19F14693004C8838 /* KeepingYouAwake */ = {
 			isa = PBXGroup;
 			children = (
+				DA249E281F9B7211006BCD2C /* KYADefines.h */,
 				DA637B4019F14693004C8838 /* KYAAppDelegate.h */,
 				DA637B4119F14693004C8838 /* KYAAppDelegate.m */,
 				DA637B5C19F146B6004C8838 /* KYAAppController.h */,
 				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
 				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,
 				DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */,
-				DA249E281F9B7211006BCD2C /* KYADefines.h */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
 				DA8F381B1F9BA4360086A84A /* StatusItemController */,
 				DA2691CF1B8230AB00B15779 /* MenuBar Icon */,

@@ -8,15 +8,19 @@
 
 #import <Cocoa/Cocoa.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
- *  An NSApplication category to simply enable or disable the application
- *  as login item for the currently logged in user.
+ An NSApplication category to simply enable or disable the application
+ as login item for the currently logged in user.
  */
 @interface NSApplication (LoginItem)
 
 /**
- *  Set to YES to add the application to the system login items.
+ Set to YES to add the application to the system login items.
  */
 @property (assign, nonatomic, getter=kya_isStartingAtLogin) BOOL kya_startAtLogin;
 
 @end
+
+NS_ASSUME_NONNULL_END
