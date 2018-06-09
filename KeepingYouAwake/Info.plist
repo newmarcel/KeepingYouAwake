@@ -41,16 +41,8 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>newmarcel.github.io</key>
-			<dict>
-				<key>NSIncludesSubdomains</key>
-				<false/>
-				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
-				<false/>
-			</dict>
-		</dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>${KYA_COPYRIGHT_TEXT}</string>

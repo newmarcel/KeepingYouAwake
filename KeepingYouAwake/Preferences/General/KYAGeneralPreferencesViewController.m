@@ -7,8 +7,8 @@
 //
 
 #import "KYAGeneralPreferencesViewController.h"
+#import "NSApplication+LoginItem.h"
 #import "KYAActivationDuration.h"
-#import "NSApplication+KYALauncher.h"
 #import "NSUserDefaults+Keys.h"
 
 @interface KYAGeneralPreferencesViewController ()
@@ -35,7 +35,7 @@
     // Bind the start at login checkbox value to NSApplication
     [self.startAtLoginCheckBoxButton bind:@"value"
                                  toObject:NSApplication.sharedApplication
-                              withKeyPath:@"kya_launchAtLoginEnabled"
+                              withKeyPath:@"kya_startAtLogin"
                                   options:@{
                                             NSRaisesForNotApplicableKeysBindingOption: @YES,
                                             NSConditionallySetsEnabledBindingOption: @YES

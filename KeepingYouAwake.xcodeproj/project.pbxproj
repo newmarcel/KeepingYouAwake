@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */; };
 		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
-		DA2E08E41FF134210070967D /* container-migration.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA2E08E31FF134210070967D /* container-migration.plist */; };
 		DA46C1EE1BDCDFB00050357C /* NSUserDefaults+Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */; };
 		DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */; };
 		DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */; };
 		DA54C12A1D69C55400AF9E9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C12C1D69C55400AF9E9D /* Localizable.strings */; };
 		DA54C1311D69CA0000AF9E9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */; };
+		DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */; };
 		DA5A50941ACC5C5400A444C8 /* KYAEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A50931ACC5C5400A444C8 /* KYAEvent.m */; };
 		DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5B5A221C28612100EE45C6 /* KYABatteryStatus.m */; };
 		DA637B3F19F14693004C8838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B3E19F14693004C8838 /* main.m */; };
@@ -22,12 +22,6 @@
 		DA637B4419F14693004C8838 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4319F14693004C8838 /* Images.xcassets */; };
 		DA637B4719F14693004C8838 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4519F14693004C8838 /* MainMenu.xib */; };
 		DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B5D19F146B6004C8838 /* KYAAppController.m */; };
-		DA6915AB1FF27B8F0062BB17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA6915AD1FF27B8F0062BB17 /* InfoPlist.strings */; };
-		DA6A8ADF1FF153AD00E7BBFE /* KYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6A8ADE1FF153AD00E7BBFE /* KYAAppDelegate.m */; };
-		DA6A8AE71FF153AD00E7BBFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6A8AE61FF153AD00E7BBFE /* main.m */; };
-		DA6A8AED1FF153CD00E7BBFE /* Launcher.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA6A8AEC1FF153CD00E7BBFE /* Launcher.icns */; };
-		DA6A8AEF1FF153ED00E7BBFE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6A8AEE1FF153ED00E7BBFE /* MainMenu.xib */; };
-		DA6A8AF41FF154DC00E7BBFE /* KeepingYouAwake Launcher.app in Copy Launcher */ = {isa = PBXBuildFile; fileRef = DA6A8ADB1FF153AD00E7BBFE /* KeepingYouAwake Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA7B53061E16999A00D89A12 /* KYAPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */; };
 		DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */; };
 		DA8CB49D1A5767CC00BC6F73 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7931C31A575C6000B6DEC4 /* Sparkle.framework */; };
@@ -39,21 +33,9 @@
 		DAB128761C2493DB00831045 /* KYAPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128751C2493DB00831045 /* KYAPreference.m */; };
 		DAB268721A0D6BC600B58AD6 /* KYASleepWakeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */; };
 		DAD2725B1ACB266800CDD620 /* KYAEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD2725A1ACB266800CDD620 /* KYAEventHandler.m */; };
-		DAD29AFB1FF18B3D00B59735 /* NSApplication+KYALauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD29AFA1FF18B3D00B59735 /* NSApplication+KYALauncher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DA6A8AF31FF154D200E7BBFE /* Copy Launcher */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Contents/Library/LoginItems;
-			dstSubfolderSpec = 1;
-			files = (
-				DA6A8AF41FF154DC00E7BBFE /* KeepingYouAwake Launcher.app in Copy Launcher */,
-			);
-			name = "Copy Launcher";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DA8CB49F1A5767CC00BC6F73 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,8 +63,6 @@
 		DA249E281F9B7211006BCD2C /* KYADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADefines.h; sourceTree = "<group>"; };
 		DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAMenuBarIcon.h; sourceTree = "<group>"; };
 		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
-		DA2E08E31FF134210070967D /* container-migration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "container-migration.plist"; sourceTree = "<group>"; };
-		DA2E08E51FF1367A0070967D /* KeepingYouAwake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeepingYouAwake.entitlements; sourceTree = "<group>"; };
 		DA4121711F5C07130083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Preferences.strings; sourceTree = "<group>"; };
 		DA4121721F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA4121731F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -102,6 +82,8 @@
 		DA54C12E1D69C9BC00AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA54C1321D69CA0000AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA54C1341D69CA0700AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+LoginItem.h"; sourceTree = "<group>"; };
+		DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+LoginItem.m"; sourceTree = "<group>"; };
 		DA5A50921ACC5C5400A444C8 /* KYAEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEvent.h; sourceTree = "<group>"; };
 		DA5A50931ACC5C5400A444C8 /* KYAEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAEvent.m; sourceTree = "<group>"; };
 		DA5B5A211C28612100EE45C6 /* KYABatteryStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYABatteryStatus.h; sourceTree = "<group>"; };
@@ -119,24 +101,6 @@
 		DA6439CB1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA6439CC1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA6439CD1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		DA6915A61FF27B8E0062BB17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Preferences.strings; sourceTree = "<group>"; };
-		DA6915A71FF27B8E0062BB17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DA6915A81FF27B8E0062BB17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DA6915AC1FF27B8F0062BB17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DA6915AE1FF27B8F0062BB17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		DA6915AF1FF27E730062BB17 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Preferences.strings; sourceTree = "<group>"; };
-		DA6915B01FF27E730062BB17 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DA6915B11FF27E730062BB17 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DA6915B21FF27E740062BB17 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DA6915B31FF27E740062BB17 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		DA6A8ADB1FF153AD00E7BBFE /* KeepingYouAwake Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KeepingYouAwake Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA6A8ADD1FF153AD00E7BBFE /* KYAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAAppDelegate.h; sourceTree = "<group>"; };
-		DA6A8ADE1FF153AD00E7BBFE /* KYAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAppDelegate.m; sourceTree = "<group>"; };
-		DA6A8AE51FF153AD00E7BBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA6A8AE61FF153AD00E7BBFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DA6A8AE81FF153AD00E7BBFE /* KYALauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KYALauncher.entitlements; sourceTree = "<group>"; };
-		DA6A8AEC1FF153CD00E7BBFE /* Launcher.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Launcher.icns; sourceTree = "<group>"; };
-		DA6A8AEE1FF153ED00E7BBFE /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		DA753D391C3714A800955BE3 /* KYABatteryCapacityThreshold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYABatteryCapacityThreshold.h; sourceTree = "<group>"; };
 		DA7931C31A575C6000B6DEC4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Carthage/Build/Mac/Sparkle.framework; sourceTree = SOURCE_ROOT; };
 		DA7B53041E16999A00D89A12 /* KYAPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesWindowController.h; sourceTree = "<group>"; };
@@ -167,8 +131,6 @@
 		DAD1FF4C1FF27EA800EC437D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DAD272591ACB266800CDD620 /* KYAEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEventHandler.h; sourceTree = "<group>"; };
 		DAD2725A1ACB266800CDD620 /* KYAEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAEventHandler.m; sourceTree = "<group>"; };
-		DAD29AF91FF18B3D00B59735 /* NSApplication+KYALauncher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSApplication+KYALauncher.h"; sourceTree = "<group>"; };
-		DAD29AFA1FF18B3D00B59735 /* NSApplication+KYALauncher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+KYALauncher.m"; sourceTree = "<group>"; };
 		DAD3B5761EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Preferences.strings; sourceTree = "<group>"; };
 		DAD3B5771EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DAD3B5781EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -188,13 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8CB49D1A5767CC00BC6F73 /* Sparkle.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA6A8AD81FF153AD00E7BBFE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,8 +179,8 @@
 		DA4919C61ACFFF9600D44F6A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DAD29AF91FF18B3D00B59735 /* NSApplication+KYALauncher.h */,
-				DAD29AFA1FF18B3D00B59735 /* NSApplication+KYALauncher.m */,
+				DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */,
+				DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */,
 				DAB1286F1C245F1B00831045 /* NSApplication+Versions.h */,
 				DAB128701C245F1B00831045 /* NSApplication+Versions.m */,
 				DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */,
@@ -280,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				DA637B3B19F14693004C8838 /* KeepingYouAwake */,
-				DA6A8ADC1FF153AD00E7BBFE /* KYALauncher */,
+				DA637B3C19F14693004C8838 /* Supporting Files */,
 				DA66CF9F1A12A7D700336CDC /* Frameworks */,
 				DA637B3A19F14693004C8838 /* Products */,
 			);
@@ -290,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				DA637B3919F14693004C8838 /* KeepingYouAwake.app */,
-				DA6A8ADB1FF153AD00E7BBFE /* KeepingYouAwake Launcher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,7 +265,6 @@
 				DA5B5A241C28612800EE45C6 /* Battery Status */,
 				DA4919C51ACFFF8D00D44F6A /* Event Handler */,
 				DA4919C61ACFFF9600D44F6A /* Extensions */,
-				DA637B3C19F14693004C8838 /* Supporting Files */,
 				DAC322C91C65199300DF8B63 /* Resources */,
 			);
 			path = KeepingYouAwake;
@@ -324,11 +277,10 @@
 				DA54C12C1D69C55400AF9E9D /* Localizable.strings */,
 				DA637B3D19F14693004C8838 /* Info.plist */,
 				DA637B3E19F14693004C8838 /* main.m */,
-				DA2E08E31FF134210070967D /* container-migration.plist */,
-				DA2E08E51FF1367A0070967D /* KeepingYouAwake.entitlements */,
 				DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */,
 			);
 			name = "Supporting Files";
+			path = KeepingYouAwake;
 			sourceTree = "<group>";
 		};
 		DA66CF9F1A12A7D700336CDC /* Frameworks */ = {
@@ -338,21 +290,6 @@
 			);
 			name = Frameworks;
 			path = KeepingYouAwake;
-			sourceTree = "<group>";
-		};
-		DA6A8ADC1FF153AD00E7BBFE /* KYALauncher */ = {
-			isa = PBXGroup;
-			children = (
-				DA6915AD1FF27B8F0062BB17 /* InfoPlist.strings */,
-				DA6A8AE51FF153AD00E7BBFE /* Info.plist */,
-				DA6A8ADD1FF153AD00E7BBFE /* KYAAppDelegate.h */,
-				DA6A8ADE1FF153AD00E7BBFE /* KYAAppDelegate.m */,
-				DA6A8AE81FF153AD00E7BBFE /* KYALauncher.entitlements */,
-				DA6A8AEC1FF153CD00E7BBFE /* Launcher.icns */,
-				DA6A8AE61FF153AD00E7BBFE /* main.m */,
-				DA6A8AEE1FF153ED00E7BBFE /* MainMenu.xib */,
-			);
-			path = KYALauncher;
 			sourceTree = "<group>";
 		};
 		DA82B1111C2422F600FA46E0 /* Preferences */ = {
@@ -397,7 +334,6 @@
 				DA637B3619F14693004C8838 /* Frameworks */,
 				DA637B3719F14693004C8838 /* Resources */,
 				DA4C74361A5763B000BE1BE1 /* Carthage Copy Frameworks */,
-				DA6A8AF31FF154D200E7BBFE /* Copy Launcher */,
 				DA8CB49F1A5767CC00BC6F73 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -407,23 +343,6 @@
 			name = KeepingYouAwake;
 			productName = KeepingYouAwake;
 			productReference = DA637B3919F14693004C8838 /* KeepingYouAwake.app */;
-			productType = "com.apple.product-type.application";
-		};
-		DA6A8ADA1FF153AD00E7BBFE /* KeepingYouAwake Launcher */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA6A8AEB1FF153AD00E7BBFE /* Build configuration list for PBXNativeTarget "KeepingYouAwake Launcher" */;
-			buildPhases = (
-				DA6A8AD71FF153AD00E7BBFE /* Sources */,
-				DA6A8AD81FF153AD00E7BBFE /* Frameworks */,
-				DA6A8AD91FF153AD00E7BBFE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "KeepingYouAwake Launcher";
-			productName = "KeepingYouAwake Launcher";
-			productReference = DA6A8ADB1FF153AD00E7BBFE /* KeepingYouAwake Launcher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -438,16 +357,6 @@
 				TargetAttributes = {
 					DA637B3819F14693004C8838 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = 5KESHV9W85;
-						ProvisioningStyle = Manual;
-						SystemCapabilities = {
-							com.apple.Sandbox = {
-								enabled = 1;
-							};
-						};
-					};
-					DA6A8ADA1FF153AD00E7BBFE = {
-						CreatedOnToolsVersion = 9.2;
 						DevelopmentTeam = 5KESHV9W85;
 						ProvisioningStyle = Manual;
 					};
@@ -470,7 +379,6 @@
 			projectRoot = "";
 			targets = (
 				DA637B3819F14693004C8838 /* KeepingYouAwake */,
-				DA6A8ADA1FF153AD00E7BBFE /* KeepingYouAwake Launcher */,
 			);
 		};
 /* End PBXProject section */
@@ -486,17 +394,6 @@
 				DAB128731C2469F300831045 /* Credits.rtf in Resources */,
 				DA637B4719F14693004C8838 /* MainMenu.xib in Resources */,
 				DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */,
-				DA2E08E41FF134210070967D /* container-migration.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA6A8AD91FF153AD00E7BBFE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA6A8AED1FF153CD00E7BBFE /* Launcher.icns in Resources */,
-				DA6915AB1FF27B8F0062BB17 /* InfoPlist.strings in Resources */,
-				DA6A8AEF1FF153ED00E7BBFE /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */,
 				DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */,
 				DA7B53061E16999A00D89A12 /* KYAPreferencesWindowController.m in Sources */,
 				DA46C1EE1BDCDFB00050357C /* NSUserDefaults+Keys.m in Sources */,
@@ -538,20 +436,10 @@
 				DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */,
 				DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.m in Sources */,
 				DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */,
-				DAD29AFB1FF18B3D00B59735 /* NSApplication+KYALauncher.m in Sources */,
 				DAB268721A0D6BC600B58AD6 /* KYASleepWakeTimer.m in Sources */,
 				DA637B3F19F14693004C8838 /* main.m in Sources */,
 				DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */,
 				DAD2725B1ACB266800CDD620 /* KYAEventHandler.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA6A8AD71FF153AD00E7BBFE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA6A8AE71FF153AD00E7BBFE /* main.m in Sources */,
-				DA6A8ADF1FF153AD00E7BBFE /* KYAAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,7 +680,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = KeepingYouAwake/KeepingYouAwake.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5KESHV9W85;
@@ -811,7 +698,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = KeepingYouAwake/KeepingYouAwake.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5KESHV9W85;
@@ -821,56 +707,6 @@
 				);
 				INFOPLIST_FILE = KeepingYouAwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-			};
-			name = Release;
-		};
-		DA6A8AE91FF153AD00E7BBFE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = KYALauncher/KYALauncher.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 5KESHV9W85;
-				INFOPLIST_FILE = KYALauncher/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KeepingYouAwake.Launcher";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-			};
-			name = Debug;
-		};
-		DA6A8AEA1FF153AD00E7BBFE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = KYALauncher/KYALauncher.entitlements;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 5KESHV9W85;
-				INFOPLIST_FILE = KYALauncher/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KeepingYouAwake.Launcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -893,15 +729,6 @@
 			buildConfigurations = (
 				DA637B5719F14694004C8838 /* Debug */,
 				DA637B5819F14694004C8838 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA6A8AEB1FF153AD00E7BBFE /* Build configuration list for PBXNativeTarget "KeepingYouAwake Launcher" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA6A8AE91FF153AD00E7BBFE /* Debug */,
-				DA6A8AEA1FF153AD00E7BBFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
