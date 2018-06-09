@@ -1,5 +1,5 @@
 SCHEME = KeepingYouAwake
-PROJECT = KeepingYouAwake.xcodeproj
+WORKSPACE = KeepingYouAwake.xcworkspace
 VERSION = 1.5.0pre
 
 OUTPUT_DIR = dist
@@ -17,7 +17,7 @@ $(CARTHAGE_DIR):
 
 $(OUTPUT_DIR)/$(SCHEME).app: $(CARTHAGE_DIR)
 	fastlane gym \
-	--project $(PROJECT) \
+	--workspace $(WORKSPACE) \
 	--scheme $(SCHEME) \
 	--output_directory $(OUTPUT_DIR) \
 	--buildlog_path $(OUTPUT_DIR) \
