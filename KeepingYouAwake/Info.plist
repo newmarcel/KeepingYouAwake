@@ -54,5 +54,7 @@
 	<true/>
 	<key>SUFeedURL</key>
 	<string>https://newmarcel.github.io/KeepingYouAwake/appcast.xml</string>
+	<key>NSRequiresAquaSystemAppearance</key>
+	<false/>
 </dict>
 </plist>
