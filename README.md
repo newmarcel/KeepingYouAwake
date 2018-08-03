@@ -16,7 +16,7 @@ or install it via [cask](http://caskroom.github.io/): `brew cask install keeping
 
 ## How do you prevent my Mac from sleeping? ##
 
-This utility is just a small wrapper around Apple's caffeinate command line utilty. Any modern Mac ships this tool by default. You can read the manpage [here](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/caffeinate.8.html).
+This utility is just a small wrapper around Apple's caffeinate command line utilty. Any modern Mac ships this tool by default. You can read the manpage [here](https://web.archive.org/web/20140604153141/https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/caffeinate.8.html).
 
 ## Is this dangerous? ##
 
