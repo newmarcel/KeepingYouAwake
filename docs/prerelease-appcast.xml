@@ -6,6 +6,24 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.4.3beta1: Small Improvements]]></title>
+			<description><![CDATA[<ul>
+<li>the icon can be dragged out of the menubar to quit on macOS Sierra and newer (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/82">#82</a>, suggested by <a href="https://github.com/Eitot">Eitot</a>)</li>
+<li>support for the <code>keepingyouawake:///toggle</code> action (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/96">#96</a>), <em>thanks <a href="https://github.com/code918">code918</a></em>!</li>
+<li>new localizations
+<ul>
+<li>Polish (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/90">#90</a>) <em>Thank you <a href="https://github.com/karolgorecki">karolgorecki</a>!</em></li>
+<li>Portuguese (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/94">#94</a>) <em>Thank you <a href="https://github.com/luizpedone">luizpedone</a>!</em></li>
+<li>Update German for informal style (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/74">#74</a>) <em>Thank you <a href="https://github.com/Eitot">Eitot</a>!</em></li>
+</ul></li>
+<li>allows Dark Aqua appearance on macOS Mojave</li>
+</ul>
+]]></description>
+			<pubDate>Fri, 03 Aug 2018 21:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.4.3beta1/KeepingYouAwake-1.4.3beta1.zip" length="2123460" type="application/octet-stream" sparkle:version="1040301" sparkle:shortVersionString="1.4.3beta1">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.4.2: Additional Localizations]]></title>
 			<description><![CDATA[<ul>
 <li>support cmd+w and cmd+q keyboard shortcuts in the preferences window (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/56">#56</a>)</li>
