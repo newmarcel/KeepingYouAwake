@@ -1,6 +1,6 @@
 SCHEME = KeepingYouAwake
 WORKSPACE = KeepingYouAwake.xcworkspace
-VERSION = 1.5.0pre
+VERSION = 1.4.3beta1
 
 OUTPUT_DIR = dist
 CARTHAGE_DIR = Carthage
