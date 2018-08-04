@@ -23,7 +23,7 @@
 {
     if(_preferencesWindowController == nil)
     {
-        _preferencesWindowController = [KYAPreferencesWindowController preferencesWindowController];
+        _preferencesWindowController = [KYAPreferencesWindowController new];
     }
     return _preferencesWindowController;
 }

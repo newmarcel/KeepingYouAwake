@@ -8,14 +8,18 @@
 
 #import <Cocoa/Cocoa.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface KYAPreferencesWindowController : NSWindowController
 
 /**
- Instantiates a preferences window controller from the
- Preferences storyboard.
+ Instantiates a new preferences window controller
+ for the Preferences storyboard.
 
  @return A new instance.
  */
-+ (instancetype)preferencesWindowController;
+- (instancetype)init;
 
 @end
+
+NS_ASSUME_NONNULL_END

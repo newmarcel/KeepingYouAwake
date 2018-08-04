@@ -15,9 +15,10 @@
 
 #pragma mark - Life Cycle
 
-+ (instancetype)preferencesWindowController
+- (instancetype)init
 {
-    return [[NSStoryboard storyboardWithName:@"Preferences" bundle:nil] instantiateInitialController];
+    self = [[NSStoryboard storyboardWithName:@"Preferences" bundle:nil] instantiateInitialController];
+    return self;
 }
 
 - (void)windowDidLoad
