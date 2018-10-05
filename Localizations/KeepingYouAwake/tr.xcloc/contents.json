@@ -1,0 +1,11 @@
+{
+  "developmentRegion" : "en",
+  "targetLocale" : "tr",
+  "toolInfo" : {
+    "toolBuildNumber" : "10A255",
+    "toolID" : "com.apple.dt.xcode",
+    "toolName" : "Xcode",
+    "toolVersion" : "10.0"
+  },
+  "version" : "1.0"
+}
