@@ -1,6 +1,3 @@
-/* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "0Fs-xW-EeB"; */
-"0Fs-xW-EeB.title" = "Poszukaj aktualizacji wczesnych wersji";
-
 /* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
 "5bL-cI-YIY.title" = "Zaawansowane";
 
@@ -22,11 +19,11 @@
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "g2t-CH-TcY"; */
 "g2t-CH-TcY.title" = "Pole tekstowe";
 
+/* Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "GxN-Dr-4B8"; */
+"GxN-Dr-4B8.title" = "Automatycznie sprawdzaj aktualizacje";
+
 /* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "i17-n2-vfw"; */
 "i17-n2-vfw.title" = "50 %";
-
-/* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "Icg-VI-pC8"; */
-"Icg-VI-pC8.title" = "Sprawdź aktualizacje";
 
 /* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r"; */
 "IOU-Hs-S4r.title" = "Włącz po uruchomieniu";
@@ -55,9 +52,6 @@
 /* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "Rb3-Sm-byr"; */
 "Rb3-Sm-byr.title" = "90 %";
 
-/* Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "RY6-7F-Z7R"; */
-"RY6-7F-Z7R.title" = "Automatycznie sprawdzaj aktualizacje";
-
 /* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B"; */
 "S6p-h0-H5B.title" = "Natychmiastowo zapobiegaj uśpieniu przy uruchomieniu.";
 
@@ -69,6 +63,12 @@
 
 /* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
 "UVY-8B-q5H.title" = "Domyślny czas trwania:";
+
+/* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "vdb-hr-zzU"; */
+"vdb-hr-zzU.title" = "Poszukaj aktualizacji wczesnych wersji";
+
+/* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "W3H-iV-s6I"; */
+"W3H-iV-s6I.title" = "Sprawdź aktualizacje";
 
 /* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU"; */
 "x6s-XD-lBU.title" = "Automatycznie uruchom aplikację podczas startu Maca.";

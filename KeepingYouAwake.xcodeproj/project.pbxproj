@@ -15,6 +15,7 @@
 		DA54C12A1D69C55400AF9E9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C12C1D69C55400AF9E9D /* Localizable.strings */; };
 		DA54C1311D69CA0000AF9E9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */; };
 		DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */; };
+		DA56801B2115FF140039C979 /* KYAUpdatePreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5680192115FF140039C979 /* KYAUpdatePreferencesViewController.m */; };
 		DA5A50941ACC5C5400A444C8 /* KYAEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A50931ACC5C5400A444C8 /* KYAEvent.m */; };
 		DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5B5A221C28612100EE45C6 /* KYABatteryStatus.m */; };
 		DA637B3F19F14693004C8838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B3E19F14693004C8838 /* main.m */; };
@@ -84,6 +85,8 @@
 		DA54C1341D69CA0700AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+LoginItem.h"; sourceTree = "<group>"; };
 		DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+LoginItem.m"; sourceTree = "<group>"; };
+		DA5680192115FF140039C979 /* KYAUpdatePreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAUpdatePreferencesViewController.m; sourceTree = "<group>"; };
+		DA56801A2115FF140039C979 /* KYAUpdatePreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAUpdatePreferencesViewController.h; sourceTree = "<group>"; };
 		DA5A50921ACC5C5400A444C8 /* KYAEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEvent.h; sourceTree = "<group>"; };
 		DA5A50931ACC5C5400A444C8 /* KYAEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAEvent.m; sourceTree = "<group>"; };
 		DA5B5A211C28612100EE45C6 /* KYABatteryStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYABatteryStatus.h; sourceTree = "<group>"; };
@@ -221,6 +224,15 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		DA5680182115FF140039C979 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				DA56801A2115FF140039C979 /* KYAUpdatePreferencesViewController.h */,
+				DA5680192115FF140039C979 /* KYAUpdatePreferencesViewController.m */,
+			);
+			path = Updates;
+			sourceTree = "<group>";
+		};
 		DA5B5A241C28612800EE45C6 /* Battery Status */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +311,7 @@
 				DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */,
 				DA51E7DF1C2562BE008AA96C /* General */,
 				DA51E7E01C2562C4008AA96C /* Advanced */,
+				DA5680182115FF140039C979 /* Updates */,
 				DA51E7E11C2562CA008AA96C /* About */,
 			);
 			path = Preferences;
@@ -351,7 +364,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KYA;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Marcel Dierkes";
 				TargetAttributes = {
 					DA637B3819F14693004C8838 = {
@@ -421,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA56801B2115FF140039C979 /* KYAUpdatePreferencesViewController.m in Sources */,
 				DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */,
 				DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */,
 				DA7B53061E16999A00D89A12 /* KYAPreferencesWindowController.m in Sources */,
