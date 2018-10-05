@@ -1,21 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="KYALauncher/Info.plist" source-language="en" datatype="plaintext" target-language="ko">
+  <file original="KeepingYouAwake/Base.lproj/InfoPlist.strings" source-language="en" datatype="plaintext" target-language="ko">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.4.1" build-num="9F2000"/>
     </header>
     <body>
       <trans-unit id="CFBundleName">
         <source>$(PRODUCT_NAME)</source>
+        <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright">
         <source>${KYA_COPYRIGHT_TEXT}</source>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Base.lproj/Localizable.strings" source-language="en" datatype="plaintext" target-language="ko">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.4.1" build-num="9F2000"/>
+    </header>
+    <body>
+      <trans-unit id="Allowing your Mac to go to sleep…">
+        <source>Allowing your Mac to go to sleep…</source>
+        <target>잠자기를 허용합니다…</target>
+        <note>Allowing your Mac to go to sleep…</note>
+      </trans-unit>
+      <trans-unit id="Click to allow sleep\nRight click to show menu">
+        <source>Click to allow sleep\nRight click to show menu</source>
+        <target>잠자기를 허용하려면 클릭\n메뉴를 보려면 오른쪽 클릭</target>
+        <note>Click to allow sleep\nRight click to show menu</note>
+      </trans-unit>
+      <trans-unit id="Click to prevent sleep\nRight click to show menu">
+        <source>Click to prevent sleep\nRight click to show menu</source>
+        <target>잠자기를 비활성화하려면 클릭\n메뉴를 보려면 오른쪽 클릭</target>
+        <note>Click to prevent sleep\nRight click to show menu</note>
+      </trans-unit>
+      <trans-unit id="Disable menu bar icon highlight color">
+        <source>Disable menu bar icon highlight color</source>
+        <note>Disable menu bar icon highlight color</note>
+      </trans-unit>
+      <trans-unit id="Enable experimental Notification Center integration">
+        <source>Enable experimental Notification Center integration</source>
+        <note>Enable experimental Notification Center integration</note>
+      </trans-unit>
+      <trans-unit id="Indefinitely">
+        <source>Indefinitely</source>
+        <target>무기한</target>
+        <note>Indefinitely</note>
+      </trans-unit>
+      <trans-unit id="Preventing your Mac from going to sleep for\n%@…">
+        <source>Preventing your Mac from going to sleep for\n%@…</source>
+        <target>잠자기를 %@ 동안 비활성화합니다…</target>
+        <note>Preventing your Mac from going to sleep for\n%@…</note>
+      </trans-unit>
+      <trans-unit id="Preventing your Mac from going to sleep…">
+        <source>Preventing your Mac from going to sleep…</source>
+        <target>잠자기를 비활성화합니다.…</target>
+        <note>Preventing your Mac from going to sleep…</note>
+      </trans-unit>
+      <trans-unit id="Version">
+        <source>Version</source>
+        <target>Version</target>
+        <note>Version</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" datatype="plaintext" target-language="ko">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.4.1" build-num="9F2000"/>
     </header>
     <body>
       <trans-unit id="3tu-5G-YQt.title">
@@ -125,88 +177,27 @@
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Info.plist" source-language="en" datatype="plaintext" target-language="ko">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
-    </header>
-    <body>
-      <trans-unit id="CFBundleName">
-        <source>$(PRODUCT_NAME)</source>
-      </trans-unit>
-      <trans-unit id="NSHumanReadableCopyright">
-        <source>${KYA_COPYRIGHT_TEXT}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="KeepingYouAwake/Localizable.strings" source-language="en" datatype="plaintext" target-language="ko">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
-    </header>
-    <body>
-      <trans-unit id="Allowing your Mac to go to sleep…">
-        <source>Allowing your Mac to go to sleep…</source>
-        <target>잠자기를 허용합니다…</target>
-        <note>Allowing your Mac to go to sleep…</note>
-      </trans-unit>
-      <trans-unit id="Click to allow sleep\nRight click to show menu">
-        <source>Click to allow sleep
-Right click to show menu</source>
-        <target>잠자기를 허용하려면 클릭
-메뉴를 보려면 오른쪽 클릭</target>
-        <note>Click to allow sleep\nRight click to show menu</note>
-      </trans-unit>
-      <trans-unit id="Click to prevent sleep\nRight click to show menu">
-        <source>Click to prevent sleep
-Right click to show menu</source>
-        <target>잠자기를 비활성화하려면 클릭
-메뉴를 보려면 오른쪽 클릭</target>
-        <note>Click to prevent sleep\nRight click to show menu</note>
-      </trans-unit>
-      <trans-unit id="Disable menu bar icon highlight color">
-        <source>Disable menu bar icon highlight color</source>
-        <note>Disable menu bar icon highlight color</note>
-      </trans-unit>
-      <trans-unit id="Enable experimental Notification Center integration">
-        <source>Enable experimental Notification Center integration</source>
-        <note>Enable experimental Notification Center integration</note>
-      </trans-unit>
-      <trans-unit id="Indefinitely">
-        <source>Indefinitely</source>
-        <target>무기한</target>
-        <note>Indefinitely</note>
-      </trans-unit>
-      <trans-unit id="Preventing your Mac from going to sleep for\n%@…">
-        <source>Preventing your Mac from going to sleep for
-%@…</source>
-        <target>잠자기를 %@ 동안 비활성화합니다…</target>
-        <note>Preventing your Mac from going to sleep for\n%@…</note>
-      </trans-unit>
-      <trans-unit id="Preventing your Mac from going to sleep…">
-        <source>Preventing your Mac from going to sleep…</source>
-        <target>잠자기를 비활성화합니다.…</target>
-        <note>Preventing your Mac from going to sleep…</note>
-      </trans-unit>
-      <trans-unit id="Version">
-        <source>Version</source>
-        <target>Version</target>
-        <note>Version</note>
-      </trans-unit>
-    </body>
-  </file>
   <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="ko">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.4.1" build-num="9F2000"/>
     </header>
     <body>
-      <trans-unit id="0Fs-xW-EeB.title">
-        <source>Check for Pre-Release Updates</source>
-        <target>Pre-Release 업데이트 확인</target>
-        <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "0Fs-xW-EeB";</note>
+      <trans-unit id="/2Xr-NH-E55:dict/attributedStringAsRTF:dict/:string">
+        <source>{\rtf1\ansi\ansicpg65001\cocoartf1561\cocoasubrtf600
+{\fonttbl}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+}</source>
+        <note/>
       </trans-unit>
       <trans-unit id="5bL-cI-YIY.title">
         <source>Advanced</source>
         <target>고급</target>
         <note>Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY";</note>
+      </trans-unit>
+      <trans-unit id="8V0-Sq-Cdu.title">
+        <source>Updates</source>
+        <note>Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu";</note>
       </trans-unit>
       <trans-unit id="AvX-7Q-Bvc.title">
         <source>KeepingYouAwake – Preferences</source>
@@ -227,15 +218,15 @@ Right click to show menu</source>
         <source>Version 2016</source>
         <note>Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX";</note>
       </trans-unit>
+      <trans-unit id="GxN-Dr-4B8.title">
+        <source>Automatically Check for Updates</source>
+        <target>자동으로 업데이트 확인</target>
+        <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "GxN-Dr-4B8";</note>
+      </trans-unit>
       <trans-unit id="IOU-Hs-S4r.title">
         <source>Activate on Launch</source>
         <target>실행 시 활성화</target>
         <note>Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r";</note>
-      </trans-unit>
-      <trans-unit id="Icg-VI-pC8.title">
-        <source>Check Now</source>
-        <target>지금 확인</target>
-        <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "Icg-VI-pC8";</note>
       </trans-unit>
       <trans-unit id="OsK-jX-EzO.title">
         <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
@@ -246,11 +237,6 @@ Right click to show menu</source>
         <source>Start at Login</source>
         <target>로그인 시 활성화</target>
         <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1";</note>
-      </trans-unit>
-      <trans-unit id="RY6-7F-Z7R.title">
-        <source>Automatically Check for Updates</source>
-        <target>자동으로 업데이트 확인</target>
-        <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "RY6-7F-Z7R";</note>
       </trans-unit>
       <trans-unit id="Rb3-Sm-byr.title">
         <source>90 %</source>
@@ -266,6 +252,11 @@ Right click to show menu</source>
         <source>Default Activation Duration:</source>
         <target>기본 활성화 시간:</target>
         <note>Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H";</note>
+      </trans-unit>
+      <trans-unit id="W3H-iV-s6I.title">
+        <source>Check Now</source>
+        <target>지금 확인</target>
+        <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "W3H-iV-s6I";</note>
       </trans-unit>
       <trans-unit id="fiQ-AT-I7u.title">
         <source>10 %</source>
@@ -314,6 +305,11 @@ Right click to show menu</source>
         <source>About</source>
         <target>정보</target>
         <note>Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj";</note>
+      </trans-unit>
+      <trans-unit id="vdb-hr-zzU.title">
+        <source>Check for Pre-Release Updates</source>
+        <target>Pre-Release 업데이트 확인</target>
+        <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "vdb-hr-zzU";</note>
       </trans-unit>
       <trans-unit id="x6s-XD-lBU.title">
         <source>Automatically opens the app when you start your Mac.</source>
