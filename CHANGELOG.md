@@ -9,6 +9,10 @@
 	- the previous login item is not compatible anymore and it is recommended to disable start at login_ before the update!
 	- custom icons need to be placed in `~/Library/Containers/info.marcel-dierkes.KeepingYouAwake/Data/Documents` now and will be migrated with the update
 
+### v1.4.4 ###
+
+- added an Updates tab to preferences
+
 ### v1.4.3 ###
 
 - the icon can be dragged out of the menubar to quit on macOS Sierra and newer ([#82](https://github.com/newmarcel/KeepingYouAwake/issues/82), suggested by [Eitot](https://github.com/Eitot))

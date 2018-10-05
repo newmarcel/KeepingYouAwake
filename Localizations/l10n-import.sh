@@ -9,7 +9,7 @@ fi
 
 echo "Importing translations..."
 for language in "${TRANSLATIONS[@]}"; do
-    xcodebuild -importLocalizations -localizationPath "${TARGET_DIR}/${language}.xliff" \
+    xcodebuild -importLocalizations -localizationPath "${TARGET_DIR}/${language}.xcloc" \
         -project "${PROJECT_FILE_PATH}"
 done
 echo "Done."

@@ -5,6 +5,8 @@ VERSION = 1.4.3
 OUTPUT_DIR = dist
 CARTHAGE_DIR = Carthage
 
+FASTLANE = FASTLANE_SKIP_UPDATE_CHECK=1 FASTLANE_DISABLE_ANIMATION=1 fastlane
+
 default: dist
 
 clean:
@@ -16,7 +18,7 @@ $(CARTHAGE_DIR):
 	carthage bootstrap --use-ssh --platform macOS
 
 $(OUTPUT_DIR)/$(SCHEME).app: $(CARTHAGE_DIR)
-	fastlane gym \
+	$(FASTLANE) gym \
 	--workspace $(WORKSPACE) \
 	--scheme $(SCHEME) \
 	--output_directory $(OUTPUT_DIR) \

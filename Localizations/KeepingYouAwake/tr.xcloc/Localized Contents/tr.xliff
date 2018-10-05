@@ -1,260 +1,239 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="KYALauncher/Info.plist" source-language="en" datatype="plaintext" target-language="zh-Hant-TW">
+  <file original="KeepingYouAwake/Base.lproj/InfoPlist.strings" source-language="en" datatype="plaintext" target-language="tr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.0" build-num="10A255"/>
     </header>
     <body>
       <trans-unit id="CFBundleName">
         <source>$(PRODUCT_NAME)</source>
+        <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright">
         <source>${KYA_COPYRIGHT_TEXT}</source>
+        <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" datatype="plaintext" target-language="zh-Hant-TW">
+  <file original="KeepingYouAwake/Base.lproj/Localizable.strings" source-language="en" datatype="plaintext" target-language="tr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
-    </header>
-    <body>
-      <trans-unit id="3tu-5G-YQt.title">
-        <source>1 hour</source>
-        <target>1 小時</target>
-        <note>Class = "NSMenuItem"; title = "1 hour"; ObjectID = "3tu-5G-YQt";</note>
-      </trans-unit>
-      <trans-unit id="5EU-sH-Q12.title">
-        <source>Indefinitely</source>
-        <target>永久</target>
-        <note>Class = "NSMenuItem"; title = "Indefinitely"; ObjectID = "5EU-sH-Q12";</note>
-      </trans-unit>
-      <trans-unit id="7is-vc-kz7.title">
-        <source>Quit</source>
-        <target>結束</target>
-        <note>Class = "NSMenuItem"; title = "Quit"; ObjectID = "7is-vc-kz7";</note>
-      </trans-unit>
-      <trans-unit id="18N-iz-aod.title">
-        <source>5 hours</source>
-        <target>5 小時</target>
-        <note>Class = "NSMenuItem"; title = "5 hours"; ObjectID = "18N-iz-aod";</note>
-      </trans-unit>
-      <trans-unit id="Bo6-IE-IbX.title">
-        <source>Activate for Duration</source>
-        <target>啟用並維持</target>
-        <note>Class = "NSMenuItem"; title = "Activate for Duration"; ObjectID = "Bo6-IE-IbX";</note>
-      </trans-unit>
-      <trans-unit id="NkC-w0-mfU.title">
-        <source>Set Default: 5 minutes</source>
-        <target>5 分鐘（設為預設值）</target>
-        <note>Class = "NSMenuItem"; title = "Set Default: 5 minutes"; ObjectID = "NkC-w0-mfU";</note>
-      </trans-unit>
-      <trans-unit id="OT5-lg-IM6.title">
-        <source>Preferences…</source>
-        <target>偏好設定</target>
-        <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "OT5-lg-IM6";</note>
-      </trans-unit>
-      <trans-unit id="PWL-2v-TSS.title">
-        <source>Set Default: 10 minutes</source>
-        <target>10 分鐘（設為預設值）</target>
-        <note>Class = "NSMenuItem"; title = "Set Default: 10 minutes"; ObjectID = "PWL-2v-TSS";</note>
-      </trans-unit>
-      <trans-unit id="T5i-64-xaV.title">
-        <source>2 hours</source>
-        <target>2 小時</target>
-        <note>Class = "NSMenuItem"; title = "2 hours"; ObjectID = "T5i-64-xaV";</note>
-      </trans-unit>
-      <trans-unit id="VeD-dm-81B.title">
-        <source>Set Default: Indefinitely</source>
-        <target>永久（設為預設值）</target>
-        <note>Class = "NSMenuItem"; title = "Set Default: Indefinitely"; ObjectID = "VeD-dm-81B";</note>
-      </trans-unit>
-      <trans-unit id="WWd-z5-2Xu.title">
-        <source>10 minutes</source>
-        <target>10 分鐘</target>
-        <note>Class = "NSMenuItem"; title = "10 minutes"; ObjectID = "WWd-z5-2Xu";</note>
-      </trans-unit>
-      <trans-unit id="YNB-qE-TzE.title">
-        <source>30 minutes</source>
-        <target>30 分鐘</target>
-        <note>Class = "NSMenuItem"; title = "30 minutes"; ObjectID = "YNB-qE-TzE";</note>
-      </trans-unit>
-      <trans-unit id="bCY-Vy-8QT.title">
-        <source>15 minutes</source>
-        <target>15 分鐘</target>
-        <note>Class = "NSMenuItem"; title = "15 minutes"; ObjectID = "bCY-Vy-8QT";</note>
-      </trans-unit>
-      <trans-unit id="fUA-NX-hxF.title">
-        <source>Set Default: 1 hour</source>
-        <target>1 小時（設為預設值）</target>
-        <note>Class = "NSMenuItem"; title = "Set Default: 1 hour"; ObjectID = "fUA-NX-hxF";</note>
-      </trans-unit>
-      <trans-unit id="kO2-hM-cAT.title">
-        <source>5 minutes</source>
-        <target>5 分鐘</target>
-        <note>Class = "NSMenuItem"; title = "5 minutes"; ObjectID = "kO2-hM-cAT";</note>
-      </trans-unit>
-      <trans-unit id="kTz-g8-t11.title">
-        <source>Set Default: 15 minutes</source>
-        <target>15 分鐘（設為預設值）</target>
-        <note>Class = "NSMenuItem"; title = "Set Default: 15 minutes"; ObjectID = "kTz-g8-t11";</note>
-      </trans-unit>
-      <trans-unit id="n3h-ZB-CLV.title">
-        <source>Set Default: 2 hours</source>
-        <target>2 小時（設為預設值）</target>
-        <note>Class = "NSMenuItem"; title = "Set Default: 2 hours"; ObjectID = "n3h-ZB-CLV";</note>
-      </trans-unit>
-      <trans-unit id="pVH-VY-YkW.title">
-        <source>Active</source>
-        <target>啟用</target>
-        <note>Class = "NSMenuItem"; title = "Active"; ObjectID = "pVH-VY-YkW";</note>
-      </trans-unit>
-      <trans-unit id="sft-bA-FTz.title">
-        <source>Set Default: 30 minutes</source>
-        <target>30 分鐘（設為預設值）</target>
-        <note>Class = "NSMenuItem"; title = "Set Default: 30 minutes"; ObjectID = "sft-bA-FTz";</note>
-      </trans-unit>
-      <trans-unit id="tAq-iH-rdw.title">
-        <source>Set Default: 5 hours</source>
-        <target>5 小時（設為預設值）</target>
-        <note>Class = "NSMenuItem"; title = "Set Default: 5 hours"; ObjectID = "tAq-iH-rdw";</note>
-      </trans-unit>
-      <trans-unit id="uTe-0S-BFw.title">
-        <source>Activate for Duration</source>
-        <target>啟用並維持</target>
-        <note>Class = "NSMenu"; title = "Activate for Duration"; ObjectID = "uTe-0S-BFw";</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="KeepingYouAwake/Info.plist" source-language="en" datatype="plaintext" target-language="zh-Hant-TW">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
-    </header>
-    <body>
-      <trans-unit id="CFBundleName">
-        <source>$(PRODUCT_NAME)</source>
-      </trans-unit>
-      <trans-unit id="NSHumanReadableCopyright">
-        <source>${KYA_COPYRIGHT_TEXT}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="KeepingYouAwake/Localizable.strings" source-language="en" datatype="plaintext" target-language="zh-Hant-TW">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.0" build-num="10A255"/>
     </header>
     <body>
       <trans-unit id="Allowing your Mac to go to sleep…">
         <source>Allowing your Mac to go to sleep…</source>
-        <target>已允許系統進入睡眠模式…</target>
+        <target>Mac'inizin uyku moduna geçmesine izin verin…</target>
         <note>Allowing your Mac to go to sleep…</note>
       </trans-unit>
-      <trans-unit id="Click to allow sleep\nRight click to show menu">
+      <trans-unit id="Click to allow sleep&#10;Right click to show menu">
         <source>Click to allow sleep
 Right click to show menu</source>
-        <target>點一下允許進入睡眠模式
-按右鍵顯示選單</target>
+        <target>Uyku moduna izin vermek için sağ menüye tıklayın</target>
         <note>Click to allow sleep\nRight click to show menu</note>
       </trans-unit>
-      <trans-unit id="Click to prevent sleep\nRight click to show menu">
+      <trans-unit id="Click to prevent sleep&#10;Right click to show menu">
         <source>Click to prevent sleep
 Right click to show menu</source>
-        <target>點一下防止進入睡眠模式
-按右鍵顯示選單</target>
+        <target>Uyku moduna geçmeyi önleme menüsünü göstermek için sağdaki düğmeye tıklayın</target>
         <note>Click to prevent sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Disable menu bar icon highlight color">
         <source>Disable menu bar icon highlight color</source>
-        <target>停用選單列圖示被點擊時的反白效果</target>
+        <target>Menü çubuğu simgesini devre dışı bırak</target>
         <note>Disable menu bar icon highlight color</note>
       </trans-unit>
       <trans-unit id="Enable experimental Notification Center integration">
         <source>Enable experimental Notification Center integration</source>
-        <target>於「通知中心」顯示提示（實驗功能）</target>
+        <target>Deneysel Bildirim Merkezi Entegrasyonunu Etkinleştir</target>
         <note>Enable experimental Notification Center integration</note>
       </trans-unit>
       <trans-unit id="Indefinitely">
         <source>Indefinitely</source>
-        <target>永久</target>
+        <target>Süresiz</target>
         <note>Indefinitely</note>
       </trans-unit>
-      <trans-unit id="Preventing your Mac from going to sleep for\n%@…">
+      <trans-unit id="Preventing your Mac from going to sleep for&#10;%@…">
         <source>Preventing your Mac from going to sleep for
 %@…</source>
-        <target>已防止系統進入睡眠模式並持續
-%@…</target>
         <note>Preventing your Mac from going to sleep for\n%@…</note>
       </trans-unit>
       <trans-unit id="Preventing your Mac from going to sleep…">
         <source>Preventing your Mac from going to sleep…</source>
-        <target>已防止系統進入睡眠模式…</target>
+        <target>Mac'inizin uyku halindeyken kullanılmasını önleme…</target>
         <note>Preventing your Mac from going to sleep…</note>
       </trans-unit>
       <trans-unit id="Version">
         <source>Version</source>
-        <target>版本</target>
+        <target>Versiyon</target>
         <note>Version</note>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="zh-Hant-TW">
+  <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" datatype="plaintext" target-language="tr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.0" build-num="10A255"/>
     </header>
     <body>
-      <trans-unit id="0Fs-xW-EeB.title">
-        <source>Check for Pre-Release Updates</source>
-        <target>檢查預先釋出版本更新</target>
-        <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "0Fs-xW-EeB";</note>
+      <trans-unit id="3tu-5G-YQt.title">
+        <source>1 hour</source>
+        <target>1 saat</target>
+        <note>Class = "NSMenuItem"; title = "1 hour"; ObjectID = "3tu-5G-YQt";</note>
       </trans-unit>
+      <trans-unit id="5EU-sH-Q12.title">
+        <source>Indefinitely</source>
+        <target>Sınırsız</target>
+        <note>Class = "NSMenuItem"; title = "Indefinitely"; ObjectID = "5EU-sH-Q12";</note>
+      </trans-unit>
+      <trans-unit id="7is-vc-kz7.title">
+        <source>Quit</source>
+        <target>Çıkış</target>
+        <note>Class = "NSMenuItem"; title = "Quit"; ObjectID = "7is-vc-kz7";</note>
+      </trans-unit>
+      <trans-unit id="18N-iz-aod.title">
+        <source>5 hours</source>
+        <target>5 saat</target>
+        <note>Class = "NSMenuItem"; title = "5 hours"; ObjectID = "18N-iz-aod";</note>
+      </trans-unit>
+      <trans-unit id="Bo6-IE-IbX.title">
+        <source>Activate for Duration</source>
+        <target>Süreyi etkinleştir</target>
+        <note>Class = "NSMenuItem"; title = "Activate for Duration"; ObjectID = "Bo6-IE-IbX";</note>
+      </trans-unit>
+      <trans-unit id="NkC-w0-mfU.title">
+        <source>Set Default: 5 minutes</source>
+        <target>Varsayılan: 5 dakika</target>
+        <note>Class = "NSMenuItem"; title = "Set Default: 5 minutes"; ObjectID = "NkC-w0-mfU";</note>
+      </trans-unit>
+      <trans-unit id="OT5-lg-IM6.title">
+        <source>Preferences…</source>
+        <target>Tercihler…</target>
+        <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "OT5-lg-IM6";</note>
+      </trans-unit>
+      <trans-unit id="PWL-2v-TSS.title">
+        <source>Set Default: 10 minutes</source>
+        <target>Varsayılan: 10 minutos</target>
+        <note>Class = "NSMenuItem"; title = "Set Default: 10 minutes"; ObjectID = "PWL-2v-TSS";</note>
+      </trans-unit>
+      <trans-unit id="T5i-64-xaV.title">
+        <source>2 hours</source>
+        <target>2 saat</target>
+        <note>Class = "NSMenuItem"; title = "2 hours"; ObjectID = "T5i-64-xaV";</note>
+      </trans-unit>
+      <trans-unit id="VeD-dm-81B.title">
+        <source>Set Default: Indefinitely</source>
+        <target>Varsayılan: Belirsiz</target>
+        <note>Class = "NSMenuItem"; title = "Set Default: Indefinitely"; ObjectID = "VeD-dm-81B";</note>
+      </trans-unit>
+      <trans-unit id="WWd-z5-2Xu.title">
+        <source>10 minutes</source>
+        <target>10 dakika</target>
+        <note>Class = "NSMenuItem"; title = "10 minutes"; ObjectID = "WWd-z5-2Xu";</note>
+      </trans-unit>
+      <trans-unit id="YNB-qE-TzE.title">
+        <source>30 minutes</source>
+        <target>30 dakika</target>
+        <note>Class = "NSMenuItem"; title = "30 minutes"; ObjectID = "YNB-qE-TzE";</note>
+      </trans-unit>
+      <trans-unit id="bCY-Vy-8QT.title">
+        <source>15 minutes</source>
+        <target>15 dakika</target>
+        <note>Class = "NSMenuItem"; title = "15 minutes"; ObjectID = "bCY-Vy-8QT";</note>
+      </trans-unit>
+      <trans-unit id="fUA-NX-hxF.title">
+        <source>Set Default: 1 hour</source>
+        <target>Varsayılan: 1 saat</target>
+        <note>Class = "NSMenuItem"; title = "Set Default: 1 hour"; ObjectID = "fUA-NX-hxF";</note>
+      </trans-unit>
+      <trans-unit id="kO2-hM-cAT.title">
+        <source>5 minutes</source>
+        <target>5 dakika</target>
+        <note>Class = "NSMenuItem"; title = "5 minutes"; ObjectID = "kO2-hM-cAT";</note>
+      </trans-unit>
+      <trans-unit id="kTz-g8-t11.title">
+        <source>Set Default: 15 minutes</source>
+        <target>Varsayılan: 15 dakika</target>
+        <note>Class = "NSMenuItem"; title = "Set Default: 15 minutes"; ObjectID = "kTz-g8-t11";</note>
+      </trans-unit>
+      <trans-unit id="n3h-ZB-CLV.title">
+        <source>Set Default: 2 hours</source>
+        <target>Varsayılan: 2 saat</target>
+        <note>Class = "NSMenuItem"; title = "Set Default: 2 hours"; ObjectID = "n3h-ZB-CLV";</note>
+      </trans-unit>
+      <trans-unit id="pVH-VY-YkW.title">
+        <source>Active</source>
+        <target>Aktif</target>
+        <note>Class = "NSMenuItem"; title = "Active"; ObjectID = "pVH-VY-YkW";</note>
+      </trans-unit>
+      <trans-unit id="sft-bA-FTz.title">
+        <source>Set Default: 30 minutes</source>
+        <target>Varsayılan: 30 dakika</target>
+        <note>Class = "NSMenuItem"; title = "Set Default: 30 minutes"; ObjectID = "sft-bA-FTz";</note>
+      </trans-unit>
+      <trans-unit id="tAq-iH-rdw.title">
+        <source>Set Default: 5 hours</source>
+        <target>Varsayılan: 5 saat</target>
+        <note>Class = "NSMenuItem"; title = "Set Default: 5 hours"; ObjectID = "tAq-iH-rdw";</note>
+      </trans-unit>
+      <trans-unit id="uTe-0S-BFw.title">
+        <source>Activate for Duration</source>
+        <target>Süreyi etkinleştir</target>
+        <note>Class = "NSMenu"; title = "Activate for Duration"; ObjectID = "uTe-0S-BFw";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="tr">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.0" build-num="10A255"/>
+    </header>
+    <body>
       <trans-unit id="5bL-cI-YIY.title">
         <source>Advanced</source>
-        <target>進階</target>
+        <target>Gelişmiş ayarlar</target>
         <note>Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY";</note>
+      </trans-unit>
+      <trans-unit id="8V0-Sq-Cdu.title">
+        <source>Updates</source>
+        <note>Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu";</note>
       </trans-unit>
       <trans-unit id="AvX-7Q-Bvc.title">
         <source>KeepingYouAwake – Preferences</source>
-        <target>KeepingYouAwake – 偏好設定</target>
+        <target>KeepingYouAwake – Tercihler</target>
         <note>Class = "NSWindow"; title = "KeepingYouAwake – Preferences"; ObjectID = "AvX-7Q-Bvc";</note>
       </trans-unit>
       <trans-unit id="Ax6-W4-7bK.title">
         <source>Deactivate when battery capacity is below</source>
-        <target>低於以下電量時停止啟用</target>
+        <target>Pil kapasitesi aşıldığın da devre dışı bırak</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK";</note>
       </trans-unit>
       <trans-unit id="EXv-vC-wyo.title">
         <source>Reset to Default</source>
-        <target>將設定還原成原始預設值</target>
+        <target>Varsayılan ayarları sil</target>
         <note>Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo";</note>
       </trans-unit>
       <trans-unit id="G1k-8T-EcX.title">
         <source>Version 2016</source>
-        <target>版本 2016</target>
+        <target>Versiyon 2016</target>
         <note>Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX";</note>
+      </trans-unit>
+      <trans-unit id="GxN-Dr-4B8.title">
+        <source>Automatically Check for Updates</source>
+        <target>Güncellemeleri otomatik kontrol et</target>
+        <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "GxN-Dr-4B8";</note>
       </trans-unit>
       <trans-unit id="IOU-Hs-S4r.title">
         <source>Activate on Launch</source>
-        <target>於開啟時啟用</target>
+        <target>Başlat</target>
         <note>Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r";</note>
-      </trans-unit>
-      <trans-unit id="Icg-VI-pC8.title">
-        <source>Check Now</source>
-        <target>立即檢查</target>
-        <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "Icg-VI-pC8";</note>
       </trans-unit>
       <trans-unit id="OsK-jX-EzO.title">
         <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
-        <target>請於了解設定值意義的前提下修改以下設定。多數設定項目需於重啟後才生效。</target>
+        <target>Ne yaptığınızı biliyorsanız, yalnızca bu gelişmiş tercihleri değiştirin. Bu tercihler bir uygulamanın yeniden başlatılmasını gerektirir.</target>
         <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO";</note>
       </trans-unit>
       <trans-unit id="QIk-WP-qH1.title">
         <source>Start at Login</source>
-        <target>於登入時開啟</target>
+        <target>Açılışta başlat</target>
         <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1";</note>
-      </trans-unit>
-      <trans-unit id="RY6-7F-Z7R.title">
-        <source>Automatically Check for Updates</source>
-        <target>自動檢查版本更新</target>
-        <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "RY6-7F-Z7R";</note>
       </trans-unit>
       <trans-unit id="Rb3-Sm-byr.title">
         <source>90 %</source>
@@ -263,13 +242,18 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="S6p-h0-H5B.title">
         <source>Immediately starts preventing sleep when launched.</source>
-        <target>程式開啟時立即防止系統進入睡眠模式</target>
+        <target>Açılışta, uyku modunu önler.</target>
         <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B";</note>
       </trans-unit>
       <trans-unit id="UVY-8B-q5H.title">
         <source>Default Activation Duration:</source>
-        <target>預設啟用維持時間：</target>
+        <target>Varsayılan Etkinleştirme Süresi:</target>
         <note>Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H";</note>
+      </trans-unit>
+      <trans-unit id="W3H-iV-s6I.title">
+        <source>Check Now</source>
+        <target>Kontrol et</target>
+        <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "W3H-iV-s6I";</note>
       </trans-unit>
       <trans-unit id="fiQ-AT-I7u.title">
         <source>10 %</source>
@@ -287,22 +271,22 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="k65-yi-85l.title">
         <source>This value will be ignored when you manually start the app below this battery capacity.</source>
-        <target>若為手動啟用，則會無視此設定值。</target>
+        <target>Pil kapasitesinin altında uygulamayı manuel olarak başlattığınızda bu değer yoksayılır..</target>
         <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l";</note>
       </trans-unit>
       <trans-unit id="kG2-Tz-t51.title">
         <source>Check</source>
-        <target>檢查</target>
+        <target>Kontrol</target>
         <note>Class = "NSButtonCell"; title = "Check"; ObjectID = "kG2-Tz-t51";</note>
       </trans-unit>
       <trans-unit id="lGE-74-XwP.title">
         <source>General</source>
-        <target>一般</target>
+        <target>Genel</target>
         <note>Class = "NSViewController"; title = "General"; ObjectID = "lGE-74-XwP";</note>
       </trans-unit>
       <trans-unit id="nnA-d3-VV6.title">
         <source>Sets the default activation duration for the menu bar icon.</source>
-        <target>為選單列圖示設定啟用維持時間</target>
+        <target>Menü çubuğu simgesi için varsayılan etkinleştirme süresini ayarlar</target>
         <note>Class = "NSTextFieldCell"; title = "Sets the default activation duration for the menu bar icon."; ObjectID = "nnA-d3-VV6";</note>
       </trans-unit>
       <trans-unit id="nsg-DI-kE2.title">
@@ -312,17 +296,22 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="siu-CP-Bg1.title">
         <source>Copyright Label</source>
-        <target>版權資訊</target>
+        <target>Telif Hakları</target>
         <note>Class = "NSTextFieldCell"; title = "Copyright Label"; ObjectID = "siu-CP-Bg1";</note>
       </trans-unit>
       <trans-unit id="uUP-5n-ykj.title">
         <source>About</source>
-        <target>關於</target>
+        <target>Hakkında</target>
         <note>Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj";</note>
+      </trans-unit>
+      <trans-unit id="vdb-hr-zzU.title">
+        <source>Check for Pre-Release Updates</source>
+        <target>Güncellemeleri Kontrol Edin</target>
+        <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "vdb-hr-zzU";</note>
       </trans-unit>
       <trans-unit id="x6s-XD-lBU.title">
         <source>Automatically opens the app when you start your Mac.</source>
-        <target>於系統啟動時自動開啟此程式</target>
+        <target>Mac'inizi başlattığınızda uygulamayı otomatik olarak açar.</target>
         <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU";</note>
       </trans-unit>
     </body>
