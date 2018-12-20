@@ -3,21 +3,22 @@ WORKSPACE = KeepingYouAwake.xcworkspace
 VERSION = 1.4.3
 
 OUTPUT_DIR = dist
-CARTHAGE_DIR = Carthage
+VENDOR_DIR = Vendor
 
 FASTLANE = FASTLANE_SKIP_UPDATE_CHECK=1 FASTLANE_DISABLE_ANIMATION=1 fastlane
 
 default: dist
 
 clean:
-	rm -rf build
-	rm -rf $(CARTHAGE_DIR)
-	rm -rf $(OUTPUT_DIR)
+	$(RM) -r build
+	$(RM) -r $(OUTPUT_DIR)
+	$(MAKE) -C $(VENDOR_DIR) clean
 
-$(CARTHAGE_DIR):
-	carthage bootstrap --use-ssh --platform macOS
+$(VENDOR_DIR):
+	$(MAKE) -C $(VENDOR_DIR)
 
-$(OUTPUT_DIR)/$(SCHEME).app: $(CARTHAGE_DIR)
+$(OUTPUT_DIR)/$(SCHEME).app: $(VENDOR_DIR)
+	$(MAKE) $(VENDOR_DIR)
 	$(FASTLANE) gym \
 	--workspace $(WORKSPACE) \
 	--scheme $(SCHEME) \
@@ -37,4 +38,4 @@ clangformat:
 	$(info Reformatting source files with clang-format...)
 	clang-format -style=file -i $(shell pwd)/**/*.{h,m}
 
-.PHONY: clean dist clang-format
+.PHONY: clean dist $(VENDOR_DIR) clang-format
