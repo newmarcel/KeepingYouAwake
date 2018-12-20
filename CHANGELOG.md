@@ -12,6 +12,7 @@
 ### v1.4.4 ###
 
 - added an Updates tab to preferences
+- updated Sparkle to the XPC version
 
 ### v1.4.3 ###
 
