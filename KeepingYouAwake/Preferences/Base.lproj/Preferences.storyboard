@@ -564,6 +564,9 @@
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <binding destination="Zv3-Yg-TMp" name="value" keyPath="self.updater.automaticallyChecksForUpdates" id="o18-Ak-N98"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yqL-TQ-Yyq">
                                             <rect key="frame" x="192" y="15" width="109" height="32"/>
@@ -571,6 +574,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="checkForUpdates:" target="Zv3-Yg-TMp" id="IkN-en-yJr"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -603,6 +609,7 @@
                     </view>
                 </viewController>
                 <customObject id="zmq-SH-iwA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="Zv3-Yg-TMp" customClass="SPUStandardUpdaterController"/>
                 <userDefaultsController id="4Au-If-gob"/>
             </objects>
             <point key="canvasLocation" x="-228" y="1168"/>

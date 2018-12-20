@@ -19,6 +19,11 @@
                 <outlet property="timerMenu" destination="uTe-0S-BFw" id="uJl-Rb-elA"/>
             </connections>
         </customObject>
+        <customObject id="JNo-z8-htK" customClass="SPUStandardUpdaterController">
+            <connections>
+                <outlet property="updaterDelegate" destination="Voe-Tx-rLC" id="fMf-4e-s3F"/>
+            </connections>
+        </customObject>
         <menu id="RrS-wX-j75">
             <items>
                 <menuItem title="Activate for Duration" id="Bo6-IE-IbX">

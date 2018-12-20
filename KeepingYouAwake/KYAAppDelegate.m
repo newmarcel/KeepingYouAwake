@@ -7,10 +7,11 @@
 //
 
 #import "KYAAppDelegate.h"
+#import <Sparkle/Sparkle.h>
 #import "NSUserDefaults+Keys.h"
 #import "KYAPreferencesWindowController.h"
 
-@interface KYAAppDelegate () <NSWindowDelegate/*, SUUpdaterDelegate*/>
+@interface KYAAppDelegate () <NSWindowDelegate, SPUUpdaterDelegate>
 @property (nonatomic, nullable) KYAPreferencesWindowController *preferencesWindowController;
 @end
 
@@ -42,21 +43,21 @@
     self.preferencesWindowController = nil;
 }
 
-//#pragma mark - Updater Delegate
-//
-//- (NSString *)feedURLStringForUpdater:(SUUpdater *)updater
-//{
-//    NSString *feedURLString = NSBundle.mainBundle.infoDictionary[@"SUFeedURL"];
-//    NSAssert(feedURLString != nil, @"A feed URL should be set in Info.plist");
-//
-//    if([NSUserDefaults.standardUserDefaults kya_arePreReleaseUpdatesEnabled])
-//    {
-//        NSString *lastComponent = feedURLString.lastPathComponent;
-//        NSString *baseURLString = feedURLString.stringByDeletingLastPathComponent;
-//        return [NSString stringWithFormat:@"%@/prerelease-%@", baseURLString, lastComponent];
-//    }
-//
-//    return feedURLString;
-//}
+#pragma mark - SPUUpdaterDelegate
+
+- (NSString *)feedURLStringForUpdater:(SPUUpdater *)updater
+{
+    NSString *feedURLString = NSBundle.mainBundle.infoDictionary[@"SUFeedURL"];
+    NSAssert(feedURLString != nil, @"A feed URL should be set in Info.plist");
+
+    if([NSUserDefaults.standardUserDefaults kya_arePreReleaseUpdatesEnabled])
+    {
+        NSString *lastComponent = feedURLString.lastPathComponent;
+        NSString *baseURLString = feedURLString.stringByDeletingLastPathComponent;
+        return [NSString stringWithFormat:@"%@/prerelease-%@", baseURLString, lastComponent];
+    }
+
+    return feedURLString;
+}
 
 @end
