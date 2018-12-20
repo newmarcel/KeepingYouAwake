@@ -28,7 +28,7 @@ Do you want to improve the app or add useful features? Please go ahead and creat
 
 ## Building the Source Code
 
-*KeepingYouAwake* uses [Carthage](https://github.com/Carthage/Carthage) as dependency manager. You can install Carthage with [Homebrew](http://brew.sh). Type `brew update && brew install carthage` and call `carthage bootstrap` in the *KeepingYouAwake* source code folder to download and build all dependencies.
+*KeepingYouAwake* uses [Sparkle](https://github.com/sparkle-project/Sparkle/tree/ui-separation-and-xpc)'s `ui-separation-and-xpc` branch to deliver updates. You can build and sign Sparkle with `make Vendor`. To build a release version of the app just run `make dist`.
 
 ## License
 
