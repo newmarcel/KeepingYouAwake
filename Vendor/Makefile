@@ -2,6 +2,8 @@ BUILD_DIR = build
 REPO_DIR = $(BUILD_DIR)/Sparkle
 DIST_DIR = Sparkle
 
+SPARKLE_COMMIT = b1c3b313f53c95a91c8adc07b991ff9a306e6cf8 # ui-separation-and-xpc
+
 default: $(DIST_DIR)
 
 clean:
@@ -11,7 +13,7 @@ clean:
 $(REPO_DIR):
 	mkdir -p $(BUILD_DIR)
 	git clone git@github.com:sparkle-project/Sparkle.git $(REPO_DIR)
-	cd $(REPO_DIR) && git checkout ui-separation-and-xpc
+	cd $(REPO_DIR) && git checkout $(SPARKLE_COMMIT)
 
 $(DIST_DIR): $(REPO_DIR)
 	mkdir -p $(DIST_DIR)
