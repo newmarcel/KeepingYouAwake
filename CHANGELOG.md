@@ -5,14 +5,14 @@
 ### v1.5.0pre ###
 
 - support for App Transport Security and App Sandbox
-	- start at login_ uses a helper app now
-	- the previous login item is not compatible anymore and it is recommended to disable start at login_ before the update!
 	- custom icons need to be placed in `~/Library/Containers/info.marcel-dierkes.KeepingYouAwake/Data/Documents` now and will be migrated with the update
 
 ### v1.4.4 ###
 
 - added an Updates tab to preferences
 - updated Sparkle to the `ui-separation-and-xpc` version
+- _start at login_ uses a tiny helper app now
+    - the previous login item is not compatible anymore and **it is recommended to disable _start at login_ before updating**!
 
 ### v1.4.3 ###
 
