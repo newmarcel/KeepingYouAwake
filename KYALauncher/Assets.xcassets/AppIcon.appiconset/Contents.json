@@ -51,9 +51,8 @@
       "scale" : "1x"
     },
     {
-      "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "icon_512x512@2x.png",
+      "size" : "512x512",
       "scale" : "2x"
     }
   ],
