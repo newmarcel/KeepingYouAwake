@@ -20,7 +20,6 @@
 		DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */; };
 		DA54C12A1D69C55400AF9E9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C12C1D69C55400AF9E9D /* Localizable.strings */; };
 		DA54C1311D69CA0000AF9E9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */; };
-		DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */; };
 		DA56801B2115FF140039C979 /* KYAUpdatePreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5680192115FF140039C979 /* KYAUpdatePreferencesViewController.m */; };
 		DA5A50941ACC5C5400A444C8 /* KYAEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A50931ACC5C5400A444C8 /* KYAEvent.m */; };
 		DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5B5A221C28612100EE45C6 /* KYABatteryStatus.m */; };
@@ -123,8 +122,6 @@
 		DA54C12E1D69C9BC00AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA54C1321D69CA0000AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA54C1341D69CA0700AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+LoginItem.h"; sourceTree = "<group>"; };
-		DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+LoginItem.m"; sourceTree = "<group>"; };
 		DA5680192115FF140039C979 /* KYAUpdatePreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAUpdatePreferencesViewController.m; sourceTree = "<group>"; };
 		DA56801A2115FF140039C979 /* KYAUpdatePreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAUpdatePreferencesViewController.h; sourceTree = "<group>"; };
 		DA5A50921ACC5C5400A444C8 /* KYAEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEvent.h; sourceTree = "<group>"; };
@@ -237,8 +234,6 @@
 		DA4919C61ACFFF9600D44F6A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */,
-				DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */,
 				DA658E6421CE8C130049F4C1 /* NSApplication+KYALauncher.h */,
 				DA658E6521CE8C130049F4C1 /* NSApplication+KYALauncher.m */,
 				DAB1286F1C245F1B00831045 /* NSApplication+Versions.h */,
@@ -528,7 +523,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA56801B2115FF140039C979 /* KYAUpdatePreferencesViewController.m in Sources */,
-				DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */,
 				DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */,
 				DA7B53061E16999A00D89A12 /* KYAPreferencesWindowController.m in Sources */,
 				DA46C1EE1BDCDFB00050357C /* NSUserDefaults+Keys.m in Sources */,
