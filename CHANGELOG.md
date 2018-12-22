@@ -12,7 +12,7 @@
 ### v1.4.4 ###
 
 - added an Updates tab to preferences
-- updated Sparkle to the XPC version
+- updated Sparkle to the `ui-separation-and-xpc` version
 
 ### v1.4.3 ###
 
