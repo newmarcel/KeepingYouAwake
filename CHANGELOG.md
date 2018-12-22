@@ -11,8 +11,8 @@
 
 - added an Updates tab to preferences
 - updated Sparkle to the `ui-separation-and-xpc` version
-- _start at login_ uses a tiny helper app now
-    - the previous login item is not compatible anymore and **it is recommended to disable _start at login_ before updating**!
+- _Start at login_ uses a tiny helper app now
+    - the previous login item is not compatible anymore and **it is recommended to disable _Start at login_ before updating**!
 
 ### v1.4.3 ###
 
