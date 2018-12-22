@@ -48,6 +48,14 @@
     button.target = self;
     button.action = @selector(toggleStatus:);
     
+#if DEBUG
+    if(@available(macOS 10.14, *))
+    {
+        button.contentTintColor = NSColor.purpleColor;
+    }
+    KYALog(@"Purple status bar item color is enabled in DEBUG builds.");
+#endif
+    
     self.systemStatusItem = statusItem;
     self.activeAppearanceEnabled = NO;
 }
