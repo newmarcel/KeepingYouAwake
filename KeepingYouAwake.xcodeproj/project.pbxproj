@@ -354,11 +354,11 @@
 			children = (
 				DA658E7E21CE91540049F4C1 /* KYAAppDelegate.h */,
 				DA658E7F21CE91540049F4C1 /* KYAAppDelegate.m */,
+				DA658E7621CE907D0049F4C1 /* main.m */,
+				DA658E7C21CE90F30049F4C1 /* MainMenu.xib */,
 				DA658E7021CE907D0049F4C1 /* Assets.xcassets */,
 				DA658E7521CE907D0049F4C1 /* Info.plist */,
 				DA658E7821CE907D0049F4C1 /* KYALauncher.entitlements */,
-				DA658E7621CE907D0049F4C1 /* main.m */,
-				DA658E7C21CE90F30049F4C1 /* MainMenu.xib */,
 			);
 			path = KYALauncher;
 			sourceTree = "<group>";

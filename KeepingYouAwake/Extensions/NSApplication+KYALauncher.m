@@ -47,4 +47,3 @@ static NSString * const KYALauncherStateUserDefaultsKey = @"info.marcel-dierkes.
 }
 
 @end
-
