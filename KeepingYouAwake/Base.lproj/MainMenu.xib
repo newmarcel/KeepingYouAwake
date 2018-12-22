@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -19,9 +19,9 @@
                 <outlet property="timerMenu" destination="uTe-0S-BFw" id="uJl-Rb-elA"/>
             </connections>
         </customObject>
-        <customObject id="8QH-MG-rpV" customClass="SUUpdater">
+        <customObject id="JNo-z8-htK" customClass="SPUStandardUpdaterController">
             <connections>
-                <outlet property="delegate" destination="Voe-Tx-rLC" id="UqK-d2-hFU"/>
+                <outlet property="updaterDelegate" destination="Voe-Tx-rLC" id="fMf-4e-s3F"/>
             </connections>
         </customObject>
         <menu id="RrS-wX-j75">
