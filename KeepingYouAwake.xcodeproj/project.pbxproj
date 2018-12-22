@@ -34,7 +34,6 @@
 		DA658E7721CE907D0049F4C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA658E7621CE907D0049F4C1 /* main.m */; };
 		DA658E7D21CE90F30049F4C1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA658E7C21CE90F30049F4C1 /* MainMenu.xib */; };
 		DA658E8021CE91540049F4C1 /* KYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA658E7F21CE91540049F4C1 /* KYAAppDelegate.m */; };
-		DA658E8221CE92790049F4C1 /* KYALauncher.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA658E8121CE92790049F4C1 /* KYALauncher.icns */; };
 		DA658E8421CE93310049F4C1 /* KeepingYouAwake Launcher.app in Embed Launcher */ = {isa = PBXBuildFile; fileRef = DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA7B53061E16999A00D89A12 /* KYAPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */; };
 		DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */; };
@@ -155,7 +154,6 @@
 		DA658E7C21CE90F30049F4C1 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		DA658E7E21CE91540049F4C1 /* KYAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAppDelegate.h; sourceTree = "<group>"; };
 		DA658E7F21CE91540049F4C1 /* KYAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAppDelegate.m; sourceTree = "<group>"; };
-		DA658E8121CE92790049F4C1 /* KYALauncher.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = KYALauncher.icns; sourceTree = "<group>"; };
 		DA66276F20CC0676007834DB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Preferences.strings; sourceTree = "<group>"; };
 		DA66277020CC0676007834DB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		DA66277120CC0680007834DB /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Preferences.strings; sourceTree = "<group>"; };
@@ -362,7 +360,6 @@
 				DA658E7E21CE91540049F4C1 /* KYAAppDelegate.h */,
 				DA658E7F21CE91540049F4C1 /* KYAAppDelegate.m */,
 				DA658E7021CE907D0049F4C1 /* Assets.xcassets */,
-				DA658E8121CE92790049F4C1 /* KYALauncher.icns */,
 				DA658E7521CE907D0049F4C1 /* Info.plist */,
 				DA658E7821CE907D0049F4C1 /* KYALauncher.entitlements */,
 				DA658E7621CE907D0049F4C1 /* main.m */,
@@ -518,7 +515,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA658E8221CE92790049F4C1 /* KYALauncher.icns in Resources */,
 				DA658E7121CE907D0049F4C1 /* Assets.xcassets in Resources */,
 				DA658E7D21CE90F30049F4C1 /* MainMenu.xib in Resources */,
 			);
