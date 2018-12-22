@@ -12,7 +12,6 @@ default: dist
 clean:
 	$(RM) -r build
 	$(RM) -r $(OUTPUT_DIR)
-	$(MAKE) -C $(VENDOR_DIR) clean
 
 $(VENDOR_DIR):
 	$(MAKE) -C $(VENDOR_DIR)
