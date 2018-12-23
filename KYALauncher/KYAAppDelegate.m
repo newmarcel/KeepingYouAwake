@@ -14,7 +14,9 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     KYA_AUTO pathComponents = NSBundle.mainBundle.bundlePath.pathComponents;
-    pathComponents = [pathComponents subarrayWithRange:NSMakeRange(0, pathComponents.count - 4)];
+    NSRange pathRange = NSMakeRange(0, pathComponents.count - 4);
+    pathComponents = [pathComponents subarrayWithRange:pathRange];
+    
     KYA_AUTO path = [NSString pathWithComponents:pathComponents];
     [NSWorkspace.sharedWorkspace launchApplication:path];
     
