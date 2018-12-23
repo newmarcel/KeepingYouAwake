@@ -108,6 +108,7 @@
 		DA0ADE6B21CBFC9700D34B9D /* org.sparkle-project.InstallerConnection.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; name = "org.sparkle-project.InstallerConnection.xpc"; path = "Vendor/Sparkle/XPCServices/org.sparkle-project.InstallerConnection.xpc"; sourceTree = "<group>"; };
 		DA0ADE6C21CBFC9700D34B9D /* org.sparkle-project.InstallerLauncher.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; name = "org.sparkle-project.InstallerLauncher.xpc"; path = "Vendor/Sparkle/XPCServices/org.sparkle-project.InstallerLauncher.xpc"; sourceTree = "<group>"; };
 		DA0ADE6D21CBFC9700D34B9D /* org.sparkle-project.InstallerStatus.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; name = "org.sparkle-project.InstallerStatus.xpc"; path = "Vendor/Sparkle/XPCServices/org.sparkle-project.InstallerStatus.xpc"; sourceTree = "<group>"; };
+		DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeepingYouAwake.entitlements; sourceTree = "<group>"; };
 		DA173B351F65B41B00932CE0 /* KYAStatusItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAStatusItemController.h; sourceTree = "<group>"; };
 		DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAStatusItemController.m; sourceTree = "<group>"; };
 		DA249E281F9B7211006BCD2C /* KYADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADefines.h; sourceTree = "<group>"; };
@@ -335,6 +336,7 @@
 				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
 				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,
 				DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */,
+				DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
 				DA8F381B1F9BA4360086A84A /* StatusItemController */,
 				DA2691CF1B8230AB00B15779 /* MenuBar Icon */,
@@ -473,11 +475,21 @@
 						CreatedOnToolsVersion = 6.0.1;
 						DevelopmentTeam = 5KESHV9W85;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
 					};
 					DA658E6A21CE907B0049F4C1 = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = 5KESHV9W85;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -793,6 +805,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5KESHV9W85;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/Sparkle",
@@ -811,6 +824,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5KESHV9W85;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor/Sparkle",
@@ -839,6 +853,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 5KESHV9W85;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = KYALauncher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -868,6 +883,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 5KESHV9W85;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = KYALauncher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MTL_FAST_MATH = YES;
