@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="KeepingYouAwake/Base.lproj/InfoPlist.strings" source-language="en" datatype="plaintext" target-language="pt">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.0" build-num="10A255"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
     </header>
     <body>
       <trans-unit id="CFBundleName">
@@ -17,7 +17,7 @@
   </file>
   <file original="KeepingYouAwake/Base.lproj/Localizable.strings" source-language="en" datatype="plaintext" target-language="pt">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.0" build-num="10A255"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
     </header>
     <body>
       <trans-unit id="Allowing your Mac to go to sleep…">
@@ -74,7 +74,7 @@ Clique com o botão direito para exibir o menu</target>
   </file>
   <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" datatype="plaintext" target-language="pt">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.0" build-num="10A255"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
     </header>
     <body>
       <trans-unit id="3tu-5G-YQt.title">
@@ -186,7 +186,7 @@ Clique com o botão direito para exibir o menu</target>
   </file>
   <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" datatype="plaintext" target-language="pt">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.0" build-num="10A255"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
     </header>
     <body>
       <trans-unit id="5bL-cI-YIY.title">
@@ -316,6 +316,21 @@ Clique com o botão direito para exibir o menu</target>
         <source>Automatically opens the app when you start your Mac.</source>
         <target>Abre a aplicação automaticamente quando você inicia o Mac.</target>
         <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KYALauncher/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="pt">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright">
+        <source>${KYA_COPYRIGHT_TEXT}</source>
+        <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
   </file>
