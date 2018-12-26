@@ -45,6 +45,16 @@
 		DAD2725B1ACB266800CDD620 /* KYAEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD2725A1ACB266800CDD620 /* KYAEventHandler.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DA87FF5E21D42525009045F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA637B3119F14693004C8838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA658E6A21CE907B0049F4C1;
+			remoteInfo = "KeepingYouAwake Launcher";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		DA0ADE6921CBFC7E00D34B9D /* Embed XPC Services */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -424,6 +434,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DA87FF5F21D42525009045F3 /* PBXTargetDependency */,
 			);
 			name = KeepingYouAwake;
 			productName = KeepingYouAwake;
@@ -554,6 +565,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA87FF5F21D42525009045F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA658E6A21CE907B0049F4C1 /* KeepingYouAwake Launcher */;
+			targetProxy = DA87FF5E21D42525009045F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */ = {
@@ -827,6 +846,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KeepingYouAwake.Launcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -854,6 +874,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KeepingYouAwake.Launcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
