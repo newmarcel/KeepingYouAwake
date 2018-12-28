@@ -14,6 +14,7 @@
 - _Start at login_ uses a launcher helper app now ([#110](https://github.com/newmarcel/KeepingYouAwake/pull/110))
     - the previous login item is not compatible anymore and **it is recommended to disable _Start at login_ before updating**!
     - please check this [Wiki page](https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems) if you encounter problems
+- enabled the Hardened Runtime security feature 
 
 ### v1.4.3 ###
 

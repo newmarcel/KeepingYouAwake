@@ -2,6 +2,9 @@ BUILD_DIR = build
 REPO_DIR = $(BUILD_DIR)/Sparkle
 DIST_DIR = Sparkle
 
+CODESIGN_IDENTITY = Developer ID Application
+CODESIGN_CMD = codesign --verbose --force -o runtime --sign "$(CODESIGN_IDENTITY)"
+
 SPARKLE_COMMIT = b1c3b313f53c95a91c8adc07b991ff9a306e6cf8 # ui-separation-and-xpc
 
 default: $(DIST_DIR)
@@ -23,4 +26,12 @@ $(DIST_DIR): $(REPO_DIR)
 		-derivedDataPath "../$(BUILD_DIR)" \
 		build
 	cd $(DIST_DIR) && tar xfvj ../$(BUILD_DIR)/build/Build/Products/Release/Sparkle-*.tar.bz2
-	$(DIST_DIR)/bin/codesign_xpc "Developer ID Application" $(DIST_DIR)/XPCServices/*.xpc
+
+	# Codesign Updater Binaries
+	$(CODESIGN_CMD) --deep "$(DIST_DIR)/Sparkle.framework/Versions/A/Resources/Autoupdate"
+	$(CODESIGN_CMD) --deep "$(DIST_DIR)/Sparkle.framework/Versions/A/Resources/Updater.app"
+	$(CODESIGN_CMD) "$(DIST_DIR)/Sparkle.framework/Versions/A"
+
+	# Codesign XPC Services
+	patch $(DIST_DIR)/bin/codesign_xpc < codesign_xpc_hardened.patch
+	$(DIST_DIR)/bin/codesign_xpc "$(CODESIGN_IDENTITY)" $(DIST_DIR)/XPCServices/*.xpc
