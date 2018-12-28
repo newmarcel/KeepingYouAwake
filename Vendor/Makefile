@@ -23,4 +23,5 @@ $(DIST_DIR): $(REPO_DIR)
 		-derivedDataPath "../$(BUILD_DIR)" \
 		build
 	cd $(DIST_DIR) && tar xfvj ../$(BUILD_DIR)/build/Build/Products/Release/Sparkle-*.tar.bz2
+	patch $(DIST_DIR)/bin/codesign_xpc < codesign_xpc_hardened.patch
 	$(DIST_DIR)/bin/codesign_xpc "Developer ID Application" $(DIST_DIR)/XPCServices/*.xpc
