@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA085D1021D6BAB6003D9B1B /* container-migration.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA085D0F21D6BAB6003D9B1B /* container-migration.plist */; };
 		DA0ADE6621CBFC5800D34B9D /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0ADE6521CBFC5800D34B9D /* Sparkle.framework */; };
 		DA0ADE6821CBFC6000D34B9D /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA0ADE6521CBFC5800D34B9D /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA0ADE6E21CBFCA700D34B9D /* org.sparkle-project.Downloader.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6A21CBFC9700D34B9D /* org.sparkle-project.Downloader.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -103,6 +104,7 @@
 		8F6945C71DB7A87C0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F6945C81DB7A87D0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8F6945C91DB7A87D0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DA085D0F21D6BAB6003D9B1B /* container-migration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "container-migration.plist"; sourceTree = "<group>"; };
 		DA0ADE6521CBFC5800D34B9D /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Vendor/Sparkle/Sparkle.framework; sourceTree = "<group>"; };
 		DA0ADE6A21CBFC9700D34B9D /* org.sparkle-project.Downloader.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; name = "org.sparkle-project.Downloader.xpc"; path = "Vendor/Sparkle/XPCServices/org.sparkle-project.Downloader.xpc"; sourceTree = "<group>"; };
 		DA0ADE6B21CBFC9700D34B9D /* org.sparkle-project.InstallerConnection.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; name = "org.sparkle-project.InstallerConnection.xpc"; path = "Vendor/Sparkle/XPCServices/org.sparkle-project.InstallerConnection.xpc"; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */,
 				DA54C12C1D69C55400AF9E9D /* Localizable.strings */,
 				DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */,
+				DA085D0F21D6BAB6003D9B1B /* container-migration.plist */,
 				DA637B3D19F14693004C8838 /* Info.plist */,
 				DA637B3E19F14693004C8838 /* main.m */,
 				DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */,
@@ -479,6 +482,9 @@
 							com.apple.HardenedRuntime = {
 								enabled = 1;
 							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
 						};
 					};
 					DA658E6A21CE907B0049F4C1 = {
@@ -526,6 +532,7 @@
 				DAB128731C2469F300831045 /* Credits.rtf in Resources */,
 				DA637B4719F14693004C8838 /* MainMenu.xib in Resources */,
 				DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */,
+				DA085D1021D6BAB6003D9B1B /* container-migration.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,6 +810,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeepingYouAwake/KeepingYouAwake.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5KESHV9W85;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -821,6 +829,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeepingYouAwake/KeepingYouAwake.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
