@@ -2,7 +2,7 @@
 
 ## Changelog ##
 
-### v1.4.4 ###
+### v1.5.0 ###
 
 - added an _Updates_ tab to preferences
 - enabled the _Hardened Runtime_ security feature
