@@ -336,7 +336,6 @@
 				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
 				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,
 				DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */,
-				DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
 				DA8F381B1F9BA4360086A84A /* StatusItemController */,
 				DA2691CF1B8230AB00B15779 /* MenuBar Icon */,
@@ -353,6 +352,7 @@
 			children = (
 				DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */,
 				DA54C12C1D69C55400AF9E9D /* Localizable.strings */,
+				DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */,
 				DA637B3D19F14693004C8838 /* Info.plist */,
 				DA637B3E19F14693004C8838 /* main.m */,
 				DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */,
