@@ -4,13 +4,13 @@
 
 ### v1.5.0 ###
 
-- added an _Updates_ tab to preferences
-- enabled the _Hardened Runtime_ security feature
-- enabled the _App Sandbox_ security feature
+- added an _Updates_ tab to preferences ([#107](https://github.com/newmarcel/KeepingYouAwake/pull/107))
+- enabled the _Hardened Runtime_ security feature ([#111](https://github.com/newmarcel/KeepingYouAwake/pull/111))
+- enabled the _App Sandbox_ security feature ([#112](https://github.com/newmarcel/KeepingYouAwake/pull/112))
 	- custom icons need to be placed in `~/Library/Containers/info.marcel-dierkes.KeepingYouAwake/Data/Documents` now and will be migrated during the app update
 - _Start at login_ uses a launcher helper app now ([#110](https://github.com/newmarcel/KeepingYouAwake/pull/110))
     - the previous login item is not compatible anymore and **it is recommended to disable _Start at login_ before updating**!
-    - please check this [Wiki page](https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems) if you encounter problems
+    - please check [this wiki page](https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems) if you encounter problems
 - updated Sparkle to the `ui-separation-and-xpc` version ([#109](https://github.com/newmarcel/KeepingYouAwake/pull/109))
 
 ### v1.4.3 ###
