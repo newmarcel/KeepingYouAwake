@@ -6,6 +6,29 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.5.0beta1: Sandboxed, Hardened & Notarized]]></title>
+			<description><![CDATA[<p><span style="font-weight: bold; color: red;">Please disable <em>Start at login</em> in <em>Preferences</em> before you update. You can also check <a target="_blank" href="https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems">this wiki page</a> for troubleshooting help.</span></p>
+
+<ul>
+<li>added an <em>Updates</em> tab to preferences (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/107">#107</a>)</li>
+<li>enabled the <em>Hardened Runtime</em> security feature (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/111">#111</a>)</li>
+<li>enabled the <em>App Sandbox</em> security feature (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/112">#112</a>)
+<ul>
+<li>custom icons need to be placed in <code>~/Library/Containers/info.marcel-dierkes.KeepingYouAwake/Data/Documents</code> now and will be migrated during the app update</li>
+</ul></li>
+<li><em>Start at login</em> uses a launcher helper app now (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/110">#110</a>)
+<ul>
+<li>the previous login item is not compatible anymore and <strong>it is recommended to disable <em>Start at login</em> before updating</strong>!</li>
+<li>please check <a href="https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems">this wiki page</a> if you encounter problems</li>
+</ul></li>
+<li>updated Sparkle to the <code>ui-separation-and-xpc</code> version (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/109">#109</a>)</li>
+</ul>
+]]></description>
+			<pubDate>Sat, 29 Dec 2018 16:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.5.0beta1/KeepingYouAwake-1.5.0beta1.zip" length="2548397" type="application/octet-stream" sparkle:version="1050002" sparkle:shortVersionString="1.5.0beta1">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.4.3: Small Improvements]]></title>
 			<description><![CDATA[<ul>
 <li>the icon can be dragged out of the menubar to quit on macOS Sierra and newer (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/82">#82</a>, suggested by <a href="https://github.com/Eitot">Eitot</a>)</li>
@@ -19,8 +42,8 @@
 <li>allows Dark Aqua appearance on macOS Mojave</li>
 </ul>
 ]]></description>
-			<pubDate>Wed, 15 Aug 2018 19:00:00 GMT</pubDate>
-			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.4.3/KeepingYouAwake-1.4.3.zip" length="2123460" type="application/octet-stream" sparkle:version="1040302" sparkle:shortVersionString="1.4.3">
+			<pubDate>Wed, 15 Aug 2018 18:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.4.3/KeepingYouAwake-1.4.3.zip" length="2124646" type="application/octet-stream" sparkle:version="1040302" sparkle:shortVersionString="1.4.3">
 			</enclosure>
 		</item>
 		<item>
