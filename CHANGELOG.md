@@ -11,7 +11,7 @@
 - _Start at login_ uses a launcher helper app now ([#110](https://github.com/newmarcel/KeepingYouAwake/pull/110))
     - the previous login item is not compatible anymore and **it is recommended to disable _Start at login_ before updating**!
     - please check [this wiki page](https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems) if you encounter problems
-- updated Sparkle to the `ui-separation-and-xpc` version ([#109](https://github.com/newmarcel/KeepingYouAwake/pull/109))
+- updated Sparkle to the `ui-separation-and-xpc` version ([#109](https://github.com/newmarcel/KeepingYouAwake/pull/109)) ([#113](https://github.com/newmarcel/KeepingYouAwake/pull/113))
 
 ### v1.4.3 ###
 
