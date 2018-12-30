@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <Sparkle/Sparkle.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KYAUpdatePreferencesViewController : NSViewController
+@interface KYAUpdatePreferencesViewController : NSViewController <SPUUpdaterDelegate>
 @end
 
 NS_ASSUME_NONNULL_END

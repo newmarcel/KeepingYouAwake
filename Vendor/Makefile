@@ -27,10 +27,9 @@ $(DIST_DIR): $(REPO_DIR)
 		build
 	cd $(DIST_DIR) && tar xfvj ../$(BUILD_DIR)/build/Build/Products/Release/Sparkle-*.tar.bz2
 
-	# Codesign Updater Binaries
-	$(CODESIGN_CMD) --deep "$(DIST_DIR)/Sparkle.framework/Versions/A/Resources/Autoupdate"
-	$(CODESIGN_CMD) --deep "$(DIST_DIR)/Sparkle.framework/Versions/A/Resources/Updater.app"
-	$(CODESIGN_CMD) "$(DIST_DIR)/Sparkle.framework/Versions/A"
+	# Remove Redundant Updater Binaries
+	$(RM) $(DIST_DIR)/Sparkle.framework/Versions/A/Resources/Autoupdate
+	$(RM) -r $(DIST_DIR)/Sparkle.framework/Versions/A/Resources/Updater.app
 
 	# Codesign XPC Services
 	patch $(DIST_DIR)/bin/codesign_xpc < codesign_xpc_hardened.patch

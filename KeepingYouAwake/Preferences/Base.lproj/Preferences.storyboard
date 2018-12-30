@@ -529,7 +529,7 @@
         <!--Updates-->
         <scene sceneID="GLC-gz-Zi5">
             <objects>
-                <viewController title="Updates" id="8V0-Sq-Cdu" customClass="KYAUpdatePreferencesViewController" sceneMemberID="viewController">
+                <viewController title="Updates" id="8V0-Sq-Cdu" userLabel="Updates" customClass="KYAUpdatePreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="FTE-58-nDl">
                         <rect key="frame" x="0.0" y="0.0" width="451" height="146"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -609,7 +609,11 @@
                     </view>
                 </viewController>
                 <customObject id="zmq-SH-iwA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <customObject id="Zv3-Yg-TMp" customClass="SPUStandardUpdaterController"/>
+                <customObject id="Zv3-Yg-TMp" customClass="SPUStandardUpdaterController">
+                    <connections>
+                        <outlet property="updaterDelegate" destination="8V0-Sq-Cdu" id="i45-pG-Fxv"/>
+                    </connections>
+                </customObject>
                 <userDefaultsController id="4Au-If-gob"/>
             </objects>
             <point key="canvasLocation" x="-228" y="1168"/>
