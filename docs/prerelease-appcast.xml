@@ -6,6 +6,31 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.5.0beta2: Sandboxed, Hardened & Notarized]]></title>
+			<description><![CDATA[<p><span style="font-weight: bold; color: red;">Please disable <em>Start at login</em> in <em>Preferences</em> before you update. You can also check <a target="_blank" href="https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems">this wiki page</a> for troubleshooting help.</span></p>
+
+<ul>
+<li>added an <em>Updates</em> tab to preferences (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/107">#107</a>)</li>
+<li>enabled the <em>Hardened Runtime</em> security feature (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/111">#111</a>)</li>
+<li>enabled the <em>App Sandbox</em> security feature (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/112">#112</a>)
+<ul>
+<li>custom icons need to be placed in <code>~/Library/Containers/info.marcel-dierkes.KeepingYouAwake/Data/Documents</code> now and will be migrated during the app update</li>
+</ul></li>
+<li><em>Start at login</em> uses a launcher helper app now (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/110">#110</a>)
+<ul>
+<li>the previous login item is not compatible anymore and <strong>it is recommended to disable <em>Start at login</em> before updating</strong>!</li>
+<li>please check <a href="https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems">this wiki page</a> if you encounter problems</li>
+</ul></li>
+<li>updated Sparkle to the <code>ui-separation-and-xpc</code> version (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/109">#109</a>) (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/113">#113</a>)</li>
+</ul>
+
+<p><strong>Beta 2 fixes a bug that prevents 1.5.0 Beta 1 from downloading updates. Please manually re-download Beta 2 from GitHub if you experience any issues.</strong></p>
+]]></description>
+			<pubDate>Sun, 30 Dec 2018 15:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.5.0beta2/KeepingYouAwake-1.5.0beta2.zip" length="2264884" type="application/octet-stream" sparkle:version="1050003" sparkle:shortVersionString="1.5.0beta2">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.5.0beta1: Sandboxed, Hardened & Notarized]]></title>
 			<description><![CDATA[<p><span style="font-weight: bold; color: red;">Please disable <em>Start at login</em> in <em>Preferences</em> before you update. You can also check <a target="_blank" href="https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems">this wiki page</a> for troubleshooting help.</span></p>
 
