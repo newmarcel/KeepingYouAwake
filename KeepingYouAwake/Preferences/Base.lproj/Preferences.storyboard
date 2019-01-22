@@ -63,11 +63,11 @@
             <objects>
                 <viewController title="General" id="lGE-74-XwP" customClass="KYAGeneralPreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="zCr-XH-hAt">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="204"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="258"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Ley-qF-w1u">
-                                <rect key="frame" x="78" y="116" width="138" height="18"/>
+                            <button ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ley-qF-w1u">
+                                <rect key="frame" x="78" y="170" width="138" height="18"/>
                                 <buttonCell key="cell" type="check" title="Activate on Launch" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="IOU-Hs-S4r">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -82,8 +82,8 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="410" id="2dg-Fx-9yM"/>
                                 </constraints>
                             </box>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="LrG-qH-het">
-                                <rect key="frame" x="78" y="168" width="104" height="18"/>
+                            <button ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LrG-qH-het">
+                                <rect key="frame" x="78" y="222" width="104" height="18"/>
                                 <buttonCell key="cell" type="check" title="Start at Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="QIk-WP-qH1">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -113,17 +113,27 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6j-JQ-b36">
-                                <rect key="frame" x="78" y="148" width="354" height="14"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6j-JQ-b36">
+                                <rect key="frame" x="78" y="202" width="354" height="14"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Automatically opens the app when you start your Mac." id="x6s-XD-lBU">
                                     <font key="font" metaFont="smallSystem"/>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2V-hO-Kz5">
-                                <rect key="frame" x="78" y="96" width="354" height="14"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Immediately starts preventing sleep when launched." id="S6p-h0-H5B">
+                            <button ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hed-p6-cq5">
+                                <rect key="frame" x="78" y="120" width="174" height="18"/>
+                                <buttonCell key="cell" type="check" title="Disable on locked screen" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="VXa-4y-oB9">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="32v-ae-OOv" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.DisableWhenScreenLockedEnabled" id="KsG-BG-yfw"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C2G-Zq-6bh">
+                                <rect key="frame" x="78" y="150" width="354" height="14"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Immediately starts preventing sleep when launched." id="XPu-IA-tFW">
                                     <font key="font" metaFont="smallSystem"/>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -137,11 +147,20 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2V-hO-Kz5">
+                                <rect key="frame" x="78" y="100" width="354" height="14"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Automatically disables when screen is locked." id="S6p-h0-H5B">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="LrG-qH-het" firstAttribute="top" secondItem="zCr-XH-hAt" secondAttribute="top" constant="20" id="029-YL-gYv"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LrG-qH-het" secondAttribute="trailing" constant="20" id="2wZ-ab-cCl"/>
                             <constraint firstItem="K2V-hO-Kz5" firstAttribute="top" secondItem="Ley-qF-w1u" secondAttribute="bottom" constant="8" id="5HO-zy-DXq"/>
+                            <constraint firstItem="C2G-Zq-6bh" firstAttribute="top" secondItem="Hed-p6-cq5" secondAttribute="bottom" constant="8" id="5KP-Nl-S9N"/>
                             <constraint firstAttribute="trailing" secondItem="n6j-JQ-b36" secondAttribute="trailing" constant="20" id="5WF-yl-U9E"/>
                             <constraint firstItem="kMX-Le-Pla" firstAttribute="top" secondItem="cLy-zk-bvV" secondAttribute="bottom" constant="16" id="7KV-jt-z0h"/>
                             <constraint firstItem="Ley-qF-w1u" firstAttribute="top" secondItem="n6j-JQ-b36" secondAttribute="bottom" constant="16" id="7i9-2N-ldj"/>
@@ -161,6 +180,7 @@
                             <constraint firstItem="LrG-qH-het" firstAttribute="leading" secondItem="zCr-XH-hAt" secondAttribute="leading" constant="80" id="rW8-Dz-JBB"/>
                             <constraint firstItem="zqK-Ur-M49" firstAttribute="leading" secondItem="miN-zK-UeB" secondAttribute="leading" id="sCo-Ms-Nyp"/>
                             <constraint firstItem="kMX-Le-Pla" firstAttribute="leading" secondItem="miN-zK-UeB" secondAttribute="trailing" constant="8" id="sVD-WW-iJU"/>
+                            <constraint firstItem="C2G-Zq-6bh" firstAttribute="leading" secondItem="Hed-p6-cq5" secondAttribute="leading" id="vrZ-ch-3rP"/>
                             <constraint firstItem="cLy-zk-bvV" firstAttribute="top" secondItem="K2V-hO-Kz5" secondAttribute="bottom" constant="16" id="yGj-XB-Cud"/>
                             <constraint firstItem="cLy-zk-bvV" firstAttribute="leading" secondItem="zCr-XH-hAt" secondAttribute="leading" constant="20" id="zO7-HW-hQn"/>
                         </constraints>
@@ -172,7 +192,7 @@
                 <customObject id="0p2-wI-Dec" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="32v-ae-OOv"/>
             </objects>
-            <point key="canvasLocation" x="1015" y="629"/>
+            <point key="canvasLocation" x="1015" y="656"/>
         </scene>
         <!--Advanced-->
         <scene sceneID="oYh-OZ-UoW">

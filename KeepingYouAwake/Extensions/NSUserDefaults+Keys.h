@@ -18,6 +18,7 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisable
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
+FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyDisableWhenScreenLockedEnabled;
 
 @interface NSUserDefaults (Keys)
 
@@ -57,6 +58,11 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
  Returns YES if Sparkle should check for pre-release updates.
  */
 @property (nonatomic, getter = kya_arePreReleaseUpdatesEnabled) BOOL kya_preReleaseUpdatesEnabled;
+
+/**
+ Returns YES if KYA should disable itself when the screen locks
+ */
+@property (nonatomic, getter = kya_isDisableWhenScreenLockedEnabled) BOOL kya_disableWhenScreenLockedEnabled;
 
 @end
 

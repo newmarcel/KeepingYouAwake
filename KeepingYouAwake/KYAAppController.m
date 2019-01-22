@@ -57,6 +57,7 @@
         
         [self configureBatteryStatus];
         [self configureEventHandler];
+        [self configureScreenLockEvents];
     }
     return self;
 }
@@ -66,6 +67,46 @@
     NSNotificationCenter *center = NSNotificationCenter.defaultCenter;
     [center removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
     [center removeObserver:self name:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
+    
+    
+    NSDistributedNotificationCenter *distCenter = [NSDistributedNotificationCenter defaultCenter];
+    [distCenter removeObserver:self name:@"com.apple.screenIsLocked" object:nil];
+    [distCenter removeObserver:self name:@"com.apple.screenIsUnlocked" object:nil];
+}
+
+- (void)configureScreenLockEvents
+{
+    NSDistributedNotificationCenter *center = [NSDistributedNotificationCenter defaultCenter];
+    [center addObserver:self
+               selector:@selector(screenLocked)
+                   name:@"com.apple.screenIsLocked"
+                 object:nil];
+    
+    [center addObserver:self
+               selector:@selector(screenUnlocked)
+                   name:@"com.apple.screenIsUnlocked"
+                 object:nil];
+}
+
+- (void) screenLocked
+{
+    if(![NSUserDefaults.standardUserDefaults kya_disableWhenScreenLockedEnabled])
+    {
+        return
+    }
+    // if active, disable & store state
+    
+}
+
+- (void) screenUnlocked
+{
+    if(![NSUserDefaults.standardUserDefaults kya_disableWhenScreenLockedEnabled])
+    {
+        return
+    }
+    
+    // if was active, restore state
+    
 }
 
 - (void)awakeFromNib

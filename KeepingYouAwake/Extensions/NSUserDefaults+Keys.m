@@ -18,11 +18,14 @@ NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled = @"info.marc
 NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold = @"info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThreshold";
 NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dierkes.KeepingYouAwake.PreReleaseUpdatesEnabled";
 
+NSString * const KYAUserDefaultsKeyDisableWhenScreenLockedEnabled = @"info.marcel-dierkes.KeepingYouAwake.DisableWhenScreenLockedEnabled";
+
 @implementation NSUserDefaults (Keys)
 @dynamic kya_activateOnLaunch, kya_defaultTimeInterval, kya_notificationsEnabled;
 @dynamic kya_menuBarIconHighlightDisabled;
 @dynamic kya_batteryCapacityThresholdEnabled, kya_batteryCapacityThreshold;
 @dynamic kya_preReleaseUpdatesEnabled;
+@dynamic kya_disableWhenScreenLockedEnabled;
 
 #pragma mark - Activate on Launch
 
@@ -105,6 +108,18 @@ NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dier
 - (void)setKya_preReleaseUpdatesEnabled:(BOOL)preReleaseUpdatesEnabled
 {
     [self setBool:preReleaseUpdatesEnabled forKey:KYAUserDefaultsKeyPreReleaseUpdatesEnabled];
+}
+
+#pragma mark - Disable when screen locks
+
+- (BOOL)kya_isDisableWhenScreenLockedEnabled
+{
+    return [self boolForKey:KYAUserDefaultsKeyDisableWhenScreenLockedEnabled];
+}
+
+- (void)setKya_disableWhenScreenLockedEnabled:(BOOL)disableOnScreenLock
+{
+    [self setBool:disableOnScreenLock forKey:KYAUserDefaultsKeyDisableWhenScreenLockedEnabled];
 }
 
 @end
