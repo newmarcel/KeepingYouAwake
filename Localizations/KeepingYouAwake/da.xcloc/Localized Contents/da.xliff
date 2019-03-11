@@ -196,6 +196,7 @@ Højreklik for at vise menu</target>
       </trans-unit>
       <trans-unit id="8V0-Sq-Cdu.title">
         <source>Updates</source>
+        <target>Opdateringer</target>
         <note>Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu";</note>
       </trans-unit>
       <trans-unit id="AvX-7Q-Bvc.title">
