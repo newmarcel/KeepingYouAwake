@@ -471,7 +471,7 @@
 			attributes = {
 				CLASSPREFIX = KYA;
 				DefaultBuildSystemTypeForWorkspace = Latest;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Marcel Dierkes";
 				TargetAttributes = {
 					DA637B3819F14693004C8838 = {
@@ -501,7 +501,7 @@
 			};
 			buildConfigurationList = DA637B3419F14693004C8838 /* Build configuration list for PBXProject "KeepingYouAwake" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -509,6 +509,14 @@
 				de,
 				fr,
 				"zh-Hant-TW",
+				ko,
+				es,
+				nl,
+				da,
+				tr,
+				zh,
+				pl,
+				pt,
 			);
 			mainGroup = DA637B3019F14693004C8838;
 			productRefGroup = DA637B3A19F14693004C8838 /* Products */;
