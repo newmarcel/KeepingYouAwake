@@ -19,7 +19,6 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 @property (strong, nonatomic) NSTask *caffeinateTask;
 @end
 
-
 @implementation KYASleepWakeTimer
 
 - (instancetype)init
@@ -29,9 +28,12 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     {
         // Terminate all remaining tasks on app quit
         KYA_WEAK weakSelf = self;
-        [NSNotificationCenter.defaultCenter addObserverForName:NSApplicationWillTerminateNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
-            [weakSelf invalidate];
-        }];
+        [NSNotificationCenter.defaultCenter addObserverForName:NSApplicationWillTerminateNotification
+                                                        object:nil
+                                                         queue:nil
+                                                    usingBlock:^(NSNotification *note) {
+                                                        [weakSelf invalidate];
+                                                    }];
     }
     return self;
 }
@@ -49,14 +51,14 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     {
         self.completionBlock = completion;
     }
-    
+
     // Set the fireDate
     self.scheduledTimeInterval = timeInterval;
     if(timeInterval != KYASleepWakeTimeIntervalIndefinite)
     {
         self.fireDate = [NSDate dateWithTimeIntervalSinceNow:timeInterval];
     }
-    
+
     // Spawn caffeinate
     [self spawnCaffeinateTaskForTimeInterval:timeInterval];
 }
@@ -74,7 +76,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     {
         return YES;
     }
-    
+
     return NO;
 }
 
@@ -84,17 +86,17 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 {
     NSMutableArray *arguments = [NSMutableArray new];
     [arguments addObject:@"-di"];
-    
+
     if(timeInterval != KYASleepWakeTimeIntervalIndefinite)
     {
         [arguments addObject:[NSString stringWithFormat:@"-t %.f", timeInterval]];
     }
-    
+
     [arguments addObject:[NSString stringWithFormat:@"-w %i", [[NSProcessInfo processInfo] processIdentifier]]];
-    
+
     [self willChangeValueForKey:@"scheduled"];
     self.caffeinateTask = [NSTask launchedTaskWithLaunchPath:@"/usr/bin/caffeinate" arguments:[arguments copy]];
-    
+
     // Termination Handler
     KYA_WEAK weakSelf = self;
     self.caffeinateTask.terminationHandler = ^(NSTask *task) {
@@ -107,7 +109,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 {
     self.caffeinateTask.terminationHandler = nil;
     [self.caffeinateTask terminate];
-    
+
     [self terminateWithForce:YES];
 }
 
@@ -118,7 +120,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
     self.scheduledTimeInterval = KYASleepWakeTimeIntervalIndefinite;
     self.fireDate = nil;
     [self didChangeValueForKey:@"scheduled"];
-    
+
     if(self.completionBlock)
     {
         KYA_WEAK weakSelf = self;

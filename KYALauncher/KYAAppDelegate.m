@@ -16,10 +16,10 @@
     KYA_AUTO_VAR pathComponents = NSBundle.mainBundle.bundlePath.pathComponents;
     NSRange pathRange = NSMakeRange(0, pathComponents.count - 4);
     pathComponents = [pathComponents subarrayWithRange:pathRange];
-    
+
     KYA_AUTO path = [NSString pathWithComponents:pathComponents];
     [NSWorkspace.sharedWorkspace launchApplication:path];
-    
+
     [NSApplication.sharedApplication terminate:nil];
 }
 

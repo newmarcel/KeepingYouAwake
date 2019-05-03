@@ -39,22 +39,21 @@
     {
         self.sleepWakeTimer = [KYASleepWakeTimer new];
         [self.sleepWakeTimer addObserver:self forKeyPath:@"scheduled" options:NSKeyValueObservingOptionNew context:NULL];
-        
+
         self.statusItemController = [KYAStatusItemController new];
         self.statusItemController.delegate = self;
-        
+
         // Check activate on launch state
         if([self shouldActivateOnLaunch])
         {
             [self activateTimer];
         }
-        
+
         [NSNotificationCenter.defaultCenter addObserver:self
                                                selector:@selector(applicationWillFinishLaunching:)
                                                    name:NSApplicationWillFinishLaunchingNotification
-                                                 object:nil
-         ];
-        
+                                                 object:nil];
+
         [self configureBatteryStatus];
         [self configureEventHandler];
     }
@@ -71,7 +70,7 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    
+
     NSUserNotificationCenter.defaultUserNotificationCenter.delegate = self;
 }
 
@@ -117,7 +116,7 @@
 
 - (void)activateTimer
 {
-    [self activateTimerWithTimeInterval: self.defaultTimeInterval];
+    [self activateTimerWithTimeInterval:self.defaultTimeInterval];
 }
 
 - (void)activateTimerWithTimeInterval:(NSTimeInterval)timeInterval
@@ -127,15 +126,15 @@
     {
         return;
     }
-    
+
     // Check battery overrides and register for capacity changes.
     [self checkAndEnableBatteryOverride];
     if([NSUserDefaults.standardUserDefaults kya_isBatteryCapacityThresholdEnabled])
     {
         [self.batteryStatus registerForCapacityChangesIfNeeded];
     }
-    
-    [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:^(BOOL cancelled) {
+
+    KYA_AUTO timerCompletion = ^(BOOL cancelled) {
         // Post notifications
         if([NSUserDefaults.standardUserDefaults kya_areNotificationsEnabled])
         {
@@ -143,13 +142,14 @@
             n.informativeText = NSLocalizedString(@"Allowing your Mac to go to sleep…", @"Allowing your Mac to go to sleep…");
             [NSUserNotificationCenter.defaultUserNotificationCenter scheduleNotification:n];
         }
-    }];
-    
+    };
+    [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:timerCompletion];
+
     // Post notifications
     if([NSUserDefaults.standardUserDefaults kya_areNotificationsEnabled])
     {
         NSUserNotification *n = [NSUserNotification new];
-        
+
         if(timeInterval == KYASleepWakeTimeIntervalIndefinite)
         {
             n.informativeText = NSLocalizedString(@"Preventing your Mac from going to sleep…", @"Preventing your Mac from going to sleep…");
@@ -160,10 +160,10 @@
             formatter.includesTimeRemainingPhrase = NO;
             NSString *remainingTimeString = [formatter stringFromDate:[NSDate date] toDate:self.sleepWakeTimer.fireDate];
             formatter.includesTimeRemainingPhrase = YES;
-            
+
             n.informativeText = [NSString stringWithFormat:NSLocalizedString(@"Preventing your Mac from going to sleep for\n%@…", @"Preventing your Mac from going to sleep for\n%@…"), remainingTimeString];
         }
-        
+
         [NSUserNotificationCenter.defaultUserNotificationCenter scheduleNotification:n];
     }
 }
@@ -172,7 +172,7 @@
 {
     [self disableBatteryOverride];
     [self.batteryStatus unregisterFromCapacityChanges];
-    
+
     if([self.sleepWakeTimer isScheduled])
     {
         [self.sleepWakeTimer invalidate];
@@ -184,20 +184,19 @@
 - (IBAction)selectTimeInterval:(NSMenuItem *)sender
 {
     [self terminateTimer];
-	
-	if (sender.alternate)
-	{
-		[self setDefaultTimeInterval: sender.tag];
-	}
-	else
-	{
+
+    if(sender.alternate)
+    {
+        [self setDefaultTimeInterval:sender.tag];
+    }
+    else
+    {
         KYA_WEAK weakSelf = self;
-		dispatch_async(dispatch_get_main_queue(), ^{
-			NSTimeInterval seconds = (NSTimeInterval)[sender tag];
-			[weakSelf activateTimerWithTimeInterval:seconds];
-		});
-	}
-	
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSTimeInterval seconds = (NSTimeInterval)[sender tag];
+            [weakSelf activateTimerWithTimeInterval:seconds];
+        });
+    }
 }
 
 - (void)menuNeedsUpdate:(NSMenu *)menu
@@ -206,11 +205,11 @@
     {
         return;
     }
-    
+
     for(NSMenuItem *item in menu.itemArray)
     {
         item.state = NSOffState;
-        
+
         NSTimeInterval seconds = (NSTimeInterval)item.tag;
         if(seconds > 0)
         {
@@ -233,8 +232,7 @@
             {
                 item.hidden = NO;
                 item.title = [[self dateComponentsFormatter] stringFromDate:[NSDate date]
-                                                                     toDate:self.sleepWakeTimer.fireDate
-                              ];
+                                                                     toDate:self.sleepWakeTimer.fireDate];
             }
         }
     }
@@ -248,11 +246,11 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         dateFormatter = [NSDateComponentsFormatter new];
-        dateFormatter.allowedUnits = NSCalendarUnitSecond|NSCalendarUnitMinute|NSCalendarUnitHour;
+        dateFormatter.allowedUnits = NSCalendarUnitSecond | NSCalendarUnitMinute | NSCalendarUnitHour;
         dateFormatter.unitsStyle = NSDateComponentsFormatterUnitsStyleShort;
         dateFormatter.includesTimeRemainingPhrase = YES;
     });
-    
+
     return dateFormatter;
 }
 
@@ -270,7 +268,7 @@
     if(_batteryStatus == nil)
     {
         _batteryStatus = [KYABatteryStatus new];
-        
+
         KYA_WEAK weakSelf = self;
         _batteryStatus.capacityChangeHandler = ^(CGFloat capacity) {
             [weakSelf batteryCapacityDidChange:capacity];
@@ -285,13 +283,12 @@
     {
         return;
     }
-    
+
     [NSNotificationCenter.defaultCenter addObserver:self
                                            selector:@selector(batteryCapacityThresholdDidChange:)
                                                name:kKYABatteryCapacityThresholdDidChangeNotification
-                                             object:nil
-     ];
-    
+                                             object:nil];
+
     // Start receiving battery status changes
     if([NSUserDefaults.standardUserDefaults kya_isBatteryCapacityThresholdEnabled])
     {
@@ -303,7 +300,7 @@
 {
     CGFloat currentCapacity = self.batteryStatus.currentCapacity;
     CGFloat threshold = NSUserDefaults.standardUserDefaults.kya_batteryCapacityThreshold;
-    
+
     self.batteryOverrideEnabled = (currentCapacity <= threshold);
 }
 
@@ -329,7 +326,7 @@
     {
         return;
     }
-    
+
     [self terminateTimer];
 }
 
@@ -340,56 +337,62 @@
     [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self
                                                        andSelector:@selector(handleGetURLEvent:withReplyEvent:)
                                                      forEventClass:kInternetEventClass
-                                                        andEventID:kAEGetURL
-     ];
+                                                        andEventID:kAEGetURL];
 }
 
 - (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)reply
 {
     NSString *value = [event paramDescriptorForKeyword:keyDirectObject].stringValue;
-    
+
     [KYAEventHandler.defaultHandler handleEventForURL:[NSURL URLWithString:value]];
 }
 
 - (void)configureEventHandler
 {
     KYA_WEAK weakSelf = self;
-    [KYAEventHandler.defaultHandler registerActionNamed:@"activate" block:^(KYAEvent *event) {
-        typeof(self) strongSelf = weakSelf;
-        
-        NSDictionary *parameters = event.arguments;
-        NSString *seconds = parameters[@"seconds"];
-        NSString *minutes = parameters[@"minutes"];
-        NSString *hours = parameters[@"hours"];
-        
-        [strongSelf terminateTimer];
-        
-        // Activate indefinitely if there are no parameters
-        if(parameters.count == 0)
-        {
-            [strongSelf activateTimer];
-        }
-        else if(seconds)
-        {
-            [strongSelf activateTimerWithTimeInterval:(NSTimeInterval)ceil(seconds.doubleValue)];
-        }
-        else if(minutes)
-        {
-            [strongSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(ceil(minutes.doubleValue))];
-        }
-        else if(hours)
-        {
-            [strongSelf activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
-        }
-    }];
-    
-    [KYAEventHandler.defaultHandler registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
-        [weakSelf terminateTimer];
-    }];
-    
-    [KYAEventHandler.defaultHandler registerActionNamed:@"toggle" block:^(KYAEvent *event) {
-        [weakSelf.statusItemController toggle];
-    }];
+    [KYAEventHandler.defaultHandler registerActionNamed:@"activate"
+                                                  block:^(KYAEvent *event) {
+                                                      typeof(self) strongSelf = weakSelf;
+                                                      [strongSelf handleActivateActionForEvent:event];
+                                                  }];
+
+    [KYAEventHandler.defaultHandler registerActionNamed:@"deactivate"
+                                                  block:^(KYAEvent *event) {
+                                                      [weakSelf terminateTimer];
+                                                  }];
+
+    [KYAEventHandler.defaultHandler registerActionNamed:@"toggle"
+                                                  block:^(KYAEvent *event) {
+                                                      [weakSelf.statusItemController toggle];
+                                                  }];
+}
+
+- (void)handleActivateActionForEvent:(KYAEvent *)event
+{
+    NSDictionary *parameters = event.arguments;
+    NSString *seconds = parameters[@"seconds"];
+    NSString *minutes = parameters[@"minutes"];
+    NSString *hours = parameters[@"hours"];
+
+    [self terminateTimer];
+
+    // Activate indefinitely if there are no parameters
+    if(parameters.count == 0)
+    {
+        [self activateTimer];
+    }
+    else if(seconds)
+    {
+        [self activateTimerWithTimeInterval:(NSTimeInterval)ceil(seconds.doubleValue)];
+    }
+    else if(minutes)
+    {
+        [self activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(ceil(minutes.doubleValue))];
+    }
+    else if(hours)
+    {
+        [self activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
+    }
 }
 
 #pragma mark - KYAStatusItemControllerDelegate

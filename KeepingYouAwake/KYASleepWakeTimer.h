@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define KYA_MINUTES(m) (m*60.0f)
-#define KYA_HOURS(h) (h*3600.0f)
+#define KYA_MINUTES(m) (m * 60.0f)
+#define KYA_HOURS(h) (h * 3600.0f)
 
 #define KYA_10SECS 10.0f
 #define KYA_5MINS KYA_MINUTES(5)
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 FOUNDATION_EXPORT NSTimeInterval const KYASleepWakeTimeIntervalIndefinite;
 
-typedef void(^KYASleepWakeTimerCompletionBlock)(BOOL cancelled);
+typedef void (^KYASleepWakeTimerCompletionBlock)(BOOL cancelled);
 
 @interface KYASleepWakeTimer : NSObject
 
@@ -43,7 +43,7 @@ typedef void(^KYASleepWakeTimerCompletionBlock)(BOOL cancelled);
 /**
  Returns YES if a task is scheduled and running.
  */
-@property (readonly, nonatomic, getter = isScheduled) BOOL scheduled;
+@property (readonly, nonatomic, getter=isScheduled) BOOL scheduled;
 
 /**
  An optional completion block when the task finishes at the fireDate

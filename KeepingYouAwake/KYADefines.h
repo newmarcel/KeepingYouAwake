@@ -14,9 +14,9 @@
 #define KYA_WEAK __weak __auto_type
 
 #if DEBUG
-    #define KYALog(_args...) NSLog(_args)
+#define KYALog(_args...) NSLog(_args)
 #else
-    #define KYALog(_args...)
+#define KYALog(_args...)
 #endif
 
 #endif /* KYA_DEFINES_H */

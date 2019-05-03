@@ -31,7 +31,7 @@
 - (IBAction)showPreferencesWindow:(id)sender
 {
     [NSApplication.sharedApplication activateIgnoringOtherApps:YES];
-    
+
     [self.preferencesWindowController showWindow:sender];
     self.preferencesWindowController.window.delegate = self;
 }
