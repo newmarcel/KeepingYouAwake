@@ -7,8 +7,10 @@
 //
 
 #import "KYAActivationDuration.h"
+#import "KYADefines.h"
+#import "KYALocalizedStrings.h"
 
-NSTimeInterval const KYAActivationDurationIndefinite = 0.0;
+NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
 
 @interface KYAActivationDuration ()
 @property (nonatomic, readwrite) NSTimeInterval seconds;
@@ -39,10 +41,10 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0;
     
     if(interval == 0)
     {
-        return NSLocalizedString(@"Indefinitely", @"Indefinitely");
+        return KYA_L10N_INDEFINITELY;
     }
     
-    NSDateComponentsFormatter *formatter = [self sharedDateComponentsFormatter];
+    KYA_AUTO formatter = [self sharedDateComponentsFormatter];
     formatter.allowedUnits = self.displayUnit;
     
     return [formatter stringFromTimeInterval:interval];
@@ -80,17 +82,17 @@ static inline NSTimeInterval KYAHoursToSeconds(NSInteger hours)
     return (NSTimeInterval)(hours * 3600.0f);
 }
 
-KYAActivationDuration * KYADurationForSeconds(NSInteger seconds)
+KYAActivationDuration *KYADurationForSeconds(NSInteger seconds)
 {
     return [[KYAActivationDuration alloc] initWithSeconds:seconds];
 }
 
-KYAActivationDuration * KYADurationForMinutes(NSInteger minutes)
+KYAActivationDuration *KYADurationForMinutes(NSInteger minutes)
 {
     return [[KYAActivationDuration alloc] initWithSeconds:KYAMinutesToSeconds(minutes) displayUnit:NSCalendarUnitMinute];
 }
 
-KYAActivationDuration * KYADurationForHours(NSInteger hours)
+KYAActivationDuration *KYADurationForHours(NSInteger hours)
 {
     return [[KYAActivationDuration alloc] initWithSeconds:KYAHoursToSeconds(hours) displayUnit:NSCalendarUnitHour];
 }

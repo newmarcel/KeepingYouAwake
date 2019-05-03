@@ -7,6 +7,8 @@
 //
 
 #import "KYAAdvancedPreferencesViewController.h"
+#import "KYADefines.h"
+#import "KYALocalizedStrings.h"
 #import "KYAPreference.h"
 #import "KYABatteryStatus.h"
 #import "NSUserDefaults+Keys.h"
@@ -41,13 +43,13 @@
 
 - (void)configureAdvancedPreferences
 {
-    NSMutableArray *preferences = [NSMutableArray new];
+    KYA_AUTO preferences = [NSMutableArray new];
     
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Enable experimental Notification Center integration", @"Enable experimental Notification Center integration")
+    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_ENABLE_EXPERIMENTAL_NOTIFICATION_CENTER_INTEGRATION
                                                     defaultsKey:KYAUserDefaultsKeyNotificationsEnabled
                             ]];
     
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Disable menu bar icon highlight color", @"Disable menu bar icon highlight color")
+    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_DISABLE_MENU_BAR_ICON_HIGHLIGHT_COLOR
                                                     defaultsKey:KYAUserDefaultsKeyMenuBarIconHighlightDisabled
                             ]];
     
@@ -66,7 +68,7 @@
     [self.tableView reloadData];
     
     // Disable battery status integration
-    NSString *keyPath = [NSString stringWithFormat:@"values.%@", KYAUserDefaultsKeyBatteryCapacityThresholdEnabled];
+    KYA_AUTO_VAR keyPath = [NSString stringWithFormat:@"values.%@", KYAUserDefaultsKeyBatteryCapacityThresholdEnabled];
     [self.defaultsController setValue:@NO forKeyPath:keyPath];
     keyPath = [NSString stringWithFormat:@"values.%@", KYAUserDefaultsKeyBatteryCapacityThreshold];
     [self.defaultsController setValue:@10.0f forKeyPath:keyPath];

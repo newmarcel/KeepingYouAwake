@@ -8,6 +8,7 @@
 
 #import "KYAAppController.h"
 #import "KYADefines.h"
+#import "KYALocalizedStrings.h"
 #import "KYASleepWakeTimer.h"
 #import "KYAStatusItemController.h"
 #import "KYAEventHandler.h"
@@ -139,7 +140,7 @@
         if([NSUserDefaults.standardUserDefaults kya_areNotificationsEnabled])
         {
             NSUserNotification *n = [NSUserNotification new];
-            n.informativeText = NSLocalizedString(@"Allowing your Mac to go to sleep…", @"Allowing your Mac to go to sleep…");
+            n.informativeText = KYA_L10N_ALLOWING_YOUR_MAC_TO_GO_TO_SLEEP;
             [NSUserNotificationCenter.defaultUserNotificationCenter scheduleNotification:n];
         }
     };
@@ -152,7 +153,7 @@
 
         if(timeInterval == KYASleepWakeTimeIntervalIndefinite)
         {
-            n.informativeText = NSLocalizedString(@"Preventing your Mac from going to sleep…", @"Preventing your Mac from going to sleep…");
+            n.informativeText = KYA_L10N_PREVENTING_YOUR_MAC_FROM_GOING_TO_SLEEP;
         }
         else
         {
@@ -161,7 +162,7 @@
             NSString *remainingTimeString = [formatter stringFromDate:[NSDate date] toDate:self.sleepWakeTimer.fireDate];
             formatter.includesTimeRemainingPhrase = YES;
 
-            n.informativeText = [NSString stringWithFormat:NSLocalizedString(@"Preventing your Mac from going to sleep for\n%@…", @"Preventing your Mac from going to sleep for\n%@…"), remainingTimeString];
+            n.informativeText = KYA_L10N_PREVENTING_SLEEP_FOR_REMAINING_TIME(remainingTimeString);
         }
 
         [NSUserNotificationCenter.defaultUserNotificationCenter scheduleNotification:n];
