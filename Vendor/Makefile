@@ -5,7 +5,7 @@ DIST_DIR = Sparkle
 CODESIGN_IDENTITY = Developer ID Application
 CODESIGN_CMD = codesign --verbose --force -o runtime --sign "$(CODESIGN_IDENTITY)"
 
-SPARKLE_COMMIT = b1c3b313f53c95a91c8adc07b991ff9a306e6cf8 # ui-separation-and-xpc
+SPARKLE_COMMIT = 2f9c7217196b1f5d3202ae63bb8682d6e01052a2 # ui-separation-and-xpc
 
 default: $(DIST_DIR)
 
@@ -32,5 +32,4 @@ $(DIST_DIR): $(REPO_DIR)
 	$(RM) -r $(DIST_DIR)/Sparkle.framework/Versions/A/Resources/Updater.app
 
 	# Codesign XPC Services
-	patch $(DIST_DIR)/bin/codesign_xpc < codesign_xpc_hardened.patch
-	$(DIST_DIR)/bin/codesign_xpc "$(CODESIGN_IDENTITY)" $(DIST_DIR)/XPCServices/*.xpc
+	$(DIST_DIR)/bin/codesign_embedded_executable "$(CODESIGN_IDENTITY)" $(DIST_DIR)/XPCServices/*.xpc
