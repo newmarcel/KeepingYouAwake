@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="uZF-hQ-SQu">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="uZF-hQ-SQu">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -408,13 +408,13 @@ Gw
                                 </buttonCell>
                             </button>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Oe6-sl-b5l">
-                                <rect key="frame" x="136" y="58" width="145" height="26"/>
+                                <rect key="frame" x="136" y="58" width="145" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="UWW-bh-a79"/>
                                 </constraints>
                                 <popUpButtonCell key="cell" type="push" title="Seconds" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="9n8-tn-BIt" id="PZH-s8-vCm">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="menu"/>
                                     <menu key="menu" id="bJZ-c6-5VS">
                                         <items>
                                             <menuItem title="Seconds" state="on" id="9n8-tn-BIt"/>
@@ -484,7 +484,7 @@ DQ
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn identifier="" width="447" minWidth="40" maxWidth="1000" id="3I4-YG-sj8">
+                                                <tableColumn width="447" minWidth="40" maxWidth="1000" id="3I4-YG-sj8">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -524,17 +524,17 @@ DQ
                                 <constraints>
                                     <constraint firstAttribute="height" constant="244" id="leM-7D-ftC"/>
                                 </constraints>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="gOS-DD-4LT">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="gOS-DD-4LT">
                                     <rect key="frame" x="1" y="102" width="81" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="aoq-EJ-z2w">
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="aoq-EJ-z2w">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                             <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FNp-hu-ko4">
-                                <rect key="frame" x="330" y="18" width="102" height="24"/>
+                                <rect key="frame" x="329" y="18" width="103" height="24"/>
                                 <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="momentary" id="DE6-qp-FZU">
                                     <font key="font" metaFont="system"/>
                                     <segments>
@@ -546,15 +546,28 @@ DQ
                                     <segue destination="eX7-cz-8ud" kind="sheet" id="U0g-3s-D49"/>
                                 </connections>
                             </segmentedControl>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DNN-SY-2mN">
+                                <rect key="frame" x="14" y="13" width="138" height="32"/>
+                                <buttonCell key="cell" type="push" title="Reset to Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2s2-Ei-lnG">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="resetAdvancedPreferences:" target="5bL-cI-YIY" id="Q3V-cg-FHl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="FNp-hu-ko4" firstAttribute="top" secondItem="tjG-h1-qPf" secondAttribute="bottom" constant="16" id="1ud-fp-r0h"/>
                             <constraint firstAttribute="bottom" secondItem="FNp-hu-ko4" secondAttribute="bottom" constant="20" id="EW3-pE-fnO"/>
+                            <constraint firstItem="FNp-hu-ko4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DNN-SY-2mN" secondAttribute="trailing" constant="8" id="JXr-wd-4rh"/>
                             <constraint firstItem="tjG-h1-qPf" firstAttribute="trailing" secondItem="XNN-Mj-Jpg" secondAttribute="trailing" constant="1" id="UtS-LS-QvH"/>
                             <constraint firstAttribute="leading" secondItem="tjG-h1-qPf" secondAttribute="leading" constant="1" id="VXc-7O-GMb"/>
                             <constraint firstAttribute="trailing" secondItem="FNp-hu-ko4" secondAttribute="trailing" constant="20" id="Wsl-Kl-Hiu"/>
                             <constraint firstItem="FNp-hu-ko4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XNN-Mj-Jpg" secondAttribute="leading" constant="20" id="YbJ-Mj-zfE"/>
                             <constraint firstAttribute="top" secondItem="tjG-h1-qPf" secondAttribute="top" constant="1" id="ZYC-zE-hO2"/>
+                            <constraint firstItem="FNp-hu-ko4" firstAttribute="bottom" secondItem="DNN-SY-2mN" secondAttribute="bottom" id="jqB-Lg-d9K"/>
+                            <constraint firstItem="DNN-SY-2mN" firstAttribute="leading" secondItem="XNN-Mj-Jpg" secondAttribute="leading" constant="20" id="raQ-N2-VyD"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -800,8 +813,8 @@ DQ
         <image name="NSApplicationIcon" width="32" height="32"/>
         <image name="NSFolderSmart" width="32" height="32"/>
         <image name="NSNetwork" width="32" height="32"/>
-        <image name="NSRemoveTemplate" width="11" height="11"/>
         <image name="NSPreferencesGeneral" width="32" height="32"/>
         <image name="NSRefreshFreestandingTemplate" width="14" height="14"/>
+        <image name="NSRemoveTemplate" width="11" height="11"/>
     </resources>
 </document>
