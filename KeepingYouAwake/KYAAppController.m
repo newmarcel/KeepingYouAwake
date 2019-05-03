@@ -63,7 +63,7 @@
 
 - (void)dealloc
 {
-    NSNotificationCenter *center = NSNotificationCenter.defaultCenter;
+    KYA_AUTO center = NSNotificationCenter.defaultCenter;
     [center removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
     [center removeObserver:self name:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
 }
@@ -108,7 +108,7 @@
 
 - (IBAction)toggleActivateOnLaunch:(id)sender
 {
-    NSUserDefaults *defaults = NSUserDefaults.standardUserDefaults;
+    KYA_AUTO defaults = NSUserDefaults.standardUserDefaults;
     defaults.kya_activateOnLaunch = ![defaults kya_isActivatedOnLaunch];
     [defaults synchronize];
 }
@@ -157,9 +157,9 @@
         }
         else
         {
-            NSDateComponentsFormatter *formatter = [self dateComponentsFormatter];
+            KYA_AUTO formatter = [self dateComponentsFormatter];
             formatter.includesTimeRemainingPhrase = NO;
-            NSString *remainingTimeString = [formatter stringFromDate:[NSDate date] toDate:self.sleepWakeTimer.fireDate];
+            KYA_AUTO remainingTimeString = [formatter stringFromDate:[NSDate date] toDate:self.sleepWakeTimer.fireDate];
             formatter.includesTimeRemainingPhrase = YES;
 
             n.informativeText = KYA_L10N_PREVENTING_SLEEP_FOR_REMAINING_TIME(remainingTimeString);
@@ -335,17 +335,17 @@
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification
 {
-    [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self
-                                                       andSelector:@selector(handleGetURLEvent:withReplyEvent:)
-                                                     forEventClass:kInternetEventClass
-                                                        andEventID:kAEGetURL];
+    KYA_AUTO eventManager = [NSAppleEventManager sharedAppleEventManager];
+    [eventManager setEventHandler:self
+                      andSelector:@selector(handleGetURLEvent:withReplyEvent:)
+                    forEventClass:kInternetEventClass
+                       andEventID:kAEGetURL];
 }
 
 - (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)reply
 {
-    NSString *value = [event paramDescriptorForKeyword:keyDirectObject].stringValue;
-
-    [KYAEventHandler.defaultHandler handleEventForURL:[NSURL URLWithString:value]];
+    KYA_AUTO parameter = [event paramDescriptorForKeyword:keyDirectObject].stringValue;
+    [KYAEventHandler.defaultHandler handleEventForURL:[NSURL URLWithString:parameter]];
 }
 
 - (void)configureEventHandler
@@ -370,7 +370,7 @@
 
 - (void)handleActivateActionForEvent:(KYAEvent *)event
 {
-    NSDictionary *parameters = event.arguments;
+    KYA_AUTO parameters = event.arguments;
     NSString *seconds = parameters[@"seconds"];
     NSString *minutes = parameters[@"minutes"];
     NSString *hours = parameters[@"hours"];
