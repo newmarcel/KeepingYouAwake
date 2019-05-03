@@ -82,7 +82,7 @@
     KYA_AUTO arguments = [NSMutableDictionary dictionary];
     for(NSURLQueryItem *queryItem in URLComponents.queryItems)
     {
-        KYA_AUTO value = queryItem.value;
+        KYA_AUTO_VAR value = queryItem.value;
         if(!value)
         {
             // fall back to an empty string if the value is nil

@@ -9,7 +9,8 @@
 #ifndef KYA_DEFINES_H
 #define KYA_DEFINES_H
 
-#define KYA_AUTO __auto_type
+#define KYA_AUTO __auto_type const
+#define KYA_AUTO_VAR __auto_type
 #define KYA_WEAK __weak __auto_type
 
 #if DEBUG
