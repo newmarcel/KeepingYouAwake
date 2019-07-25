@@ -79,7 +79,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
     <body>
       <trans-unit id="3tu-5G-YQt.title">
         <source>1 hour</source>
-        <target>Eine Stunde</target>
+        <target>1 Stunde</target>
         <note>Class = "NSMenuItem"; title = "1 hour"; ObjectID = "3tu-5G-YQt";</note>
       </trans-unit>
       <trans-unit id="5EU-sH-Q12.title">
