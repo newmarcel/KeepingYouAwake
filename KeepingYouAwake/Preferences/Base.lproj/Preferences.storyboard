@@ -410,7 +410,7 @@ Gw
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Oe6-sl-b5l">
                                 <rect key="frame" x="136" y="58" width="145" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="UWW-bh-a79"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="140" id="UWW-bh-a79"/>
                                 </constraints>
                                 <popUpButtonCell key="cell" type="push" title="Seconds" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="9n8-tn-BIt" id="PZH-s8-vCm">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -466,21 +466,21 @@ DQ
         <!--Durations-->
         <scene sceneID="A42-FH-FE3">
             <objects>
-                <viewController title="Durations" id="IAM-at-0nC" sceneMemberID="viewController">
+                <viewController title="Durations" id="IAM-at-0nC" customClass="KYADurationPreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="XNN-Mj-Jpg">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjG-h1-qPf">
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="25" horizontalPageScroll="10" verticalLineScroll="25" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjG-h1-qPf">
                                 <rect key="frame" x="-1" y="57" width="452" height="244"/>
                                 <clipView key="contentView" id="fl9-cG-eWb">
                                     <rect key="frame" x="1" y="1" width="450" height="242"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="SaD-JI-vLS">
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="medium" viewBased="YES" id="SaD-JI-vLS">
                                             <rect key="frame" x="0.0" y="0.0" width="450" height="242"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <size key="intercellSpacing" width="3" height="2"/>
+                                            <size key="intercellSpacing" width="0.0" height="1"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
@@ -496,28 +496,12 @@ DQ
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                    <prototypeCellViews>
-                                                        <tableCellView id="AAm-Le-gDa">
-                                                            <rect key="frame" x="1" y="1" width="447" height="17"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                            <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4PA-8h-fi3">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="447" height="17"/>
-                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="mOA-vq-ZYY">
-                                                                        <font key="font" metaFont="system"/>
-                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                    </textFieldCell>
-                                                                </textField>
-                                                            </subviews>
-                                                            <connections>
-                                                                <outlet property="textField" destination="4PA-8h-fi3" id="ThG-q4-pCf"/>
-                                                            </connections>
-                                                        </tableCellView>
-                                                    </prototypeCellViews>
                                                 </tableColumn>
                                             </tableColumns>
+                                            <connections>
+                                                <outlet property="dataSource" destination="IAM-at-0nC" id="452-vA-r0H"/>
+                                                <outlet property="delegate" destination="IAM-at-0nC" id="bbV-2v-Q3B"/>
+                                            </connections>
                                         </tableView>
                                     </subviews>
                                 </clipView>
@@ -543,7 +527,7 @@ DQ
                                     </segments>
                                 </segmentedCell>
                                 <connections>
-                                    <segue destination="eX7-cz-8ud" kind="sheet" id="U0g-3s-D49"/>
+                                    <segue destination="eX7-cz-8ud" kind="sheet" identifier="showAddDuration" id="U0g-3s-D49"/>
                                 </connections>
                             </segmentedControl>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DNN-SY-2mN">
@@ -553,7 +537,7 @@ DQ
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="resetAdvancedPreferences:" target="5bL-cI-YIY" id="Q3V-cg-FHl"/>
+                                    <action selector="resetToDefaults:" target="IAM-at-0nC" id="DyF-g4-PYp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -570,6 +554,10 @@ DQ
                             <constraint firstItem="DNN-SY-2mN" firstAttribute="leading" secondItem="XNN-Mj-Jpg" secondAttribute="leading" constant="20" id="raQ-N2-VyD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="FNp-hu-ko4" id="7sm-C4-o6v"/>
+                        <outlet property="tableView" destination="SaD-JI-vLS" id="vo0-ud-e8I"/>
+                    </connections>
                 </viewController>
                 <customObject id="NAb-gs-WFW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

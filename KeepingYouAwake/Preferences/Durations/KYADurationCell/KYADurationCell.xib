@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView id="5WY-9j-GXf" customClass="KYADurationCell">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="24"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-Ej-2W4">
+                    <rect key="frame" x="14" y="4" width="288" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="4 Hours 30 Minutes" id="hzf-iJ-Wss">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Qmt-Ej-2W4" firstAttribute="top" secondItem="5WY-9j-GXf" secondAttribute="top" constant="3" id="Vqk-s6-NY2"/>
+                <constraint firstAttribute="bottom" secondItem="Qmt-Ej-2W4" secondAttribute="bottom" constant="4" id="XL1-0K-wAt"/>
+                <constraint firstItem="Qmt-Ej-2W4" firstAttribute="leading" secondItem="5WY-9j-GXf" secondAttribute="leading" constant="16" id="mqW-un-fCR"/>
+                <constraint firstAttribute="trailing" secondItem="Qmt-Ej-2W4" secondAttribute="trailing" constant="16" id="t1l-dd-x71"/>
+            </constraints>
+            <connections>
+                <outlet property="textLabel" destination="Qmt-Ej-2W4" id="hhd-Kp-9Ft"/>
+            </connections>
+            <point key="canvasLocation" x="79" y="84.5"/>
+        </tableCellView>
+    </objects>
+</document>
