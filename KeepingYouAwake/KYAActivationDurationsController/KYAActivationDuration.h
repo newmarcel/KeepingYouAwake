@@ -56,7 +56,8 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
  *
  *  @return A new instance.
  */
-- (instancetype)initWithSeconds:(NSTimeInterval)seconds displayUnit:(NSCalendarUnit)displayUnit NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithSeconds:(NSTimeInterval)seconds
+                    displayUnit:(NSCalendarUnit)displayUnit NS_DESIGNATED_INITIALIZER;
 
 @end
 
