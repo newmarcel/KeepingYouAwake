@@ -63,6 +63,11 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 
 #pragma mark - Convenience Helper Functions
 
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 /**
  *  Returns a KYAActivationDuration object for the supplied number of seconds.
  *
@@ -70,7 +75,7 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
  *
  *  @return A new KYAActivationDuration instance.
  */
-KYAActivationDuration * KYADurationForSeconds(NSInteger seconds);
+KYAActivationDuration *KYADurationForSeconds(NSInteger seconds);
 
 /**
  *  Returns a KYAActivationDuration object for the supplied number of minutes formatted as minutes.
@@ -79,7 +84,7 @@ KYAActivationDuration * KYADurationForSeconds(NSInteger seconds);
  *
  *  @return A new KYAActivationDuration instance.
  */
-KYAActivationDuration * KYADurationForMinutes(NSInteger minutes);
+KYAActivationDuration *KYADurationForMinutes(NSInteger minutes);
 
 /**
  *  Returns a KYAActivationDuration object for the supplied number of hours formatted as hours.
@@ -88,6 +93,10 @@ KYAActivationDuration * KYADurationForMinutes(NSInteger minutes);
  *
  *  @return A new KYAActivationDuration instance.
  */
-KYAActivationDuration * KYADurationForHours(NSInteger hours);
+KYAActivationDuration *KYADurationForHours(NSInteger hours);
+    
+#ifdef __cplusplus
+}
+#endif
 
 NS_ASSUME_NONNULL_END
