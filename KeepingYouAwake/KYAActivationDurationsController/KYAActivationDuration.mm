@@ -50,7 +50,7 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
         return KYA_L10N_INDEFINITELY;
     }
     
-    KYA_AUTO formatter = [self sharedDateComponentsFormatter];
+    auto formatter = [self sharedDateComponentsFormatter];
     formatter.allowedUnits = self.displayUnit;
     
     return [formatter stringFromTimeInterval:interval];
@@ -59,6 +59,33 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"%@ (%@)", super.description, self.localizedTitle];
+}
+
+#pragma mark - Hashable & Equatable
+
+- (NSUInteger)hash
+{
+    return (NSUInteger)((uint64_t)self.seconds ^ (uint64_t)self.displayUnit);
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if(object == nil) { return NO; }
+    if(object == self) { return YES; }
+    if([object isKindOfClass:[self class]])
+    {
+        return [self isEqualToActivationDuration:(decltype(self))object];
+    }
+    
+    return NO;
+}
+
+- (BOOL)isEqualToActivationDuration:(KYAActivationDuration *)other
+{
+    NSParameterAssert(other);
+    
+    return self.seconds == other.seconds
+        && self.displayUnit == other.displayUnit;
 }
 
 #pragma mark - Localized Formatter
