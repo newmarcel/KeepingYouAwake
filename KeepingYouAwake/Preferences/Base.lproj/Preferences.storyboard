@@ -33,7 +33,7 @@
                 <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="GMl-BM-cxm" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" image="NSPreferencesGeneral" id="sEc-4w-F7u" userLabel="General"/>
-                        <tabViewItem image="NSFolderSmart" id="xhX-HJ-Srg" userLabel="Duration"/>
+                        <tabViewItem image="ToolbarDurations" id="xhX-HJ-Srg" userLabel="Duration"/>
                         <tabViewItem image="NSAdvanced" id="mWq-RG-yCf" userLabel="Advanced"/>
                         <tabViewItem image="NSNetwork" id="TE5-ti-aQo" userLabel="Updates"/>
                         <tabViewItem image="NSApplicationIcon" id="7SI-Ao-IyM" userLabel="About"/>
@@ -799,10 +799,10 @@ DQ
         <image name="NSAddTemplate" width="11" height="11"/>
         <image name="NSAdvanced" width="32" height="32"/>
         <image name="NSApplicationIcon" width="32" height="32"/>
-        <image name="NSFolderSmart" width="32" height="32"/>
         <image name="NSNetwork" width="32" height="32"/>
         <image name="NSPreferencesGeneral" width="32" height="32"/>
         <image name="NSRefreshFreestandingTemplate" width="14" height="14"/>
         <image name="NSRemoveTemplate" width="11" height="11"/>
+        <image name="ToolbarDurations" width="32" height="32"/>
     </resources>
 </document>
