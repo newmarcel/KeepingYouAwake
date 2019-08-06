@@ -19,6 +19,9 @@
 /* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "i17-n2-vfw"; */
 "i17-n2-vfw.title" = "50 %";
 
+/* Class = "NSViewController"; title = "Durations"; ObjectID = "IAM-at-0nC"; */
+"IAM-at-0nC.title" = "Aktivierungsdauer";
+
 /* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r"; */
 "IOU-Hs-S4r.title" = "Beim Start aktivieren";
 

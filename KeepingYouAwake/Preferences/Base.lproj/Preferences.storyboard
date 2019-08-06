@@ -463,10 +463,10 @@ DQ
             </objects>
             <point key="canvasLocation" x="630" y="1672"/>
         </scene>
-        <!--Durations-->
+        <!--Activation Duration-->
         <scene sceneID="A42-FH-FE3">
             <objects>
-                <viewController title="Durations" id="IAM-at-0nC" customClass="KYADurationPreferencesViewController" sceneMemberID="viewController">
+                <viewController title="Activation Duration" id="IAM-at-0nC" customClass="KYADurationPreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="XNN-Mj-Jpg">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
