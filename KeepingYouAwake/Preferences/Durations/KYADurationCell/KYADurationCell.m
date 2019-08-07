@@ -41,7 +41,7 @@
     
     CGFloat size = self.textLabel.font.pointSize;
     NSFontWeight weight = isDefaultDuration ? NSFontWeightSemibold : NSFontWeightRegular;
-    self.textLabel.font = [NSFont systemFontOfSize:size weight:weight];
+    self.textLabel.font = [NSFont monospacedDigitSystemFontOfSize:size weight:weight];
 }
 
 - (BOOL)isDefaultDuration
