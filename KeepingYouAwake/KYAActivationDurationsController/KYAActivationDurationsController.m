@@ -8,6 +8,7 @@
 
 #import "KYAActivationDurationsController.h"
 #import "KYADefines.h"
+#include "NSUserDefaults+Keys.h"
 
 NSNotificationName const KYAActivationDurationsControllerActivationDurationsDidChangeNotification = @"KYAActivationDurationsControllerActivationDurationsDidChangeNotification";
 
@@ -103,9 +104,13 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 
 - (BOOL)removeActivationDurationAtIndex:(NSUInteger)index
 {
-    KYA_AUTO durations = self.activationDurations;
+    KYA_AUTO durations = self.activationDurationsIncludingInfinite;
     KYA_AUTO duration = durations[index];
     if(duration == nil)
+    {
+        return NO;
+    }
+    if(duration.seconds == KYAActivationDurationIndefinite)
     {
         return NO;
     }
@@ -118,6 +123,29 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     
     KYA_AUTO notification = KYAActivationDurationsControllerActivationDurationsDidChangeNotification;
     [NSNotificationCenter.defaultCenter postNotificationName:notification object:nil];
+}
+
+#pragma mark - Default Activation Duration
+
+- (void)setDefaultActivationDuration:(KYAActivationDuration *)duration
+{
+    NSParameterAssert(duration);
+    
+    NSAssert([self.activationDurations containsObject:duration], @"The passed duration must be contained in self.activationDurations.");
+    
+    self.userDefaults.kya_defaultTimeInterval = duration.seconds;
+}
+
+- (KYAActivationDuration *)defaultActivationDuration
+{
+    NSTimeInterval seconds = self.userDefaults.kya_defaultTimeInterval;
+    
+    KYA_AUTO defaultPredicate = [NSPredicate predicateWithFormat:@"seconds == %@",
+                                 @(seconds)
+                                 ];
+    KYA_AUTO results = [self.activationDurations filteredArrayUsingPredicate:defaultPredicate];
+    
+    return results.firstObject;
 }
 
 #pragma mark - User Defaults Handling

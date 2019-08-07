@@ -73,12 +73,12 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return (NSInteger)self.activationsController.activationDurations.count;
+    return (NSInteger)self.activationsController.activationDurationsIncludingInfinite.count;
 }
 
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    return self.activationsController.activationDurations[(NSUInteger)row];
+    return self.activationsController.activationDurationsIncludingInfinite[(NSUInteger)row];
 }
 
 #pragma mark - NSTableViewDelegate
@@ -88,6 +88,8 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     KYA_AUTO cell = [KYADurationCell dequeueFromTableView:tableView owner:self];
     KYA_AUTO duration = (KYAActivationDuration *)[self tableView:tableView objectValueForTableColumn:tableColumn row:row];
     cell.textLabel.stringValue = duration.localizedTitle;
+    
+    BOOL isDefault = [self.activationsController.defaultActivationDuration isEqualToActivationDuration:duration];
     
     return cell;
 }

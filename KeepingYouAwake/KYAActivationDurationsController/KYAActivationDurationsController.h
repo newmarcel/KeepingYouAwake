@@ -16,6 +16,7 @@ FOUNDATION_EXPORT NSNotificationName const KYAActivationDurationsControllerActiv
 @interface KYAActivationDurationsController : NSObject
 @property (class, nonatomic, readonly) KYAActivationDurationsController *sharedController;
 @property (nonatomic, readonly) NSUserDefaults *userDefaults;
+@property (nonatomic, nullable) KYAActivationDuration *defaultActivationDuration;
 
 @property (copy, nonatomic, readonly) NSArray<KYAActivationDuration *> *activationDurations;
 @property (copy, nonatomic, readonly) NSArray<KYAActivationDuration *> *activationDurationsIncludingInfinite;
