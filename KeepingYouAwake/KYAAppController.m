@@ -15,10 +15,12 @@
 #import "KYABatteryStatus.h"
 #import "KYABatteryCapacityThreshold.h"
 #import "NSUserDefaults+Keys.h"
+#import "KYAActivationDurationsMenuController.h"
 
 @interface KYAAppController () <NSUserNotificationCenterDelegate, KYAStatusItemControllerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
 @property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
+@property (nonatomic) KYAActivationDurationsMenuController *menuController;
 
 // Battery Status
 @property (nonatomic) KYABatteryStatus *batteryStatus;
@@ -27,6 +29,7 @@
 // Menu
 @property (weak, nonatomic) IBOutlet NSMenu *menu;
 @property (weak, nonatomic) IBOutlet NSMenu *timerMenu;
+@property (weak, nonatomic) IBOutlet NSMenuItem *activationDurationsMenuItem;
 @end
 
 @implementation KYAAppController
@@ -57,6 +60,8 @@
 
         [self configureBatteryStatus];
         [self configureEventHandler];
+        
+        self.menuController = [KYAActivationDurationsMenuController new];
     }
     return self;
 }
@@ -73,6 +78,9 @@
     [super awakeFromNib];
 
     NSUserNotificationCenter.defaultUserNotificationCenter.delegate = self;
+    
+    [self.menu setSubmenu:self.menuController.menu
+                  forItem:self.activationDurationsMenuItem];
 }
 
 #pragma mark - KVO

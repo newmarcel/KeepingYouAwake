@@ -11,8 +11,12 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark - Generic
+
 #define KYA_L10N_OK NSLocalizedString(@"OK", @"OK")
 #define KYA_L10N_CANCEL NSLocalizedString(@"Cancel", @"Cancel")
+
+#pragma mark -
 
 #define KYA_L10N_ALLOWING_YOUR_MAC_TO_GO_TO_SLEEP NSLocalizedString(@"Allowing your Mac to go to sleep…", @"Allowing your Mac to go to sleep…")
 #define KYA_L10N_PREVENTING_YOUR_MAC_FROM_GOING_TO_SLEEP NSLocalizedString(@"Preventing your Mac from going to sleep…", @"Preventing your Mac from going to sleep…")
@@ -30,5 +34,7 @@
 
 #define KYA_L10N_DURATIONS_ALERT_REALLY_RESET_TITLE NSLocalizedString(@"Reset Activation Durations", @"Reset Activation Durations")
 #define KYA_L10N_DURATIONS_ALERT_REALLY_RESET_MESSAGE NSLocalizedString(@"Do you really want to reset the activation durations to the default values?", @"Do you really want to reset the activation durations to the default values?")
+
+#define KYA_L10N_SET_DEFAULT_ACTIVATION_DURATION NSLocalizedString(@"Set Default: %@", @"Set Default: %@")
 
 #endif /* KYA_LOCALIZED_STRINGS_H */
