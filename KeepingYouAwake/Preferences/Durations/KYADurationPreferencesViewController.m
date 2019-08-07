@@ -11,6 +11,8 @@
 #import "KYADurationCell.h"
 #import "KYAActivationDurationsController.h"
 
+static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"showAddDuration";
+
 @interface KYADurationPreferencesViewController ()
 @property (nonatomic) KYAActivationDurationsController *activationsController;
 @end
@@ -27,20 +29,44 @@
      addObserver:self
      selector:@selector(activationDurationsDidChange:)
      name:KYAActivationDurationsControllerActivationDurationsDidChangeNotification
-     object:nil
-     ];
+     object:nil];
     
     [KYADurationCell registerInTableView:self.tableView];
 }
+
+#pragma mark - Actions
+
+- (IBAction)resetToDefaults:(id)sender
+{
+    [self.activationsController resetActivationDurations];
+}
+
+- (IBAction)toggleSegmentedControl:(NSSegmentedControl *)segmentedControl
+{
+    NSInteger index = segmentedControl.selectedSegment;
+    if(index == 0)
+    {
+        [self removeSelectedDuration];
+    }
+    else if(index == 1)
+    {
+        [self performSegueWithIdentifier:KYAShowAddDurationSegueIdentifier sender:nil];
+    }
+}
+
+#pragma mark -
 
 - (BOOL)canAddDurations
 {
     return NO;
 }
 
-- (IBAction)resetToDefaults:(id)sender
+- (void)removeSelectedDuration
 {
-    [self.activationsController resetActivationDurations];
+    NSInteger selectedRow = self.tableView.selectedRow;
+    if(selectedRow < 0) { return; }
+    
+    [self.activationsController removeActivationDurationAtIndex:(NSUInteger)selectedRow];
 }
 
 #pragma mark - NSTableViewDataSource

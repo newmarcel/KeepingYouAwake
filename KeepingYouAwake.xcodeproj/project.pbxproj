@@ -450,9 +450,9 @@
 		DAB0701322EC8F06004D5BCA /* KYADurationCell */ = {
 			isa = PBXGroup;
 			children = (
-				DAB0700B22EC795F004D5BCA /* KYADurationCell.xib */,
 				DAB0700822EC794F004D5BCA /* KYADurationCell.h */,
 				DAB0700922EC794F004D5BCA /* KYADurationCell.m */,
+				DAB0700B22EC795F004D5BCA /* KYADurationCell.xib */,
 			);
 			path = KYADurationCell;
 			sourceTree = "<group>";

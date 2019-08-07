@@ -33,6 +33,8 @@ FOUNDATION_EXPORT NSNotificationName const KYAActivationDurationsControllerActiv
 - (BOOL)removeActivationDuration:(KYAActivationDuration *)activationDuration
                            error:(NSError *_Nullable *)error;
 
+- (BOOL)removeActivationDurationAtIndex:(NSUInteger)index;
+
 - (void)resetActivationDurations;
 
 @end

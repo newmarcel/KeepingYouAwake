@@ -101,6 +101,17 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     return YES;
 }
 
+- (BOOL)removeActivationDurationAtIndex:(NSUInteger)index
+{
+    KYA_AUTO durations = self.activationDurations;
+    KYA_AUTO duration = durations[index];
+    if(duration == nil)
+    {
+        return NO;
+    }
+    return [self removeActivationDuration:duration error:nil];
+}
+
 - (void)didChange
 {
     [self saveToUserDefaults];

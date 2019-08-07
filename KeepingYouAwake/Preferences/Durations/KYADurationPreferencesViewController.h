@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) BOOL canAddDurations;
 
 - (IBAction)resetToDefaults:(nullable id)sender;
+- (IBAction)toggleSegmentedControl:(NSSegmentedControl *)segmentedControl;
 
 @end
 
