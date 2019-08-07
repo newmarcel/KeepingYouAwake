@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KYADurationCell : NSTableCellView
 @property (weak, nonatomic) IBOutlet NSTextField *textLabel;
+@property (weak, nonatomic) IBOutlet NSTextField *defaultLabel;
+@property (nonatomic) BOOL isDefaultDuration;
 
 + (void)registerInTableView:(NSTableView *)tableView;
 + (instancetype)dequeueFromTableView:(NSTableView *)tableView

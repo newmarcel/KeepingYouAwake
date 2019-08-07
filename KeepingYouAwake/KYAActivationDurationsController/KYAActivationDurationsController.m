@@ -49,6 +49,13 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 - (void)resetActivationDurations
 {
     [self restoreDefaultDurations];
+    
+    // Reset the default duration if it got removed
+    if(![self.storedActivationDurations containsObject:self.defaultActivationDuration])
+    {
+        self.defaultActivationDuration = KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite);
+    }
+    
     [self didChange];
 }
 
@@ -97,6 +104,13 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
         return NO;
     }
     [self.storedActivationDurations removeObject:activationDuration];
+    
+    // Reset the default duration if it got removed
+    if(![self.storedActivationDurations containsObject:self.defaultActivationDuration])
+    {
+        self.defaultActivationDuration = KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite);
+    }
+    
     [self didChange];
     
     return YES;
@@ -117,6 +131,19 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     return [self removeActivationDuration:duration error:nil];
 }
 
+- (void)setActivationDurationAsDefaultAtIndex:(NSUInteger)index
+{
+    KYA_AUTO durations = self.activationDurationsIncludingInfinite;
+    KYA_AUTO duration = durations[index];
+    if(duration == nil)
+    {
+        return;
+    }
+    
+    self.defaultActivationDuration = duration;
+    [self didChange];
+}
+
 - (void)didChange
 {
     [self saveToUserDefaults];
@@ -131,7 +158,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 {
     NSParameterAssert(duration);
     
-    NSAssert([self.activationDurations containsObject:duration], @"The passed duration must be contained in self.activationDurations.");
+    NSAssert([self.activationDurationsIncludingInfinite containsObject:duration], @"The passed duration must be contained in self.activationDurations.");
     
     self.userDefaults.kya_defaultTimeInterval = duration.seconds;
 }
@@ -139,6 +166,10 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 - (KYAActivationDuration *)defaultActivationDuration
 {
     NSTimeInterval seconds = self.userDefaults.kya_defaultTimeInterval;
+    if(seconds == KYAActivationDurationIndefinite)
+    {
+        return KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite);
+    }
     
     KYA_AUTO defaultPredicate = [NSPredicate predicateWithFormat:@"seconds == %@",
                                  @(seconds)

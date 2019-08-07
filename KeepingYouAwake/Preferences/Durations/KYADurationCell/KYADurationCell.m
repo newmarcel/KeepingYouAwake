@@ -33,4 +33,20 @@
     return [tableView makeViewWithIdentifier:[self identifier] owner:owner];
 }
 
+#pragma mark - Default Duration
+
+- (void)setIsDefaultDuration:(BOOL)isDefaultDuration
+{
+    self.defaultLabel.hidden = !isDefaultDuration;
+    
+    CGFloat size = self.textLabel.font.pointSize;
+    NSFontWeight weight = isDefaultDuration ? NSFontWeightSemibold : NSFontWeightRegular;
+    self.textLabel.font = [NSFont systemFontOfSize:size weight:weight];
+}
+
+- (BOOL)isDefaultDuration
+{
+    return ![self.defaultLabel isHidden];
+}
+
 @end

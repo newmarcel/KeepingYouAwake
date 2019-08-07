@@ -13,10 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface KYADurationPreferencesViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
 @property (weak, nonatomic) IBOutlet NSTableView *tableView;
 @property (weak, nonatomic) IBOutlet NSSegmentedControl *segmentedControl;
-@property (nonatomic, readonly) BOOL canAddDurations;
+@property (weak, nonatomic) IBOutlet NSButton *resetButton;
+@property (weak, nonatomic) IBOutlet NSButton *setDefaultButton;
 
-- (IBAction)resetToDefaults:(nullable id)sender;
 - (IBAction)toggleSegmentedControl:(NSSegmentedControl *)segmentedControl;
+
+- (IBAction)setDefaultDuration:(nullable id)sender;
+- (IBAction)resetToDefaults:(nullable id)sender;
 
 @end
 

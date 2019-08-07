@@ -13,22 +13,33 @@
             <rect key="frame" x="0.0" y="0.0" width="316" height="24"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-Ej-2W4">
-                    <rect key="frame" x="14" y="4" width="288" height="17"/>
+                <textField horizontalHuggingPriority="300" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-Ej-2W4">
+                    <rect key="frame" x="14" y="4" width="236" height="17"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="4 Hours 30 Minutes" id="hzf-iJ-Wss">
                         <font key="font" usesAppearanceFont="YES"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <textField hidden="YES" horizontalHuggingPriority="800" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ABW-sz-EkK">
+                    <rect key="frame" x="254" y="4" width="48" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Default" id="lc5-K1-x4Z">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <constraints>
+                <constraint firstItem="ABW-sz-EkK" firstAttribute="firstBaseline" secondItem="Qmt-Ej-2W4" secondAttribute="firstBaseline" id="Csz-k1-LR6"/>
                 <constraint firstItem="Qmt-Ej-2W4" firstAttribute="top" secondItem="5WY-9j-GXf" secondAttribute="top" constant="3" id="Vqk-s6-NY2"/>
                 <constraint firstAttribute="bottom" secondItem="Qmt-Ej-2W4" secondAttribute="bottom" constant="4" id="XL1-0K-wAt"/>
+                <constraint firstItem="ABW-sz-EkK" firstAttribute="leading" secondItem="Qmt-Ej-2W4" secondAttribute="trailing" constant="8" id="mgJ-jF-rmv"/>
                 <constraint firstItem="Qmt-Ej-2W4" firstAttribute="leading" secondItem="5WY-9j-GXf" secondAttribute="leading" constant="16" id="mqW-un-fCR"/>
-                <constraint firstAttribute="trailing" secondItem="Qmt-Ej-2W4" secondAttribute="trailing" constant="16" id="t1l-dd-x71"/>
+                <constraint firstAttribute="trailing" secondItem="ABW-sz-EkK" secondAttribute="trailing" constant="16" id="oKe-jK-DZh"/>
             </constraints>
             <connections>
+                <outlet property="defaultLabel" destination="ABW-sz-EkK" id="WIH-ie-hBV"/>
                 <outlet property="textLabel" destination="Qmt-Ej-2W4" id="hhd-Kp-9Ft"/>
             </connections>
             <point key="canvasLocation" x="79" y="84.5"/>

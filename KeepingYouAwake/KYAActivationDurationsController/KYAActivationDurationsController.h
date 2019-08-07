@@ -36,6 +36,8 @@ FOUNDATION_EXPORT NSNotificationName const KYAActivationDurationsControllerActiv
 
 - (BOOL)removeActivationDurationAtIndex:(NSUInteger)index;
 
+- (void)setActivationDurationAsDefaultAtIndex:(NSUInteger)index;
+
 - (void)resetActivationDurations;
 
 @end

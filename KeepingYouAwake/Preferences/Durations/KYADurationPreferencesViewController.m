@@ -8,6 +8,7 @@
 
 #import "KYADurationPreferencesViewController.h"
 #import "KYADefines.h"
+#import "KYALocalizedStrings.h"
 #import "KYADurationCell.h"
 #import "KYAActivationDurationsController.h"
 
@@ -32,14 +33,11 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
      object:nil];
     
     [KYADurationCell registerInTableView:self.tableView];
+    
+    [self updateViewForSelectedRow];
 }
 
 #pragma mark - Actions
-
-- (IBAction)resetToDefaults:(id)sender
-{
-    [self.activationsController resetActivationDurations];
-}
 
 - (IBAction)toggleSegmentedControl:(NSSegmentedControl *)segmentedControl
 {
@@ -54,12 +52,34 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     }
 }
 
-#pragma mark -
-
-- (BOOL)canAddDurations
+- (IBAction)resetToDefaults:(nullable id)sender
 {
-    return NO;
+    KYA_AUTO alert = [NSAlert new];
+    alert.alertStyle = NSAlertStyleWarning;
+    alert.icon = [NSImage imageNamed:NSImageNameCaution];
+    
+    alert.informativeText = KYA_L10N_DURATIONS_ALERT_REALLY_RESET_MESSAGE;
+    KYA_AUTO okButton = [alert addButtonWithTitle:KYA_L10N_DURATIONS_ALERT_REALLY_RESET_TITLE];
+    okButton.tag = NSModalResponseOK;
+    [alert addButtonWithTitle:KYA_L10N_CANCEL];
+    
+    [alert beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse returnCode) {
+        if(returnCode == NSModalResponseOK)
+        {
+            [self.activationsController resetActivationDurations];
+        }
+    }];
 }
+
+- (IBAction)setDefaultDuration:(nullable id)sender
+{
+    NSInteger selectedRow = self.tableView.selectedRow;
+    if(selectedRow < 0) { return; }
+    
+    [self.activationsController setActivationDurationAsDefaultAtIndex:(NSUInteger)selectedRow];
+}
+
+#pragma mark -
 
 - (void)removeSelectedDuration
 {
@@ -90,8 +110,22 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     cell.textLabel.stringValue = duration.localizedTitle;
     
     BOOL isDefault = [self.activationsController.defaultActivationDuration isEqualToActivationDuration:duration];
+    cell.isDefaultDuration = isDefault;
     
     return cell;
+}
+
+- (void)tableViewSelectionDidChange:(NSNotification *)notification
+{
+    [self updateViewForSelectedRow];
+}
+
+- (void)updateViewForSelectedRow
+{
+    NSInteger row = self.tableView.selectedRow;
+    BOOL enabled = (row >= 0);
+    self.setDefaultButton.enabled = enabled;
+    [self.segmentedControl setEnabled:enabled forSegment:0];
 }
 
 #pragma mark - KYAActivationDurationsController Did Change Notification
@@ -99,6 +133,7 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
 - (void)activationDurationsDidChange:(id)sender
 {
     [self.tableView reloadData];
+    [self tableViewSelectionDidChange:sender];
 }
 
 @end

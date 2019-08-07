@@ -600,6 +600,7 @@ DQ
                                                 </tableColumn>
                                             </tableColumns>
                                             <connections>
+                                                <action trigger="doubleAction" selector="setDefaultDuration:" target="IAM-at-0nC" id="aMF-7V-vhG"/>
                                                 <outlet property="dataSource" destination="IAM-at-0nC" id="452-vA-r0H"/>
                                                 <outlet property="delegate" destination="IAM-at-0nC" id="bbV-2v-Q3B"/>
                                             </connections>
@@ -618,22 +619,9 @@ DQ
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FNp-hu-ko4">
-                                <rect key="frame" x="329" y="18" width="103" height="24"/>
-                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="momentary" id="DE6-qp-FZU">
-                                    <font key="font" metaFont="system"/>
-                                    <segments>
-                                        <segment image="NSRemoveTemplate" width="48"/>
-                                        <segment image="NSAddTemplate" width="48" tag="1"/>
-                                    </segments>
-                                </segmentedCell>
-                                <connections>
-                                    <action selector="toggleSegmentedControl:" target="IAM-at-0nC" id="ryL-Br-dZu"/>
-                                </connections>
-                            </segmentedControl>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DNN-SY-2mN">
-                                <rect key="frame" x="14" y="13" width="138" height="32"/>
-                                <buttonCell key="cell" type="push" title="Reset to Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2s2-Ei-lnG">
+                                <rect key="frame" x="14" y="13" width="85" height="32"/>
+                                <buttonCell key="cell" type="push" title="Reset…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2s2-Ei-lnG">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -641,22 +629,49 @@ DQ
                                     <action selector="resetToDefaults:" target="IAM-at-0nC" id="DyF-g4-PYp"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iSl-R8-iau">
+                                <rect key="frame" x="253" y="13" width="108" height="32"/>
+                                <buttonCell key="cell" type="push" title="Set Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EMN-wI-vLT">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="setDefaultDuration:" target="IAM-at-0nC" id="sFL-7s-P2J"/>
+                                </connections>
+                            </button>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FNp-hu-ko4">
+                                <rect key="frame" x="361" y="18" width="71" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="separated" trackingMode="momentary" id="DE6-qp-FZU">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment image="NSRemoveTemplate" width="32"/>
+                                        <segment image="NSAddTemplate" width="32" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="toggleSegmentedControl:" target="IAM-at-0nC" id="ryL-Br-dZu"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="FNp-hu-ko4" firstAttribute="top" secondItem="tjG-h1-qPf" secondAttribute="bottom" constant="16" id="1ud-fp-r0h"/>
-                            <constraint firstAttribute="bottom" secondItem="FNp-hu-ko4" secondAttribute="bottom" constant="20" id="EW3-pE-fnO"/>
-                            <constraint firstItem="FNp-hu-ko4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DNN-SY-2mN" secondAttribute="trailing" constant="8" id="JXr-wd-4rh"/>
+                            <constraint firstItem="FNp-hu-ko4" firstAttribute="top" secondItem="tjG-h1-qPf" secondAttribute="bottom" constant="16" id="3Ic-pZ-oKi"/>
+                            <constraint firstItem="FNp-hu-ko4" firstAttribute="leading" secondItem="iSl-R8-iau" secondAttribute="trailing" constant="8" id="GsT-Cs-Oxc"/>
+                            <constraint firstAttribute="bottom" secondItem="FNp-hu-ko4" secondAttribute="bottom" constant="20" id="KyT-3E-dlo"/>
                             <constraint firstItem="tjG-h1-qPf" firstAttribute="trailing" secondItem="XNN-Mj-Jpg" secondAttribute="trailing" constant="1" id="UtS-LS-QvH"/>
                             <constraint firstAttribute="leading" secondItem="tjG-h1-qPf" secondAttribute="leading" constant="1" id="VXc-7O-GMb"/>
-                            <constraint firstAttribute="trailing" secondItem="FNp-hu-ko4" secondAttribute="trailing" constant="20" id="Wsl-Kl-Hiu"/>
-                            <constraint firstItem="FNp-hu-ko4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XNN-Mj-Jpg" secondAttribute="leading" constant="20" id="YbJ-Mj-zfE"/>
                             <constraint firstAttribute="top" secondItem="tjG-h1-qPf" secondAttribute="top" constant="1" id="ZYC-zE-hO2"/>
-                            <constraint firstItem="FNp-hu-ko4" firstAttribute="bottom" secondItem="DNN-SY-2mN" secondAttribute="bottom" id="jqB-Lg-d9K"/>
+                            <constraint firstItem="iSl-R8-iau" firstAttribute="top" secondItem="tjG-h1-qPf" secondAttribute="bottom" constant="16" id="dJQ-Zc-9tM"/>
+                            <constraint firstAttribute="trailing" secondItem="FNp-hu-ko4" secondAttribute="trailing" constant="20" id="dT5-zg-yOf"/>
+                            <constraint firstAttribute="bottom" secondItem="iSl-R8-iau" secondAttribute="bottom" constant="20" id="eVH-FP-RJV"/>
+                            <constraint firstItem="iSl-R8-iau" firstAttribute="firstBaseline" secondItem="DNN-SY-2mN" secondAttribute="firstBaseline" id="gdq-Jq-gr0"/>
+                            <constraint firstItem="iSl-R8-iau" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DNN-SY-2mN" secondAttribute="trailing" constant="16" id="gwD-g3-HKC"/>
                             <constraint firstItem="DNN-SY-2mN" firstAttribute="leading" secondItem="XNN-Mj-Jpg" secondAttribute="leading" constant="20" id="raQ-N2-VyD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resetButton" destination="DNN-SY-2mN" id="zNe-h4-24y"/>
                         <outlet property="segmentedControl" destination="FNp-hu-ko4" id="7sm-C4-o6v"/>
+                        <outlet property="setDefaultButton" destination="iSl-R8-iau" id="kE8-oa-FaI"/>
                         <outlet property="tableView" destination="SaD-JI-vLS" id="vo0-ud-e8I"/>
                         <segue destination="eX7-cz-8ud" kind="sheet" identifier="showAddDuration" id="wQY-AI-vkn"/>
                     </connections>
