@@ -11,6 +11,8 @@
 
 NSNotificationName const KYAActivationDurationsControllerActivationDurationsDidChangeNotification = @"KYAActivationDurationsControllerActivationDurationsDidChangeNotification";
 
+static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingYouAwake.Durations";
+
 @interface KYAActivationDurationsController ()
 @property (nonatomic, readwrite) NSUserDefaults *userDefaults;
 @property (nonatomic) NSMutableArray<KYAActivationDuration *> *storedActivationDurations;
@@ -37,11 +39,19 @@ NSNotificationName const KYAActivationDurationsControllerActivationDurationsDidC
     if(self)
     {
         self.userDefaults = userDefaults;
+        
+        [self loadFromUserDefaults];
     }
     return self;
 }
 
 - (void)resetActivationDurations
+{
+    [self restoreDefaultDurations];
+    [self didChange];
+}
+
+- (void)restoreDefaultDurations
 {
     KYA_AUTO defaults = @[
                           KYADurationForMinutes(5), KYADurationForMinutes(10),
@@ -49,8 +59,6 @@ NSNotificationName const KYAActivationDurationsControllerActivationDurationsDidC
                           KYADurationForHours(1), KYADurationForHours(2), KYADurationForHours(5)
                           ];
     self.storedActivationDurations = [NSMutableArray arrayWithArray:defaults];
-    KYA_AUTO notificationName = KYAActivationDurationsControllerActivationDurationsDidChangeNotification;
-    [NSNotificationCenter.defaultCenter postNotificationName:notificationName object:nil];
 }
 
 - (NSArray<KYAActivationDuration *> *)activationDurations
@@ -95,7 +103,76 @@ NSNotificationName const KYAActivationDurationsControllerActivationDurationsDidC
 
 - (void)didChange
 {
+    [self saveToUserDefaults];
     
+    KYA_AUTO notification = KYAActivationDurationsControllerActivationDurationsDidChangeNotification;
+    [NSNotificationCenter.defaultCenter postNotificationName:notification object:nil];
+}
+
+#pragma mark - User Defaults Handling
+
+- (void)loadFromUserDefaults
+{
+    // Load without triggering didChange
+    KYA_AUTO data = [self.userDefaults dataForKey:KYADefaultsKeyDurations];
+    NSArray *loadedDurations;
+    if(data != nil)
+    {
+        if(@available(macOS 10.13, *))
+        {
+            NSError *error;
+            KYA_AUTO classes = [NSSet setWithObjects:[NSArray class], [KYAActivationDuration class], nil];
+            loadedDurations = [NSKeyedUnarchiver unarchivedObjectOfClasses:classes
+                                                                  fromData:data
+                                                                     error:&error];
+            if(error != nil)
+            {
+                KYALog(@"Failed to unarchive durations %@", error.userInfo);
+            }
+        }
+        else
+        {
+            loadedDurations = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        }
+    }
+    
+    if(loadedDurations == nil || loadedDurations.count == 0)
+    {
+        [self restoreDefaultDurations];
+        [self saveToUserDefaults];
+    }
+    else
+    {
+        self.storedActivationDurations = [NSMutableArray arrayWithArray:loadedDurations];
+        
+        KYALog(@"Loaded durations from user defaults: %@", loadedDurations);
+    }
+}
+
+- (void)saveToUserDefaults
+{
+    NSAssert(self.storedActivationDurations != nil, @"The stored durations should never be nil.");
+    
+    NSData *data;
+    if(@available(macOS 10.13, *))
+    {
+        NSError *error;
+        data = [NSKeyedArchiver archivedDataWithRootObject:self.storedActivationDurations
+                                     requiringSecureCoding:YES
+                                                     error:&error];
+        if(error != nil)
+        {
+            KYALog(@"Failed to archive durations %@", error.userInfo);
+            return;
+        }
+    }
+    else
+    {
+        data = [NSKeyedArchiver archivedDataWithRootObject:self.storedActivationDurations];
+    }
+    [self.userDefaults setObject:data forKey:KYADefaultsKeyDurations];
+    
+    KYALog(@"Saved durations to user defaults: %@", self.storedActivationDurations);
 }
 
 @end

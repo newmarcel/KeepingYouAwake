@@ -18,7 +18,7 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 /**
  *  The object representation of an sleep wake timer activation duration.
  */
-@interface KYAActivationDuration : NSObject
+@interface KYAActivationDuration : NSObject <NSSecureCoding>
 
 /**
  *  An activation duration. 0 seconds represent KYAActivationDurationIndefinite.
@@ -35,6 +35,7 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
  */
 @property (nonatomic, readonly) NSString *localizedTitle;
 
++ (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
 
 /**

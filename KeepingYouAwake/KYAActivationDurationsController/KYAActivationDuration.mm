@@ -61,6 +61,32 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
     return [NSString stringWithFormat:@"%@ (%@)", super.description, self.localizedTitle];
 }
 
+#pragma mark - NSSecureCoding
+
++ (BOOL)supportsSecureCoding
+{
+    return YES;
+}
+
+#pragma mark - NSCoding
+
+#define kCodingKeySeconds @"KYASeconds"
+#define kCodingKeyUnit @"KYAUnit"
+
+- (instancetype)initWithCoder:(NSCoder *)decoder
+{
+    NSTimeInterval seconds = [decoder decodeDoubleForKey:kCodingKeySeconds];
+    NSCalendarUnit unit = (NSCalendarUnit)[decoder decodeIntegerForKey:kCodingKeyUnit];
+    
+    return [self initWithSeconds:seconds displayUnit:unit];
+}
+
+- (void)encodeWithCoder:(NSCoder *)encoder
+{
+    [encoder encodeDouble:self.seconds forKey:kCodingKeySeconds];
+    [encoder encodeInteger:(NSInteger)self.displayUnit forKey:kCodingKeyUnit];
+}
+
 #pragma mark - Hashable & Equatable
 
 - (NSUInteger)hash

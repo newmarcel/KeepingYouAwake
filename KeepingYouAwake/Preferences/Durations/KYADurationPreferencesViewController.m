@@ -9,17 +9,10 @@
 #import "KYADurationPreferencesViewController.h"
 #import "KYADefines.h"
 #import "KYADurationCell.h"
-
-@interface KYADuration : NSObject
-@property (nonatomic) NSTimeInterval timeInterval;
-@property (nonatomic) NSString *localizedString;
-+ (instancetype)new NS_UNAVAILABLE;
-- (instancetype)initWithTimeInterval:(NSTimeInterval)timeInterval;
-- (instancetype)init NS_UNAVAILABLE;
-@end
+#import "KYAActivationDurationsController.h"
 
 @interface KYADurationPreferencesViewController ()
-@property (nonatomic) NSMutableArray<KYADuration *> *durations;
+@property (nonatomic) KYAActivationDurationsController *activationsController;
 @end
 
 @implementation KYADurationPreferencesViewController
@@ -28,10 +21,16 @@
 {
     [super viewDidLoad];
     
+    self.activationsController = KYAActivationDurationsController.sharedController;
+    
+    [NSNotificationCenter.defaultCenter
+     addObserver:self
+     selector:@selector(activationDurationsDidChange:)
+     name:KYAActivationDurationsControllerActivationDurationsDidChangeNotification
+     object:nil
+     ];
+    
     [KYADurationCell registerInTableView:self.tableView];
-    
-    self.durations = [NSMutableArray new];
-    
 }
 
 - (BOOL)canAddDurations
@@ -41,25 +40,19 @@
 
 - (IBAction)resetToDefaults:(id)sender
 {
-    self.durations = [@[
-                        [[KYADuration alloc] initWithTimeInterval:3600],
-                        [[KYADuration alloc] initWithTimeInterval:14400],
-                        [[KYADuration alloc] initWithTimeInterval:28800],
-                        [[KYADuration alloc] initWithTimeInterval:9630],
-                        ] mutableCopy];
-    [self.tableView reloadData];
+    [self.activationsController resetActivationDurations];
 }
 
 #pragma mark - NSTableViewDataSource
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return (NSInteger)self.durations.count;
+    return (NSInteger)self.activationsController.activationDurations.count;
 }
 
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    return self.durations[(NSUInteger)row];
+    return self.activationsController.activationDurations[(NSUInteger)row];
 }
 
 #pragma mark - NSTableViewDelegate
@@ -67,44 +60,17 @@
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
     KYA_AUTO cell = [KYADurationCell dequeueFromTableView:tableView owner:self];
-    
-    KYA_AUTO duration = (KYADuration *)[self tableView:tableView objectValueForTableColumn:tableColumn row:row];
-    
-    cell.textLabel.stringValue = duration.localizedString;
+    KYA_AUTO duration = (KYAActivationDuration *)[self tableView:tableView objectValueForTableColumn:tableColumn row:row];
+    cell.textLabel.stringValue = duration.localizedTitle;
     
     return cell;
 }
 
-@end
+#pragma mark - KYAActivationDurationsController Did Change Notification
 
-@implementation KYADuration
-
-- (instancetype)initWithTimeInterval:(NSTimeInterval)timeInterval
+- (void)activationDurationsDidChange:(id)sender
 {
-    self = [super init];
-    if(self)
-    {
-        self.timeInterval = timeInterval;
-    }
-    return self;
-}
-
-- (NSDateComponentsFormatter *)dateComponentsFormatter
-{
-    static NSDateComponentsFormatter *dateFormatter;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        dateFormatter = [NSDateComponentsFormatter new];
-        dateFormatter.allowedUnits = NSCalendarUnitSecond | NSCalendarUnitMinute | NSCalendarUnitHour;
-        dateFormatter.unitsStyle = NSDateComponentsFormatterUnitsStyleFull;
-    });
-    
-    return dateFormatter;
-}
-
-- (NSString *)localizedString
-{
-    return [[self dateComponentsFormatter] stringFromTimeInterval:self.timeInterval];
+    [self.tableView reloadData];
 }
 
 @end
