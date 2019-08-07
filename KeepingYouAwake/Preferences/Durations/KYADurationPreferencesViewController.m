@@ -52,6 +52,11 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     }
 }
 
+- (IBAction)removeDuration:(id)sender
+{
+    [self removeSelectedDuration];
+}
+
 - (IBAction)resetToDefaults:(nullable id)sender
 {
     KYA_AUTO alert = [NSAlert new];

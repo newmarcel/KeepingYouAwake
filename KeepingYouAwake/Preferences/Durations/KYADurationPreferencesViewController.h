@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet NSButton *setDefaultButton;
 
 - (IBAction)toggleSegmentedControl:(NSSegmentedControl *)segmentedControl;
+- (IBAction)removeDuration:(id)sender;
 
 - (IBAction)setDefaultDuration:(nullable id)sender;
 - (IBAction)resetToDefaults:(nullable id)sender;

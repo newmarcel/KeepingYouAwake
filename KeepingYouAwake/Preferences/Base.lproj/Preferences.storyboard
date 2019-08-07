@@ -603,6 +603,7 @@ DQ
                                                 <action trigger="doubleAction" selector="setDefaultDuration:" target="IAM-at-0nC" id="aMF-7V-vhG"/>
                                                 <outlet property="dataSource" destination="IAM-at-0nC" id="452-vA-r0H"/>
                                                 <outlet property="delegate" destination="IAM-at-0nC" id="bbV-2v-Q3B"/>
+                                                <outlet property="menu" destination="bD0-ZU-ycU" id="3Ty-r5-OaD"/>
                                             </connections>
                                         </tableView>
                                     </subviews>
@@ -634,6 +635,8 @@ DQ
                                 <buttonCell key="cell" type="push" title="Set Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EMN-wI-vLT">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent">d</string>
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="setDefaultDuration:" target="IAM-at-0nC" id="sFL-7s-P2J"/>
@@ -644,8 +647,8 @@ DQ
                                 <segmentedCell key="cell" borderStyle="border" alignment="left" style="separated" trackingMode="momentary" id="DE6-qp-FZU">
                                     <font key="font" metaFont="system"/>
                                     <segments>
-                                        <segment image="NSRemoveTemplate" width="32"/>
-                                        <segment image="NSAddTemplate" width="32" tag="1"/>
+                                        <segment toolTip="Remove" image="NSRemoveTemplate" width="32"/>
+                                        <segment toolTip="Add" image="NSAddTemplate" width="32" tag="1"/>
                                     </segments>
                                 </segmentedCell>
                                 <connections>
@@ -677,6 +680,24 @@ DQ
                     </connections>
                 </viewController>
                 <customObject id="NAb-gs-WFW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <menu id="bD0-ZU-ycU">
+                    <items>
+                        <menuItem title="Set Default" keyEquivalent="d" id="iZe-2E-hEE">
+                            <connections>
+                                <action selector="setDefaultDuration:" target="IAM-at-0nC" id="5Jp-6J-5dS"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Remove" id="f4N-sw-1MQ">
+                            <string key="keyEquivalent" base64-UTF8="YES">
+CA
+</string>
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="removeDuration:" target="IAM-at-0nC" id="RFy-CE-wi3"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
             </objects>
             <point key="canvasLocation" x="630" y="1302"/>
         </scene>
