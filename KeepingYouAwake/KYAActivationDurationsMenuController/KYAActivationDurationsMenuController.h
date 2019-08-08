@@ -30,9 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)activationDurationsMenuController:(KYAActivationDurationsMenuController *)controller
               didSelectActivationDuration:(KYAActivationDuration *)activationDuration;
-
-- (void)activationDurationsMenuControllerShouldEditActivationDurations:(KYAActivationDurationsMenuController *)controller;
-
 @end
 
 NS_ASSUME_NONNULL_END

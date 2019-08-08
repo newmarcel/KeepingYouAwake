@@ -56,17 +56,6 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
     self.activationDurationsController.defaultActivationDuration = results.firstObject;
 }
 
-#pragma mark -
-
-- (void)handleEdit:(id)sender
-{
-    KYA_AUTO delegate = self.delegate;
-    if([delegate respondsToSelector:@selector(activationDurationsMenuControllerShouldEditActivationDurations:)])
-    {
-        [delegate activationDurationsMenuControllerShouldEditActivationDurations:self];
-    }
-}
-
 #pragma mark - NSMenuDelegate
 
 - (void)menuNeedsUpdate:(NSMenu *)menu
@@ -116,9 +105,6 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
             }
         }
     }
-    
-    [menu addItem:NSMenuItem.separatorItem];
-    [menu addItem:[self menuItemForEdit]];
 }
 
 - (NSAttributedString *)attributedStringForMenuItemTitle:(NSString *)title isDefault:(BOOL)isDefault
@@ -159,14 +145,6 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
                                                    action:nil
                                             keyEquivalent:@""];
     menuItem.tag = KYAMenuItemRemainingTimeTag;
-    return menuItem;
-}
-
-- (NSMenuItem *)menuItemForEdit
-{
-    KYA_AUTO menuItem = [[NSMenuItem alloc] initWithTitle:KYA_L10N_EDIT_MENU_ITEM_TITLE action:@selector(handleEdit:) keyEquivalent:@"e"];
-    menuItem.keyEquivalentModifierMask = NSEventModifierFlagCommand;
-    menuItem.target = self;
     return menuItem;
 }
 
