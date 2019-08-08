@@ -161,6 +161,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     NSAssert([self.activationDurationsIncludingInfinite containsObject:duration], @"The passed duration must be contained in self.activationDurations.");
     
     self.userDefaults.kya_defaultTimeInterval = duration.seconds;
+    [self.userDefaults synchronize];
 }
 
 - (KYAActivationDuration *)defaultActivationDuration
@@ -241,6 +242,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
         data = [NSKeyedArchiver archivedDataWithRootObject:self.storedActivationDurations];
     }
     [self.userDefaults setObject:data forKey:KYADefaultsKeyDurations];
+    [self.userDefaults synchronize];
     
     KYALog(@"Saved durations to user defaults: %@", self.storedActivationDurations);
 }
