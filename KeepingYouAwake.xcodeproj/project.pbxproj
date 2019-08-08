@@ -16,6 +16,7 @@
 		DA0ADE7121CBFCA700D34B9D /* org.sparkle-project.InstallerStatus.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6D21CBFC9700D34B9D /* org.sparkle-project.InstallerStatus.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */; };
 		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
+		DA39208122FC12E70058F0C2 /* NSDate+RemainingTime.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39208022FC12E70058F0C2 /* NSDate+RemainingTime.m */; };
 		DA46C1EE1BDCDFB00050357C /* NSUserDefaults+Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */; };
 		DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.mm */; };
 		DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */; };
@@ -121,6 +122,8 @@
 		DA249E281F9B7211006BCD2C /* KYADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADefines.h; sourceTree = "<group>"; };
 		DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAMenuBarIcon.h; sourceTree = "<group>"; };
 		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
+		DA39207F22FC12E70058F0C2 /* NSDate+RemainingTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+RemainingTime.h"; sourceTree = "<group>"; };
+		DA39208022FC12E70058F0C2 /* NSDate+RemainingTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RemainingTime.m"; sourceTree = "<group>"; };
 		DA4121711F5C07130083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Preferences.strings; sourceTree = "<group>"; };
 		DA4121721F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA4121731F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 				DAB128701C245F1B00831045 /* NSApplication+Versions.m */,
 				DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */,
 				DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */,
+				DA39207F22FC12E70058F0C2 /* NSDate+RemainingTime.h */,
+				DA39208022FC12E70058F0C2 /* NSDate+RemainingTime.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -630,6 +635,7 @@
 				DAB0700A22EC794F004D5BCA /* KYADurationCell.m in Sources */,
 				DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */,
 				DAB128761C2493DB00831045 /* KYAPreference.m in Sources */,
+				DA39208122FC12E70058F0C2 /* NSDate+RemainingTime.m in Sources */,
 				DAB128711C245F1B00831045 /* NSApplication+Versions.m in Sources */,
 				DAB128691C2453F600831045 /* KYAAdvancedPreferencesViewController.m in Sources */,
 				DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */,

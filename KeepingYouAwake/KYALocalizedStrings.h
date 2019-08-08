@@ -35,6 +35,6 @@
 #define KYA_L10N_DURATIONS_ALERT_REALLY_RESET_TITLE NSLocalizedString(@"Reset Activation Durations", @"Reset Activation Durations")
 #define KYA_L10N_DURATIONS_ALERT_REALLY_RESET_MESSAGE NSLocalizedString(@"Do you really want to reset the activation durations to the default values?", @"Do you really want to reset the activation durations to the default values?")
 
-#define KYA_L10N_SET_DEFAULT_ACTIVATION_DURATION NSLocalizedString(@"Set Default: %@", @"Set Default: %@")
+#define KYA_L10N_SET_DEFAULT_ACTIVATION_DURATION(_str) [NSString stringWithFormat:NSLocalizedString(@"Set Default: %@", @"Set Default: %@"), (NSString *)(_str)]
 
 #endif /* KYA_LOCALIZED_STRINGS_H */

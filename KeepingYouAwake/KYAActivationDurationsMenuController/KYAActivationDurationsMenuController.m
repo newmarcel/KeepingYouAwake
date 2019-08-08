@@ -9,6 +9,9 @@
 #import "KYAActivationDurationsMenuController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
+#import "NSDate+RemainingTime.h"
+
+static const NSInteger KYAMenuItemRemainingTimeTag = 666;
 
 @interface KYAActivationDurationsMenuController ()
 @property (nonatomic, readwrite) NSMenu *menu;
@@ -60,6 +63,13 @@
     
     KYA_AUTO controller = self.activationDurationsController;
     
+    KYA_AUTO remainingTimeMenuItem = [self menuItemForRemainingTime];
+    if(remainingTimeMenuItem != nil)
+    {
+        [menu addItem:remainingTimeMenuItem];
+        [menu addItem:NSMenuItem.separatorItem];
+    }
+    
     for(KYAActivationDuration *duration in controller.activationDurationsIncludingInfinite)
     {
         KYA_AUTO menuItem = [menu addItemWithTitle:duration.localizedTitle
@@ -69,8 +79,7 @@
         menuItem.tag = (NSInteger)duration.seconds;
         
         // Alternate state
-        KYA_AUTO alternateTitle = [NSString stringWithFormat:KYA_L10N_SET_DEFAULT_ACTIVATION_DURATION,
-                                   duration.localizedTitle];
+        KYA_AUTO alternateTitle = KYA_L10N_SET_DEFAULT_ACTIVATION_DURATION(duration.localizedTitle);
         KYA_AUTO alternateMenuItem = [menu addItemWithTitle:alternateTitle
                                                      action:@selector(setDefaultActivationDuration:)
                                               keyEquivalent:@""];
@@ -115,6 +124,36 @@
                 alternateMenuItem.state = NSControlStateValueOn;
             }
         }
+    }
+}
+
+- (nullable NSMenuItem *)menuItemForRemainingTime
+{
+    KYA_AUTO delegate = self.delegate;
+    if(![delegate respondsToSelector:@selector(fireDate)]) { return nil; }
+    
+    KYA_AUTO fireDate = delegate.fireDate;
+    if(fireDate == nil) { return nil; }
+    
+    KYA_AUTO menuItem = [[NSMenuItem alloc] initWithTitle:fireDate.kya_localizedRemainingTime
+                                                   action:nil
+                                            keyEquivalent:@""];
+    menuItem.tag = KYAMenuItemRemainingTimeTag;
+    return menuItem;
+}
+
+- (void)updateRemainingTime:(id)sender
+{
+    KYA_AUTO delegate = self.delegate;
+    if(![delegate respondsToSelector:@selector(fireDate)]) { return; }
+    
+    KYA_AUTO fireDate = delegate.fireDate;
+    if(fireDate == nil) { return; }
+    
+    KYA_AUTO menuItem = self.menu.itemArray.firstObject;
+    if(menuItem != nil && menuItem.tag == KYAMenuItemRemainingTimeTag)
+    {
+        menuItem.title = fireDate.kya_localizedRemainingTime;
     }
 }
 
