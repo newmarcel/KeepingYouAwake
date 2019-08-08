@@ -15,9 +15,10 @@
 #import "KYABatteryStatus.h"
 #import "KYABatteryCapacityThreshold.h"
 #import "NSUserDefaults+Keys.h"
+#import "KYAActivationDuration.h"
 #import "KYAActivationDurationsMenuController.h"
 
-@interface KYAAppController () <NSUserNotificationCenterDelegate, KYAStatusItemControllerDelegate>
+@interface KYAAppController () <NSUserNotificationCenterDelegate, KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
 @property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
 @property (nonatomic) KYAActivationDurationsMenuController *menuController;
@@ -62,6 +63,7 @@
         [self configureEventHandler];
         
         self.menuController = [KYAActivationDurationsMenuController new];
+        self.menuController.delegate = self;
     }
     return self;
 }
@@ -432,6 +434,28 @@
 - (void)statusItemControllerShouldPerformAlternativeAction:(KYAStatusItemController *)controller
 {
     [self.statusItemController showMenu:self.menu];
+}
+
+#pragma mark - KYAActivationDurationsMenuControllerDelegate
+
+- (KYAActivationDuration *)currentActivationDuration
+{
+    KYA_AUTO sleepWakeTimer = self.sleepWakeTimer;
+    if(![sleepWakeTimer isScheduled]) { return nil; }
+    
+    NSTimeInterval seconds = sleepWakeTimer.scheduledTimeInterval;
+    return [[KYAActivationDuration alloc] initWithSeconds:seconds];
+}
+
+- (void)activationDurationsMenuController:(KYAActivationDurationsMenuController *)controller didSelectActivationDuration:(KYAActivationDuration *)activationDuration
+{
+    [self terminateTimer];
+    
+    KYA_WEAK weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSTimeInterval seconds = activationDuration.seconds;
+        [weakSelf activateTimerWithTimeInterval:seconds];
+    });
 }
 
 @end

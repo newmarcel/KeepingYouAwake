@@ -19,10 +19,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
-#warning DEBUG MODE
-#if DEBUG
-    [self showPreferencesWindow:nil];
-#endif
 }
 
 #pragma mark - Preferences Window

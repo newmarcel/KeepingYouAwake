@@ -9,7 +9,6 @@
 #import "KYAActivationDurationsMenuController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
-#import "KYAActivationDurationsController.h"
 
 @interface KYAActivationDurationsMenuController ()
 @property (nonatomic, readwrite) NSMenu *menu;
@@ -22,6 +21,7 @@
     self = [super init];
     if(self)
     {
+        self.activationDurationsController = KYAActivationDurationsController.sharedController;
         self.menu = [[NSMenu alloc] initWithTitle:@"Activate for Duration"];
         self.menu.delegate = self;
     }
@@ -30,12 +30,26 @@
 
 - (void)selectActivationDuration:(nullable NSMenuItem *)sender
 {
-    KYALog(@"Selected %@", sender);
+    KYA_AUTO delegate = self.delegate;
+    if([delegate respondsToSelector:@selector(activationDurationsMenuController:didSelectActivationDuration:)])
+    {
+        NSTimeInterval seconds = (NSTimeInterval)sender.tag;
+        KYA_AUTO duration = [[KYAActivationDuration alloc] initWithSeconds:seconds];
+        [delegate activationDurationsMenuController:self didSelectActivationDuration:duration];
+    }
 }
 
 - (void)setDefaultActivationDuration:(nullable NSMenuItem *)sender
 {
-    KYALog(@"Set Default %@", sender);
+    NSTimeInterval seconds = (NSTimeInterval)sender.tag;
+    
+    KYA_AUTO controller = self.activationDurationsController;
+    KYA_AUTO durations = controller.activationDurationsIncludingInfinite;
+    
+    KYA_AUTO predicate = [NSPredicate predicateWithFormat:@"seconds == %@", @(seconds)];
+    KYA_AUTO results = [durations filteredArrayUsingPredicate:predicate];
+    
+    self.activationDurationsController.defaultActivationDuration = results.firstObject;
 }
 
 #pragma mark - NSMenuDelegate
@@ -44,7 +58,7 @@
 {
     [menu removeAllItems];
     
-    KYA_AUTO controller = KYAActivationDurationsController.sharedController;
+    KYA_AUTO controller = self.activationDurationsController;
     
     for(KYAActivationDuration *duration in controller.activationDurationsIncludingInfinite)
     {
@@ -68,8 +82,38 @@
         // Is Default
         if([controller.defaultActivationDuration isEqualToActivationDuration:duration])
         {
-            menuItem.state = NSControlStateValueOn;
-            alternateMenuItem.state = NSControlStateValueOn;
+            KYA_AUTO attributed = [NSMutableAttributedString new];
+            
+            KYA_AUTO attributes = @{
+                                    NSFontAttributeName: [NSFont systemFontOfSize:NSFont.systemFontSize
+                                                                                          weight:NSFontWeightSemibold]
+                                    };
+            KYA_AUTO attributedTitle = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ ", menuItem.title]
+                                                                       attributes:attributes];
+            [attributed appendAttributedString:attributedTitle];
+            
+            KYA_AUTO defaultAttributes = @{
+                                           NSFontAttributeName: [NSFont systemFontOfSize:NSFont.systemFontSize
+                                                                                                 weight:NSFontWeightRegular],
+                                           NSForegroundColorAttributeName: NSColor.secondaryLabelColor
+                                           };
+            KYA_AUTO attributedDefault = [[NSAttributedString alloc] initWithString:@"(Default)"
+                                                                         attributes:defaultAttributes];
+            [attributed appendAttributedString:attributedDefault];
+            
+            menuItem.attributedTitle = attributed;
+        }
+        
+        // Is Scheduled
+        KYA_AUTO delegate = self.delegate;
+        if([delegate respondsToSelector:@selector(currentActivationDuration)])
+        {
+            KYA_AUTO current = [delegate currentActivationDuration];
+            if(current != nil && (current.seconds == duration.seconds))
+            {
+                menuItem.state = NSControlStateValueOn;
+                alternateMenuItem.state = NSControlStateValueOn;
+            }
         }
     }
 }
