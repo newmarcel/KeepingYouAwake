@@ -28,6 +28,7 @@
 
 #define KYA_L10N_ACTIVATE_FOR_DURATION NSLocalizedString(@"Activate for Duration", @"Activate for Duration")
 #define KYA_L10N_IS_DEFAULT_SUFFIX NSLocalizedString(@"(Default)", @"(Default)")
+#define KYA_L10N_EDIT_MENU_ITEM_TITLE NSLocalizedString(@"Edit…", @"Edit…")
 
 #pragma mark - Preferences
 

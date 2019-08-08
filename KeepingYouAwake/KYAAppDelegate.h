@@ -11,6 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KYAAppDelegate : NSObject <NSApplicationDelegate>
+
+- (void)showPreferenceWindowAndEditActivationDurations;
+
 @end
 
 NS_ASSUME_NONNULL_END

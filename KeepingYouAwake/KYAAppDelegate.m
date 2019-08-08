@@ -40,6 +40,13 @@
     self.preferencesWindowController.window.delegate = self;
 }
 
+- (void)showPreferenceWindowAndEditActivationDurations
+{
+    [self showPreferencesWindow:nil];
+    NSTabViewController *tabViewController = (NSTabViewController *)self.preferencesWindowController.window.contentViewController;
+    tabViewController.selectedTabViewItemIndex = 1;
+}
+
 #pragma mark - Window Delegate
 
 - (void)windowWillClose:(NSNotification *)notification

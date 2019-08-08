@@ -17,6 +17,7 @@
 #import "NSUserDefaults+Keys.h"
 #import "KYAActivationDurationsMenuController.h"
 #import "NSDate+RemainingTime.h"
+#import "KYAAppDelegate.h"
 
 @interface KYAAppController () <NSUserNotificationCenterDelegate, KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
@@ -363,6 +364,11 @@
     return [[KYAActivationDuration alloc] initWithSeconds:seconds];
 }
 
+- (NSDate *)fireDateForMenuController:(KYAActivationDurationsMenuController *)controller
+{
+    return self.sleepWakeTimer.fireDate;
+}
+
 - (void)activationDurationsMenuController:(KYAActivationDurationsMenuController *)controller didSelectActivationDuration:(KYAActivationDuration *)activationDuration
 {
     [self terminateTimer];
@@ -374,9 +380,10 @@
     });
 }
 
-- (NSDate *)fireDateForMenuController:(KYAActivationDurationsMenuController *)controller
+- (void)activationDurationsMenuControllerShouldEditActivationDurations:(KYAActivationDurationsMenuController *)controller
 {
-    return self.sleepWakeTimer.fireDate;
+    KYA_AUTO appDelegate = (KYAAppDelegate *)NSApplication.sharedApplication.delegate;
+    [appDelegate showPreferenceWindowAndEditActivationDurations];
 }
 
 @end
