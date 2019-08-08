@@ -25,7 +25,7 @@ static const NSInteger KYAMenuItemRemainingTimeTag = 666;
     if(self)
     {
         self.activationDurationsController = KYAActivationDurationsController.sharedController;
-        self.menu = [[NSMenu alloc] initWithTitle:@"Activate for Duration"];
+        self.menu = [[NSMenu alloc] initWithTitle:KYA_L10N_ACTIVATE_FOR_DURATION];
         self.menu.delegate = self;
     }
     return self;

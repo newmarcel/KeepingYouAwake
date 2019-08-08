@@ -26,6 +26,8 @@
 
 #define KYA_L10N_INDEFINITELY NSLocalizedString(@"Indefinitely", @"Indefinitely")
 
+#define KYA_L10N_ACTIVATE_FOR_DURATION NSLocalizedString(@"Activate for Duration", @"Activate for Duration")
+
 #pragma mark - Preferences
 
 #define KYA_L10N_ENABLE_EXPERIMENTAL_NOTIFICATION_CENTER_INTEGRATION NSLocalizedString(@"Enable experimental Notification Center integration", @"Enable experimental Notification Center integration")
