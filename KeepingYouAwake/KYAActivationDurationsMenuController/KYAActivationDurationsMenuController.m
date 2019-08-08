@@ -12,6 +12,7 @@
 #import "NSDate+RemainingTime.h"
 
 static const NSInteger KYAMenuItemRemainingTimeTag = 666;
+static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
 
 @interface KYAActivationDurationsMenuController ()
 @property (nonatomic, readwrite) NSMenu *menu;
@@ -89,29 +90,8 @@ static const NSInteger KYAMenuItemRemainingTimeTag = 666;
         alternateMenuItem.tag = (NSInteger)duration.seconds;
         
         // Is Default
-        if([controller.defaultActivationDuration isEqualToActivationDuration:duration])
-        {
-            KYA_AUTO attributed = [NSMutableAttributedString new];
-            
-            KYA_AUTO attributes = @{
-                                    NSFontAttributeName: [NSFont systemFontOfSize:NSFont.systemFontSize
-                                                                                          weight:NSFontWeightSemibold]
-                                    };
-            KYA_AUTO attributedTitle = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ ", menuItem.title]
-                                                                       attributes:attributes];
-            [attributed appendAttributedString:attributedTitle];
-            
-            KYA_AUTO defaultAttributes = @{
-                                           NSFontAttributeName: [NSFont systemFontOfSize:NSFont.systemFontSize
-                                                                                                 weight:NSFontWeightRegular],
-                                           NSForegroundColorAttributeName: NSColor.secondaryLabelColor
-                                           };
-            KYA_AUTO attributedDefault = [[NSAttributedString alloc] initWithString:@"(Default)"
-                                                                         attributes:defaultAttributes];
-            [attributed appendAttributedString:attributedDefault];
-            
-            menuItem.attributedTitle = attributed;
-        }
+        BOOL isDefault = [controller.defaultActivationDuration isEqualToActivationDuration:duration];
+        menuItem.attributedTitle = [self attributedStringForMenuItemTitle:menuItem.title isDefault:isDefault];
         
         // Is Scheduled
         KYA_AUTO delegate = self.delegate;
@@ -125,6 +105,32 @@ static const NSInteger KYAMenuItemRemainingTimeTag = 666;
             }
         }
     }
+}
+
+- (NSAttributedString *)attributedStringForMenuItemTitle:(NSString *)title isDefault:(BOOL)isDefault
+{
+    KYA_AUTO attributed = [NSMutableAttributedString new];
+    
+    KYA_AUTO font = [NSFont monospacedDigitSystemFontOfSize:KYAMenuItemDefaultFontSize
+                                                     weight:NSFontWeightRegular];
+    
+    KYA_AUTO attributes = @{ NSFontAttributeName: font };
+    KYA_AUTO attributedTitle = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ ", title]
+                                                               attributes:attributes];
+    [attributed appendAttributedString:attributedTitle];
+    
+    if(isDefault)
+    {
+        KYA_AUTO defaultAttributes = @{
+                                       NSFontAttributeName: font,
+                                       NSForegroundColorAttributeName: NSColor.tertiaryLabelColor
+                                       };
+        KYA_AUTO attributedDefault = [[NSAttributedString alloc] initWithString:KYA_L10N_IS_DEFAULT_SUFFIX
+                                                                     attributes:defaultAttributes];
+        [attributed appendAttributedString:attributedDefault];
+    }
+    
+    return [attributed copy];
 }
 
 - (nullable NSMenuItem *)menuItemForRemainingTime

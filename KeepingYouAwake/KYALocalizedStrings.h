@@ -27,6 +27,7 @@
 #define KYA_L10N_INDEFINITELY NSLocalizedString(@"Indefinitely", @"Indefinitely")
 
 #define KYA_L10N_ACTIVATE_FOR_DURATION NSLocalizedString(@"Activate for Duration", @"Activate for Duration")
+#define KYA_L10N_IS_DEFAULT_SUFFIX NSLocalizedString(@"(Default)", @"(Default)")
 
 #pragma mark - Preferences
 
