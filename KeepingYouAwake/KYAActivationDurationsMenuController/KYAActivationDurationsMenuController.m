@@ -130,9 +130,9 @@ static const NSInteger KYAMenuItemRemainingTimeTag = 666;
 - (nullable NSMenuItem *)menuItemForRemainingTime
 {
     KYA_AUTO delegate = self.delegate;
-    if(![delegate respondsToSelector:@selector(fireDate)]) { return nil; }
+    if(![delegate respondsToSelector:@selector(fireDateForMenuController:)]) { return nil; }
     
-    KYA_AUTO fireDate = delegate.fireDate;
+    KYA_AUTO fireDate = [delegate fireDateForMenuController:self];
     if(fireDate == nil) { return nil; }
     
     KYA_AUTO menuItem = [[NSMenuItem alloc] initWithTitle:fireDate.kya_localizedRemainingTime
@@ -145,9 +145,9 @@ static const NSInteger KYAMenuItemRemainingTimeTag = 666;
 - (void)updateRemainingTime:(id)sender
 {
     KYA_AUTO delegate = self.delegate;
-    if(![delegate respondsToSelector:@selector(fireDate)]) { return; }
+    if(![delegate respondsToSelector:@selector(fireDateForMenuController:)]) { return; }
     
-    KYA_AUTO fireDate = delegate.fireDate;
+    KYA_AUTO fireDate = [delegate fireDateForMenuController:self];
     if(fireDate == nil) { return; }
     
     KYA_AUTO menuItem = self.menu.itemArray.firstObject;

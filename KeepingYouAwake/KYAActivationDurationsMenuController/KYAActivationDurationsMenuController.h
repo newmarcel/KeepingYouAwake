@@ -25,7 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol KYAActivationDurationsMenuControllerDelegate <NSObject>
 @optional
 - (nullable KYAActivationDuration *)currentActivationDuration;
-- (nullable NSDate *)fireDate;
+
+- (nullable NSDate *)fireDateForMenuController:(KYAActivationDurationsMenuController *)controller;
+
 - (void)activationDurationsMenuController:(KYAActivationDurationsMenuController *)controller
               didSelectActivationDuration:(KYAActivationDuration *)activationDuration;
 @end

@@ -374,7 +374,7 @@
     });
 }
 
-- (NSDate *)fireDate
+- (NSDate *)fireDateForMenuController:(KYAActivationDurationsMenuController *)controller
 {
     return self.sleepWakeTimer.fireDate;
 }
