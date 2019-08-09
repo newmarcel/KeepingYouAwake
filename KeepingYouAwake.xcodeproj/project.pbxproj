@@ -329,6 +329,15 @@
 			path = "Battery Status";
 			sourceTree = "<group>";
 		};
+		DA5C10A422FDD27C00554D6B /* KYASleepWakeTimer */ = {
+			isa = PBXGroup;
+			children = (
+				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,
+				DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */,
+			);
+			path = KYASleepWakeTimer;
+			sourceTree = "<group>";
+		};
 		DA637B3019F14693004C8838 = {
 			isa = PBXGroup;
 			children = (
@@ -358,8 +367,7 @@
 				DA637B4119F14693004C8838 /* KYAAppDelegate.m */,
 				DA637B5C19F146B6004C8838 /* KYAAppController.h */,
 				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
-				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,
-				DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */,
+				DA5C10A422FDD27C00554D6B /* KYASleepWakeTimer */,
 				DA73AB8522EDB9CD00D085CE /* KYAActivationDurationsController */,
 				DA82560E22FB5B31005ECB3A /* KYAActivationDurationsMenuController */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
