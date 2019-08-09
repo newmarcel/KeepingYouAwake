@@ -11,7 +11,12 @@
 #import "KYALocalizedStrings.h"
 #import "KYAActivationDurationsController.h"
 
-typedef NS_ENUM(NSUInteger, KYAValidationReason) {
+static const NSInteger KYAMaximumHours = 999;
+static const NSInteger KYAMaximumMinutes = 59;
+static const NSInteger KYAMaximumSeconds = 59;
+
+typedef NS_ENUM(NSUInteger, KYAValidationReason)
+{
     KYAValidationReasonSuccess = 0,
     KYAValidationReasonInvalid,
     KYAValidationReasonAlreadyAdded
@@ -61,23 +66,23 @@ typedef NS_ENUM(NSUInteger, KYAValidationReason) {
 
 - (KYAValidationReason)validateInputs
 {
-    if(self.hours.integerValue > 999)
+    if(self.hours.integerValue > KYAMaximumHours)
     {
-        self.hours = @999;
+        self.hours = @(KYAMaximumHours);
         return KYAValidationReasonInvalid;
     }
     if(self.hours == nil) { self.hours = @0; }
     
-    if(self.minutes.integerValue > 59)
+    if(self.minutes.integerValue > KYAMaximumMinutes)
     {
-        self.minutes = @59;
+        self.minutes = @(KYAMaximumMinutes);
         return KYAValidationReasonInvalid;
     }
     if(self.minutes == nil) { self.minutes = @0; }
     
-    if(self.seconds.integerValue > 59)
+    if(self.seconds.integerValue > KYAMaximumSeconds)
     {
-        self.seconds = @59;
+        self.seconds = @(KYAMaximumSeconds);
         return KYAValidationReasonInvalid;
     }
     if(self.seconds == nil) { self.seconds = @0; }
@@ -89,6 +94,7 @@ typedef NS_ENUM(NSUInteger, KYAValidationReason) {
     {
         return KYAValidationReasonInvalid;
     }
+    
     BOOL didAdd = [self.durationsController addActivationDuration:duration];
     if(didAdd == NO)
     {
