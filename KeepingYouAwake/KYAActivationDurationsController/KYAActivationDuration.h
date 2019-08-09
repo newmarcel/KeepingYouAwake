@@ -16,22 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
 FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 
 /**
- *  The object representation of an sleep wake timer activation duration.
+ The object representation of a sleep wake timer activation duration.
  */
 @interface KYAActivationDuration : NSObject <NSSecureCoding>
 
 /**
- *  An activation duration. 0 seconds represent KYAActivationDurationIndefinite.
+ An activation duration. 0 seconds represent KYAActivationDurationIndefinite.
  */
 @property (nonatomic, readonly) NSTimeInterval seconds;
 
 /**
- *  The calendar unit that will be used for the formatting in localizedTitle.
- */
-@property (nonatomic, readonly) NSCalendarUnit displayUnit;
-
-/**
- *  A localized title text.
+ A localized title text.
  */
 @property (nonatomic, readonly) NSString *localizedTitle;
 
@@ -39,26 +34,12 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
- *  A convenience initializer for the activation duration.
- *
- *  This initializer uses NSCalendarUnitSecond as displayUnit.
- *
- *  @param seconds Some seconds.
- *
- *  @return A new instance.
- */
-- (instancetype)initWithSeconds:(NSTimeInterval)seconds;
+ The designated initializer for the activation duration.
 
-/**
- *  The designated initializer for the activation duration.
- *
- *  @param seconds     Some seconds.
- *  @param displayUnit The calendar unit used for formatting localizedTitle.
- *
- *  @return A new instance.
+ @param seconds Some seconds.
+ @return A new instance.
  */
-- (instancetype)initWithSeconds:(NSTimeInterval)seconds
-                    displayUnit:(NSCalendarUnit)displayUnit NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithSeconds:(NSTimeInterval)seconds NS_DESIGNATED_INITIALIZER;
 
 /**
  Returns YES if other matches the stored seconds and

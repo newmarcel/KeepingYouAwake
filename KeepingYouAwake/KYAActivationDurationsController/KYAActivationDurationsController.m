@@ -53,7 +53,8 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     // Reset the default duration if it got removed
     if(![self.storedActivationDurations containsObject:self.defaultActivationDuration])
     {
-        self.defaultActivationDuration = KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite);
+        [self setDefaultActivationDuration:KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite)
+                          notifyListensers:NO];
     }
     
     [self didChange];
@@ -108,7 +109,8 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     // Reset the default duration if it got removed
     if(![self.storedActivationDurations containsObject:self.defaultActivationDuration])
     {
-        self.defaultActivationDuration = KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite);
+        [self setDefaultActivationDuration:KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite)
+                          notifyListensers:NO];
     }
     
     [self didChange];
@@ -140,7 +142,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
         return;
     }
     
-    self.defaultActivationDuration = duration;
+    [self setDefaultActivationDuration:duration notifyListensers:NO];
     [self didChange];
 }
 
@@ -156,12 +158,23 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 
 - (void)setDefaultActivationDuration:(KYAActivationDuration *)duration
 {
+    [self setDefaultActivationDuration:duration notifyListensers:YES];
+}
+
+- (void)setDefaultActivationDuration:(KYAActivationDuration *)duration notifyListensers:(BOOL)notify
+{
     NSParameterAssert(duration);
     
     NSAssert([self.activationDurationsIncludingInfinite containsObject:duration], @"The passed duration must be contained in self.activationDurations.");
     
     self.userDefaults.kya_defaultTimeInterval = duration.seconds;
     [self.userDefaults synchronize];
+    
+    if(notify)
+    {
+        KYA_AUTO notification = KYAActivationDurationsControllerActivationDurationsDidChangeNotification;
+        [NSNotificationCenter.defaultCenter postNotificationName:notification object:nil];
+    }
 }
 
 - (KYAActivationDuration *)defaultActivationDuration

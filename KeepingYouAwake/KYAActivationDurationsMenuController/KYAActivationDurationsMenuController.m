@@ -98,7 +98,7 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
         if([delegate respondsToSelector:@selector(currentActivationDuration)])
         {
             KYA_AUTO current = [delegate currentActivationDuration];
-            if(current != nil && (current.seconds == duration.seconds))
+            if(current != nil && ([current isEqualToActivationDuration:duration]))
             {
                 menuItem.state = NSControlStateValueOn;
                 alternateMenuItem.state = NSControlStateValueOn;

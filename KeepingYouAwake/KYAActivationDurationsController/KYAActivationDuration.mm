@@ -22,23 +22,17 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
 
 - (instancetype)initWithSeconds:(NSTimeInterval)seconds
 {
-    return [self initWithSeconds:seconds displayUnit:NSCalendarUnitSecond];
-}
-
-- (instancetype)initWithDuration:(std::chrono::duration<NSTimeInterval>)duration displayUnit:(NSCalendarUnit)displayUnit
-{
-    return [self initWithSeconds:duration.count() displayUnit:displayUnit];
-}
-
-- (instancetype)initWithSeconds:(NSTimeInterval)seconds displayUnit:(NSCalendarUnit)displayUnit
-{
     self = [super init];
     if(self)
     {
         self.seconds = seconds;
-        self.displayUnit = displayUnit;
     }
     return self;
+}
+
+- (instancetype)initWithDuration:(std::chrono::duration<NSTimeInterval>)duration
+{
+    return [self initWithSeconds:duration.count()];
 }
 
 - (NSString *)localizedTitle
@@ -51,8 +45,6 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
     }
     
     auto formatter = [self sharedDateComponentsFormatter];
-    formatter.allowedUnits = self.displayUnit;
-    
     return [formatter stringFromTimeInterval:interval];
 }
 
@@ -71,27 +63,23 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
 #pragma mark - NSCoding
 
 #define kCodingKeySeconds @"KYASeconds"
-#define kCodingKeyUnit @"KYAUnit"
 
 - (instancetype)initWithCoder:(NSCoder *)decoder
 {
     NSTimeInterval seconds = [decoder decodeDoubleForKey:kCodingKeySeconds];
-    NSCalendarUnit unit = (NSCalendarUnit)[decoder decodeIntegerForKey:kCodingKeyUnit];
-    
-    return [self initWithSeconds:seconds displayUnit:unit];
+    return [self initWithSeconds:seconds];
 }
 
 - (void)encodeWithCoder:(NSCoder *)encoder
 {
     [encoder encodeDouble:self.seconds forKey:kCodingKeySeconds];
-    [encoder encodeInteger:(NSInteger)self.displayUnit forKey:kCodingKeyUnit];
 }
 
 #pragma mark - Hashable & Equatable
 
 - (NSUInteger)hash
 {
-    return (NSUInteger)((uint64_t)self.seconds ^ (uint64_t)self.displayUnit);
+    return (NSUInteger)((uint64_t)self.seconds);
 }
 
 - (BOOL)isEqual:(id)object
@@ -110,8 +98,7 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
 {
     NSParameterAssert(other);
     
-    return self.seconds == other.seconds
-        && self.displayUnit == other.displayUnit;
+    return self.seconds == other.seconds;
 }
 
 #pragma mark - Localized Formatter
@@ -138,12 +125,10 @@ KYAActivationDuration *KYADurationForSeconds(NSInteger seconds)
 
 KYAActivationDuration *KYADurationForMinutes(NSInteger minutes)
 {
-    return [[KYAActivationDuration alloc] initWithDuration:std::chrono::minutes { minutes }
-                                               displayUnit:NSCalendarUnitMinute];
+    return [[KYAActivationDuration alloc] initWithDuration:std::chrono::minutes { minutes }];
 }
 
 KYAActivationDuration *KYADurationForHours(NSInteger hours)
 {
-    return [[KYAActivationDuration alloc] initWithDuration:std::chrono::hours { hours }
-                                               displayUnit:NSCalendarUnitHour];
+    return [[KYAActivationDuration alloc] initWithDuration:std::chrono::hours { hours }];
 }
