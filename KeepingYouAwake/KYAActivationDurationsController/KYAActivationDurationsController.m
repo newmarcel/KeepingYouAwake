@@ -10,6 +10,8 @@
 #import "KYADefines.h"
 #include "NSUserDefaults+Keys.h"
 
+#define KYA_USES_SIMPLE_USER_DEFAULTS_VALUES 1
+
 NSNotificationName const KYAActivationDurationsControllerActivationDurationsDidChangeNotification = @"KYAActivationDurationsControllerActivationDurationsDidChangeNotification";
 
 static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingYouAwake.Durations";
@@ -198,6 +200,19 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 - (void)loadFromUserDefaults
 {
     // Load without triggering didChange
+#if KYA_USES_SIMPLE_USER_DEFAULTS_VALUES
+    NSArray<NSNumber *> *seconds = [self.userDefaults objectForKey:KYADefaultsKeyDurations];
+    NSMutableArray<KYAActivationDuration *> *loadedDurations = [NSMutableArray new];
+    if(seconds != nil && [seconds isKindOfClass:[NSArray class]])
+    {
+        for(NSNumber *value in seconds)
+        {
+            NSTimeInterval interval = (NSTimeInterval)value.integerValue;
+            KYA_AUTO duration = [[KYAActivationDuration alloc] initWithSeconds:interval];
+            [loadedDurations addObject:duration];
+        }
+    }
+#else
     KYA_AUTO data = [self.userDefaults dataForKey:KYADefaultsKeyDurations];
     NSArray *loadedDurations;
     if(data != nil)
@@ -219,6 +234,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
             loadedDurations = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         }
     }
+#endif
     
     if(loadedDurations == nil || loadedDurations.count == 0)
     {
@@ -227,8 +243,11 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     }
     else
     {
+#if KYA_USES_SIMPLE_USER_DEFAULTS_VALUES
+        self.storedActivationDurations = loadedDurations;
+#else
         self.storedActivationDurations = [NSMutableArray arrayWithArray:loadedDurations];
-        
+#endif
         KYALog(@"Loaded durations from user defaults: %@", loadedDurations);
     }
 }
@@ -237,6 +256,15 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 {
     NSAssert(self.storedActivationDurations != nil, @"The stored durations should never be nil.");
     
+#if KYA_USES_SIMPLE_USER_DEFAULTS_VALUES
+    NSArray<KYAActivationDuration *> *durations = [self.storedActivationDurations copy];
+    KYA_AUTO seconds = [NSMutableArray new];
+    for(KYAActivationDuration *duration in durations)
+    {
+        [seconds addObject:@(duration.seconds)];
+    }
+    [self.userDefaults setObject:seconds forKey:KYADefaultsKeyDurations];
+#else
     NSData *data;
     if(@available(macOS 10.13, *))
     {
@@ -255,6 +283,8 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
         data = [NSKeyedArchiver archivedDataWithRootObject:self.storedActivationDurations];
     }
     [self.userDefaults setObject:data forKey:KYADefaultsKeyDurations];
+#endif
+    
     [self.userDefaults synchronize];
     
     KYALog(@"Saved durations to user defaults: %@", self.storedActivationDurations);
