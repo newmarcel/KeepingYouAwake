@@ -8,6 +8,7 @@
 
 #import "KYAAddDurationPreferencesViewController.h"
 #import "KYADefines.h"
+#import "KYALocalizedStrings.h"
 #import "KYAActivationDurationsController.h"
 
 @interface KYAAddDurationPreferencesViewController ()
@@ -33,7 +34,27 @@
 
 - (void)addDuration:(id)sender
 {
-    [self validateInput];
+    [self.hoursTextField resignFirstResponder];
+    self.hoursTextField.editable = NO;
+    [self.minutesTextField resignFirstResponder];
+    self.minutesTextField.editable = NO;
+    [self.secondsTextField resignFirstResponder];
+    self.secondsTextField.editable = NO;
+    
+    KYA_AUTO duration = [[KYAActivationDuration alloc] initWithHours:self.hours.integerValue
+                                                             minutes:self.minutes.integerValue
+                                                             seconds:self.seconds.integerValue];
+    BOOL didAddDuration = [self.durationsController addActivationDuration:duration];
+    if(didAddDuration == NO)
+    {
+        self.errorMessage = KYA_L10N_DURATION_ALREADY_ADDED;
+        self.hoursTextField.editable = YES;
+        self.minutesTextField.editable = YES;
+        self.secondsTextField.editable = YES;
+        return;
+    }
+
+    [self dismissController:sender];
 }
 
 - (void)resetValues
@@ -41,13 +62,6 @@
     self.hours = @1;
     self.minutes = @0;
     self.seconds = @0;
-}
-
-- (void)validateInput
-{
-    self.errorMessage = @"That doesn't work yet.";
-    
-    
 }
 
 #pragma mark - NSTextFieldDelegate

@@ -70,6 +70,12 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
     }
     
     std::chrono::seconds totalValue = hoursValue + minutesValue + secondsValue;
+    if(totalValue == 0s)
+    {
+        KYALog(@"Attempted to add a 0 duration.");
+        return nil;
+    }
+    
     return [self initWithDuration:totalValue];
 }
 

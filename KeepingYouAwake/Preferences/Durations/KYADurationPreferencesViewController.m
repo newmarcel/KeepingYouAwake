@@ -35,6 +35,11 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     [KYADurationCell registerInTableView:self.tableView];
     
     [self updateViewForSelectedRow];
+    
+    if(@available(macOS 10.13, *))
+    {
+        self.touchBarRemoveDurationButton.image = [NSImage imageNamed:NSImageNameTouchBarRemoveTemplate];
+    }
 }
 
 #pragma mark - Actions
@@ -50,6 +55,11 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     {
         [self performSegueWithIdentifier:KYAShowAddDurationSegueIdentifier sender:nil];
     }
+}
+
+- (IBAction)addDuration:(id)sender
+{
+    [self performSegueWithIdentifier:KYAShowAddDurationSegueIdentifier sender:nil];
 }
 
 - (IBAction)removeDuration:(id)sender
@@ -131,6 +141,9 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     BOOL enabled = (row >= 0);
     self.setDefaultButton.enabled = enabled;
     [self.segmentedControl setEnabled:enabled forSegment:0];
+    
+    self.touchBarSetDefaultButton.enabled = enabled;
+    self.touchBarRemoveDurationButton.enabled = enabled;
 }
 
 #pragma mark - KYAActivationDurationsController Did Change Notification

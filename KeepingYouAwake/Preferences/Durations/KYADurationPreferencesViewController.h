@@ -13,10 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface KYADurationPreferencesViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
 @property (weak, nonatomic) IBOutlet NSTableView *tableView;
 @property (weak, nonatomic) IBOutlet NSSegmentedControl *segmentedControl;
-@property (weak, nonatomic) IBOutlet NSButton *resetButton;
 @property (weak, nonatomic) IBOutlet NSButton *setDefaultButton;
 
+@property (weak, nonatomic) IBOutlet NSButton *touchBarSetDefaultButton;
+@property (weak, nonatomic) IBOutlet NSButton *touchBarRemoveDurationButton;
+
 - (IBAction)toggleSegmentedControl:(NSSegmentedControl *)segmentedControl;
+- (IBAction)addDuration:(id)sender;
 - (IBAction)removeDuration:(id)sender;
 
 - (IBAction)setDefaultDuration:(nullable id)sender;
