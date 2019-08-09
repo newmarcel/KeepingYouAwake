@@ -411,6 +411,7 @@ DQ
                                         </textFieldCell>
                                         <connections>
                                             <binding destination="eX7-cz-8ud" name="value" keyPath="self.minutes" id="50z-X9-aAG"/>
+                                            <outlet property="delegate" destination="eX7-cz-8ud" id="JvA-0k-iF9"/>
                                         </connections>
                                     </textField>
                                 </beginningViews>
@@ -447,6 +448,7 @@ DQ
                                         </textFieldCell>
                                         <connections>
                                             <binding destination="eX7-cz-8ud" name="value" keyPath="self.seconds" id="KiA-BB-kmA"/>
+                                            <outlet property="delegate" destination="eX7-cz-8ud" id="yqa-wz-iZV"/>
                                         </connections>
                                     </textField>
                                 </beginningViews>
@@ -483,6 +485,7 @@ DQ
                                         </textFieldCell>
                                         <connections>
                                             <binding destination="eX7-cz-8ud" name="value" keyPath="self.hours" id="cz0-1P-Lpp"/>
+                                            <outlet property="delegate" destination="eX7-cz-8ud" id="zMn-x6-m1l"/>
                                         </connections>
                                     </textField>
                                 </beginningViews>
@@ -505,6 +508,9 @@ DQ
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
+                                        <connections>
+                                            <binding destination="eX7-cz-8ud" name="value" keyPath="self.errorMessage" id="iPA-HR-ll7"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>

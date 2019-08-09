@@ -15,7 +15,7 @@
 static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"showAddDuration";
 
 @interface KYADurationPreferencesViewController ()
-@property (nonatomic) KYAActivationDurationsController *activationsController;
+@property (nonatomic) KYAActivationDurationsController *durationsController;
 @end
 
 @implementation KYADurationPreferencesViewController
@@ -24,7 +24,7 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
 {
     [super viewDidLoad];
     
-    self.activationsController = KYAActivationDurationsController.sharedController;
+    self.durationsController = KYAActivationDurationsController.sharedController;
     
     [NSNotificationCenter.defaultCenter
      addObserver:self
@@ -71,7 +71,7 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     [alert beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse returnCode) {
         if(returnCode == NSModalResponseOK)
         {
-            [self.activationsController resetActivationDurations];
+            [self.durationsController resetActivationDurations];
         }
     }];
 }
@@ -81,7 +81,7 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     NSInteger selectedRow = self.tableView.selectedRow;
     if(selectedRow < 0) { return; }
     
-    [self.activationsController setActivationDurationAsDefaultAtIndex:(NSUInteger)selectedRow];
+    [self.durationsController setActivationDurationAsDefaultAtIndex:(NSUInteger)selectedRow];
 }
 
 #pragma mark -
@@ -91,19 +91,19 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     NSInteger selectedRow = self.tableView.selectedRow;
     if(selectedRow < 0) { return; }
     
-    [self.activationsController removeActivationDurationAtIndex:(NSUInteger)selectedRow];
+    [self.durationsController removeActivationDurationAtIndex:(NSUInteger)selectedRow];
 }
 
 #pragma mark - NSTableViewDataSource
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return (NSInteger)self.activationsController.activationDurationsIncludingInfinite.count;
+    return (NSInteger)self.durationsController.activationDurationsIncludingInfinite.count;
 }
 
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    return self.activationsController.activationDurationsIncludingInfinite[(NSUInteger)row];
+    return self.durationsController.activationDurationsIncludingInfinite[(NSUInteger)row];
 }
 
 #pragma mark - NSTableViewDelegate
@@ -114,7 +114,7 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     KYA_AUTO duration = (KYAActivationDuration *)[self tableView:tableView objectValueForTableColumn:tableColumn row:row];
     cell.textLabel.stringValue = duration.localizedTitle;
     
-    BOOL isDefault = [self.activationsController.defaultActivationDuration isEqualToActivationDuration:duration];
+    BOOL isDefault = [self.durationsController.defaultActivationDuration isEqualToActivationDuration:duration];
     cell.isDefaultDuration = isDefault;
     
     return cell;

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KYAAddDurationPreferencesViewController : NSViewController
+@interface KYAAddDurationPreferencesViewController : NSViewController <NSTextFieldDelegate>
 @property (weak, nonatomic) IBOutlet NSTextField *hoursTextField;
 @property (weak, nonatomic) IBOutlet NSTextField *minutesTextField;
 @property (weak, nonatomic) IBOutlet NSTextField *secondsTextField;

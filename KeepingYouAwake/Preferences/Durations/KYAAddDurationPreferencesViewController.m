@@ -11,10 +11,13 @@
 #import "KYAActivationDurationsController.h"
 
 @interface KYAAddDurationPreferencesViewController ()
-@property (nonatomic) KYAActivationDurationsController *controller;
+@property (nonatomic) KYAActivationDurationsController *durationsController;
+
 @property (nonatomic) NSNumber *hours;
 @property (nonatomic) NSNumber *minutes;
 @property (nonatomic) NSNumber *seconds;
+
+@property (nonatomic, nullable) NSString *errorMessage;
 @end
 
 @implementation KYAAddDurationPreferencesViewController
@@ -23,14 +26,14 @@
 {
     [super viewDidLoad];
     
-    self.controller = KYAActivationDurationsController.sharedController;
+    self.durationsController = KYAActivationDurationsController.sharedController;
     
     [self resetValues];
 }
 
 - (void)addDuration:(id)sender
 {
-    
+    self.errorMessage = @"That doesn't work yet.";
 }
 
 - (void)resetValues
@@ -43,6 +46,16 @@
 - (void)validateInput
 {
     
+}
+
+#pragma mark - NSTextFieldDelegate
+
+- (BOOL)control:(NSControl *)control textShouldBeginEditing:(NSText *)fieldEditor
+{
+    // Reset the error message when the user starts typing again
+    self.errorMessage = nil;
+    
+    return YES;
 }
 
 @end
