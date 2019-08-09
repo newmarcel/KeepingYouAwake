@@ -30,7 +30,9 @@
 
 #define KYA_L10N_IS_DEFAULT_SUFFIX NSLocalizedString(@"(Default)", @"(Default)")
 
-#define KYA_L10N_DURATION_ALREADY_ADDED NSLocalizedString(@"This duration was already added.", @"This duration was already added.")
+#define KYA_L10N_DURATION_ALREADY_ADDED NSLocalizedString(@"This duration has already been added.", @"This duration has already been added.")
+
+#define KYA_L10N_DURATION_INVALID_INPUT NSLocalizedString(@"The entered duration is invalid. Please try again.", @"The entered duration is invalid. Please try again.")
 
 #pragma mark - Preferences
 

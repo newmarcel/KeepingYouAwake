@@ -11,6 +11,12 @@
 #import "KYALocalizedStrings.h"
 #import "KYAActivationDurationsController.h"
 
+typedef NS_ENUM(NSUInteger, KYAValidationReason) {
+    KYAValidationReasonSuccess = 0,
+    KYAValidationReasonInvalid,
+    KYAValidationReasonAlreadyAdded
+};
+
 @interface KYAAddDurationPreferencesViewController ()
 @property (nonatomic) KYAActivationDurationsController *durationsController;
 
@@ -34,27 +40,76 @@
 
 - (void)addDuration:(id)sender
 {
-    [self.hoursTextField resignFirstResponder];
-    self.hoursTextField.editable = NO;
-    [self.minutesTextField resignFirstResponder];
-    self.minutesTextField.editable = NO;
-    [self.secondsTextField resignFirstResponder];
-    self.secondsTextField.editable = NO;
+    [self setInputsEnabled:NO];
+    
+    KYAValidationReason validationResult = [self validateInputs];
+    switch(validationResult)
+    {
+        case KYAValidationReasonInvalid:
+            self.errorMessage = KYA_L10N_DURATION_INVALID_INPUT;
+            [self setInputsEnabled:YES];
+            break;
+        case KYAValidationReasonAlreadyAdded:
+            self.errorMessage = KYA_L10N_DURATION_ALREADY_ADDED;
+            [self setInputsEnabled:YES];
+            break;
+        default:
+            [self dismissController:sender];
+            break;
+    }
+}
+
+- (KYAValidationReason)validateInputs
+{
+    if(self.hours.integerValue > 999)
+    {
+        self.hours = @999;
+        return KYAValidationReasonInvalid;
+    }
+    if(self.hours == nil) { self.hours = @0; }
+    
+    if(self.minutes.integerValue > 59)
+    {
+        self.minutes = @59;
+        return KYAValidationReasonInvalid;
+    }
+    if(self.minutes == nil) { self.minutes = @0; }
+    
+    if(self.seconds.integerValue > 59)
+    {
+        self.seconds = @59;
+        return KYAValidationReasonInvalid;
+    }
+    if(self.seconds == nil) { self.seconds = @0; }
     
     KYA_AUTO duration = [[KYAActivationDuration alloc] initWithHours:self.hours.integerValue
                                                              minutes:self.minutes.integerValue
                                                              seconds:self.seconds.integerValue];
-    BOOL didAddDuration = [self.durationsController addActivationDuration:duration];
-    if(didAddDuration == NO)
+    if(duration == nil)
     {
-        self.errorMessage = KYA_L10N_DURATION_ALREADY_ADDED;
-        self.hoursTextField.editable = YES;
-        self.minutesTextField.editable = YES;
-        self.secondsTextField.editable = YES;
-        return;
+        return KYAValidationReasonInvalid;
     }
+    BOOL didAdd = [self.durationsController addActivationDuration:duration];
+    if(didAdd == NO)
+    {
+        return KYAValidationReasonAlreadyAdded;
+    }
+    
+    return KYAValidationReasonSuccess;
+}
 
-    [self dismissController:sender];
+- (void)setInputsEnabled:(BOOL)enabled
+{
+    if(enabled == NO)
+    {
+        [self.hoursTextField resignFirstResponder];
+        [self.minutesTextField resignFirstResponder];
+        [self.secondsTextField resignFirstResponder];
+    }
+    
+    self.hoursTextField.editable = enabled;
+    self.minutesTextField.editable = enabled;
+    self.secondsTextField.editable = enabled;
 }
 
 - (void)resetValues

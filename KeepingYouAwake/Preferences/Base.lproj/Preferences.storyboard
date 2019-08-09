@@ -480,7 +480,7 @@ DQ
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="10" bezelStyle="round" id="E3X-Hr-oEw">
                                             <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="Kxp-h3-g5Y">
                                                 <real key="minimum" value="0.0"/>
-                                                <real key="maximum" value="9999"/>
+                                                <real key="maximum" value="999"/>
                                             </numberFormatter>
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -506,7 +506,7 @@ DQ
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="eot-GD-Ate">
                                         <rect key="frame" x="-2" y="8" width="284" height="17"/>
-                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" alignment="center" title="Warning Label" id="fFl-4s-KJ6">
+                                        <textFieldCell key="cell" alignment="center" title="Warning Label" id="fFl-4s-KJ6">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

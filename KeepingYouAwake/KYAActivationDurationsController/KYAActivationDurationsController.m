@@ -140,14 +140,6 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     [self didChange];
 }
 
-- (BOOL)containsActivationDuration:(KYAActivationDuration *)activationDuration
-{
-    if(activationDuration == nil) { return NO; }
-    
-    KYA_AUTO durations = self.activationDurationsIncludingInfinite;
-    return [durations containsObject:activationDuration];
-}
-
 - (void)didChange
 {
     [self saveToUserDefaults];
