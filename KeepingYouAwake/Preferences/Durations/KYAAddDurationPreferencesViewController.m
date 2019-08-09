@@ -33,7 +33,7 @@
 
 - (void)addDuration:(id)sender
 {
-    self.errorMessage = @"That doesn't work yet.";
+    [self validateInput];
 }
 
 - (void)resetValues
@@ -45,6 +45,8 @@
 
 - (void)validateInput
 {
+    self.errorMessage = @"That doesn't work yet.";
+    
     
 }
 

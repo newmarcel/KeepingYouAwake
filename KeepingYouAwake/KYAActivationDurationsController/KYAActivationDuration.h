@@ -21,6 +21,16 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 @interface KYAActivationDuration : NSObject <NSSecureCoding>
 
 /**
+ Returns a default set of activation durations.
+ */
+@property (class, nonatomic, readonly) NSArray<KYAActivationDuration *> *defaultActivationDurations;
+
+/**
+ Returns an activation duration for an indefinite amount of time.
+ */
+@property (class, nonatomic, readonly) KYAActivationDuration *indefiniteActivationDuration;
+
+/**
  An activation duration. 0 seconds represent KYAActivationDurationIndefinite.
  */
 @property (nonatomic, readonly) NSTimeInterval seconds;
@@ -42,6 +52,16 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 - (instancetype)initWithSeconds:(NSTimeInterval)seconds NS_DESIGNATED_INITIALIZER;
 
 /**
+ Convenience initializer to create a new activation duration from the provided components.
+
+ @param hours Hours component
+ @param minutes Minutes component
+ @param seconds Seconds component
+ @return A new instance or nil
+ */
+- (nullable instancetype)initWithHours:(NSInteger)hours minutes:(NSInteger)minutes seconds:(NSInteger)seconds;
+
+/**
  Returns YES if other matches the stored seconds and
  displayUnit values of the receiver.
 
@@ -51,34 +71,5 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 - (BOOL)isEqualToActivationDuration:(KYAActivationDuration *)other;
 
 @end
-
-#pragma mark - Convenience Helper Functions
-
-/**
- *  Returns a KYAActivationDuration object for the supplied number of seconds.
- *
- *  @param seconds Some seconds.
- *
- *  @return A new KYAActivationDuration instance.
- */
-FOUNDATION_EXTERN KYAActivationDuration *KYADurationForSeconds(NSInteger seconds);
-
-/**
- *  Returns a KYAActivationDuration object for the supplied number of minutes formatted as minutes.
- *
- *  @param minutes Some minutes.
- *
- *  @return A new KYAActivationDuration instance.
- */
-FOUNDATION_EXTERN KYAActivationDuration *KYADurationForMinutes(NSInteger minutes);
-
-/**
- *  Returns a KYAActivationDuration object for the supplied number of hours formatted as hours.
- *
- *  @param hours Some hours.
- *
- *  @return A new KYAActivationDuration instance.
- */
-FOUNDATION_EXTERN KYAActivationDuration *KYADurationForHours(NSInteger hours);
 
 NS_ASSUME_NONNULL_END

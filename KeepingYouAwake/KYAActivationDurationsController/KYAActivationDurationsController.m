@@ -55,7 +55,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     // Reset the default duration if it got removed
     if(![self.storedActivationDurations containsObject:self.defaultActivationDuration])
     {
-        [self setDefaultActivationDuration:KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite)
+        [self setDefaultActivationDuration:KYAActivationDuration.indefiniteActivationDuration
                           notifyListensers:NO];
     }
     
@@ -64,12 +64,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 
 - (void)restoreDefaultDurations
 {
-    KYA_AUTO defaults = @[
-                          KYADurationForMinutes(5), KYADurationForMinutes(10),
-                          KYADurationForMinutes(15), KYADurationForMinutes(30),
-                          KYADurationForHours(1), KYADurationForHours(2), KYADurationForHours(5)
-                          ];
-    self.storedActivationDurations = [NSMutableArray arrayWithArray:defaults];
+    self.storedActivationDurations = [KYAActivationDuration.defaultActivationDurations mutableCopy];
 }
 
 - (NSArray<KYAActivationDuration *> *)activationDurations
@@ -80,7 +75,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 - (NSArray<KYAActivationDuration *> *)activationDurationsIncludingInfinite
 {
     KYA_AUTO durations = [NSMutableArray arrayWithArray:self.storedActivationDurations];
-    [durations insertObject:KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite) atIndex:0];
+    [durations insertObject:KYAActivationDuration.indefiniteActivationDuration atIndex:0];
     return [NSArray arrayWithArray:durations];
 }
 
@@ -111,7 +106,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     // Reset the default duration if it got removed
     if(![self.storedActivationDurations containsObject:self.defaultActivationDuration])
     {
-        [self setDefaultActivationDuration:KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite)
+        [self setDefaultActivationDuration:KYAActivationDuration.indefiniteActivationDuration
                           notifyListensers:NO];
     }
     
@@ -146,6 +141,14 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     
     [self setDefaultActivationDuration:duration notifyListensers:NO];
     [self didChange];
+}
+
+- (BOOL)containsActivationDuration:(KYAActivationDuration *)activationDuration
+{
+    if(activationDuration == nil) { return NO; }
+    
+    KYA_AUTO durations = self.activationDurationsIncludingInfinite;
+    return [durations containsObject:activationDuration];
 }
 
 - (void)didChange
@@ -184,7 +187,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     NSTimeInterval seconds = self.userDefaults.kya_defaultTimeInterval;
     if(seconds == KYAActivationDurationIndefinite)
     {
-        return KYADurationForSeconds((NSInteger)KYAActivationDurationIndefinite);
+        return KYAActivationDuration.indefiniteActivationDuration;
     }
     
     KYA_AUTO defaultPredicate = [NSPredicate predicateWithFormat:@"seconds == %@",

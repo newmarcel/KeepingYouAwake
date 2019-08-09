@@ -40,6 +40,8 @@ FOUNDATION_EXPORT NSNotificationName const KYAActivationDurationsControllerActiv
 
 - (void)resetActivationDurations;
 
+- (BOOL)containsActivationDuration:(nullable KYAActivationDuration *)activationDuration;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -20,6 +20,25 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
 
 @implementation KYAActivationDuration
 
++ (NSArray<KYAActivationDuration *> *)defaultActivationDurations
+{
+    using namespace std::chrono_literals;
+    return @[
+             [[KYAActivationDuration alloc]initWithDuration:5min],
+             [[KYAActivationDuration alloc]initWithDuration:10min],
+             [[KYAActivationDuration alloc]initWithDuration:15min],
+             [[KYAActivationDuration alloc]initWithDuration:30min],
+             [[KYAActivationDuration alloc]initWithDuration:1h],
+             [[KYAActivationDuration alloc]initWithDuration:2h],
+             [[KYAActivationDuration alloc]initWithDuration:5h]
+             ];
+}
+
++ (KYAActivationDuration *)indefiniteActivationDuration
+{
+    return [[KYAActivationDuration alloc] initWithSeconds:KYAActivationDurationIndefinite];
+}
+
 - (instancetype)initWithSeconds:(NSTimeInterval)seconds
 {
     self = [super init];
@@ -28,6 +47,30 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
         self.seconds = seconds;
     }
     return self;
+}
+
+- (instancetype)initWithHours:(NSInteger)hours minutes:(NSInteger)minutes seconds:(NSInteger)seconds
+{
+    using namespace std::chrono_literals;
+    
+    auto hoursValue = std::chrono::hours { hours };
+    
+    auto minutesValue = std::chrono::minutes { minutes };
+    if(minutesValue > 1h)
+    {
+        KYALog(@"Attempted to add a duration with a minutes component value greater than an hour.");
+        return nil;
+    }
+    
+    auto secondsValue = std::chrono::seconds { seconds };
+    if(secondsValue > 1min)
+    {
+        KYALog(@"Attempted to add a duration with a seconds component value greater than a minute.");
+        return nil;
+    }
+    
+    std::chrono::seconds totalValue = hoursValue + minutesValue + secondsValue;
+    return [self initWithDuration:totalValue];
 }
 
 - (instancetype)initWithDuration:(std::chrono::duration<NSTimeInterval>)duration
@@ -115,20 +158,3 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
 }
 
 @end
-
-#pragma mark - Convenience Helper Functions
-
-KYAActivationDuration *KYADurationForSeconds(NSInteger seconds)
-{
-    return [[KYAActivationDuration alloc] initWithSeconds:seconds];
-}
-
-KYAActivationDuration *KYADurationForMinutes(NSInteger minutes)
-{
-    return [[KYAActivationDuration alloc] initWithDuration:std::chrono::minutes { minutes }];
-}
-
-KYAActivationDuration *KYADurationForHours(NSInteger hours)
-{
-    return [[KYAActivationDuration alloc] initWithDuration:std::chrono::hours { hours }];
-}
