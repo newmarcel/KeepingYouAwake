@@ -19,11 +19,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
-#warning DEBUG MODE
-#if DEBUG
-    [self showPreferencesWindow:nil];
-    ((NSTabViewController *)self.preferencesWindowController.window.contentViewController).selectedTabViewItemIndex = 1;
-#endif
 }
 
 #pragma mark - Preferences Window

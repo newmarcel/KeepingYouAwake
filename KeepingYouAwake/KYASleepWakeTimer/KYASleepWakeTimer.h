@@ -10,18 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define KYA_MINUTES(m) (m * 60.0f)
-#define KYA_HOURS(h) (h * 3600.0f)
-
-#define KYA_10SECS 10.0f
-#define KYA_5MINS KYA_MINUTES(5)
-#define KYA_10MINS KYA_MINUTES(10)
-#define KYA_15MINS KYA_MINUTES(15)
-#define KYA_30MINS KYA_MINUTES(30)
-#define KYA_1HOUR KYA_HOURS(1)
-#define KYA_2HOURS KYA_HOURS(2)
-#define KYA_5HOURS KYA_HOURS(5)
-
 FOUNDATION_EXPORT NSTimeInterval const KYASleepWakeTimeIntervalIndefinite;
 
 typedef void (^KYASleepWakeTimerCompletionBlock)(BOOL cancelled);

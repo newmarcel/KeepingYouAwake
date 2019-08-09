@@ -15,7 +15,6 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
 
 @interface KYAActivationDuration ()
 @property (nonatomic, readwrite) NSTimeInterval seconds;
-@property (nonatomic, readwrite) NSCalendarUnit displayUnit;
 @end
 
 @implementation KYAActivationDuration

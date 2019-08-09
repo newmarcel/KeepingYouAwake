@@ -52,14 +52,17 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 - (instancetype)initWithSeconds:(NSTimeInterval)seconds NS_DESIGNATED_INITIALIZER;
 
 /**
- Convenience initializer to create a new activation duration from the provided components.
+ Convenience initializer to create a new activation
+ duration from the provided components.
 
  @param hours Hours component
  @param minutes Minutes component
  @param seconds Seconds component
  @return A new instance or nil
  */
-- (nullable instancetype)initWithHours:(NSInteger)hours minutes:(NSInteger)minutes seconds:(NSInteger)seconds;
+- (nullable instancetype)initWithHours:(NSInteger)hours
+                               minutes:(NSInteger)minutes
+                               seconds:(NSInteger)seconds;
 
 /**
  Returns YES if other matches the stored seconds and

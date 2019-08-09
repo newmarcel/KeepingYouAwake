@@ -18,6 +18,10 @@
 #import "KYAActivationDurationsMenuController.h"
 #import "NSDate+RemainingTime.h"
 
+// Deprecated!
+#define KYA_MINUTES(m) (m * 60.0f)
+#define KYA_HOURS(h) (h * 3600.0f)
+
 @interface KYAAppController () <NSUserNotificationCenterDelegate, KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
 @property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
