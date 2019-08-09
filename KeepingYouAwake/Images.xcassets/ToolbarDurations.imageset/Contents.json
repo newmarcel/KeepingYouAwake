@@ -3,6 +3,25 @@
     {
       "idiom" : "universal",
       "filename" : "ToolbarDurations.pdf"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "ToolbarDurationsLight.pdf",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ]
+    },
+    {
+      "idiom" : "universal",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ]
     }
   ],
   "info" : {
