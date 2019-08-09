@@ -40,6 +40,7 @@
 		DA7B53061E16999A00D89A12 /* KYAPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */; };
 		DA82560D22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82560C22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m */; };
 		DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */; };
+		DA987C9C22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */; };
 		DAB0700A22EC794F004D5BCA /* KYADurationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700922EC794F004D5BCA /* KYADurationCell.m */; };
 		DAB0700C22EC795F004D5BCA /* KYADurationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB0700B22EC795F004D5BCA /* KYADurationCell.xib */; };
 		DAB0701022EC8E6B004D5BCA /* KYADurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700E22EC8E6B004D5BCA /* KYADurationPreferencesViewController.m */; };
@@ -194,6 +195,8 @@
 		DA8B21971F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/MainMenu.strings"; sourceTree = "<group>"; };
 		DA8B21981F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DA8B21991F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DA987C9A22FC749D00DD476B /* KYAAddDurationPreferencesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAAddDurationPreferencesViewController.h; sourceTree = "<group>"; };
+		DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAddDurationPreferencesViewController.m; sourceTree = "<group>"; };
 		DAA478D3227C233000E609C1 /* KYALocalizedStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYALocalizedStrings.h; sourceTree = "<group>"; };
 		DAB0700822EC794F004D5BCA /* KYADurationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADurationCell.h; sourceTree = "<group>"; };
 		DAB0700922EC794F004D5BCA /* KYADurationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYADurationCell.m; sourceTree = "<group>"; };
@@ -460,6 +463,8 @@
 			children = (
 				DAB0700D22EC8E6B004D5BCA /* KYADurationPreferencesViewController.h */,
 				DAB0700E22EC8E6B004D5BCA /* KYADurationPreferencesViewController.m */,
+				DA987C9A22FC749D00DD476B /* KYAAddDurationPreferencesViewController.h */,
+				DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */,
 				DAB0701322EC8F06004D5BCA /* KYADurationCell */,
 			);
 			path = Durations;
@@ -623,6 +628,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA987C9C22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m in Sources */,
 				DA56801B2115FF140039C979 /* KYAUpdatePreferencesViewController.m in Sources */,
 				DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */,
 				DA7B53061E16999A00D89A12 /* KYAPreferencesWindowController.m in Sources */,
