@@ -560,17 +560,17 @@ DQ
             <objects>
                 <viewController title="Activation Duration" id="IAM-at-0nC" customClass="KYADurationPreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="XNN-Mj-Jpg">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="296"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="25" horizontalPageScroll="10" verticalLineScroll="25" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjG-h1-qPf">
-                                <rect key="frame" x="-1" y="57" width="452" height="244"/>
+                                <rect key="frame" x="-1" y="57" width="452" height="240"/>
                                 <clipView key="contentView" id="fl9-cG-eWb">
-                                    <rect key="frame" x="1" y="1" width="450" height="242"/>
+                                    <rect key="frame" x="1" y="1" width="450" height="238"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="medium" viewBased="YES" id="SaD-JI-vLS">
-                                            <rect key="frame" x="0.0" y="0.0" width="450" height="242"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="238"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="0.0" height="1"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -601,7 +601,7 @@ DQ
                                 </clipView>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="UmD-Ag-pqA"/>
-                                    <constraint firstAttribute="height" constant="244" id="leM-7D-ftC"/>
+                                    <constraint firstAttribute="height" constant="240" id="leM-7D-ftC"/>
                                 </constraints>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="gOS-DD-4LT">
                                     <rect key="frame" x="1" y="102" width="81" height="16"/>
