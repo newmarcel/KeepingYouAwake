@@ -81,9 +81,12 @@
 {
     if([object isEqual:self.sleepWakeTimer] && [keyPath isEqualToString:@"scheduled"])
     {
-        // Update the status item for scheduling changes
-        BOOL active = [change[NSKeyValueChangeNewKey] boolValue];
-        self.statusItemController.activeAppearanceEnabled = active;
+        KYA_WEAK weakSelf = self;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // Update the status item for scheduling changes
+            BOOL active = [change[NSKeyValueChangeNewKey] boolValue];
+            weakSelf.statusItemController.activeAppearanceEnabled = active;
+        });
     }
 }
 
