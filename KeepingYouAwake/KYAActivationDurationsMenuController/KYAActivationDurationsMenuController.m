@@ -48,7 +48,7 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
     NSTimeInterval seconds = (NSTimeInterval)sender.tag;
     
     KYA_AUTO controller = self.activationDurationsController;
-    KYA_AUTO durations = controller.activationDurationsIncludingInfinite;
+    KYA_AUTO durations = controller.activationDurations;
     
     KYA_AUTO predicate = [NSPredicate predicateWithFormat:@"seconds == %@", @(seconds)];
     KYA_AUTO results = [durations filteredArrayUsingPredicate:predicate];
@@ -56,56 +56,7 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
     self.activationDurationsController.defaultActivationDuration = results.firstObject;
 }
 
-#pragma mark - NSMenuDelegate
-
-- (void)menuNeedsUpdate:(NSMenu *)menu
-{
-    [menu removeAllItems];
-    
-    KYA_AUTO controller = self.activationDurationsController;
-    
-    KYA_AUTO remainingTimeMenuItem = [self menuItemForRemainingTime];
-    if(remainingTimeMenuItem != nil)
-    {
-        [menu addItem:remainingTimeMenuItem];
-        [menu addItem:NSMenuItem.separatorItem];
-    }
-    
-    for(KYAActivationDuration *duration in controller.activationDurationsIncludingInfinite)
-    {
-        KYA_AUTO menuItem = [menu addItemWithTitle:duration.localizedTitle
-                                            action:@selector(selectActivationDuration:)
-                                     keyEquivalent:@""];
-        menuItem.target = self;
-        menuItem.tag = (NSInteger)duration.seconds;
-        
-        // Alternate state
-        KYA_AUTO alternateTitle = KYA_L10N_SET_DEFAULT_ACTIVATION_DURATION(duration.localizedTitle);
-        KYA_AUTO alternateMenuItem = [menu addItemWithTitle:alternateTitle
-                                                     action:@selector(setDefaultActivationDuration:)
-                                              keyEquivalent:@""];
-        alternateMenuItem.target = self;
-        alternateMenuItem.alternate = YES;
-        alternateMenuItem.keyEquivalentModifierMask = NSEventModifierFlagOption;
-        alternateMenuItem.tag = (NSInteger)duration.seconds;
-        
-        // Is Default
-        BOOL isDefault = [controller.defaultActivationDuration isEqualToActivationDuration:duration];
-        menuItem.attributedTitle = [self attributedStringForMenuItemTitle:menuItem.title isDefault:isDefault];
-        
-        // Is Scheduled
-        KYA_AUTO delegate = self.delegate;
-        if([delegate respondsToSelector:@selector(currentActivationDuration)])
-        {
-            KYA_AUTO current = [delegate currentActivationDuration];
-            if(current != nil && ([current isEqualToActivationDuration:duration]))
-            {
-                menuItem.state = NSControlStateValueOn;
-                alternateMenuItem.state = NSControlStateValueOn;
-            }
-        }
-    }
-}
+#pragma mark -
 
 - (NSAttributedString *)attributedStringForMenuItemTitle:(NSString *)title isDefault:(BOOL)isDefault
 {
@@ -148,6 +99,7 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
     return menuItem;
 }
 
+// TODO: Use this for live updates of the menu item
 - (void)updateRemainingTime:(id)sender
 {
     KYA_AUTO delegate = self.delegate;
@@ -160,6 +112,57 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
     if(menuItem != nil && menuItem.tag == KYAMenuItemRemainingTimeTag)
     {
         menuItem.title = fireDate.kya_localizedRemainingTime;
+    }
+}
+
+#pragma mark - NSMenuDelegate
+
+- (void)menuNeedsUpdate:(NSMenu *)menu
+{
+    [menu removeAllItems];
+    
+    KYA_AUTO controller = self.activationDurationsController;
+    
+    KYA_AUTO remainingTimeMenuItem = [self menuItemForRemainingTime];
+    if(remainingTimeMenuItem != nil)
+    {
+        [menu addItem:remainingTimeMenuItem];
+        [menu addItem:NSMenuItem.separatorItem];
+    }
+    
+    for(KYAActivationDuration *duration in controller.activationDurations)
+    {
+        KYA_AUTO menuItem = [menu addItemWithTitle:duration.localizedTitle
+                                            action:@selector(selectActivationDuration:)
+                                     keyEquivalent:@""];
+        menuItem.target = self;
+        menuItem.tag = (NSInteger)duration.seconds;
+        
+        // Alternate state
+        KYA_AUTO alternateTitle = KYA_L10N_SET_DEFAULT_ACTIVATION_DURATION(duration.localizedTitle);
+        KYA_AUTO alternateMenuItem = [menu addItemWithTitle:alternateTitle
+                                                     action:@selector(setDefaultActivationDuration:)
+                                              keyEquivalent:@""];
+        alternateMenuItem.target = self;
+        alternateMenuItem.alternate = YES;
+        alternateMenuItem.keyEquivalentModifierMask = NSEventModifierFlagOption;
+        alternateMenuItem.tag = (NSInteger)duration.seconds;
+        
+        // Is Default
+        BOOL isDefault = [controller.defaultActivationDuration isEqualToActivationDuration:duration];
+        menuItem.attributedTitle = [self attributedStringForMenuItemTitle:menuItem.title isDefault:isDefault];
+        
+        // Is Scheduled
+        KYA_AUTO delegate = self.delegate;
+        if([delegate respondsToSelector:@selector(currentActivationDuration)])
+        {
+            KYA_AUTO current = [delegate currentActivationDuration];
+            if(current != nil && ([current isEqualToActivationDuration:duration]))
+            {
+                menuItem.state = NSControlStateValueOn;
+                alternateMenuItem.state = NSControlStateValueOn;
+            }
+        }
     }
 }
 

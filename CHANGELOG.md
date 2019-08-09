@@ -7,6 +7,7 @@
 	- _Thanks [jamesgecko](https://github.com/jamesgecko) for the [suggestion](https://github.com/newmarcel/KeepingYouAwake/issues/128)!_
 
 - added the ability to customize activation durations in _Preferences_
+
 **Please note: The 1.5.x series of releases will be the last supporting macOS Yosemite and El Capitan. If you see any critical reason for supporting those, please leave a comment on [GitHub](https://github.com/newmarcel/KeepingYouAwake/issues/126).**
 
 ### v1.5.0 ###

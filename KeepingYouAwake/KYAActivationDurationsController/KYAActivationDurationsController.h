@@ -11,31 +11,38 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT NSNotificationName const KYAActivationDurationsControllerActivationDurationsDidChangeNotification;
+FOUNDATION_EXPORT NSNotificationName const KYAActivationDurationsDidChangeNotification;
 
 @interface KYAActivationDurationsController : NSObject
 @property (class, nonatomic, readonly) KYAActivationDurationsController *sharedController;
 @property (nonatomic, readonly) NSUserDefaults *userDefaults;
 @property (nonatomic, nullable) KYAActivationDuration *defaultActivationDuration;
 
-@property (copy, nonatomic, readonly) NSArray<KYAActivationDuration *> *activationDurationsIncludingInfinite;
+/**
+ Returns all available and sorted activation durations.
+ This also includes the indefinite activation duration.
+ */
+@property (copy, nonatomic, readonly) NSArray<KYAActivationDuration *> *activationDurations;
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWithUserDefaults:(NSUserDefaults *)userDefaults NS_DESIGNATED_INITIALIZER;
 
-//- (BOOL)setActivationDurations:(NSArray<KYAActivationDuration *> *)activationDurations
-//                         error:(NSError *_Nullable *)error;
+#pragma mark - Add & Remove
 
 - (BOOL)addActivationDuration:(KYAActivationDuration *)activationDuration;
 
 - (BOOL)removeActivationDuration:(KYAActivationDuration *)activationDuration
                            error:(NSError *_Nullable *)error;
 
+#pragma mark - Index Access
+
 - (BOOL)removeActivationDurationAtIndex:(NSUInteger)index;
 
 - (void)setActivationDurationAsDefaultAtIndex:(NSUInteger)index;
+
+#pragma mark - Reset
 
 - (void)resetActivationDurations;
 

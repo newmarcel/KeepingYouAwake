@@ -33,7 +33,6 @@
 
 // Menu
 @property (weak, nonatomic) IBOutlet NSMenu *menu;
-@property (weak, nonatomic) IBOutlet NSMenu *timerMenu;
 @property (weak, nonatomic) IBOutlet NSMenuItem *activationDurationsMenuItem;
 @end
 

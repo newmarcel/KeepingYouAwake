@@ -29,7 +29,7 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     [NSNotificationCenter.defaultCenter
      addObserver:self
      selector:@selector(activationDurationsDidChange:)
-     name:KYAActivationDurationsControllerActivationDurationsDidChangeNotification
+     name:KYAActivationDurationsDidChangeNotification
      object:nil];
     
     [KYADurationCell registerInTableView:self.tableView];
@@ -108,12 +108,12 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return (NSInteger)self.durationsController.activationDurationsIncludingInfinite.count;
+    return (NSInteger)self.durationsController.activationDurations.count;
 }
 
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    return self.durationsController.activationDurationsIncludingInfinite[(NSUInteger)row];
+    return self.durationsController.activationDurations[(NSUInteger)row];
 }
 
 #pragma mark - NSTableViewDelegate

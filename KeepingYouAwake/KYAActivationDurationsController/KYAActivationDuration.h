@@ -65,8 +65,7 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
                                seconds:(NSInteger)seconds;
 
 /**
- Returns YES if other matches the stored seconds and
- displayUnit values of the receiver.
+ Returns YES if other matches the stored seconds of the receiver.
 
  @param other Another activation duration to compare to
  @return YES if other is equal to the receiver

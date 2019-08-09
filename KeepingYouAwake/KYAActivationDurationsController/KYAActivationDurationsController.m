@@ -12,7 +12,7 @@
 
 #define KYA_USES_SIMPLE_USER_DEFAULTS_VALUES 1
 
-NSNotificationName const KYAActivationDurationsControllerActivationDurationsDidChangeNotification = @"KYAActivationDurationsControllerActivationDurationsDidChangeNotification";
+NSNotificationName const KYAActivationDurationsDidChangeNotification = @"KYAActivationDurationsDidChangeNotification";
 
 static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingYouAwake.Durations";
 
@@ -67,7 +67,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     self.storedActivationDurations = [KYAActivationDuration.defaultActivationDurations mutableCopy];
 }
 
-- (NSArray<KYAActivationDuration *> *)activationDurationsIncludingInfinite
+- (NSArray<KYAActivationDuration *> *)activationDurations
 {
     KYA_AUTO durations = [NSMutableArray arrayWithArray:self.storedActivationDurations];
     [durations insertObject:KYAActivationDuration.indefiniteActivationDuration atIndex:0];
@@ -114,7 +114,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 
 - (BOOL)removeActivationDurationAtIndex:(NSUInteger)index
 {
-    KYA_AUTO durations = self.activationDurationsIncludingInfinite;
+    KYA_AUTO durations = self.activationDurations;
     KYA_AUTO duration = durations[index];
     if(duration == nil)
     {
@@ -129,7 +129,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 
 - (void)setActivationDurationAsDefaultAtIndex:(NSUInteger)index
 {
-    KYA_AUTO durations = self.activationDurationsIncludingInfinite;
+    KYA_AUTO durations = self.activationDurations;
     KYA_AUTO duration = durations[index];
     if(duration == nil)
     {
@@ -144,7 +144,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 {
     [self saveToUserDefaults];
     
-    KYA_AUTO notification = KYAActivationDurationsControllerActivationDurationsDidChangeNotification;
+    KYA_AUTO notification = KYAActivationDurationsDidChangeNotification;
     [NSNotificationCenter.defaultCenter postNotificationName:notification object:nil];
 }
 
@@ -159,14 +159,14 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 {
     NSParameterAssert(duration);
     
-    NSAssert([self.activationDurationsIncludingInfinite containsObject:duration], @"The passed duration must be contained in self.activationDurations.");
+    NSAssert([self.activationDurations containsObject:duration], @"The passed duration must be contained in self.activationDurations.");
     
     self.userDefaults.kya_defaultTimeInterval = duration.seconds;
     [self.userDefaults synchronize];
     
     if(notify)
     {
-        KYA_AUTO notification = KYAActivationDurationsControllerActivationDurationsDidChangeNotification;
+        KYA_AUTO notification = KYAActivationDurationsDidChangeNotification;
         [NSNotificationCenter.defaultCenter postNotificationName:notification object:nil];
     }
 }
