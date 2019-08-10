@@ -1,5 +1,14 @@
+/* Class = "NSButtonCell"; title = "Reset…"; ObjectID = "2s2-Ei-lnG"; */
+"2s2-Ei-lnG.title" = "Zurücksetzen…";
+
 /* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
 "5bL-cI-YIY.title" = "Erweitert";
+
+/* Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "6Kw-xJ-Wk8"; */
+"6Kw-xJ-Wk8.title" = "Die Standard-Aktivierungsdauer wird benutzt, wenn du auf das Menüleistensymbol klickst.";
+
+/* Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu"; */
+"8V0-Sq-Cdu.title" = "Updates";
 
 /* Class = "NSWindow"; title = "KeepingYouAwake – Preferences"; ObjectID = "AvX-7Q-Bvc"; */
 "AvX-7Q-Bvc.title" = "KeepingYouAwake – Einstellungen";
@@ -7,8 +16,29 @@
 /* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK"; */
 "Ax6-W4-7bK.title" = "Deaktivieren, wenn der Ladestand der Batterie niedriger ist als";
 
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "bV3-BW-JOK"; */
+"bV3-BW-JOK.title" = "Abbrechen";
+
+/* Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "d0c-1Y-p5i"; */
+"d0c-1Y-p5i.title" = "Dauer hinzufügen";
+
+/* Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[0] = "Remove"; ObjectID = "DE6-qp-FZU"; */
+"DE6-qp-FZU.ibShadowedToolTips[0]" = "Entfernen";
+
+/* Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[1] = "Add"; ObjectID = "DE6-qp-FZU"; */
+"DE6-qp-FZU.ibShadowedToolTips[1]" = "Hinzufügen";
+
+/* Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "DfZ-Gt-rge"; */
+"DfZ-Gt-rge.title" = "Sekunden";
+
+/* Class = "NSButtonCell"; title = "Set Default"; ObjectID = "EMN-wI-vLT"; */
+"EMN-wI-vLT.title" = "Als Standard setzen";
+
 /* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo"; */
 "EXv-vC-wyo.title" = "Zurücksetzen";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "f4N-sw-1MQ"; */
+"f4N-sw-1MQ.title" = "Entfernen";
 
 /* Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "fiQ-AT-I7u"; */
 "fiQ-AT-I7u.title" = "10 %";
@@ -19,11 +49,14 @@
 /* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "i17-n2-vfw"; */
 "i17-n2-vfw.title" = "50 %";
 
-/* Class = "NSViewController"; title = "Durations"; ObjectID = "IAM-at-0nC"; */
+/* Class = "NSViewController"; title = "Activation Duration"; ObjectID = "IAM-at-0nC"; */
 "IAM-at-0nC.title" = "Aktivierungsdauer";
 
 /* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r"; */
 "IOU-Hs-S4r.title" = "Beim Start aktivieren";
+
+/* Class = "NSMenuItem"; title = "Set Default"; ObjectID = "iZe-2E-hEE"; */
+"iZe-2E-hEE.title" = "Als Standard setzen";
 
 /* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l"; */
 "k65-yi-85l.title" = "Dieser Wert wird ignoriert, wenn du die App unter dieser Kapazitätsgrenze startest.";
@@ -34,8 +67,8 @@
 /* Class = "NSViewController"; title = "General"; ObjectID = "lGE-74-XwP"; */
 "lGE-74-XwP.title" = "Allgemein";
 
-/* Class = "NSTextFieldCell"; title = "Sets the default activation duration for the menu bar icon."; ObjectID = "nnA-d3-VV6"; */
-"nnA-d3-VV6.title" = "Setzt die Standardaktivierungsdauer für das Statusmenü.";
+/* Class = "NSButtonCell"; title = "Set Default"; ObjectID = "LYE-CA-vzC"; */
+"LYE-CA-vzC.title" = "Als Standard setzen";
 
 /* Class = "NSTextFieldCell"; title = "KeepingYouAwake"; ObjectID = "nsg-DI-kE2"; */
 "nsg-DI-kE2.title" = "KeepingYouAwake";
@@ -49,14 +82,14 @@
 /* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "Rb3-Sm-byr"; */
 "Rb3-Sm-byr.title" = "90 %";
 
+/* Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "rEp-oa-7IA"; */
+"rEp-oa-7IA.title" = "Stunden";
+
 /* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B"; */
 "S6p-h0-H5B.title" = "Verhindert direkt beim Start den Ruhezustand.";
 
 /* Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj"; */
 "uUP-5n-ykj.title" = "Über";
-
-/* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
-"UVY-8B-q5H.title" = "Standardaktivierungsdauer:";
 
 /* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "vdb-hr-zzU"; */
 "vdb-hr-zzU.title" = "Nach Vorschauversionen suchen";
@@ -64,6 +97,12 @@
 /* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "W3H-iV-s6I"; */
 "W3H-iV-s6I.title" = "Jetzt suchen";
 
+/* Class = "NSButtonCell"; title = "Reset…"; ObjectID = "X2a-5O-EuD"; */
+"X2a-5O-EuD.title" = "Zurücksetzen…";
+
 /* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU"; */
 "x6s-XD-lBU.title" = "Öffnet die App automatisch beim Start deines Macs.";
+
+/* Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "ybA-ux-mRo"; */
+"ybA-ux-mRo.title" = "Minuten";
 

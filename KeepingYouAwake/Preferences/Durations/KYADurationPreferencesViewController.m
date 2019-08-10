@@ -74,6 +74,7 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     alert.icon = [NSImage imageNamed:NSImageNameCaution];
     
     alert.informativeText = KYA_L10N_DURATIONS_ALERT_REALLY_RESET_MESSAGE;
+    alert.messageText = KYA_L10N_DURATIONS_ALERT_REALLY_RESET_TITLE;
     KYA_AUTO okButton = [alert addButtonWithTitle:KYA_L10N_DURATIONS_ALERT_REALLY_RESET_TITLE];
     okButton.tag = NSModalResponseOK;
     [alert addButtonWithTitle:KYA_L10N_CANCEL];
