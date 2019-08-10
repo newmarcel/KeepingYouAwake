@@ -601,7 +601,7 @@ DQ
                                 </clipView>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="UmD-Ag-pqA"/>
-                                    <constraint firstAttribute="height" constant="240" id="leM-7D-ftC"/>
+                                    <constraint firstAttribute="height" priority="750" constant="240" id="leM-7D-ftC"/>
                                 </constraints>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="gOS-DD-4LT">
                                     <rect key="frame" x="1" y="102" width="81" height="16"/>
@@ -612,7 +612,7 @@ DQ
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <stackView orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Rc-oWW">
+                            <stackView orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Rc-oWW">
                                 <rect key="frame" x="20" y="20" width="410" height="21"/>
                                 <beginningViews>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNN-SY-2mN">
