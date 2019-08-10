@@ -23,5 +23,6 @@
 
 #define KYA_L10N_ENABLE_EXPERIMENTAL_NOTIFICATION_CENTER_INTEGRATION NSLocalizedString(@"Enable experimental Notification Center integration", @"Enable experimental Notification Center integration")
 #define KYA_L10N_DISABLE_MENU_BAR_ICON_HIGHLIGHT_COLOR NSLocalizedString(@"Disable menu bar icon highlight color", @"Disable menu bar icon highlight color")
+#define KYA_L10N_QUIT_ON_TIMER_EXPIRATION NSLocalizedString(@"Quit when activation duration is over", @"Quit when activation duration is over")
 
 #endif /* KYA_LOCALIZED_STRINGS_H */

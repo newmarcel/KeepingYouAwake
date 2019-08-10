@@ -13,6 +13,7 @@ NSString * const KYAUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.Keep
 NSString * const KYAUserDefaultsKeyNotificationsEnabled = @"info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled";
 NSString * const KYAUserDefaultsKeyDefaultTimeInterval = @"info.marcel-dierkes.KeepingYouAwake.TimeInterval";
 NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled = @"info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled";
+NSString * const KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled = @"info.marcel-dierkes.KeepingYouAwake.QuitOnTimerExpirationEnabled";
 
 NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled = @"info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled";
 NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold = @"info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThreshold";
@@ -23,6 +24,7 @@ NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dier
 @dynamic kya_menuBarIconHighlightDisabled;
 @dynamic kya_batteryCapacityThresholdEnabled, kya_batteryCapacityThreshold;
 @dynamic kya_preReleaseUpdatesEnabled;
+@dynamic kya_quitOnTimerExpirationEnabled;
 
 #pragma mark - Activate on Launch
 
@@ -105,6 +107,18 @@ NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dier
 - (void)setKya_preReleaseUpdatesEnabled:(BOOL)preReleaseUpdatesEnabled
 {
     [self setBool:preReleaseUpdatesEnabled forKey:KYAUserDefaultsKeyPreReleaseUpdatesEnabled];
+}
+
+#pragma mark - Quit on Timer Expiration Enabled
+
+- (BOOL)kya_isQuitOnTimerExpirationEnabled
+{
+    return [self boolForKey:KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled];
+}
+
+- (void)setKya_quitOnTimerExpirationEnabled:(BOOL)quitOnTimerExpirationEnabled
+{
+    [self setBool:quitOnTimerExpirationEnabled forKey:KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled];
 }
 
 @end
