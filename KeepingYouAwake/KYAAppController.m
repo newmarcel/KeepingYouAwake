@@ -131,26 +131,34 @@
         return;
     }
 
+    KYA_AUTO defaults = NSUserDefaults.standardUserDefaults;
+
     // Check battery overrides and register for capacity changes.
     [self checkAndEnableBatteryOverride];
-    if([NSUserDefaults.standardUserDefaults kya_isBatteryCapacityThresholdEnabled])
+    if([defaults kya_isBatteryCapacityThresholdEnabled])
     {
         [self.batteryStatus registerForCapacityChangesIfNeeded];
     }
 
     KYA_AUTO timerCompletion = ^(BOOL cancelled) {
         // Post notifications
-        if([NSUserDefaults.standardUserDefaults kya_areNotificationsEnabled])
+        if([defaults kya_areNotificationsEnabled])
         {
             NSUserNotification *n = [NSUserNotification new];
             n.informativeText = KYA_L10N_ALLOWING_YOUR_MAC_TO_GO_TO_SLEEP;
             [NSUserNotificationCenter.defaultUserNotificationCenter scheduleNotification:n];
         }
+
+        // Quit on timer expiration
+        if(cancelled == NO && [defaults kya_isQuitOnTimerExpirationEnabled])
+        {
+            [NSApplication.sharedApplication terminate:nil];
+        }
     };
     [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:timerCompletion];
 
     // Post notifications
-    if([NSUserDefaults.standardUserDefaults kya_areNotificationsEnabled])
+    if([defaults kya_areNotificationsEnabled])
     {
         NSUserNotification *n = [NSUserNotification new];
 

@@ -15,6 +15,7 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyActivateOnLaunch;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyNotificationsEnabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
+FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
@@ -57,6 +58,11 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
  Returns YES if Sparkle should check for pre-release updates.
  */
 @property (nonatomic, getter = kya_arePreReleaseUpdatesEnabled) BOOL kya_preReleaseUpdatesEnabled;
+
+/**
+ Returns YES if the app should quit when the sleep wake timer expires.
+ */
+@property (nonatomic, getter=kya_isQuitOnTimerExpirationEnabled) BOOL kya_quitOnTimerExpirationEnabled;
 
 @end
 

@@ -52,6 +52,9 @@
     [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_DISABLE_MENU_BAR_ICON_HIGHLIGHT_COLOR
                                                     defaultsKey:KYAUserDefaultsKeyMenuBarIconHighlightDisabled
                             ]];
+    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_QUIT_ON_TIMER_EXPIRATION
+                                                    defaultsKey:KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled
+                            ]];
     
     self.preferences = [preferences copy];
 }
