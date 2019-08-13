@@ -8,6 +8,7 @@
 
 #import "KYADurationCell.h"
 #import "KYADefines.h"
+#import "KYALocalizedStrings.h"
 
 @implementation KYADurationCell
 
@@ -31,6 +32,15 @@
     NSParameterAssert(tableView);
     
     return [tableView makeViewWithIdentifier:[self identifier] owner:owner];
+}
+
+#pragma mark - Life Cycle
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    self.defaultLabel.stringValue = KYA_L10N_DEFAULT;
 }
 
 #pragma mark - Default Duration

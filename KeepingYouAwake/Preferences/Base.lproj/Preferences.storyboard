@@ -403,7 +403,7 @@ DQ
                                     </textField>
                                     <textField verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNV-XN-or3">
                                         <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="10" bezelStyle="round" id="AwQ-k3-WrS">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="AwQ-k3-WrS">
                                             <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="Doi-Je-auO">
                                                 <real key="minimum" value="0.0"/>
                                                 <real key="maximum" value="59"/>
@@ -440,7 +440,7 @@ DQ
                                     </textField>
                                     <textField verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrF-6M-cwl">
                                         <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="10" bezelStyle="round" id="o6k-z4-aoK">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="o6k-z4-aoK">
                                             <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="CF6-05-gRx">
                                                 <real key="minimum" value="0.0"/>
                                                 <real key="maximum" value="59"/>
@@ -477,7 +477,7 @@ DQ
                                     </textField>
                                     <textField verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRl-Ie-ZVo">
                                         <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="10" bezelStyle="round" id="E3X-Hr-oEw">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="E3X-Hr-oEw">
                                             <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="Kxp-h3-g5Y">
                                                 <real key="minimum" value="0.0"/>
                                                 <real key="maximum" value="999"/>
@@ -506,7 +506,7 @@ DQ
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="eot-GD-Ate">
                                         <rect key="frame" x="-2" y="8" width="284" height="17"/>
-                                        <textFieldCell key="cell" alignment="center" title="Warning Label" id="fFl-4s-KJ6">
+                                        <textFieldCell key="cell" alignment="center" title="Warning Label DO NOT TRANSLATE" id="fFl-4s-KJ6">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
