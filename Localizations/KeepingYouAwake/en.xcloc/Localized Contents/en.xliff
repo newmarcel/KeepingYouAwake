@@ -98,6 +98,11 @@ Right click to show menu</target>
         <target>Preventing your Mac from going to sleep…</target>
         <note>Preventing your Mac from going to sleep…</note>
       </trans-unit>
+      <trans-unit id="Quit when activation duration is over">
+        <source>Quit when activation duration is over</source>
+        <target>Quit when activation duration is over</target>
+        <note>Quit when activation duration is over</note>
+      </trans-unit>
       <trans-unit id="Reset Activation Durations">
         <source>Reset Activation Durations</source>
         <target>Reset Activation Durations</target>

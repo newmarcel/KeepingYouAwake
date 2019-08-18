@@ -40,6 +40,9 @@
 /* Preventing your Mac from going to sleep… */
 "Preventing your Mac from going to sleep…" = "Ruhezustand verhindern…";
 
+/* Quit when activation duration is over */
+"Quit when activation duration is over" = "Beenden, wenn die Aktivierungsdauer abgelaufen ist";
+
 /* Reset Activation Durations */
 "Reset Activation Durations" = "Aktivierungsdauer zurücksetzen";
 

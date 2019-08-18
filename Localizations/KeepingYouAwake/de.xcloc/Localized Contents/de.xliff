@@ -95,6 +95,11 @@ Rechtsklick, um das Menü anzuzeigen</target>
         <target>Ruhezustand verhindern…</target>
         <note>Preventing your Mac from going to sleep…</note>
       </trans-unit>
+      <trans-unit id="Quit when activation duration is over">
+        <source>Quit when activation duration is over</source>
+        <target state="translated">Beenden, wenn die Aktivierungsdauer abgelaufen ist</target>
+        <note>Quit when activation duration is over</note>
+      </trans-unit>
       <trans-unit id="Reset Activation Durations">
         <source>Reset Activation Durations</source>
         <target>Aktivierungsdauer zurücksetzen</target>
