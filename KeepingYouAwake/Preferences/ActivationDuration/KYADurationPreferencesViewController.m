@@ -49,7 +49,7 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     NSInteger index = segmentedControl.selectedSegment;
     if(index == 0)
     {
-        [self removeSelectedDuration];
+        [self removeDuration:segmentedControl];
     }
     else if(index == 1)
     {
@@ -60,14 +60,6 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
 - (IBAction)addDuration:(id)sender
 {
     [self performSegueWithIdentifier:KYAShowAddDurationSegueIdentifier sender:nil];
-}
-
-- (IBAction)removeDuration:(id)sender
-{
-    NSInteger clickedRow = self.tableView.clickedRow;
-    if(clickedRow < 0) { return; }
-    
-    [self.durationsController removeActivationDurationAtIndex:(NSUInteger)clickedRow];
 }
 
 - (IBAction)resetToDefaults:(nullable id)sender
@@ -92,19 +84,25 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
 
 - (IBAction)setDefaultDuration:(nullable id)sender
 {
-    NSInteger selectedRow = self.tableView.selectedRow;
-    if(selectedRow < 0) { return; }
+    NSInteger selectedRow = self.tableView.clickedRow;
+    if([sender isKindOfClass:[NSButton class]])
+    {
+        selectedRow = self.tableView.selectedRow;
+    }
     
+    if(selectedRow < 0) { return; }
     [self.durationsController setActivationDurationAsDefaultAtIndex:(NSUInteger)selectedRow];
 }
 
-#pragma mark -
-
-- (void)removeSelectedDuration
+- (IBAction)removeDuration:(nullable id)sender
 {
-    NSInteger selectedRow = self.tableView.selectedRow;
-    if(selectedRow < 0) { return; }
+    NSInteger selectedRow = self.tableView.clickedRow;
+    if([sender isKindOfClass:[NSControl class]])
+    {
+        selectedRow = self.tableView.selectedRow;
+    }
     
+    if(selectedRow < 0) { return; }
     [self.durationsController removeActivationDurationAtIndex:(NSUInteger)selectedRow];
 }
 

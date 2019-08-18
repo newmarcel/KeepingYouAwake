@@ -19,8 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet NSButton *touchBarRemoveDurationButton;
 
 - (IBAction)toggleSegmentedControl:(NSSegmentedControl *)segmentedControl;
-- (IBAction)addDuration:(id)sender;
-- (IBAction)removeDuration:(id)sender;
+- (IBAction)addDuration:(nullable id)sender;
+- (IBAction)removeDuration:(nullable id)sender;
 
 - (IBAction)setDefaultDuration:(nullable id)sender;
 - (IBAction)resetToDefaults:(nullable id)sender;
