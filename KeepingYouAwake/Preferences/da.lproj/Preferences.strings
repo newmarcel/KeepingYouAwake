@@ -1,6 +1,9 @@
 /* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
 "5bL-cI-YIY.title" = "Avanceret";
 
+/* Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu"; */
+"8V0-Sq-Cdu.title" = "Opdateringer";
+
 /* Class = "NSWindow"; title = "KeepingYouAwake – Preferences"; ObjectID = "AvX-7Q-Bvc"; */
 "AvX-7Q-Bvc.title" = "KeepingYouAwake – Indstillinger";
 

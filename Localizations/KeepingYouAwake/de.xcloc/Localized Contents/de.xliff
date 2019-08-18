@@ -97,7 +97,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
       </trans-unit>
       <trans-unit id="Quit when activation duration is over">
         <source>Quit when activation duration is over</source>
-        <target state="translated">Beenden, wenn die Aktivierungsdauer abgelaufen ist</target>
+        <target>Beenden, wenn die Aktivierungsdauer abgelaufen ist</target>
         <note>Quit when activation duration is over</note>
       </trans-unit>
       <trans-unit id="Reset Activation Durations">
