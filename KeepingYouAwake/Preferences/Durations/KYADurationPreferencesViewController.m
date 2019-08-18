@@ -64,7 +64,10 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
 
 - (IBAction)removeDuration:(id)sender
 {
-    [self removeSelectedDuration];
+    NSInteger clickedRow = self.tableView.clickedRow;
+    if(clickedRow < 0) { return; }
+    
+    [self.durationsController removeActivationDurationAtIndex:(NSUInteger)clickedRow];
 }
 
 - (IBAction)resetToDefaults:(nullable id)sender

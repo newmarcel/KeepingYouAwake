@@ -452,7 +452,7 @@
 				DA7B53041E16999A00D89A12 /* KYAPreferencesWindowController.h */,
 				DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */,
 				DA51E7DF1C2562BE008AA96C /* General */,
-				DAB0701222EC8E74004D5BCA /* Durations */,
+				DAB0701222EC8E74004D5BCA /* ActivationDuration */,
 				DA51E7E01C2562C4008AA96C /* Advanced */,
 				DA5680182115FF140039C979 /* Updates */,
 				DA51E7E11C2562CA008AA96C /* About */,
@@ -469,7 +469,7 @@
 			path = StatusItemController;
 			sourceTree = "<group>";
 		};
-		DAB0701222EC8E74004D5BCA /* Durations */ = {
+		DAB0701222EC8E74004D5BCA /* ActivationDuration */ = {
 			isa = PBXGroup;
 			children = (
 				DAB0700D22EC8E6B004D5BCA /* KYADurationPreferencesViewController.h */,
@@ -478,7 +478,7 @@
 				DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */,
 				DAB0701322EC8F06004D5BCA /* KYADurationCell */,
 			);
-			path = Durations;
+			path = ActivationDuration;
 			sourceTree = "<group>";
 		};
 		DAB0701322EC8F06004D5BCA /* KYADurationCell */ = {
