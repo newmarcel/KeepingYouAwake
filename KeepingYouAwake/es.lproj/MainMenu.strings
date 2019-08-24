@@ -1,63 +1,9 @@
-/* Class = "NSMenuItem"; title = "1 hour"; ObjectID = "3tu-5G-YQt"; */
-"3tu-5G-YQt.title" = "1 hora";
-
-/* Class = "NSMenuItem"; title = "Indefinitely"; ObjectID = "5EU-sH-Q12"; */
-"5EU-sH-Q12.title" = "Indefinidamente";
-
 /* Class = "NSMenuItem"; title = "Quit"; ObjectID = "7is-vc-kz7"; */
 "7is-vc-kz7.title" = "Salir";
-
-/* Class = "NSMenuItem"; title = "5 hours"; ObjectID = "18N-iz-aod"; */
-"18N-iz-aod.title" = "5 horas";
-
-/* Class = "NSMenuItem"; title = "15 minutes"; ObjectID = "bCY-Vy-8QT"; */
-"bCY-Vy-8QT.title" = "15 minutos";
 
 /* Class = "NSMenuItem"; title = "Activate for Duration"; ObjectID = "Bo6-IE-IbX"; */
 "Bo6-IE-IbX.title" = "Activar durante";
 
-/* Class = "NSMenuItem"; title = "Set Default: 1 hour"; ObjectID = "fUA-NX-hxF"; */
-"fUA-NX-hxF.title" = "Fijar por defecto: 1 hora";
-
-/* Class = "NSMenuItem"; title = "5 minutes"; ObjectID = "kO2-hM-cAT"; */
-"kO2-hM-cAT.title" = "5 minutos";
-
-/* Class = "NSMenuItem"; title = "Set Default: 15 minutes"; ObjectID = "kTz-g8-t11"; */
-"kTz-g8-t11.title" = "Fijar por defecto: 15 minutos";
-
-/* Class = "NSMenuItem"; title = "Set Default: 2 hours"; ObjectID = "n3h-ZB-CLV"; */
-"n3h-ZB-CLV.title" = "Fijar por defecto: 2 horas";
-
-/* Class = "NSMenuItem"; title = "Set Default: 5 minutes"; ObjectID = "NkC-w0-mfU"; */
-"NkC-w0-mfU.title" = "Fijar por defecto: 5 minutos";
-
 /* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "OT5-lg-IM6"; */
 "OT5-lg-IM6.title" = "Preferencias…";
-
-/* Class = "NSMenuItem"; title = "Active"; ObjectID = "pVH-VY-YkW"; */
-"pVH-VY-YkW.title" = "Activar";
-
-/* Class = "NSMenuItem"; title = "Set Default: 10 minutes"; ObjectID = "PWL-2v-TSS"; */
-"PWL-2v-TSS.title" = "Fijar por defecto: 10 minutos";
-
-/* Class = "NSMenuItem"; title = "Set Default: 30 minutes"; ObjectID = "sft-bA-FTz"; */
-"sft-bA-FTz.title" = "Fijar por defecto: 30 minutos";
-
-/* Class = "NSMenuItem"; title = "2 hours"; ObjectID = "T5i-64-xaV"; */
-"T5i-64-xaV.title" = "2 horas";
-
-/* Class = "NSMenuItem"; title = "Set Default: 5 hours"; ObjectID = "tAq-iH-rdw"; */
-"tAq-iH-rdw.title" = "Fijar por defecto: 5 horas";
-
-/* Class = "NSMenu"; title = "Activate for Duration"; ObjectID = "uTe-0S-BFw"; */
-"uTe-0S-BFw.title" = "Activar durante";
-
-/* Class = "NSMenuItem"; title = "Set Default: Indefinitely"; ObjectID = "VeD-dm-81B"; */
-"VeD-dm-81B.title" = "Fijar por defecto: indefinidamente";
-
-/* Class = "NSMenuItem"; title = "10 minutes"; ObjectID = "WWd-z5-2Xu"; */
-"WWd-z5-2Xu.title" = "10 minutos";
-
-/* Class = "NSMenuItem"; title = "30 minutes"; ObjectID = "YNB-qE-TzE"; */
-"YNB-qE-TzE.title" = "30 minutos";
 

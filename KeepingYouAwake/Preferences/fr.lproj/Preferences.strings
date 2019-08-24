@@ -37,9 +37,6 @@
 /* Class = "NSViewController"; title = "General"; ObjectID = "lGE-74-XwP"; */
 "lGE-74-XwP.title" = "Général";
 
-/* Class = "NSTextFieldCell"; title = "Sets the default activation duration for the menu bar icon."; ObjectID = "nnA-d3-VV6"; */
-"nnA-d3-VV6.title" = "Définit la durée d'activation par défaut pour le menu Activer pour...";
-
 /* Class = "NSTextFieldCell"; title = "KeepingYouAwake"; ObjectID = "nsg-DI-kE2"; */
 "nsg-DI-kE2.title" = "KeepingYouAwake";
 
@@ -60,9 +57,6 @@
 
 /* Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj"; */
 "uUP-5n-ykj.title" = "À propos";
-
-/* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
-"UVY-8B-q5H.title" = "Durée d'activation par défaut :";
 
 /* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "vdb-hr-zzU"; */
 "vdb-hr-zzU.title" = "Inclure les versions beta";

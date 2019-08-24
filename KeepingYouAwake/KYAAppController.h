@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class KYASleepWakeTimer, KYAStatusItemController;
 
-@interface KYAAppController : NSObject <NSMenuDelegate>
+@interface KYAAppController : NSObject
 
 /**
  The associated KYASleepWakeTimer instance of this app controller.

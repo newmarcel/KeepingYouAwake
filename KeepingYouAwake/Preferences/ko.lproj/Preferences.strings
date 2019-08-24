@@ -31,9 +31,6 @@
 /* Class = "NSViewController"; title = "General"; ObjectID = "lGE-74-XwP"; */
 "lGE-74-XwP.title" = "일반";
 
-/* Class = "NSTextFieldCell"; title = "Sets the default activation duration for the menu bar icon."; ObjectID = "nnA-d3-VV6"; */
-"nnA-d3-VV6.title" = "메뉴 막대 아이콘 클릭 시 설정되는 기본 활성화 시간입니다.";
-
 /* Class = "NSTextFieldCell"; title = "KeepingYouAwake"; ObjectID = "nsg-DI-kE2"; */
 "nsg-DI-kE2.title" = "KeepingYouAwake";
 
@@ -51,9 +48,6 @@
 
 /* Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj"; */
 "uUP-5n-ykj.title" = "정보";
-
-/* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
-"UVY-8B-q5H.title" = "기본 활성화 시간:";
 
 /* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "vdb-hr-zzU"; */
 "vdb-hr-zzU.title" = "Pre-Release 업데이트 확인";

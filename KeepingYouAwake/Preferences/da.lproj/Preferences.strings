@@ -1,6 +1,9 @@
 /* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
 "5bL-cI-YIY.title" = "Avanceret";
 
+/* Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu"; */
+"8V0-Sq-Cdu.title" = "Opdateringer";
+
 /* Class = "NSWindow"; title = "KeepingYouAwake – Preferences"; ObjectID = "AvX-7Q-Bvc"; */
 "AvX-7Q-Bvc.title" = "KeepingYouAwake – Indstillinger";
 
@@ -34,9 +37,6 @@
 /* Class = "NSViewController"; title = "General"; ObjectID = "lGE-74-XwP"; */
 "lGE-74-XwP.title" = "Generelt";
 
-/* Class = "NSTextFieldCell"; title = "Sets the default activation duration for the menu bar icon."; ObjectID = "nnA-d3-VV6"; */
-"nnA-d3-VV6.title" = "Indstiller standard aktiveringstid for menulinje-ikon.";
-
 /* Class = "NSTextFieldCell"; title = "KeepingYouAwake"; ObjectID = "nsg-DI-kE2"; */
 "nsg-DI-kE2.title" = "KeepingYouAwake";
 
@@ -57,9 +57,6 @@
 
 /* Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj"; */
 "uUP-5n-ykj.title" = "Om";
-
-/* Class = "NSTextFieldCell"; title = "Default Activation Duration:"; ObjectID = "UVY-8B-q5H"; */
-"UVY-8B-q5H.title" = "Standard aktiveringstid:";
 
 /* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "vdb-hr-zzU"; */
 "vdb-hr-zzU.title" = "Tjek for Pre-Release opdateringer";

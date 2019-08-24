@@ -2,14 +2,10 @@
 "Allowing your Mac to go to sleep…" = "Sluimerstand is toegestaan…";
 
 /* Click to allow sleep\nRight click to show menu */
-"Click to allow sleep
-Right click to show menu" = "Klik om de sluimerstand toe te staan
-Rechtsklik om het menu te tonen";
+"Click to allow sleep\nRight click to show menu" = "Klik om de sluimerstand toe te staan\nRechtsklik om het menu te tonen";
 
 /* Click to prevent sleep\nRight click to show menu */
-"Click to prevent sleep
-Right click to show menu" = "Klik om de sluimerstand te verhinderen
-Rechtsklik om het menu te tonen";
+"Click to prevent sleep\nRight click to show menu" = "Klik om de sluimerstand te verhinderen\nRechtsklik om het menu te tonen";
 
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Verberg de markeringskleur in het statusmenu";
@@ -21,8 +17,7 @@ Rechtsklik om het menu te tonen";
 "Indefinitely" = "Onbepaalde duur";
 
 /* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for
-%@…" = "Sluimerstand wordt voor %@ verhinderd…";
+"Preventing your Mac from going to sleep for\n%@…" = "Sluimerstand wordt voor %@ verhinderd…";
 
 /* Preventing your Mac from going to sleep… */
 "Preventing your Mac from going to sleep…" = "Sluimerstand wordt verhinderd…";

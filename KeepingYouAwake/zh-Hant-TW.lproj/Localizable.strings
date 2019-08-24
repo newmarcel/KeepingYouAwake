@@ -2,14 +2,10 @@
 "Allowing your Mac to go to sleep…" = "已允許系統進入睡眠模式…";
 
 /* Click to allow sleep\nRight click to show menu */
-"Click to allow sleep
-Right click to show menu" = "點一下允許進入睡眠模式
-按右鍵顯示選單";
+"Click to allow sleep\nRight click to show menu" = "點一下允許進入睡眠模式\n按右鍵顯示選單";
 
 /* Click to prevent sleep\nRight click to show menu */
-"Click to prevent sleep
-Right click to show menu" = "點一下防止進入睡眠模式
-按右鍵顯示選單";
+"Click to prevent sleep\nRight click to show menu" = "點一下防止進入睡眠模式\n按右鍵顯示選單";
 
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "停用選單列圖示被點擊時的反白效果";
@@ -21,9 +17,7 @@ Right click to show menu" = "點一下防止進入睡眠模式
 "Indefinitely" = "永久";
 
 /* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for
-%@…" = "已防止系統進入睡眠模式並持續
-%@…";
+"Preventing your Mac from going to sleep for\n%@…" = "已防止系統進入睡眠模式並持續\n%@…";
 
 /* Preventing your Mac from going to sleep… */
 "Preventing your Mac from going to sleep…" = "已防止系統進入睡眠模式…";

@@ -15,10 +15,17 @@
 #import "KYABatteryStatus.h"
 #import "KYABatteryCapacityThreshold.h"
 #import "NSUserDefaults+Keys.h"
+#import "KYAActivationDurationsMenuController.h"
+#import "NSDate+RemainingTime.h"
 
-@interface KYAAppController () <NSUserNotificationCenterDelegate, KYAStatusItemControllerDelegate>
+// Deprecated!
+#define KYA_MINUTES(m) (m * 60.0f)
+#define KYA_HOURS(h) (h * 3600.0f)
+
+@interface KYAAppController () <NSUserNotificationCenterDelegate, KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
 @property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
+@property (nonatomic) KYAActivationDurationsMenuController *menuController;
 
 // Battery Status
 @property (nonatomic) KYABatteryStatus *batteryStatus;
@@ -26,7 +33,7 @@
 
 // Menu
 @property (weak, nonatomic) IBOutlet NSMenu *menu;
-@property (weak, nonatomic) IBOutlet NSMenu *timerMenu;
+@property (weak, nonatomic) IBOutlet NSMenuItem *activationDurationsMenuItem;
 @end
 
 @implementation KYAAppController
@@ -57,6 +64,9 @@
 
         [self configureBatteryStatus];
         [self configureEventHandler];
+
+        self.menuController = [KYAActivationDurationsMenuController new];
+        self.menuController.delegate = self;
     }
     return self;
 }
@@ -73,6 +83,9 @@
     [super awakeFromNib];
 
     NSUserNotificationCenter.defaultUserNotificationCenter.delegate = self;
+
+    [self.menu setSubmenu:self.menuController.menu
+                  forItem:self.activationDurationsMenuItem];
 }
 
 #pragma mark - KVO
@@ -95,11 +108,6 @@
 - (NSTimeInterval)defaultTimeInterval
 {
     return NSUserDefaults.standardUserDefaults.kya_defaultTimeInterval;
-}
-
-- (void)setDefaultTimeInterval:(NSTimeInterval)interval
-{
-    NSUserDefaults.standardUserDefaults.kya_defaultTimeInterval = interval;
 }
 
 #pragma mark - Activate on Launch
@@ -168,11 +176,7 @@
         }
         else
         {
-            KYA_AUTO formatter = [self dateComponentsFormatter];
-            formatter.includesTimeRemainingPhrase = NO;
-            KYA_AUTO remainingTimeString = [formatter stringFromDate:[NSDate date] toDate:self.sleepWakeTimer.fireDate];
-            formatter.includesTimeRemainingPhrase = YES;
-
+            KYA_AUTO remainingTimeString = self.sleepWakeTimer.fireDate.kya_localizedRemainingTimeWithoutPhrase;
             n.informativeText = KYA_L10N_PREVENTING_SLEEP_FOR_REMAINING_TIME(remainingTimeString);
         }
 
@@ -189,81 +193,6 @@
     {
         [self.sleepWakeTimer invalidate];
     }
-}
-
-#pragma mark - Menu Delegate
-
-- (IBAction)selectTimeInterval:(NSMenuItem *)sender
-{
-    [self terminateTimer];
-
-    if(sender.alternate)
-    {
-        [self setDefaultTimeInterval:sender.tag];
-    }
-    else
-    {
-        KYA_WEAK weakSelf = self;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSTimeInterval seconds = (NSTimeInterval)[sender tag];
-            [weakSelf activateTimerWithTimeInterval:seconds];
-        });
-    }
-}
-
-- (void)menuNeedsUpdate:(NSMenu *)menu
-{
-    if(![menu isEqual:self.timerMenu])
-    {
-        return;
-    }
-
-    for(NSMenuItem *item in menu.itemArray)
-    {
-        item.state = NSOffState;
-
-        NSTimeInterval seconds = (NSTimeInterval)item.tag;
-        if(seconds > 0)
-        {
-            if(self.sleepWakeTimer.scheduledTimeInterval == seconds)
-            {
-                item.state = NSOnState;
-            }
-        }
-        else if((seconds == 0) && ![item isSeparatorItem])
-        {
-            item.state = NSOffState;
-            if([self.sleepWakeTimer isScheduled] && (self.sleepWakeTimer.scheduledTimeInterval == KYASleepWakeTimeIntervalIndefinite))
-                item.state = NSOnState;
-        }
-        else
-        {
-            // The display menu item
-            item.hidden = YES;
-            if(self.sleepWakeTimer.fireDate)
-            {
-                item.hidden = NO;
-                item.title = [[self dateComponentsFormatter] stringFromDate:[NSDate date]
-                                                                     toDate:self.sleepWakeTimer.fireDate];
-            }
-        }
-    }
-}
-
-#pragma mark - Date Components Formatter
-
-- (NSDateComponentsFormatter *)dateComponentsFormatter
-{
-    static NSDateComponentsFormatter *dateFormatter;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        dateFormatter = [NSDateComponentsFormatter new];
-        dateFormatter.allowedUnits = NSCalendarUnitSecond | NSCalendarUnitMinute | NSCalendarUnitHour;
-        dateFormatter.unitsStyle = NSDateComponentsFormatterUnitsStyleShort;
-        dateFormatter.includesTimeRemainingPhrase = YES;
-    });
-
-    return dateFormatter;
 }
 
 #pragma mark - User Notification Center Delegate
@@ -424,6 +353,36 @@
 - (void)statusItemControllerShouldPerformAlternativeAction:(KYAStatusItemController *)controller
 {
     [self.statusItemController showMenu:self.menu];
+}
+
+#pragma mark - KYAActivationDurationsMenuControllerDelegate
+
+- (KYAActivationDuration *)currentActivationDuration
+{
+    KYA_AUTO sleepWakeTimer = self.sleepWakeTimer;
+    if(![sleepWakeTimer isScheduled])
+    {
+        return nil;
+    }
+
+    NSTimeInterval seconds = sleepWakeTimer.scheduledTimeInterval;
+    return [[KYAActivationDuration alloc] initWithSeconds:seconds];
+}
+
+- (void)activationDurationsMenuController:(KYAActivationDurationsMenuController *)controller didSelectActivationDuration:(KYAActivationDuration *)activationDuration
+{
+    [self terminateTimer];
+
+    KYA_WEAK weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSTimeInterval seconds = activationDuration.seconds;
+        [weakSelf activateTimerWithTimeInterval:seconds];
+    });
+}
+
+- (NSDate *)fireDateForMenuController:(KYAActivationDurationsMenuController *)controller
+{
+    return self.sleepWakeTimer.fireDate;
 }
 
 @end
