@@ -64,7 +64,7 @@
 
         [self configureBatteryStatus];
         [self configureEventHandler];
-        
+
         self.menuController = [KYAActivationDurationsMenuController new];
         self.menuController.delegate = self;
     }
@@ -83,7 +83,7 @@
     [super awakeFromNib];
 
     NSUserNotificationCenter.defaultUserNotificationCenter.delegate = self;
-    
+
     [self.menu setSubmenu:self.menuController.menu
                   forItem:self.activationDurationsMenuItem];
 }
@@ -360,8 +360,11 @@
 - (KYAActivationDuration *)currentActivationDuration
 {
     KYA_AUTO sleepWakeTimer = self.sleepWakeTimer;
-    if(![sleepWakeTimer isScheduled]) { return nil; }
-    
+    if(![sleepWakeTimer isScheduled])
+    {
+        return nil;
+    }
+
     NSTimeInterval seconds = sleepWakeTimer.scheduledTimeInterval;
     return [[KYAActivationDuration alloc] initWithSeconds:seconds];
 }
@@ -369,7 +372,7 @@
 - (void)activationDurationsMenuController:(KYAActivationDurationsMenuController *)controller didSelectActivationDuration:(KYAActivationDuration *)activationDuration
 {
     [self terminateTimer];
-    
+
     KYA_WEAK weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         NSTimeInterval seconds = activationDuration.seconds;
