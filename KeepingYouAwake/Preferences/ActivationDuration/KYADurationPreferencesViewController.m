@@ -12,6 +12,10 @@
 #import "KYADurationCell.h"
 #import "KYAActivationDurationsController.h"
 
+/// The allowed number of activation durations. If this limit is reached,
+/// you cannot add more durations to the list.
+static NSInteger const KYAActivationDurationLimit = 42;
+
 static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"showAddDuration";
 
 @interface KYADurationPreferencesViewController ()
@@ -146,6 +150,10 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
     
     self.touchBarSetDefaultButton.enabled = enabled;
     self.touchBarRemoveDurationButton.enabled = enabled;
+    
+    // Check if the limit of allowed durations was reached
+    BOOL isLimited = self.durationsController.activationDurations.count >= KYAActivationDurationLimit;
+    [self.segmentedControl setEnabled:!isLimited forSegment:1];
 }
 
 #pragma mark - KYAActivationDurationsController Did Change Notification
