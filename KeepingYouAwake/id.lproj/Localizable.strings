@@ -1,0 +1,60 @@
+/* (Default) */
+"(Default)" = "(Standar)";
+
+/* Activate for Duration */
+"Activate for Duration" = "Aktifkan untuk";
+
+/* Allowing your Mac to go to sleep… */
+"Allowing your Mac to go to sleep…" = "Biarkan Mac ke mode tidur…";
+
+/* Cancel */
+"Cancel" = "Batal";
+
+/* Click to allow sleep\nRight click to show menu */
+"Click to allow sleep\nRight click to show menu" = "Klik untuk membolehkan mode tidur\nKlik kanan untuk menampilkan menu";
+
+/* Click to prevent sleep\nRight click to show menu */
+"Click to prevent sleep\nRight click to show menu" = "Klik untuk mencegah mode tidur\nKlik kanan untuk menampilkan menu";
+
+/* Default */
+"Default" = "Standar";
+
+/* Disable menu bar icon highlight color */
+"Disable menu bar icon highlight color" = "Nonaktifkan warna menu ikon bar saat di sorot";
+
+/* Do you really want to reset the activation durations to the default values? */
+"Do you really want to reset the activation durations to the default values?" = "Apakah Anda benar-benar ingin mengatur ulang durasi aktivasi ke nilai standar?";
+
+/* Enable experimental Notification Center integration */
+"Enable experimental Notification Center integration" = "Aktifkan integrasi Pusat Pemberitahuan eksperimental";
+
+/* Indefinitely */
+"Indefinitely" = "Tanpa Batas";
+
+/* OK */
+"OK" = "OK";
+
+/* Preventing your Mac from going to sleep for\n%@… */
+"Preventing your Mac from going to sleep for\n%@…" = "Mencegah Mac Anda tidak mengaktifkan mode tidur untuk\n%@…";
+
+/* Preventing your Mac from going to sleep… */
+"Preventing your Mac from going to sleep…" = "Mencegah Mac Anda ke mode tidur…";
+
+/* Quit when activation duration is over */
+"Quit when activation duration is over" = "Keluar saat durasi aktivasi berakhir";
+
+/* Reset Activation Durations */
+"Reset Activation Durations" = "Atur Ulang Durasi Aktivasi";
+
+/* Set Default: %@ */
+"Set Default: %@" = "Atur Standar: %@";
+
+/* The entered duration is invalid. Please try again. */
+"The entered duration is invalid. Please try again." = "Durasi yang dimasukkan tidak valid. Silakan coba lagi.";
+
+/* This duration has already been added. */
+"This duration has already been added." = "Durasi ini telah ditambahkan.";
+
+/* Version */
+"Version" = "Versi";
+

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="KeepingYouAwake/Base.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+  <file original="KeepingYouAwake/Base.lproj/InfoPlist.strings" source-language="en" target-language="id" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
     </header>
@@ -17,7 +17,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Base.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+  <file original="KeepingYouAwake/Base.lproj/Localizable.strings" source-language="en" target-language="id" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
     </header>
@@ -130,7 +130,7 @@ Klik kanan untuk menampilkan menu</target>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" target-language="en" datatype="plaintext">
+  <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" target-language="id" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
     </header>
@@ -152,7 +152,7 @@ Klik kanan untuk menampilkan menu</target>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" target-language="en" datatype="plaintext">
+  <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" target-language="id" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
     </header>
@@ -364,7 +364,7 @@ Klik kanan untuk menampilkan menu</target>
       </trans-unit>
     </body>
   </file>
-  <file original="KYALauncher/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+  <file original="KYALauncher/en.lproj/InfoPlist.strings" source-language="en" target-language="id" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
     </header>

@@ -200,6 +200,9 @@
 		DA987C9A22FC749D00DD476B /* KYAAddDurationPreferencesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAAddDurationPreferencesViewController.h; sourceTree = "<group>"; };
 		DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAddDurationPreferencesViewController.m; sourceTree = "<group>"; };
 		DAA478D3227C233000E609C1 /* KYALocalizedStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYALocalizedStrings.h; sourceTree = "<group>"; };
+		DAAAAAA023B14D04004A44EF /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAAAAAA123B14D04004A44EF /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DAAAAAA223B14D04004A44EF /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		DAB0700822EC794F004D5BCA /* KYADurationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADurationCell.h; sourceTree = "<group>"; };
 		DAB0700922EC794F004D5BCA /* KYADurationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYADurationCell.m; sourceTree = "<group>"; };
 		DAB0700B22EC795F004D5BCA /* KYADurationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KYADurationCell.xib; sourceTree = "<group>"; };
@@ -595,6 +598,7 @@
 				zh,
 				pl,
 				pt,
+				id,
 			);
 			mainGroup = DA637B3019F14693004C8838;
 			productRefGroup = DA637B3A19F14693004C8838 /* Products */;
@@ -703,6 +707,7 @@
 				DA8B21961F6057A200BF5013 /* zh-Hant-TW */,
 				DA66276F20CC0676007834DB /* pl */,
 				DA66277120CC0680007834DB /* pt */,
+				DAAAAAA123B14D04004A44EF /* id */,
 			);
 			name = Preferences.storyboard;
 			sourceTree = "<group>";
@@ -722,6 +727,7 @@
 				DA8B21991F6057A200BF5013 /* zh-Hant-TW */,
 				DA66277320CC0688007834DB /* pl */,
 				DA66277420CC0689007834DB /* pt */,
+				DAAAAAA023B14D04004A44EF /* id */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -760,6 +766,7 @@
 				DA8B21971F6057A200BF5013 /* zh-Hant-TW */,
 				DA66277020CC0676007834DB /* pl */,
 				DA66277220CC0680007834DB /* pt */,
+				DAAAAAA223B14D04004A44EF /* id */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
