@@ -2,14 +2,14 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="KeepingYouAwake/Base.lproj/InfoPlist.strings" source-language="en" target-language="tr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3" build-num="11C29"/>
     </header>
     <body>
-      <trans-unit id="CFBundleName">
+      <trans-unit id="CFBundleName" xml:space="preserve">
         <source>KeepingYouAwake</source>
         <note>Bundle name</note>
       </trans-unit>
-      <trans-unit id="NSHumanReadableCopyright">
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
         <source>Copyright © 2014 – 2019 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
@@ -17,96 +17,96 @@
   </file>
   <file original="KeepingYouAwake/Base.lproj/Localizable.strings" source-language="en" target-language="tr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3" build-num="11C29"/>
     </header>
     <body>
-      <trans-unit id="(Default)">
+      <trans-unit id="(Default)" xml:space="preserve">
         <source>(Default)</source>
         <note>(Default)</note>
       </trans-unit>
-      <trans-unit id="Activate for Duration">
+      <trans-unit id="Activate for Duration" xml:space="preserve">
         <source>Activate for Duration</source>
         <note>Activate for Duration</note>
       </trans-unit>
-      <trans-unit id="Allowing your Mac to go to sleep…">
+      <trans-unit id="Allowing your Mac to go to sleep…" xml:space="preserve">
         <source>Allowing your Mac to go to sleep…</source>
         <target>Mac'inizin uyku moduna geçmesine izin verin…</target>
         <note>Allowing your Mac to go to sleep…</note>
       </trans-unit>
-      <trans-unit id="Cancel">
+      <trans-unit id="Cancel" xml:space="preserve">
         <source>Cancel</source>
         <note>Cancel</note>
       </trans-unit>
-      <trans-unit id="Click to allow sleep&#10;Right click to show menu">
+      <trans-unit id="Click to allow sleep&#10;Right click to show menu" xml:space="preserve">
         <source>Click to allow sleep
 Right click to show menu</source>
         <target>Uyku moduna izin vermek için sağ menüye tıklayın</target>
         <note>Click to allow sleep\nRight click to show menu</note>
       </trans-unit>
-      <trans-unit id="Click to prevent sleep&#10;Right click to show menu">
+      <trans-unit id="Click to prevent sleep&#10;Right click to show menu" xml:space="preserve">
         <source>Click to prevent sleep
 Right click to show menu</source>
         <target>Uyku moduna geçmeyi önleme menüsünü göstermek için sağdaki düğmeye tıklayın</target>
         <note>Click to prevent sleep\nRight click to show menu</note>
       </trans-unit>
-      <trans-unit id="Default">
+      <trans-unit id="Default" xml:space="preserve">
         <source>Default</source>
         <note>Default</note>
       </trans-unit>
-      <trans-unit id="Disable menu bar icon highlight color">
+      <trans-unit id="Disable menu bar icon highlight color" xml:space="preserve">
         <source>Disable menu bar icon highlight color</source>
         <target>Menü çubuğu simgesini devre dışı bırak</target>
         <note>Disable menu bar icon highlight color</note>
       </trans-unit>
-      <trans-unit id="Do you really want to reset the activation durations to the default values?">
+      <trans-unit id="Do you really want to reset the activation durations to the default values?" xml:space="preserve">
         <source>Do you really want to reset the activation durations to the default values?</source>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
-      <trans-unit id="Enable experimental Notification Center integration">
+      <trans-unit id="Enable experimental Notification Center integration" xml:space="preserve">
         <source>Enable experimental Notification Center integration</source>
         <target>Deneysel Bildirim Merkezi Entegrasyonunu Etkinleştir</target>
         <note>Enable experimental Notification Center integration</note>
       </trans-unit>
-      <trans-unit id="Indefinitely">
+      <trans-unit id="Indefinitely" xml:space="preserve">
         <source>Indefinitely</source>
         <target>Süresiz</target>
         <note>Indefinitely</note>
       </trans-unit>
-      <trans-unit id="OK">
+      <trans-unit id="OK" xml:space="preserve">
         <source>OK</source>
         <note>OK</note>
       </trans-unit>
-      <trans-unit id="Preventing your Mac from going to sleep for&#10;%@…">
+      <trans-unit id="Preventing your Mac from going to sleep for&#10;%@…" xml:space="preserve">
         <source>Preventing your Mac from going to sleep for
 %@…</source>
         <note>Preventing your Mac from going to sleep for\n%@…</note>
       </trans-unit>
-      <trans-unit id="Preventing your Mac from going to sleep…">
+      <trans-unit id="Preventing your Mac from going to sleep…" xml:space="preserve">
         <source>Preventing your Mac from going to sleep…</source>
         <target>Mac'inizin uyku halindeyken kullanılmasını önleme…</target>
         <note>Preventing your Mac from going to sleep…</note>
       </trans-unit>
-      <trans-unit id="Quit when activation duration is over">
+      <trans-unit id="Quit when activation duration is over" xml:space="preserve">
         <source>Quit when activation duration is over</source>
         <note>Quit when activation duration is over</note>
       </trans-unit>
-      <trans-unit id="Reset Activation Durations">
+      <trans-unit id="Reset Activation Durations" xml:space="preserve">
         <source>Reset Activation Durations</source>
         <note>Reset Activation Durations</note>
       </trans-unit>
-      <trans-unit id="Set Default: %@">
+      <trans-unit id="Set Default: %@" xml:space="preserve">
         <source>Set Default: %@</source>
         <note>Set Default: %@</note>
       </trans-unit>
-      <trans-unit id="The entered duration is invalid. Please try again.">
+      <trans-unit id="The entered duration is invalid. Please try again." xml:space="preserve">
         <source>The entered duration is invalid. Please try again.</source>
         <note>The entered duration is invalid. Please try again.</note>
       </trans-unit>
-      <trans-unit id="This duration has already been added.">
+      <trans-unit id="This duration has already been added." xml:space="preserve">
         <source>This duration has already been added.</source>
         <note>This duration has already been added.</note>
       </trans-unit>
-      <trans-unit id="Version">
+      <trans-unit id="Version" xml:space="preserve">
         <source>Version</source>
         <target>Versiyon</target>
         <note>Version</note>
@@ -115,20 +115,20 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" target-language="tr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3" build-num="11C29"/>
     </header>
     <body>
-      <trans-unit id="7is-vc-kz7.title">
+      <trans-unit id="7is-vc-kz7.title" xml:space="preserve">
         <source>Quit</source>
         <target>Çıkış</target>
         <note>Class = "NSMenuItem"; title = "Quit"; ObjectID = "7is-vc-kz7";</note>
       </trans-unit>
-      <trans-unit id="Bo6-IE-IbX.title">
+      <trans-unit id="Bo6-IE-IbX.title" xml:space="preserve">
         <source>Activate for Duration</source>
         <target>Süreyi etkinleştir</target>
         <note>Class = "NSMenuItem"; title = "Activate for Duration"; ObjectID = "Bo6-IE-IbX";</note>
       </trans-unit>
-      <trans-unit id="OT5-lg-IM6.title">
+      <trans-unit id="OT5-lg-IM6.title" xml:space="preserve">
         <source>Preferences…</source>
         <target>Tercihler…</target>
         <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "OT5-lg-IM6";</note>
@@ -137,192 +137,192 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" target-language="tr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3" build-num="11C29"/>
     </header>
     <body>
-      <trans-unit id="2s2-Ei-lnG.title">
+      <trans-unit id="2s2-Ei-lnG.title" xml:space="preserve">
         <source>Reset…</source>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "2s2-Ei-lnG";</note>
       </trans-unit>
-      <trans-unit id="5bL-cI-YIY.title">
+      <trans-unit id="5bL-cI-YIY.title" xml:space="preserve">
         <source>Advanced</source>
         <target>Gelişmiş ayarlar</target>
         <note>Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY";</note>
       </trans-unit>
-      <trans-unit id="6Kw-xJ-Wk8.title">
+      <trans-unit id="6Kw-xJ-Wk8.title" xml:space="preserve">
         <source>The default activation duration is used when you click on the menu bar icon.</source>
         <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "6Kw-xJ-Wk8";</note>
       </trans-unit>
-      <trans-unit id="8V0-Sq-Cdu.title">
+      <trans-unit id="8V0-Sq-Cdu.title" xml:space="preserve">
         <source>Updates</source>
         <note>Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu";</note>
       </trans-unit>
-      <trans-unit id="AvX-7Q-Bvc.title">
+      <trans-unit id="AvX-7Q-Bvc.title" xml:space="preserve">
         <source>KeepingYouAwake – Preferences</source>
         <target>KeepingYouAwake – Tercihler</target>
         <note>Class = "NSWindow"; title = "KeepingYouAwake – Preferences"; ObjectID = "AvX-7Q-Bvc";</note>
       </trans-unit>
-      <trans-unit id="Ax6-W4-7bK.title">
+      <trans-unit id="Ax6-W4-7bK.title" xml:space="preserve">
         <source>Deactivate when battery capacity is below</source>
         <target>Pil kapasitesi aşıldığın da devre dışı bırak</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK";</note>
       </trans-unit>
-      <trans-unit id="DE6-qp-FZU.ibShadowedToolTips[0]">
+      <trans-unit id="DE6-qp-FZU.ibShadowedToolTips[0]" xml:space="preserve">
         <source>Remove</source>
         <note>Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[0] = "Remove"; ObjectID = "DE6-qp-FZU";</note>
       </trans-unit>
-      <trans-unit id="DE6-qp-FZU.ibShadowedToolTips[1]">
+      <trans-unit id="DE6-qp-FZU.ibShadowedToolTips[1]" xml:space="preserve">
         <source>Add</source>
         <note>Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[1] = "Add"; ObjectID = "DE6-qp-FZU";</note>
       </trans-unit>
-      <trans-unit id="DfZ-Gt-rge.title">
+      <trans-unit id="DfZ-Gt-rge.title" xml:space="preserve">
         <source>Seconds</source>
         <note>Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "DfZ-Gt-rge";</note>
       </trans-unit>
-      <trans-unit id="EMN-wI-vLT.title">
+      <trans-unit id="EMN-wI-vLT.title" xml:space="preserve">
         <source>Set Default</source>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "EMN-wI-vLT";</note>
       </trans-unit>
-      <trans-unit id="EXv-vC-wyo.title">
+      <trans-unit id="EXv-vC-wyo.title" xml:space="preserve">
         <source>Reset to Default</source>
         <target>Varsayılan ayarları sil</target>
         <note>Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo";</note>
       </trans-unit>
-      <trans-unit id="G1k-8T-EcX.title">
+      <trans-unit id="G1k-8T-EcX.title" xml:space="preserve">
         <source>Version 2016</source>
         <target>Versiyon 2016</target>
         <note>Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX";</note>
       </trans-unit>
-      <trans-unit id="GxN-Dr-4B8.title">
+      <trans-unit id="GxN-Dr-4B8.title" xml:space="preserve">
         <source>Automatically Check for Updates</source>
         <target>Güncellemeleri otomatik kontrol et</target>
         <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "GxN-Dr-4B8";</note>
       </trans-unit>
-      <trans-unit id="IAM-at-0nC.title">
+      <trans-unit id="IAM-at-0nC.title" xml:space="preserve">
         <source>Activation Duration</source>
         <note>Class = "NSViewController"; title = "Activation Duration"; ObjectID = "IAM-at-0nC";</note>
       </trans-unit>
-      <trans-unit id="IOU-Hs-S4r.title">
+      <trans-unit id="IOU-Hs-S4r.title" xml:space="preserve">
         <source>Activate on Launch</source>
         <target>Başlat</target>
         <note>Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r";</note>
       </trans-unit>
-      <trans-unit id="LYE-CA-vzC.title">
+      <trans-unit id="LYE-CA-vzC.title" xml:space="preserve">
         <source>Set Default</source>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "LYE-CA-vzC";</note>
       </trans-unit>
-      <trans-unit id="OsK-jX-EzO.title">
+      <trans-unit id="OsK-jX-EzO.title" xml:space="preserve">
         <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
         <target>Ne yaptığınızı biliyorsanız, yalnızca bu gelişmiş tercihleri değiştirin. Bu tercihler bir uygulamanın yeniden başlatılmasını gerektirir.</target>
         <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO";</note>
       </trans-unit>
-      <trans-unit id="QIk-WP-qH1.title">
+      <trans-unit id="QIk-WP-qH1.title" xml:space="preserve">
         <source>Start at Login</source>
         <target>Açılışta başlat</target>
         <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1";</note>
       </trans-unit>
-      <trans-unit id="Rb3-Sm-byr.title">
+      <trans-unit id="Rb3-Sm-byr.title" xml:space="preserve">
         <source>90 %</source>
         <target>90 %</target>
         <note>Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "Rb3-Sm-byr";</note>
       </trans-unit>
-      <trans-unit id="S6p-h0-H5B.title">
+      <trans-unit id="S6p-h0-H5B.title" xml:space="preserve">
         <source>Immediately starts preventing sleep when launched.</source>
         <target>Açılışta, uyku modunu önler.</target>
         <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B";</note>
       </trans-unit>
-      <trans-unit id="W3H-iV-s6I.title">
+      <trans-unit id="W3H-iV-s6I.title" xml:space="preserve">
         <source>Check Now</source>
         <target>Kontrol et</target>
         <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "W3H-iV-s6I";</note>
       </trans-unit>
-      <trans-unit id="X2a-5O-EuD.title">
+      <trans-unit id="X2a-5O-EuD.title" xml:space="preserve">
         <source>Reset…</source>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "X2a-5O-EuD";</note>
       </trans-unit>
-      <trans-unit id="bV3-BW-JOK.title">
+      <trans-unit id="bV3-BW-JOK.title" xml:space="preserve">
         <source>Cancel</source>
         <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "bV3-BW-JOK";</note>
       </trans-unit>
-      <trans-unit id="d0c-1Y-p5i.title">
+      <trans-unit id="d0c-1Y-p5i.title" xml:space="preserve">
         <source>Add Duration</source>
         <note>Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "d0c-1Y-p5i";</note>
       </trans-unit>
-      <trans-unit id="f4N-sw-1MQ.title">
+      <trans-unit id="f4N-sw-1MQ.title" xml:space="preserve">
         <source>Remove</source>
         <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "f4N-sw-1MQ";</note>
       </trans-unit>
-      <trans-unit id="fFl-4s-KJ6.title">
+      <trans-unit id="fFl-4s-KJ6.title" xml:space="preserve">
         <source>Warning Label DO NOT TRANSLATE</source>
         <note>Class = "NSTextFieldCell"; title = "Warning Label DO NOT TRANSLATE"; ObjectID = "fFl-4s-KJ6";</note>
       </trans-unit>
-      <trans-unit id="fiQ-AT-I7u.title">
+      <trans-unit id="fiQ-AT-I7u.title" xml:space="preserve">
         <source>10 %</source>
         <target>10 %</target>
         <note>Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "fiQ-AT-I7u";</note>
       </trans-unit>
-      <trans-unit id="g2t-CH-TcY.title">
+      <trans-unit id="g2t-CH-TcY.title" xml:space="preserve">
         <source>Text Cell</source>
         <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "g2t-CH-TcY";</note>
       </trans-unit>
-      <trans-unit id="i17-n2-vfw.title">
+      <trans-unit id="i17-n2-vfw.title" xml:space="preserve">
         <source>50 %</source>
         <target>50 %</target>
         <note>Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "i17-n2-vfw";</note>
       </trans-unit>
-      <trans-unit id="iZe-2E-hEE.title">
+      <trans-unit id="iZe-2E-hEE.title" xml:space="preserve">
         <source>Set Default</source>
         <note>Class = "NSMenuItem"; title = "Set Default"; ObjectID = "iZe-2E-hEE";</note>
       </trans-unit>
-      <trans-unit id="jAF-7U-kDS.title">
+      <trans-unit id="jAF-7U-kDS.title" xml:space="preserve">
         <source>Text Cell</source>
         <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "jAF-7U-kDS";</note>
       </trans-unit>
-      <trans-unit id="k65-yi-85l.title">
+      <trans-unit id="k65-yi-85l.title" xml:space="preserve">
         <source>This value will be ignored when you manually start the app below this battery capacity.</source>
         <target>Pil kapasitesinin altında uygulamayı manuel olarak başlattığınızda bu değer yoksayılır..</target>
         <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l";</note>
       </trans-unit>
-      <trans-unit id="kG2-Tz-t51.title">
+      <trans-unit id="kG2-Tz-t51.title" xml:space="preserve">
         <source>Check</source>
         <target>Kontrol</target>
         <note>Class = "NSButtonCell"; title = "Check"; ObjectID = "kG2-Tz-t51";</note>
       </trans-unit>
-      <trans-unit id="lGE-74-XwP.title">
+      <trans-unit id="lGE-74-XwP.title" xml:space="preserve">
         <source>General</source>
         <target>Genel</target>
         <note>Class = "NSViewController"; title = "General"; ObjectID = "lGE-74-XwP";</note>
       </trans-unit>
-      <trans-unit id="nsg-DI-kE2.title">
+      <trans-unit id="nsg-DI-kE2.title" xml:space="preserve">
         <source>KeepingYouAwake</source>
         <target>KeepingYouAwake</target>
         <note>Class = "NSTextFieldCell"; title = "KeepingYouAwake"; ObjectID = "nsg-DI-kE2";</note>
       </trans-unit>
-      <trans-unit id="rEp-oa-7IA.title">
+      <trans-unit id="rEp-oa-7IA.title" xml:space="preserve">
         <source>Hours</source>
         <note>Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "rEp-oa-7IA";</note>
       </trans-unit>
-      <trans-unit id="siu-CP-Bg1.title">
+      <trans-unit id="siu-CP-Bg1.title" xml:space="preserve">
         <source>Copyright Label</source>
         <target>Telif Hakları</target>
         <note>Class = "NSTextFieldCell"; title = "Copyright Label"; ObjectID = "siu-CP-Bg1";</note>
       </trans-unit>
-      <trans-unit id="uUP-5n-ykj.title">
+      <trans-unit id="uUP-5n-ykj.title" xml:space="preserve">
         <source>About</source>
         <target>Hakkında</target>
         <note>Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj";</note>
       </trans-unit>
-      <trans-unit id="vdb-hr-zzU.title">
+      <trans-unit id="vdb-hr-zzU.title" xml:space="preserve">
         <source>Check for Pre-Release Updates</source>
         <target>Güncellemeleri Kontrol Edin</target>
         <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "vdb-hr-zzU";</note>
       </trans-unit>
-      <trans-unit id="x6s-XD-lBU.title">
+      <trans-unit id="x6s-XD-lBU.title" xml:space="preserve">
         <source>Automatically opens the app when you start your Mac.</source>
         <target>Mac'inizi başlattığınızda uygulamayı otomatik olarak açar.</target>
         <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU";</note>
       </trans-unit>
-      <trans-unit id="ybA-ux-mRo.title">
+      <trans-unit id="ybA-ux-mRo.title" xml:space="preserve">
         <source>Minutes</source>
         <note>Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "ybA-ux-mRo";</note>
       </trans-unit>
@@ -330,14 +330,14 @@ Right click to show menu</source>
   </file>
   <file original="KYALauncher/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="tr">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.3" build-num="10G8"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3" build-num="11C29"/>
     </header>
     <body>
-      <trans-unit id="CFBundleName">
+      <trans-unit id="CFBundleName" xml:space="preserve">
         <source>KeepingYouAwake Launcher</source>
         <note>Bundle name</note>
       </trans-unit>
-      <trans-unit id="NSHumanReadableCopyright">
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
         <source>Copyright © 2014 – 2019 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
