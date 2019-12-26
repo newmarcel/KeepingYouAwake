@@ -6,6 +6,26 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.5.1: Customizable Activation Durations]]></title>
+			<description><![CDATA[<ul>
+<li>added the ability to customize activation durations in <em>Preferences</em> (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/132">#132</a>)</li>
+<li>added an advanced preference to quit the app when the activation duration is over (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/133">#133</a>)
+<ul>
+<li><em>Thanks <a href="https://github.com/jamesgecko">jamesgecko</a> for the <a href="https://github.com/newmarcel/KeepingYouAwake/issues/128">suggestion</a>!</em></li>
+</ul></li>
+<li>added an Indonesian translation (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/137">#137</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/ibnuh">ibnuh</a>!</em></li>
+</ul></li>
+</ul>
+
+<p><strong>Please note: The 1.5.x series of releases will be the last supporting macOS Yosemite and El Capitan. If you see any critical reason for supporting those, please leave a comment on <a href="https://github.com/newmarcel/KeepingYouAwake/issues/126">GitHub</a>.</strong></p>
+]]></description>
+			<pubDate>Thu, 26 Dec 2019 17:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.5.1/KeepingYouAwake-1.5.1.zip" length="2517936" type="application/octet-stream" sparkle:version="1050100" sparkle:shortVersionString="1.5.1">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.5.0: Sandboxed, Hardened & Notarized]]></title>
 			<description><![CDATA[<p><span style="font-weight: bold; color: red;">Please disable <em>Start at login</em> in <em>Preferences</em> before you update. You can also check <a target="_blank" href="https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems">this wiki page</a> for troubleshooting help.</span></p>
 
