@@ -4,7 +4,7 @@
 
 ### v1.6.0 ###
 
-- raised minimum deployment target to macOS Sierra
+- raised minimum deployment target to macOS Sierra ([#142](https://github.com/newmarcel/KeepingYouAwake/pull/142))
 
 ### v1.5.2 ###
 
