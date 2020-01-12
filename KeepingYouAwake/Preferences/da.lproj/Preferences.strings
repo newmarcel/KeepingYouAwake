@@ -1,0 +1,69 @@
+/* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
+"5bL-cI-YIY.title" = "Avanceret";
+
+/* Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu"; */
+"8V0-Sq-Cdu.title" = "Opdateringer";
+
+/* Class = "NSWindow"; title = "KeepingYouAwake – Preferences"; ObjectID = "AvX-7Q-Bvc"; */
+"AvX-7Q-Bvc.title" = "KeepingYouAwake – Indstillinger";
+
+/* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK"; */
+"Ax6-W4-7bK.title" = "Deaktiver når batterikapacitet er under";
+
+/* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo"; */
+"EXv-vC-wyo.title" = "Nulstil til standard";
+
+/* Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "fiQ-AT-I7u"; */
+"fiQ-AT-I7u.title" = "10 %";
+
+/* Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX"; */
+"G1k-8T-EcX.title" = "Version 2016";
+
+/* Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "GxN-Dr-4B8"; */
+"GxN-Dr-4B8.title" = "Tjek automatisk for opdateringer";
+
+/* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "i17-n2-vfw"; */
+"i17-n2-vfw.title" = "50 %";
+
+/* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r"; */
+"IOU-Hs-S4r.title" = "Aktivér ved start";
+
+/* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l"; */
+"k65-yi-85l.title" = "Denne værdi ignoreres, når du manuelt starter applikationen under denne batterikapacitet.";
+
+/* Class = "NSButtonCell"; title = "Check"; ObjectID = "kG2-Tz-t51"; */
+"kG2-Tz-t51.title" = "Tjek";
+
+/* Class = "NSViewController"; title = "General"; ObjectID = "lGE-74-XwP"; */
+"lGE-74-XwP.title" = "Generelt";
+
+/* Class = "NSTextFieldCell"; title = "KeepingYouAwake"; ObjectID = "nsg-DI-kE2"; */
+"nsg-DI-kE2.title" = "KeepingYouAwake";
+
+/* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO"; */
+"OsK-jX-EzO.title" = "Ændre kun disse avancerede indstillinger, hvis du ved hvad du gør. De fleste af disse indstillinger kræver genstar af applikationen.";
+
+/* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1"; */
+"QIk-WP-qH1.title" = "Start ved Log ind";
+
+/* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "Rb3-Sm-byr"; */
+"Rb3-Sm-byr.title" = "90 %";
+
+/* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B"; */
+"S6p-h0-H5B.title" = "Forhindre vågeblus øjeblikkeligt efter start.";
+
+/* Class = "NSTextFieldCell"; title = "Copyright Label"; ObjectID = "siu-CP-Bg1"; */
+"siu-CP-Bg1.title" = "Copyright Label";
+
+/* Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj"; */
+"uUP-5n-ykj.title" = "Om";
+
+/* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "vdb-hr-zzU"; */
+"vdb-hr-zzU.title" = "Tjek for Pre-Release opdateringer";
+
+/* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "W3H-iV-s6I"; */
+"W3H-iV-s6I.title" = "Tjek nu";
+
+/* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU"; */
+"x6s-XD-lBU.title" = "Åbner automatisk applikationen, når du starter din Mac.";
+

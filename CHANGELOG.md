@@ -2,12 +2,70 @@
 
 ## Changelog ##
 
+### v1.5.1 ###
+
+- added the ability to customize activation durations in _Preferences_ ([#132](https://github.com/newmarcel/KeepingYouAwake/pull/132))
+- added an advanced preference to quit the app when the activation duration is over ([#133](https://github.com/newmarcel/KeepingYouAwake/pull/133))
+	- _Thanks [jamesgecko](https://github.com/jamesgecko) for the [suggestion](https://github.com/newmarcel/KeepingYouAwake/issues/128)!_
+- added an Indonesian translation ([#137](https://github.com/newmarcel/KeepingYouAwake/pull/137))
+    - *Thank you [ibnuh](https://github.com/ibnuh)!*
+
+**Please note: The 1.5.x series of releases will be the last supporting macOS Yosemite and El Capitan. If you see any critical reason for supporting those, please leave a comment on [GitHub](https://github.com/newmarcel/KeepingYouAwake/issues/126).**
+
+### v1.5.0 ###
+
+- added an _Updates_ tab to _Preferences_ ([#107](https://github.com/newmarcel/KeepingYouAwake/pull/107))
+- enabled the _Hardened Runtime_ security feature ([#111](https://github.com/newmarcel/KeepingYouAwake/pull/111))
+- enabled the _App Sandbox_ security feature ([#112](https://github.com/newmarcel/KeepingYouAwake/pull/112))
+	- custom icons need to be placed in `~/Library/Containers/info.marcel-dierkes.KeepingYouAwake/Data/Documents` now and will be migrated during the app update
+- _Start at login_ uses a launcher helper app now ([#110](https://github.com/newmarcel/KeepingYouAwake/pull/110))
+    - the previous login item is not compatible anymore and **it is recommended to disable _Start at login_ before updating**!
+    - please check [this wiki page](https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems) if you encounter problems
+- updated Sparkle to the `ui-separation-and-xpc` version ([#109](https://github.com/newmarcel/KeepingYouAwake/pull/109)) ([#113](https://github.com/newmarcel/KeepingYouAwake/pull/113))
+
+### v1.4.3 ###
+
+- the icon can be dragged out of the menubar to quit on macOS Sierra and newer ([#82](https://github.com/newmarcel/KeepingYouAwake/issues/82), suggested by [Eitot](https://github.com/Eitot))
+- support for the `keepingyouawake:///toggle` action ([#96](https://github.com/newmarcel/KeepingYouAwake/pull/96)), *thanks [code918](https://github.com/code918)*!
+- new localizations
+	- Polish ([#90](https://github.com/newmarcel/KeepingYouAwake/pull/90)) _Thank you [karolgorecki](https://github.com/karolgorecki)!_
+	- Portuguese ([#94](https://github.com/newmarcel/KeepingYouAwake/pull/94)) _Thank you [luizpedone](https://github.com/luizpedone)!_
+	- Update German for informal style ([#74](https://github.com/newmarcel/KeepingYouAwake/pull/74)) _Thank you [Eitot](https://github.com/Eitot)!_
+- allows Dark Aqua appearance on macOS Mojave
+
+### v1.4.2 ###
+
+- support cmd+w and cmd+q keyboard shortcuts in the preferences window ([#56](https://github.com/newmarcel/KeepingYouAwake/issues/56))
+- preferences now remember the window position
+- allow option-click on the menubar icon ([#59](https://github.com/newmarcel/KeepingYouAwake/issues/59))
+- fixed the incorrect fullscreen behavior of the preferences window ([#71](https://github.com/newmarcel/KeepingYouAwake/pull/71)), *thanks [Eitot](https://github.com/Eitot)!*
+- more localization updates
+	- Spanish ([#70](https://github.com/newmarcel/KeepingYouAwake/pull/70))
+		- *Thank you [nbalonso](https://github.com/nbalonso)!*
+	- Dutch ([#73](https://github.com/newmarcel/KeepingYouAwake/pull/73))
+		- *Thank you [Eitot](https://github.com/Eitot)!*
+	- improvements to the French translation by [alexandreleroux](https://github.com/alexandreleroux) ([#63](https://github.com/newmarcel/KeepingYouAwake/pull/63))
+	- Danish ([#78](https://github.com/newmarcel/KeepingYouAwake/pull/78))
+		- *Thank you [JacobSchriver](https://github.com/JacobSchriver)!*
+	- Turkish ([#79](https://github.com/newmarcel/KeepingYouAwake/pull/79))
+		- *Thank you [durul](https://github.com/durul)!*
+	- Chinese (Simplified) ([#87](https://github.com/newmarcel/KeepingYouAwake/pull/87))
+		- *Thank you [zangyongyi](https://github.com/zangyongyi)!*
+	- Chinese (Traditional zh-Hant-TW) ([#89](https://github.com/newmarcel/KeepingYouAwake/pull/89))
+		- *Thank you [passerbyid](https://github.com/passerbyid)!*
+- updated Sparkle to 1.18.1
+
 ### v1.4.1 ###
 
 - Localization support
 	- German
 	- French ([Issue #51](https://github.com/newmarcel/KeepingYouAwake/issues/51))
 		- *Thank you [rei-vilo](https://github.com/rei-vilo)!*
+	- Korean ([Issue #64](https://github.com/newmarcel/KeepingYouAwake/pull/64))
+		- *Thank you [Pusnow](https://github.com/Pusnow)!*
+- removed advanced preference to allow the display to sleep *(didn't work properly and lead to confusion)*
+	- the `info.marcel-dierkes.KeepingYouAwake.AllowDisplaySleep` preference was removed
+	- a similar, more powerful replacement feature will be introduced soon
 
 ### v1.4 ###
 

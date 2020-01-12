@@ -15,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.4.1</string>
+	<string>$(KYA_BUNDLE_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -32,20 +32,15 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>141</string>
+	<string>$(KYA_BUILD_NUMBER)</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.utilities</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>LSUIElement</key>
 	<true/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>${COPYRIGHT_TEXT}</string>
+	<string>${KYA_COPYRIGHT_TEXT}</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
@@ -53,6 +48,8 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://newmarcel.github.io/KeepingYouAwake/appcast.xml</string>
+	<string>https://newmarcel.github.io/KeepingYouAwake/appcast.xml</string>
+	<key>NSRequiresAquaSystemAppearance</key>
+	<false/>
 </dict>
 </plist>

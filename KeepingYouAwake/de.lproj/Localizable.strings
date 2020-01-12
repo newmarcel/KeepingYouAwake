@@ -1,25 +1,59 @@
+/* (Default) */
+"(Default)" = "(Standard)";
+
+/* Activate for Duration */
+"Activate for Duration" = "Aktivierungsdauer";
+
 /* Allowing your Mac to go to sleep… */
 "Allowing your Mac to go to sleep…" = "Ruhezustand erlauben…";
 
+/* Cancel */
+"Cancel" = "Abbrechen";
+
 /* Click to allow sleep\nRight click to show menu */
-"Click to allow sleep
-Right click to show menu" = "Klicken, um den Ruhezustand zu erlauben
-Rechtsklick, um das Menü anzuzeigen";
+"Click to allow sleep\nRight click to show menu" = "Klicken, um den Ruhezustand zu erlauben\nRechtsklick, um das Menü anzuzeigen";
 
 /* Click to prevent sleep\nRight click to show menu */
-"Click to prevent sleep
-Right click to show menu" = "Klicken, um den Ruhezustand zu verhindern
-Rechtsklick, um das Menü anzuzeigen";
+"Click to prevent sleep\nRight click to show menu" = "Klicken, um den Ruhezustand zu verhindern\nRechtsklick, um das Menü anzuzeigen";
+
+/* Default */
+"Default" = "Standard";
+
+/* Disable menu bar icon highlight color */
+"Disable menu bar icon highlight color" = "Keine Auswahlfarbe beim Statusmenü anzeigen";
+
+/* Do you really want to reset the activation durations to the default values? */
+"Do you really want to reset the activation durations to the default values?" = "Soll die Aktivierungsdauer-Liste wirklich auf die ursprünglichen Einträge zurückgesetzt werden?";
+
+/* Enable experimental Notification Center integration */
+"Enable experimental Notification Center integration" = "Experimentelle Integration mit der Mitteilungszentrale einschalten";
 
 /* Indefinitely */
 "Indefinitely" = "Unbegrenzt";
 
+/* OK */
+"OK" = "OK";
+
 /* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for
-%@…" = "Ruhezustand für %@ verhindern…";
+"Preventing your Mac from going to sleep for\n%@…" = "Ruhezustand für %@ verhindern…";
 
 /* Preventing your Mac from going to sleep… */
 "Preventing your Mac from going to sleep…" = "Ruhezustand verhindern…";
+
+/* Quit when activation duration is over */
+"Quit when activation duration is over" = "Beenden, wenn die Aktivierungsdauer abgelaufen ist";
+
+/* Reset Activation Durations */
+"Reset Activation Durations" = "Aktivierungsdauer zurücksetzen";
+
+/* Set Default: %@ */
+"Set Default: %@" = "Als Standard setzen: %@";
+
+/* The entered duration is invalid. Please try again. */
+"The entered duration is invalid. Please try again." = "Die eingegebene Dauer ist ungültig. Bitte versuche es erneut.";
+
+/* This duration has already been added. */
+"This duration has already been added." = "Diese Dauer wurde bereits hinzugefügt.";
 
 /* Version */
 "Version" = "Version";

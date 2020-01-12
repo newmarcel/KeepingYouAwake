@@ -1,58 +1,37 @@
-# KeepingYouAwake #
+# KeepingYouAwake
 
-KeepingYouAwake is a small menu bar utility for macOS Yosemite *(Version 10.10)* and newer that can prevent your Mac from entering sleep mode for a predefined duration or as long as it is activated.
+KeepingYouAwake is a small menu bar utility for macOS *(Version 10.10 and newer)* that can prevent your Mac from entering sleep mode for a predefined duration or as long as it is activated.
 
 ## Installation
 
 **[Download the latest version here.](https://github.com/newmarcel/KeepingYouAwake/releases)**
 
-or install it via [cask](http://caskroom.io/): `brew cask install keepingyouawake`.
+or install it via [cask](http://caskroom.github.io/): `brew cask install keepingyouawake`.
 
-![Screenshots](./Screenshots.jpg)
+<img src="./Extras/Screenshot.jpg" width="594" />
 
-## Why does this project exist, Caffeine.app works perfectly fine? ##
+## How does it work?
 
-*[Caffeine](http://lightheadsw.com/caffeine/)* from *Lighthead Software* is a great utility and I used it for many years, but it hasn't been updated in a while. Its icons are not Retina-compatible and do not look nice in the dark themed menu bar.
+The app is a small wrapper around Apple's `caffeinate` command line utility. All current versions of macOS ship with this tool by default. You can read the manual page [here](https://web.archive.org/web/20140604153141/https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/caffeinate.8.html).
 
-## How do you prevent my Mac from sleeping? ##
+## Is this dangerous?
 
-This utility is just a small wrapper around Apple's caffeinate command line utilty. Any modern Mac ships this tool by default. You can read the manpage [here](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/caffeinate.8.html).
+This utility will not harm your Mac because it is based on an official command line tool by Apple. **BUT** I cannot guarantee anything, so use this tool **AT YOUR OWN RISK**.
 
-## Is this dangerous? ##
+## Inspired by Caffeine
 
-Just to make it clear: this utility shouldn't harm your Mac because it is using an official command line tool from Apple, **BUT** I cannot guarantee anything, so use this tool **AT YOUR OWN RISK**.
+*KeepingYouAwake* is inspired by *[Caffeine](http://lightheadsw.com/caffeine/)* from *Lighthead Software*. I used it for many years, but sadly it hasn't been updated in a while. Eventually in 2014 I decided to build a replacement for myself that was optimized for macOS Yosemite and used the [`caffeinate`](https://web.archive.org/web/20140604153141/https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/caffeinate.8.html) command line tool under the hood.
 
-## Help Wanted! ##
+## Help Wanted!
 
-Do you want to improve the app or add any useful features? Please go ahead and create pull requests. I'm thankful for any help.
+Do you want to improve the app or add useful features? Please go ahead and create pull requests. I'm thankful for any help.
 
-## Building the Source Code ##
+## Building the Source Code
 
-*KeepingYouAwake* uses [Carthage](https://github.com/Carthage/Carthage) as dependency manager. You can install Carthage with [Homebrew](http://brew.sh). Type `brew update && brew install carthage` and call `carthage bootstrap` in the *KeepingYouAwake* source code folder to download and build all dependencies.
+*KeepingYouAwake* uses [Sparkle](https://github.com/sparkle-project/Sparkle/tree/ui-separation-and-xpc)'s `ui-separation-and-xpc` branch to deliver updates. You can build and sign Sparkle with `make Vendor`. To build a release version of the app just run `make dist`.
 
-## License ##
+## License
 
-Everything in this project is licensed under the [MIT license](http://opensource.org/licenses/MIT). I even included the Sketch files for all image assets in this project.
+Everything in this project is licensed under the [MIT license](http://opensource.org/licenses/MIT). Provided image assets are also covered by this license.
 
-
-### The MIT License (MIT) ###
-
-Copyright (c) 2014 – 2016 Marcel Dierkes
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+*Although it's not required please do not redistribute forked versions of the app with the same name and icon. Thanks!*

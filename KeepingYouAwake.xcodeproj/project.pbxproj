@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA085D1021D6BAB6003D9B1B /* container-migration.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA085D0F21D6BAB6003D9B1B /* container-migration.plist */; };
+		DA0ADE6621CBFC5800D34B9D /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0ADE6521CBFC5800D34B9D /* Sparkle.framework */; };
+		DA0ADE6821CBFC6000D34B9D /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA0ADE6521CBFC5800D34B9D /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA0ADE6E21CBFCA700D34B9D /* org.sparkle-project.Downloader.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6A21CBFC9700D34B9D /* org.sparkle-project.Downloader.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA0ADE6F21CBFCA700D34B9D /* org.sparkle-project.InstallerConnection.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6B21CBFC9700D34B9D /* org.sparkle-project.InstallerConnection.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA0ADE7021CBFCA700D34B9D /* org.sparkle-project.InstallerLauncher.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6C21CBFC9700D34B9D /* org.sparkle-project.InstallerLauncher.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA0ADE7121CBFCA700D34B9D /* org.sparkle-project.InstallerStatus.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6D21CBFC9700D34B9D /* org.sparkle-project.InstallerStatus.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */; };
 		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
+		DA39208122FC12E70058F0C2 /* NSDate+RemainingTime.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39208022FC12E70058F0C2 /* NSDate+RemainingTime.m */; };
 		DA46C1EE1BDCDFB00050357C /* NSUserDefaults+Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */; };
-		DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */; };
+		DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.mm */; };
 		DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */; };
 		DA54C12A1D69C55400AF9E9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C12C1D69C55400AF9E9D /* Localizable.strings */; };
 		DA54C1311D69CA0000AF9E9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */; };
-		DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */; };
+		DA56801B2115FF140039C979 /* KYAUpdatePreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5680192115FF140039C979 /* KYAUpdatePreferencesViewController.m */; };
 		DA5A50941ACC5C5400A444C8 /* KYAEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A50931ACC5C5400A444C8 /* KYAEvent.m */; };
 		DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5B5A221C28612100EE45C6 /* KYABatteryStatus.m */; };
 		DA637B3F19F14693004C8838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B3E19F14693004C8838 /* main.m */; };
@@ -21,9 +30,21 @@
 		DA637B4419F14693004C8838 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4319F14693004C8838 /* Images.xcassets */; };
 		DA637B4719F14693004C8838 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4519F14693004C8838 /* MainMenu.xib */; };
 		DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B5D19F146B6004C8838 /* KYAAppController.m */; };
+		DA658E6621CE8C130049F4C1 /* NSApplication+KYALauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = DA658E6521CE8C130049F4C1 /* NSApplication+KYALauncher.m */; };
+		DA658E7121CE907D0049F4C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA658E7021CE907D0049F4C1 /* Assets.xcassets */; };
+		DA658E7721CE907D0049F4C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA658E7621CE907D0049F4C1 /* main.m */; };
+		DA658E7D21CE90F30049F4C1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA658E7C21CE90F30049F4C1 /* MainMenu.xib */; };
+		DA658E8021CE91540049F4C1 /* KYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA658E7F21CE91540049F4C1 /* KYAAppDelegate.m */; };
+		DA658E8421CE93310049F4C1 /* KeepingYouAwake Launcher.app in Embed Launcher */ = {isa = PBXBuildFile; fileRef = DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA73AB8822EDB9FE00D085CE /* KYAActivationDurationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA73AB8722EDB9FE00D085CE /* KYAActivationDurationsController.m */; };
+		DA7B53061E16999A00D89A12 /* KYAPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */; };
+		DA82560D22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82560C22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m */; };
 		DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */; };
-		DA8CB49D1A5767CC00BC6F73 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7931C31A575C6000B6DEC4 /* Sparkle.framework */; };
-		DA8CB49E1A5767CC00BC6F73 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA7931C31A575C6000B6DEC4 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA86A5E222FEB81C00B2D1B4 /* KYALocalizedStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86A5E122FEB81C00B2D1B4 /* KYALocalizedStrings.m */; };
+		DA987C9C22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */; };
+		DAB0700A22EC794F004D5BCA /* KYADurationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700922EC794F004D5BCA /* KYADurationCell.m */; };
+		DAB0700C22EC795F004D5BCA /* KYADurationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB0700B22EC795F004D5BCA /* KYADurationCell.xib */; };
+		DAB0701022EC8E6B004D5BCA /* KYADurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700E22EC8E6B004D5BCA /* KYADurationPreferencesViewController.m */; };
 		DAB128691C2453F600831045 /* KYAAdvancedPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128681C2453F600831045 /* KYAAdvancedPreferencesViewController.m */; };
 		DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */; };
 		DAB128711C245F1B00831045 /* NSApplication+Versions.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128701C245F1B00831045 /* NSApplication+Versions.m */; };
@@ -33,14 +54,49 @@
 		DAD2725B1ACB266800CDD620 /* KYAEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD2725A1ACB266800CDD620 /* KYAEventHandler.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DA87FF5E21D42525009045F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA637B3119F14693004C8838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA658E6A21CE907B0049F4C1;
+			remoteInfo = "KeepingYouAwake Launcher";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		DA0ADE6921CBFC7E00D34B9D /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				DA0ADE6E21CBFCA700D34B9D /* org.sparkle-project.Downloader.xpc in Embed XPC Services */,
+				DA0ADE6F21CBFCA700D34B9D /* org.sparkle-project.InstallerConnection.xpc in Embed XPC Services */,
+				DA0ADE7021CBFCA700D34B9D /* org.sparkle-project.InstallerLauncher.xpc in Embed XPC Services */,
+				DA0ADE7121CBFCA700D34B9D /* org.sparkle-project.InstallerStatus.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA658E8321CE93120049F4C1 /* Embed Launcher */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				DA658E8421CE93310049F4C1 /* KeepingYouAwake Launcher.app in Embed Launcher */,
+			);
+			name = "Embed Launcher";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA8CB49F1A5767CC00BC6F73 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DA8CB49E1A5767CC00BC6F73 /* Sparkle.framework in Embed Frameworks */,
+				DA0ADE6821CBFC6000D34B9D /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,12 +108,36 @@
 		2EB97EEE1D69FD8900BA63A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2EB97EEF1D69FD8900BA63A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Preferences.strings; sourceTree = "<group>"; };
 		2EB97EF01D69FD8900BA63A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		8F6945C61DB7A87B0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Preferences.strings; sourceTree = "<group>"; };
+		8F6945C71DB7A87C0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8F6945C81DB7A87D0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8F6945C91DB7A87D0059C386 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DA085D0F21D6BAB6003D9B1B /* container-migration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "container-migration.plist"; sourceTree = "<group>"; };
+		DA0ADE6521CBFC5800D34B9D /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Vendor/Sparkle/Sparkle.framework; sourceTree = "<group>"; };
+		DA0ADE6A21CBFC9700D34B9D /* org.sparkle-project.Downloader.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; name = "org.sparkle-project.Downloader.xpc"; path = "Vendor/Sparkle/XPCServices/org.sparkle-project.Downloader.xpc"; sourceTree = "<group>"; };
+		DA0ADE6B21CBFC9700D34B9D /* org.sparkle-project.InstallerConnection.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; name = "org.sparkle-project.InstallerConnection.xpc"; path = "Vendor/Sparkle/XPCServices/org.sparkle-project.InstallerConnection.xpc"; sourceTree = "<group>"; };
+		DA0ADE6C21CBFC9700D34B9D /* org.sparkle-project.InstallerLauncher.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; name = "org.sparkle-project.InstallerLauncher.xpc"; path = "Vendor/Sparkle/XPCServices/org.sparkle-project.InstallerLauncher.xpc"; sourceTree = "<group>"; };
+		DA0ADE6D21CBFC9700D34B9D /* org.sparkle-project.InstallerStatus.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; name = "org.sparkle-project.InstallerStatus.xpc"; path = "Vendor/Sparkle/XPCServices/org.sparkle-project.InstallerStatus.xpc"; sourceTree = "<group>"; };
+		DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeepingYouAwake.entitlements; sourceTree = "<group>"; };
+		DA173B351F65B41B00932CE0 /* KYAStatusItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAStatusItemController.h; sourceTree = "<group>"; };
+		DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAStatusItemController.m; sourceTree = "<group>"; };
+		DA249E281F9B7211006BCD2C /* KYADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADefines.h; sourceTree = "<group>"; };
 		DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAMenuBarIcon.h; sourceTree = "<group>"; };
 		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
+		DA39207F22FC12E70058F0C2 /* NSDate+RemainingTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+RemainingTime.h"; sourceTree = "<group>"; };
+		DA39208022FC12E70058F0C2 /* NSDate+RemainingTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RemainingTime.m"; sourceTree = "<group>"; };
+		DA4121711F5C07130083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DA4121721F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA4121731F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA4121741F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Keys.h"; sourceTree = "<group>"; };
 		DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Keys.m"; sourceTree = "<group>"; };
+		DA51141C1E214E1600635931 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DA51141D1E214E1600635931 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA51141E1E214E1600635931 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA51141F1E214E1600635931 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		DA51E7DC1C2562A2008AA96C /* KYAActivationDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAActivationDuration.h; sourceTree = "<group>"; };
-		DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAActivationDuration.m; sourceTree = "<group>"; };
+		DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KYAActivationDuration.mm; sourceTree = "<group>"; };
 		DA54C1101D69C20F00AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
 		DA54C1221D69C55300AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Preferences.strings; sourceTree = "<group>"; };
 		DA54C12B1D69C55400AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -65,8 +145,8 @@
 		DA54C12E1D69C9BC00AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA54C1321D69CA0000AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA54C1341D69CA0700AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+LoginItem.h"; sourceTree = "<group>"; };
-		DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+LoginItem.m"; sourceTree = "<group>"; };
+		DA5680192115FF140039C979 /* KYAUpdatePreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAUpdatePreferencesViewController.m; sourceTree = "<group>"; };
+		DA56801A2115FF140039C979 /* KYAUpdatePreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAUpdatePreferencesViewController.h; sourceTree = "<group>"; };
 		DA5A50921ACC5C5400A444C8 /* KYAEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEvent.h; sourceTree = "<group>"; };
 		DA5A50931ACC5C5400A444C8 /* KYAEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAEvent.m; sourceTree = "<group>"; };
 		DA5B5A211C28612100EE45C6 /* KYABatteryStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYABatteryStatus.h; sourceTree = "<group>"; };
@@ -80,10 +160,54 @@
 		DA637B4619F14693004C8838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DA637B5C19F146B6004C8838 /* KYAAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAppController.h; sourceTree = "<group>"; };
 		DA637B5D19F146B6004C8838 /* KYAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAppController.m; sourceTree = "<group>"; };
+		DA6439CA1E20F29D0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DA6439CB1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA6439CC1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA6439CD1E20F29E0078ECE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DA658E6421CE8C130049F4C1 /* NSApplication+KYALauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+KYALauncher.h"; sourceTree = "<group>"; };
+		DA658E6521CE8C130049F4C1 /* NSApplication+KYALauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+KYALauncher.m"; sourceTree = "<group>"; };
+		DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KeepingYouAwake Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA658E7021CE907D0049F4C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA658E7521CE907D0049F4C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA658E7621CE907D0049F4C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA658E7821CE907D0049F4C1 /* KYALauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KYALauncher.entitlements; sourceTree = "<group>"; };
+		DA658E7C21CE90F30049F4C1 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		DA658E7E21CE91540049F4C1 /* KYAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAppDelegate.h; sourceTree = "<group>"; };
+		DA658E7F21CE91540049F4C1 /* KYAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAppDelegate.m; sourceTree = "<group>"; };
+		DA66276F20CC0676007834DB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DA66277020CC0676007834DB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DA66277120CC0680007834DB /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DA66277220CC0680007834DB /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DA66277320CC0688007834DB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA66277420CC0689007834DB /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA66277520CC0693007834DB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA66277620CC0695007834DB /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA73AB8622EDB9FE00D085CE /* KYAActivationDurationsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAActivationDurationsController.h; sourceTree = "<group>"; };
+		DA73AB8722EDB9FE00D085CE /* KYAActivationDurationsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAActivationDurationsController.m; sourceTree = "<group>"; };
 		DA753D391C3714A800955BE3 /* KYABatteryCapacityThreshold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYABatteryCapacityThreshold.h; sourceTree = "<group>"; };
-		DA7931C31A575C6000B6DEC4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Carthage/Build/Mac/Sparkle.framework; sourceTree = SOURCE_ROOT; };
+		DA7B53041E16999A00D89A12 /* KYAPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesWindowController.h; sourceTree = "<group>"; };
+		DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAPreferencesWindowController.m; sourceTree = "<group>"; };
+		DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = SOURCE_ROOT; };
+		DA82560B22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAActivationDurationsMenuController.h; sourceTree = "<group>"; };
+		DA82560C22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAActivationDurationsMenuController.m; sourceTree = "<group>"; };
 		DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAGeneralPreferencesViewController.h; sourceTree = "<group>"; };
 		DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAGeneralPreferencesViewController.m; sourceTree = "<group>"; };
+		DA86A5E122FEB81C00B2D1B4 /* KYALocalizedStrings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYALocalizedStrings.m; sourceTree = "<group>"; };
+		DA8B21961F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/Preferences.strings"; sourceTree = "<group>"; };
+		DA8B21971F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		DA8B21981F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DA8B21991F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DA987C9A22FC749D00DD476B /* KYAAddDurationPreferencesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAAddDurationPreferencesViewController.h; sourceTree = "<group>"; };
+		DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAddDurationPreferencesViewController.m; sourceTree = "<group>"; };
+		DAA478D3227C233000E609C1 /* KYALocalizedStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYALocalizedStrings.h; sourceTree = "<group>"; };
+		DAAAAAA023B14D04004A44EF /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAAAAAA123B14D04004A44EF /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DAAAAAA223B14D04004A44EF /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DAB0700822EC794F004D5BCA /* KYADurationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADurationCell.h; sourceTree = "<group>"; };
+		DAB0700922EC794F004D5BCA /* KYADurationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYADurationCell.m; sourceTree = "<group>"; };
+		DAB0700B22EC795F004D5BCA /* KYADurationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KYADurationCell.xib; sourceTree = "<group>"; };
+		DAB0700D22EC8E6B004D5BCA /* KYADurationPreferencesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADurationPreferencesViewController.h; sourceTree = "<group>"; };
+		DAB0700E22EC8E6B004D5BCA /* KYADurationPreferencesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYADurationPreferencesViewController.m; sourceTree = "<group>"; };
 		DAB128671C2453F600831045 /* KYAAdvancedPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAdvancedPreferencesViewController.h; sourceTree = "<group>"; };
 		DAB128681C2453F600831045 /* KYAAdvancedPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAdvancedPreferencesViewController.m; sourceTree = "<group>"; };
 		DAB1286A1C24540200831045 /* KYAAboutPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAboutPreferencesViewController.h; sourceTree = "<group>"; };
@@ -95,9 +219,16 @@
 		DAB128751C2493DB00831045 /* KYAPreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAPreference.m; sourceTree = "<group>"; };
 		DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYASleepWakeTimer.h; sourceTree = "<group>"; };
 		DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYASleepWakeTimer.m; sourceTree = "<group>"; };
-		DAD272581ACB21D000CDD620 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
 		DAD272591ACB266800CDD620 /* KYAEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAEventHandler.h; sourceTree = "<group>"; };
 		DAD2725A1ACB266800CDD620 /* KYAEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAEventHandler.m; sourceTree = "<group>"; };
+		DAD3B5761EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DAD3B5771EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAD3B5781EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAD3B5791EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DAF3FB0A1EC6F61300B5BB36 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Preferences.strings; sourceTree = "<group>"; };
+		DAF3FB0B1EC6F61300B5BB36 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAF3FB0C1EC6F61300B5BB36 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAF3FB0D1EC6F61300B5BB36 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/MainMenu.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +236,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8CB49D1A5767CC00BC6F73 /* Sparkle.framework in Frameworks */,
+				DA0ADE6621CBFC5800D34B9D /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA658E6821CE907B0049F4C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +256,7 @@
 				DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */,
 				DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */,
 			);
-			name = "MenuBar Icon";
+			path = "MenuBar Icon";
 			sourceTree = "<group>";
 		};
 		DA4919C51ACFFF8D00D44F6A /* Event Handler */ = {
@@ -129,20 +267,22 @@
 				DA5A50921ACC5C5400A444C8 /* KYAEvent.h */,
 				DA5A50931ACC5C5400A444C8 /* KYAEvent.m */,
 			);
-			name = "Event Handler";
+			path = "Event Handler";
 			sourceTree = "<group>";
 		};
 		DA4919C61ACFFF9600D44F6A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DA5665A719FADED200B923FB /* NSApplication+LoginItem.h */,
-				DA5665A819FADED200B923FB /* NSApplication+LoginItem.m */,
+				DA658E6421CE8C130049F4C1 /* NSApplication+KYALauncher.h */,
+				DA658E6521CE8C130049F4C1 /* NSApplication+KYALauncher.m */,
 				DAB1286F1C245F1B00831045 /* NSApplication+Versions.h */,
 				DAB128701C245F1B00831045 /* NSApplication+Versions.m */,
 				DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */,
 				DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */,
+				DA39207F22FC12E70058F0C2 /* NSDate+RemainingTime.h */,
+				DA39208022FC12E70058F0C2 /* NSDate+RemainingTime.m */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DA51E7DF1C2562BE008AA96C /* General */ = {
@@ -150,10 +290,8 @@
 			children = (
 				DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */,
 				DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */,
-				DA51E7DC1C2562A2008AA96C /* KYAActivationDuration.h */,
-				DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.m */,
 			);
-			name = General;
+			path = General;
 			sourceTree = "<group>";
 		};
 		DA51E7E01C2562C4008AA96C /* Advanced */ = {
@@ -165,7 +303,7 @@
 				DAB128741C2493DB00831045 /* KYAPreference.h */,
 				DAB128751C2493DB00831045 /* KYAPreference.m */,
 			);
-			name = Advanced;
+			path = Advanced;
 			sourceTree = "<group>";
 		};
 		DA51E7E11C2562CA008AA96C /* About */ = {
@@ -175,7 +313,16 @@
 				DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */,
 				DAB1286D1C245A6C00831045 /* Credits.rtf */,
 			);
-			name = About;
+			path = About;
+			sourceTree = "<group>";
+		};
+		DA5680182115FF140039C979 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				DA56801A2115FF140039C979 /* KYAUpdatePreferencesViewController.h */,
+				DA5680192115FF140039C979 /* KYAUpdatePreferencesViewController.m */,
+			);
+			path = Updates;
 			sourceTree = "<group>";
 		};
 		DA5B5A241C28612800EE45C6 /* Battery Status */ = {
@@ -184,15 +331,25 @@
 				DA5B5A211C28612100EE45C6 /* KYABatteryStatus.h */,
 				DA5B5A221C28612100EE45C6 /* KYABatteryStatus.m */,
 			);
-			name = "Battery Status";
+			path = "Battery Status";
+			sourceTree = "<group>";
+		};
+		DA5C10A422FDD27C00554D6B /* KYASleepWakeTimer */ = {
+			isa = PBXGroup;
+			children = (
+				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,
+				DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */,
+			);
+			path = KYASleepWakeTimer;
 			sourceTree = "<group>";
 		};
 		DA637B3019F14693004C8838 = {
 			isa = PBXGroup;
 			children = (
 				DA637B3B19F14693004C8838 /* KeepingYouAwake */,
-				DA66CF9F1A12A7D700336CDC /* Frameworks */,
 				DA637B3C19F14693004C8838 /* Supporting Files */,
+				DA658E6C21CE907B0049F4C1 /* KYALauncher */,
+				DA66CF9F1A12A7D700336CDC /* Frameworks */,
 				DA637B3A19F14693004C8838 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -201,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				DA637B3919F14693004C8838 /* KeepingYouAwake.app */,
+				DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,13 +366,18 @@
 		DA637B3B19F14693004C8838 /* KeepingYouAwake */ = {
 			isa = PBXGroup;
 			children = (
+				DA249E281F9B7211006BCD2C /* KYADefines.h */,
+				DAA478D3227C233000E609C1 /* KYALocalizedStrings.h */,
+				DA86A5E122FEB81C00B2D1B4 /* KYALocalizedStrings.m */,
 				DA637B4019F14693004C8838 /* KYAAppDelegate.h */,
 				DA637B4119F14693004C8838 /* KYAAppDelegate.m */,
 				DA637B5C19F146B6004C8838 /* KYAAppController.h */,
 				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
-				DAB268701A0D6BC600B58AD6 /* KYASleepWakeTimer.h */,
-				DAB268711A0D6BC600B58AD6 /* KYASleepWakeTimer.m */,
+				DA5C10A422FDD27C00554D6B /* KYASleepWakeTimer */,
+				DA73AB8522EDB9CD00D085CE /* KYAActivationDurationsController */,
+				DA82560E22FB5B31005ECB3A /* KYAActivationDurationsMenuController */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
+				DA8F381B1F9BA4360086A84A /* StatusItemController */,
 				DA2691CF1B8230AB00B15779 /* MenuBar Icon */,
 				DA5B5A241C28612800EE45C6 /* Battery Status */,
 				DA4919C51ACFFF8D00D44F6A /* Event Handler */,
@@ -229,32 +392,106 @@
 			children = (
 				DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */,
 				DA54C12C1D69C55400AF9E9D /* Localizable.strings */,
-				DAD272581ACB21D000CDD620 /* Configuration.xcconfig */,
+				DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */,
+				DA085D0F21D6BAB6003D9B1B /* container-migration.plist */,
 				DA637B3D19F14693004C8838 /* Info.plist */,
 				DA637B3E19F14693004C8838 /* main.m */,
+				DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */,
 			);
 			name = "Supporting Files";
 			path = KeepingYouAwake;
 			sourceTree = "<group>";
 		};
+		DA658E6C21CE907B0049F4C1 /* KYALauncher */ = {
+			isa = PBXGroup;
+			children = (
+				DA658E7E21CE91540049F4C1 /* KYAAppDelegate.h */,
+				DA658E7F21CE91540049F4C1 /* KYAAppDelegate.m */,
+				DA658E7621CE907D0049F4C1 /* main.m */,
+				DA658E7C21CE90F30049F4C1 /* MainMenu.xib */,
+				DA658E7021CE907D0049F4C1 /* Assets.xcassets */,
+				DA658E7521CE907D0049F4C1 /* Info.plist */,
+				DA658E7821CE907D0049F4C1 /* KYALauncher.entitlements */,
+			);
+			path = KYALauncher;
+			sourceTree = "<group>";
+		};
 		DA66CF9F1A12A7D700336CDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA7931C31A575C6000B6DEC4 /* Sparkle.framework */,
+				DA0ADE6521CBFC5800D34B9D /* Sparkle.framework */,
+				DA0ADE6A21CBFC9700D34B9D /* org.sparkle-project.Downloader.xpc */,
+				DA0ADE6B21CBFC9700D34B9D /* org.sparkle-project.InstallerConnection.xpc */,
+				DA0ADE6C21CBFC9700D34B9D /* org.sparkle-project.InstallerLauncher.xpc */,
+				DA0ADE6D21CBFC9700D34B9D /* org.sparkle-project.InstallerStatus.xpc */,
 			);
 			name = Frameworks;
-			path = KeepingYouAwake;
+			sourceTree = "<group>";
+		};
+		DA73AB8522EDB9CD00D085CE /* KYAActivationDurationsController */ = {
+			isa = PBXGroup;
+			children = (
+				DA51E7DC1C2562A2008AA96C /* KYAActivationDuration.h */,
+				DA51E7DD1C2562A2008AA96C /* KYAActivationDuration.mm */,
+				DA73AB8622EDB9FE00D085CE /* KYAActivationDurationsController.h */,
+				DA73AB8722EDB9FE00D085CE /* KYAActivationDurationsController.m */,
+			);
+			path = KYAActivationDurationsController;
+			sourceTree = "<group>";
+		};
+		DA82560E22FB5B31005ECB3A /* KYAActivationDurationsMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				DA82560B22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.h */,
+				DA82560C22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m */,
+			);
+			path = KYAActivationDurationsMenuController;
 			sourceTree = "<group>";
 		};
 		DA82B1111C2422F600FA46E0 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
 				DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */,
+				DA7B53041E16999A00D89A12 /* KYAPreferencesWindowController.h */,
+				DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */,
 				DA51E7DF1C2562BE008AA96C /* General */,
+				DAB0701222EC8E74004D5BCA /* ActivationDuration */,
 				DA51E7E01C2562C4008AA96C /* Advanced */,
+				DA5680182115FF140039C979 /* Updates */,
 				DA51E7E11C2562CA008AA96C /* About */,
 			);
-			name = Preferences;
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		DA8F381B1F9BA4360086A84A /* StatusItemController */ = {
+			isa = PBXGroup;
+			children = (
+				DA173B351F65B41B00932CE0 /* KYAStatusItemController.h */,
+				DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */,
+			);
+			path = StatusItemController;
+			sourceTree = "<group>";
+		};
+		DAB0701222EC8E74004D5BCA /* ActivationDuration */ = {
+			isa = PBXGroup;
+			children = (
+				DAB0700D22EC8E6B004D5BCA /* KYADurationPreferencesViewController.h */,
+				DAB0700E22EC8E6B004D5BCA /* KYADurationPreferencesViewController.m */,
+				DA987C9A22FC749D00DD476B /* KYAAddDurationPreferencesViewController.h */,
+				DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */,
+				DAB0701322EC8F06004D5BCA /* KYADurationCell */,
+			);
+			path = ActivationDuration;
+			sourceTree = "<group>";
+		};
+		DAB0701322EC8F06004D5BCA /* KYADurationCell */ = {
+			isa = PBXGroup;
+			children = (
+				DAB0700822EC794F004D5BCA /* KYADurationCell.h */,
+				DAB0700922EC794F004D5BCA /* KYADurationCell.m */,
+				DAB0700B22EC795F004D5BCA /* KYADurationCell.xib */,
+			);
+			path = KYADurationCell;
 			sourceTree = "<group>";
 		};
 		DAC322C91C65199300DF8B63 /* Resources */ = {
@@ -276,16 +513,35 @@
 				DA637B3519F14693004C8838 /* Sources */,
 				DA637B3619F14693004C8838 /* Frameworks */,
 				DA637B3719F14693004C8838 /* Resources */,
-				DA4C74361A5763B000BE1BE1 /* Carthage Copy Frameworks */,
 				DA8CB49F1A5767CC00BC6F73 /* Embed Frameworks */,
+				DA658E8321CE93120049F4C1 /* Embed Launcher */,
+				DA0ADE6921CBFC7E00D34B9D /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA87FF5F21D42525009045F3 /* PBXTargetDependency */,
+			);
+			name = KeepingYouAwake;
+			productName = KeepingYouAwake;
+			productReference = DA637B3919F14693004C8838 /* KeepingYouAwake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA658E6A21CE907B0049F4C1 /* KeepingYouAwake Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA658E7B21CE907D0049F4C1 /* Build configuration list for PBXNativeTarget "KeepingYouAwake Launcher" */;
+			buildPhases = (
+				DA658E6721CE907B0049F4C1 /* Sources */,
+				DA658E6821CE907B0049F4C1 /* Frameworks */,
+				DA658E6921CE907B0049F4C1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KeepingYouAwake;
-			productName = KeepingYouAwake;
-			productReference = DA637B3919F14693004C8838 /* KeepingYouAwake.app */;
+			name = "KeepingYouAwake Launcher";
+			productName = KYALauncher;
+			productReference = DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -294,24 +550,55 @@
 		DA637B3119F14693004C8838 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				CLASSPREFIX = KYA;
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Marcel Dierkes";
 				TargetAttributes = {
 					DA637B3819F14693004C8838 = {
 						CreatedOnToolsVersion = 6.0.1;
 						DevelopmentTeam = 5KESHV9W85;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					DA658E6A21CE907B0049F4C1 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 5KESHV9W85;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
 			buildConfigurationList = DA637B3419F14693004C8838 /* Build configuration list for PBXProject "KeepingYouAwake" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 				de,
 				fr,
+				"zh-Hant-TW",
+				ko,
+				es,
+				nl,
+				da,
+				tr,
+				zh,
+				pl,
+				pt,
+				id,
 			);
 			mainGroup = DA637B3019F14693004C8838;
 			productRefGroup = DA637B3A19F14693004C8838 /* Products */;
@@ -319,6 +606,7 @@
 			projectRoot = "";
 			targets = (
 				DA637B3819F14693004C8838 /* KeepingYouAwake */,
+				DA658E6A21CE907B0049F4C1 /* KeepingYouAwake Launcher */,
 			);
 		};
 /* End PBXProject section */
@@ -334,54 +622,74 @@
 				DAB128731C2469F300831045 /* Credits.rtf in Resources */,
 				DA637B4719F14693004C8838 /* MainMenu.xib in Resources */,
 				DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */,
+				DA085D1021D6BAB6003D9B1B /* container-migration.plist in Resources */,
+				DAB0700C22EC795F004D5BCA /* KYADurationCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA658E6921CE907B0049F4C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA658E7121CE907D0049F4C1 /* Assets.xcassets in Resources */,
+				DA658E7D21CE90F30049F4C1 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		DA4C74361A5763B000BE1BE1 /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Sparkle.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = /usr/local/bin/carthage;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA637B3519F14693004C8838 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5665A919FADED200B923FB /* NSApplication+LoginItem.m in Sources */,
+				DA987C9C22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m in Sources */,
+				DA56801B2115FF140039C979 /* KYAUpdatePreferencesViewController.m in Sources */,
 				DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */,
+				DA7B53061E16999A00D89A12 /* KYAPreferencesWindowController.m in Sources */,
 				DA46C1EE1BDCDFB00050357C /* NSUserDefaults+Keys.m in Sources */,
 				DA637B4219F14693004C8838 /* KYAAppDelegate.m in Sources */,
+				DAB0701022EC8E6B004D5BCA /* KYADurationPreferencesViewController.m in Sources */,
+				DA82560D22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m in Sources */,
 				DA5A50941ACC5C5400A444C8 /* KYAEvent.m in Sources */,
 				DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */,
+				DAB0700A22EC794F004D5BCA /* KYADurationCell.m in Sources */,
 				DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */,
 				DAB128761C2493DB00831045 /* KYAPreference.m in Sources */,
+				DA39208122FC12E70058F0C2 /* NSDate+RemainingTime.m in Sources */,
+				DA86A5E222FEB81C00B2D1B4 /* KYALocalizedStrings.m in Sources */,
 				DAB128711C245F1B00831045 /* NSApplication+Versions.m in Sources */,
 				DAB128691C2453F600831045 /* KYAAdvancedPreferencesViewController.m in Sources */,
 				DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */,
-				DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.m in Sources */,
+				DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.mm in Sources */,
 				DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */,
 				DAB268721A0D6BC600B58AD6 /* KYASleepWakeTimer.m in Sources */,
+				DA73AB8822EDB9FE00D085CE /* KYAActivationDurationsController.m in Sources */,
 				DA637B3F19F14693004C8838 /* main.m in Sources */,
+				DA658E6621CE8C130049F4C1 /* NSApplication+KYALauncher.m in Sources */,
+				DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */,
 				DAD2725B1ACB266800CDD620 /* KYAEventHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA658E6721CE907B0049F4C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA658E8021CE91540049F4C1 /* KYAAppDelegate.m in Sources */,
+				DA658E7721CE907D0049F4C1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA87FF5F21D42525009045F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA658E6A21CE907B0049F4C1 /* KeepingYouAwake Launcher */;
+			targetProxy = DA87FF5E21D42525009045F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */ = {
@@ -390,6 +698,16 @@
 				DA54C1101D69C20F00AF9E9D /* Base */,
 				DA54C1221D69C55300AF9E9D /* de */,
 				2EB97EEF1D69FD8900BA63A0 /* fr */,
+				8F6945C61DB7A87B0059C386 /* ko */,
+				DA6439CA1E20F29D0078ECE4 /* es */,
+				DA51141C1E214E1600635931 /* nl */,
+				DAF3FB0A1EC6F61300B5BB36 /* da */,
+				DAD3B5761EC6FA5A0022E5D0 /* tr */,
+				DA4121711F5C07130083B6E6 /* zh */,
+				DA8B21961F6057A200BF5013 /* zh-Hant-TW */,
+				DA66276F20CC0676007834DB /* pl */,
+				DA66277120CC0680007834DB /* pt */,
+				DAAAAAA123B14D04004A44EF /* id */,
 			);
 			name = Preferences.storyboard;
 			sourceTree = "<group>";
@@ -400,6 +718,16 @@
 				DA54C12B1D69C55400AF9E9D /* de */,
 				DA54C12E1D69C9BC00AF9E9D /* Base */,
 				2EB97EED1D69FD8800BA63A0 /* fr */,
+				8F6945C81DB7A87D0059C386 /* ko */,
+				DA6439CB1E20F29E0078ECE4 /* es */,
+				DA51141D1E214E1600635931 /* nl */,
+				DAF3FB0B1EC6F61300B5BB36 /* da */,
+				DAD3B5771EC6FA5A0022E5D0 /* tr */,
+				DA4121721F5C07140083B6E6 /* zh */,
+				DA8B21991F6057A200BF5013 /* zh-Hant-TW */,
+				DA66277320CC0688007834DB /* pl */,
+				DA66277420CC0689007834DB /* pt */,
+				DAAAAAA023B14D04004A44EF /* id */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -410,6 +738,15 @@
 				DA54C1321D69CA0000AF9E9D /* de */,
 				DA54C1341D69CA0700AF9E9D /* Base */,
 				2EB97EEE1D69FD8900BA63A0 /* fr */,
+				8F6945C71DB7A87C0059C386 /* ko */,
+				DA6439CC1E20F29E0078ECE4 /* es */,
+				DA51141E1E214E1600635931 /* nl */,
+				DAF3FB0C1EC6F61300B5BB36 /* da */,
+				DAD3B5781EC6FA5A0022E5D0 /* tr */,
+				DA4121731F5C07140083B6E6 /* zh */,
+				DA8B21981F6057A200BF5013 /* zh-Hant-TW */,
+				DA66277520CC0693007834DB /* pl */,
+				DA66277620CC0695007834DB /* pt */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -420,6 +757,16 @@
 				DA637B4619F14693004C8838 /* Base */,
 				DA54C12D1D69C55400AF9E9D /* de */,
 				2EB97EF01D69FD8900BA63A0 /* fr */,
+				8F6945C91DB7A87D0059C386 /* ko */,
+				DA6439CD1E20F29E0078ECE4 /* es */,
+				DA51141F1E214E1600635931 /* nl */,
+				DAF3FB0D1EC6F61300B5BB36 /* da */,
+				DAD3B5791EC6FA5A0022E5D0 /* tr */,
+				DA4121741F5C07140083B6E6 /* zh */,
+				DA8B21971F6057A200BF5013 /* zh-Hant-TW */,
+				DA66277020CC0676007834DB /* pl */,
+				DA66277220CC0680007834DB /* pt */,
+				DAAAAAA223B14D04004A44EF /* id */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -429,7 +776,7 @@
 /* Begin XCBuildConfiguration section */
 		DA637B5419F14694004C8838 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAD272581ACB21D000CDD620 /* Configuration.xcconfig */;
+			baseConfigurationReference = DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
@@ -437,12 +784,14 @@
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -456,6 +805,8 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -464,7 +815,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -473,6 +824,8 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -484,7 +837,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
@@ -494,7 +846,7 @@
 		};
 		DA637B5519F14694004C8838 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAD272581ACB21D000CDD620 /* Configuration.xcconfig */;
+			baseConfigurationReference = DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
@@ -502,12 +854,14 @@
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -521,6 +875,8 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -530,8 +886,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -543,7 +901,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				SDKROOT = macosx;
@@ -554,15 +911,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeepingYouAwake/KeepingYouAwake.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Vendor/Sparkle",
 				);
 				INFOPLIST_FILE = KeepingYouAwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KeepingYouAwake";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -570,15 +930,79 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeepingYouAwake/KeepingYouAwake.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Vendor/Sparkle",
 				);
 				INFOPLIST_FILE = KeepingYouAwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KeepingYouAwake";
+				OTHER_CODE_SIGN_FLAGS = "$(inherited) --timestamp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		DA658E7921CE907D0049F4C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = KYALauncher/KYALauncher.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KYALauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KeepingYouAwake.Launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DA658E7A21CE907D0049F4C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = KYALauncher/KYALauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KYALauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_FAST_MATH = YES;
+				OTHER_CODE_SIGN_FLAGS = "$(inherited) --timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KeepingYouAwake.Launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -599,6 +1023,15 @@
 			buildConfigurations = (
 				DA637B5719F14694004C8838 /* Debug */,
 				DA637B5819F14694004C8838 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA658E7B21CE907D0049F4C1 /* Build configuration list for PBXNativeTarget "KeepingYouAwake Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA658E7921CE907D0049F4C1 /* Debug */,
+				DA658E7A21CE907D0049F4C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
