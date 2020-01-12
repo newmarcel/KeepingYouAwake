@@ -10,7 +10,8 @@
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2019 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2020 Marcel Dierkes. All rights reserved.</source>
+        <target>Copyright © 2014 – 2020 Marcel Dierkes. Tous droits réservés.</target>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
@@ -22,6 +23,7 @@
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
         <source>(Default)</source>
+        <target>(Défaut)</target>
         <note>(Default)</note>
       </trans-unit>
       <trans-unit id="Activate for Duration" xml:space="preserve">
@@ -35,6 +37,7 @@
       </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
         <source>Cancel</source>
+        <target>Annuler</target>
         <note>Cancel</note>
       </trans-unit>
       <trans-unit id="Click to allow sleep&#10;Right click to show menu" xml:space="preserve">
@@ -53,6 +56,7 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="Default" xml:space="preserve">
         <source>Default</source>
+        <target>Défaut</target>
         <note>Default</note>
       </trans-unit>
       <trans-unit id="Disable menu bar icon highlight color" xml:space="preserve">
@@ -91,6 +95,7 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="Quit when activation duration is over" xml:space="preserve">
         <source>Quit when activation duration is over</source>
+        <target>Quitter quand la durée d'activation est terminée</target>
         <note>Quit when activation duration is over</note>
       </trans-unit>
       <trans-unit id="Reset Activation Durations" xml:space="preserve">
@@ -103,10 +108,12 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="The entered duration is invalid. Please try again." xml:space="preserve">
         <source>The entered duration is invalid. Please try again.</source>
+        <target>La durée entrée est invalide. Veuillez essayer à nouveau.</target>
         <note>The entered duration is invalid. Please try again.</note>
       </trans-unit>
       <trans-unit id="This duration has already been added." xml:space="preserve">
         <source>This duration has already been added.</source>
+        <target>Cette durée a déjà été ajoutée.</target>
         <note>This duration has already been added.</note>
       </trans-unit>
       <trans-unit id="Version" xml:space="preserve">
@@ -158,6 +165,7 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="8V0-Sq-Cdu.title" xml:space="preserve">
         <source>Updates</source>
+        <target>Mises à jour</target>
         <note>Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu";</note>
       </trans-unit>
       <trans-unit id="AvX-7Q-Bvc.title" xml:space="preserve">
@@ -172,14 +180,17 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="DE6-qp-FZU.ibShadowedToolTips[0]" xml:space="preserve">
         <source>Remove</source>
+        <target>Enlever</target>
         <note>Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[0] = "Remove"; ObjectID = "DE6-qp-FZU";</note>
       </trans-unit>
       <trans-unit id="DE6-qp-FZU.ibShadowedToolTips[1]" xml:space="preserve">
         <source>Add</source>
+        <target>Ajouter</target>
         <note>Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[1] = "Add"; ObjectID = "DE6-qp-FZU";</note>
       </trans-unit>
       <trans-unit id="DfZ-Gt-rge.title" xml:space="preserve">
         <source>Seconds</source>
+        <target>Secondes</target>
         <note>Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "DfZ-Gt-rge";</note>
       </trans-unit>
       <trans-unit id="EMN-wI-vLT.title" xml:space="preserve">
@@ -245,14 +256,17 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="bV3-BW-JOK.title" xml:space="preserve">
         <source>Cancel</source>
+        <target>Annuler</target>
         <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "bV3-BW-JOK";</note>
       </trans-unit>
       <trans-unit id="d0c-1Y-p5i.title" xml:space="preserve">
         <source>Add Duration</source>
+        <target>Ajouter la durée</target>
         <note>Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "d0c-1Y-p5i";</note>
       </trans-unit>
       <trans-unit id="f4N-sw-1MQ.title" xml:space="preserve">
         <source>Remove</source>
+        <target>Enlever</target>
         <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "f4N-sw-1MQ";</note>
       </trans-unit>
       <trans-unit id="fFl-4s-KJ6.title" xml:space="preserve">
@@ -280,6 +294,7 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="jAF-7U-kDS.title" xml:space="preserve">
         <source>Text Cell</source>
+        <target>Cellule de texte</target>
         <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "jAF-7U-kDS";</note>
       </trans-unit>
       <trans-unit id="k65-yi-85l.title" xml:space="preserve">
@@ -304,6 +319,7 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="rEp-oa-7IA.title" xml:space="preserve">
         <source>Hours</source>
+        <target>Heures</target>
         <note>Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "rEp-oa-7IA";</note>
       </trans-unit>
       <trans-unit id="siu-CP-Bg1.title" xml:space="preserve">
@@ -342,7 +358,8 @@ Clic droit pour le menu</target>
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2019 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2020 Marcel Dierkes. All rights reserved.</source>
+        <target>Copyright © 2014 – 2020 Marcel Dierkes. Tous droits réservés.</target>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
