@@ -85,6 +85,12 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 - (void)spawnCaffeinateTaskForTimeInterval:(NSTimeInterval)timeInterval
 {
     NSMutableArray *arguments = [NSMutableArray new];
+    if([[NSUserDefaults standardUserDefaults] kya_shouldAllowDisplaySleep])
+{
+    [arguments addObject:@"-i"];
+}
+else
+{
     [arguments addObject:@"-di"];
 
     if(timeInterval != KYASleepWakeTimeIntervalIndefinite)
