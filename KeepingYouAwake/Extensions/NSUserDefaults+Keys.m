@@ -22,7 +22,7 @@ NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dier
 
 @implementation NSUserDefaults (Keys)
 @dynamic kya_activateOnLaunch, kya_defaultTimeInterval, kya_notificationsEnabled;
-@dynamic kya_allowDisplaySleep, kya_menuBarIconHighlightDisabled;
+@dynamic kya_allowDisplaySleep;
 @dynamic kya_menuBarIconHighlightDisabled;
 @dynamic kya_batteryCapacityThresholdEnabled, kya_batteryCapacityThreshold;
 @dynamic kya_preReleaseUpdatesEnabled;

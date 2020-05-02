@@ -55,7 +55,7 @@
     [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_QUIT_ON_TIMER_EXPIRATION
                                                     defaultsKey:KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled
                             ]];
-                            [preferences addObject:[[KYAPreference alloc] initWithTitle:NSLocalizedString(@"Allow the display to sleep", nil)
+    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_ALLOW_DISPLAY_SLEEP
                                                     defaultsKey:KYAUserDefaultsKeyAllowDisplaySleep
                             ]];
 
