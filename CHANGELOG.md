@@ -2,6 +2,11 @@
 
 ## Changelog ##
 
+### v1.5.2 ###
+
+- added the ability to allow the display to sleep ([#148](https://github.com/newmarcel/KeepingYouAwake/issues/148))
+	- _Thanks [creamelectricart](https://github.com/creamelectricart)!_
+
 ### v1.5.1 ###
 
 - added the ability to customize activation durations in _Preferences_ ([#132](https://github.com/newmarcel/KeepingYouAwake/pull/132))
