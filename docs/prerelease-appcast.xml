@@ -6,6 +6,21 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.5.2: Allow Display Sleep]]></title>
+			<description><![CDATA[<ul>
+<li>added the ability to allow the display to sleep (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/148">#148</a>)
+<ul>
+<li><em>Thanks <a href="https://github.com/creamelectricart">creamelectricart</a>!</em></li>
+</ul></li>
+</ul>
+
+<p><strong>Please note: The 1.5.x series of releases will be the last supporting macOS Yosemite and El Capitan. If you see any critical reason for supporting those, please leave a comment on <a href="https://github.com/newmarcel/KeepingYouAwake/issues/126">GitHub</a>.</strong></p>
+]]></description>
+			<pubDate>Sat, 04 Jul 2020 10:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.5.2/KeepingYouAwake-1.5.2.zip" length="2517783" type="application/octet-stream" sparkle:version="1050200" sparkle:shortVersionString="1.5.2">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.5.1: Customizable Activation Durations]]></title>
 			<description><![CDATA[<ul>
 <li>added the ability to customize activation durations in <em>Preferences</em> (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/132">#132</a>)</li>
