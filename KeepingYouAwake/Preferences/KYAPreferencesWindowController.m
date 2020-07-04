@@ -31,7 +31,7 @@
 
 - (void)keyDown:(NSEvent *)event
 {
-    if(event.type != NSKeyDown) { return; }
+    if(event.type != NSEventTypeKeyDown) { return; }
     if((event.modifierFlags & NSEventModifierFlagCommand) == 0) { return; }
     
     if([event.characters isEqualToString:@"q"])
