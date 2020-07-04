@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Marcel Dierkes. All rights reserved.
 //
 
-MACOSX_DEPLOYMENT_TARGET = 10.10
+MACOSX_DEPLOYMENT_TARGET = 10.12
 PRODUCT_BUNDLE_IDENTIFIER = info.marcel-dierkes.KeepingYouAwake
 
 KYA_COPYRIGHT_TEXT = Copyright © 2014 – 2020 Marcel Dierkes. All rights reserved.
