@@ -4,6 +4,8 @@
 
 ### v1.6.0 ###
 
+- raised minimum deployment target to macOS Sierra ([#142](https://github.com/newmarcel/KeepingYouAwake/pull/142))
+
 ### v1.5.2 ###
 
 - added the ability to allow the display to sleep ([#148](https://github.com/newmarcel/KeepingYouAwake/issues/148))

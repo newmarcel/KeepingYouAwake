@@ -44,7 +44,7 @@
     
     KYA_AUTO button = statusItem.button;
     
-    [button sendActionOn:NSLeftMouseUpMask|NSRightMouseUpMask];
+    [button sendActionOn:NSEventMaskLeftMouseUp|NSEventMaskRightMouseUp];
     button.target = self;
     button.action = @selector(toggleStatus:);
     
