@@ -7,6 +7,7 @@
 //
 
 #import "KYAPreferencesWindowController.h"
+#import "KYADefines.h"
 
 @interface KYAPreferencesWindowController ()
 @end
@@ -25,6 +26,31 @@
 {
     [super windowDidLoad];
     self.windowFrameAutosaveName = @"PreferencesWindow";
+    
+    if(@available(macOS 10.16, *))
+    {
+        [self updateTabViewItems];
+    }
+}
+
+- (void)updateTabViewItems
+{
+    if(@available(macOS 10.16, *))
+    {
+        KYA_AUTO tabController = (NSTabViewController *)self.contentViewController;
+        KYA_AUTO tabViewItems = tabController.tabViewItems;
+        
+        tabViewItems[0].image = [NSImage imageWithSystemSymbolName:@"gearshape"
+                                          accessibilityDescription:nil];
+        tabViewItems[1].image = [NSImage imageWithSystemSymbolName:@"timer"
+                                          accessibilityDescription:nil];
+        tabViewItems[2].image = [NSImage imageWithSystemSymbolName:@"gearshape.2"
+                                          accessibilityDescription:nil];
+        tabViewItems[3].image = [NSImage imageWithSystemSymbolName:@"network"
+                                          accessibilityDescription:nil];
+        tabViewItems[4].image = [NSImage imageWithSystemSymbolName:@"info.circle"
+                                          accessibilityDescription:nil];
+    }
 }
 
 #pragma mark - NSResponder
