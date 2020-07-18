@@ -27,14 +27,17 @@
     [super windowDidLoad];
     self.windowFrameAutosaveName = @"PreferencesWindow";
     
+#if KYA_SDK_IS_MACOS_11
     if(@available(macOS 10.16, *))
     {
         [self updateTabViewItems];
     }
+#endif
 }
 
 - (void)updateTabViewItems
 {
+#if KYA_SDK_IS_MACOS_11
     if(@available(macOS 10.16, *))
     {
         KYA_AUTO tabController = (NSTabViewController *)self.contentViewController;
@@ -51,6 +54,7 @@
         tabViewItems[4].image = [NSImage imageWithSystemSymbolName:@"info.circle"
                                           accessibilityDescription:nil];
     }
+#endif
 }
 
 #pragma mark - NSResponder
