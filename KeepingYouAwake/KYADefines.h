@@ -13,7 +13,7 @@
 #define KYA_AUTO_VAR __auto_type
 #define KYA_WEAK __weak __auto_type
 
-#define KYA_SDK_IS_MACOS_11 (MAC_OS_X_VERSION_MAX_ALLOWED >= 101600)
+#define KYA_SDK_IS_MACOS_11 (__MAC_OS_X_VERSION_MAX_ALLOWED >= 101600)
 
 #if DEBUG
 #define KYALog(_args...) NSLog(_args)
