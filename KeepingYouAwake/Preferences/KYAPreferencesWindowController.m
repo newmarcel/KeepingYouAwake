@@ -28,34 +28,31 @@
     self.windowFrameAutosaveName = @"PreferencesWindow";
     
 #if KYA_SDK_IS_MACOS_11
-    if(@available(macOS 10.16, *))
+    if(@available(macOS 11.0, *))
     {
         [self updateTabViewItems];
     }
 #endif
 }
 
-- (void)updateTabViewItems
-{
 #if KYA_SDK_IS_MACOS_11
-    if(@available(macOS 10.16, *))
-    {
-        KYA_AUTO tabController = (NSTabViewController *)self.contentViewController;
-        KYA_AUTO tabViewItems = tabController.tabViewItems;
-        
-        tabViewItems[0].image = [NSImage imageWithSystemSymbolName:@"gearshape"
-                                          accessibilityDescription:nil];
-        tabViewItems[1].image = [NSImage imageWithSystemSymbolName:@"timer"
-                                          accessibilityDescription:nil];
-        tabViewItems[2].image = [NSImage imageWithSystemSymbolName:@"gearshape.2"
-                                          accessibilityDescription:nil];
-        tabViewItems[3].image = [NSImage imageWithSystemSymbolName:@"network"
-                                          accessibilityDescription:nil];
-        tabViewItems[4].image = [NSImage imageWithSystemSymbolName:@"info.circle"
-                                          accessibilityDescription:nil];
-    }
-#endif
+- (void)updateTabViewItems API_AVAILABLE(macos(11.0))
+{
+    KYA_AUTO tabController = (NSTabViewController *)self.contentViewController;
+    KYA_AUTO tabViewItems = tabController.tabViewItems;
+    
+    tabViewItems[0].image = [NSImage imageWithSystemSymbolName:@"gearshape"
+                                      accessibilityDescription:nil];
+    tabViewItems[1].image = [NSImage imageWithSystemSymbolName:@"timer"
+                                      accessibilityDescription:nil];
+    tabViewItems[2].image = [NSImage imageWithSystemSymbolName:@"gearshape.2"
+                                      accessibilityDescription:nil];
+    tabViewItems[3].image = [NSImage imageWithSystemSymbolName:@"network"
+                                      accessibilityDescription:nil];
+    tabViewItems[4].image = [NSImage imageWithSystemSymbolName:@"info.circle"
+                                      accessibilityDescription:nil];
 }
+#endif
 
 #pragma mark - NSResponder
 
