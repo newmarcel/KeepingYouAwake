@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="KeepingYouAwake/Base.lproj/InfoPlist.strings" source-language="en" target-language="de" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3" build-num="11C29"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.0" build-num="12A8189h"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -10,14 +10,14 @@
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2019 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2020 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Base.lproj/Localizable.strings" source-language="en" target-language="de" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3" build-num="11C29"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.0" build-num="12A8189h"/>
     </header>
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
@@ -29,6 +29,10 @@
         <source>Activate for Duration</source>
         <target>Aktivierungsdauer</target>
         <note>Activate for Duration</note>
+      </trans-unit>
+      <trans-unit id="Allow the display to sleep" xml:space="preserve">
+        <source>Allow the display to sleep</source>
+        <note>Allow the display to sleep</note>
       </trans-unit>
       <trans-unit id="Allowing your Mac to go to sleep…" xml:space="preserve">
         <source>Allowing your Mac to go to sleep…</source>
@@ -129,7 +133,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
   </file>
   <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" target-language="de" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3" build-num="11C29"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.0" build-num="12A8189h"/>
     </header>
     <body>
       <trans-unit id="7is-vc-kz7.title" xml:space="preserve">
@@ -151,7 +155,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
   </file>
   <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" target-language="de" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3" build-num="11C29"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.0" build-num="12A8189h"/>
     </header>
     <body>
       <trans-unit id="2s2-Ei-lnG.title" xml:space="preserve">
@@ -358,7 +362,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
   </file>
   <file original="KYALauncher/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="de">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3" build-num="11C29"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.0" build-num="12A8189h"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -366,7 +370,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2019 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2020 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
