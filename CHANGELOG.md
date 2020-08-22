@@ -6,6 +6,7 @@
 
 - raised minimum deployment target to macOS Sierra ([#142](https://github.com/newmarcel/KeepingYouAwake/pull/142))
 - updated icons using the macOS Big Sur style ([#141](https://github.com/newmarcel/KeepingYouAwake/pull/141))
+- added support for the arm64 architecture on macOS Big Sur
 
 ### v1.5.2 ###
 
