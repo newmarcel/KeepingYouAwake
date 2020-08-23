@@ -8,7 +8,7 @@ KeepingYouAwake is a small menu bar utility for macOS *(Version 10.12 and newer)
 
 or install it via [cask](http://caskroom.github.io/): `brew cask install keepingyouawake`.
 
-<img src="./Extras/Screenshot.jpg" width="594" />
+<img src="./Extras/Screenshot@2x.jpg" width="500" />
 
 ## How does it work?
 
