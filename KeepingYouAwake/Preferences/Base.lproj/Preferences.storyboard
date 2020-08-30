@@ -68,57 +68,90 @@
             <objects>
                 <viewController title="General" id="lGE-74-XwP" customClass="KYAGeneralPreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="zCr-XH-hAt">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="132"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Ley-qF-w1u">
-                                <rect key="frame" x="78" y="40" width="138" height="18"/>
-                                <buttonCell key="cell" type="check" title="Activate on Launch" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="IOU-Hs-S4r">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <binding destination="32v-ae-OOv" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch" id="5qA-a3-Dy4"/>
-                                </connections>
-                            </button>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="LrG-qH-het">
-                                <rect key="frame" x="78" y="92" width="104" height="18"/>
-                                <buttonCell key="cell" type="check" title="Start at Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="QIk-WP-qH1">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6j-JQ-b36">
-                                <rect key="frame" x="78" y="72" width="354" height="14"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Automatically opens the app when you start your Mac." id="x6s-XD-lBU">
-                                    <font key="font" metaFont="message" size="11"/>
-                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2V-hO-Kz5">
-                                <rect key="frame" x="78" y="20" width="354" height="14"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Immediately starts preventing sleep when launched." id="S6p-h0-H5B">
-                                    <font key="font" metaFont="message" size="11"/>
-                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="16" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sGn-P7-YAB">
+                                <rect key="frame" x="80" y="20" width="350" height="92"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mgW-Hf-eZf">
+                                        <rect key="frame" x="0.0" y="54" width="285" height="38"/>
+                                        <subviews>
+                                            <button translatesAutoresizingMaskIntoConstraints="NO" id="LrG-qH-het">
+                                                <rect key="frame" x="-2" y="21" width="108" height="18"/>
+                                                <buttonCell key="cell" type="check" title="Start at Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="QIk-WP-qH1">
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6j-JQ-b36">
+                                                <rect key="frame" x="-2" y="0.0" width="289" height="14"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Automatically opens the app when you start your Mac." id="x6s-XD-lBU">
+                                                    <font key="font" metaFont="message" size="11"/>
+                                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D6S-06-Okj">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="38"/>
+                                        <subviews>
+                                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Ley-qF-w1u">
+                                                <rect key="frame" x="-2" y="21" width="142" height="18"/>
+                                                <buttonCell key="cell" type="check" title="Activate on Launch" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="IOU-Hs-S4r">
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <binding destination="32v-ae-OOv" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch" id="5qA-a3-Dy4"/>
+                                                </connections>
+                                            </button>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2V-hO-Kz5">
+                                                <rect key="frame" x="-2" y="0.0" width="277" height="14"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Immediately starts preventing sleep when launched." id="S6p-h0-H5B">
+                                                    <font key="font" metaFont="message" size="11"/>
+                                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="InT-dm-BGa"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="LrG-qH-het" firstAttribute="top" secondItem="zCr-XH-hAt" secondAttribute="top" constant="20" id="029-YL-gYv"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LrG-qH-het" secondAttribute="trailing" constant="20" id="2wZ-ab-cCl"/>
-                            <constraint firstItem="K2V-hO-Kz5" firstAttribute="top" secondItem="Ley-qF-w1u" secondAttribute="bottom" constant="8" id="5HO-zy-DXq"/>
-                            <constraint firstAttribute="trailing" secondItem="n6j-JQ-b36" secondAttribute="trailing" constant="20" id="5WF-yl-U9E"/>
-                            <constraint firstItem="Ley-qF-w1u" firstAttribute="top" secondItem="n6j-JQ-b36" secondAttribute="bottom" constant="16" id="7i9-2N-ldj"/>
-                            <constraint firstItem="K2V-hO-Kz5" firstAttribute="leading" secondItem="Ley-qF-w1u" secondAttribute="leading" id="9me-5c-whU"/>
-                            <constraint firstAttribute="trailing" secondItem="K2V-hO-Kz5" secondAttribute="trailing" constant="20" id="KDM-sy-kzE"/>
-                            <constraint firstItem="n6j-JQ-b36" firstAttribute="leading" secondItem="LrG-qH-het" secondAttribute="leading" id="Su6-S8-xOn"/>
-                            <constraint firstItem="n6j-JQ-b36" firstAttribute="top" secondItem="LrG-qH-het" secondAttribute="bottom" constant="8" id="TyJ-VF-Amk"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ley-qF-w1u" secondAttribute="trailing" constant="20" id="bN3-pL-h2B"/>
-                            <constraint firstAttribute="bottom" secondItem="K2V-hO-Kz5" secondAttribute="bottom" constant="20" id="eMf-1s-8Da"/>
-                            <constraint firstItem="Ley-qF-w1u" firstAttribute="leading" secondItem="LrG-qH-het" secondAttribute="leading" id="ha3-ZY-DdM"/>
-                            <constraint firstItem="LrG-qH-het" firstAttribute="leading" secondItem="zCr-XH-hAt" secondAttribute="leading" constant="80" id="rW8-Dz-JBB"/>
+                            <constraint firstAttribute="bottom" secondItem="sGn-P7-YAB" secondAttribute="bottom" constant="20" id="KnA-aJ-puA"/>
+                            <constraint firstAttribute="trailing" secondItem="sGn-P7-YAB" secondAttribute="trailing" constant="20" id="NlS-b3-SIz"/>
+                            <constraint firstItem="sGn-P7-YAB" firstAttribute="leading" secondItem="zCr-XH-hAt" secondAttribute="leading" constant="80" id="ejh-uv-j60"/>
+                            <constraint firstItem="sGn-P7-YAB" firstAttribute="top" secondItem="zCr-XH-hAt" secondAttribute="top" constant="20" id="tWc-hw-6XB"/>
                         </constraints>
                     </view>
                     <connections>
@@ -134,24 +167,24 @@
         <scene sceneID="oYh-OZ-UoW">
             <objects>
                 <viewController title="Advanced" id="5bL-cI-YIY" customClass="KYAAdvancedPreferencesViewController" sceneMemberID="viewController">
-                    <view key="view" id="MoT-zz-pka">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="324"/>
+                    <view key="view" misplaced="YES" id="MoT-zz-pka">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="327"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="32" horizontalPageScroll="10" verticalLineScroll="32" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acy-aE-rAZ">
-                                <rect key="frame" x="-1" y="-1" width="452" height="120"/>
+                                <rect key="frame" x="-1" y="-1" width="452" height="124"/>
                                 <clipView key="contentView" id="0HM-dh-kcL">
-                                    <rect key="frame" x="1" y="1" width="450" height="118"/>
+                                    <rect key="frame" x="1" y="1" width="450" height="122"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="30" viewBased="YES" id="AXu-53-kJt">
-                                            <rect key="frame" x="0.0" y="0.0" width="450" height="118"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="122"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="447" minWidth="40" maxWidth="1000" id="hVr-Yp-5fd">
+                                                <tableColumn width="438" minWidth="40" maxWidth="1000" id="hVr-Yp-5fd">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -163,12 +196,12 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="0sK-FS-WIT">
+                                                        <tableCellView misplaced="YES" id="0sK-FS-WIT">
                                                             <rect key="frame" x="1" y="1" width="447" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <button translatesAutoresizingMaskIntoConstraints="NO" id="Tya-Od-8Cw">
-                                                                    <rect key="frame" x="6" y="6" width="61" height="18"/>
+                                                                    <rect key="frame" x="6" y="7" width="65" height="18"/>
                                                                     <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="kG2-Tz-t51">
                                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                         <font key="font" metaFont="system"/>
@@ -210,7 +243,7 @@
                                 </scroller>
                             </scrollView>
                             <textField horizontalHuggingPriority="200" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="0Ex-7I-4ay">
-                                <rect key="frame" x="18" y="135" width="272" height="42"/>
+                                <rect key="frame" x="18" y="139" width="268" height="42"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart." id="OsK-jX-EzO">
                                     <font key="font" metaFont="message" size="11"/>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -218,7 +251,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hJJ-q4-63o">
-                                <rect key="frame" x="298" y="128" width="138" height="32"/>
+                                <rect key="frame" x="293" y="132" width="144" height="32"/>
                                 <buttonCell key="cell" type="push" title="Reset to Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EXv-vC-wyo">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -228,13 +261,13 @@
                                 </connections>
                             </button>
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Dhm-17-m0f">
-                                <rect key="frame" x="20" y="191" width="410" height="5"/>
+                                <rect key="frame" x="20" y="195" width="410" height="5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="410" id="CJr-2I-if9"/>
                                 </constraints>
                             </box>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="XC5-67-b50">
-                                <rect key="frame" x="18" y="288" width="278" height="18"/>
+                                <rect key="frame" x="18" y="292" width="282" height="18"/>
                                 <buttonCell key="cell" type="check" title="Deactivate when battery capacity is below" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ax6-W4-7bK">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -246,7 +279,7 @@
                                 </connections>
                             </button>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="X9f-RZ-Fws" userLabel="Battery Limit Container View">
-                                <rect key="frame" x="40" y="246" width="390" height="36"/>
+                                <rect key="frame" x="40" y="250" width="390" height="35"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V0H-cG-Tyy">
                                         <rect key="frame" x="365" y="0.0" width="27" height="11"/>
@@ -257,7 +290,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vcl-Ty-RWD">
-                                        <rect key="frame" x="-2" y="14" width="394" height="24"/>
+                                        <rect key="frame" x="-8" y="9" width="406" height="28"/>
                                         <sliderCell key="cell" state="on" alignment="left" minValue="10" maxValue="90" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="9" allowsTickMarkValuesOnly="YES" sliderType="linear" id="K3x-ip-8On"/>
                                         <connections>
                                             <action selector="batteryStatusPreferencesChanged:" target="5bL-cI-YIY" id="goR-FN-Zhh"/>
@@ -274,7 +307,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iMO-xG-PYe">
-                                        <rect key="frame" x="-2" y="0.0" width="25" height="11"/>
+                                        <rect key="frame" x="-2" y="0.0" width="26" height="11"/>
                                         <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="10 %" id="fiQ-AT-I7u">
                                             <font key="font" metaFont="miniSystem"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -300,7 +333,7 @@
                                 </constraints>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="390" translatesAutoresizingMaskIntoConstraints="NO" id="pV5-ai-NpG">
-                                <rect key="frame" x="38" y="210" width="394" height="28"/>
+                                <rect key="frame" x="38" y="214" width="394" height="28"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="This value will be ignored when you manually start the app below this battery capacity." id="k65-yi-85l">
                                     <font key="font" metaFont="message" size="11"/>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -351,10 +384,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="XdY-nr-cAT" userLabel="Buttons Stack View">
-                                <rect key="frame" x="114" y="20" width="186" height="21"/>
+                                <rect key="frame" x="106" y="20" width="194" height="20"/>
                                 <beginningViews>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZR3-Cj-oMS">
-                                        <rect key="frame" x="-6" y="-7" width="82" height="32"/>
+                                        <rect key="frame" x="-7" y="-7" width="88" height="32"/>
                                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bV3-BW-JOK">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -367,7 +400,7 @@ Gw
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rig-Ph-fVq">
-                                        <rect key="frame" x="72" y="-7" width="120" height="32"/>
+                                        <rect key="frame" x="75" y="-7" width="126" height="32"/>
                                         <buttonCell key="cell" type="push" title="Add Duration" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="d0c-1Y-p5i">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -501,7 +534,7 @@ DQ
                                 </customSpacing>
                             </stackView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="P79-Fk-79l" userLabel="Warning Container View">
-                                <rect key="frame" x="20" y="49" width="280" height="33"/>
+                                <rect key="frame" x="20" y="48" width="280" height="34"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="eot-GD-Ate">
                                         <rect key="frame" x="-2" y="8" width="284" height="16"/>
@@ -559,11 +592,11 @@ DQ
             <objects>
                 <viewController title="Activation Duration" id="IAM-at-0nC" customClass="KYADurationPreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="XNN-Mj-Jpg">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="326"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="325"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="25" horizontalPageScroll="10" verticalLineScroll="25" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjG-h1-qPf">
-                                <rect key="frame" x="-1" y="87" width="452" height="240"/>
+                                <rect key="frame" x="-1" y="86" width="452" height="240"/>
                                 <clipView key="contentView" id="fl9-cG-eWb">
                                     <rect key="frame" x="1" y="1" width="450" height="238"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -575,7 +608,7 @@ DQ
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="447" minWidth="40" maxWidth="1000" id="3I4-YG-sj8">
+                                                <tableColumn width="438" minWidth="40" maxWidth="1000" id="3I4-YG-sj8">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -602,7 +635,7 @@ DQ
                                     <constraint firstAttribute="height" priority="750" constant="240" id="leM-7D-ftC"/>
                                 </constraints>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="gOS-DD-4LT">
-                                    <rect key="frame" x="1" y="102" width="81" height="16"/>
+                                    <rect key="frame" x="1" y="223" width="450" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="aoq-EJ-z2w">
@@ -611,10 +644,10 @@ DQ
                                 </scroller>
                             </scrollView>
                             <stackView orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Rc-oWW">
-                                <rect key="frame" x="20" y="20" width="410" height="21"/>
+                                <rect key="frame" x="20" y="20" width="410" height="20"/>
                                 <beginningViews>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNN-SY-2mN">
-                                        <rect key="frame" x="-6" y="-7" width="85" height="32"/>
+                                        <rect key="frame" x="-7" y="-7" width="91" height="32"/>
                                         <buttonCell key="cell" type="push" title="Reset…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2s2-Ei-lnG">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -626,7 +659,7 @@ DQ
                                 </beginningViews>
                                 <endViews>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSl-R8-iau">
-                                        <rect key="frame" x="233" y="-7" width="108" height="32"/>
+                                        <rect key="frame" x="230" y="-7" width="114" height="32"/>
                                         <buttonCell key="cell" type="push" title="Set Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EMN-wI-vLT">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -638,7 +671,7 @@ DQ
                                         </connections>
                                     </button>
                                     <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FNp-hu-ko4">
-                                        <rect key="frame" x="341" y="-2" width="71" height="24"/>
+                                        <rect key="frame" x="342" y="-2" width="71" height="24"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="separated" trackingMode="momentary" id="DE6-qp-FZU">
                                             <font key="font" metaFont="system"/>
                                             <segments>
@@ -663,7 +696,7 @@ DQ
                                 </customSpacing>
                             </stackView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="414" translatesAutoresizingMaskIntoConstraints="NO" id="lKd-hp-Bqm">
-                                <rect key="frame" x="18" y="57" width="414" height="14"/>
+                                <rect key="frame" x="18" y="56" width="414" height="14"/>
                                 <textFieldCell key="cell" title="The default activation duration is used when you click on the menu bar icon." id="6Kw-xJ-Wk8">
                                     <font key="font" metaFont="message" size="11"/>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -948,7 +981,7 @@ CA
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="iy5-7L-pqY">
-                                            <rect key="frame" x="18" y="82" width="213" height="18"/>
+                                            <rect key="frame" x="18" y="79" width="217" height="18"/>
                                             <buttonCell key="cell" type="check" title="Check for Pre-Release Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="vdb-hr-zzU">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -958,7 +991,7 @@ CA
                                             </connections>
                                         </button>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="Rib-La-FI2">
-                                            <rect key="frame" x="18" y="112" width="221" height="18"/>
+                                            <rect key="frame" x="18" y="111" width="225" height="18"/>
                                             <buttonCell key="cell" type="check" title="Automatically Check for Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="GxN-Dr-4B8">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -968,7 +1001,7 @@ CA
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yqL-TQ-Yyq">
-                                            <rect key="frame" x="192" y="15" width="109" height="32"/>
+                                            <rect key="frame" x="187" y="15" width="115" height="32"/>
                                             <buttonCell key="cell" type="push" title="Check Now" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="W3H-iV-s6I">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
