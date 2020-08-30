@@ -2,9 +2,11 @@
 
 KeepingYouAwake is a small menu bar utility for macOS *(Version 10.12 and newer)* that can prevent your Mac from entering sleep mode for a predefined duration or as long as it is activated.
 
+https://keepingyouawake.app/
+
 ## Installation
 
-**[Download the latest version here.](https://github.com/newmarcel/KeepingYouAwake/releases)**
+**[Download the latest version here.](https://github.com/newmarcel/KeepingYouAwake/releases/latest)**
 
 or install it via [cask](http://caskroom.github.io/): `brew cask install keepingyouawake`.
 
