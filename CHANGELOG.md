@@ -8,7 +8,7 @@
 - updated icons using the macOS Big Sur style ([#141](https://github.com/newmarcel/KeepingYouAwake/pull/141))
 - added support for the arm64 architecture on macOS Big Sur
 - created an official website [https://keepingyouawake.app/](https://keepingyouawake.app/)
-- added an Russian translation ([#147](https://github.com/newmarcel/KeepingYouAwake/issues/147))
+- added a Russian translation ([#147](https://github.com/newmarcel/KeepingYouAwake/issues/147))
     - *Thank you [Kromsator](https://github.com/Kromsator)!*
 
 ### v1.5.2 ###
