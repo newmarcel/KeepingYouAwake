@@ -254,16 +254,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA2691CF1B8230AB00B15779 /* MenuBar Icon */ = {
+		DA2691CF1B8230AB00B15779 /* KYAMenuBarIcon */ = {
 			isa = PBXGroup;
 			children = (
 				DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */,
 				DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */,
 			);
-			path = "MenuBar Icon";
+			path = KYAMenuBarIcon;
 			sourceTree = "<group>";
 		};
-		DA4919C51ACFFF8D00D44F6A /* Event Handler */ = {
+		DA4919C51ACFFF8D00D44F6A /* KYAEventHandler */ = {
 			isa = PBXGroup;
 			children = (
 				DAD272591ACB266800CDD620 /* KYAEventHandler.h */,
@@ -271,7 +271,7 @@
 				DA5A50921ACC5C5400A444C8 /* KYAEvent.h */,
 				DA5A50931ACC5C5400A444C8 /* KYAEvent.m */,
 			);
-			path = "Event Handler";
+			path = KYAEventHandler;
 			sourceTree = "<group>";
 		};
 		DA4919C61ACFFF9600D44F6A /* Extensions */ = {
@@ -281,10 +281,6 @@
 				DA658E6521CE8C130049F4C1 /* NSApplication+KYALauncher.m */,
 				DAB1286F1C245F1B00831045 /* NSApplication+Versions.h */,
 				DAB128701C245F1B00831045 /* NSApplication+Versions.m */,
-				DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */,
-				DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */,
-				DA39207F22FC12E70058F0C2 /* NSDate+RemainingTime.h */,
-				DA39208022FC12E70058F0C2 /* NSDate+RemainingTime.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -329,13 +325,13 @@
 			path = Updates;
 			sourceTree = "<group>";
 		};
-		DA5B5A241C28612800EE45C6 /* Battery Status */ = {
+		DA5B5A241C28612800EE45C6 /* KYABatteryStatus */ = {
 			isa = PBXGroup;
 			children = (
 				DA5B5A211C28612100EE45C6 /* KYABatteryStatus.h */,
 				DA5B5A221C28612100EE45C6 /* KYABatteryStatus.m */,
 			);
-			path = "Battery Status";
+			path = KYABatteryStatus;
 			sourceTree = "<group>";
 		};
 		DA5C10A422FDD27C00554D6B /* KYASleepWakeTimer */ = {
@@ -373,19 +369,10 @@
 				DA249E281F9B7211006BCD2C /* KYADefines.h */,
 				DAA478D3227C233000E609C1 /* KYALocalizedStrings.h */,
 				DA86A5E122FEB81C00B2D1B4 /* KYALocalizedStrings.m */,
-				DA637B4019F14693004C8838 /* KYAAppDelegate.h */,
-				DA637B4119F14693004C8838 /* KYAAppDelegate.m */,
-				DA637B5C19F146B6004C8838 /* KYAAppController.h */,
-				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
-				DA5C10A422FDD27C00554D6B /* KYASleepWakeTimer */,
-				DA73AB8522EDB9CD00D085CE /* KYAActivationDurationsController */,
-				DA82560E22FB5B31005ECB3A /* KYAActivationDurationsMenuController */,
+				DAD6480B24F14570008E9AA0 /* App */,
+				DA872D0824C3967A00146DEB /* Core */,
+				DA872D0A24C3977400146DEB /* StatusItem */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
-				DA8F381B1F9BA4360086A84A /* StatusItemController */,
-				DA2691CF1B8230AB00B15779 /* MenuBar Icon */,
-				DA5B5A241C28612800EE45C6 /* Battery Status */,
-				DA4919C51ACFFF8D00D44F6A /* Event Handler */,
-				DA4919C61ACFFF9600D44F6A /* Extensions */,
 				DAC322C91C65199300DF8B63 /* Resources */,
 			);
 			path = KeepingYouAwake;
@@ -467,13 +454,46 @@
 			path = Preferences;
 			sourceTree = "<group>";
 		};
-		DA8F381B1F9BA4360086A84A /* StatusItemController */ = {
+		DA872D0824C3967A00146DEB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DA73AB8522EDB9CD00D085CE /* KYAActivationDurationsController */,
+				DA5B5A241C28612800EE45C6 /* KYABatteryStatus */,
+				DA4919C51ACFFF8D00D44F6A /* KYAEventHandler */,
+				DA5C10A422FDD27C00554D6B /* KYASleepWakeTimer */,
+				DA872D0924C3973400146DEB /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DA872D0924C3973400146DEB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA46C1EC1BDCDFB00050357C /* NSUserDefaults+Keys.h */,
+				DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */,
+				DA39207F22FC12E70058F0C2 /* NSDate+RemainingTime.h */,
+				DA39208022FC12E70058F0C2 /* NSDate+RemainingTime.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA872D0A24C3977400146DEB /* StatusItem */ = {
+			isa = PBXGroup;
+			children = (
+				DA82560E22FB5B31005ECB3A /* KYAActivationDurationsMenuController */,
+				DA2691CF1B8230AB00B15779 /* KYAMenuBarIcon */,
+				DA8F381B1F9BA4360086A84A /* KYAStatusItemController */,
+			);
+			path = StatusItem;
+			sourceTree = "<group>";
+		};
+		DA8F381B1F9BA4360086A84A /* KYAStatusItemController */ = {
 			isa = PBXGroup;
 			children = (
 				DA173B351F65B41B00932CE0 /* KYAStatusItemController.h */,
 				DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */,
 			);
-			path = StatusItemController;
+			path = KYAStatusItemController;
 			sourceTree = "<group>";
 		};
 		DAB0701222EC8E74004D5BCA /* ActivationDuration */ = {
@@ -505,6 +525,18 @@
 				DA637B4319F14693004C8838 /* Images.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		DAD6480B24F14570008E9AA0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DA637B4019F14693004C8838 /* KYAAppDelegate.h */,
+				DA637B4119F14693004C8838 /* KYAAppDelegate.m */,
+				DA637B5C19F146B6004C8838 /* KYAAppController.h */,
+				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
+				DA4919C61ACFFF9600D44F6A /* Extensions */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
