@@ -20,6 +20,25 @@
 
 <p><strong>Please note: This release requires macOS Sierra or newer, you can continue using version 1.5.2 if you need support for macOS Yosemite or El Capitan.</strong></p>
 ]]></description>
+			<pubDate>Fri, 06 Nov 2020 18:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.0/KeepingYouAwake-1.6.0.zip" length="3451769" type="application/octet-stream" sparkle:version="1060001" sparkle:shortVersionString="1.6.0">
+			</enclosure>
+		</item>
+		<item>
+			<title><![CDATA[Version 1.6.0: Big Sur Update]]></title>
+			<description><![CDATA[<ul>
+<li>raised minimum deployment target to macOS Sierra (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/142">#142</a>)</li>
+<li>updated icons using the macOS Big Sur style (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/141">#141</a>)</li>
+<li>added support for the arm64 architecture on macOS Big Sur</li>
+<li>created an official website <a href="https://keepingyouawake.app/">https://keepingyouawake.app/</a></li>
+<li>added a Russian translation (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/147">#147</a>, <a href="https://github.com/newmarcel/KeepingYouAwake/pull/155">#155</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/Kromsator">Kromsator</a>!</em></li>
+</ul></li>
+</ul>
+
+<p><strong>Please note: This release requires macOS Sierra or newer, you can continue using version 1.5.2 if you need support for macOS Yosemite or El Capitan.</strong></p>
+]]></description>
 			<pubDate>Sun, 06 Sep 2020 08:00:00 GMT</pubDate>
 			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.0pre/KeepingYouAwake-1.6.0pre.zip" length="3451696" type="application/octet-stream" sparkle:version="1060000" sparkle:shortVersionString="1.6.0pre">
 			</enclosure>
