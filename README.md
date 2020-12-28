@@ -8,7 +8,7 @@ https://keepingyouawake.app/
 
 **[Download the latest version here.](https://github.com/newmarcel/KeepingYouAwake/releases/latest)**
 
-or install it via [cask](http://caskroom.github.io/): `brew cask install keepingyouawake`.
+or install it via [cask](http://caskroom.github.io/): `brew install --cask keepingyouawake`.
 
 <img src="./Extras/Screenshot@2x.jpg" width="500" />
 
