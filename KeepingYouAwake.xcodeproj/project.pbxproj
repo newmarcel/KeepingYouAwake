@@ -14,6 +14,7 @@
 		DA0ADE6F21CBFCA700D34B9D /* org.sparkle-project.InstallerConnection.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6B21CBFC9700D34B9D /* org.sparkle-project.InstallerConnection.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA0ADE7021CBFCA700D34B9D /* org.sparkle-project.InstallerLauncher.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6C21CBFC9700D34B9D /* org.sparkle-project.InstallerLauncher.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA0ADE7121CBFCA700D34B9D /* org.sparkle-project.InstallerStatus.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6D21CBFC9700D34B9D /* org.sparkle-project.InstallerStatus.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA13771A25E969FF00FB0FAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA13771925E969FF00FB0FAD /* Assets.xcassets */; };
 		DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */; };
 		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
 		DA39208122FC12E70058F0C2 /* NSDate+RemainingTime.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39208022FC12E70058F0C2 /* NSDate+RemainingTime.m */; };
@@ -27,7 +28,6 @@
 		DA5B5A231C28612100EE45C6 /* KYABatteryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5B5A221C28612100EE45C6 /* KYABatteryStatus.m */; };
 		DA637B3F19F14693004C8838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B3E19F14693004C8838 /* main.m */; };
 		DA637B4219F14693004C8838 /* KYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B4119F14693004C8838 /* KYAAppDelegate.m */; };
-		DA637B4419F14693004C8838 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4319F14693004C8838 /* Images.xcassets */; };
 		DA637B4719F14693004C8838 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4519F14693004C8838 /* MainMenu.xib */; };
 		DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B5D19F146B6004C8838 /* KYAAppController.m */; };
 		DA658E6621CE8C130049F4C1 /* NSApplication+KYALauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = DA658E6521CE8C130049F4C1 /* NSApplication+KYALauncher.m */; };
@@ -119,6 +119,7 @@
 		DA0ADE6C21CBFC9700D34B9D /* org.sparkle-project.InstallerLauncher.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; name = "org.sparkle-project.InstallerLauncher.xpc"; path = "Vendor/Sparkle/XPCServices/org.sparkle-project.InstallerLauncher.xpc"; sourceTree = "<group>"; };
 		DA0ADE6D21CBFC9700D34B9D /* org.sparkle-project.InstallerStatus.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; name = "org.sparkle-project.InstallerStatus.xpc"; path = "Vendor/Sparkle/XPCServices/org.sparkle-project.InstallerStatus.xpc"; sourceTree = "<group>"; };
 		DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeepingYouAwake.entitlements; sourceTree = "<group>"; };
+		DA13771925E969FF00FB0FAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA173B351F65B41B00932CE0 /* KYAStatusItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAStatusItemController.h; sourceTree = "<group>"; };
 		DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAStatusItemController.m; sourceTree = "<group>"; };
 		DA249E281F9B7211006BCD2C /* KYADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADefines.h; sourceTree = "<group>"; };
@@ -156,7 +157,6 @@
 		DA637B3E19F14693004C8838 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA637B4019F14693004C8838 /* KYAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAAppDelegate.h; sourceTree = "<group>"; };
 		DA637B4119F14693004C8838 /* KYAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAppDelegate.m; sourceTree = "<group>"; };
-		DA637B4319F14693004C8838 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA637B4619F14693004C8838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DA637B5C19F146B6004C8838 /* KYAAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAppController.h; sourceTree = "<group>"; };
 		DA637B5D19F146B6004C8838 /* KYAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAppController.m; sourceTree = "<group>"; };
@@ -522,7 +522,7 @@
 			isa = PBXGroup;
 			children = (
 				DA637B4519F14693004C8838 /* MainMenu.xib */,
-				DA637B4319F14693004C8838 /* Images.xcassets */,
+				DA13771925E969FF00FB0FAD /* Assets.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -653,13 +653,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA637B4419F14693004C8838 /* Images.xcassets in Resources */,
 				DA54C1311D69CA0000AF9E9D /* InfoPlist.strings in Resources */,
 				DA54C12A1D69C55400AF9E9D /* Localizable.strings in Resources */,
 				DAB128731C2469F300831045 /* Credits.rtf in Resources */,
 				DA637B4719F14693004C8838 /* MainMenu.xib in Resources */,
 				DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */,
 				DA085D1021D6BAB6003D9B1B /* container-migration.plist in Resources */,
+				DA13771A25E969FF00FB0FAD /* Assets.xcassets in Resources */,
 				DAB0700C22EC795F004D5BCA /* KYADurationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
