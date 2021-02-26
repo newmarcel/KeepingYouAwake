@@ -1,6 +1,6 @@
 SCHEME = KeepingYouAwake
 WORKSPACE = KeepingYouAwake.xcworkspace
-VERSION = 1.6.0
+VERSION = 1.6.1
 
 OUTPUT_DIR = dist
 VENDOR_DIR = Vendor
