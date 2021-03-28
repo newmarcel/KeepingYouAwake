@@ -9,6 +9,7 @@
 #import "KYAAppDelegate.h"
 #import <Sparkle/Sparkle.h>
 #import <KYAKit/KYAKit.h>
+#import "KYADefines.h"
 #import "KYAPreferencesWindowController.h"
 
 @interface KYAAppDelegate () <NSWindowDelegate, SPUUpdaterDelegate>
@@ -51,17 +52,16 @@
 
 - (NSString *)feedURLStringForUpdater:(SPUUpdater *)updater
 {
-    NSString *feedURLString = NSBundle.mainBundle.infoDictionary[@"SUFeedURL"];
-    NSAssert(feedURLString != nil, @"A feed URL should be set in Info.plist");
-
-    if([NSUserDefaults.standardUserDefaults kya_arePreReleaseUpdatesEnabled])
+    Auto bundle = NSBundle.mainBundle;
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    if([defaults kya_arePreReleaseUpdatesEnabled])
     {
-        NSString *lastComponent = feedURLString.lastPathComponent;
-        NSString *baseURLString = feedURLString.stringByDeletingLastPathComponent;
-        return [NSString stringWithFormat:@"%@/prerelease-%@", baseURLString, lastComponent];
+        return bundle.kya_preReleaseUpdateFeedURLString;
     }
-
-    return feedURLString;
+    else
+    {
+        return bundle.kya_updateFeedURLString;
+    }
 }
 
 @end
