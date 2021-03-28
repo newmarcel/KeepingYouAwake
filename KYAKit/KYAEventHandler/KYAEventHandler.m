@@ -8,7 +8,6 @@
 
 #import "KYAEventHandler.h"
 #import "KYADefines.h"
-#import "KYAEvent.h"
 
 @interface KYAEventHandler ()
 @property (strong, nonatomic) dispatch_queue_t eventQueue;

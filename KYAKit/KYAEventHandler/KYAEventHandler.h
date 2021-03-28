@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KYAEvent.h"
+#import <KYAKit/KYAEvent.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

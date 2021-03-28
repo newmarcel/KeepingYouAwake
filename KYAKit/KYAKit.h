@@ -15,3 +15,5 @@ FOUNDATION_EXPORT double KYAKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char KYAKitVersionString[];
 
 #import <KYAKit/KYABatteryStatus.h>
+#import <KYAKit/KYAEvent.h>
+#import <KYAKit/KYAEventHandler.h>
