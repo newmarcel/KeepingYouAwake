@@ -9,10 +9,9 @@
 #import "KYAEvent.h"
 
 @interface KYAEvent ()
-@property (copy, nonatomic, readwrite, nonnull) NSString *name;
+@property (copy, nonatomic, readwrite) NSString *name;
 @property (copy, nonatomic, readwrite, nullable) NSDictionary *arguments;
 @end
-
 
 @implementation KYAEvent
 
@@ -35,14 +34,19 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"%@: {\n\tname: %@,\n\targuments: %@\n}", [super description], self.name, self.arguments];
+    return [NSString stringWithFormat:@"%@: {\n\tname: %@,\n\targuments: %@\n}",
+            [super description],
+            self.name,
+            self.arguments];
 }
 
 #pragma mark - Equatable
 
 - (BOOL)isEqualToEvent:(KYAEvent *)event
 {
-    return event && [self.name isEqual:event.name] && [self.arguments isEqual:event.arguments];
+    return event
+        && [self.name isEqual:event.name]
+        && [self.arguments isEqual:event.arguments];
 }
 
 - (BOOL)isEqual:(id)object

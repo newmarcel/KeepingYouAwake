@@ -33,7 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return A new instance.
  */
-- (instancetype)initWithName:(NSString *)name arguments:(nullable NSDictionary<NSString *, id> *)arguments;
+- (instancetype)initWithName:(NSString *)name
+                   arguments:(nullable NSDictionary<NSString *, id> *)arguments;
 
 - (BOOL)isEqualToEvent:(nullable KYAEvent *)event;
 

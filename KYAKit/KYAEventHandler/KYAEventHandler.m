@@ -10,10 +10,9 @@
 #import "KYADefines.h"
 
 @interface KYAEventHandler ()
-@property (strong, nonatomic) dispatch_queue_t eventQueue;
-@property (strong, nonatomic) NSMapTable *eventTable;
+@property (nonatomic) dispatch_queue_t eventQueue;
+@property (nonatomic) NSMapTable *eventTable;
 @end
-
 
 @implementation KYAEventHandler
 
@@ -58,7 +57,7 @@
     
     KYA_WEAK weakSelf = self;
     dispatch_async(self.eventQueue, ^{
-        KYA_AUTO event = [weakSelf eventForURL:URL];
+        Auto event = [weakSelf eventForURL:URL];
         
         KYAEventHandlerActionBlock actionBlock = [self.eventTable objectForKey:event.name];
         if(actionBlock)
@@ -74,14 +73,14 @@
 
 - (nullable KYAEvent *)eventForURL:(nonnull NSURL *)URL
 {
-    KYA_AUTO URLComponents = [NSURLComponents componentsWithURL:URL resolvingAgainstBaseURL:YES];
-    KYA_AUTO path = URL.lastPathComponent;
+    Auto URLComponents = [NSURLComponents componentsWithURL:URL resolvingAgainstBaseURL:YES];
+    Auto path = URL.lastPathComponent;
     
     // Destructure NSURLQueryItems into basic dictionary values
-    KYA_AUTO arguments = [NSMutableDictionary dictionary];
+    Auto arguments = [NSMutableDictionary dictionary];
     for(NSURLQueryItem *queryItem in URLComponents.queryItems)
     {
-        KYA_AUTO_VAR value = queryItem.value;
+        AutoVar value = queryItem.value;
         if(!value)
         {
             // fall back to an empty string if the value is nil

@@ -27,7 +27,8 @@ typedef void(^KYAEventHandlerActionBlock)(KYAEvent *event);
  @param actionName An action identifier.
  @param block A block.
  */
-- (void)registerActionNamed:(NSString *)actionName block:(KYAEventHandlerActionBlock)block;
+- (void)registerActionNamed:(NSString *)actionName
+                      block:(KYAEventHandlerActionBlock)block;
 
 /**
  Removes the registered action and block with the supplied actionName.
