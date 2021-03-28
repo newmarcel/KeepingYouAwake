@@ -457,10 +457,11 @@
 				DAA478D3227C233000E609C1 /* KYALocalizedStrings.h */,
 				DA637B4519F14693004C8838 /* MainMenu.xib */,
 				DA13771925E969FF00FB0FAD /* Assets.xcassets */,
-				DAD6480B24F14570008E9AA0 /* App */,
-				DA872D0824C3967A00146DEB /* Core */,
+				DAD6480B24F14570008E9AA0 /* KYAAppController */,
+				DA73AB8522EDB9CD00D085CE /* KYAActivationDurationsController */,
 				DA872D0A24C3977400146DEB /* StatusItem */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
+				DA4919C61ACFFF9600D44F6A /* Extensions */,
 				DAE9C00C26107E0900F9ED76 /* Other… */,
 			);
 			path = KeepingYouAwake;
@@ -527,14 +528,6 @@
 			path = Preferences;
 			sourceTree = "<group>";
 		};
-		DA872D0824C3967A00146DEB /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				DA73AB8522EDB9CD00D085CE /* KYAActivationDurationsController */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		DA872D0A24C3977400146DEB /* StatusItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,16 +578,15 @@
 			path = KYADurationCell;
 			sourceTree = "<group>";
 		};
-		DAD6480B24F14570008E9AA0 /* App */ = {
+		DAD6480B24F14570008E9AA0 /* KYAAppController */ = {
 			isa = PBXGroup;
 			children = (
 				DA637B4019F14693004C8838 /* KYAAppDelegate.h */,
 				DA637B4119F14693004C8838 /* KYAAppDelegate.m */,
 				DA637B5C19F146B6004C8838 /* KYAAppController.h */,
 				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
-				DA4919C61ACFFF9600D44F6A /* Extensions */,
 			);
-			path = App;
+			path = KYAAppController;
 			sourceTree = "<group>";
 		};
 		DAE9C00C26107E0900F9ED76 /* Other… */ = {
