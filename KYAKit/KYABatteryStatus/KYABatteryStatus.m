@@ -27,27 +27,27 @@ static void KYABatteryStatusChangeHandler(void *context);
 
 - (BOOL)isBatteryStatusAvailable
 {
-    KYA_AUTO powerSourceInfos = [self powerSourceInfos];
+    Auto powerSourceInfos = [self powerSourceInfos];
     if(powerSourceInfos == nil)
     {
         return NO;
     }
     
-    KYA_AUTO key = [NSString stringWithUTF8String:kIOPSTypeKey];
-    KYA_AUTO internalBatteryTypeKey = [NSString stringWithUTF8String:kIOPSInternalBatteryType];
+    Auto key = [NSString stringWithUTF8String:kIOPSTypeKey];
+    Auto internalBatteryTypeKey = [NSString stringWithUTF8String:kIOPSInternalBatteryType];
     NSString *batteryType = powerSourceInfos[key];
     return [batteryType isEqualToString:internalBatteryTypeKey];
 }
 
 - (CGFloat)currentCapacity
 {
-    KYA_AUTO powerSourceInfos = [self powerSourceInfos];
+    Auto powerSourceInfos = [self powerSourceInfos];
     if(powerSourceInfos == nil)
     {
         return KYABatteryStatusUnavailable;
     }
     
-    KYA_AUTO key = [NSString stringWithUTF8String:kIOPSCurrentCapacityKey];
+    Auto key = [NSString stringWithUTF8String:kIOPSCurrentCapacityKey];
     NSNumber *capacity = powerSourceInfos[key];
     if(capacity == nil)
     {
@@ -59,8 +59,8 @@ static void KYABatteryStatusChangeHandler(void *context);
 
 - (nullable NSDictionary *)powerSourceInfos
 {
-    KYA_AUTO blob = IOPSCopyPowerSourcesInfo();
-    KYA_AUTO sourcesList = IOPSCopyPowerSourcesList(blob);
+    Auto blob = IOPSCopyPowerSourcesInfo();
+    Auto sourcesList = IOPSCopyPowerSourcesList(blob);
     CFRelease(blob);
     
     if(CFArrayGetCount(sourcesList) == 0) {
@@ -68,7 +68,7 @@ static void KYABatteryStatusChangeHandler(void *context);
         return nil;
     }
     
-    KYA_AUTO powerSource = IOPSGetPowerSourceDescription(blob, CFArrayGetValueAtIndex(sourcesList, 0));
+    Auto powerSource = IOPSGetPowerSourceDescription(blob, CFArrayGetValueAtIndex(sourcesList, 0));
     CFRetain(powerSource);
     CFRelease(sourcesList);
     
@@ -85,7 +85,7 @@ static void KYABatteryStatusChangeHandler(void *context);
         return;
     }
     
-    KYA_AUTO runLoopSource = IOPSNotificationCreateRunLoopSource(KYABatteryStatusChangeHandler, (__bridge void *)self);
+    Auto runLoopSource = IOPSNotificationCreateRunLoopSource(KYABatteryStatusChangeHandler, (__bridge void *)self);
     CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, kCFRunLoopDefaultMode);
     
     self.runLoopSource = runLoopSource;
@@ -109,7 +109,7 @@ static void KYABatteryStatusChangeHandler(void *context);
 
 static void KYABatteryStatusChangeHandler(void *context)
 {
-    KYA_AUTO batteryStatus = (__bridge KYABatteryStatus *)context;
+    Auto batteryStatus = (__bridge KYABatteryStatus *)context;
     if(batteryStatus.capacityChangeHandler)
     {
         batteryStatus.capacityChangeHandler(batteryStatus.currentCapacity);
