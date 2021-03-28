@@ -32,9 +32,9 @@
 
 - (NSString *)kya_localizedRemainingTimeWithoutPhrase
 {
-    KYA_AUTO formatter = [self dateComponentsFormatter];
+    Auto formatter = [self dateComponentsFormatter];
     formatter.includesTimeRemainingPhrase = NO;
-    KYA_AUTO remainingTimeString = [formatter stringFromDate:[NSDate date] toDate:self];
+    Auto remainingTimeString = [formatter stringFromDate:[NSDate date] toDate:self];
     formatter.includesTimeRemainingPhrase = YES;
     
     return remainingTimeString;
