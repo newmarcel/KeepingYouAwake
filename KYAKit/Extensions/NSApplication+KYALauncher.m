@@ -17,7 +17,8 @@ static NSString * const KYALauncherStateUserDefaultsKey = @"info.marcel-dierkes.
 
 - (BOOL)kya_isLaunchAtLoginEnabled
 {
-    BOOL isEnabled = [NSUserDefaults.standardUserDefaults boolForKey:KYALauncherStateUserDefaultsKey];
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    BOOL isEnabled = [defaults boolForKey:KYALauncherStateUserDefaultsKey];
     Boolean success = SMLoginItemSetEnabled((__bridge CFStringRef)KYALauncherBundleIdentifier, (Boolean)isEnabled);
     if(success == false)
     {
@@ -37,7 +38,8 @@ static NSString * const KYALauncherStateUserDefaultsKey = @"info.marcel-dierkes.
     Boolean success = SMLoginItemSetEnabled((__bridge CFStringRef)KYALauncherBundleIdentifier, (Boolean)launchAtLoginEnabled);
     if(success == true)
     {
-        [NSUserDefaults.standardUserDefaults setBool:launchAtLoginEnabled forKey:KYALauncherStateUserDefaultsKey];
+        Auto defaults = NSUserDefaults.standardUserDefaults;
+        [defaults setBool:launchAtLoginEnabled forKey:KYALauncherStateUserDefaultsKey];
     }
     else
     {
