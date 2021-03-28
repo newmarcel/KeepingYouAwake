@@ -16,6 +16,11 @@
 		DA0ADE7121CBFCA700D34B9D /* org.sparkle-project.InstallerStatus.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6D21CBFC9700D34B9D /* org.sparkle-project.InstallerStatus.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA13771A25E969FF00FB0FAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA13771925E969FF00FB0FAD /* Assets.xcassets */; };
 		DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */; };
+		DA19F0BA2610810E001A6AA6 /* KYAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA19F0B12610810E001A6AA6 /* KYAKit.framework */; };
+		DA19F0C12610810E001A6AA6 /* KYAKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA19F0C02610810E001A6AA6 /* KYAKitTests.m */; };
+		DA19F0C32610810E001A6AA6 /* KYAKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DA19F0B32610810E001A6AA6 /* KYAKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA19F0C62610810E001A6AA6 /* KYAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA19F0B12610810E001A6AA6 /* KYAKit.framework */; };
+		DA19F0C72610810E001A6AA6 /* KYAKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA19F0B12610810E001A6AA6 /* KYAKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
 		DA39208122FC12E70058F0C2 /* NSDate+RemainingTime.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39208022FC12E70058F0C2 /* NSDate+RemainingTime.m */; };
 		DA46C1EE1BDCDFB00050357C /* NSUserDefaults+Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA46C1ED1BDCDFB00050357C /* NSUserDefaults+Keys.m */; };
@@ -54,6 +59,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DA19F0BB2610810E001A6AA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA637B3119F14693004C8838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA19F0B02610810E001A6AA6;
+			remoteInfo = KYAKit;
+		};
+		DA19F0BD2610810E001A6AA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA637B3119F14693004C8838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA637B3819F14693004C8838;
+			remoteInfo = KeepingYouAwake;
+		};
+		DA19F0C42610810E001A6AA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA637B3119F14693004C8838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA19F0B02610810E001A6AA6;
+			remoteInfo = KYAKit;
+		};
 		DA87FF5E21D42525009045F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA637B3119F14693004C8838 /* Project object */;
@@ -96,6 +122,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				DA0ADE6821CBFC6000D34B9D /* Sparkle.framework in Embed Frameworks */,
+				DA19F0C72610810E001A6AA6 /* KYAKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +148,12 @@
 		DA13771925E969FF00FB0FAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA173B351F65B41B00932CE0 /* KYAStatusItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAStatusItemController.h; sourceTree = "<group>"; };
 		DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAStatusItemController.m; sourceTree = "<group>"; };
+		DA19F0B12610810E001A6AA6 /* KYAKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYAKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA19F0B32610810E001A6AA6 /* KYAKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAKit.h; sourceTree = "<group>"; };
+		DA19F0B42610810E001A6AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA19F0B92610810E001A6AA6 /* KYAKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYAKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA19F0C02610810E001A6AA6 /* KYAKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAKitTests.m; sourceTree = "<group>"; };
+		DA19F0C22610810E001A6AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA249E281F9B7211006BCD2C /* KYADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADefines.h; sourceTree = "<group>"; };
 		DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAMenuBarIcon.h; sourceTree = "<group>"; };
 		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
@@ -234,11 +267,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DA19F0AE2610810E001A6AA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA19F0B62610810E001A6AA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA19F0BA2610810E001A6AA6 /* KYAKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA637B3619F14693004C8838 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DA0ADE6621CBFC5800D34B9D /* Sparkle.framework in Frameworks */,
+				DA19F0C62610810E001A6AA6 /* KYAKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +301,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA19F0B22610810E001A6AA6 /* KYAKit */ = {
+			isa = PBXGroup;
+			children = (
+				DA19F0B32610810E001A6AA6 /* KYAKit.h */,
+				DA19F0B42610810E001A6AA6 /* Info.plist */,
+			);
+			path = KYAKit;
+			sourceTree = "<group>";
+		};
+		DA19F0BF2610810E001A6AA6 /* KYAKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA19F0C02610810E001A6AA6 /* KYAKitTests.m */,
+				DA19F0C22610810E001A6AA6 /* Info.plist */,
+			);
+			path = KYAKitTests;
+			sourceTree = "<group>";
+		};
 		DA2691CF1B8230AB00B15779 /* KYAMenuBarIcon */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +413,8 @@
 			children = (
 				DA637B3B19F14693004C8838 /* KeepingYouAwake */,
 				DA658E6C21CE907B0049F4C1 /* KYALauncher */,
+				DA19F0B22610810E001A6AA6 /* KYAKit */,
+				DA19F0BF2610810E001A6AA6 /* KYAKitTests */,
 				DA66CF9F1A12A7D700336CDC /* Frameworks */,
 				DA637B3A19F14693004C8838 /* Products */,
 			);
@@ -356,6 +425,8 @@
 			children = (
 				DA637B3919F14693004C8838 /* KeepingYouAwake.app */,
 				DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */,
+				DA19F0B12610810E001A6AA6 /* KYAKit.framework */,
+				DA19F0B92610810E001A6AA6 /* KYAKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -529,7 +600,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		DA19F0AC2610810E001A6AA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA19F0C32610810E001A6AA6 /* KYAKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		DA19F0B02610810E001A6AA6 /* KYAKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA19F0CC2610810E001A6AA6 /* Build configuration list for PBXNativeTarget "KYAKit" */;
+			buildPhases = (
+				DA19F0AC2610810E001A6AA6 /* Headers */,
+				DA19F0AD2610810E001A6AA6 /* Sources */,
+				DA19F0AE2610810E001A6AA6 /* Frameworks */,
+				DA19F0AF2610810E001A6AA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYAKit;
+			productName = KYAKit;
+			productReference = DA19F0B12610810E001A6AA6 /* KYAKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA19F0B82610810E001A6AA6 /* KYAKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA19F0CD2610810E001A6AA6 /* Build configuration list for PBXNativeTarget "KYAKitTests" */;
+			buildPhases = (
+				DA19F0B52610810E001A6AA6 /* Sources */,
+				DA19F0B62610810E001A6AA6 /* Frameworks */,
+				DA19F0B72610810E001A6AA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA19F0BC2610810E001A6AA6 /* PBXTargetDependency */,
+				DA19F0BE2610810E001A6AA6 /* PBXTargetDependency */,
+			);
+			name = KYAKitTests;
+			productName = KYAKitTests;
+			productReference = DA19F0B92610810E001A6AA6 /* KYAKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DA637B3819F14693004C8838 /* KeepingYouAwake */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA637B5619F14694004C8838 /* Build configuration list for PBXNativeTarget "KeepingYouAwake" */;
@@ -545,6 +664,7 @@
 			);
 			dependencies = (
 				DA87FF5F21D42525009045F3 /* PBXTargetDependency */,
+				DA19F0C52610810E001A6AA6 /* PBXTargetDependency */,
 			);
 			name = KeepingYouAwake;
 			productName = KeepingYouAwake;
@@ -579,6 +699,17 @@
 				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Marcel Dierkes";
 				TargetAttributes = {
+					DA19F0B02610810E001A6AA6 = {
+						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = 5KESHV9W85;
+						ProvisioningStyle = Automatic;
+					};
+					DA19F0B82610810E001A6AA6 = {
+						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = 5KESHV9W85;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA637B3819F14693004C8838;
+					};
 					DA637B3819F14693004C8838 = {
 						CreatedOnToolsVersion = 6.0.1;
 						DevelopmentTeam = 5KESHV9W85;
@@ -632,11 +763,27 @@
 			targets = (
 				DA637B3819F14693004C8838 /* KeepingYouAwake */,
 				DA658E6A21CE907B0049F4C1 /* KeepingYouAwake Launcher */,
+				DA19F0B02610810E001A6AA6 /* KYAKit */,
+				DA19F0B82610810E001A6AA6 /* KYAKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DA19F0AF2610810E001A6AA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA19F0B72610810E001A6AA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA637B3719F14693004C8838 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -664,6 +811,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DA19F0AD2610810E001A6AA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA19F0B52610810E001A6AA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA19F0C12610810E001A6AA6 /* KYAKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA637B3519F14693004C8838 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -708,6 +870,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DA19F0BC2610810E001A6AA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA19F0B02610810E001A6AA6 /* KYAKit */;
+			targetProxy = DA19F0BB2610810E001A6AA6 /* PBXContainerItemProxy */;
+		};
+		DA19F0BE2610810E001A6AA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA637B3819F14693004C8838 /* KeepingYouAwake */;
+			targetProxy = DA19F0BD2610810E001A6AA6 /* PBXContainerItemProxy */;
+		};
+		DA19F0C52610810E001A6AA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA19F0B02610810E001A6AA6 /* KYAKit */;
+			targetProxy = DA19F0C42610810E001A6AA6 /* PBXContainerItemProxy */;
+		};
 		DA87FF5F21D42525009045F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DA658E6A21CE907B0049F4C1 /* KeepingYouAwake Launcher */;
@@ -802,6 +979,115 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DA19F0C82610810E001A6AA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KYAKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KYAKit";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA19F0C92610810E001A6AA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KYAKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KYAKit";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA19F0CA2610810E001A6AA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				INFOPLIST_FILE = KYAKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KYAKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeepingYouAwake.app/Contents/MacOS/KeepingYouAwake";
+			};
+			name = Debug;
+		};
+		DA19F0CB2610810E001A6AA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				INFOPLIST_FILE = KYAKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KYAKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeepingYouAwake.app/Contents/MacOS/KeepingYouAwake";
+			};
+			name = Release;
+		};
 		DA637B5419F14694004C8838 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DAE9C00D26107E1A00F9ED76 /* Configuration.xcconfig */;
@@ -1039,6 +1325,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA19F0CC2610810E001A6AA6 /* Build configuration list for PBXNativeTarget "KYAKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA19F0C82610810E001A6AA6 /* Debug */,
+				DA19F0C92610810E001A6AA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA19F0CD2610810E001A6AA6 /* Build configuration list for PBXNativeTarget "KYAKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA19F0CA2610810E001A6AA6 /* Debug */,
+				DA19F0CB2610810E001A6AA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DA637B3419F14693004C8838 /* Build configuration list for PBXProject "KeepingYouAwake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
