@@ -8,7 +8,7 @@
 
 #import "KYAAppDelegate.h"
 #import <Sparkle/Sparkle.h>
-#import "NSUserDefaults+Keys.h"
+#import <KYAKit/KYAKit.h>
 #import "KYAPreferencesWindowController.h"
 
 @interface KYAAppDelegate () <NSWindowDelegate, SPUUpdaterDelegate>

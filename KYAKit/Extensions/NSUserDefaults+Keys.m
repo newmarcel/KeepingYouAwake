@@ -7,6 +7,7 @@
 //
 
 #import "NSUserDefaults+Keys.h"
+#import "KYADefines.h"
 
 // User Default Keys
 NSString * const KYAUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch";

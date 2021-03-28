@@ -19,3 +19,4 @@ FOUNDATION_EXPORT const unsigned char KYAKitVersionString[];
 #import <KYAKit/KYAEventHandler.h>
 
 #import <KYAKit/NSDate+RemainingTime.h>
+#import <KYAKit/NSUserDefaults+Keys.h>

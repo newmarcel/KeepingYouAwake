@@ -8,7 +8,6 @@
 
 #import "KYAStatusItemController.h"
 #import "KYADefines.h"
-#import "NSUserDefaults+Keys.h"
 #import "KYAMenuBarIcon.h"
 
 @interface KYAStatusItemController ()

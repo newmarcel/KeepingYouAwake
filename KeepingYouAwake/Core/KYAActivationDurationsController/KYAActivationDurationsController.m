@@ -8,7 +8,6 @@
 
 #import "KYAActivationDurationsController.h"
 #import "KYADefines.h"
-#include "NSUserDefaults+Keys.h"
 
 #define KYA_USES_SIMPLE_USER_DEFAULTS_VALUES 1
 

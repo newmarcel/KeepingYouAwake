@@ -8,7 +8,6 @@
 
 #import "KYAGeneralPreferencesViewController.h"
 #import "NSApplication+KYALauncher.h"
-#import "NSUserDefaults+Keys.h"
 
 @interface KYAGeneralPreferencesViewController ()
 @property (weak, nonatomic) IBOutlet NSButton *startAtLoginCheckBoxButton;
