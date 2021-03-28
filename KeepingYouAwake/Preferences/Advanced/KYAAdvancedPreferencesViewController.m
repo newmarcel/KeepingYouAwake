@@ -10,7 +10,6 @@
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
 #import "KYAPreference.h"
-#import "KYABatteryStatus.h"
 #import "NSUserDefaults+Keys.h"
 #import "KYABatteryCapacityThreshold.h"
 

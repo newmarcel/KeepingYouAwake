@@ -12,7 +12,6 @@
 #import "KYASleepWakeTimer.h"
 #import "KYAStatusItemController.h"
 #import "KYAEventHandler.h"
-#import "KYABatteryStatus.h"
 #import "KYABatteryCapacityThreshold.h"
 #import "NSUserDefaults+Keys.h"
 #import "KYAActivationDurationsMenuController.h"
