@@ -9,7 +9,6 @@
 #import "KYAActivationDurationsMenuController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
-#import "NSDate+RemainingTime.h"
 
 static const NSInteger KYAMenuItemRemainingTimeTag = 666;
 static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;

@@ -14,7 +14,6 @@
 #import "KYABatteryCapacityThreshold.h"
 #import "NSUserDefaults+Keys.h"
 #import "KYAActivationDurationsMenuController.h"
-#import "NSDate+RemainingTime.h"
 
 // Deprecated!
 #define KYA_MINUTES(m) (m * 60.0f)
