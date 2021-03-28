@@ -17,6 +17,7 @@ FOUNDATION_EXPORT const unsigned char KYAKitVersionString[];
 #import <KYAKit/KYABatteryStatus.h>
 #import <KYAKit/KYAEvent.h>
 #import <KYAKit/KYAEventHandler.h>
+#import <KYAKit/KYASleepWakeTimer.h>
 
 #import <KYAKit/NSApplication+KYALauncher.h>
 #import <KYAKit/NSBundle+KYAUpdateFeed.h>

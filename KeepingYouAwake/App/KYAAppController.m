@@ -9,7 +9,6 @@
 #import "KYAAppController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
-#import "KYASleepWakeTimer.h"
 #import "KYAStatusItemController.h"
 #import "KYABatteryCapacityThreshold.h"
 #import "KYAActivationDurationsMenuController.h"
