@@ -187,7 +187,6 @@
 		DA753D391C3714A800955BE3 /* KYABatteryCapacityThreshold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYABatteryCapacityThreshold.h; sourceTree = "<group>"; };
 		DA7B53041E16999A00D89A12 /* KYAPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesWindowController.h; sourceTree = "<group>"; };
 		DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAPreferencesWindowController.m; sourceTree = "<group>"; };
-		DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = SOURCE_ROOT; };
 		DA82560B22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAActivationDurationsMenuController.h; sourceTree = "<group>"; };
 		DA82560C22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAActivationDurationsMenuController.m; sourceTree = "<group>"; };
 		DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAGeneralPreferencesViewController.h; sourceTree = "<group>"; };
@@ -225,6 +224,7 @@
 		DAD3B5771EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DAD3B5781EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DAD3B5791EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DAE9C00D26107E1A00F9ED76 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = SOURCE_ROOT; };
 		DAF3080A2503828D00614AAF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Preferences.strings; sourceTree = "<group>"; };
 		DAF3080B2503828D00614AAF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		DAF3080C2503828D00614AAF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -347,7 +347,6 @@
 			isa = PBXGroup;
 			children = (
 				DA637B3B19F14693004C8838 /* KeepingYouAwake */,
-				DA637B3C19F14693004C8838 /* Supporting Files */,
 				DA658E6C21CE907B0049F4C1 /* KYALauncher */,
 				DA66CF9F1A12A7D700336CDC /* Frameworks */,
 				DA637B3A19F14693004C8838 /* Products */,
@@ -369,27 +368,14 @@
 				DA249E281F9B7211006BCD2C /* KYADefines.h */,
 				DAA478D3227C233000E609C1 /* KYALocalizedStrings.h */,
 				DA86A5E122FEB81C00B2D1B4 /* KYALocalizedStrings.m */,
+				DA637B4519F14693004C8838 /* MainMenu.xib */,
+				DA13771925E969FF00FB0FAD /* Assets.xcassets */,
 				DAD6480B24F14570008E9AA0 /* App */,
 				DA872D0824C3967A00146DEB /* Core */,
 				DA872D0A24C3977400146DEB /* StatusItem */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
-				DAC322C91C65199300DF8B63 /* Resources */,
+				DAE9C00C26107E0900F9ED76 /* Other… */,
 			);
-			path = KeepingYouAwake;
-			sourceTree = "<group>";
-		};
-		DA637B3C19F14693004C8838 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */,
-				DA54C12C1D69C55400AF9E9D /* Localizable.strings */,
-				DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */,
-				DA085D0F21D6BAB6003D9B1B /* container-migration.plist */,
-				DA637B3D19F14693004C8838 /* Info.plist */,
-				DA637B3E19F14693004C8838 /* main.m */,
-				DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */,
-			);
-			name = "Supporting Files";
 			path = KeepingYouAwake;
 			sourceTree = "<group>";
 		};
@@ -518,15 +504,6 @@
 			path = KYADurationCell;
 			sourceTree = "<group>";
 		};
-		DAC322C91C65199300DF8B63 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DA637B4519F14693004C8838 /* MainMenu.xib */,
-				DA13771925E969FF00FB0FAD /* Assets.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		DAD6480B24F14570008E9AA0 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -537,6 +514,20 @@
 				DA4919C61ACFFF9600D44F6A /* Extensions */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		DAE9C00C26107E0900F9ED76 /* Other… */ = {
+			isa = PBXGroup;
+			children = (
+				DAE9C00D26107E1A00F9ED76 /* Configuration.xcconfig */,
+				DA085D0F21D6BAB6003D9B1B /* container-migration.plist */,
+				DA637B3D19F14693004C8838 /* Info.plist */,
+				DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */,
+				DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */,
+				DA54C12C1D69C55400AF9E9D /* Localizable.strings */,
+				DA637B3E19F14693004C8838 /* main.m */,
+			);
+			name = "Other…";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -817,7 +808,7 @@
 /* Begin XCBuildConfiguration section */
 		DA637B5419F14694004C8838 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */;
+			baseConfigurationReference = DAE9C00D26107E1A00F9ED76 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
@@ -888,7 +879,7 @@
 		};
 		DA637B5519F14694004C8838 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA7C2E161E2159D200B84F59 /* Configuration.xcconfig */;
+			baseConfigurationReference = DAE9C00D26107E1A00F9ED76 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
