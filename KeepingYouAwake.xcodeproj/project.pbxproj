@@ -52,6 +52,8 @@
 		DA987C9C22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */; };
 		DA9C58922610DE8B005F3A34 /* NSUserDefaults+Keys.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9C58902610DE8B005F3A34 /* NSUserDefaults+Keys.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9C58932610DE8B005F3A34 /* NSUserDefaults+Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C58912610DE8B005F3A34 /* NSUserDefaults+Keys.m */; };
+		DA9C58A22610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C58A02610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m */; };
+		DA9C58A32610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9C58A12610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAB0700A22EC794F004D5BCA /* KYADurationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700922EC794F004D5BCA /* KYADurationCell.m */; };
 		DAB0700C22EC795F004D5BCA /* KYADurationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB0700B22EC795F004D5BCA /* KYADurationCell.xib */; };
 		DAB0701022EC8E6B004D5BCA /* KYADurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700E22EC8E6B004D5BCA /* KYADurationPreferencesViewController.m */; };
@@ -236,6 +238,8 @@
 		DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAddDurationPreferencesViewController.m; sourceTree = "<group>"; };
 		DA9C58902610DE8B005F3A34 /* NSUserDefaults+Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Keys.h"; sourceTree = "<group>"; };
 		DA9C58912610DE8B005F3A34 /* NSUserDefaults+Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Keys.m"; sourceTree = "<group>"; };
+		DA9C58A02610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+KYAUpdateFeed.m"; sourceTree = "<group>"; };
+		DA9C58A12610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KYAUpdateFeed.h"; sourceTree = "<group>"; };
 		DAA478D3227C233000E609C1 /* KYALocalizedStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYALocalizedStrings.h; sourceTree = "<group>"; };
 		DAAAAAA023B14D04004A44EF /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DAAAAAA123B14D04004A44EF /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Preferences.strings; sourceTree = "<group>"; };
@@ -359,6 +363,8 @@
 		DA44F2712610A1F900E6A516 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DA9C58A12610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h */,
+				DA9C58A02610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m */,
 				DA44F2732610A20B00E6A516 /* NSDate+RemainingTime.h */,
 				DA44F2722610A20B00E6A516 /* NSDate+RemainingTime.m */,
 				DA9C58902610DE8B005F3A34 /* NSUserDefaults+Keys.h */,
@@ -611,6 +617,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA44F2752610A20B00E6A516 /* NSDate+RemainingTime.h in Headers */,
+				DA9C58A32610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h in Headers */,
 				DA44F25C26109FFA00E6A516 /* KYAEventHandler.h in Headers */,
 				DA44F24026109ED700E6A516 /* KYABatteryStatus.h in Headers */,
 				DA44F25B26109FFA00E6A516 /* KYAEvent.h in Headers */,
@@ -830,6 +837,7 @@
 				DA9C58932610DE8B005F3A34 /* NSUserDefaults+Keys.m in Sources */,
 				DA44F23F26109ED700E6A516 /* KYABatteryStatus.m in Sources */,
 				DA44F25E26109FFA00E6A516 /* KYAEventHandler.m in Sources */,
+				DA9C58A22610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
