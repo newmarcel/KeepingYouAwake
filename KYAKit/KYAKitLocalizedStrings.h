@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-#define KYA_L10N_INDEFINITELY NSLocalizedString(@"Indefinitely", @"Indefinitely")
+#define KYA_LOCALIZED_STRING(__key, __comment) \
+    NSLocalizedStringFromTableInBundle( \
+    __key, nil, \
+    [NSBundle bundleForClass:NSClassFromString(@"KYAEvent")], \
+    __comment)
 
-#define KYA_L10N_VERSION NSLocalizedString(@"Version", @"Version")
+#define KYA_L10N_INDEFINITELY KYA_LOCALIZED_STRING(@"Indefinitely", @"Indefinitely")
+
+#define KYA_L10N_VERSION KYA_LOCALIZED_STRING(@"Version", @"Version")
