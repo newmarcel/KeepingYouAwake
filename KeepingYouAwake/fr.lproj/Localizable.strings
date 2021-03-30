@@ -13,15 +13,8 @@
 /* Enable experimental Notification Center integration */
 "Enable experimental Notification Center integration" = "Activer l'intégration avec le Centre de notification (beta)";
 
-/* Indefinitely */
-"Indefinitely" = "Indéfiniment";
-
 /* Preventing your Mac from going to sleep for\n%@… */
 "Preventing your Mac from going to sleep for\n%@…" = "Empêcher la mise en veille du Mac pour %@…";
 
 /* Preventing your Mac from going to sleep… */
 "Preventing your Mac from going to sleep…" = "Empêcher la mise en veille du Mac";
-
-/* Version */
-"Version" = "Version";
-

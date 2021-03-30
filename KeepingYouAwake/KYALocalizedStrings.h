@@ -22,8 +22,6 @@
 #define KYA_L10N_FORMAT_PREVENTING_SLEEP_FOR_REMAINING_TIME NSLocalizedString(@"Preventing your Mac from going to sleep for\n%@…", @"Preventing your Mac from going to sleep for\n%@…")
 #define KYA_L10N_PREVENTING_SLEEP_FOR_REMAINING_TIME(_str) [NSString stringWithFormat:KYA_L10N_FORMAT_PREVENTING_SLEEP_FOR_REMAINING_TIME, (NSString *)(_str)]
 
-#define KYA_L10N_INDEFINITELY NSLocalizedString(@"Indefinitely", @"Indefinitely")
-
 #define KYA_L10N_ACTIVATE_FOR_DURATION NSLocalizedString(@"Activate for Duration", @"Activate for Duration")
 
 #define KYA_L10N_IS_DEFAULT_SUFFIX NSLocalizedString(@"(Default)", @"(Default)")

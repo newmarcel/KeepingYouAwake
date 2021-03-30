@@ -8,7 +8,6 @@
 
 #import "KYAActivationDuration.h"
 #import "KYADefines.h"
-#import "KYALocalizedStrings.h"
 #include <chrono>
 
 NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
@@ -89,7 +88,8 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
     
     if(interval == 0)
     {
-        return KYA_L10N_INDEFINITELY;
+//        return KYA_L10N_INDEFINITELY;
+#warning Needs KYA_L10N_INDEFINITELY
     }
     
     auto formatter = [self sharedDateComponentsFormatter];

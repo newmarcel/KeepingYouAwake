@@ -13,12 +13,5 @@
 /* Enable experimental Notification Center integration */
 "Enable experimental Notification Center integration" = "Deneysel Bildirim Merkezi Entegrasyonunu Etkinleştir";
 
-/* Indefinitely */
-"Indefinitely" = "Süresiz";
-
 /* Preventing your Mac from going to sleep… */
 "Preventing your Mac from going to sleep…" = "Mac'inizin uyku halindeyken kullanılmasını önleme…";
-
-/* Version */
-"Version" = "Versiyon";
-

@@ -13,15 +13,8 @@
 /* Enable experimental Notification Center integration */
 "Enable experimental Notification Center integration" = "Gebruik experimentele integratie met Berichtencentrum";
 
-/* Indefinitely */
-"Indefinitely" = "Onbepaalde duur";
-
 /* Preventing your Mac from going to sleep for\n%@… */
 "Preventing your Mac from going to sleep for\n%@…" = "Sluimerstand wordt voor %@ verhinderd…";
 
 /* Preventing your Mac from going to sleep… */
 "Preventing your Mac from going to sleep…" = "Sluimerstand wordt verhinderd…";
-
-/* Version */
-"Version" = "Versie";
-

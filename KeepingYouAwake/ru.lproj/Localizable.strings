@@ -28,9 +28,6 @@
 /* Enable experimental Notification Center integration */
 "Enable experimental Notification Center integration" = "Экспериментальная интеграция с центром сообщений";
 
-/* Indefinitely */
-"Indefinitely" = "Неограниченно";
-
 /* OK */
 "OK" = "ОК";
 
@@ -54,7 +51,3 @@
 
 /* This duration has already been added. */
 "This duration has already been added." = "Эта продолжительность уже была добавлена.";
-
-/* Version */
-"Version" = "Версия";
-

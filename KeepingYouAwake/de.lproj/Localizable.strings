@@ -28,9 +28,6 @@
 /* Enable experimental Notification Center integration */
 "Enable experimental Notification Center integration" = "Experimentelle Integration mit der Mitteilungszentrale einschalten";
 
-/* Indefinitely */
-"Indefinitely" = "Unbegrenzt";
-
 /* OK */
 "OK" = "OK";
 
@@ -54,7 +51,3 @@
 
 /* This duration has already been added. */
 "This duration has already been added." = "Diese Dauer wurde bereits hinzugefügt.";
-
-/* Version */
-"Version" = "Version";
-

@@ -28,9 +28,6 @@
 /* Enable experimental Notification Center integration */
 "Enable experimental Notification Center integration" = "Aktifkan integrasi Pusat Pemberitahuan eksperimental";
 
-/* Indefinitely */
-"Indefinitely" = "Tanpa Batas";
-
 /* OK */
 "OK" = "OK";
 
@@ -54,7 +51,3 @@
 
 /* This duration has already been added. */
 "This duration has already been added." = "Durasi ini telah ditambahkan.";
-
-/* Version */
-"Version" = "Versi";
-

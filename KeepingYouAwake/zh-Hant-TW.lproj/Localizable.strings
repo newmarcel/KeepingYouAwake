@@ -13,15 +13,8 @@
 /* Enable experimental Notification Center integration */
 "Enable experimental Notification Center integration" = "於「通知中心」顯示提示（實驗功能）";
 
-/* Indefinitely */
-"Indefinitely" = "永久";
-
 /* Preventing your Mac from going to sleep for\n%@… */
 "Preventing your Mac from going to sleep for\n%@…" = "已防止系統進入睡眠模式並持續\n%@…";
 
 /* Preventing your Mac from going to sleep… */
 "Preventing your Mac from going to sleep…" = "已防止系統進入睡眠模式…";
-
-/* Version */
-"Version" = "版本";
-
