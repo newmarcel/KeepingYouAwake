@@ -14,6 +14,8 @@ FOUNDATION_EXPORT double KYAKitVersionNumber;
 /// Project version string for KYAKit.
 FOUNDATION_EXPORT const unsigned char KYAKitVersionString[];
 
+#import <KYAKit/KYAActivationDuration.h>
+#import <KYAKit/KYAActivationDurationsController.h>
 #import <KYAKit/KYABatteryStatus.h>
 #import <KYAKit/KYAEvent.h>
 #import <KYAKit/KYAEventHandler.h>

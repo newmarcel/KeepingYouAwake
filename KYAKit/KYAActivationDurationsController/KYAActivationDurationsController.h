@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <KYAKit/KYAKit.h>
-#import "KYAActivationDuration.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
