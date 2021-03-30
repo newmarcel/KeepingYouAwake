@@ -23,6 +23,8 @@
 		DA19F0C72610810E001A6AA6 /* KYAKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA19F0B12610810E001A6AA6 /* KYAKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
 		DA3D5C25261386AC00C7E103 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA3D5C27261386AC00C7E103 /* Localizable.strings */; };
+		DA3D5C3A2613895800C7E103 /* NSBundle+KYAVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3D5C382613895800C7E103 /* NSBundle+KYAVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA3D5C3B2613895800C7E103 /* NSBundle+KYAVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3D5C392613895800C7E103 /* NSBundle+KYAVersion.m */; };
 		DA44F23F26109ED700E6A516 /* KYABatteryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA44F23D26109ED700E6A516 /* KYABatteryStatus.m */; };
 		DA44F24026109ED700E6A516 /* KYABatteryStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44F23E26109ED700E6A516 /* KYABatteryStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA44F25B26109FFA00E6A516 /* KYAEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44F25726109FFA00E6A516 /* KYAEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -182,6 +184,8 @@
 		DA3D5C352613888D00C7E103 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA3D5C36261388A700C7E103 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA3D5C37261388C200C7E103 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DA3D5C382613895800C7E103 /* NSBundle+KYAVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KYAVersion.h"; sourceTree = "<group>"; };
+		DA3D5C392613895800C7E103 /* NSBundle+KYAVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+KYAVersion.m"; sourceTree = "<group>"; };
 		DA4121711F5C07130083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Preferences.strings; sourceTree = "<group>"; };
 		DA4121721F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA4121731F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -388,6 +392,8 @@
 				DA9C58C026110010005F3A34 /* NSApplication+KYALauncher.m */,
 				DA9C58A12610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h */,
 				DA9C58A02610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m */,
+				DA3D5C382613895800C7E103 /* NSBundle+KYAVersion.h */,
+				DA3D5C392613895800C7E103 /* NSBundle+KYAVersion.m */,
 				DA44F2732610A20B00E6A516 /* NSDate+RemainingTime.h */,
 				DA44F2722610A20B00E6A516 /* NSDate+RemainingTime.m */,
 				DA9C58902610DE8B005F3A34 /* NSUserDefaults+Keys.h */,
@@ -630,6 +636,7 @@
 			files = (
 				DA9C58C326110010005F3A34 /* NSApplication+KYALauncher.h in Headers */,
 				DA44F2752610A20B00E6A516 /* NSDate+RemainingTime.h in Headers */,
+				DA3D5C3A2613895800C7E103 /* NSBundle+KYAVersion.h in Headers */,
 				DA9C58A32610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h in Headers */,
 				DA44F25C26109FFA00E6A516 /* KYAEventHandler.h in Headers */,
 				DA44F24026109ED700E6A516 /* KYABatteryStatus.h in Headers */,
@@ -852,6 +859,7 @@
 				DA44F25D26109FFA00E6A516 /* KYAEvent.m in Sources */,
 				DA9C58932610DE8B005F3A34 /* NSUserDefaults+Keys.m in Sources */,
 				DA44F23F26109ED700E6A516 /* KYABatteryStatus.m in Sources */,
+				DA3D5C3B2613895800C7E103 /* NSBundle+KYAVersion.m in Sources */,
 				DA9C58D12611011D005F3A34 /* KYASleepWakeTimer.m in Sources */,
 				DA44F25E26109FFA00E6A516 /* KYAEventHandler.m in Sources */,
 				DA9C58A22610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m in Sources */,
