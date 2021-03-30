@@ -7,7 +7,6 @@
 //
 
 #import "KYAAboutPreferencesViewController.h"
-#import "NSApplication+Versions.h"
 
 @interface KYAAboutPreferencesViewController ()
 @end
@@ -25,12 +24,12 @@
 
 - (NSString *)versionText
 {
-    return NSApplication.sharedApplication.kya_localizedVersionString;
+    return NSBundle.mainBundle.kya_localizedVersionString;
 }
 
 - (NSString *)copyrightText
 {
-    return NSApplication.sharedApplication.kya_localizedCopyrightString;
+    return NSBundle.mainBundle.kya_localizedCopyrightString;
 }
 
 - (id)creditsFileURL

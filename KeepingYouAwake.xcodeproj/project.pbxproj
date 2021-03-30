@@ -65,7 +65,6 @@
 		DAB0701022EC8E6B004D5BCA /* KYADurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700E22EC8E6B004D5BCA /* KYADurationPreferencesViewController.m */; };
 		DAB128691C2453F600831045 /* KYAAdvancedPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128681C2453F600831045 /* KYAAdvancedPreferencesViewController.m */; };
 		DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */; };
-		DAB128711C245F1B00831045 /* NSApplication+Versions.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128701C245F1B00831045 /* NSApplication+Versions.m */; };
 		DAB128731C2469F300831045 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DAB1286D1C245A6C00831045 /* Credits.rtf */; };
 		DAB128761C2493DB00831045 /* KYAPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128751C2493DB00831045 /* KYAPreference.m */; };
 /* End PBXBuildFile section */
@@ -278,8 +277,6 @@
 		DAB1286A1C24540200831045 /* KYAAboutPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAboutPreferencesViewController.h; sourceTree = "<group>"; };
 		DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAboutPreferencesViewController.m; sourceTree = "<group>"; };
 		DAB1286D1C245A6C00831045 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = SOURCE_ROOT; };
-		DAB1286F1C245F1B00831045 /* NSApplication+Versions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+Versions.h"; sourceTree = "<group>"; };
-		DAB128701C245F1B00831045 /* NSApplication+Versions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+Versions.m"; sourceTree = "<group>"; };
 		DAB128741C2493DB00831045 /* KYAPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAPreference.h; sourceTree = "<group>"; };
 		DAB128751C2493DB00831045 /* KYAPreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAPreference.m; sourceTree = "<group>"; };
 		DAD3B5761EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Preferences.strings; sourceTree = "<group>"; };
@@ -402,15 +399,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		DA4919C61ACFFF9600D44F6A /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				DAB1286F1C245F1B00831045 /* NSApplication+Versions.h */,
-				DAB128701C245F1B00831045 /* NSApplication+Versions.m */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		DA51E7DF1C2562BE008AA96C /* General */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,7 +473,6 @@
 				DA73AB8522EDB9CD00D085CE /* KYAActivationDurationsController */,
 				DA872D0A24C3977400146DEB /* StatusItem */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
-				DA4919C61ACFFF9600D44F6A /* Extensions */,
 				DAE9C00C26107E0900F9ED76 /* Other… */,
 			);
 			path = KeepingYouAwake;
@@ -888,7 +875,6 @@
 				DAB0700A22EC794F004D5BCA /* KYADurationCell.m in Sources */,
 				DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */,
 				DAB128761C2493DB00831045 /* KYAPreference.m in Sources */,
-				DAB128711C245F1B00831045 /* NSApplication+Versions.m in Sources */,
 				DAB128691C2453F600831045 /* KYAAdvancedPreferencesViewController.m in Sources */,
 				DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */,
 				DA51E7DE1C2562A2008AA96C /* KYAActivationDuration.mm in Sources */,
