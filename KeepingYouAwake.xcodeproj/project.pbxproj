@@ -492,7 +492,9 @@
 				DA637B4519F14693004C8838 /* MainMenu.xib */,
 				DA13771925E969FF00FB0FAD /* Assets.xcassets */,
 				DAD6480B24F14570008E9AA0 /* KYAAppController */,
-				DA872D0A24C3977400146DEB /* StatusItem */,
+				DA82560E22FB5B31005ECB3A /* KYAActivationDurationsMenuController */,
+				DA8F381B1F9BA4360086A84A /* KYAStatusItemController */,
+				DA2691CF1B8230AB00B15779 /* KYAMenuBarIcon */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
 				DAE9C00C26107E0900F9ED76 /* Other… */,
 			);
@@ -547,16 +549,6 @@
 				DA51E7E11C2562CA008AA96C /* About */,
 			);
 			path = Preferences;
-			sourceTree = "<group>";
-		};
-		DA872D0A24C3977400146DEB /* StatusItem */ = {
-			isa = PBXGroup;
-			children = (
-				DA82560E22FB5B31005ECB3A /* KYAActivationDurationsMenuController */,
-				DA2691CF1B8230AB00B15779 /* KYAMenuBarIcon */,
-				DA8F381B1F9BA4360086A84A /* KYAStatusItemController */,
-			);
-			path = StatusItem;
 			sourceTree = "<group>";
 		};
 		DA8F381B1F9BA4360086A84A /* KYAStatusItemController */ = {
