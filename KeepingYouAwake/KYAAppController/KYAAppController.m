@@ -46,6 +46,8 @@
 
         self.statusItemController = [KYAStatusItemController new];
         self.statusItemController.delegate = self;
+        
+        [self configureUserNotificationCenter];
 
         // Check activate on launch state
         if([self shouldActivateOnLaunch])
@@ -116,6 +118,18 @@
     KYA_AUTO defaults = NSUserDefaults.standardUserDefaults;
     defaults.kya_activateOnLaunch = ![defaults kya_isActivatedOnLaunch];
     [defaults synchronize];
+}
+
+#pragma mark - User Notification Center
+
+- (void)configureUserNotificationCenter
+{
+    if(@available(macOS 11.0, *))
+    {
+        Auto center = KYAUserNotificationCenter.sharedCenter;
+        [center requestAuthorizationIfUndetermined];
+        [center clearAllDeliveredNotifications];
+    }
 }
 
 #pragma mark - Sleep Wake Timer Handling
