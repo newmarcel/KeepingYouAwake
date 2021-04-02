@@ -10,8 +10,5 @@
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "禁用菜单栏高亮";
 
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Enable experimental Notification Center integration";
-
 /* Preventing your Mac from going to sleep… */
 "Preventing your Mac from going to sleep…" = "防止你的 Mac 进入睡眠模式…";

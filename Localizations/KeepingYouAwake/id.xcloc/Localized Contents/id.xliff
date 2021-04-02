@@ -73,11 +73,6 @@ Klik kanan untuk menampilkan menu</target>
         <target>Apakah Anda benar-benar ingin mengatur ulang durasi aktivasi ke nilai standar?</target>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
-      <trans-unit id="Enable experimental Notification Center integration" xml:space="preserve">
-        <source>Enable experimental Notification Center integration</source>
-        <target>Aktifkan integrasi Pusat Pemberitahuan eksperimental</target>
-        <note>Enable experimental Notification Center integration</note>
-      </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
         <source>Indefinitely</source>
         <target>Tanpa Batas</target>

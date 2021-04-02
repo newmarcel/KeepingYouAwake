@@ -73,11 +73,6 @@ Rechtsklick, um das Menü anzuzeigen</target>
         <target>Soll die Aktivierungsdauer-Liste wirklich auf die ursprünglichen Einträge zurückgesetzt werden?</target>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
-      <trans-unit id="Enable experimental Notification Center integration" xml:space="preserve">
-        <source>Enable experimental Notification Center integration</source>
-        <target>Experimentelle Integration mit der Mitteilungszentrale einschalten</target>
-        <note>Enable experimental Notification Center integration</note>
-      </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
         <source>Indefinitely</source>
         <target>Unbegrenzt</target>

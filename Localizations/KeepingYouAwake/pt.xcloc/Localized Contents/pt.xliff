@@ -68,11 +68,6 @@ Clique com o botão direito para exibir o menu</target>
         <source>Do you really want to reset the activation durations to the default values?</source>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
-      <trans-unit id="Enable experimental Notification Center integration" xml:space="preserve">
-        <source>Enable experimental Notification Center integration</source>
-        <target>Habilitar a integração experimental com o Notification Center</target>
-        <note>Enable experimental Notification Center integration</note>
-      </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
         <source>Indefinitely</source>
         <target>Indefinidamente</target>

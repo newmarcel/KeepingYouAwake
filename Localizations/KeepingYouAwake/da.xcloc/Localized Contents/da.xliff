@@ -68,11 +68,6 @@ Højreklik for at vise menu</target>
         <source>Do you really want to reset the activation durations to the default values?</source>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
-      <trans-unit id="Enable experimental Notification Center integration" xml:space="preserve">
-        <source>Enable experimental Notification Center integration</source>
-        <target>Aktivere eksperimentel Meddelelsescenter integration</target>
-        <note>Enable experimental Notification Center integration</note>
-      </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
         <source>Indefinitely</source>
         <target>Ubestemt tid</target>

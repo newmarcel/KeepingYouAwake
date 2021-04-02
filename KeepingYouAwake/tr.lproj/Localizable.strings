@@ -10,8 +10,5 @@
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Menü çubuğu simgesini devre dışı bırak";
 
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Deneysel Bildirim Merkezi Entegrasyonunu Etkinleştir";
-
 /* Preventing your Mac from going to sleep… */
 "Preventing your Mac from going to sleep…" = "Mac'inizin uyku halindeyken kullanılmasını önleme…";

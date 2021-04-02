@@ -73,11 +73,6 @@ Right click to show menu</source>
         <target>Вы уверены, что хотите сбросить список продолжительности активации на исходные записи?</target>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
-      <trans-unit id="Enable experimental Notification Center integration" xml:space="preserve">
-        <source>Enable experimental Notification Center integration</source>
-        <target>Экспериментальная интеграция с центром сообщений</target>
-        <note>Enable experimental Notification Center integration</note>
-      </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
         <source>Indefinitely</source>
         <target>Неограниченно</target>

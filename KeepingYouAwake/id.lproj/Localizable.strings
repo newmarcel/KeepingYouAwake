@@ -25,9 +25,6 @@
 /* Do you really want to reset the activation durations to the default values? */
 "Do you really want to reset the activation durations to the default values?" = "Apakah Anda benar-benar ingin mengatur ulang durasi aktivasi ke nilai standar?";
 
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Aktifkan integrasi Pusat Pemberitahuan eksperimental";
-
 /* OK */
 "OK" = "OK";
 

@@ -10,9 +10,6 @@
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Wyłącz podświetlenie ikony w menu";
 
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Włącz eksperymentalną integrację z powiadomieniami";
-
 /* Preventing your Mac from going to sleep for\n%@… */
 "Preventing your Mac from going to sleep for\n%@…" = "Zapobiegam uśpieniu prez %@…";
 
