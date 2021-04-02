@@ -18,7 +18,7 @@
 #define KYA_MINUTES(m) (m * 60.0f)
 #define KYA_HOURS(h) (h * 3600.0f)
 
-@interface KYAAppController () <NSUserNotificationCenterDelegate, KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate>
+@interface KYAAppController () <KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
 @property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
 @property (nonatomic) KYAActivationDurationsMenuController *menuController;
@@ -77,8 +77,6 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-
-    NSUserNotificationCenter.defaultUserNotificationCenter.delegate = self;
 
     [self.menu setSubmenu:self.menuController.menu
                   forItem:self.activationDurationsMenuItem];
@@ -180,13 +178,6 @@
     {
         [self.sleepWakeTimer invalidate];
     }
-}
-
-#pragma mark - User Notification Center Delegate
-
-- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification
-{
-    return YES;
 }
 
 #pragma mark - Battery Status
