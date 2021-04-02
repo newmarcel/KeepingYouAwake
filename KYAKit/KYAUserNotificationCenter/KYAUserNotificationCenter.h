@@ -42,6 +42,7 @@ API_AVAILABLE(macos(11.0))
 
 - (void)setLocalizedTitleWithKey:(NSString *)key arguments:(nullable NSArray *)arguments;
 - (void)setLocalizedSubtitleWithKey:(NSString *)key arguments:(nullable NSArray *)arguments;
+- (void)setLocalizedBodyTextWithKey:(NSString *)key arguments:(nullable NSArray *)arguments;
 
 @end
 

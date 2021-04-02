@@ -168,6 +168,11 @@
     self.subtitle = [NSString localizedUserNotificationStringForKey:key arguments:arguments];
 }
 
+- (void)setLocalizedBodyTextWithKey:(NSString *)key arguments:(nullable NSArray *)arguments
+{
+    self.bodyText = [NSString localizedUserNotificationStringForKey:key arguments:arguments];
+}
+
 - (UNNotificationContent *)createNotificationContent
 {
     Auto content = [UNMutableNotificationContent new];
