@@ -12,6 +12,7 @@
 #import "KYAStatusItemController.h"
 #import "KYABatteryCapacityThreshold.h"
 #import "KYAActivationDurationsMenuController.h"
+#import "KYAActivationUserNotification.h"
 
 // Deprecated!
 #define KYA_MINUTES(m) (m * 60.0f)
@@ -144,12 +145,12 @@
     }
 
     KYA_AUTO timerCompletion = ^(BOOL cancelled) {
-        // Post notifications
-        if([defaults kya_areNotificationsEnabled])
+        // Post deactivation notification
+        if(@available(macOS 11.0, *))
         {
-            NSUserNotification *n = [NSUserNotification new];
-            n.informativeText = KYA_L10N_ALLOWING_YOUR_MAC_TO_GO_TO_SLEEP;
-            [NSUserNotificationCenter.defaultUserNotificationCenter scheduleNotification:n];
+            Auto notification = [[KYAActivationUserNotification alloc] initWithFireDate:nil
+                                                                             activating:NO];
+            [KYAUserNotificationCenter.sharedCenter postNotification:notification];
         }
 
         // Quit on timer expiration
@@ -160,22 +161,13 @@
     };
     [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:timerCompletion];
 
-    // Post notifications
-    if([defaults kya_areNotificationsEnabled])
+    // Post activation notification
+    if(@available(macOS 11.0, *))
     {
-        NSUserNotification *n = [NSUserNotification new];
-
-        if(timeInterval == KYASleepWakeTimeIntervalIndefinite)
-        {
-            n.informativeText = KYA_L10N_PREVENTING_YOUR_MAC_FROM_GOING_TO_SLEEP;
-        }
-        else
-        {
-            KYA_AUTO remainingTimeString = self.sleepWakeTimer.fireDate.kya_localizedRemainingTimeWithoutPhrase;
-            n.informativeText = KYA_L10N_PREVENTING_SLEEP_FOR_REMAINING_TIME(remainingTimeString);
-        }
-
-        [NSUserNotificationCenter.defaultUserNotificationCenter scheduleNotification:n];
+        Auto fireDate = self.sleepWakeTimer.fireDate;
+        Auto notification = [[KYAActivationUserNotification alloc] initWithFireDate:fireDate
+                                                                         activating:YES];
+        [KYAUserNotificationCenter.sharedCenter postNotification:notification];
     }
 }
 

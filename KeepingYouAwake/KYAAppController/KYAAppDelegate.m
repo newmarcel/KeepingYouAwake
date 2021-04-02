@@ -20,6 +20,19 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
+    [self configureUserNotificationCenter];
+}
+
+#pragma mark - User Notification Center
+
+- (void)configureUserNotificationCenter
+{
+    if(@available(macOS 11.0, *))
+    {
+        Auto center = KYAUserNotificationCenter.sharedCenter;
+        [center requestAuthorizationIfUndetermined];
+        [center clearAllDeliveredNotifications];
+    }
 }
 
 #pragma mark - Preferences Window

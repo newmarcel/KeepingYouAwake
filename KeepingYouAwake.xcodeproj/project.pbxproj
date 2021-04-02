@@ -43,6 +43,7 @@
 		DA52B0F6261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52B0F0261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.m */; };
 		DA52B0F7261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = DA52B0F1261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA52B0F8261701A800D09FE5 /* KYAUserNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52B0F2261701A800D09FE5 /* KYAUserNotificationCenter.m */; };
+		DA52B1082617021500D09FE5 /* KYAActivationUserNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52B1062617021500D09FE5 /* KYAActivationUserNotification.m */; };
 		DA54C10F1D69C20F00AF9E9D /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1111D69C20F00AF9E9D /* Preferences.storyboard */; };
 		DA54C12A1D69C55400AF9E9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C12C1D69C55400AF9E9D /* Localizable.strings */; };
 		DA54C1311D69CA0000AF9E9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */; };
@@ -220,6 +221,8 @@
 		DA52B0F0261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+KYAUserNotificationCenter.m"; sourceTree = "<group>"; };
 		DA52B0F1261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWorkspace+KYAUserNotificationCenter.h"; sourceTree = "<group>"; };
 		DA52B0F2261701A800D09FE5 /* KYAUserNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAUserNotificationCenter.m; sourceTree = "<group>"; };
+		DA52B1062617021500D09FE5 /* KYAActivationUserNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAActivationUserNotification.m; sourceTree = "<group>"; };
+		DA52B1072617021500D09FE5 /* KYAActivationUserNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAActivationUserNotification.h; sourceTree = "<group>"; };
 		DA54C1101D69C20F00AF9E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
 		DA54C1221D69C55300AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Preferences.strings; sourceTree = "<group>"; };
 		DA54C12B1D69C55400AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -488,6 +491,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		DA52B1052617021500D09FE5 /* KYAActivationUserNotification */ = {
+			isa = PBXGroup;
+			children = (
+				DA52B1072617021500D09FE5 /* KYAActivationUserNotification.h */,
+				DA52B1062617021500D09FE5 /* KYAActivationUserNotification.m */,
+			);
+			path = KYAActivationUserNotification;
+			sourceTree = "<group>";
+		};
 		DA5680182115FF140039C979 /* Updates */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +542,7 @@
 				DA13771925E969FF00FB0FAD /* Assets.xcassets */,
 				DAD6480B24F14570008E9AA0 /* KYAAppController */,
 				DA82560E22FB5B31005ECB3A /* KYAActivationDurationsMenuController */,
+				DA52B1052617021500D09FE5 /* KYAActivationUserNotification */,
 				DA8F381B1F9BA4360086A84A /* KYAStatusItemController */,
 				DA2691CF1B8230AB00B15779 /* KYAMenuBarIcon */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
@@ -920,6 +933,7 @@
 				DA637B4219F14693004C8838 /* KYAAppDelegate.m in Sources */,
 				DAB0701022EC8E6B004D5BCA /* KYADurationPreferencesViewController.m in Sources */,
 				DA82560D22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m in Sources */,
+				DA52B1082617021500D09FE5 /* KYAActivationUserNotification.m in Sources */,
 				DA9A4FE6261631D700C672C4 /* KYALocalizedStrings.m in Sources */,
 				DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */,
 				DAB0700A22EC794F004D5BCA /* KYADurationCell.m in Sources */,
