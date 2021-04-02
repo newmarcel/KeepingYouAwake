@@ -4,6 +4,9 @@
 
 ### v1.6.1 ###
 
+- added support for notifications, use `System Preferences` to manage notification settings
+  - please note, this feature is only available on macOS 11 or newer; the previous experimental notifications support has been removed
+
 ### v1.6.0 ###
 
 - raised minimum deployment target to macOS Sierra ([#142](https://github.com/newmarcel/KeepingYouAwake/pull/142))
