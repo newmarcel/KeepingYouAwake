@@ -134,8 +134,8 @@
                                         </customSpacing>
                                     </stackView>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Fh-S2-1dx">
-                                        <rect key="frame" x="-7" y="-7" width="217" height="32"/>
-                                        <buttonCell key="cell" type="push" title="Open Notification Preferences" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bPs-M9-Azc">
+                                        <rect key="frame" x="-7" y="-7" width="191" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Notification Preferences…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bPs-M9-Azc">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -185,13 +185,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="32" horizontalPageScroll="10" verticalLineScroll="32" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acy-aE-rAZ">
-                                <rect key="frame" x="-1" y="-1" width="452" height="128"/>
+                                <rect key="frame" x="-1" y="-1" width="452" height="132"/>
                                 <clipView key="contentView" id="0HM-dh-kcL">
-                                    <rect key="frame" x="1" y="1" width="450" height="126"/>
+                                    <rect key="frame" x="1" y="1" width="450" height="130"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="30" viewBased="YES" id="AXu-53-kJt">
-                                            <rect key="frame" x="0.0" y="0.0" width="450" height="126"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="130"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -256,7 +256,7 @@
                                 </scroller>
                             </scrollView>
                             <textField horizontalHuggingPriority="200" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="0Ex-7I-4ay">
-                                <rect key="frame" x="18" y="143" width="280" height="42"/>
+                                <rect key="frame" x="18" y="147" width="280" height="42"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart." id="OsK-jX-EzO">
                                     <font key="font" metaFont="message" size="11"/>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -264,7 +264,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hJJ-q4-63o">
-                                <rect key="frame" x="305" y="136" width="132" height="32"/>
+                                <rect key="frame" x="305" y="140" width="132" height="32"/>
                                 <buttonCell key="cell" type="push" title="Reset to Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EXv-vC-wyo">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -274,13 +274,13 @@
                                 </connections>
                             </button>
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Dhm-17-m0f">
-                                <rect key="frame" x="20" y="199" width="410" height="5"/>
+                                <rect key="frame" x="20" y="203" width="410" height="5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="410" id="CJr-2I-if9"/>
                                 </constraints>
                             </box>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="XC5-67-b50">
-                                <rect key="frame" x="18" y="296" width="282" height="18"/>
+                                <rect key="frame" x="18" y="300" width="282" height="18"/>
                                 <buttonCell key="cell" type="check" title="Deactivate when battery capacity is below" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ax6-W4-7bK">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -292,7 +292,7 @@
                                 </connections>
                             </button>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="X9f-RZ-Fws" userLabel="Battery Limit Container View">
-                                <rect key="frame" x="40" y="254" width="390" height="35"/>
+                                <rect key="frame" x="40" y="258" width="390" height="35"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V0H-cG-Tyy">
                                         <rect key="frame" x="365" y="0.0" width="27" height="11"/>
@@ -346,7 +346,7 @@
                                 </constraints>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="390" translatesAutoresizingMaskIntoConstraints="NO" id="pV5-ai-NpG">
-                                <rect key="frame" x="38" y="218" width="394" height="28"/>
+                                <rect key="frame" x="38" y="222" width="394" height="28"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="This value will be ignored when you manually start the app below this battery capacity." id="k65-yi-85l">
                                     <font key="font" metaFont="message" size="11"/>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
