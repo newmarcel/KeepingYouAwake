@@ -11,7 +11,6 @@
 
 // User Default Keys
 NSString * const KYAUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch";
-NSString * const KYAUserDefaultsKeyNotificationsEnabled = @"info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled";
 NSString * const KYAUserDefaultsKeyDefaultTimeInterval = @"info.marcel-dierkes.KeepingYouAwake.TimeInterval";
 NSString * const KYAUserDefaultsKeyAllowDisplaySleep = @"info.marcel-dierkes.KeepingYouAwake.AllowDisplaySleep";
 NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled = @"info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled";
@@ -22,7 +21,7 @@ NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold = @"info.marcel-dier
 NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dierkes.KeepingYouAwake.PreReleaseUpdatesEnabled";
 
 @implementation NSUserDefaults (Keys)
-@dynamic kya_activateOnLaunch, kya_defaultTimeInterval, kya_notificationsEnabled;
+@dynamic kya_activateOnLaunch, kya_defaultTimeInterval;
 @dynamic kya_allowDisplaySleep;
 @dynamic kya_menuBarIconHighlightDisabled;
 @dynamic kya_batteryCapacityThresholdEnabled, kya_batteryCapacityThreshold;
@@ -39,18 +38,6 @@ NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dier
 - (void)setKya_activateOnLaunch:(BOOL)activateOnLaunch
 {
     [self setBool:activateOnLaunch forKey:KYAUserDefaultsKeyActivateOnLaunch];
-}
-
-#pragma mark - Notifications Enabled
-
-- (BOOL)kya_areNotificationsEnabled
-{
-    return [self boolForKey:KYAUserDefaultsKeyNotificationsEnabled];
-}
-
-- (void)setKya_notificationsEnabled:(BOOL)notificationsEnabled
-{
-    [self setBool:notificationsEnabled forKey:KYAUserDefaultsKeyNotificationsEnabled];
 }
 
 #pragma mark - Default Time Interval
