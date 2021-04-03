@@ -81,7 +81,7 @@
         KYAUserNotificationAuthorizationStatus status;
         if(error != nil)
         {
-            KYALog(@"Failed to request notification access %@", error.userInfo);
+            KYALog(@"Failed to request notification access: %@", error.userInfo);
             status = KYAUserNotificationAuthorizationStatusDenied;
         }
         else if(granted == YES)
@@ -150,7 +150,10 @@
                                                         content:content
                                                         trigger:nil];
     [self.center addNotificationRequest:request withCompletionHandler:^(NSError *error) {
-        KYALog(@"Added notification request. (Error? %@)", error.userInfo);
+        if(error != nil)
+        {
+            KYALog(@"Failed to add notification request. %@", error.userInfo);
+        }
     }];
 }
 
