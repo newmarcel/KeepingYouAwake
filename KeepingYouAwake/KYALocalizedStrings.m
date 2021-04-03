@@ -16,12 +16,6 @@
 
 #pragma mark -
 
-#define KYA_L10N_ALLOWING_YOUR_MAC_TO_GO_TO_SLEEP NSLocalizedString(@"Allowing your Mac to go to sleep…", @"Allowing your Mac to go to sleep…")
-#define KYA_L10N_PREVENTING_YOUR_MAC_FROM_GOING_TO_SLEEP NSLocalizedString(@"Preventing your Mac from going to sleep…", @"Preventing your Mac from going to sleep…")
-
-#define KYA_L10N_FORMAT_PREVENTING_SLEEP_FOR_REMAINING_TIME NSLocalizedString(@"Preventing your Mac from going to sleep for\n%@…", @"Preventing your Mac from going to sleep for\n%@…")
-#define KYA_L10N_PREVENTING_SLEEP_FOR_REMAINING_TIME(_str) [NSString stringWithFormat:KYA_L10N_FORMAT_PREVENTING_SLEEP_FOR_REMAINING_TIME, (NSString *)(_str)]
-
 #define KYA_L10N_ACTIVATE_FOR_DURATION NSLocalizedString(@"Activate for Duration", @"Activate for Duration")
 
 #define KYA_L10N_IS_DEFAULT_SUFFIX NSLocalizedString(@"(Default)", @"(Default)")
@@ -29,6 +23,21 @@
 #define KYA_L10N_DURATION_ALREADY_ADDED NSLocalizedString(@"This duration has already been added.", @"This duration has already been added.")
 
 #define KYA_L10N_DURATION_INVALID_INPUT NSLocalizedString(@"The entered duration is invalid. Please try again.", @"The entered duration is invalid. Please try again.")
+
+#pragma mark - Notifications
+
+#define KYA_L10N_PREVENTING_SLEEP_INDEFINITELY_TITLE NSLocalizedString(@"Preventing Sleep", @"Preventing Sleep")
+
+#define KYA_L10N_PREVENTING_SLEEP_INDEFINITELY_BODY_TEXT NSLocalizedString(@"You can still manually enable sleep mode for your Mac.", @"You can still manually enable sleep mode for your Mac.")
+
+#define KYA_L10N_FORMAT_PREVENTING_SLEEP_FOR_TIME_TITLE NSLocalizedString(@"Preventing Sleep for %@", @"Preventing Sleep for %@")
+#define KYA_L10N_PREVENTING_SLEEP_FOR_TIME_TITLE(_str) [NSString stringWithFormat:KYA_L10N_FORMAT_PREVENTING_SLEEP_FOR_TIME_TITLE, (NSString *)(_str)]
+
+#define KYA_L10N_PREVENTING_SLEEP_FOR_TIME_BODY_TEXT NSLocalizedString(@"Afterwards your Mac will automatically go to sleep again when unused.", @"Afterwards your Mac will automatically go to sleep again when unused.")
+
+#define KYA_L10N_ALLOWING_SLEEP_TITLE NSLocalizedString(@"Allowing Sleep", @"Allowing Sleep")
+
+#define KYA_L10N_ALLOWING_SLEEP_BODY_TEXT NSLocalizedString(@"Your Mac will automatically go to sleep when unused.", @"Your Mac will automatically go to sleep when unused.")
 
 #pragma mark - Preferences
 

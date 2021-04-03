@@ -4,6 +4,12 @@
 /* Activate for Duration */
 "Activate for Duration" = "Aktivierungsdauer";
 
+/* Afterwards your Mac will automatically go to sleep again when unused. */
+"Afterwards your Mac will automatically go to sleep again when unused." = "Dein Mac versetzt sich danach bei Nichtbenutzung wieder selbständig in den Ruhezustand.";
+
+/* Allowing Sleep */
+"Allowing Sleep" = "Der Ruhezustand wird erlaubt";
+
 /* Cancel */
 "Cancel" = "Abbrechen";
 
@@ -25,6 +31,12 @@
 /* OK */
 "OK" = "OK";
 
+/* Preventing Sleep */
+"Preventing Sleep" = "Der Ruhezustand wird verhindert";
+
+/* Preventing Sleep for %@ */
+"Preventing Sleep for %@" = "Der Ruhezustand wird für %@ verhindert";
+
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Beenden, wenn die Aktivierungsdauer abgelaufen ist";
 
@@ -39,3 +51,10 @@
 
 /* This duration has already been added. */
 "This duration has already been added." = "Diese Dauer wurde bereits hinzugefügt.";
+
+/* You can still manually enable sleep mode for your Mac. */
+"You can still manually enable sleep mode for your Mac." = "Du kannst deinen Mac weiterhin manuell in den Ruhezustand versetzen.";
+
+/* Your Mac will automatically go to sleep when unused. */
+"Your Mac will automatically go to sleep when unused." = "Dein Mac versetzt sich bei Nichtbenutzung selbständig in den Ruhezustand.";
+

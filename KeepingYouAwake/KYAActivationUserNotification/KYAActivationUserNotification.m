@@ -33,20 +33,24 @@ NSString * const KYAActivationUserNotificationIdentifier = @"KYAActivationIdenti
         {
             if(fireDate != nil)
             {
-                Auto remainingTimeString = fireDate.kya_localizedRemainingTimeWithoutPhrase;
-                Auto text = KYA_L10N_PREVENTING_SLEEP_FOR_REMAINING_TIME(remainingTimeString);
+                Auto time = fireDate.kya_localizedRemainingTimeWithoutPhrase;
+                Auto text = KYA_L10N_PREVENTING_SLEEP_FOR_TIME_TITLE(time);
                 [self setLocalizedTitleWithKey:text arguments:nil];
+                [self setLocalizedBodyTextWithKey:KYA_L10N_PREVENTING_SLEEP_FOR_TIME_BODY_TEXT
+                                        arguments:nil];
             }
             else
             {
-                Auto text = KYA_L10N_PREVENTING_YOUR_MAC_FROM_GOING_TO_SLEEP;
-                [self setLocalizedTitleWithKey:text arguments:nil];
+                [self setLocalizedTitleWithKey:KYA_L10N_PREVENTING_SLEEP_INDEFINITELY_TITLE
+                                     arguments:nil];
+                [self setLocalizedBodyTextWithKey:KYA_L10N_PREVENTING_SLEEP_INDEFINITELY_BODY_TEXT
+                                        arguments:nil];
             }
         }
         else
         {
-            Auto text = KYA_L10N_ALLOWING_YOUR_MAC_TO_GO_TO_SLEEP;
-            [self setLocalizedTitleWithKey:text arguments:nil];
+            [self setLocalizedTitleWithKey:KYA_L10N_ALLOWING_SLEEP_TITLE arguments:nil];
+            [self setLocalizedBodyTextWithKey:KYA_L10N_ALLOWING_SLEEP_BODY_TEXT arguments:nil];
         }
     }
     return self;
