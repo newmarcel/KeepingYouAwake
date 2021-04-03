@@ -4,9 +4,6 @@
 /* Activate for Duration */
 "Activate for Duration" = "Aktifkan untuk";
 
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "Biarkan Mac ke mode tidur…";
-
 /* Cancel */
 "Cancel" = "Batal";
 
@@ -27,12 +24,6 @@
 
 /* OK */
 "OK" = "OK";
-
-/* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for\n%@…" = "Mencegah Mac Anda tidak mengaktifkan mode tidur untuk\n%@…";
-
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "Mencegah Mac Anda ke mode tidur…";
 
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Keluar saat durasi aktivasi berakhir";

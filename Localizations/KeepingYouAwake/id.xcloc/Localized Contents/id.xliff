@@ -34,11 +34,6 @@
         <source>Allow the display to sleep</source>
         <note>Allow the display to sleep</note>
       </trans-unit>
-      <trans-unit id="Allowing your Mac to go to sleep…" xml:space="preserve">
-        <source>Allowing your Mac to go to sleep…</source>
-        <target>Biarkan Mac ke mode tidur…</target>
-        <note>Allowing your Mac to go to sleep…</note>
-      </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
         <source>Cancel</source>
         <target>Batal</target>
@@ -82,18 +77,6 @@ Klik kanan untuk menampilkan menu</target>
         <source>OK</source>
         <target>OK</target>
         <note>OK</note>
-      </trans-unit>
-      <trans-unit id="Preventing your Mac from going to sleep for&#10;%@…" xml:space="preserve">
-        <source>Preventing your Mac from going to sleep for
-%@…</source>
-        <target>Mencegah Mac Anda tidak mengaktifkan mode tidur untuk
-%@…</target>
-        <note>Preventing your Mac from going to sleep for\n%@…</note>
-      </trans-unit>
-      <trans-unit id="Preventing your Mac from going to sleep…" xml:space="preserve">
-        <source>Preventing your Mac from going to sleep…</source>
-        <target>Mencegah Mac Anda ke mode tidur…</target>
-        <note>Preventing your Mac from going to sleep…</note>
       </trans-unit>
       <trans-unit id="Quit when activation duration is over" xml:space="preserve">
         <source>Quit when activation duration is over</source>

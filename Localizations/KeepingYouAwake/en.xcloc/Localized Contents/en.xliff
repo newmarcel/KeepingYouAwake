@@ -37,11 +37,6 @@
         <target>Allow the display to sleep</target>
         <note>Allow the display to sleep</note>
       </trans-unit>
-      <trans-unit id="Allowing your Mac to go to sleep…" xml:space="preserve">
-        <source>Allowing your Mac to go to sleep…</source>
-        <target>Allowing your Mac to go to sleep…</target>
-        <note>Allowing your Mac to go to sleep…</note>
-      </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
         <source>Cancel</source>
         <target>Cancel</target>
@@ -85,18 +80,6 @@ Right click to show menu</target>
         <source>OK</source>
         <target>OK</target>
         <note>OK</note>
-      </trans-unit>
-      <trans-unit id="Preventing your Mac from going to sleep for&#10;%@…" xml:space="preserve">
-        <source>Preventing your Mac from going to sleep for
-%@…</source>
-        <target>Preventing your Mac from going to sleep for
-%@…</target>
-        <note>Preventing your Mac from going to sleep for\n%@…</note>
-      </trans-unit>
-      <trans-unit id="Preventing your Mac from going to sleep…" xml:space="preserve">
-        <source>Preventing your Mac from going to sleep…</source>
-        <target>Preventing your Mac from going to sleep…</target>
-        <note>Preventing your Mac from going to sleep…</note>
       </trans-unit>
       <trans-unit id="Quit when activation duration is over" xml:space="preserve">
         <source>Quit when activation duration is over</source>

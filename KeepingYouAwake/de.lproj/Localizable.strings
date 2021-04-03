@@ -4,9 +4,6 @@
 /* Activate for Duration */
 "Activate for Duration" = "Aktivierungsdauer";
 
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "Ruhezustand erlauben…";
-
 /* Cancel */
 "Cancel" = "Abbrechen";
 
@@ -27,12 +24,6 @@
 
 /* OK */
 "OK" = "OK";
-
-/* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for\n%@…" = "Ruhezustand für %@ verhindern…";
-
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "Ruhezustand verhindern…";
 
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Beenden, wenn die Aktivierungsdauer abgelaufen ist";

@@ -4,9 +4,6 @@
 /* Activate for Duration */
 "Activate for Duration" = "Aktivierungsdauer";
 
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "Разрешение вашему Mac идти спать…";
-
 /* Cancel */
 "Cancel" = "Отмена";
 
@@ -27,12 +24,6 @@
 
 /* OK */
 "OK" = "ОК";
-
-/* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for\n%@…" = "Предотвратить сон после %@…";
-
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "Предотвращение вашего Mac от сна…";
 
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Выход по окончании активации";

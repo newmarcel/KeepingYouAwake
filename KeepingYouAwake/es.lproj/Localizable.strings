@@ -1,6 +1,3 @@
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "Permitiendo a tu Mac ponerse a dormir…";
-
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Haz click para permitir que Mac duerma\nClick derecho para mostar el menú";
 
@@ -9,9 +6,3 @@
 
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Desactivar resaltar el icono de la barra de menú";
-
-/* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for\n%@…" = "Impidiendo a tu Mac ponerse a dormir durante…";
-
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "Impidiendo a tu Mac ponerse a dormir…";
