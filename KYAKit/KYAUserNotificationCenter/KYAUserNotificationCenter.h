@@ -37,7 +37,7 @@ API_AVAILABLE(macos(11.0))
 @property (copy, nonatomic) NSString *identifier;
 @property (copy, nonatomic, nullable) NSString *title; // use the localized setter instead
 @property (copy, nonatomic, nullable) NSString *subtitle; // use the localized setter instead
-@property (copy, nonatomic, nullable) NSString *bodyText;
+@property (copy, nonatomic, nullable) NSString *bodyText; // use the localized setter instead
 @property (copy, nonatomic, nullable) NSDictionary *userInfo;
 
 - (void)setLocalizedTitleWithKey:(NSString *)key arguments:(nullable NSArray *)arguments;
