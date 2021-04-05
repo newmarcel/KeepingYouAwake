@@ -1110,6 +1110,10 @@
 				INFOPLIST_FILE = KYAKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LOCALIZED_STRING_MACRO_NAMES = (
+					"$(inherited)",
+					KYA_LOCALIZED_STRING,
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KYAKit";
@@ -1142,6 +1146,10 @@
 				INFOPLIST_FILE = KYAKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LOCALIZED_STRING_MACRO_NAMES = (
+					"$(inherited)",
+					KYA_LOCALIZED_STRING,
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KYAKit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
