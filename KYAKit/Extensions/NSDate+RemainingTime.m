@@ -27,14 +27,16 @@
 
 - (NSString *)kya_localizedRemainingTime
 {
-    return [[self dateComponentsFormatter] stringFromDate:[NSDate date] toDate:self];
+    Auto startDate = [NSDate dateWithTimeIntervalSinceNow:-1];
+    return [[self dateComponentsFormatter] stringFromDate:startDate toDate:self];
 }
 
 - (NSString *)kya_localizedRemainingTimeWithoutPhrase
 {
     Auto formatter = [self dateComponentsFormatter];
     formatter.includesTimeRemainingPhrase = NO;
-    Auto remainingTimeString = [formatter stringFromDate:[NSDate date] toDate:self];
+    Auto startDate = [NSDate dateWithTimeIntervalSinceNow:-1];
+    Auto remainingTimeString = [formatter stringFromDate:startDate toDate:self];
     formatter.includesTimeRemainingPhrase = YES;
     
     return remainingTimeString;

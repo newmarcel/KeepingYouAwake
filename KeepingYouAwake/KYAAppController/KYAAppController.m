@@ -12,12 +12,13 @@
 #import "KYAStatusItemController.h"
 #import "KYABatteryCapacityThreshold.h"
 #import "KYAActivationDurationsMenuController.h"
+#import "KYAActivationUserNotification.h"
 
 // Deprecated!
 #define KYA_MINUTES(m) (m * 60.0f)
 #define KYA_HOURS(h) (h * 3600.0f)
 
-@interface KYAAppController () <NSUserNotificationCenterDelegate, KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate>
+@interface KYAAppController () <KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
 @property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
 @property (nonatomic) KYAActivationDurationsMenuController *menuController;
@@ -45,6 +46,8 @@
 
         self.statusItemController = [KYAStatusItemController new];
         self.statusItemController.delegate = self;
+        
+        [self configureUserNotificationCenter];
 
         // Check activate on launch state
         if([self shouldActivateOnLaunch])
@@ -76,8 +79,6 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-
-    NSUserNotificationCenter.defaultUserNotificationCenter.delegate = self;
 
     [self.menu setSubmenu:self.menuController.menu
                   forItem:self.activationDurationsMenuItem];
@@ -119,6 +120,18 @@
     [defaults synchronize];
 }
 
+#pragma mark - User Notification Center
+
+- (void)configureUserNotificationCenter
+{
+    if(@available(macOS 11.0, *))
+    {
+        Auto center = KYAUserNotificationCenter.sharedCenter;
+        [center requestAuthorizationIfUndetermined];
+        [center clearAllDeliveredNotifications];
+    }
+}
+
 #pragma mark - Sleep Wake Timer Handling
 
 - (void)activateTimer
@@ -144,12 +157,12 @@
     }
 
     KYA_AUTO timerCompletion = ^(BOOL cancelled) {
-        // Post notifications
-        if([defaults kya_areNotificationsEnabled])
+        // Post deactivation notification
+        if(@available(macOS 11.0, *))
         {
-            NSUserNotification *n = [NSUserNotification new];
-            n.informativeText = KYA_L10N_ALLOWING_YOUR_MAC_TO_GO_TO_SLEEP;
-            [NSUserNotificationCenter.defaultUserNotificationCenter scheduleNotification:n];
+            Auto notification = [[KYAActivationUserNotification alloc] initWithFireDate:nil
+                                                                             activating:NO];
+            [KYAUserNotificationCenter.sharedCenter postNotification:notification];
         }
 
         // Quit on timer expiration
@@ -160,22 +173,13 @@
     };
     [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:timerCompletion];
 
-    // Post notifications
-    if([defaults kya_areNotificationsEnabled])
+    // Post activation notification
+    if(@available(macOS 11.0, *))
     {
-        NSUserNotification *n = [NSUserNotification new];
-
-        if(timeInterval == KYASleepWakeTimeIntervalIndefinite)
-        {
-            n.informativeText = KYA_L10N_PREVENTING_YOUR_MAC_FROM_GOING_TO_SLEEP;
-        }
-        else
-        {
-            KYA_AUTO remainingTimeString = self.sleepWakeTimer.fireDate.kya_localizedRemainingTimeWithoutPhrase;
-            n.informativeText = KYA_L10N_PREVENTING_SLEEP_FOR_REMAINING_TIME(remainingTimeString);
-        }
-
-        [NSUserNotificationCenter.defaultUserNotificationCenter scheduleNotification:n];
+        Auto fireDate = self.sleepWakeTimer.fireDate;
+        Auto notification = [[KYAActivationUserNotification alloc] initWithFireDate:fireDate
+                                                                         activating:YES];
+        [KYAUserNotificationCenter.sharedCenter postNotification:notification];
     }
 }
 
@@ -188,13 +192,6 @@
     {
         [self.sleepWakeTimer invalidate];
     }
-}
-
-#pragma mark - User Notification Center Delegate
-
-- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification
-{
-    return YES;
 }
 
 #pragma mark - Battery Status

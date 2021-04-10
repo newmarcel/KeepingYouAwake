@@ -1,6 +1,3 @@
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "Autoriser la mise en veille du Mac…";
-
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Cliquer pour autoriser la veille\nClic droit pour le menu";
 
@@ -10,11 +7,3 @@
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Désactiver la surbrillance de l'icône de la barre de menu";
 
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Activer l'intégration avec le Centre de notification (beta)";
-
-/* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for\n%@…" = "Empêcher la mise en veille du Mac pour %@…";
-
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "Empêcher la mise en veille du Mac";

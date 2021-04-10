@@ -16,6 +16,9 @@
 /* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK"; */
 "Ax6-W4-7bK.title" = "Deaktivieren, wenn der Ladestand der Batterie niedriger ist als";
 
+/* Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "bPs-M9-Azc"; */
+"bPs-M9-Azc.title" = "Mitteilungseinstellungen …";
+
 /* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "bV3-BW-JOK"; */
 "bV3-BW-JOK.title" = "Abbrechen";
 

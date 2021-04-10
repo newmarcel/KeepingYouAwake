@@ -20,9 +20,12 @@ FOUNDATION_EXPORT const unsigned char KYAKitVersionString[];
 #import <KYAKit/KYAEvent.h>
 #import <KYAKit/KYAEventHandler.h>
 #import <KYAKit/KYASleepWakeTimer.h>
+#import <KYAKit/KYAUserNotificationCenter.h>
 
 #import <KYAKit/NSApplication+KYALauncher.h>
 #import <KYAKit/NSBundle+KYAUpdateFeed.h>
 #import <KYAKit/NSBundle+KYAVersion.h>
 #import <KYAKit/NSDate+RemainingTime.h>
 #import <KYAKit/NSUserDefaults+Keys.h>
+#import <KYAKit/NSURL+KYAUserNotificationCenter.h>
+#import <KYAKit/NSWorkspace+KYAUserNotificationCenter.h>

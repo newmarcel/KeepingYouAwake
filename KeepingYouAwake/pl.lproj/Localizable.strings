@@ -1,6 +1,3 @@
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "Zezwolono na przejście w tryb uśpienia…";
-
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Kliknij aby zezwolić na uśpienie Kliknij prawym aby pokazać menu";
 
@@ -10,11 +7,3 @@
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Wyłącz podświetlenie ikony w menu";
 
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Włącz eksperymentalną integrację z powiadomieniami";
-
-/* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for\n%@…" = "Zapobiegam uśpieniu prez %@…";
-
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "Włączono zapobieganie przejścia w tryb uśpienia…";

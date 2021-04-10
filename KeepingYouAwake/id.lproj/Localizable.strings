@@ -4,9 +4,6 @@
 /* Activate for Duration */
 "Activate for Duration" = "Aktifkan untuk";
 
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "Biarkan Mac ke mode tidur…";
-
 /* Cancel */
 "Cancel" = "Batal";
 
@@ -25,17 +22,8 @@
 /* Do you really want to reset the activation durations to the default values? */
 "Do you really want to reset the activation durations to the default values?" = "Apakah Anda benar-benar ingin mengatur ulang durasi aktivasi ke nilai standar?";
 
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Aktifkan integrasi Pusat Pemberitahuan eksperimental";
-
 /* OK */
 "OK" = "OK";
-
-/* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for\n%@…" = "Mencegah Mac Anda tidak mengaktifkan mode tidur untuk\n%@…";
-
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "Mencegah Mac Anda ke mode tidur…";
 
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Keluar saat durasi aktivasi berakhir";
@@ -51,3 +39,4 @@
 
 /* This duration has already been added. */
 "This duration has already been added." = "Durasi ini telah ditambahkan.";
+

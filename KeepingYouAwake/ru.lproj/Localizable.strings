@@ -4,9 +4,6 @@
 /* Activate for Duration */
 "Activate for Duration" = "Aktivierungsdauer";
 
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "Разрешение вашему Mac идти спать…";
-
 /* Cancel */
 "Cancel" = "Отмена";
 
@@ -25,17 +22,8 @@
 /* Do you really want to reset the activation durations to the default values? */
 "Do you really want to reset the activation durations to the default values?" = "Вы уверены, что хотите сбросить список продолжительности активации на исходные записи?";
 
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Экспериментальная интеграция с центром сообщений";
-
 /* OK */
 "OK" = "ОК";
-
-/* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for\n%@…" = "Предотвратить сон после %@…";
-
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "Предотвращение вашего Mac от сна…";
 
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Выход по окончании активации";
@@ -51,3 +39,4 @@
 
 /* This duration has already been added. */
 "This duration has already been added." = "Эта продолжительность уже была добавлена.";
+

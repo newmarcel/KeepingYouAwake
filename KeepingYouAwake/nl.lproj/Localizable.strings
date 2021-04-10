@@ -1,6 +1,3 @@
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "Sluimerstand is toegestaan…";
-
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Klik om de sluimerstand toe te staan\nRechtsklik om het menu te tonen";
 
@@ -10,11 +7,3 @@
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Verberg de markeringskleur in het statusmenu";
 
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Gebruik experimentele integratie met Berichtencentrum";
-
-/* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for\n%@…" = "Sluimerstand wordt voor %@ verhinderd…";
-
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "Sluimerstand wordt verhinderd…";

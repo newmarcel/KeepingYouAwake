@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 // User Default Keys
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyActivateOnLaunch;
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyNotificationsEnabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
@@ -27,11 +26,6 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
  Returns YES if the sleep wake timer should be activated on app launch.
  */
 @property (nonatomic, getter = kya_isActivatedOnLaunch) BOOL kya_activateOnLaunch;
-
-/**
- Returns YES if user notifications should be displayed.
- */
-@property (nonatomic, getter = kya_areNotificationsEnabled) BOOL kya_notificationsEnabled;
 
 /**
  Returns the default time interval for the sleep wake timer.

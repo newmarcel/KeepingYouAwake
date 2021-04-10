@@ -1,6 +1,3 @@
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "允许你的 Mac 进入睡眠模式...";
-
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "点按以允许进入睡眠模式 右击以显示菜单";
 
@@ -10,8 +7,3 @@
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "禁用菜单栏高亮";
 
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Enable experimental Notification Center integration";
-
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "防止你的 Mac 进入睡眠模式…";
