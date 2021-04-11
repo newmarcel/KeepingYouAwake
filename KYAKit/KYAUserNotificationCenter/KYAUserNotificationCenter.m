@@ -47,7 +47,7 @@
 
 #pragma mark - Authorization Status
 
-- (void)getAuthorizationStatusWithCompletion:(void(NS_NOESCAPE ^)(KYAUserNotificationAuthorizationStatus))completion
+- (void)getAuthorizationStatusWithCompletion:(void(^)(KYAUserNotificationAuthorizationStatus))completion
 {
     NSParameterAssert(completion);
     
@@ -74,7 +74,7 @@
     }];
 }
 
-- (void)requestAuthorizationWithCompletion:(NS_NOESCAPE KYAUserNotificationsAuthorizationCompletion)completion
+- (void)requestAuthorizationWithCompletion:(KYAUserNotificationsAuthorizationCompletion)completion
 {
     UNAuthorizationOptions options = UNAuthorizationOptionAlert | UNAuthorizationOptionProvisional;
     [self.center requestAuthorizationWithOptions:options completionHandler:^(BOOL granted, NSError *error) {
