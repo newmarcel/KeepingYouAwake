@@ -147,7 +147,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
       </trans-unit>
       <trans-unit id="OT5-lg-IM6.title" xml:space="preserve">
         <source>Preferences…</source>
-        <target>Einstellungen…</target>
+        <target>Einstellungen …</target>
         <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "OT5-lg-IM6";</note>
       </trans-unit>
     </body>
@@ -159,7 +159,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
     <body>
       <trans-unit id="2s2-Ei-lnG.title" xml:space="preserve">
         <source>Reset…</source>
-        <target>Zurücksetzen…</target>
+        <target>Zurücksetzen …</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "2s2-Ei-lnG";</note>
       </trans-unit>
       <trans-unit id="5bL-cI-YIY.title" xml:space="preserve">
@@ -263,7 +263,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
       </trans-unit>
       <trans-unit id="X2a-5O-EuD.title" xml:space="preserve">
         <source>Reset…</source>
-        <target>Zurücksetzen…</target>
+        <target>Zurücksetzen …</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "X2a-5O-EuD";</note>
       </trans-unit>
       <trans-unit id="bPs-M9-Azc.title" xml:space="preserve">
