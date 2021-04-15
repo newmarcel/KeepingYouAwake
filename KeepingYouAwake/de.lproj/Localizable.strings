@@ -4,8 +4,11 @@
 /* Activate for Duration */
 "Activate for Duration" = "Aktivierungsdauer";
 
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "Ruhezustand erlauben…";
+/* Afterwards your Mac will automatically go to sleep again when unused. */
+"Afterwards your Mac will automatically go to sleep again when unused." = "Dein Mac versetzt sich danach bei Nichtbenutzung wieder selbständig in den Ruhezustand.";
+
+/* Allowing Sleep */
+"Allowing Sleep" = "Der Ruhezustand wird erlaubt";
 
 /* Cancel */
 "Cancel" = "Abbrechen";
@@ -25,20 +28,14 @@
 /* Do you really want to reset the activation durations to the default values? */
 "Do you really want to reset the activation durations to the default values?" = "Soll die Aktivierungsdauer-Liste wirklich auf die ursprünglichen Einträge zurückgesetzt werden?";
 
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Experimentelle Integration mit der Mitteilungszentrale einschalten";
-
-/* Indefinitely */
-"Indefinitely" = "Unbegrenzt";
-
 /* OK */
 "OK" = "OK";
 
-/* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for\n%@…" = "Ruhezustand für %@ verhindern…";
+/* Preventing Sleep */
+"Preventing Sleep" = "Der Ruhezustand wird verhindert";
 
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "Ruhezustand verhindern…";
+/* Preventing Sleep for %@ */
+"Preventing Sleep for %@" = "Der Ruhezustand wird für %@ verhindert";
 
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Beenden, wenn die Aktivierungsdauer abgelaufen ist";
@@ -55,6 +52,9 @@
 /* This duration has already been added. */
 "This duration has already been added." = "Diese Dauer wurde bereits hinzugefügt.";
 
-/* Version */
-"Version" = "Version";
+/* You can still manually enable sleep mode for your Mac. */
+"You can still manually enable sleep mode for your Mac." = "Du kannst deinen Mac weiterhin manuell in den Ruhezustand versetzen.";
+
+/* Your Mac will automatically go to sleep when unused. */
+"Your Mac will automatically go to sleep when unused." = "Dein Mac versetzt sich bei Nichtbenutzung selbständig in den Ruhezustand.";
 

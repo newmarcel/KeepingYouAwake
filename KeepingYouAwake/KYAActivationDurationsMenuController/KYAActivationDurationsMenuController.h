@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "KYAActivationDurationsController.h"
+#import <KYAKit/KYAKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -1,11 +1,9 @@
 SCHEME = KeepingYouAwake
 WORKSPACE = KeepingYouAwake.xcworkspace
-VERSION = 1.6.0
+VERSION = 1.6.1
 
 OUTPUT_DIR = dist
 VENDOR_DIR = Vendor
-
-FASTLANE = FASTLANE_SKIP_UPDATE_CHECK=1 FASTLANE_DISABLE_ANIMATION=1 fastlane
 
 default: dist
 
@@ -16,16 +14,7 @@ clean:
 $(VENDOR_DIR):
 	$(MAKE) -C $(VENDOR_DIR)
 
-$(OUTPUT_DIR)/$(SCHEME).app: $(VENDOR_DIR)
-	$(MAKE) $(VENDOR_DIR)
-	$(FASTLANE) gym \
-	--workspace $(WORKSPACE) \
-	--scheme $(SCHEME) \
-	--output_directory $(OUTPUT_DIR) \
-	--buildlog_path $(OUTPUT_DIR) \
-	--archive_path $(OUTPUT_DIR)/$(SCHEME).xcarchive
-
-$(OUTPUT_DIR)/$(SCHEME)-$(VERSION).zip: $(OUTPUT_DIR)/$(SCHEME).app
+$(OUTPUT_DIR)/$(SCHEME)-$(VERSION).zip:
 	@echo "Exporting $(OUTPUT_DIR)/$(SCHEME)-$(VERSION).zip..."
 	@ditto -c -k --sequesterRsrc --keepParent $(OUTPUT_DIR)/$(SCHEME).app $(OUTPUT_DIR)/$(SCHEME)-$(VERSION).zip
 

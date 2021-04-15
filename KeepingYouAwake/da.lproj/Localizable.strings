@@ -1,6 +1,3 @@
-/* Allowing your Mac to go to sleep… */
-"Allowing your Mac to go to sleep…" = "Tillad din Mac at gå på vågeblus…";
-
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Klik for at tillade vågeblus\nHøjreklik for at vise menu";
 
@@ -9,19 +6,4 @@
 
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Deaktiver markeringsfarve ved Menulinje-ikon";
-
-/* Enable experimental Notification Center integration */
-"Enable experimental Notification Center integration" = "Aktivere eksperimentel Meddelelsescenter integration";
-
-/* Indefinitely */
-"Indefinitely" = "Ubestemt tid";
-
-/* Preventing your Mac from going to sleep for\n%@… */
-"Preventing your Mac from going to sleep for\n%@…" = "Forhindre din Mac fra vågeblus i %@…";
-
-/* Preventing your Mac from going to sleep… */
-"Preventing your Mac from going to sleep…" = "Forhindre din Mac fra at gå på vågeblus…";
-
-/* Version */
-"Version" = "Version";
 

@@ -10,8 +10,6 @@
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
 #import "KYAPreference.h"
-#import "KYABatteryStatus.h"
-#import "NSUserDefaults+Keys.h"
 #import "KYABatteryCapacityThreshold.h"
 
 @interface KYAAdvancedPreferencesViewController () <NSTableViewDataSource, NSTableViewDelegate>
@@ -44,10 +42,6 @@
 - (void)configureAdvancedPreferences
 {
     KYA_AUTO preferences = [NSMutableArray new];
-
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_ENABLE_EXPERIMENTAL_NOTIFICATION_CENTER_INTEGRATION
-                                                    defaultsKey:KYAUserDefaultsKeyNotificationsEnabled
-                            ]];
 
     [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_DISABLE_MENU_BAR_ICON_HIGHLIGHT_COLOR
                                                     defaultsKey:KYAUserDefaultsKeyMenuBarIconHighlightDisabled

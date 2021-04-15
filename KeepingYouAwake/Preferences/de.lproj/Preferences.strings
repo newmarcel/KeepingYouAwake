@@ -1,5 +1,5 @@
 /* Class = "NSButtonCell"; title = "Reset…"; ObjectID = "2s2-Ei-lnG"; */
-"2s2-Ei-lnG.title" = "Zurücksetzen…";
+"2s2-Ei-lnG.title" = "Zurücksetzen …";
 
 /* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
 "5bL-cI-YIY.title" = "Erweitert";
@@ -15,6 +15,9 @@
 
 /* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK"; */
 "Ax6-W4-7bK.title" = "Deaktivieren, wenn der Ladestand der Batterie niedriger ist als";
+
+/* Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "bPs-M9-Azc"; */
+"bPs-M9-Azc.title" = "Mitteilungseinstellungen …";
 
 /* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "bV3-BW-JOK"; */
 "bV3-BW-JOK.title" = "Abbrechen";
@@ -98,7 +101,7 @@
 "W3H-iV-s6I.title" = "Jetzt suchen";
 
 /* Class = "NSButtonCell"; title = "Reset…"; ObjectID = "X2a-5O-EuD"; */
-"X2a-5O-EuD.title" = "Zurücksetzen…";
+"X2a-5O-EuD.title" = "Zurücksetzen …";
 
 /* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU"; */
 "x6s-XD-lBU.title" = "Öffnet die App automatisch beim Start deines Macs.";
