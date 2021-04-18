@@ -6,6 +6,19 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.6.1beta1: Notifications]]></title>
+			<description><![CDATA[<ul>
+<li>added support for notifications, use <code>System Preferences</code> to manage notification settings (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/164">#164</a>)
+<ul>
+<li>please note, this feature is only available on macOS 11 or newer; the previous experimental notifications support has been removed</li>
+</ul></li>
+</ul>
+]]></description>
+			<pubDate>Sun, 18 Apr 2021 08:15:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.1beta1/KeepingYouAwake-1.6.1beta1.zip" length="3615605" type="application/octet-stream" sparkle:version="1060100" sparkle:shortVersionString="1.6.1beta1">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.6.0: Big Sur Update]]></title>
 			<description><![CDATA[<ul>
 <li>raised minimum deployment target to macOS Sierra (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/142">#142</a>)</li>
