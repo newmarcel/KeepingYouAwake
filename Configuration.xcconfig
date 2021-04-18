@@ -9,8 +9,8 @@
 MACOSX_DEPLOYMENT_TARGET = 10.12
 PRODUCT_BUNDLE_IDENTIFIER = info.marcel-dierkes.KeepingYouAwake
 
-MARKETING_VERSION = 1.6.1beta1
-CURRENT_PROJECT_VERSION = 1060100
+MARKETING_VERSION = 1.6.1beta2
+CURRENT_PROJECT_VERSION = 1060101
 
 KYA_COPYRIGHT_TEXT = Copyright © 2014 – 2021 Marcel Dierkes. All rights reserved.
 KYA_APPCAST_FEED_URL = newmarcel.github.io/KeepingYouAwake/appcast.xml
