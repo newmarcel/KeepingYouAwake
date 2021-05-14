@@ -1,14 +1,35 @@
 /* Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY"; */
 "5bL-cI-YIY.title" = "Avancées";
 
+/* Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu"; */
+"8V0-Sq-Cdu.title" = "Mises à jour";
+
 /* Class = "NSWindow"; title = "KeepingYouAwake – Preferences"; ObjectID = "AvX-7Q-Bvc"; */
 "AvX-7Q-Bvc.title" = "KeepingYouAwake – Préférences";
 
 /* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK"; */
 "Ax6-W4-7bK.title" = "Désactiver quand la batterie est inférieure à ";
 
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "bV3-BW-JOK"; */
+"bV3-BW-JOK.title" = "Annuler";
+
+/* Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "d0c-1Y-p5i"; */
+"d0c-1Y-p5i.title" = "Ajouter la durée";
+
+/* Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[0] = "Remove"; ObjectID = "DE6-qp-FZU"; */
+"DE6-qp-FZU.ibShadowedToolTips[0]" = "Enlever";
+
+/* Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[1] = "Add"; ObjectID = "DE6-qp-FZU"; */
+"DE6-qp-FZU.ibShadowedToolTips[1]" = "Ajouter";
+
+/* Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "DfZ-Gt-rge"; */
+"DfZ-Gt-rge.title" = "Secondes";
+
 /* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo"; */
 "EXv-vC-wyo.title" = "Rétablir les réglages par défaut";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "f4N-sw-1MQ"; */
+"f4N-sw-1MQ.title" = "Enlever";
 
 /* Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "fiQ-AT-I7u"; */
 "fiQ-AT-I7u.title" = "10 %";
@@ -27,6 +48,9 @@
 
 /* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r"; */
 "IOU-Hs-S4r.title" = "Activer au lancement";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "jAF-7U-kDS"; */
+"jAF-7U-kDS.title" = "Cellule de texte";
 
 /* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l"; */
 "k65-yi-85l.title" = "Ce réglage sera ignoré si vous lancez l'application manuellement et que la batterie se trouve en dessous de cette valeur.";
@@ -48,6 +72,9 @@
 
 /* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "Rb3-Sm-byr"; */
 "Rb3-Sm-byr.title" = "90 %";
+
+/* Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "rEp-oa-7IA"; */
+"rEp-oa-7IA.title" = "Heures";
 
 /* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B"; */
 "S6p-h0-H5B.title" = "Empêche la mise en veille dès le lancement de KeepingYouAwake.";

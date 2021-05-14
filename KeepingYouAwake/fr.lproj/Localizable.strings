@@ -1,9 +1,27 @@
+/* (Default) */
+"(Default)" = "(Défaut)";
+
+/* Cancel */
+"Cancel" = "Annuler";
+
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Cliquer pour autoriser la veille\nClic droit pour le menu";
 
 /* Click to prevent sleep\nRight click to show menu */
 "Click to prevent sleep\nRight click to show menu" = "Cliquer pour empêcher la veille\nClic droit pour le menu";
 
+/* Default */
+"Default" = "Défaut";
+
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Désactiver la surbrillance de l'icône de la barre de menu";
+
+/* Quit when activation duration is over */
+"Quit when activation duration is over" = "Quitter quand la durée d'activation est terminée";
+
+/* The entered duration is invalid. Please try again. */
+"The entered duration is invalid. Please try again." = "La durée entrée est invalide. Veuillez essayer à nouveau.";
+
+/* This duration has already been added. */
+"This duration has already been added." = "Cette durée a déjà été ajoutée.";
 
