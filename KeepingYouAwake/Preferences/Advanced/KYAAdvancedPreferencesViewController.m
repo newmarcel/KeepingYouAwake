@@ -10,8 +10,6 @@
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
 #import "KYAPreference.h"
-#import "KYABatteryStatus.h"
-#import "NSUserDefaults+Keys.h"
 #import "KYABatteryCapacityThreshold.h"
 
 @interface KYAAdvancedPreferencesViewController () <NSTableViewDataSource, NSTableViewDelegate>
@@ -25,17 +23,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     // Check the battery status
     self.batteryStatusAvailable = [[KYABatteryStatus new] isBatteryStatusAvailable];
-    
+
     [self configureAdvancedPreferences];
 }
 
 - (void)viewWillAppear
 {
     [super viewWillAppear];
-    
+
     self.preferredContentSize = self.view.fittingSize;
 }
 
@@ -44,18 +42,17 @@
 - (void)configureAdvancedPreferences
 {
     KYA_AUTO preferences = [NSMutableArray new];
-    
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_ENABLE_EXPERIMENTAL_NOTIFICATION_CENTER_INTEGRATION
-                                                    defaultsKey:KYAUserDefaultsKeyNotificationsEnabled
-                            ]];
-    
+
     [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_DISABLE_MENU_BAR_ICON_HIGHLIGHT_COLOR
                                                     defaultsKey:KYAUserDefaultsKeyMenuBarIconHighlightDisabled
                             ]];
     [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_QUIT_ON_TIMER_EXPIRATION
                                                     defaultsKey:KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled
                             ]];
-    
+    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_ALLOW_DISPLAY_SLEEP
+                                                    defaultsKey:KYAUserDefaultsKeyAllowDisplaySleep
+                            ]];
+
     self.preferences = [preferences copy];
 }
 
@@ -69,7 +66,7 @@
     }
     [NSUserDefaults.standardUserDefaults synchronize];
     [self.tableView reloadData];
-    
+
     // Disable battery status integration
     KYA_AUTO_VAR keyPath = [NSString stringWithFormat:@"values.%@", KYAUserDefaultsKeyBatteryCapacityThresholdEnabled];
     [self.defaultsController setValue:@NO forKeyPath:keyPath];

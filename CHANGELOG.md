@@ -2,6 +2,25 @@
 
 ## Changelog ##
 
+### v1.6.1 ###
+
+- added support for notifications, use `System Preferences` to manage notification settings ([#164](https://github.com/newmarcel/KeepingYouAwake/pull/164))
+  - please note, this feature is only available on macOS 11 or newer; the previous experimental notifications support has been removed
+
+### v1.6.0 ###
+
+- raised minimum deployment target to macOS Sierra ([#142](https://github.com/newmarcel/KeepingYouAwake/pull/142))
+- updated icons using the macOS Big Sur style ([#141](https://github.com/newmarcel/KeepingYouAwake/pull/141))
+- added support for the arm64 architecture on macOS Big Sur
+- created an official website [https://keepingyouawake.app/](https://keepingyouawake.app/)
+- added a Russian translation ([#147](https://github.com/newmarcel/KeepingYouAwake/issues/147), [#155](https://github.com/newmarcel/KeepingYouAwake/pull/155))
+    - *Thank you [Kromsator](https://github.com/Kromsator)!*
+
+### v1.5.2 ###
+
+- added the ability to allow the display to sleep ([#148](https://github.com/newmarcel/KeepingYouAwake/issues/148))
+	- _Thanks [creamelectricart](https://github.com/creamelectricart)!_
+
 ### v1.5.1 ###
 
 - added the ability to customize activation durations in _Preferences_ ([#132](https://github.com/newmarcel/KeepingYouAwake/pull/132))

@@ -8,7 +8,6 @@
 
 #import "KYAUpdatePreferencesViewController.h"
 #import "KYADefines.h"
-#import "NSUserDefaults+Keys.h"
 
 @implementation KYAUpdatePreferencesViewController
 

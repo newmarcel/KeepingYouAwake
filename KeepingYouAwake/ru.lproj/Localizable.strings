@@ -1,0 +1,42 @@
+/* (Default) */
+"(Default)" = "(По умолчанию)";
+
+/* Activate for Duration */
+"Activate for Duration" = "Aktivierungsdauer";
+
+/* Cancel */
+"Cancel" = "Отмена";
+
+/* Click to allow sleep\nRight click to show menu */
+"Click to allow sleep\nRight click to show menu" = "Нажать чтобы разрешить спящий режим\nПрямой щелчок, чтобы отобразить меню";
+
+/* Click to prevent sleep\nRight click to show menu */
+"Click to prevent sleep\nRight click to show menu" = "Нажать чтобы предотвратить спящий режим\nПрямой щелчок, чтобы отобразить меню";
+
+/* Default */
+"Default" = "По умолчанию";
+
+/* Disable menu bar icon highlight color */
+"Disable menu bar icon highlight color" = "Не показывать цвет выделения в меню состояния";
+
+/* Do you really want to reset the activation durations to the default values? */
+"Do you really want to reset the activation durations to the default values?" = "Вы уверены, что хотите сбросить список продолжительности активации на исходные записи?";
+
+/* OK */
+"OK" = "ОК";
+
+/* Quit when activation duration is over */
+"Quit when activation duration is over" = "Выход по окончании активации";
+
+/* Reset Activation Durations */
+"Reset Activation Durations" = "Сбросить продолжительности";
+
+/* Set Default: %@ */
+"Set Default: %@" = "Установить по умолчанию: %@";
+
+/* The entered duration is invalid. Please try again. */
+"The entered duration is invalid. Please try again." = "Введенная вами недопустимая продолжительность. Пожалуйста, попробуйте еще раз.";
+
+/* This duration has already been added. */
+"This duration has already been added." = "Эта продолжительность уже была добавлена.";
+

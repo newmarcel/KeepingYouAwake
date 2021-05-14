@@ -9,7 +9,6 @@
 #import "KYAActivationDurationsMenuController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
-#import "NSDate+RemainingTime.h"
 
 static const NSInteger KYAMenuItemRemainingTimeTag = 666;
 static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
@@ -74,7 +73,7 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
     {
         KYA_AUTO defaultAttributes = @{
                                        NSFontAttributeName: font,
-                                       NSForegroundColorAttributeName: NSColor.tertiaryLabelColor
+                                       NSForegroundColorAttributeName: [self defaultAttributeTextColor]
                                        };
         KYA_AUTO attributedDefault = [[NSAttributedString alloc] initWithString:KYA_L10N_IS_DEFAULT_SUFFIX
                                                                      attributes:defaultAttributes];
@@ -82,6 +81,18 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
     }
     
     return [attributed copy];
+}
+
+- (NSColor *)defaultAttributeTextColor
+{
+    if(@available(macOS 11.0, *))
+    {
+        return NSColor.secondaryLabelColor;
+    }
+    else
+    {
+        return NSColor.tertiaryLabelColor;
+    }
 }
 
 - (nullable NSMenuItem *)menuItemForRemainingTime
