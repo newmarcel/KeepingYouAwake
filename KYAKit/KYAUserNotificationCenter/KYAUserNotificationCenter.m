@@ -123,28 +123,8 @@
 {
     NSParameterAssert(notification);
     
-    Auto center = self.center;
-    [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings *settings) {
-        if(settings.authorizationStatus != UNAuthorizationStatusAuthorized
-           && settings.authorizationStatus != UNAuthorizationStatusProvisional)
-        {
-            KYALog(@"Posting notifications has not been authorized.");
-            return;
-        }
-        
-        if(settings.alertSetting == UNNotificationSettingEnabled)
-        {
-            Auto content = [notification createNotificationContent];
-            Auto identifier = notification.identifier;
-            [self scheduleNotificationRequestWithIdentifier:identifier content:content];
-        }
-    }];
-}
-
-- (void)scheduleNotificationRequestWithIdentifier:(NSString *)identifier content:(UNNotificationContent *)content
-{
-    NSParameterAssert(identifier);
-    NSParameterAssert(content);
+    Auto content = [notification createNotificationContent];
+    Auto identifier = notification.identifier;
     
     Auto request = [UNNotificationRequest requestWithIdentifier:identifier
                                                         content:content
