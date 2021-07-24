@@ -6,6 +6,23 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.6.1: Notifications]]></title>
+			<description><![CDATA[<ul>
+<li>added support for notifications, use <code>System Preferences</code> to manage notification settings (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/164">#164</a>)
+<ul>
+<li>please note, this feature is only available on macOS 11 or newer; the previous experimental notifications support has been removed</li>
+</ul></li>
+<li>updated the French translation (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/146">#146</a>, <a href="https://github.com/newmarcel/KeepingYouAwake/pull/169">#169</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/alexandreleroux">alexandreleroux</a>!</em></li>
+</ul></li>
+</ul>
+]]></description>
+			<pubDate>Sat, 24 Jul 2021 08:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.1/KeepingYouAwake-1.6.1.zip" length="3615283" type="application/octet-stream" sparkle:version="1060102" sparkle:shortVersionString="1.6.1">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.6.1beta2: Notifications]]></title>
 			<description><![CDATA[<ul>
 <li>added support for notifications, use <code>System Preferences</code> to manage notification settings (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/164">#164</a>)
