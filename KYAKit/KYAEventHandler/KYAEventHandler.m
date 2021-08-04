@@ -55,7 +55,7 @@
         return;
     }
     
-    KYA_WEAK weakSelf = self;
+    AutoWeak weakSelf = self;
     dispatch_async(self.eventQueue, ^{
         Auto event = [weakSelf eventForURL:URL];
         

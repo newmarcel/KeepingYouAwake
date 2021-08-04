@@ -68,13 +68,13 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
 
 - (IBAction)resetToDefaults:(nullable id)sender
 {
-    KYA_AUTO alert = [NSAlert new];
+    Auto alert = [NSAlert new];
     alert.alertStyle = NSAlertStyleWarning;
     alert.icon = [NSImage imageNamed:NSImageNameCaution];
     
     alert.informativeText = KYA_L10N_DURATIONS_ALERT_REALLY_RESET_MESSAGE;
     alert.messageText = KYA_L10N_DURATIONS_ALERT_REALLY_RESET_TITLE;
-    KYA_AUTO okButton = [alert addButtonWithTitle:KYA_L10N_DURATIONS_ALERT_REALLY_RESET_TITLE];
+    Auto okButton = [alert addButtonWithTitle:KYA_L10N_DURATIONS_ALERT_REALLY_RESET_TITLE];
     okButton.tag = NSModalResponseOK;
     [alert addButtonWithTitle:KYA_L10N_CANCEL];
     
@@ -126,8 +126,9 @@ static NSStoryboardSegueIdentifier const KYAShowAddDurationSegueIdentifier = @"s
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    KYA_AUTO cell = [KYADurationCell dequeueFromTableView:tableView owner:self];
-    KYA_AUTO duration = (KYAActivationDuration *)[self tableView:tableView objectValueForTableColumn:tableColumn row:row];
+    Auto cell = [KYADurationCell dequeueFromTableView:tableView owner:self];
+    Auto duration = (KYAActivationDuration *)[self tableView:tableView
+                                   objectValueForTableColumn:tableColumn row:row];
     cell.textLabel.stringValue = duration.localizedTitle;
     
     BOOL isDefault = [self.durationsController.defaultActivationDuration isEqualToActivationDuration:duration];

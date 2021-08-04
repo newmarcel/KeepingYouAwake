@@ -30,7 +30,7 @@
 
 - (void)configureStatusItem
 {
-    KYA_AUTO statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    Auto statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     statusItem.highlightMode = ![NSUserDefaults standardUserDefaults].kya_menuBarIconHighlightDisabled;
     if([statusItem respondsToSelector:@selector(behavior)])
     {
@@ -41,7 +41,7 @@
         statusItem.visible = YES;
     }
     
-    KYA_AUTO button = statusItem.button;
+    Auto button = statusItem.button;
     
     [button sendActionOn:NSEventMaskLeftMouseUp|NSEventMaskRightMouseUp];
     button.target = self;
@@ -66,8 +66,8 @@
 
 - (void)toggleStatus:(id)sender
 {
-    KYA_AUTO delegate = self.delegate;
-    KYA_AUTO event = [[NSApplication sharedApplication] currentEvent];
+    Auto delegate = self.delegate;
+    Auto event = NSApplication.sharedApplication.currentEvent;
     
     if((event.modifierFlags & NSEventModifierFlagControl)   // ctrl click
        || (event.modifierFlags & NSEventModifierFlagOption) // alt click
@@ -90,14 +90,14 @@
 
 - (BOOL)isActiveAppearanceEnabled
 {
-    KYA_AUTO menubarIcon = KYAMenuBarIcon.currentIcon;
+    Auto menubarIcon = KYAMenuBarIcon.currentIcon;
     return self.systemStatusItem.image == menubarIcon.activeIcon;
 }
 
 - (void)setActiveAppearanceEnabled:(BOOL)activeAppearanceEnabled
 {
-    KYA_AUTO button = self.systemStatusItem.button;
-    KYA_AUTO menubarIcon = KYAMenuBarIcon.currentIcon;
+    Auto button = self.systemStatusItem.button;
+    Auto menubarIcon = KYAMenuBarIcon.currentIcon;
     
     if(activeAppearanceEnabled)
     {

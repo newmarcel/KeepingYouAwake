@@ -27,7 +27,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     static dispatch_once_t once;
     static KYAActivationDurationsController *shared;
     dispatch_once(&once, ^{
-        KYA_AUTO defaults = NSUserDefaults.standardUserDefaults;
+        Auto defaults = NSUserDefaults.standardUserDefaults;
         shared = [[self alloc] initWithUserDefaults:defaults];
     });
     return shared;
@@ -68,10 +68,10 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 
 - (NSArray<KYAActivationDuration *> *)activationDurations
 {
-    KYA_AUTO durations = [NSMutableArray arrayWithArray:self.storedActivationDurations];
+    Auto durations = [NSMutableArray arrayWithArray:self.storedActivationDurations];
     [durations insertObject:KYAActivationDuration.indefiniteActivationDuration atIndex:0];
     
-    KYA_AUTO sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"seconds" ascending:YES];
+    Auto sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"seconds" ascending:YES];
     return [durations sortedArrayUsingDescriptors:@[sortDescriptor]];
 }
 
@@ -113,8 +113,8 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 
 - (BOOL)removeActivationDurationAtIndex:(NSUInteger)index
 {
-    KYA_AUTO durations = self.activationDurations;
-    KYA_AUTO duration = durations[index];
+    Auto durations = self.activationDurations;
+    Auto duration = durations[index];
     if(duration == nil)
     {
         return NO;
@@ -128,8 +128,8 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 
 - (void)setActivationDurationAsDefaultAtIndex:(NSUInteger)index
 {
-    KYA_AUTO durations = self.activationDurations;
-    KYA_AUTO duration = durations[index];
+    Auto durations = self.activationDurations;
+    Auto duration = durations[index];
     if(duration == nil)
     {
         return;
@@ -143,7 +143,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 {
     [self saveToUserDefaults];
     
-    KYA_AUTO notification = KYAActivationDurationsDidChangeNotification;
+    Auto notification = KYAActivationDurationsDidChangeNotification;
     [NSNotificationCenter.defaultCenter postNotificationName:notification object:nil];
 }
 
@@ -165,7 +165,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     
     if(notify)
     {
-        KYA_AUTO notification = KYAActivationDurationsDidChangeNotification;
+        Auto notification = KYAActivationDurationsDidChangeNotification;
         [NSNotificationCenter.defaultCenter postNotificationName:notification object:nil];
     }
 }
@@ -178,10 +178,10 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
         return KYAActivationDuration.indefiniteActivationDuration;
     }
     
-    KYA_AUTO defaultPredicate = [NSPredicate predicateWithFormat:@"seconds == %@",
-                                 @(seconds)
-                                 ];
-    KYA_AUTO results = [self.storedActivationDurations filteredArrayUsingPredicate:defaultPredicate];
+    Auto defaultPredicate = [NSPredicate predicateWithFormat:@"seconds == %@",
+                             @(seconds)
+    ];
+    Auto results = [self.storedActivationDurations filteredArrayUsingPredicate:defaultPredicate];
     
     return results.firstObject;
 }
@@ -199,19 +199,19 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
         for(NSNumber *value in seconds)
         {
             NSTimeInterval interval = (NSTimeInterval)value.integerValue;
-            KYA_AUTO duration = [[KYAActivationDuration alloc] initWithSeconds:interval];
+            Auto duration = [[KYAActivationDuration alloc] initWithSeconds:interval];
             [loadedDurations addObject:duration];
         }
     }
 #else
-    KYA_AUTO data = [self.userDefaults dataForKey:KYADefaultsKeyDurations];
+    Auto data = [self.userDefaults dataForKey:KYADefaultsKeyDurations];
     NSArray *loadedDurations;
     if(data != nil)
     {
         if(@available(macOS 10.13, *))
         {
             NSError *error;
-            KYA_AUTO classes = [NSSet setWithObjects:[NSArray class], [KYAActivationDuration class], nil];
+            Auto classes = [NSSet setWithObjects:[NSArray class], [KYAActivationDuration class], nil];
             loadedDurations = [NSKeyedUnarchiver unarchivedObjectOfClasses:classes
                                                                   fromData:data
                                                                      error:&error];
@@ -249,7 +249,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     
 #if KYA_USES_SIMPLE_USER_DEFAULTS_VALUES
     NSArray<KYAActivationDuration *> *durations = [self.storedActivationDurations copy];
-    KYA_AUTO seconds = [NSMutableArray new];
+    Auto seconds = [NSMutableArray<NSNumber *> new];
     for(KYAActivationDuration *duration in durations)
     {
         [seconds addObject:@(duration.seconds)];

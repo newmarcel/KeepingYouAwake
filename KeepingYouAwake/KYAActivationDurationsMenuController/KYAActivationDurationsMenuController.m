@@ -33,11 +33,11 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
 
 - (void)selectActivationDuration:(nullable NSMenuItem *)sender
 {
-    KYA_AUTO delegate = self.delegate;
+    Auto delegate = self.delegate;
     if([delegate respondsToSelector:@selector(activationDurationsMenuController:didSelectActivationDuration:)])
     {
         NSTimeInterval seconds = (NSTimeInterval)sender.tag;
-        KYA_AUTO duration = [[KYAActivationDuration alloc] initWithSeconds:seconds];
+        Auto duration = [[KYAActivationDuration alloc] initWithSeconds:seconds];
         [delegate activationDurationsMenuController:self didSelectActivationDuration:duration];
     }
 }
@@ -46,11 +46,11 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
 {
     NSTimeInterval seconds = (NSTimeInterval)sender.tag;
     
-    KYA_AUTO controller = self.activationDurationsController;
-    KYA_AUTO durations = controller.activationDurations;
+    Auto controller = self.activationDurationsController;
+    Auto durations = controller.activationDurations;
     
-    KYA_AUTO predicate = [NSPredicate predicateWithFormat:@"seconds == %@", @(seconds)];
-    KYA_AUTO results = [durations filteredArrayUsingPredicate:predicate];
+    Auto predicate = [NSPredicate predicateWithFormat:@"seconds == %@", @(seconds)];
+    Auto results = [durations filteredArrayUsingPredicate:predicate];
     
     self.activationDurationsController.defaultActivationDuration = results.firstObject;
 }
@@ -59,24 +59,24 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
 
 - (NSAttributedString *)attributedStringForMenuItemTitle:(NSString *)title isDefault:(BOOL)isDefault
 {
-    KYA_AUTO attributed = [NSMutableAttributedString new];
+    Auto attributed = [NSMutableAttributedString new];
     
-    KYA_AUTO font = [NSFont monospacedDigitSystemFontOfSize:KYAMenuItemDefaultFontSize
-                                                     weight:NSFontWeightRegular];
+    Auto font = [NSFont monospacedDigitSystemFontOfSize:KYAMenuItemDefaultFontSize
+                                                 weight:NSFontWeightRegular];
     
-    KYA_AUTO attributes = @{ NSFontAttributeName: font };
-    KYA_AUTO attributedTitle = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ ", title]
-                                                               attributes:attributes];
+    Auto attributes = @{ NSFontAttributeName: font };
+    Auto attributedTitle = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ ", title]
+                                                           attributes:attributes];
     [attributed appendAttributedString:attributedTitle];
     
     if(isDefault)
     {
-        KYA_AUTO defaultAttributes = @{
-                                       NSFontAttributeName: font,
-                                       NSForegroundColorAttributeName: [self defaultAttributeTextColor]
-                                       };
-        KYA_AUTO attributedDefault = [[NSAttributedString alloc] initWithString:KYA_L10N_IS_DEFAULT_SUFFIX
-                                                                     attributes:defaultAttributes];
+        Auto defaultAttributes = @{
+            NSFontAttributeName: font,
+            NSForegroundColorAttributeName: [self defaultAttributeTextColor]
+        };
+        Auto attributedDefault = [[NSAttributedString alloc] initWithString:KYA_L10N_IS_DEFAULT_SUFFIX
+                                                                 attributes:defaultAttributes];
         [attributed appendAttributedString:attributedDefault];
     }
     
@@ -97,15 +97,15 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
 
 - (nullable NSMenuItem *)menuItemForRemainingTime
 {
-    KYA_AUTO delegate = self.delegate;
+    Auto delegate = self.delegate;
     if(![delegate respondsToSelector:@selector(fireDateForMenuController:)]) { return nil; }
     
-    KYA_AUTO fireDate = [delegate fireDateForMenuController:self];
+    Auto fireDate = [delegate fireDateForMenuController:self];
     if(fireDate == nil) { return nil; }
     
-    KYA_AUTO menuItem = [[NSMenuItem alloc] initWithTitle:fireDate.kya_localizedRemainingTime
-                                                   action:nil
-                                            keyEquivalent:@""];
+    Auto menuItem = [[NSMenuItem alloc] initWithTitle:fireDate.kya_localizedRemainingTime
+                                               action:nil
+                                        keyEquivalent:@""];
     menuItem.tag = KYAMenuItemRemainingTimeTag;
     return menuItem;
 }
@@ -113,13 +113,13 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
 // TODO: Use this for live updates of the menu item
 - (void)updateRemainingTime:(id)sender
 {
-    KYA_AUTO delegate = self.delegate;
+    Auto delegate = self.delegate;
     if(![delegate respondsToSelector:@selector(fireDateForMenuController:)]) { return; }
     
-    KYA_AUTO fireDate = [delegate fireDateForMenuController:self];
+    Auto fireDate = [delegate fireDateForMenuController:self];
     if(fireDate == nil) { return; }
     
-    KYA_AUTO menuItem = self.menu.itemArray.firstObject;
+    Auto menuItem = self.menu.itemArray.firstObject;
     if(menuItem != nil && menuItem.tag == KYAMenuItemRemainingTimeTag)
     {
         menuItem.title = fireDate.kya_localizedRemainingTime;
@@ -132,9 +132,9 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
 {
     [menu removeAllItems];
     
-    KYA_AUTO controller = self.activationDurationsController;
+    Auto controller = self.activationDurationsController;
     
-    KYA_AUTO remainingTimeMenuItem = [self menuItemForRemainingTime];
+    Auto remainingTimeMenuItem = [self menuItemForRemainingTime];
     if(remainingTimeMenuItem != nil)
     {
         [menu addItem:remainingTimeMenuItem];
@@ -143,17 +143,17 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
     
     for(KYAActivationDuration *duration in controller.activationDurations)
     {
-        KYA_AUTO menuItem = [menu addItemWithTitle:duration.localizedTitle
-                                            action:@selector(selectActivationDuration:)
-                                     keyEquivalent:@""];
+        Auto menuItem = [menu addItemWithTitle:duration.localizedTitle
+                                        action:@selector(selectActivationDuration:)
+                                 keyEquivalent:@""];
         menuItem.target = self;
         menuItem.tag = (NSInteger)duration.seconds;
         
         // Alternate state
-        KYA_AUTO alternateTitle = KYA_L10N_SET_DEFAULT_ACTIVATION_DURATION(duration.localizedTitle);
-        KYA_AUTO alternateMenuItem = [menu addItemWithTitle:alternateTitle
-                                                     action:@selector(setDefaultActivationDuration:)
-                                              keyEquivalent:@""];
+        Auto alternateTitle = KYA_L10N_SET_DEFAULT_ACTIVATION_DURATION(duration.localizedTitle);
+        Auto alternateMenuItem = [menu addItemWithTitle:alternateTitle
+                                                 action:@selector(setDefaultActivationDuration:)
+                                          keyEquivalent:@""];
         alternateMenuItem.target = self;
         alternateMenuItem.alternate = YES;
         alternateMenuItem.keyEquivalentModifierMask = NSEventModifierFlagOption;
@@ -164,10 +164,10 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
         menuItem.attributedTitle = [self attributedStringForMenuItemTitle:menuItem.title isDefault:isDefault];
         
         // Is Scheduled
-        KYA_AUTO delegate = self.delegate;
+        Auto delegate = self.delegate;
         if([delegate respondsToSelector:@selector(currentActivationDuration)])
         {
-            KYA_AUTO current = [delegate currentActivationDuration];
+            Auto current = [delegate currentActivationDuration];
             if(current != nil && ([current isEqualToActivationDuration:duration]))
             {
                 menuItem.state = NSControlStateValueOn;

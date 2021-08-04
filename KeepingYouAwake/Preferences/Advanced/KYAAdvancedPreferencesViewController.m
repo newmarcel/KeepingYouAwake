@@ -41,7 +41,7 @@
 
 - (void)configureAdvancedPreferences
 {
-    KYA_AUTO preferences = [NSMutableArray new];
+    Auto preferences = [NSMutableArray<KYAPreference *> new];
 
     [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_DISABLE_MENU_BAR_ICON_HIGHLIGHT_COLOR
                                                     defaultsKey:KYAUserDefaultsKeyMenuBarIconHighlightDisabled
@@ -68,7 +68,7 @@
     [self.tableView reloadData];
 
     // Disable battery status integration
-    KYA_AUTO_VAR keyPath = [NSString stringWithFormat:@"values.%@", KYAUserDefaultsKeyBatteryCapacityThresholdEnabled];
+    AutoVar keyPath = [NSString stringWithFormat:@"values.%@", KYAUserDefaultsKeyBatteryCapacityThresholdEnabled];
     [self.defaultsController setValue:@NO forKeyPath:keyPath];
     keyPath = [NSString stringWithFormat:@"values.%@", KYAUserDefaultsKeyBatteryCapacityThreshold];
     [self.defaultsController setValue:@10.0f forKeyPath:keyPath];

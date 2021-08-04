@@ -86,9 +86,9 @@ typedef NS_ENUM(NSUInteger, KYAValidationReason)
     }
     if(self.seconds == nil) { self.seconds = @0; }
     
-    KYA_AUTO duration = [[KYAActivationDuration alloc] initWithHours:self.hours.integerValue
-                                                             minutes:self.minutes.integerValue
-                                                             seconds:self.seconds.integerValue];
+    Auto duration = [[KYAActivationDuration alloc] initWithHours:self.hours.integerValue
+                                                         minutes:self.minutes.integerValue
+                                                         seconds:self.seconds.integerValue];
     if(duration == nil)
     {
         return KYAValidationReasonInvalid;

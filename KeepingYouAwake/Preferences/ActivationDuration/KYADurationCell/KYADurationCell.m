@@ -21,9 +21,9 @@
 {
     NSParameterAssert(tableView);
     
-    KYA_AUTO identifier = [self identifier];
-    KYA_AUTO bundle = [NSBundle bundleForClass:self];
-    KYA_AUTO nib = [[NSNib alloc] initWithNibNamed:identifier bundle:bundle];
+    Auto identifier = [self identifier];
+    Auto bundle = [NSBundle bundleForClass:self];
+    Auto nib = [[NSNib alloc] initWithNibNamed:identifier bundle:bundle];
     [tableView registerNib:nib forIdentifier:identifier];
 }
 

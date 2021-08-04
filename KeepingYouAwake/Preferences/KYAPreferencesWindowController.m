@@ -35,8 +35,8 @@
 
 - (void)updateTabViewItems API_AVAILABLE(macos(11.0))
 {
-    KYA_AUTO tabController = (NSTabViewController *)self.contentViewController;
-    KYA_AUTO tabViewItems = tabController.tabViewItems;
+    Auto tabController = (NSTabViewController *)self.contentViewController;
+    Auto tabViewItems = tabController.tabViewItems;
     
     tabViewItems[0].image = [NSImage imageWithSystemSymbolName:@"gearshape"
                                       accessibilityDescription:nil];

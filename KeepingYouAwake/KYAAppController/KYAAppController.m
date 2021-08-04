@@ -71,7 +71,7 @@
 
 - (void)dealloc
 {
-    KYA_AUTO center = NSNotificationCenter.defaultCenter;
+    Auto center = NSNotificationCenter.defaultCenter;
     [center removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
     [center removeObserver:self name:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
 }
@@ -90,7 +90,7 @@
 {
     if([object isEqual:self.sleepWakeTimer] && [keyPath isEqualToString:@"scheduled"])
     {
-        KYA_WEAK weakSelf = self;
+        AutoWeak weakSelf = self;
         dispatch_async(dispatch_get_main_queue(), ^{
             // Update the status item for scheduling changes
             BOOL active = [change[NSKeyValueChangeNewKey] boolValue];
@@ -115,7 +115,7 @@
 
 - (IBAction)toggleActivateOnLaunch:(id)sender
 {
-    KYA_AUTO defaults = NSUserDefaults.standardUserDefaults;
+    Auto defaults = NSUserDefaults.standardUserDefaults;
     defaults.kya_activateOnLaunch = ![defaults kya_isActivatedOnLaunch];
     [defaults synchronize];
 }
@@ -147,7 +147,7 @@
         return;
     }
 
-    KYA_AUTO defaults = NSUserDefaults.standardUserDefaults;
+    Auto defaults = NSUserDefaults.standardUserDefaults;
 
     // Check battery overrides and register for capacity changes.
     [self checkAndEnableBatteryOverride];
@@ -156,7 +156,7 @@
         [self.batteryStatus registerForCapacityChangesIfNeeded];
     }
 
-    KYA_AUTO timerCompletion = ^(BOOL cancelled) {
+    Auto timerCompletion = ^(BOOL cancelled) {
         // Post deactivation notification
         if(@available(macOS 11.0, *))
         {
@@ -202,7 +202,7 @@
     {
         _batteryStatus = [KYABatteryStatus new];
 
-        KYA_WEAK weakSelf = self;
+        AutoWeak weakSelf = self;
         _batteryStatus.capacityChangeHandler = ^(CGFloat capacity) {
             [weakSelf batteryCapacityDidChange:capacity];
         };
@@ -267,7 +267,7 @@
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification
 {
-    KYA_AUTO eventManager = [NSAppleEventManager sharedAppleEventManager];
+    Auto eventManager = NSAppleEventManager.sharedAppleEventManager;
     [eventManager setEventHandler:self
                       andSelector:@selector(handleGetURLEvent:withReplyEvent:)
                     forEventClass:kInternetEventClass
@@ -276,13 +276,13 @@
 
 - (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)reply
 {
-    KYA_AUTO parameter = [event paramDescriptorForKeyword:keyDirectObject].stringValue;
+    Auto parameter = [event paramDescriptorForKeyword:keyDirectObject].stringValue;
     [KYAEventHandler.defaultHandler handleEventForURL:[NSURL URLWithString:parameter]];
 }
 
 - (void)configureEventHandler
 {
-    KYA_WEAK weakSelf = self;
+    AutoWeak weakSelf = self;
     [KYAEventHandler.defaultHandler registerActionNamed:@"activate"
                                                   block:^(KYAEvent *event) {
                                                       typeof(self) strongSelf = weakSelf;
@@ -302,7 +302,7 @@
 
 - (void)handleActivateActionForEvent:(KYAEvent *)event
 {
-    KYA_AUTO parameters = event.arguments;
+    Auto parameters = event.arguments;
     NSString *seconds = parameters[@"seconds"];
     NSString *minutes = parameters[@"minutes"];
     NSString *hours = parameters[@"hours"];
@@ -351,7 +351,7 @@
 
 - (KYAActivationDuration *)currentActivationDuration
 {
-    KYA_AUTO sleepWakeTimer = self.sleepWakeTimer;
+    Auto sleepWakeTimer = self.sleepWakeTimer;
     if(![sleepWakeTimer isScheduled])
     {
         return nil;
@@ -365,7 +365,7 @@
 {
     [self terminateTimer];
 
-    KYA_WEAK weakSelf = self;
+    AutoWeak weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         NSTimeInterval seconds = activationDuration.seconds;
         [weakSelf activateTimerWithTimeInterval:seconds];

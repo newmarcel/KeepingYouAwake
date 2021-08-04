@@ -27,8 +27,8 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
     dispatch_once(&onceToken, ^{
         if([self hasCustomIcons])
         {
-            KYA_AUTO activeIcon = [self customActiveIcon];
-            KYA_AUTO inactiveIcon = [self customInactiveIcon];
+            Auto activeIcon = [self customActiveIcon];
+            Auto inactiveIcon = [self customInactiveIcon];
             currentIcon = [[self alloc] initWithActiveIcon:activeIcon inactiveIcon:inactiveIcon];
         }
         else
@@ -103,7 +103,7 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
 
 + (nonnull NSURL *)documentsURL
 {
-    KYA_AUTO fileManager = NSFileManager.defaultManager;
+    Auto fileManager = NSFileManager.defaultManager;
     return [fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject;
 }
 
@@ -133,14 +133,14 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
 
 + (BOOL)iconWithNameExistsAtPath:(NSString *)name isRetinaIcon:(BOOL)isRetinaIcon
 {
-    KYA_AUTO fileURL = [self iconFileURLWithName:name isRetinaIcon:isRetinaIcon];
+    Auto fileURL = [self iconFileURLWithName:name isRetinaIcon:isRetinaIcon];
     return [NSFileManager.defaultManager fileExistsAtPath:fileURL.path];
 }
 
 + (NSURL *)iconFileURLWithName:(NSString *)name isRetinaIcon:(BOOL)isRetinaIcon
 {
-    KYA_AUTO suffix = isRetinaIcon ? @"@2x" : @"";
-    KYA_AUTO composedName = [NSString stringWithFormat:@"%@%@.png", name, suffix];
+    Auto suffix = isRetinaIcon ? @"@2x" : @"";
+    Auto composedName = [NSString stringWithFormat:@"%@%@.png", name, suffix];
     return [[self documentsURL] URLByAppendingPathComponent:composedName];
 }
 
@@ -156,11 +156,11 @@ NSString * const KYAMenubarInactiveIconName = @"InactiveIcon";
 
 + (NSImage *)customIconNamed:(NSString *)name
 {
-    KYA_AUTO image = [[NSImage alloc] initWithContentsOfURL:[self iconFileURLWithName:name
-                                                                         isRetinaIcon:NO]];
+    Auto image = [[NSImage alloc] initWithContentsOfURL:[self iconFileURLWithName:name
+                                                                     isRetinaIcon:NO]];
     image.template = YES;
-    KYA_AUTO retinaRep = [NSImageRep imageRepWithContentsOfURL:[self iconFileURLWithName:name
-                                                                               isRetinaIcon:YES]];
+    Auto retinaRep = [NSImageRep imageRepWithContentsOfURL:[self iconFileURLWithName:name
+                                                                        isRetinaIcon:YES]];
     if(retinaRep)
     {
         [image addRepresentation:retinaRep];

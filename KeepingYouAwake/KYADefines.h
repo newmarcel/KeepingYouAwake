@@ -11,11 +11,7 @@
 
 #define Auto const __auto_type
 #define AutoVar __auto_type
-
-// These three are considered deprecated:
-#define KYA_AUTO __auto_type const
-#define KYA_AUTO_VAR __auto_type
-#define KYA_WEAK __weak __auto_type
+#define AutoWeak __weak __auto_type const
 
 #if DEBUG
 #define KYALog(_args...) NSLog(_args)
