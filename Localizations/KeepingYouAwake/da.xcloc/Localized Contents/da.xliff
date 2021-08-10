@@ -22,26 +22,32 @@
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
         <source>(Default)</source>
+        <target>(Standard)</target>
         <note>(Default)</note>
       </trans-unit>
       <trans-unit id="Activate for Duration" xml:space="preserve">
         <source>Activate for Duration</source>
+        <target>Aktivér varighed</target>
         <note>Activate for Duration</note>
       </trans-unit>
       <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
         <source>Afterwards your Mac will automatically go to sleep again when unused.</source>
+        <target>Efterfølgende går din Mac automatisk på vågeblus igen, når den ikke bruges.</target>
         <note>Afterwards your Mac will automatically go to sleep again when unused.</note>
       </trans-unit>
       <trans-unit id="Allow the display to sleep" xml:space="preserve">
         <source>Allow the display to sleep</source>
+        <target>Tillad skærmen at slukke</target>
         <note>Allow the display to sleep</note>
       </trans-unit>
       <trans-unit id="Allowing Sleep" xml:space="preserve">
         <source>Allowing Sleep</source>
+        <target>Tillad vågeblus</target>
         <note>Allowing Sleep</note>
       </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
         <source>Cancel</source>
+        <target>Annuller</target>
         <note>Cancel</note>
       </trans-unit>
       <trans-unit id="Click to allow sleep&#10;Right click to show menu" xml:space="preserve">
@@ -60,55 +66,67 @@ Højreklik for at vise menu</target>
       </trans-unit>
       <trans-unit id="Default" xml:space="preserve">
         <source>Default</source>
+        <target>Standard</target>
         <note>Default</note>
       </trans-unit>
       <trans-unit id="Disable menu bar icon highlight color" xml:space="preserve">
         <source>Disable menu bar icon highlight color</source>
-        <target>Deaktiver markeringsfarve ved Menulinje-ikon</target>
+        <target>Deaktiver markeringsfarve ved menulinje-ikon</target>
         <note>Disable menu bar icon highlight color</note>
       </trans-unit>
       <trans-unit id="Do you really want to reset the activation durations to the default values?" xml:space="preserve">
         <source>Do you really want to reset the activation durations to the default values?</source>
+        <target>Vil du nulstille aktiveringstider til standardværdier?</target>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
       <trans-unit id="OK" xml:space="preserve">
         <source>OK</source>
+        <target>OK</target>
         <note>OK</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep" xml:space="preserve">
         <source>Preventing Sleep</source>
+        <target>Undgå vågeblus</target>
         <note>Preventing Sleep</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep for %@" xml:space="preserve">
         <source>Preventing Sleep for %@</source>
+        <target>Undgå vågeblus i %@</target>
         <note>Preventing Sleep for %@</note>
       </trans-unit>
       <trans-unit id="Quit when activation duration is over" xml:space="preserve">
         <source>Quit when activation duration is over</source>
+        <target>Slut efter endt aktiveringstid</target>
         <note>Quit when activation duration is over</note>
       </trans-unit>
       <trans-unit id="Reset Activation Durations" xml:space="preserve">
         <source>Reset Activation Durations</source>
+        <target>Nulstil aktiveringstider</target>
         <note>Reset Activation Durations</note>
       </trans-unit>
       <trans-unit id="Set Default: %@" xml:space="preserve">
         <source>Set Default: %@</source>
+        <target>Indstil standard: %@</target>
         <note>Set Default: %@</note>
       </trans-unit>
       <trans-unit id="The entered duration is invalid. Please try again." xml:space="preserve">
         <source>The entered duration is invalid. Please try again.</source>
+        <target>Den indstastede værdi er ikke gyldig. Prøv venligst igen.</target>
         <note>The entered duration is invalid. Please try again.</note>
       </trans-unit>
       <trans-unit id="This duration has already been added." xml:space="preserve">
         <source>This duration has already been added.</source>
+        <target>Denne værdi eksisterer allerede.</target>
         <note>This duration has already been added.</note>
       </trans-unit>
       <trans-unit id="You can still manually enable sleep mode for your Mac." xml:space="preserve">
         <source>You can still manually enable sleep mode for your Mac.</source>
+        <target>Du kan stadig manuelt aktivere vågeblus for din Mac.</target>
         <note>You can still manually enable sleep mode for your Mac.</note>
       </trans-unit>
       <trans-unit id="Your Mac will automatically go to sleep when unused." xml:space="preserve">
         <source>Your Mac will automatically go to sleep when unused.</source>
+        <target>Din Mac wil automatisk gå i vågeblus når den ikke bruges.</target>
         <note>Your Mac will automatically go to sleep when unused.</note>
       </trans-unit>
     </body>
@@ -151,6 +169,7 @@ Højreklik for at vise menu</target>
       </trans-unit>
       <trans-unit id="6Kw-xJ-Wk8.title" xml:space="preserve">
         <source>The default activation duration is used when you click on the menu bar icon.</source>
+        <target>Standard akitiveringstid bliver brugt ved klik på menulinje-ikonet</target>
         <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "6Kw-xJ-Wk8";</note>
       </trans-unit>
       <trans-unit id="8V0-Sq-Cdu.title" xml:space="preserve">
@@ -170,18 +189,22 @@ Højreklik for at vise menu</target>
       </trans-unit>
       <trans-unit id="DE6-qp-FZU.ibShadowedToolTips[0]" xml:space="preserve">
         <source>Remove</source>
+        <target>Fjern</target>
         <note>Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[0] = "Remove"; ObjectID = "DE6-qp-FZU";</note>
       </trans-unit>
       <trans-unit id="DE6-qp-FZU.ibShadowedToolTips[1]" xml:space="preserve">
         <source>Add</source>
+        <target>Tilføj</target>
         <note>Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[1] = "Add"; ObjectID = "DE6-qp-FZU";</note>
       </trans-unit>
       <trans-unit id="DfZ-Gt-rge.title" xml:space="preserve">
         <source>Seconds</source>
+        <target>Sekunder</target>
         <note>Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "DfZ-Gt-rge";</note>
       </trans-unit>
       <trans-unit id="EMN-wI-vLT.title" xml:space="preserve">
         <source>Set Default</source>
+        <target>Indstil standard</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "EMN-wI-vLT";</note>
       </trans-unit>
       <trans-unit id="EXv-vC-wyo.title" xml:space="preserve">
@@ -210,6 +233,7 @@ Højreklik for at vise menu</target>
       </trans-unit>
       <trans-unit id="LYE-CA-vzC.title" xml:space="preserve">
         <source>Set Default</source>
+        <target>Indstil standard</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "LYE-CA-vzC";</note>
       </trans-unit>
       <trans-unit id="OsK-jX-EzO.title" xml:space="preserve">
@@ -239,22 +263,27 @@ Højreklik for at vise menu</target>
       </trans-unit>
       <trans-unit id="X2a-5O-EuD.title" xml:space="preserve">
         <source>Reset…</source>
+        <target>Nulstil…</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "X2a-5O-EuD";</note>
       </trans-unit>
       <trans-unit id="bPs-M9-Azc.title" xml:space="preserve">
         <source>Notification Preferences…</source>
+        <target>Notifikationsindstillinger…</target>
         <note>Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "bPs-M9-Azc";</note>
       </trans-unit>
       <trans-unit id="bV3-BW-JOK.title" xml:space="preserve">
         <source>Cancel</source>
+        <target>Annuller</target>
         <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "bV3-BW-JOK";</note>
       </trans-unit>
       <trans-unit id="d0c-1Y-p5i.title" xml:space="preserve">
         <source>Add Duration</source>
+        <target>Tilføj tid</target>
         <note>Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "d0c-1Y-p5i";</note>
       </trans-unit>
       <trans-unit id="f4N-sw-1MQ.title" xml:space="preserve">
         <source>Remove</source>
+        <target>Fjern</target>
         <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "f4N-sw-1MQ";</note>
       </trans-unit>
       <trans-unit id="fFl-4s-KJ6.title" xml:space="preserve">
@@ -277,10 +306,12 @@ Højreklik for at vise menu</target>
       </trans-unit>
       <trans-unit id="iZe-2E-hEE.title" xml:space="preserve">
         <source>Set Default</source>
+        <target>Indstil standard</target>
         <note>Class = "NSMenuItem"; title = "Set Default"; ObjectID = "iZe-2E-hEE";</note>
       </trans-unit>
       <trans-unit id="jAF-7U-kDS.title" xml:space="preserve">
         <source>Text Cell</source>
+        <target>Tekstfelt</target>
         <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "jAF-7U-kDS";</note>
       </trans-unit>
       <trans-unit id="k65-yi-85l.title" xml:space="preserve">
@@ -305,6 +336,7 @@ Højreklik for at vise menu</target>
       </trans-unit>
       <trans-unit id="rEp-oa-7IA.title" xml:space="preserve">
         <source>Hours</source>
+        <target>Timer</target>
         <note>Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "rEp-oa-7IA";</note>
       </trans-unit>
       <trans-unit id="siu-CP-Bg1.title" xml:space="preserve">
@@ -329,6 +361,7 @@ Højreklik for at vise menu</target>
       </trans-unit>
       <trans-unit id="ybA-ux-mRo.title" xml:space="preserve">
         <source>Minutes</source>
+        <target>Minutter</target>
         <note>Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "ybA-ux-mRo";</note>
       </trans-unit>
     </body>
