@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="KeepingYouAwake/Base.lproj/InfoPlist.strings" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -17,7 +17,7 @@
   </file>
   <file original="KeepingYouAwake/Base.lproj/Localizable.strings" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
     </header>
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
@@ -115,7 +115,7 @@ Click derecho para mostar el menú</target>
   </file>
   <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
     </header>
     <body>
       <trans-unit id="7is-vc-kz7.title" xml:space="preserve">
@@ -137,7 +137,7 @@ Click derecho para mostar el menú</target>
   </file>
   <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
     </header>
     <body>
       <trans-unit id="2s2-Ei-lnG.title" xml:space="preserve">
@@ -332,20 +332,9 @@ Click derecho para mostar el menú</target>
       </trans-unit>
     </body>
   </file>
-  <file original="KYAKit/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="es">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
-    </header>
-    <body>
-      <trans-unit id="CFBundleName" xml:space="preserve">
-        <source>KYAKit</source>
-        <note>Bundle name</note>
-      </trans-unit>
-    </body>
-  </file>
   <file original="KYAKit/en.lproj/Localizable.strings" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
     </header>
     <body>
       <trans-unit id="Indefinitely" xml:space="preserve">
@@ -362,7 +351,7 @@ Click derecho para mostar el menú</target>
   </file>
   <file original="KYALauncher/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="es">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
