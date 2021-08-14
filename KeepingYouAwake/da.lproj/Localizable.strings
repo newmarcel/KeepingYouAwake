@@ -1,9 +1,63 @@
+/* (Default) */
+"(Default)" = "(Standard)";
+
+/* Activate for Duration */
+"Activate for Duration" = "Aktivér varighed";
+
+/* Afterwards your Mac will automatically go to sleep again when unused. */
+"Afterwards your Mac will automatically go to sleep again when unused." = "Efterfølgende går din Mac automatisk på vågeblus igen, når den ikke bruges.";
+
+/* Allow the display to sleep */
+"Allow the display to sleep" = "Tillad skærmen at slukke";
+
+/* Allowing Sleep */
+"Allowing Sleep" = "Tillad vågeblus";
+
+/* Cancel */
+"Cancel" = "Annuller";
+
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Klik for at tillade vågeblus\nHøjreklik for at vise menu";
 
 /* Click to prevent sleep\nRight click to show menu */
 "Click to prevent sleep\nRight click to show menu" = "Klik for at forhindre vågeblus\nHøjreklik for at vise menu";
 
+/* Default */
+"Default" = "Standard";
+
 /* Disable menu bar icon highlight color */
-"Disable menu bar icon highlight color" = "Deaktiver markeringsfarve ved Menulinje-ikon";
+"Disable menu bar icon highlight color" = "Deaktiver markeringsfarve ved menulinje-ikon";
+
+/* Do you really want to reset the activation durations to the default values? */
+"Do you really want to reset the activation durations to the default values?" = "Vil du nulstille aktiveringstider til standardværdier?";
+
+/* OK */
+"OK" = "OK";
+
+/* Preventing Sleep */
+"Preventing Sleep" = "Undgå vågeblus";
+
+/* Preventing Sleep for %@ */
+"Preventing Sleep for %@" = "Undgå vågeblus i %@";
+
+/* Quit when activation duration is over */
+"Quit when activation duration is over" = "Slut efter endt aktiveringstid";
+
+/* Reset Activation Durations */
+"Reset Activation Durations" = "Nulstil aktiveringstider";
+
+/* Set Default: %@ */
+"Set Default: %@" = "Indstil standard: %@";
+
+/* The entered duration is invalid. Please try again. */
+"The entered duration is invalid. Please try again." = "Den indstastede værdi er ikke gyldig. Prøv venligst igen.";
+
+/* This duration has already been added. */
+"This duration has already been added." = "Denne værdi eksisterer allerede.";
+
+/* You can still manually enable sleep mode for your Mac. */
+"You can still manually enable sleep mode for your Mac." = "Du kan stadig manuelt aktivere vågeblus for din Mac.";
+
+/* Your Mac will automatically go to sleep when unused. */
+"Your Mac will automatically go to sleep when unused." = "Din Mac wil automatisk gå i vågeblus når den ikke bruges.";
 

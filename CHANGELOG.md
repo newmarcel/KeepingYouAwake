@@ -2,6 +2,11 @@
 
 ## Changelog ##
 
+### v1.6.2 ###
+
+- updated the Danish translation ([#171](https://github.com/newmarcel/KeepingYouAwake/pull/171))
+    - *Thank you [JacobSchriver](https://github.com/JacobSchriver)!*
+
 ### v1.6.1 ###
 
 - added support for notifications, use `System Preferences` to manage notification settings ([#164](https://github.com/newmarcel/KeepingYouAwake/pull/164))
