@@ -1,0 +1,15 @@
+/* Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "5bs-m4-hy9"; */
+"5bs-m4-hy9.title" = "Jam";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "59l-n2-tD5"; */
+"59l-n2-tD5.title" = "Batal";
+
+/* Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "oi9-AP-ag4"; */
+"oi9-AP-ag4.title" = "Menit";
+
+/* Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "s1J-2f-UeD"; */
+"s1J-2f-UeD.title" = "Detik";
+
+/* Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "vTF-HR-j5d"; */
+"vTF-HR-j5d.title" = "Tambah Durasi";
+

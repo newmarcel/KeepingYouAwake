@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="KYAUpdatePreferencesViewController">
+            <connections>
+                <outlet property="view" destination="WcS-AG-FXj" id="J9O-a0-x55"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="WcS-AG-FXj">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lqt-16-kZQ">
+                    <rect key="frame" x="20" y="22" width="96" height="102"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="1gH-SW-adf"/>
+                        <constraint firstAttribute="width" constant="96" id="uZe-6m-Ao0"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="NSRefreshFreestandingTemplate" id="bJu-aK-WFG"/>
+                </imageView>
+                <box titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="NXL-MM-1fI">
+                    <rect key="frame" x="133" y="-6" width="323" height="156"/>
+                    <view key="contentView" id="gyZ-Im-ykZ">
+                        <rect key="frame" x="3" y="3" width="317" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="qWn-eh-Jip">
+                                <rect key="frame" x="18" y="79" width="217" height="18"/>
+                                <buttonCell key="cell" type="check" title="Check for Pre-Release Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="oBK-47-iMk">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Es1-xX-Gv3" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.PreReleaseUpdatesEnabled" id="ICK-26-6fk"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Dcl-fh-8gB">
+                                <rect key="frame" x="18" y="111" width="225" height="18"/>
+                                <buttonCell key="cell" type="check" title="Automatically Check for Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="F2o-Is-2nW">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="oHd-We-Y2q" name="value" keyPath="self.updater.automaticallyChecksForUpdates" id="3fL-LB-7uc"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fst-sO-dQ4">
+                                <rect key="frame" x="199" y="15" width="103" height="32"/>
+                                <buttonCell key="cell" type="push" title="Check Now" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tAT-1z-ZPp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="oHd-We-Y2q" id="guJ-84-rSW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Fst-sO-dQ4" secondAttribute="bottom" constant="22" id="6Fg-Zu-f8S"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dcl-fh-8gB" secondAttribute="trailing" constant="22" id="KSa-c2-oeu"/>
+                            <constraint firstItem="Dcl-fh-8gB" firstAttribute="top" secondItem="gyZ-Im-ykZ" secondAttribute="top" constant="22" id="Ng5-2O-qDV"/>
+                            <constraint firstItem="Fst-sO-dQ4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gyZ-Im-ykZ" secondAttribute="leading" constant="20" id="RJ7-nk-JLI"/>
+                            <constraint firstItem="Fst-sO-dQ4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qWn-eh-Jip" secondAttribute="bottom" constant="20" id="Rc1-g9-fAh"/>
+                            <constraint firstItem="Dcl-fh-8gB" firstAttribute="leading" secondItem="gyZ-Im-ykZ" secondAttribute="leading" constant="20" id="d3e-Fk-bFF"/>
+                            <constraint firstItem="qWn-eh-Jip" firstAttribute="top" secondItem="Dcl-fh-8gB" secondAttribute="bottom" constant="16" id="hre-W1-UJq"/>
+                            <constraint firstAttribute="trailing" secondItem="Fst-sO-dQ4" secondAttribute="trailing" constant="22" id="tRh-qh-A4l"/>
+                            <constraint firstItem="qWn-eh-Jip" firstAttribute="leading" secondItem="Dcl-fh-8gB" secondAttribute="leading" id="wPa-Je-m1x"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qWn-eh-Jip" secondAttribute="trailing" constant="22" id="x3v-VL-Fib"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="7eh-Yv-fv2"/>
+                    </constraints>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="lqt-16-kZQ" firstAttribute="leading" secondItem="WcS-AG-FXj" secondAttribute="leading" constant="20" id="0VU-7l-Y9X"/>
+                <constraint firstItem="NXL-MM-1fI" firstAttribute="bottom" secondItem="WcS-AG-FXj" secondAttribute="bottom" constant="2" id="2Jy-yp-AH3"/>
+                <constraint firstAttribute="top" secondItem="NXL-MM-1fI" secondAttribute="top" constant="2" id="7YJ-nk-gB2"/>
+                <constraint firstItem="lqt-16-kZQ" firstAttribute="centerY" secondItem="WcS-AG-FXj" secondAttribute="centerY" id="8je-Bj-xA4"/>
+                <constraint firstItem="NXL-MM-1fI" firstAttribute="trailing" secondItem="WcS-AG-FXj" secondAttribute="trailing" constant="2" id="Eug-2s-ddy"/>
+                <constraint firstItem="lqt-16-kZQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WcS-AG-FXj" secondAttribute="top" constant="20" id="VNJ-LJ-QOH"/>
+                <constraint firstItem="NXL-MM-1fI" firstAttribute="leading" secondItem="lqt-16-kZQ" secondAttribute="trailing" constant="20" id="iwe-hE-OJ4"/>
+            </constraints>
+            <point key="canvasLocation" x="-33" y="128"/>
+        </view>
+        <customObject id="oHd-We-Y2q" customClass="SPUStandardUpdaterController">
+            <connections>
+                <outlet property="updaterDelegate" destination="-2" id="U5a-Sf-vqg"/>
+            </connections>
+        </customObject>
+        <userDefaultsController representsSharedInstance="YES" id="Es1-xX-Gv3"/>
+    </objects>
+    <resources>
+        <image name="NSRefreshFreestandingTemplate" width="15" height="15"/>
+    </resources>
+</document>
