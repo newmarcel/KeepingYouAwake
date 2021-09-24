@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="KeepingYouAwake/Base.lproj/InfoPlist.strings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -17,7 +17,7 @@
   </file>
   <file original="KeepingYouAwake/Base.lproj/Localizable.strings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
     </header>
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
@@ -114,7 +114,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
     </header>
     <body>
       <trans-unit id="7is-vc-kz7.title" xml:space="preserve">
@@ -134,204 +134,225 @@ Right click to show menu</source>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/Base.lproj/Preferences.storyboard" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="KeepingYouAwake/Preferences/en.lproj/KYAPreferences.strings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
     </header>
     <body>
-      <trans-unit id="2s2-Ei-lnG.title" xml:space="preserve">
-        <source>Reset…</source>
-        <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "2s2-Ei-lnG";</note>
-      </trans-unit>
-      <trans-unit id="5bL-cI-YIY.title" xml:space="preserve">
-        <source>Advanced</source>
-        <target>고급</target>
-        <note>Class = "NSViewController"; title = "Advanced"; ObjectID = "5bL-cI-YIY";</note>
-      </trans-unit>
-      <trans-unit id="6Kw-xJ-Wk8.title" xml:space="preserve">
-        <source>The default activation duration is used when you click on the menu bar icon.</source>
-        <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "6Kw-xJ-Wk8";</note>
-      </trans-unit>
-      <trans-unit id="8V0-Sq-Cdu.title" xml:space="preserve">
-        <source>Updates</source>
-        <note>Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu";</note>
-      </trans-unit>
-      <trans-unit id="AvX-7Q-Bvc.title" xml:space="preserve">
-        <source>KeepingYouAwake – Preferences</source>
-        <target>KeepingYouAwake – 환경설정</target>
-        <note>Class = "NSWindow"; title = "KeepingYouAwake – Preferences"; ObjectID = "AvX-7Q-Bvc";</note>
-      </trans-unit>
-      <trans-unit id="Ax6-W4-7bK.title" xml:space="preserve">
-        <source>Deactivate when battery capacity is below</source>
-        <target>배터리 잔량이 부족하면 비활성화</target>
-        <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "Ax6-W4-7bK";</note>
-      </trans-unit>
-      <trans-unit id="DE6-qp-FZU.ibShadowedToolTips[0]" xml:space="preserve">
-        <source>Remove</source>
-        <note>Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[0] = "Remove"; ObjectID = "DE6-qp-FZU";</note>
-      </trans-unit>
-      <trans-unit id="DE6-qp-FZU.ibShadowedToolTips[1]" xml:space="preserve">
-        <source>Add</source>
-        <note>Class = "NSSegmentedCell"; DE6-qp-FZU.ibShadowedToolTips[1] = "Add"; ObjectID = "DE6-qp-FZU";</note>
-      </trans-unit>
-      <trans-unit id="DfZ-Gt-rge.title" xml:space="preserve">
-        <source>Seconds</source>
-        <note>Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "DfZ-Gt-rge";</note>
-      </trans-unit>
-      <trans-unit id="EMN-wI-vLT.title" xml:space="preserve">
-        <source>Set Default</source>
-        <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "EMN-wI-vLT";</note>
-      </trans-unit>
-      <trans-unit id="EXv-vC-wyo.title" xml:space="preserve">
-        <source>Reset to Default</source>
-        <target>기본값으로 복원</target>
-        <note>Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "EXv-vC-wyo";</note>
-      </trans-unit>
-      <trans-unit id="G1k-8T-EcX.title" xml:space="preserve">
-        <source>Version 2016</source>
-        <note>Class = "NSTextFieldCell"; title = "Version 2016"; ObjectID = "G1k-8T-EcX";</note>
-      </trans-unit>
-      <trans-unit id="GxN-Dr-4B8.title" xml:space="preserve">
-        <source>Automatically Check for Updates</source>
-        <target>자동으로 업데이트 확인</target>
-        <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "GxN-Dr-4B8";</note>
-      </trans-unit>
-      <trans-unit id="IAM-at-0nC.title" xml:space="preserve">
-        <source>Activation Duration</source>
-        <note>Class = "NSViewController"; title = "Activation Duration"; ObjectID = "IAM-at-0nC";</note>
-      </trans-unit>
-      <trans-unit id="IOU-Hs-S4r.title" xml:space="preserve">
-        <source>Activate on Launch</source>
-        <target>실행 시 활성화</target>
-        <note>Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "IOU-Hs-S4r";</note>
-      </trans-unit>
-      <trans-unit id="LYE-CA-vzC.title" xml:space="preserve">
-        <source>Set Default</source>
-        <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "LYE-CA-vzC";</note>
-      </trans-unit>
-      <trans-unit id="OsK-jX-EzO.title" xml:space="preserve">
-        <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
-        <target>고급 환경설정은 내용을 숙지한 경우만 사용하십시오. 대부분의 고급 환경설정은 재시작이 필요합니다.</target>
-        <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO";</note>
-      </trans-unit>
-      <trans-unit id="QIk-WP-qH1.title" xml:space="preserve">
-        <source>Start at Login</source>
-        <target>로그인 시 활성화</target>
-        <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "QIk-WP-qH1";</note>
-      </trans-unit>
-      <trans-unit id="Rb3-Sm-byr.title" xml:space="preserve">
-        <source>90 %</source>
-        <target>90 %</target>
-        <note>Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "Rb3-Sm-byr";</note>
-      </trans-unit>
-      <trans-unit id="S6p-h0-H5B.title" xml:space="preserve">
-        <source>Immediately starts preventing sleep when launched.</source>
-        <target>앱을 실행했을 때 즉시 잠자기를 비활성화합니다.</target>
-        <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "S6p-h0-H5B";</note>
-      </trans-unit>
-      <trans-unit id="W3H-iV-s6I.title" xml:space="preserve">
-        <source>Check Now</source>
-        <target>지금 확인</target>
-        <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "W3H-iV-s6I";</note>
-      </trans-unit>
-      <trans-unit id="X2a-5O-EuD.title" xml:space="preserve">
-        <source>Reset…</source>
-        <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "X2a-5O-EuD";</note>
-      </trans-unit>
-      <trans-unit id="bPs-M9-Azc.title" xml:space="preserve">
-        <source>Notification Preferences…</source>
-        <note>Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "bPs-M9-Azc";</note>
-      </trans-unit>
-      <trans-unit id="bV3-BW-JOK.title" xml:space="preserve">
-        <source>Cancel</source>
-        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "bV3-BW-JOK";</note>
-      </trans-unit>
-      <trans-unit id="d0c-1Y-p5i.title" xml:space="preserve">
-        <source>Add Duration</source>
-        <note>Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "d0c-1Y-p5i";</note>
-      </trans-unit>
-      <trans-unit id="f4N-sw-1MQ.title" xml:space="preserve">
-        <source>Remove</source>
-        <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "f4N-sw-1MQ";</note>
-      </trans-unit>
-      <trans-unit id="fFl-4s-KJ6.title" xml:space="preserve">
-        <source>Warning Label DO NOT TRANSLATE</source>
-        <note>Class = "NSTextFieldCell"; title = "Warning Label DO NOT TRANSLATE"; ObjectID = "fFl-4s-KJ6";</note>
-      </trans-unit>
-      <trans-unit id="fiQ-AT-I7u.title" xml:space="preserve">
-        <source>10 %</source>
-        <target>10 %</target>
-        <note>Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "fiQ-AT-I7u";</note>
-      </trans-unit>
-      <trans-unit id="g2t-CH-TcY.title" xml:space="preserve">
-        <source>Text Cell</source>
-        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "g2t-CH-TcY";</note>
-      </trans-unit>
-      <trans-unit id="i17-n2-vfw.title" xml:space="preserve">
-        <source>50 %</source>
-        <target>50 %</target>
-        <note>Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "i17-n2-vfw";</note>
-      </trans-unit>
-      <trans-unit id="iZe-2E-hEE.title" xml:space="preserve">
-        <source>Set Default</source>
-        <note>Class = "NSMenuItem"; title = "Set Default"; ObjectID = "iZe-2E-hEE";</note>
-      </trans-unit>
-      <trans-unit id="jAF-7U-kDS.title" xml:space="preserve">
-        <source>Text Cell</source>
-        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "jAF-7U-kDS";</note>
-      </trans-unit>
-      <trans-unit id="k65-yi-85l.title" xml:space="preserve">
-        <source>This value will be ignored when you manually start the app below this battery capacity.</source>
-        <target>만일 이 배터리 잔량보다 적을 때 활성화한다면 이 값은 무시됩니다.</target>
-        <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "k65-yi-85l";</note>
-      </trans-unit>
-      <trans-unit id="kG2-Tz-t51.title" xml:space="preserve">
-        <source>Check</source>
-        <target>확인</target>
-        <note>Class = "NSButtonCell"; title = "Check"; ObjectID = "kG2-Tz-t51";</note>
-      </trans-unit>
-      <trans-unit id="lGE-74-XwP.title" xml:space="preserve">
-        <source>General</source>
-        <target>일반</target>
-        <note>Class = "NSViewController"; title = "General"; ObjectID = "lGE-74-XwP";</note>
-      </trans-unit>
-      <trans-unit id="nsg-DI-kE2.title" xml:space="preserve">
-        <source>KeepingYouAwake</source>
-        <target>KeepingYouAwake</target>
-        <note>Class = "NSTextFieldCell"; title = "KeepingYouAwake"; ObjectID = "nsg-DI-kE2";</note>
-      </trans-unit>
-      <trans-unit id="rEp-oa-7IA.title" xml:space="preserve">
-        <source>Hours</source>
-        <note>Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "rEp-oa-7IA";</note>
-      </trans-unit>
-      <trans-unit id="siu-CP-Bg1.title" xml:space="preserve">
-        <source>Copyright Label</source>
-        <note>Class = "NSTextFieldCell"; title = "Copyright Label"; ObjectID = "siu-CP-Bg1";</note>
-      </trans-unit>
-      <trans-unit id="uUP-5n-ykj.title" xml:space="preserve">
+      <trans-unit id="About" xml:space="preserve">
         <source>About</source>
         <target>정보</target>
-        <note>Class = "NSViewController"; title = "About"; ObjectID = "uUP-5n-ykj";</note>
+        <note/>
       </trans-unit>
-      <trans-unit id="vdb-hr-zzU.title" xml:space="preserve">
-        <source>Check for Pre-Release Updates</source>
-        <target>Pre-Release 업데이트 확인</target>
-        <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "vdb-hr-zzU";</note>
+      <trans-unit id="Activation Duration" xml:space="preserve">
+        <source>Activation Duration</source>
+        <note/>
       </trans-unit>
-      <trans-unit id="x6s-XD-lBU.title" xml:space="preserve">
+      <trans-unit id="Advanced" xml:space="preserve">
+        <source>Advanced</source>
+        <target>고급</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="General" xml:space="preserve">
+        <source>General</source>
+        <target>일반</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="KeepingYouAwake – Preferences" xml:space="preserve">
+        <source>KeepingYouAwake – Preferences</source>
+        <target>KeepingYouAwake – 환경설정</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Updates" xml:space="preserve">
+        <source>Updates</source>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYAAdvancedPreferencesViewController/Base.lproj/KYAAdvancedPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
+    </header>
+    <body>
+      <trans-unit id="3GX-gq-Yaq.title" xml:space="preserve">
+        <source>Reset to Default</source>
+        <target>기본값으로 복원</target>
+        <note>Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "3GX-gq-Yaq";</note>
+      </trans-unit>
+      <trans-unit id="7z8-pS-A86.title" xml:space="preserve">
+        <source>Check</source>
+        <note>Class = "NSButtonCell"; title = "Check"; ObjectID = "7z8-pS-A86"; Note = "Do not localize";</note>
+      </trans-unit>
+      <trans-unit id="HPO-gf-tIY.title" xml:space="preserve">
+        <source>Text Cell</source>
+        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HPO-gf-tIY"; Note = "Do not localize";</note>
+      </trans-unit>
+      <trans-unit id="QZN-1k-USs.title" xml:space="preserve">
+        <source>10 %</source>
+        <target>10 %</target>
+        <note>Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "QZN-1k-USs";</note>
+      </trans-unit>
+      <trans-unit id="ViM-Dg-sVF.title" xml:space="preserve">
+        <source>90 %</source>
+        <target>90 %</target>
+        <note>Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "ViM-Dg-sVF";</note>
+      </trans-unit>
+      <trans-unit id="a5l-du-7Rf.title" xml:space="preserve">
+        <source>Deactivate when battery capacity is below</source>
+        <target>배터리 잔량이 부족하면 비활성화</target>
+        <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "a5l-du-7Rf";</note>
+      </trans-unit>
+      <trans-unit id="pcX-L6-8PY.title" xml:space="preserve">
+        <source>50 %</source>
+        <target>50 %</target>
+        <note>Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "pcX-L6-8PY";</note>
+      </trans-unit>
+      <trans-unit id="xdm-wP-gM6.title" xml:space="preserve">
+        <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
+        <target>고급 환경설정은 내용을 숙지한 경우만 사용하십시오. 대부분의 고급 환경설정은 재시작이 필요합니다.</target>
+        <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "xdm-wP-gM6";</note>
+      </trans-unit>
+      <trans-unit id="z26-wh-jCm.title" xml:space="preserve">
+        <source>This value will be ignored when you manually start the app below this battery capacity.</source>
+        <target>만일 이 배터리 잔량보다 적을 때 활성화한다면 이 값은 무시됩니다.</target>
+        <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "z26-wh-jCm";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYAAddDurationPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
+    </header>
+    <body>
+      <trans-unit id="5bs-m4-hy9.title" xml:space="preserve">
+        <source>Hours</source>
+        <note>Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "5bs-m4-hy9";</note>
+      </trans-unit>
+      <trans-unit id="59l-n2-tD5.title" xml:space="preserve">
+        <source>Cancel</source>
+        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "59l-n2-tD5";</note>
+      </trans-unit>
+      <trans-unit id="kYn-pW-tq6.title" xml:space="preserve">
+        <source>Warning Label</source>
+        <note>Class = "NSTextFieldCell"; title = "Warning Label"; ObjectID = "kYn-pW-tq6"; Note = "Do not localize";</note>
+      </trans-unit>
+      <trans-unit id="oi9-AP-ag4.title" xml:space="preserve">
+        <source>Minutes</source>
+        <note>Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "oi9-AP-ag4";</note>
+      </trans-unit>
+      <trans-unit id="s1J-2f-UeD.title" xml:space="preserve">
+        <source>Seconds</source>
+        <note>Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "s1J-2f-UeD";</note>
+      </trans-unit>
+      <trans-unit id="vTF-HR-j5d.title" xml:space="preserve">
+        <source>Add Duration</source>
+        <note>Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "vTF-HR-j5d";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYADurationPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
+    </header>
+    <body>
+      <trans-unit id="2Az-3u-oGb.title" xml:space="preserve">
+        <source>Remove</source>
+        <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "2Az-3u-oGb";</note>
+      </trans-unit>
+      <trans-unit id="3es-An-BPG.title" xml:space="preserve">
+        <source>Set Default</source>
+        <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "3es-An-BPG";</note>
+      </trans-unit>
+      <trans-unit id="4tU-j1-N4m.title" xml:space="preserve">
+        <source>The default activation duration is used when you click on the menu bar icon.</source>
+        <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "4tU-j1-N4m";</note>
+      </trans-unit>
+      <trans-unit id="13c-ID-Fgy.title" xml:space="preserve">
+        <source>Reset…</source>
+        <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "13c-ID-Fgy";</note>
+      </trans-unit>
+      <trans-unit id="Are-vs-Awn.title" xml:space="preserve">
+        <source>Set Default</source>
+        <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "Are-vs-Awn";</note>
+      </trans-unit>
+      <trans-unit id="Btn-FN-s8Z.title" xml:space="preserve">
+        <source>Text Cell</source>
+        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Btn-FN-s8Z"; Note = "Do not localize";</note>
+      </trans-unit>
+      <trans-unit id="COs-G1-J6K.title" xml:space="preserve">
+        <source>Reset…</source>
+        <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "COs-G1-J6K";</note>
+      </trans-unit>
+      <trans-unit id="U86-Hk-nfT.title" xml:space="preserve">
+        <source>Set Default</source>
+        <note>Class = "NSMenuItem"; title = "Set Default"; ObjectID = "U86-Hk-nfT";</note>
+      </trans-unit>
+      <trans-unit id="dml-Pt-frp.ibShadowedToolTips[0]" xml:space="preserve">
+        <source>Remove</source>
+        <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[0] = "Remove"; ObjectID = "dml-Pt-frp";</note>
+      </trans-unit>
+      <trans-unit id="dml-Pt-frp.ibShadowedToolTips[1]" xml:space="preserve">
+        <source>Add</source>
+        <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[1] = "Add"; ObjectID = "dml-Pt-frp";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYAGeneralPreferencesViewController/Base.lproj/KYAGeneralPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
+    </header>
+    <body>
+      <trans-unit id="7QN-oX-fJU.title" xml:space="preserve">
+        <source>Immediately starts preventing sleep when launched.</source>
+        <target>앱을 실행했을 때 즉시 잠자기를 비활성화합니다.</target>
+        <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU";</note>
+      </trans-unit>
+      <trans-unit id="7dk-Tj-9aG.title" xml:space="preserve">
+        <source>Notification Preferences…</source>
+        <note>Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "7dk-Tj-9aG";</note>
+      </trans-unit>
+      <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
+        <source>Start at Login</source>
+        <target>로그인 시 활성화</target>
+        <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "YWD-DY-pgf";</note>
+      </trans-unit>
+      <trans-unit id="jxf-J8-dHN.title" xml:space="preserve">
         <source>Automatically opens the app when you start your Mac.</source>
         <target>Mac을 시작했을 때 자동으로 이 앱을 실행합니다.</target>
-        <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "x6s-XD-lBU";</note>
+        <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "jxf-J8-dHN";</note>
       </trans-unit>
-      <trans-unit id="ybA-ux-mRo.title" xml:space="preserve">
-        <source>Minutes</source>
-        <note>Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "ybA-ux-mRo";</note>
+      <trans-unit id="zql-rZ-9xH.title" xml:space="preserve">
+        <source>Activate on Launch</source>
+        <target>실행 시 활성화</target>
+        <note>Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "zql-rZ-9xH";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYAUpdatePreferencesViewController/Base.lproj/KYAUpdatePreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
+    </header>
+    <body>
+      <trans-unit id="F2o-Is-2nW.title" xml:space="preserve">
+        <source>Automatically Check for Updates</source>
+        <target>자동으로 업데이트 확인</target>
+        <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "F2o-Is-2nW";</note>
+      </trans-unit>
+      <trans-unit id="oBK-47-iMk.title" xml:space="preserve">
+        <source>Check for Pre-Release Updates</source>
+        <target>Pre-Release 업데이트 확인</target>
+        <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "oBK-47-iMk";</note>
+      </trans-unit>
+      <trans-unit id="tAT-1z-ZPp.title" xml:space="preserve">
+        <source>Check Now</source>
+        <target>지금 확인</target>
+        <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "tAT-1z-ZPp";</note>
       </trans-unit>
     </body>
   </file>
   <file original="KYAKit/en.lproj/Localizable.strings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
     </header>
     <body>
       <trans-unit id="Indefinitely" xml:space="preserve">
@@ -348,7 +369,7 @@ Right click to show menu</source>
   </file>
   <file original="KYALauncher/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="ko">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5212g"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
