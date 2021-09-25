@@ -1,0 +1,12 @@
+/* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU"; */
+"7QN-oX-fJU.title" = "Aktifkan mencegah mode tidur saat diluncurkan.";
+
+/* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "jxf-J8-dHN"; */
+"jxf-J8-dHN.title" = "Buka aplikasi secara otomatis saat anda membuka Mac.";
+
+/* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "YWD-DY-pgf"; */
+"YWD-DY-pgf.title" = "Mulai Saat Login";
+
+/* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "zql-rZ-9xH"; */
+"zql-rZ-9xH.title" = "Aktifkan saat Peluncuran";
+
