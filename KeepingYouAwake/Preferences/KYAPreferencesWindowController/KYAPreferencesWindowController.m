@@ -8,6 +8,7 @@
 
 #import "KYAPreferencesWindowController.h"
 #import "KYADefines.h"
+#import "KYAAppUpdater.h"
 #import "KYAPreferencesContentViewControllers.h"
 
 @interface KYAPreferencesWindowController ()
@@ -49,7 +50,9 @@
         KYAGeneralPreferencesViewController.preferredTabViewItem,
         KYADurationPreferencesViewController.preferredTabViewItem,
         KYAAdvancedPreferencesViewController.preferredTabViewItem,
+#if KYA_APP_UPDATER_ENABLED
         KYAUpdatePreferencesViewController.preferredTabViewItem,
+#endif
         KYAAboutPreferencesViewController.preferredTabViewItem
     ];
     

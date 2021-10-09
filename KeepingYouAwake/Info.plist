@@ -51,7 +51,5 @@
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
-	<key>SUFeedURL</key>
-	<string>https://${KYA_APPCAST_FEED_URL}</string>
 </dict>
 </plist>
