@@ -8,12 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DA085D1021D6BAB6003D9B1B /* container-migration.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA085D0F21D6BAB6003D9B1B /* container-migration.plist */; };
-		DA0ADE6621CBFC5800D34B9D /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0ADE6521CBFC5800D34B9D /* Sparkle.framework */; };
-		DA0ADE6821CBFC6000D34B9D /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA0ADE6521CBFC5800D34B9D /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DA0ADE6E21CBFCA700D34B9D /* org.sparkle-project.Downloader.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6A21CBFC9700D34B9D /* org.sparkle-project.Downloader.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DA0ADE6F21CBFCA700D34B9D /* org.sparkle-project.InstallerConnection.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6B21CBFC9700D34B9D /* org.sparkle-project.InstallerConnection.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DA0ADE7021CBFCA700D34B9D /* org.sparkle-project.InstallerLauncher.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6C21CBFC9700D34B9D /* org.sparkle-project.InstallerLauncher.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DA0ADE7121CBFCA700D34B9D /* org.sparkle-project.InstallerStatus.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6D21CBFC9700D34B9D /* org.sparkle-project.InstallerStatus.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA13771A25E969FF00FB0FAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA13771925E969FF00FB0FAD /* Assets.xcassets */; };
 		DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */; };
 		DA19F0BA2610810E001A6AA6 /* KYAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA19F0B12610810E001A6AA6 /* KYAKit.framework */; };
@@ -22,6 +16,7 @@
 		DA19F0C62610810E001A6AA6 /* KYAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA19F0B12610810E001A6AA6 /* KYAKit.framework */; };
 		DA19F0C72610810E001A6AA6 /* KYAKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA19F0B12610810E001A6AA6 /* KYAKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
+		DA2C0E342700629A006E9991 /* KYAAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2C0E332700629A006E9991 /* KYAAppUpdater.m */; };
 		DA2CCD5F26F8754C00568BDD /* KYAPreferencesContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2CCD5E26F8754C00568BDD /* KYAPreferencesContentViewController.m */; };
 		DA3D5C25261386AC00C7E103 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA3D5C27261386AC00C7E103 /* Localizable.strings */; };
 		DA3D5C3A2613895800C7E103 /* NSBundle+KYAVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3D5C382613895800C7E103 /* NSBundle+KYAVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,8 +60,6 @@
 		DA9A4FE6261631D700C672C4 /* KYALocalizedStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A4FE5261631D700C672C4 /* KYALocalizedStrings.m */; };
 		DA9C58922610DE8B005F3A34 /* NSUserDefaults+Keys.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9C58902610DE8B005F3A34 /* NSUserDefaults+Keys.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9C58932610DE8B005F3A34 /* NSUserDefaults+Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C58912610DE8B005F3A34 /* NSUserDefaults+Keys.m */; };
-		DA9C58A22610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C58A02610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m */; };
-		DA9C58A32610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9C58A12610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9C58C226110010005F3A34 /* NSApplication+KYALauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C58C026110010005F3A34 /* NSApplication+KYALauncher.m */; };
 		DA9C58C326110010005F3A34 /* NSApplication+KYALauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9C58C126110010005F3A34 /* NSApplication+KYALauncher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9C58D02611011D005F3A34 /* KYASleepWakeTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9C58CE2611011D005F3A34 /* KYASleepWakeTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -78,6 +71,49 @@
 		DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */; };
 		DAB128731C2469F300831045 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DAB1286D1C245A6C00831045 /* Credits.rtf */; };
 		DAB128761C2493DB00831045 /* KYAPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128751C2493DB00831045 /* KYAPreference.m */; };
+		DAD3CF5C271186720006CA14 /* KYAAddDurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */; };
+		DAD3CF5D271186720006CA14 /* KYAUpdatePreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5680192115FF140039C979 /* KYAUpdatePreferencesViewController.m */; };
+		DAD3CF5E271186720006CA14 /* KYAPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */; };
+		DAD3CF5F271186720006CA14 /* KYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B4119F14693004C8838 /* KYAAppDelegate.m */; };
+		DAD3CF60271186720006CA14 /* KYAAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2C0E332700629A006E9991 /* KYAAppUpdater.m */; };
+		DAD3CF61271186720006CA14 /* KYADurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700E22EC8E6B004D5BCA /* KYADurationPreferencesViewController.m */; };
+		DAD3CF62271186720006CA14 /* KYAActivationDurationsMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82560C22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m */; };
+		DAD3CF63271186720006CA14 /* KYAActivationUserNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52B1062617021500D09FE5 /* KYAActivationUserNotification.m */; };
+		DAD3CF64271186720006CA14 /* KYALocalizedStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A4FE5261631D700C672C4 /* KYALocalizedStrings.m */; };
+		DAD3CF65271186720006CA14 /* KYAGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */; };
+		DAD3CF66271186720006CA14 /* KYADurationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700922EC794F004D5BCA /* KYADurationCell.m */; };
+		DAD3CF67271186720006CA14 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
+		DAD3CF68271186720006CA14 /* KYAPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128751C2493DB00831045 /* KYAPreference.m */; };
+		DAD3CF69271186720006CA14 /* KYAAdvancedPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128681C2453F600831045 /* KYAAdvancedPreferencesViewController.m */; };
+		DAD3CF6A271186720006CA14 /* KYAAboutPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */; };
+		DAD3CF6B271186720006CA14 /* KYAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B5D19F146B6004C8838 /* KYAAppController.m */; };
+		DAD3CF6C271186720006CA14 /* KYAPreferencesContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2CCD5E26F8754C00568BDD /* KYAPreferencesContentViewController.m */; };
+		DAD3CF6D271186720006CA14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B3E19F14693004C8838 /* main.m */; };
+		DAD3CF6E271186720006CA14 /* KYAStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */; };
+		DAD3CF70271186720006CA14 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0ADE6521CBFC5800D34B9D /* Sparkle.framework */; };
+		DAD3CF71271186720006CA14 /* KYAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA19F0B12610810E001A6AA6 /* KYAKit.framework */; };
+		DAD3CF73271186720006CA14 /* KYAAdvancedPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4835F226F8CF100073A062 /* KYAAdvancedPreferencesViewController.xib */; };
+		DAD3CF74271186720006CA14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */; };
+		DAD3CF75271186720006CA14 /* KYAPreferences.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAD9831B26F8883E00234FB8 /* KYAPreferences.strings */; };
+		DAD3CF76271186720006CA14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C12C1D69C55400AF9E9D /* Localizable.strings */; };
+		DAD3CF77271186720006CA14 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DAB1286D1C245A6C00831045 /* Credits.rtf */; };
+		DAD3CF78271186720006CA14 /* KYAAboutPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD9834826F8A9AE00234FB8 /* KYAAboutPreferencesViewController.xib */; };
+		DAD3CF79271186720006CA14 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA637B4519F14693004C8838 /* MainMenu.xib */; };
+		DAD3CF7A271186720006CA14 /* container-migration.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA085D0F21D6BAB6003D9B1B /* container-migration.plist */; };
+		DAD3CF7B271186720006CA14 /* KYAAddDurationPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD983A926F9C46600234FB8 /* KYAAddDurationPreferencesViewController.xib */; };
+		DAD3CF7C271186720006CA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA13771925E969FF00FB0FAD /* Assets.xcassets */; };
+		DAD3CF7D271186720006CA14 /* KYAUpdatePreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD9834E26F8BB0500234FB8 /* KYAUpdatePreferencesViewController.xib */; };
+		DAD3CF7E271186720006CA14 /* KYADurationPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD9838C26F9037900234FB8 /* KYADurationPreferencesViewController.xib */; };
+		DAD3CF7F271186720006CA14 /* KYAGeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD982FA26F8849A00234FB8 /* KYAGeneralPreferencesViewController.xib */; };
+		DAD3CF80271186720006CA14 /* KYAPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD983C526F9C82900234FB8 /* KYAPreferencesWindowController.xib */; };
+		DAD3CF81271186720006CA14 /* KYADurationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB0700B22EC795F004D5BCA /* KYADurationCell.xib */; };
+		DAD3CF83271186720006CA14 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA0ADE6521CBFC5800D34B9D /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAD3CF84271186720006CA14 /* KYAKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA19F0B12610810E001A6AA6 /* KYAKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAD3CF86271186720006CA14 /* KeepingYouAwake Launcher.app in Embed Launcher */ = {isa = PBXBuildFile; fileRef = DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAD3CF88271186720006CA14 /* org.sparkle-project.Downloader.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6A21CBFC9700D34B9D /* org.sparkle-project.Downloader.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAD3CF89271186720006CA14 /* org.sparkle-project.InstallerConnection.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6B21CBFC9700D34B9D /* org.sparkle-project.InstallerConnection.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAD3CF8A271186720006CA14 /* org.sparkle-project.InstallerLauncher.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6C21CBFC9700D34B9D /* org.sparkle-project.InstallerLauncher.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAD3CF8B271186720006CA14 /* org.sparkle-project.InstallerStatus.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DA0ADE6D21CBFC9700D34B9D /* org.sparkle-project.InstallerStatus.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAD982F826F8849A00234FB8 /* KYAGeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD982FA26F8849A00234FB8 /* KYAGeneralPreferencesViewController.xib */; };
 		DAD9831926F8883E00234FB8 /* KYAPreferences.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAD9831B26F8883E00234FB8 /* KYAPreferences.strings */; };
 		DAD9834926F8A9AE00234FB8 /* KYAAboutPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD9834826F8A9AE00234FB8 /* KYAAboutPreferencesViewController.xib */; };
@@ -116,23 +152,23 @@
 			remoteGlobalIDString = DA658E6A21CE907B0049F4C1;
 			remoteInfo = "KeepingYouAwake Launcher";
 		};
+		DAD3CF58271186720006CA14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA637B3119F14693004C8838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA658E6A21CE907B0049F4C1;
+			remoteInfo = "KeepingYouAwake Launcher";
+		};
+		DAD3CF5A271186720006CA14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA637B3119F14693004C8838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA19F0B02610810E001A6AA6;
+			remoteInfo = KYAKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DA0ADE6921CBFC7E00D34B9D /* Embed XPC Services */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
-			dstSubfolderSpec = 16;
-			files = (
-				DA0ADE6E21CBFCA700D34B9D /* org.sparkle-project.Downloader.xpc in Embed XPC Services */,
-				DA0ADE6F21CBFCA700D34B9D /* org.sparkle-project.InstallerConnection.xpc in Embed XPC Services */,
-				DA0ADE7021CBFCA700D34B9D /* org.sparkle-project.InstallerLauncher.xpc in Embed XPC Services */,
-				DA0ADE7121CBFCA700D34B9D /* org.sparkle-project.InstallerStatus.xpc in Embed XPC Services */,
-			);
-			name = "Embed XPC Services";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DA658E8321CE93120049F4C1 /* Embed Launcher */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,10 +186,46 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DA0ADE6821CBFC6000D34B9D /* Sparkle.framework in Embed Frameworks */,
 				DA19F0C72610810E001A6AA6 /* KYAKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD3CF82271186720006CA14 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DAD3CF83271186720006CA14 /* Sparkle.framework in Embed Frameworks */,
+				DAD3CF84271186720006CA14 /* KYAKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD3CF85271186720006CA14 /* Embed Launcher */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				DAD3CF86271186720006CA14 /* KeepingYouAwake Launcher.app in Embed Launcher */,
+			);
+			name = "Embed Launcher";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD3CF87271186720006CA14 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				DAD3CF88271186720006CA14 /* org.sparkle-project.Downloader.xpc in Embed XPC Services */,
+				DAD3CF89271186720006CA14 /* org.sparkle-project.InstallerConnection.xpc in Embed XPC Services */,
+				DAD3CF8A271186720006CA14 /* org.sparkle-project.InstallerLauncher.xpc in Embed XPC Services */,
+				DAD3CF8B271186720006CA14 /* org.sparkle-project.InstallerStatus.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -184,6 +256,8 @@
 		DA249E281F9B7211006BCD2C /* KYADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADefines.h; sourceTree = "<group>"; };
 		DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAMenuBarIcon.h; sourceTree = "<group>"; };
 		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
+		DA2C0E322700629A006E9991 /* KYAAppUpdater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAAppUpdater.h; sourceTree = "<group>"; };
+		DA2C0E332700629A006E9991 /* KYAAppUpdater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAppUpdater.m; sourceTree = "<group>"; };
 		DA2CCD5D26F8754C00568BDD /* KYAPreferencesContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesContentViewController.h; sourceTree = "<group>"; };
 		DA2CCD5E26F8754C00568BDD /* KYAPreferencesContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAPreferencesContentViewController.m; sourceTree = "<group>"; };
 		DA2CCD6326F87A4500568BDD /* KYAPreferencesContentViewControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesContentViewControllers.h; sourceTree = "<group>"; };
@@ -291,8 +365,6 @@
 		DA9A4FE5261631D700C672C4 /* KYALocalizedStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYALocalizedStrings.m; sourceTree = "<group>"; };
 		DA9C58902610DE8B005F3A34 /* NSUserDefaults+Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Keys.h"; sourceTree = "<group>"; };
 		DA9C58912610DE8B005F3A34 /* NSUserDefaults+Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Keys.m"; sourceTree = "<group>"; };
-		DA9C58A02610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+KYAUpdateFeed.m"; sourceTree = "<group>"; };
-		DA9C58A12610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KYAUpdateFeed.h"; sourceTree = "<group>"; };
 		DA9C58C026110010005F3A34 /* NSApplication+KYALauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+KYALauncher.m"; sourceTree = "<group>"; };
 		DA9C58C126110010005F3A34 /* NSApplication+KYALauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+KYALauncher.h"; sourceTree = "<group>"; };
 		DA9C58CE2611011D005F3A34 /* KYASleepWakeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYASleepWakeTimer.h; sourceTree = "<group>"; };
@@ -315,6 +387,7 @@
 		DAD3B5771EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DAD3B5781EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DAD3B5791EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		DAD3CF8F271186720006CA14 /* KeepingYouAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepingYouAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD982F726F883DF00234FB8 /* KYAPreferencesLocalizedStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesLocalizedStrings.h; sourceTree = "<group>"; };
 		DAD982F926F8849A00234FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KYAGeneralPreferencesViewController.xib; sourceTree = "<group>"; };
 		DAD982FE26F8849F00234FB8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/KYAGeneralPreferencesViewController.strings; sourceTree = "<group>"; };
@@ -417,7 +490,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA0ADE6621CBFC5800D34B9D /* Sparkle.framework in Frameworks */,
 				DA19F0C62610810E001A6AA6 /* KYAKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +498,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD3CF6F271186720006CA14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD3CF70271186720006CA14 /* Sparkle.framework in Frameworks */,
+				DAD3CF71271186720006CA14 /* KYAKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +547,15 @@
 				DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */,
 			);
 			path = KYAMenuBarIcon;
+			sourceTree = "<group>";
+		};
+		DA2C0E3527006AF7006E9991 /* KYAAppUpdater */ = {
+			isa = PBXGroup;
+			children = (
+				DA2C0E322700629A006E9991 /* KYAAppUpdater.h */,
+				DA2C0E332700629A006E9991 /* KYAAppUpdater.m */,
+			);
+			path = KYAAppUpdater;
 			sourceTree = "<group>";
 		};
 		DA2CCD6226F8763100568BDD /* KYAPreferencesContentViewController */ = {
@@ -521,8 +611,6 @@
 			children = (
 				DA9C58C126110010005F3A34 /* NSApplication+KYALauncher.h */,
 				DA9C58C026110010005F3A34 /* NSApplication+KYALauncher.m */,
-				DA9C58A12610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h */,
-				DA9C58A02610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m */,
 				DA3D5C382613895800C7E103 /* NSBundle+KYAVersion.h */,
 				DA3D5C392613895800C7E103 /* NSBundle+KYAVersion.m */,
 				DA44F2732610A20B00E6A516 /* NSDate+RemainingTime.h */,
@@ -626,6 +714,7 @@
 				DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */,
 				DA19F0B12610810E001A6AA6 /* KYAKit.framework */,
 				DA19F0B92610810E001A6AA6 /* KYAKitTests.xctest */,
+				DAD3CF8F271186720006CA14 /* KeepingYouAwake.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -643,6 +732,7 @@
 				DA52B1052617021500D09FE5 /* KYAActivationUserNotification */,
 				DA8F381B1F9BA4360086A84A /* KYAStatusItemController */,
 				DA2691CF1B8230AB00B15779 /* KYAMenuBarIcon */,
+				DA2C0E3527006AF7006E9991 /* KYAAppUpdater */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
 				DAE9C00C26107E0900F9ED76 /* Other… */,
 			);
@@ -788,7 +878,6 @@
 				DA9C58C326110010005F3A34 /* NSApplication+KYALauncher.h in Headers */,
 				DA44F2752610A20B00E6A516 /* NSDate+RemainingTime.h in Headers */,
 				DA3D5C3A2613895800C7E103 /* NSBundle+KYAVersion.h in Headers */,
-				DA9C58A32610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.h in Headers */,
 				DA3D5C5B2613913B00C7E103 /* KYAActivationDuration.h in Headers */,
 				DA52B0F4261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.h in Headers */,
 				DA44F25C26109FFA00E6A516 /* KYAEventHandler.h in Headers */,
@@ -851,7 +940,6 @@
 				DA637B3719F14693004C8838 /* Resources */,
 				DA8CB49F1A5767CC00BC6F73 /* Embed Frameworks */,
 				DA658E8321CE93120049F4C1 /* Embed Launcher */,
-				DA0ADE6921CBFC7E00D34B9D /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
@@ -879,6 +967,28 @@
 			name = "KeepingYouAwake Launcher";
 			productName = KYALauncher;
 			productReference = DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAD3CF56271186720006CA14 /* KeepingYouAwake (Direct) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD3CF8C271186720006CA14 /* Build configuration list for PBXNativeTarget "KeepingYouAwake (Direct)" */;
+			buildPhases = (
+				DAD3CF5B271186720006CA14 /* Sources */,
+				DAD3CF6F271186720006CA14 /* Frameworks */,
+				DAD3CF72271186720006CA14 /* Resources */,
+				DAD3CF82271186720006CA14 /* Embed Frameworks */,
+				DAD3CF85271186720006CA14 /* Embed Launcher */,
+				DAD3CF87271186720006CA14 /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAD3CF57271186720006CA14 /* PBXTargetDependency */,
+				DAD3CF59271186720006CA14 /* PBXTargetDependency */,
+			);
+			name = "KeepingYouAwake (Direct)";
+			productName = KeepingYouAwake;
+			productReference = DAD3CF8F271186720006CA14 /* KeepingYouAwake.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -926,6 +1036,10 @@
 							};
 						};
 					};
+					DAD3CF56271186720006CA14 = {
+						DevelopmentTeam = 5KESHV9W85;
+						ProvisioningStyle = Manual;
+					};
 				};
 			};
 			buildConfigurationList = DA637B3419F14693004C8838 /* Build configuration list for PBXProject "KeepingYouAwake" */;
@@ -955,6 +1069,7 @@
 			projectRoot = "";
 			targets = (
 				DA637B3819F14693004C8838 /* KeepingYouAwake */,
+				DAD3CF56271186720006CA14 /* KeepingYouAwake (Direct) */,
 				DA658E6A21CE907B0049F4C1 /* KeepingYouAwake Launcher */,
 				DA19F0B02610810E001A6AA6 /* KYAKit */,
 				DA19F0B82610810E001A6AA6 /* KYAKitTests */,
@@ -1009,6 +1124,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAD3CF72271186720006CA14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD3CF73271186720006CA14 /* KYAAdvancedPreferencesViewController.xib in Resources */,
+				DAD3CF74271186720006CA14 /* InfoPlist.strings in Resources */,
+				DAD3CF75271186720006CA14 /* KYAPreferences.strings in Resources */,
+				DAD3CF76271186720006CA14 /* Localizable.strings in Resources */,
+				DAD3CF77271186720006CA14 /* Credits.rtf in Resources */,
+				DAD3CF78271186720006CA14 /* KYAAboutPreferencesViewController.xib in Resources */,
+				DAD3CF79271186720006CA14 /* MainMenu.xib in Resources */,
+				DAD3CF7A271186720006CA14 /* container-migration.plist in Resources */,
+				DAD3CF7B271186720006CA14 /* KYAAddDurationPreferencesViewController.xib in Resources */,
+				DAD3CF7C271186720006CA14 /* Assets.xcassets in Resources */,
+				DAD3CF7D271186720006CA14 /* KYAUpdatePreferencesViewController.xib in Resources */,
+				DAD3CF7E271186720006CA14 /* KYADurationPreferencesViewController.xib in Resources */,
+				DAD3CF7F271186720006CA14 /* KYAGeneralPreferencesViewController.xib in Resources */,
+				DAD3CF80271186720006CA14 /* KYAPreferencesWindowController.xib in Resources */,
+				DAD3CF81271186720006CA14 /* KYADurationCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1028,7 +1165,6 @@
 				DA3D5C682613917E00C7E103 /* KYAActivationDurationsController.m in Sources */,
 				DA9C58D12611011D005F3A34 /* KYASleepWakeTimer.m in Sources */,
 				DA44F25E26109FFA00E6A516 /* KYAEventHandler.m in Sources */,
-				DA9C58A22610E0C1005F3A34 /* NSBundle+KYAUpdateFeed.m in Sources */,
 				DA3D5C5A2613913B00C7E103 /* KYAActivationDuration.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1049,6 +1185,7 @@
 				DA56801B2115FF140039C979 /* KYAUpdatePreferencesViewController.m in Sources */,
 				DA7B53061E16999A00D89A12 /* KYAPreferencesWindowController.m in Sources */,
 				DA637B4219F14693004C8838 /* KYAAppDelegate.m in Sources */,
+				DA2C0E342700629A006E9991 /* KYAAppUpdater.m in Sources */,
 				DAB0701022EC8E6B004D5BCA /* KYADurationPreferencesViewController.m in Sources */,
 				DA82560D22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m in Sources */,
 				DA52B1082617021500D09FE5 /* KYAActivationUserNotification.m in Sources */,
@@ -1075,6 +1212,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAD3CF5B271186720006CA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD3CF5C271186720006CA14 /* KYAAddDurationPreferencesViewController.m in Sources */,
+				DAD3CF5D271186720006CA14 /* KYAUpdatePreferencesViewController.m in Sources */,
+				DAD3CF5E271186720006CA14 /* KYAPreferencesWindowController.m in Sources */,
+				DAD3CF5F271186720006CA14 /* KYAAppDelegate.m in Sources */,
+				DAD3CF60271186720006CA14 /* KYAAppUpdater.m in Sources */,
+				DAD3CF61271186720006CA14 /* KYADurationPreferencesViewController.m in Sources */,
+				DAD3CF62271186720006CA14 /* KYAActivationDurationsMenuController.m in Sources */,
+				DAD3CF63271186720006CA14 /* KYAActivationUserNotification.m in Sources */,
+				DAD3CF64271186720006CA14 /* KYALocalizedStrings.m in Sources */,
+				DAD3CF65271186720006CA14 /* KYAGeneralPreferencesViewController.m in Sources */,
+				DAD3CF66271186720006CA14 /* KYADurationCell.m in Sources */,
+				DAD3CF67271186720006CA14 /* KYAMenuBarIcon.m in Sources */,
+				DAD3CF68271186720006CA14 /* KYAPreference.m in Sources */,
+				DAD3CF69271186720006CA14 /* KYAAdvancedPreferencesViewController.m in Sources */,
+				DAD3CF6A271186720006CA14 /* KYAAboutPreferencesViewController.m in Sources */,
+				DAD3CF6B271186720006CA14 /* KYAAppController.m in Sources */,
+				DAD3CF6C271186720006CA14 /* KYAPreferencesContentViewController.m in Sources */,
+				DAD3CF6D271186720006CA14 /* main.m in Sources */,
+				DAD3CF6E271186720006CA14 /* KYAStatusItemController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1097,6 +1260,16 @@
 			isa = PBXTargetDependency;
 			target = DA658E6A21CE907B0049F4C1 /* KeepingYouAwake Launcher */;
 			targetProxy = DA87FF5E21D42525009045F3 /* PBXContainerItemProxy */;
+		};
+		DAD3CF57271186720006CA14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA658E6A21CE907B0049F4C1 /* KeepingYouAwake Launcher */;
+			targetProxy = DAD3CF58271186720006CA14 /* PBXContainerItemProxy */;
+		};
+		DAD3CF59271186720006CA14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA19F0B02610810E001A6AA6 /* KYAKit */;
+			targetProxy = DAD3CF5A271186720006CA14 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1664,6 +1837,59 @@
 			};
 			name = Release;
 		};
+		DAD3CF8D271186720006CA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeepingYouAwake/KeepingYouAwake.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/Sparkle",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"KYA_APP_UPDATER_ENABLED=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KeepingYouAwake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = KeepingYouAwake;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		DAD3CF8E271186720006CA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeepingYouAwake/KeepingYouAwake.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/Sparkle",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"KYA_APP_UPDATER_ENABLED=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KeepingYouAwake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_CODE_SIGN_FLAGS = "$(inherited) --timestamp";
+				PRODUCT_NAME = KeepingYouAwake;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1708,6 +1934,15 @@
 			buildConfigurations = (
 				DA658E7921CE907D0049F4C1 /* Debug */,
 				DA658E7A21CE907D0049F4C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD3CF8C271186720006CA14 /* Build configuration list for PBXNativeTarget "KeepingYouAwake (Direct)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD3CF8D271186720006CA14 /* Debug */,
+				DAD3CF8E271186720006CA14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
