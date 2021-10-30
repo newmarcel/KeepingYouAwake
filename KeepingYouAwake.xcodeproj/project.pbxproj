@@ -999,7 +999,7 @@
 			attributes = {
 				CLASSPREFIX = KYA;
 				DefaultBuildSystemTypeForWorkspace = Latest;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Marcel Dierkes";
 				TargetAttributes = {
 					DA19F0B02610810E001A6AA6 = {
