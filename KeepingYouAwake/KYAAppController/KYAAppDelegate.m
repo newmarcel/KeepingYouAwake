@@ -7,12 +7,12 @@
 //
 
 #import "KYAAppDelegate.h"
-#import <Sparkle/Sparkle.h>
 #import <KYAKit/KYAKit.h>
 #import "KYADefines.h"
+#import "KYAAppUpdater.h"
 #import "KYAPreferencesWindowController.h"
 
-@interface KYAAppDelegate () <NSWindowDelegate, SPUUpdaterDelegate>
+@interface KYAAppDelegate () <NSWindowDelegate>
 @property (nonatomic, nullable) KYAPreferencesWindowController *preferencesWindowController;
 @end
 
@@ -20,6 +20,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
+#if KYA_APP_UPDATER_ENABLED
+    [KYAAppUpdater defaultAppUpdater];
+#endif
 }
 
 #pragma mark - Preferences Window
@@ -46,22 +49,6 @@
 - (void)windowWillClose:(NSNotification *)notification
 {
     self.preferencesWindowController = nil;
-}
-
-#pragma mark - SPUUpdaterDelegate
-
-- (NSString *)feedURLStringForUpdater:(SPUUpdater *)updater
-{
-    Auto bundle = NSBundle.mainBundle;
-    Auto defaults = NSUserDefaults.standardUserDefaults;
-    if([defaults kya_arePreReleaseUpdatesEnabled])
-    {
-        return bundle.kya_preReleaseUpdateFeedURLString;
-    }
-    else
-    {
-        return bundle.kya_updateFeedURLString;
-    }
 }
 
 @end

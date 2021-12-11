@@ -11,5 +11,8 @@
 #import "KYAGeneralPreferencesViewController.h"
 #import "KYADurationPreferencesViewController.h"
 #import "KYAAdvancedPreferencesViewController.h"
-#import "KYAUpdatePreferencesViewController.h"
 #import "KYAAboutPreferencesViewController.h"
+
+#if KYA_APP_UPDATER_ENABLED
+    #import "KYAUpdatePreferencesViewController.h"
+#endif

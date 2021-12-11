@@ -23,7 +23,6 @@ FOUNDATION_EXPORT const unsigned char KYAKitVersionString[];
 #import <KYAKit/KYAUserNotificationCenter.h>
 
 #import <KYAKit/NSApplication+KYALauncher.h>
-#import <KYAKit/NSBundle+KYAUpdateFeed.h>
 #import <KYAKit/NSBundle+KYAVersion.h>
 #import <KYAKit/NSDate+RemainingTime.h>
 #import <KYAKit/NSUserDefaults+Keys.h>

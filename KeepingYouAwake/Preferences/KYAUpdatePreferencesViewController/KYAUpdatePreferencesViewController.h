@@ -7,15 +7,23 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Sparkle/Sparkle.h>
 #import <KYAKit/KYAKit.h>
+#import "KYAAppUpdater.h"
 #import "KYAPreferencesContentViewController.h"
+
+#if KYA_APP_UPDATER_ENABLED
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// Shows "Update" preferences and allows checking
 /// for available app updates.
-@interface KYAUpdatePreferencesViewController : KYAPreferencesContentViewController <SPUUpdaterDelegate>
+@interface KYAUpdatePreferencesViewController : KYAPreferencesContentViewController
+@property (nonatomic, readonly) KYAAppUpdater *appUpdater;
+
+- (IBAction)checkForUpdates:(id)sender;
+
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

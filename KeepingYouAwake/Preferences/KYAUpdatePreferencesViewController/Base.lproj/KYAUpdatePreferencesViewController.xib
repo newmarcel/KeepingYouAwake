@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19158" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19158"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -48,7 +48,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <binding destination="oHd-We-Y2q" name="value" keyPath="self.updater.automaticallyChecksForUpdates" id="3fL-LB-7uc"/>
+                                    <binding destination="-2" name="value" keyPath="self.appUpdater.updater.automaticallyChecksForUpdates" id="2ah-xd-vgm"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fst-sO-dQ4">
@@ -58,7 +58,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="checkForUpdates:" target="oHd-We-Y2q" id="guJ-84-rSW"/>
+                                    <action selector="checkForUpdates:" target="-2" id="aMX-iB-hWo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -91,11 +91,6 @@
             </constraints>
             <point key="canvasLocation" x="-33" y="128"/>
         </view>
-        <customObject id="oHd-We-Y2q" customClass="SPUStandardUpdaterController">
-            <connections>
-                <outlet property="updaterDelegate" destination="-2" id="U5a-Sf-vqg"/>
-            </connections>
-        </customObject>
         <userDefaultsController representsSharedInstance="YES" id="Es1-xX-Gv3"/>
     </objects>
     <resources>

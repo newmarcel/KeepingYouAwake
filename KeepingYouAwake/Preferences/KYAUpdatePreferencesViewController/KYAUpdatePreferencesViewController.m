@@ -9,6 +9,8 @@
 #import "KYAUpdatePreferencesViewController.h"
 #import "KYADefines.h"
 
+#if KYA_APP_UPDATER_ENABLED
+
 @implementation KYAUpdatePreferencesViewController
 
 + (NSImage *)tabViewItemImage
@@ -34,21 +36,18 @@
     return NO;
 }
 
-#pragma mark - SPUUpdaterDelegate
+#pragma mark -
 
-- (NSString *)feedURLStringForUpdater:(SPUUpdater *)updater
+- (KYAAppUpdater *)appUpdater
 {
-    NSString *feedURLString = NSBundle.mainBundle.infoDictionary[@"SUFeedURL"];
-    NSAssert(feedURLString != nil, @"A feed URL should be set in Info.plist");
-    
-    if([NSUserDefaults.standardUserDefaults kya_arePreReleaseUpdatesEnabled])
-    {
-        Auto lastComponent = feedURLString.lastPathComponent;
-        Auto baseURLString = feedURLString.stringByDeletingLastPathComponent;
-        return [NSString stringWithFormat:@"%@/prerelease-%@", baseURLString, lastComponent];
-    }
-    
-    return feedURLString;
+    return KYAAppUpdater.defaultAppUpdater;
+}
+
+- (void)checkForUpdates:(id)sender
+{
+    [self.appUpdater checkForUpdates:sender];
 }
 
 @end
+
+#endif
