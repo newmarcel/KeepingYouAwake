@@ -12,4 +12,4 @@ PRODUCT_BUNDLE_IDENTIFIER = info.marcel-dierkes.KeepingYouAwake
 MARKETING_VERSION = 1.6.2
 CURRENT_PROJECT_VERSION = 1060202
 
-KYA_COPYRIGHT_TEXT = Copyright © 2014 – 2021 Marcel Dierkes. All rights reserved.
+KYA_COPYRIGHT_TEXT = Copyright © 2014 – 2022 Marcel Dierkes. All rights reserved.
