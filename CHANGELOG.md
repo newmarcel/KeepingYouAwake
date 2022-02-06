@@ -6,7 +6,7 @@
 
 - updated the Danish translation ([#171](https://github.com/newmarcel/KeepingYouAwake/pull/171))
     - *Thank you [JacobSchriver](https://github.com/JacobSchriver)!*
-- updated the [Sparkle](https://github.com/sparkle-project/Sparkle) update framework to version 2.0
+- updated the [Sparkle](https://github.com/sparkle-project/Sparkle) update framework to version 2.0 ([#178](https://github.com/newmarcel/KeepingYouAwake/pull/178))
 
 ### v1.6.1 ###
 
