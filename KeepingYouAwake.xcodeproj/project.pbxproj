@@ -363,6 +363,7 @@
 		DAD3B5781EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DAD3B5791EC6FA5A0022E5D0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		DAD3CF8F271186720006CA14 /* KeepingYouAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepingYouAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD90B5627B001B800F5C186 /* KeepingYouAwake-Direct.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "KeepingYouAwake-Direct.entitlements"; sourceTree = "<group>"; };
 		DAD982F726F883DF00234FB8 /* KYAPreferencesLocalizedStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesLocalizedStrings.h; sourceTree = "<group>"; };
 		DAD982F926F8849A00234FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KYAGeneralPreferencesViewController.xib; sourceTree = "<group>"; };
 		DAD982FE26F8849F00234FB8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/KYAGeneralPreferencesViewController.strings; sourceTree = "<group>"; };
@@ -823,6 +824,7 @@
 				DA637B3D19F14693004C8838 /* Info.plist */,
 				DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */,
 				DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */,
+				DAD90B5627B001B800F5C186 /* KeepingYouAwake-Direct.entitlements */,
 				DA54C12C1D69C55400AF9E9D /* Localizable.strings */,
 				DA637B3E19F14693004C8838 /* main.m */,
 			);
@@ -1828,7 +1830,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = KeepingYouAwake/KeepingYouAwake.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "KeepingYouAwake/KeepingYouAwake-Direct.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1853,7 +1855,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = KeepingYouAwake/KeepingYouAwake.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "KeepingYouAwake/KeepingYouAwake-Direct.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Manual;
