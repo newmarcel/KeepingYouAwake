@@ -1,4 +1,3 @@
-
 /* Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "F2o-Is-2nW"; */
 "F2o-Is-2nW.title" = "Автоматично перевіряти оновлення";
 
@@ -7,3 +6,4 @@
 
 /* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "tAT-1z-ZPp"; */
 "tAT-1z-ZPp.title" = "Перевірити зараз";
+
