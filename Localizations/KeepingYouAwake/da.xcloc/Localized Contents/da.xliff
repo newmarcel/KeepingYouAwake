@@ -27,7 +27,7 @@
       </trans-unit>
       <trans-unit id="Activate for Duration" xml:space="preserve">
         <source>Activate for Duration</source>
-        <target>Aktivér varighed</target>
+        <target>Aktiveringstid</target>
         <note>Activate for Duration</note>
       </trans-unit>
       <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
