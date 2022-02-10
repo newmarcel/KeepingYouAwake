@@ -1,0 +1,18 @@
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "59l-n2-tD5"; */
+"59l-n2-tD5.title" = "Відміна";
+
+/* Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "5bs-m4-hy9"; */
+"5bs-m4-hy9.title" = "Години";
+
+/* Class = "NSTextFieldCell"; title = "Warning Label"; ObjectID = "kYn-pW-tq6"; Note = "Do not localize"; */
+"kYn-pW-tq6.title" = "Warning Label";
+
+/* Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "oi9-AP-ag4"; */
+"oi9-AP-ag4.title" = "Хвилини";
+
+/* Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "s1J-2f-UeD"; */
+"s1J-2f-UeD.title" = "Секунди";
+
+/* Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "vTF-HR-j5d"; */
+"vTF-HR-j5d.title" = "Додати";

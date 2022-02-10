@@ -1,0 +1,15 @@
+
+/* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU"; */
+"7QN-oX-fJU.title" = "Активувати запобігання сну зразу ж при запуску додатка.";
+
+/* Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "7dk-Tj-9aG"; */
+"7dk-Tj-9aG.title" = "Налаштування Повідомлень…";
+
+/* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "YWD-DY-pgf"; */
+"YWD-DY-pgf.title" = "Стартувати при логіні";
+
+/* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "jxf-J8-dHN"; */
+"jxf-J8-dHN.title" = "Автозапуск додатку при старті вашого Mac.";
+
+/* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "zql-rZ-9xH"; */
+"zql-rZ-9xH.title" = "Активація при запуску додатку";

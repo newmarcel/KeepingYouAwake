@@ -1,0 +1,43 @@
+/* (Default) */
+"(Default)" = "(За замовчуванням)";
+
+/* Disable menu bar icon highlight color */
+"Disable menu bar icon highlight color" = "Заборонити зміну кольору іконки в MacOS меню";
+
+/* Click to allow sleep\nRight click to show menu */
+"Click to allow sleep\nRight click to show menu" = "Клацніть щоб увімкнути\nПравий клік для меню";
+
+/* Click to prevent sleep\nRight click to show menu */
+"Click to prevent sleep\nRight click to show menu" = "Клацніть щоб вимкнути\nПравий клік для меню";
+
+/* Cancel */
+"Cancel" = "Відміна";
+
+/* Default */
+"Default" = "За замовчуванням";
+
+/* Do you really want to reset the activation durations to the default values? */
+"Do you really want to reset the activation durations to the default values?" = "Ви справді бажаєте скинути всі налаштовані інтервали роботи до установлених за замовчуванням?";
+
+/* OK */
+"OK" = "Так";
+
+/* Allow the display to sleep */
+"Allow the display to sleep" = "Дозволити дисплею вимикатись";
+
+/* Quit when activation duration is over */
+"Quit when activation duration is over" = "Вийти коли час очікування скінчиться";
+
+/* Reset Activation Durations */
+"Reset Activation Durations" = "Скинути збережені тривалості часу";
+
+/* Set Default: %@ */
+"Set Default: %@" = "Встановити за замовчуванням: %@";
+
+/* The entered duration is invalid. Please try again. */
+"The entered duration is invalid. Please try again." = "Введено помилковий інтервал часу. Спробуйте будьласка ще раз.";
+
+/* This duration has already been added. */
+"This duration has already been added." = "Така тривалість часу вже додана.";
+
+
