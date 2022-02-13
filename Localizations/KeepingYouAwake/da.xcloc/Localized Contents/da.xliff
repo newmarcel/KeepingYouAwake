@@ -165,6 +165,7 @@ Højreklik for at vise menu</target>
       </trans-unit>
       <trans-unit id="Activation Duration" xml:space="preserve">
         <source>Activation Duration</source>
+        <targetAktiveringstid></target>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced" xml:space="preserve">
