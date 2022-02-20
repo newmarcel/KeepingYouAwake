@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <KYAKit/KYAKit.h>
+#import <KYADeviceInfo/KYADeviceInfo.h>
 #import "KYAPreferencesContentViewController.h"
 
 /// Shows "Advanced" preferences.

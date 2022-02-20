@@ -18,6 +18,7 @@ NSString * const KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled = @"info.marce
 
 NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled = @"info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled";
 NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold = @"info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThreshold";
+NSString * const KYAUserDefaultsKeyLowPowerModeMonitoringEnabled = @"info.marcel-dierkes.KeepingYouAwake.LowPowerModeMonitoringEnabled";
 NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dierkes.KeepingYouAwake.PreReleaseUpdatesEnabled";
 
 @implementation NSUserDefaults (Keys)
@@ -25,6 +26,7 @@ NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dier
 @dynamic kya_allowDisplaySleep;
 @dynamic kya_menuBarIconHighlightDisabled;
 @dynamic kya_batteryCapacityThresholdEnabled, kya_batteryCapacityThreshold;
+@dynamic kya_lowPowerModeMonitoringEnabled;
 @dynamic kya_preReleaseUpdatesEnabled;
 @dynamic kya_quitOnTimerExpirationEnabled;
 
@@ -97,6 +99,19 @@ NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dier
 - (void)setKya_batteryCapacityThreshold:(CGFloat)batteryCapacityThreshold
 {
     [self setFloat:(float)batteryCapacityThreshold forKey:KYAUserDefaultsKeyBatteryCapacityThreshold];
+}
+
+#pragma mark - Low Power Mode Monitoring Enabled
+
+- (BOOL)kya_isLowPowerModeMonitoringEnabled
+{
+    return [self boolForKey:KYAUserDefaultsKeyLowPowerModeMonitoringEnabled];
+}
+
+- (void)setKya_lowPowerModeMonitoringEnabled:(BOOL)lowPowerModeMonitoringEnabled
+{
+    [self setBool:lowPowerModeMonitoringEnabled
+           forKey:KYAUserDefaultsKeyLowPowerModeMonitoringEnabled];
 }
 
 #pragma mark - Pre-Release Updates Enabled

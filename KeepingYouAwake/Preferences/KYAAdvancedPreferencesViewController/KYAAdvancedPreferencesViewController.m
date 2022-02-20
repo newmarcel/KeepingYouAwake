@@ -50,7 +50,7 @@
     [super viewDidLoad];
 
     // Check the battery status
-    self.batteryStatusAvailable = [[KYABatteryStatus new] isBatteryStatusAvailable];
+    self.batteryStatusAvailable = [[KYABatteryMonitor new] hasBattery];
 
     [self configureAdvancedPreferences];
 }

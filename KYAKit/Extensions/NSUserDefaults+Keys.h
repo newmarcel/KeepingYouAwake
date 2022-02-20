@@ -42,17 +42,16 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
  */
 @property (nonatomic, getter = kya_isMenuBarIconHighlightDisabled) BOOL kya_menuBarIconHighlightDisabled;
 
-/**
- Returns YES if the sleep wake timer should deactivate below a defined battery capacity threshold.
- */
+/// Returns YES if the sleep wake timer should deactivate below a defined battery capacity threshold.
 @property (nonatomic, getter = kya_isBatteryCapacityThresholdEnabled) BOOL kya_batteryCapacityThresholdEnabled;
 
-/**
- A battery capacity threshold.
-
- If the user defaults value is below 10.0, 10.0 will be returned.
- */
+/// A battery capacity threshold.
+///
+/// If the user defaults value is below 10.0, 10.0 will be returned.
 @property (nonatomic) CGFloat kya_batteryCapacityThreshold;
+
+/// Returns YES if the sleep wake timer should deactivate when Low Power Mode is enabled.
+@property (nonatomic, getter=kya_isLowPowerModeMonitoringEnabled) BOOL kya_lowPowerModeMonitoringEnabled;
 
 /**
  Returns YES if Sparkle should check for pre-release updates.

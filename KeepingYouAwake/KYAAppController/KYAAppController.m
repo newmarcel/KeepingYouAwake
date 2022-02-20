@@ -24,7 +24,6 @@
 @property (nonatomic) KYAActivationDurationsMenuController *menuController;
 
 // Battery Status
-@property (nonatomic) KYABatteryStatus *batteryStatus;
 @property (nonatomic, getter=isBatteryOverrideEnabled) BOOL batteryOverrideEnabled;
 
 // Menu
@@ -55,12 +54,12 @@
             [self activateTimer];
         }
 
-        [NSNotificationCenter.defaultCenter addObserver:self
-                                               selector:@selector(applicationWillFinishLaunching:)
-                                                   name:NSApplicationWillFinishLaunchingNotification
-                                                 object:nil];
-
-        [self configureBatteryStatus];
+        Auto center = NSNotificationCenter.defaultCenter;
+        [center addObserver:self
+                   selector:@selector(applicationWillFinishLaunching:)
+                       name:NSApplicationWillFinishLaunchingNotification
+                     object:nil];
+        
         [self configureEventHandler];
 
         self.menuController = [KYAActivationDurationsMenuController new];
@@ -82,6 +81,49 @@
 
     [self.menu setSubmenu:self.menuController.menu
                   forItem:self.activationDurationsMenuItem];
+}
+
+#pragma mark - State Handling
+
+- (void)sleepWakeTimerWillActivate
+{
+    KYALog(@"Will activate: %@", self.sleepWakeTimer);
+    
+    Auto device = KYADevice.currentDevice;
+    Auto center = NSNotificationCenter.defaultCenter;
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    
+    // Check battery overrides and register for capacity changes.
+    [self checkAndEnableBatteryOverride];
+    
+    [center addObserver:self
+               selector:@selector(deviceParameterDidChange:)
+                   name:KYADeviceParameterDidChangeNotification
+                 object:device];
+    
+    if([defaults kya_isBatteryCapacityThresholdEnabled])
+    {
+        device.batteryMonitoringEnabled = YES;
+    }
+    if([defaults kya_isLowPowerModeMonitoringEnabled])
+    {
+        device.lowPowerModeMonitoringEnabled = YES;
+    }
+}
+
+- (void)sleepWakeTimerDidDeactivate
+{
+    Auto device = KYADevice.currentDevice;
+    Auto center = NSNotificationCenter.defaultCenter;
+    
+    [center removeObserver:self
+                      name:KYADeviceParameterDidChangeNotification
+                    object:device];
+    
+    device.batteryMonitoringEnabled = NO;
+    device.lowPowerModeMonitoringEnabled = NO;
+    
+    KYALog(@"Did deactivate: %@", self.sleepWakeTimer);
 }
 
 #pragma mark - KVO
@@ -148,13 +190,8 @@
     }
 
     Auto defaults = NSUserDefaults.standardUserDefaults;
-
-    // Check battery overrides and register for capacity changes.
-    [self checkAndEnableBatteryOverride];
-    if([defaults kya_isBatteryCapacityThresholdEnabled])
-    {
-        [self.batteryStatus registerForCapacityChangesIfNeeded];
-    }
+    
+    [self sleepWakeTimerWillActivate];
 
     Auto timerCompletion = ^(BOOL cancelled) {
         // Post deactivation notification
@@ -170,6 +207,8 @@
         {
             [NSApplication.sharedApplication terminate:nil];
         }
+        
+        [self sleepWakeTimerDidDeactivate];
     };
     [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:timerCompletion];
 
@@ -186,7 +225,6 @@
 - (void)terminateTimer
 {
     [self disableBatteryOverride];
-    [self.batteryStatus unregisterFromCapacityChanges];
 
     if([self.sleepWakeTimer isScheduled])
     {
@@ -194,44 +232,12 @@
     }
 }
 
-#pragma mark - Battery Status
-
-- (KYABatteryStatus *)batteryStatus
-{
-    if(_batteryStatus == nil)
-    {
-        _batteryStatus = [KYABatteryStatus new];
-
-        AutoWeak weakSelf = self;
-        _batteryStatus.capacityChangeHandler = ^(CGFloat capacity) {
-            [weakSelf batteryCapacityDidChange:capacity];
-        };
-    }
-    return _batteryStatus;
-}
-
-- (void)configureBatteryStatus
-{
-    if(![self.batteryStatus isBatteryStatusAvailable])
-    {
-        return;
-    }
-
-    [NSNotificationCenter.defaultCenter addObserver:self
-                                           selector:@selector(batteryCapacityThresholdDidChange:)
-                                               name:kKYABatteryCapacityThresholdDidChangeNotification
-                                             object:nil];
-
-    // Start receiving battery status changes
-    if([NSUserDefaults.standardUserDefaults kya_isBatteryCapacityThresholdEnabled])
-    {
-        [self.batteryStatus registerForCapacityChangesIfNeeded];
-    }
-}
+#pragma mark - Device Power Monitoring
 
 - (void)checkAndEnableBatteryOverride
 {
-    CGFloat currentCapacity = self.batteryStatus.currentCapacity;
+    Auto batteryMonitor = KYADevice.currentDevice.batteryMonitor;
+    CGFloat currentCapacity = batteryMonitor.currentCapacity;
     CGFloat threshold = NSUserDefaults.standardUserDefaults.kya_batteryCapacityThreshold;
 
     self.batteryOverrideEnabled = (currentCapacity <= threshold);
@@ -242,12 +248,34 @@
     self.batteryOverrideEnabled = NO;
 }
 
-- (void)batteryCapacityDidChange:(CGFloat)capacity
+- (void)deviceParameterDidChange:(NSNotification *)notification
 {
-    CGFloat threshold = NSUserDefaults.standardUserDefaults.kya_batteryCapacityThreshold;
-    if([self.sleepWakeTimer isScheduled] && (capacity <= threshold) && ![self isBatteryOverrideEnabled])
+    NSParameterAssert(notification);
+    
+    Auto device = (KYADevice *)notification.object;
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    
+    Auto userInfo = notification.userInfo;
+    Auto deviceParameter = (KYADeviceParameter)userInfo[KYADeviceParameterKey];
+    if([deviceParameter isEqualToString:KYADeviceParameterBattery])
     {
-        [self terminateTimer];
+        if([defaults kya_isBatteryCapacityThresholdEnabled] == NO) { return; }
+        
+        CGFloat threshold = defaults.kya_batteryCapacityThreshold;
+        Auto capacity = device.batteryMonitor.currentCapacity;
+        if([self.sleepWakeTimer isScheduled] && (capacity <= threshold) && ![self isBatteryOverrideEnabled])
+        {
+            [self terminateTimer];
+        }
+    }
+    else if([deviceParameter isEqualToString:KYADeviceParameterLowPowerMode])
+    {
+        if([defaults kya_isLowPowerModeMonitoringEnabled] == NO) { return; }
+        
+        if([device.lowPowerModeMonitor isLowPowerModeEnabled] && [self.sleepWakeTimer isScheduled])
+        {
+            [self terminateTimer];
+        }
     }
 }
 
@@ -255,10 +283,8 @@
 
 - (void)batteryCapacityThresholdDidChange:(NSNotification *)notification
 {
-    if(![self.batteryStatus isBatteryStatusAvailable])
-    {
-        return;
-    }
+    Auto batteryMonitor = KYADevice.currentDevice.batteryMonitor;
+    if([batteryMonitor hasBattery] == NO) { return; }
 
     [self terminateTimer];
 }

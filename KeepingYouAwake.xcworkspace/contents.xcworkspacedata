@@ -10,4 +10,11 @@
    <FileRef
       location = "container:KeepingYouAwake.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:"
+      name = "Packages">
+      <FileRef
+         location = "group:Packages/KYADeviceInfo">
+      </FileRef>
+   </Group>
 </Workspace>
