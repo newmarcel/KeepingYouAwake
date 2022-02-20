@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <KYAKit/KYAKit.h>
 #import <KYADeviceInfo/KYADeviceInfo.h>
+#import <KYAEvents/KYAEvents.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

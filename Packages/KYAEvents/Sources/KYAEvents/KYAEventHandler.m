@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYAEventHandler.h"
+#import <KYAEvents/KYAEventHandler.h>
 #import "KYADefines.h"
 
 @interface KYAEventHandler ()

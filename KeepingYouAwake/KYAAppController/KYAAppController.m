@@ -289,41 +289,29 @@
     [self terminateTimer];
 }
 
-#pragma mark - Apple Event Manager
+#pragma mark - Event Handling
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification
 {
-    Auto eventManager = NSAppleEventManager.sharedAppleEventManager;
-    [eventManager setEventHandler:self
-                      andSelector:@selector(handleGetURLEvent:withReplyEvent:)
-                    forEventClass:kInternetEventClass
-                       andEventID:kAEGetURL];
-}
-
-- (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)reply
-{
-    Auto parameter = [event paramDescriptorForKeyword:keyDirectObject].stringValue;
-    [KYAEventHandler.defaultHandler handleEventForURL:[NSURL URLWithString:parameter]];
+    [KYAEventManager configureEventHandler];
 }
 
 - (void)configureEventHandler
 {
+    Auto eventHandler = KYAEventHandler.defaultHandler;
+    
     AutoWeak weakSelf = self;
-    [KYAEventHandler.defaultHandler registerActionNamed:@"activate"
-                                                  block:^(KYAEvent *event) {
-                                                      typeof(self) strongSelf = weakSelf;
-                                                      [strongSelf handleActivateActionForEvent:event];
-                                                  }];
-
-    [KYAEventHandler.defaultHandler registerActionNamed:@"deactivate"
-                                                  block:^(KYAEvent *event) {
-                                                      [weakSelf terminateTimer];
-                                                  }];
-
-    [KYAEventHandler.defaultHandler registerActionNamed:@"toggle"
-                                                  block:^(KYAEvent *event) {
-                                                      [weakSelf.statusItemController toggle];
-                                                  }];
+    [eventHandler registerActionNamed:@"activate" block:^(KYAEvent *event) {
+        [weakSelf handleActivateActionForEvent:event];
+    }];
+    
+    [eventHandler registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
+        [weakSelf terminateTimer];
+    }];
+    
+    [eventHandler registerActionNamed:@"toggle" block:^(KYAEvent *event) {
+        [weakSelf.statusItemController toggle];
+    }];
 }
 
 - (void)handleActivateActionForEvent:(KYAEvent *)event

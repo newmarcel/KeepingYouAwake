@@ -11,7 +11,7 @@
 #define KYA_LOCALIZED_STRING(__key, __comment) \
     NSLocalizedStringFromTableInBundle( \
     __key, nil, \
-    [NSBundle bundleForClass:NSClassFromString(@"KYAEvent")], \
+    [NSBundle bundleForClass:NSClassFromString(@"KYASleepWakeTimer")], \
     __comment)
 
 #define KYA_L10N_INDEFINITELY KYA_LOCALIZED_STRING(@"Indefinitely", @"Indefinitely")

@@ -16,5 +16,8 @@
       <FileRef
          location = "group:Packages/KYADeviceInfo">
       </FileRef>
+      <FileRef
+         location = "group:Packages/KYAEvents">
+      </FileRef>
    </Group>
 </Workspace>

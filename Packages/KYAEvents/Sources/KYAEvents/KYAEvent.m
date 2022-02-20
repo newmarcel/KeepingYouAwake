@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYAEvent.h"
+#import <KYAEvents/KYAEvent.h>
 
 @interface KYAEvent ()
 @property (copy, nonatomic, readwrite) NSString *name;
