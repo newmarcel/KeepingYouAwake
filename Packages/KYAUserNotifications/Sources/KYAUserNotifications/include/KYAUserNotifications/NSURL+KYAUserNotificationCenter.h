@@ -1,6 +1,6 @@
 //
 //  NSURL+KYAUserNotificationCenter.h
-//  KYAKit
+//  KYAUserNotifications
 //
 //  Created by Marcel Dierkes on 20.02.21.
 //

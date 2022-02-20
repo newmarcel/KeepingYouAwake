@@ -1,6 +1,6 @@
 //
 //  KYAUserNotificationCenter.h
-//  KYAKit
+//  KYAUserNotifications
 //
 //  Created by Marcel Dierkes on 13.02.21.
 //

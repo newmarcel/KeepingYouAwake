@@ -1,13 +1,13 @@
 //
 //  NSWorkspace+KYAUserNotificationCenter.m
-//  KYAKit
+//  KYAUserNotifications
 //
 //  Created by Marcel Dierkes on 20.02.21.
 //
 
-#import "NSWorkspace+KYAUserNotificationCenter.h"
+#import <KYAUserNotifications/NSWorkspace+KYAUserNotificationCenter.h>
+#import <KYAUserNotifications/NSURL+KYAUserNotificationCenter.h>
 #import "KYADefines.h"
-#import "NSURL+KYAUserNotificationCenter.h"
 
 @implementation NSWorkspace (KYAUserNotificationCenter)
 

@@ -1,11 +1,11 @@
 //
 //  NSURL+KYAUserNotificationCenter.m
-//  KYAKit
+//  KYAUserNotifications
 //
 //  Created by Marcel Dierkes on 20.02.21.
 //
 
-#import "NSURL+KYAUserNotificationCenter.h"
+#import <KYAUserNotifications/NSURL+KYAUserNotificationCenter.h>
 #import "KYADefines.h"
 
 @implementation NSURL (KYAUserNotificationCenter)

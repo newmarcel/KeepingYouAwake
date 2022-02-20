@@ -1,11 +1,11 @@
 //
 //  KYAUserNotificationCenter.m
-//  KYAKit
+//  KYAUserNotifications
 //
 //  Created by Marcel Dierkes on 13.02.21.
 //
 
-#import "KYAUserNotificationCenter.h"
+#import <KYAUserNotifications/KYAUserNotificationCenter.h>
 #import <UserNotifications/UserNotifications.h>
 #import "KYADefines.h"
 

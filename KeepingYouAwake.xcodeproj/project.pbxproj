@@ -27,15 +27,7 @@
 		DA3D5C5B2613913B00C7E103 /* KYAActivationDuration.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3D5C592613913B00C7E103 /* KYAActivationDuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA3D5C682613917E00C7E103 /* KYAActivationDurationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3D5C662613917E00C7E103 /* KYAActivationDurationsController.m */; };
 		DA3D5C692613917E00C7E103 /* KYAActivationDurationsController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3D5C672613917E00C7E103 /* KYAActivationDurationsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA44F2742610A20B00E6A516 /* NSDate+RemainingTime.m in Sources */ = {isa = PBXBuildFile; fileRef = DA44F2722610A20B00E6A516 /* NSDate+RemainingTime.m */; };
-		DA44F2752610A20B00E6A516 /* NSDate+RemainingTime.h in Headers */ = {isa = PBXBuildFile; fileRef = DA44F2732610A20B00E6A516 /* NSDate+RemainingTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA4835F026F8CF100073A062 /* KYAAdvancedPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4835F226F8CF100073A062 /* KYAAdvancedPreferencesViewController.xib */; };
-		DA52B0F3261701A800D09FE5 /* KYAUserNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = DA52B0EC261701A800D09FE5 /* KYAUserNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA52B0F4261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = DA52B0EE261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA52B0F5261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52B0EF261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.m */; };
-		DA52B0F6261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52B0F0261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.m */; };
-		DA52B0F7261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = DA52B0F1261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA52B0F8261701A800D09FE5 /* KYAUserNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52B0F2261701A800D09FE5 /* KYAUserNotificationCenter.m */; };
 		DA52B1082617021500D09FE5 /* KYAActivationUserNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52B1062617021500D09FE5 /* KYAActivationUserNotification.m */; };
 		DA54C12A1D69C55400AF9E9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C12C1D69C55400AF9E9D /* Localizable.strings */; };
 		DA54C1311D69CA0000AF9E9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */; };
@@ -69,6 +61,8 @@
 		DAB128761C2493DB00831045 /* KYAPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128751C2493DB00831045 /* KYAPreference.m */; };
 		DACF2FC027C25CC900856FEC /* KYAEvents in Frameworks */ = {isa = PBXBuildFile; productRef = DACF2FBF27C25CC900856FEC /* KYAEvents */; };
 		DACF2FC227C25CCC00856FEC /* KYAEvents in Frameworks */ = {isa = PBXBuildFile; productRef = DACF2FC127C25CCC00856FEC /* KYAEvents */; };
+		DACF2FC727C2657800856FEC /* KYAUserNotifications in Frameworks */ = {isa = PBXBuildFile; productRef = DACF2FC627C2657800856FEC /* KYAUserNotifications */; };
+		DACF2FC927C2657C00856FEC /* KYAUserNotifications in Frameworks */ = {isa = PBXBuildFile; productRef = DACF2FC827C2657C00856FEC /* KYAUserNotifications */; };
 		DAD3CF5C271186720006CA14 /* KYAAddDurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */; };
 		DAD3CF5D271186720006CA14 /* KYAUpdatePreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5680192115FF140039C979 /* KYAUpdatePreferencesViewController.m */; };
 		DAD3CF5E271186720006CA14 /* KYAPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */; };
@@ -268,8 +262,6 @@
 		DA4121721F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA4121731F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA4121741F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		DA44F2722610A20B00E6A516 /* NSDate+RemainingTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RemainingTime.m"; sourceTree = "<group>"; };
-		DA44F2732610A20B00E6A516 /* NSDate+RemainingTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RemainingTime.h"; sourceTree = "<group>"; };
 		DA4835F126F8CF100073A062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KYAAdvancedPreferencesViewController.xib; sourceTree = "<group>"; };
 		DA4835F426F8CF160073A062 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/KYAAdvancedPreferencesViewController.strings; sourceTree = "<group>"; };
 		DA4835F626F8CF810073A062 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/KYAAdvancedPreferencesViewController.strings"; sourceTree = "<group>"; };
@@ -287,12 +279,6 @@
 		DA51141D1E214E1600635931 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA51141E1E214E1600635931 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA51141F1E214E1600635931 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		DA52B0EC261701A800D09FE5 /* KYAUserNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAUserNotificationCenter.h; sourceTree = "<group>"; };
-		DA52B0EE261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+KYAUserNotificationCenter.h"; sourceTree = "<group>"; };
-		DA52B0EF261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWorkspace+KYAUserNotificationCenter.m"; sourceTree = "<group>"; };
-		DA52B0F0261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+KYAUserNotificationCenter.m"; sourceTree = "<group>"; };
-		DA52B0F1261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWorkspace+KYAUserNotificationCenter.h"; sourceTree = "<group>"; };
-		DA52B0F2261701A800D09FE5 /* KYAUserNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAUserNotificationCenter.m; sourceTree = "<group>"; };
 		DA52B1062617021500D09FE5 /* KYAActivationUserNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAActivationUserNotification.m; sourceTree = "<group>"; };
 		DA52B1072617021500D09FE5 /* KYAActivationUserNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAActivationUserNotification.h; sourceTree = "<group>"; };
 		DA54C12B1D69C55400AF9E9D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -470,6 +456,7 @@
 			files = (
 				DA25063027C2486D0052CCD8 /* KYADeviceInfo in Frameworks */,
 				DA19F0C62610810E001A6AA6 /* KYAKit.framework in Frameworks */,
+				DACF2FC727C2657800856FEC /* KYAUserNotifications in Frameworks */,
 				DACF2FC027C25CC900856FEC /* KYAEvents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +474,7 @@
 			files = (
 				DAD3CF71271186720006CA14 /* KYAKit.framework in Frameworks */,
 				DAEF160C277C67D800EA9478 /* Sparkle in Frameworks */,
+				DACF2FC927C2657C00856FEC /* KYAUserNotifications in Frameworks */,
 				DA25063227C248710052CCD8 /* KYADeviceInfo in Frameworks */,
 				DACF2FC227C25CCC00856FEC /* KYAEvents in Frameworks */,
 			);
@@ -504,7 +492,6 @@
 				DA3D5C572613912800C7E103 /* KYAActivationDuration */,
 				DA3D5C652613917E00C7E103 /* KYAActivationDurationsController */,
 				DA9C58CD2611011D005F3A34 /* KYASleepWakeTimer */,
-				DA52B0EB261701A800D09FE5 /* KYAUserNotificationCenter */,
 				DA44F2712610A1F900E6A516 /* Extensions */,
 				DA19F0B42610810E001A6AA6 /* Info.plist */,
 			);
@@ -580,8 +567,6 @@
 				DA9C58C026110010005F3A34 /* NSApplication+KYALauncher.m */,
 				DA3D5C382613895800C7E103 /* NSBundle+KYAVersion.h */,
 				DA3D5C392613895800C7E103 /* NSBundle+KYAVersion.m */,
-				DA44F2732610A20B00E6A516 /* NSDate+RemainingTime.h */,
-				DA44F2722610A20B00E6A516 /* NSDate+RemainingTime.m */,
 				DA9C58902610DE8B005F3A34 /* NSUserDefaults+Keys.h */,
 				DA9C58912610DE8B005F3A34 /* NSUserDefaults+Keys.m */,
 			);
@@ -620,27 +605,6 @@
 				DAB1286D1C245A6C00831045 /* Credits.rtf */,
 			);
 			path = KYAAboutPreferencesViewController;
-			sourceTree = "<group>";
-		};
-		DA52B0EB261701A800D09FE5 /* KYAUserNotificationCenter */ = {
-			isa = PBXGroup;
-			children = (
-				DA52B0EC261701A800D09FE5 /* KYAUserNotificationCenter.h */,
-				DA52B0F2261701A800D09FE5 /* KYAUserNotificationCenter.m */,
-				DA52B0ED261701A800D09FE5 /* Extensions */,
-			);
-			path = KYAUserNotificationCenter;
-			sourceTree = "<group>";
-		};
-		DA52B0ED261701A800D09FE5 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				DA52B0EE261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.h */,
-				DA52B0F0261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.m */,
-				DA52B0F1261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.h */,
-				DA52B0EF261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.m */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DA52B1052617021500D09FE5 /* KYAActivationUserNotification */ = {
@@ -832,13 +796,9 @@
 			files = (
 				DA3D5C692613917E00C7E103 /* KYAActivationDurationsController.h in Headers */,
 				DA9C58C326110010005F3A34 /* NSApplication+KYALauncher.h in Headers */,
-				DA44F2752610A20B00E6A516 /* NSDate+RemainingTime.h in Headers */,
 				DA3D5C3A2613895800C7E103 /* NSBundle+KYAVersion.h in Headers */,
 				DA3D5C5B2613913B00C7E103 /* KYAActivationDuration.h in Headers */,
-				DA52B0F4261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.h in Headers */,
 				DA9C58D02611011D005F3A34 /* KYASleepWakeTimer.h in Headers */,
-				DA52B0F7261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.h in Headers */,
-				DA52B0F3261701A800D09FE5 /* KYAUserNotificationCenter.h in Headers */,
 				DA9C58922610DE8B005F3A34 /* NSUserDefaults+Keys.h in Headers */,
 				DA19F0C32610810E001A6AA6 /* KYAKit.h in Headers */,
 			);
@@ -904,6 +864,7 @@
 			packageProductDependencies = (
 				DA25062F27C2486D0052CCD8 /* KYADeviceInfo */,
 				DACF2FBF27C25CC900856FEC /* KYAEvents */,
+				DACF2FC627C2657800856FEC /* KYAUserNotifications */,
 			);
 			productName = KeepingYouAwake;
 			productReference = DA637B3919F14693004C8838 /* KeepingYouAwake.app */;
@@ -947,6 +908,7 @@
 				DAEF160B277C67D800EA9478 /* Sparkle */,
 				DA25063127C248710052CCD8 /* KYADeviceInfo */,
 				DACF2FC127C25CCC00856FEC /* KYAEvents */,
+				DACF2FC827C2657C00856FEC /* KYAUserNotifications */,
 			);
 			productName = KeepingYouAwake;
 			productReference = DAD3CF8F271186720006CA14 /* KeepingYouAwake.app */;
@@ -1119,12 +1081,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9C58C226110010005F3A34 /* NSApplication+KYALauncher.m in Sources */,
-				DA52B0F5261701A800D09FE5 /* NSWorkspace+KYAUserNotificationCenter.m in Sources */,
-				DA44F2742610A20B00E6A516 /* NSDate+RemainingTime.m in Sources */,
 				DA9C58932610DE8B005F3A34 /* NSUserDefaults+Keys.m in Sources */,
-				DA52B0F6261701A800D09FE5 /* NSURL+KYAUserNotificationCenter.m in Sources */,
 				DA3D5C3B2613895800C7E103 /* NSBundle+KYAVersion.m in Sources */,
-				DA52B0F8261701A800D09FE5 /* KYAUserNotificationCenter.m in Sources */,
 				DA3D5C682613917E00C7E103 /* KYAActivationDurationsController.m in Sources */,
 				DA9C58D12611011D005F3A34 /* KYASleepWakeTimer.m in Sources */,
 				DA3D5C5A2613913B00C7E103 /* KYAActivationDuration.mm in Sources */,
@@ -1966,6 +1924,14 @@
 		DACF2FC127C25CCC00856FEC /* KYAEvents */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = KYAEvents;
+		};
+		DACF2FC627C2657800856FEC /* KYAUserNotifications */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KYAUserNotifications;
+		};
+		DACF2FC827C2657C00856FEC /* KYAUserNotifications */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KYAUserNotifications;
 		};
 		DAEF160B277C67D800EA9478 /* Sparkle */ = {
 			isa = XCSwiftPackageProductDependency;

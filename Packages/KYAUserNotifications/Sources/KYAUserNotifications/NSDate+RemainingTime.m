@@ -1,12 +1,12 @@
 //
 //  NSDate+RemainingTime.m
-//  KeepingYouAwake
+//  KYAUserNotifications
 //
 //  Created by Marcel Dierkes on 08.08.19.
 //  Copyright © 2019 Marcel Dierkes. All rights reserved.
 //
 
-#import "NSDate+RemainingTime.h"
+#import <KYAUserNotifications/NSDate+RemainingTime.h>
 #import "KYADefines.h"
 
 @implementation NSDate (RemainingTime)

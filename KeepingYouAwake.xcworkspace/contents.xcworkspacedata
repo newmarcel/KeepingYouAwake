@@ -19,5 +19,8 @@
       <FileRef
          location = "group:Packages/KYAEvents">
       </FileRef>
+      <FileRef
+         location = "group:Packages/KYAUserNotifications">
+      </FileRef>
    </Group>
 </Workspace>
