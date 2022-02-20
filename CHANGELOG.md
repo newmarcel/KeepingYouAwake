@@ -2,6 +2,8 @@
 
 ## Changelog ##
 
+### v1.6.3 ###
+
 ### v1.6.2 ###
 
 - updated the Danish translation ([#171](https://github.com/newmarcel/KeepingYouAwake/pull/171), [#180](https://github.com/newmarcel/KeepingYouAwake/pull/180))
