@@ -28,6 +28,11 @@
     [self unregisterFromLowPowerModeChanges];
 }
 
+- (BOOL)supportsLowPowerMode
+{
+    return [[self class] supportsLowPowerMode];
+}
+
 - (BOOL)isLowPowerModeEnabled
 {
     if(@available(macOS 12.0, *))

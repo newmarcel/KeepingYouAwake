@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="KYABatteryPreferencesViewController">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="268"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UO8-po-rbJ">
+                    <rect key="frame" x="18" y="232" width="414" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Battery Level" id="pvY-d7-nKX">
+                        <font key="font" textStyle="headline" name=".SFNS-Bold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="daE-pq-RyL">
+                    <rect key="frame" x="18" y="207" width="282" height="18"/>
+                    <buttonCell key="cell" type="check" title="Deactivate when battery capacity is below" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="gx4-rK-1he">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="-2" name="enabled" keyPath="device.batteryMonitor.hasBattery" id="MAh-Qj-xBb"/>
+                        <binding destination="emK-Lf-1No" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled" id="o3M-xV-1zK"/>
+                    </connections>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="hj3-BW-E68" userLabel="Battery Limit Container View">
+                    <rect key="frame" x="40" y="165" width="390" height="35"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m3I-tD-dCD">
+                            <rect key="frame" x="365" y="0.0" width="27" height="11"/>
+                            <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="90 %" id="M11-sw-GhM">
+                                <font key="font" metaFont="miniSystem"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bYA-dT-LOU">
+                            <rect key="frame" x="-2" y="9" width="394" height="28"/>
+                            <sliderCell key="cell" state="on" alignment="left" minValue="10" maxValue="90" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="9" allowsTickMarkValuesOnly="YES" sliderType="linear" id="9Hs-JO-805"/>
+                            <connections>
+                                <binding destination="-2" name="enabled2" keyPath="device.batteryMonitor.hasBattery" previousBinding="wE0-ra-vGq" id="orT-z8-VLt">
+                                    <dictionary key="options">
+                                        <integer key="NSMultipleValuesPlaceholder" value="-1"/>
+                                        <integer key="NSNoSelectionPlaceholder" value="-1"/>
+                                        <integer key="NSNotApplicablePlaceholder" value="-1"/>
+                                        <integer key="NSNullPlaceholder" value="-1"/>
+                                    </dictionary>
+                                </binding>
+                                <binding destination="emK-Lf-1No" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThreshold" id="1It-dn-dFz"/>
+                                <binding destination="emK-Lf-1No" name="enabled" keyPath="values.info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled" id="wE0-ra-vGq"/>
+                            </connections>
+                        </slider>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="juu-aR-gQR">
+                            <rect key="frame" x="182" y="0.0" width="27" height="11"/>
+                            <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="50 %" id="ovF-0F-TMc">
+                                <font key="font" metaFont="miniSystem"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DHn-CV-LRv">
+                            <rect key="frame" x="-2" y="0.0" width="26" height="11"/>
+                            <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="10 %" id="HtM-vx-ZuN">
+                                <font key="font" metaFont="miniSystem"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="m3I-tD-dCD" secondAttribute="trailing" id="7XG-yV-MsM"/>
+                        <constraint firstAttribute="bottom" secondItem="m3I-tD-dCD" secondAttribute="bottom" id="9hQ-6d-Wft"/>
+                        <constraint firstItem="bYA-dT-LOU" firstAttribute="top" secondItem="hj3-BW-E68" secondAttribute="top" id="GC8-nN-bv5"/>
+                        <constraint firstAttribute="bottom" secondItem="DHn-CV-LRv" secondAttribute="bottom" id="M4h-zz-jSg"/>
+                        <constraint firstItem="juu-aR-gQR" firstAttribute="centerX" secondItem="hj3-BW-E68" secondAttribute="centerX" id="R1U-1y-I2a"/>
+                        <constraint firstItem="m3I-tD-dCD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="juu-aR-gQR" secondAttribute="trailing" constant="8" symbolic="YES" id="R5c-9s-1K0"/>
+                        <constraint firstItem="m3I-tD-dCD" firstAttribute="top" secondItem="bYA-dT-LOU" secondAttribute="bottom" constant="4" id="Xzi-0D-0xL"/>
+                        <constraint firstItem="DHn-CV-LRv" firstAttribute="leading" secondItem="hj3-BW-E68" secondAttribute="leading" id="YsL-iz-4MD"/>
+                        <constraint firstItem="juu-aR-gQR" firstAttribute="top" secondItem="bYA-dT-LOU" secondAttribute="bottom" constant="4" id="aR1-7q-K2W"/>
+                        <constraint firstAttribute="trailing" secondItem="bYA-dT-LOU" secondAttribute="trailing" id="nXe-lc-8uz"/>
+                        <constraint firstAttribute="bottom" secondItem="juu-aR-gQR" secondAttribute="bottom" id="uxu-Xa-4fB"/>
+                        <constraint firstItem="DHn-CV-LRv" firstAttribute="top" secondItem="bYA-dT-LOU" secondAttribute="bottom" constant="4" id="wDe-MI-O0h"/>
+                        <constraint firstItem="bYA-dT-LOU" firstAttribute="leading" secondItem="hj3-BW-E68" secondAttribute="leading" id="zId-ka-4N8"/>
+                        <constraint firstItem="juu-aR-gQR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DHn-CV-LRv" secondAttribute="trailing" constant="8" symbolic="YES" id="zfY-94-wsc"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="390" translatesAutoresizingMaskIntoConstraints="NO" id="lqd-cN-FYq">
+                    <rect key="frame" x="38" y="129" width="394" height="28"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="This value will be ignored when you manually start the app below this battery capacity." id="l4a-Sa-RAE">
+                        <font key="font" metaFont="message" size="11"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pJh-c1-fpq">
+                    <rect key="frame" x="18" y="80" width="113" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Low Power Mode" id="aXx-hk-9R9">
+                        <font key="font" textStyle="headline" name=".SFNS-Bold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="xip-QS-4CO">
+                    <rect key="frame" x="20" y="110" width="410" height="5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="410" id="AU0-pl-Es5"/>
+                    </constraints>
+                </box>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qcy-RL-11D">
+                    <rect key="frame" x="18" y="55" width="299" height="18"/>
+                    <buttonCell key="cell" type="check" title="Deactivate when Low Power Mode is enabled" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="mcf-JV-nyg">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="-2" name="enabled" keyPath="device.lowPowerModeMonitor.supportsLowPowerMode" id="UmW-9Y-9Nc"/>
+                        <binding destination="emK-Lf-1No" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.LowPowerModeMonitoringEnabled" id="GdL-wN-B4a"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="390" translatesAutoresizingMaskIntoConstraints="NO" id="Mze-JO-dez">
+                    <rect key="frame" x="38" y="20" width="394" height="28"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging." id="SHH-RQ-HPH">
+                        <font key="font" metaFont="message" size="11"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="pJh-c1-fpq" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="0bu-te-yBY"/>
+                <constraint firstItem="lqd-cN-FYq" firstAttribute="trailing" secondItem="hj3-BW-E68" secondAttribute="trailing" id="0hI-ht-zsE"/>
+                <constraint firstAttribute="trailing" secondItem="hj3-BW-E68" secondAttribute="trailing" constant="20" id="4Mj-n6-hjp"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qcy-RL-11D" secondAttribute="trailing" constant="20" id="94T-og-Oho"/>
+                <constraint firstItem="Mze-JO-dez" firstAttribute="leading" secondItem="hj3-BW-E68" secondAttribute="leading" id="Bo5-WN-tYR"/>
+                <constraint firstItem="UO8-po-rbJ" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="I1u-ag-jF4"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pJh-c1-fpq" secondAttribute="trailing" constant="20" id="MAK-2g-K6w"/>
+                <constraint firstItem="hj3-BW-E68" firstAttribute="top" secondItem="daE-pq-RyL" secondAttribute="bottom" constant="8" id="Mza-Ld-d6X"/>
+                <constraint firstItem="daE-pq-RyL" firstAttribute="top" secondItem="UO8-po-rbJ" secondAttribute="bottom" constant="8" id="NED-c0-gbj"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="daE-pq-RyL" secondAttribute="trailing" constant="20" id="OBM-vc-LFG"/>
+                <constraint firstItem="lqd-cN-FYq" firstAttribute="top" secondItem="hj3-BW-E68" secondAttribute="bottom" constant="8" id="VKv-0h-bmC"/>
+                <constraint firstItem="Mze-JO-dez" firstAttribute="top" secondItem="qcy-RL-11D" secondAttribute="bottom" constant="8" id="VPM-YW-TjO"/>
+                <constraint firstItem="hj3-BW-E68" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="40" id="XYK-zk-ZoO"/>
+                <constraint firstItem="xip-QS-4CO" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="Xs3-aC-U10"/>
+                <constraint firstAttribute="trailing" secondItem="Mze-JO-dez" secondAttribute="trailing" constant="20" id="ayX-lu-l4v"/>
+                <constraint firstItem="qcy-RL-11D" firstAttribute="top" secondItem="pJh-c1-fpq" secondAttribute="bottom" constant="8" id="eGS-wB-dix"/>
+                <constraint firstItem="lqd-cN-FYq" firstAttribute="leading" secondItem="hj3-BW-E68" secondAttribute="leading" id="g0o-Ql-BpU"/>
+                <constraint firstItem="xip-QS-4CO" firstAttribute="top" secondItem="lqd-cN-FYq" secondAttribute="bottom" constant="16" id="hpw-bd-NkV"/>
+                <constraint firstItem="pJh-c1-fpq" firstAttribute="top" secondItem="xip-QS-4CO" secondAttribute="bottom" constant="16" id="i9v-to-MJ6"/>
+                <constraint firstItem="daE-pq-RyL" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="rC0-mz-LIP"/>
+                <constraint firstItem="qcy-RL-11D" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="toT-kA-cwC"/>
+                <constraint firstAttribute="bottom" secondItem="Mze-JO-dez" secondAttribute="bottom" constant="20" id="uAC-2B-xjz"/>
+                <constraint firstItem="UO8-po-rbJ" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="v7Y-eD-rd7"/>
+                <constraint firstAttribute="trailing" secondItem="UO8-po-rbJ" secondAttribute="trailing" constant="20" id="y1w-wy-GSs"/>
+                <constraint firstAttribute="trailing" secondItem="xip-QS-4CO" secondAttribute="trailing" constant="20" id="yDd-6d-kgZ"/>
+            </constraints>
+            <point key="canvasLocation" x="102" y="174"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="emK-Lf-1No"/>
+    </objects>
+</document>

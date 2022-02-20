@@ -10,6 +10,7 @@
 
 #import "KYAGeneralPreferencesViewController.h"
 #import "KYADurationPreferencesViewController.h"
+#import "KYABatteryPreferencesViewController.h"
 #import "KYAAdvancedPreferencesViewController.h"
 #import "KYAAboutPreferencesViewController.h"
 
