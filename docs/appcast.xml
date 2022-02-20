@@ -6,6 +6,24 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.6.2: Minor Changes]]></title>
+			<description><![CDATA[<ul>
+<li>updated the Danish translation (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/171">#171</a>, <a href="https://github.com/newmarcel/KeepingYouAwake/pull/180">#180</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/JacobSchriver">JacobSchriver</a>!</em></li>
+</ul></li>
+<li>updated the <a href="https://github.com/sparkle-project/Sparkle">Sparkle</a> update framework to version 2.0 (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/178">#178</a>)</li>
+<li>added a Ukrainian translation (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/179">#179</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/gelosi">gelosi</a>!</em></li>
+</ul></li>
+</ul>
+]]></description>
+			<pubDate>Sun, 20 Feb 2022 17:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.2/KeepingYouAwake-1.6.2.zip" length="2736815" type="application/octet-stream" sparkle:version="1060205" sparkle:shortVersionString="1.6.2">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.6.1: Notifications]]></title>
 			<description><![CDATA[<ul>
 <li>added support for notifications, use <code>System Preferences</code> to manage notification settings (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/164">#164</a>)
