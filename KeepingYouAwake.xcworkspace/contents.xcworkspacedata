@@ -14,10 +14,10 @@
       location = "group:"
       name = "Packages">
       <FileRef
-         location = "group:Packages/KYADeviceInfo">
+         location = "group:Packages/KYAApplicationEvents">
       </FileRef>
       <FileRef
-         location = "group:Packages/KYAEvents">
+         location = "group:Packages/KYADeviceInfo">
       </FileRef>
       <FileRef
          location = "group:Packages/KYAUserNotifications">

@@ -3,16 +3,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "KYAEvents",
+    name: "KYAApplicationEvents",
     platforms: [
         .macOS(.v10_12)
     ],
     products: [
-        .library(name: "KYAEvents", targets: ["KYAEvents"]),
+        .library(name: "KYAApplicationEvents", targets: ["KYAApplicationEvents"]),
     ],
     dependencies: [
     ],
     targets: [
-        .target(name: "KYAEvents", dependencies: []),
+        .target(name: "KYAApplicationEvents", dependencies: []),
     ]
 )

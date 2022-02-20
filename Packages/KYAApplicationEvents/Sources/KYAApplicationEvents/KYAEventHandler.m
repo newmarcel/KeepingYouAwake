@@ -1,12 +1,12 @@
 //
 //  KYAEventHandler.m
-//  KeepingYouAwake
+//  KYAApplicationEvents
 //
 //  Created by Marcel Dierkes on 31.03.15.
 //  Copyright (c) 2015 Marcel Dierkes. All rights reserved.
 //
 
-#import <KYAEvents/KYAEventHandler.h>
+#import <KYAApplicationEvents/KYAEventHandler.h>
 #import "KYADefines.h"
 
 @interface KYAEventHandler ()

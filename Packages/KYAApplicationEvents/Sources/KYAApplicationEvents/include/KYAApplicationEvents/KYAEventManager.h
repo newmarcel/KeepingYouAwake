@@ -1,6 +1,6 @@
 //
 //  KYAEventManager.h
-//  
+//  KYAApplicationEvents
 //
 //  Created by Marcel Dierkes on 20.02.22.
 //

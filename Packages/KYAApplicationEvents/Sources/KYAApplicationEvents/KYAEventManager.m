@@ -1,13 +1,13 @@
 //
 //  KYAEventManager.m
-//  
+//  KYAApplicationEvents
 //
 //  Created by Marcel Dierkes on 20.02.22.
 //
 
-#import <KYAEvents/KYAEventManager.h>
+#import <KYAApplicationEvents/KYAEventManager.h>
 #import <ApplicationServices/ApplicationServices.h>
-#import <KYAEvents/KYAEventHandler.h>
+#import <KYAApplicationEvents/KYAEventHandler.h>
 #import "KYADefines.h"
 
 @implementation KYAEventManager

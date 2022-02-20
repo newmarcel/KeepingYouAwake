@@ -59,10 +59,10 @@
 		DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */; };
 		DAB128731C2469F300831045 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DAB1286D1C245A6C00831045 /* Credits.rtf */; };
 		DAB128761C2493DB00831045 /* KYAPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128751C2493DB00831045 /* KYAPreference.m */; };
-		DACF2FC027C25CC900856FEC /* KYAEvents in Frameworks */ = {isa = PBXBuildFile; productRef = DACF2FBF27C25CC900856FEC /* KYAEvents */; };
-		DACF2FC227C25CCC00856FEC /* KYAEvents in Frameworks */ = {isa = PBXBuildFile; productRef = DACF2FC127C25CCC00856FEC /* KYAEvents */; };
 		DACF2FC727C2657800856FEC /* KYAUserNotifications in Frameworks */ = {isa = PBXBuildFile; productRef = DACF2FC627C2657800856FEC /* KYAUserNotifications */; };
 		DACF2FC927C2657C00856FEC /* KYAUserNotifications in Frameworks */ = {isa = PBXBuildFile; productRef = DACF2FC827C2657C00856FEC /* KYAUserNotifications */; };
+		DACF2FCB27C271B600856FEC /* KYAApplicationEvents in Frameworks */ = {isa = PBXBuildFile; productRef = DACF2FCA27C271B600856FEC /* KYAApplicationEvents */; };
+		DACF2FCD27C271BA00856FEC /* KYAApplicationEvents in Frameworks */ = {isa = PBXBuildFile; productRef = DACF2FCC27C271BA00856FEC /* KYAApplicationEvents */; };
 		DAD3CF5C271186720006CA14 /* KYAAddDurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */; };
 		DAD3CF5D271186720006CA14 /* KYAUpdatePreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5680192115FF140039C979 /* KYAUpdatePreferencesViewController.m */; };
 		DAD3CF5E271186720006CA14 /* KYAPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */; };
@@ -456,8 +456,8 @@
 			files = (
 				DA25063027C2486D0052CCD8 /* KYADeviceInfo in Frameworks */,
 				DA19F0C62610810E001A6AA6 /* KYAKit.framework in Frameworks */,
+				DACF2FCD27C271BA00856FEC /* KYAApplicationEvents in Frameworks */,
 				DACF2FC727C2657800856FEC /* KYAUserNotifications in Frameworks */,
-				DACF2FC027C25CC900856FEC /* KYAEvents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +476,7 @@
 				DAEF160C277C67D800EA9478 /* Sparkle in Frameworks */,
 				DACF2FC927C2657C00856FEC /* KYAUserNotifications in Frameworks */,
 				DA25063227C248710052CCD8 /* KYADeviceInfo in Frameworks */,
-				DACF2FC227C25CCC00856FEC /* KYAEvents in Frameworks */,
+				DACF2FCB27C271B600856FEC /* KYAApplicationEvents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,8 +863,8 @@
 			name = KeepingYouAwake;
 			packageProductDependencies = (
 				DA25062F27C2486D0052CCD8 /* KYADeviceInfo */,
-				DACF2FBF27C25CC900856FEC /* KYAEvents */,
 				DACF2FC627C2657800856FEC /* KYAUserNotifications */,
+				DACF2FCC27C271BA00856FEC /* KYAApplicationEvents */,
 			);
 			productName = KeepingYouAwake;
 			productReference = DA637B3919F14693004C8838 /* KeepingYouAwake.app */;
@@ -907,8 +907,8 @@
 			packageProductDependencies = (
 				DAEF160B277C67D800EA9478 /* Sparkle */,
 				DA25063127C248710052CCD8 /* KYADeviceInfo */,
-				DACF2FC127C25CCC00856FEC /* KYAEvents */,
 				DACF2FC827C2657C00856FEC /* KYAUserNotifications */,
+				DACF2FCA27C271B600856FEC /* KYAApplicationEvents */,
 			);
 			productName = KeepingYouAwake;
 			productReference = DAD3CF8F271186720006CA14 /* KeepingYouAwake.app */;
@@ -1917,14 +1917,6 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = KYADeviceInfo;
 		};
-		DACF2FBF27C25CC900856FEC /* KYAEvents */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = KYAEvents;
-		};
-		DACF2FC127C25CCC00856FEC /* KYAEvents */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = KYAEvents;
-		};
 		DACF2FC627C2657800856FEC /* KYAUserNotifications */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = KYAUserNotifications;
@@ -1932,6 +1924,14 @@
 		DACF2FC827C2657C00856FEC /* KYAUserNotifications */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = KYAUserNotifications;
+		};
+		DACF2FCA27C271B600856FEC /* KYAApplicationEvents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KYAApplicationEvents;
+		};
+		DACF2FCC27C271BA00856FEC /* KYAApplicationEvents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KYAApplicationEvents;
 		};
 		DAEF160B277C67D800EA9478 /* Sparkle */ = {
 			isa = XCSwiftPackageProductDependency;
