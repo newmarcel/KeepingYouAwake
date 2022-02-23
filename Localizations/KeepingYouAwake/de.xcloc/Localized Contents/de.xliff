@@ -78,6 +78,11 @@ Rechtsklick, um das Menü anzuzeigen</target>
         <target>Soll die Aktivierungsdauer-Liste wirklich auf die ursprünglichen Einträge zurückgesetzt werden?</target>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
+      <trans-unit id="Indefinitely" xml:space="preserve">
+        <source>Indefinitely</source>
+        <target>Unbegrenzt</target>
+        <note>Indefinitely</note>
+      </trans-unit>
       <trans-unit id="OK" xml:space="preserve">
         <source>OK</source>
         <target>OK</target>
@@ -117,6 +122,11 @@ Rechtsklick, um das Menü anzuzeigen</target>
         <source>This duration has already been added.</source>
         <target>Diese Dauer wurde bereits hinzugefügt.</target>
         <note>This duration has already been added.</note>
+      </trans-unit>
+      <trans-unit id="Version" xml:space="preserve">
+        <source>Version</source>
+        <target>Version</target>
+        <note>Version</note>
       </trans-unit>
       <trans-unit id="You can still manually enable sleep mode for your Mac." xml:space="preserve">
         <source>You can still manually enable sleep mode for your Mac.</source>
@@ -382,23 +392,6 @@ Rechtsklick, um das Menü anzuzeigen</target>
         <source>Check Now</source>
         <target>Jetzt suchen</target>
         <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "tAT-1z-ZPp";</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="KYAKit/en.lproj/Localizable.strings" source-language="en" target-language="de" datatype="plaintext">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2.1" build-num="13C100"/>
-    </header>
-    <body>
-      <trans-unit id="Indefinitely" xml:space="preserve">
-        <source>Indefinitely</source>
-        <target>Unbegrenzt</target>
-        <note>Indefinitely</note>
-      </trans-unit>
-      <trans-unit id="Version" xml:space="preserve">
-        <source>Version</source>
-        <target>Version</target>
-        <note>Version</note>
       </trans-unit>
     </body>
   </file>

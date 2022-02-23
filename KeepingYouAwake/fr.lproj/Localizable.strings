@@ -16,6 +16,9 @@
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Désactiver la surbrillance de l'icône de la barre de menu";
 
+/* Indefinitely */
+"Indefinitely" = "Indéfiniment";
+
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Quitter quand la durée d'activation est terminée";
 
@@ -24,4 +27,7 @@
 
 /* This duration has already been added. */
 "This duration has already been added." = "Cette durée a déjà été ajoutée.";
+
+/* Version */
+"Version" = "Version";
 

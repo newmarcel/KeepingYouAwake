@@ -12,6 +12,7 @@
 #import "KYADurationCell.h"
 #import "KYAActivationDurationsController.h"
 #import "KYAAddDurationPreferencesViewController.h"
+#import "KYAActivationDuration+KYALocalizedTitle.h"
 
 /// The allowed number of activation durations. If this limit is reached,
 /// you cannot add more durations to the list.

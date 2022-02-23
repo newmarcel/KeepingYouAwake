@@ -31,6 +31,9 @@
 /* Do you really want to reset the activation durations to the default values? */
 "Do you really want to reset the activation durations to the default values?" = "Vil du nulstille aktiveringstider til standardværdier?";
 
+/* Indefinitely */
+"Indefinitely" = "Ubestemt tid";
+
 /* OK */
 "OK" = "OK";
 
@@ -54,6 +57,9 @@
 
 /* This duration has already been added. */
 "This duration has already been added." = "Denne værdi eksisterer allerede.";
+
+/* Version */
+"Version" = "Version";
 
 /* You can still manually enable sleep mode for your Mac. */
 "You can still manually enable sleep mode for your Mac." = "Du kan stadig manuelt aktivere vågeblus for din Mac.";

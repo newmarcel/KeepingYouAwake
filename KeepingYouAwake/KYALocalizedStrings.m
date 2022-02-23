@@ -24,6 +24,11 @@
 
 #define KYA_L10N_DURATION_INVALID_INPUT NSLocalizedString(@"The entered duration is invalid. Please try again.", @"The entered duration is invalid. Please try again.")
 
+
+#define KYA_L10N_INDEFINITELY NSLocalizedString(@"Indefinitely", @"Indefinitely")
+
+#define KYA_L10N_VERSION NSLocalizedString(@"Version", @"Version")
+
 #pragma mark - Notifications
 
 #define KYA_L10N_PREVENTING_SLEEP_INDEFINITELY_TITLE NSLocalizedString(@"Preventing Sleep", @"Preventing Sleep")

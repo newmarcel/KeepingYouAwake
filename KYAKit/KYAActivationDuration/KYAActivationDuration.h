@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 
+typedef NSString *_Nonnull (^KYAActivationDurationLocalizationHandler)(NSTimeInterval);
+
 /**
  The object representation of a sleep wake timer activation duration.
  */
@@ -30,15 +32,12 @@ FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
  */
 @property (class, nonatomic, readonly) KYAActivationDuration *indefiniteActivationDuration;
 
+@property (class, copy, nonatomic, nullable) KYAActivationDurationLocalizationHandler localizationHandler;
+
 /**
  An activation duration. 0 seconds represent KYAActivationDurationIndefinite.
  */
 @property (nonatomic, readonly) NSTimeInterval seconds;
-
-/**
- A localized title text.
- */
-@property (nonatomic, readonly) NSString *localizedTitle;
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;

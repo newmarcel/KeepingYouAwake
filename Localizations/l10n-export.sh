@@ -11,5 +11,6 @@ done
 
 echo "Exporting translations..."
 xcodebuild -exportLocalizations -localizationPath "${TARGET_DIR}" \
-    -project "${PROJECT_FILE_PATH}" ${EXPORT_LANG}
+    -project "${PROJECT_FILE_PATH}" ${EXPORT_LANG} \
+    -disableAutomaticPackageResolution -onlyUsePackageVersionsFromResolvedFile
 echo "Done."

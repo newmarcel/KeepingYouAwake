@@ -22,6 +22,9 @@
 /* Do you really want to reset the activation durations to the default values? */
 "Do you really want to reset the activation durations to the default values?" = "Ви справді бажаєте скинути всі налаштовані інтервали роботи до установлених за замовчуванням?";
 
+/* Indefinitely */
+"Indefinitely" = "Постійно";
+
 /* OK */
 "OK" = "Так";
 
@@ -39,4 +42,7 @@
 
 /* This duration has already been added. */
 "This duration has already been added." = "Така тривалість часу вже додана.";
+
+/* Version */
+"Version" = "Версія";
 

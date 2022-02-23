@@ -8,7 +8,6 @@
 
 #import "NSBundle+KYAVersion.h"
 #import "KYADefines.h"
-#import "KYAKitLocalizedStrings.h"
 
 static NSString * const KYAShortVersionKey = @"CFBundleShortVersionString";
 static NSString * const KYABundleVersionKey = @"CFBundleVersion";
@@ -26,10 +25,9 @@ static NSString * const KYACopyrightKey = @"NSHumanReadableCopyright";
     return self.infoDictionary[KYABundleVersionKey];
 }
 
-- (NSString *)kya_localizedVersionString
+- (NSString *)kya_fullVersionString
 {
-    return [NSString stringWithFormat:@"%@ %@ (%@)",
-            KYA_L10N_VERSION,
+    return [NSString stringWithFormat:@"%@ (%@)",
             self.kya_shortVersionString,
             self.kya_buildVersionString];
 }

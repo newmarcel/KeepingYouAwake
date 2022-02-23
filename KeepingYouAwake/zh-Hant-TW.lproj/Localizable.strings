@@ -7,3 +7,9 @@
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "停用選單列圖示被點擊時的反白效果";
 
+/* Indefinitely */
+"Indefinitely" = "永久";
+
+/* Version */
+"Version" = "版本";
+

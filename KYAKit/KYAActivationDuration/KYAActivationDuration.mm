@@ -8,16 +8,27 @@
 
 #import "KYAActivationDuration.h"
 #import "KYADefines.h"
-#import "KYAKitLocalizedStrings.h"
 #include <chrono>
 
 NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
+
+static KYAActivationDurationLocalizationHandler localizationHandler;
 
 @interface KYAActivationDuration ()
 @property (nonatomic, readwrite) NSTimeInterval seconds;
 @end
 
 @implementation KYAActivationDuration
+
++ (void)setLocalizationHandler:(KYAActivationDurationLocalizationHandler)localizationHandler
+{
+    localizationHandler = [localizationHandler copy];
+}
+
++ (KYAActivationDurationLocalizationHandler)localizationHandler
+{
+    return localizationHandler;
+}
 
 + (NSArray<KYAActivationDuration *> *)defaultActivationDurations
 {
@@ -83,22 +94,21 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
     return [self initWithSeconds:duration.count()];
 }
 
-- (NSString *)localizedTitle
-{
-    NSTimeInterval interval = self.seconds;
-    
-    if(interval == 0)
-    {
-        return KYA_L10N_INDEFINITELY;
-    }
-    
-    auto formatter = [self sharedDateComponentsFormatter];
-    return [formatter stringFromTimeInterval:interval];
-}
-
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"%@ (%@)", super.description, self.localizedTitle];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    NSString *title;
+    if([self respondsToSelector:@selector(localizedTitle)])
+    {
+        title = [self performSelector:@selector(localizedTitle)];
+    }
+    else
+    {
+        title = @(self.seconds).stringValue;
+    }
+    return [NSString stringWithFormat:@"%@ (%@)", super.description, title];
+#pragma clang diagnostic pop
 }
 
 #pragma mark - NSSecureCoding
@@ -147,19 +157,6 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
     NSParameterAssert(other);
     
     return self.seconds == other.seconds;
-}
-
-#pragma mark - Localized Formatter
-
-- (NSDateComponentsFormatter *)sharedDateComponentsFormatter
-{
-    static dispatch_once_t once;
-    static NSDateComponentsFormatter *sharedFormatter;
-    dispatch_once(&once, ^{
-        sharedFormatter = [NSDateComponentsFormatter new];
-        sharedFormatter.unitsStyle = NSDateComponentsFormatterUnitsStyleFull;
-    });
-    return sharedFormatter;
 }
 
 @end

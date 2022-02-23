@@ -74,6 +74,11 @@ Clic droit pour le menu</target>
         <source>Do you really want to reset the activation durations to the default values?</source>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
+      <trans-unit id="Indefinitely" xml:space="preserve">
+        <source>Indefinitely</source>
+        <target>Indéfiniment</target>
+        <note>Indefinitely</note>
+      </trans-unit>
       <trans-unit id="OK" xml:space="preserve">
         <source>OK</source>
         <note>OK</note>
@@ -108,6 +113,11 @@ Clic droit pour le menu</target>
         <source>This duration has already been added.</source>
         <target>Cette durée a déjà été ajoutée.</target>
         <note>This duration has already been added.</note>
+      </trans-unit>
+      <trans-unit id="Version" xml:space="preserve">
+        <source>Version</source>
+        <target>Version</target>
+        <note>Version</note>
       </trans-unit>
       <trans-unit id="You can still manually enable sleep mode for your Mac." xml:space="preserve">
         <source>You can still manually enable sleep mode for your Mac.</source>
@@ -363,23 +373,6 @@ Clic droit pour le menu</target>
         <source>Check Now</source>
         <target>Maintenant</target>
         <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "tAT-1z-ZPp";</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="KYAKit/en.lproj/Localizable.strings" source-language="en" target-language="fr" datatype="plaintext">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2.1" build-num="13C100"/>
-    </header>
-    <body>
-      <trans-unit id="Indefinitely" xml:space="preserve">
-        <source>Indefinitely</source>
-        <target>Indéfiniment</target>
-        <note>Indefinitely</note>
-      </trans-unit>
-      <trans-unit id="Version" xml:space="preserve">
-        <source>Version</source>
-        <target>Version</target>
-        <note>Version</note>
       </trans-unit>
     </body>
   </file>

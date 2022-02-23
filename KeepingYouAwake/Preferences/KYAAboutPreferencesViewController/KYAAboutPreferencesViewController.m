@@ -7,6 +7,7 @@
 //
 
 #import "KYAAboutPreferencesViewController.h"
+#import "KYALocalizedStrings.h"
 
 @interface KYAAboutPreferencesViewController ()
 @end
@@ -35,7 +36,9 @@
 
 - (NSString *)versionText
 {
-    return NSBundle.mainBundle.kya_localizedVersionString;
+    return [NSString localizedStringWithFormat:@"%@ %@",
+            KYA_L10N_VERSION,
+            NSBundle.mainBundle.kya_fullVersionString];
 }
 
 - (NSString *)copyrightText

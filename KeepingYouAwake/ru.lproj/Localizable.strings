@@ -22,6 +22,9 @@
 /* Do you really want to reset the activation durations to the default values? */
 "Do you really want to reset the activation durations to the default values?" = "Вы уверены, что хотите сбросить список продолжительности активации на исходные записи?";
 
+/* Indefinitely */
+"Indefinitely" = "Неограниченно";
+
 /* OK */
 "OK" = "ОК";
 
@@ -39,4 +42,7 @@
 
 /* This duration has already been added. */
 "This duration has already been added." = "Эта продолжительность уже была добавлена.";
+
+/* Version */
+"Version" = "Версия";
 

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSBundle (KYAVersion)
 @property (copy, nonatomic, readonly) NSString *kya_shortVersionString;
 @property (copy, nonatomic, readonly) NSString *kya_buildVersionString;
-@property (copy, nonatomic, readonly) NSString *kya_localizedVersionString;
+@property (copy, nonatomic, readonly) NSString *kya_fullVersionString;
 
 @property (copy, nonatomic, readonly) NSString *kya_localizedCopyrightString;
 

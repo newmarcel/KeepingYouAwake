@@ -71,6 +71,11 @@ Click derecho para mostar el menú</target>
         <source>Do you really want to reset the activation durations to the default values?</source>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
+      <trans-unit id="Indefinitely" xml:space="preserve">
+        <source>Indefinitely</source>
+        <target>Indefinidamente</target>
+        <note>Indefinitely</note>
+      </trans-unit>
       <trans-unit id="OK" xml:space="preserve">
         <source>OK</source>
         <note>OK</note>
@@ -102,6 +107,11 @@ Click derecho para mostar el menú</target>
       <trans-unit id="This duration has already been added." xml:space="preserve">
         <source>This duration has already been added.</source>
         <note>This duration has already been added.</note>
+      </trans-unit>
+      <trans-unit id="Version" xml:space="preserve">
+        <source>Version</source>
+        <target>Versión</target>
+        <note>Version</note>
       </trans-unit>
       <trans-unit id="You can still manually enable sleep mode for your Mac." xml:space="preserve">
         <source>You can still manually enable sleep mode for your Mac.</source>
@@ -348,23 +358,6 @@ Click derecho para mostar el menú</target>
         <source>Check Now</source>
         <target>Comprobar ahora</target>
         <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "tAT-1z-ZPp";</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="KYAKit/en.lproj/Localizable.strings" source-language="en" target-language="es" datatype="plaintext">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2.1" build-num="13C100"/>
-    </header>
-    <body>
-      <trans-unit id="Indefinitely" xml:space="preserve">
-        <source>Indefinitely</source>
-        <target>Indefinidamente</target>
-        <note>Indefinitely</note>
-      </trans-unit>
-      <trans-unit id="Version" xml:space="preserve">
-        <source>Version</source>
-        <target>Versión</target>
-        <note>Version</note>
       </trans-unit>
     </body>
   </file>

@@ -28,6 +28,9 @@
 /* Do you really want to reset the activation durations to the default values? */
 "Do you really want to reset the activation durations to the default values?" = "Soll die Aktivierungsdauer-Liste wirklich auf die ursprünglichen Einträge zurückgesetzt werden?";
 
+/* Indefinitely */
+"Indefinitely" = "Unbegrenzt";
+
 /* OK */
 "OK" = "OK";
 
@@ -51,6 +54,9 @@
 
 /* This duration has already been added. */
 "This duration has already been added." = "Diese Dauer wurde bereits hinzugefügt.";
+
+/* Version */
+"Version" = "Version";
 
 /* You can still manually enable sleep mode for your Mac. */
 "You can still manually enable sleep mode for your Mac." = "Du kannst deinen Mac weiterhin manuell in den Ruhezustand versetzen.";
