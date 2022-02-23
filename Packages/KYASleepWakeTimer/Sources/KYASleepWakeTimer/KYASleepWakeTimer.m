@@ -6,8 +6,7 @@
 //  Copyright (c) 2014 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYASleepWakeTimer.h"
-#import <KYAApplicationSupport/KYAApplicationSupport.h>
+#import <KYASleepWakeTimer/KYASleepWakeTimer.h>
 #import "KYADefines.h"
 
 NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
@@ -47,6 +46,14 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 
 - (void)scheduleWithTimeInterval:(NSTimeInterval)timeInterval completion:(KYASleepWakeTimerCompletionBlock)completion
 {
+    KYALog(@"%@ will activate with time interval %@.", self, @(timeInterval));
+    
+    Auto delegate = self.delegate;
+    if([self.delegate respondsToSelector:@selector(sleepWakeTimer:willActivateWithTimeInterval:)])
+    {
+        [delegate sleepWakeTimer:self willActivateWithTimeInterval:timeInterval];
+    }
+    
     if(completion)
     {
         self.completionBlock = completion;
@@ -138,6 +145,16 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
             weakSelf.completionBlock(forcedTermination);
         });
     }
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        Auto delegate = self.delegate;
+        if([delegate respondsToSelector:@selector(sleepWakeTimerDidDeactivate:)])
+        {
+            [delegate sleepWakeTimerDidDeactivate:self];
+        }
+    });
+    
+    KYALog(@"%@ did deactivate.", self);
 }
 
 @end

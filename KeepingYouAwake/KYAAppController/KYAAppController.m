@@ -18,7 +18,7 @@
 #define KYA_MINUTES(m) (m * 60.0f)
 #define KYA_HOURS(h) (h * 3600.0f)
 
-@interface KYAAppController () <KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate>
+@interface KYAAppController () <KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate, KYASleepWakeTimerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
 @property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
 @property (nonatomic) KYAActivationDurationsMenuController *menuController;
@@ -40,27 +40,18 @@
     self = [super init];
     if(self)
     {
-        self.sleepWakeTimer = [KYASleepWakeTimer new];
-        [self.sleepWakeTimer addObserver:self forKeyPath:@"scheduled" options:NSKeyValueObservingOptionNew context:NULL];
-
         self.statusItemController = [KYAStatusItemController new];
         self.statusItemController.delegate = self;
         
+        [self configureSleepWakeTimer];
+        [self configureEventHandler];
         [self configureUserNotificationCenter];
-
-        // Check activate on launch state
-        if([self shouldActivateOnLaunch])
-        {
-            [self activateTimer];
-        }
 
         Auto center = NSNotificationCenter.defaultCenter;
         [center addObserver:self
                    selector:@selector(applicationWillFinishLaunching:)
                        name:NSApplicationWillFinishLaunchingNotification
                      object:nil];
-        
-        [self configureEventHandler];
 
         self.menuController = [KYAActivationDurationsMenuController new];
         self.menuController.delegate = self;
@@ -83,98 +74,20 @@
                   forItem:self.activationDurationsMenuItem];
 }
 
-#pragma mark - State Handling
+#pragma mark - Sleep Wake Timer
 
-- (void)sleepWakeTimerWillActivate
+- (void)configureSleepWakeTimer
 {
-    KYALog(@"Will activate: %@", self.sleepWakeTimer);
+    Auto sleepWakeTimer = [KYASleepWakeTimer new];
+    sleepWakeTimer.delegate = self;
+    self.sleepWakeTimer = sleepWakeTimer;
     
-    Auto device = KYADevice.currentDevice;
-    Auto center = NSNotificationCenter.defaultCenter;
-    Auto defaults = NSUserDefaults.standardUserDefaults;
-    
-    // Check battery overrides and register for capacity changes.
-    [self checkAndEnableBatteryOverride];
-    
-    [center addObserver:self
-               selector:@selector(deviceParameterDidChange:)
-                   name:KYADeviceParameterDidChangeNotification
-                 object:device];
-    
-    if([defaults kya_isBatteryCapacityThresholdEnabled])
+    // Activate on launch if needed
+    if([NSUserDefaults.standardUserDefaults kya_isActivatedOnLaunch])
     {
-        device.batteryMonitoringEnabled = YES;
-    }
-    if([defaults kya_isLowPowerModeMonitoringEnabled])
-    {
-        device.lowPowerModeMonitoringEnabled = YES;
+        [self activateTimer];
     }
 }
-
-- (void)sleepWakeTimerDidDeactivate
-{
-    Auto device = KYADevice.currentDevice;
-    Auto center = NSNotificationCenter.defaultCenter;
-    
-    [center removeObserver:self
-                      name:KYADeviceParameterDidChangeNotification
-                    object:device];
-    
-    device.batteryMonitoringEnabled = NO;
-    device.lowPowerModeMonitoringEnabled = NO;
-    
-    KYALog(@"Did deactivate: %@", self.sleepWakeTimer);
-}
-
-#pragma mark - KVO
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-    if([object isEqual:self.sleepWakeTimer] && [keyPath isEqualToString:@"scheduled"])
-    {
-        AutoWeak weakSelf = self;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            // Update the status item for scheduling changes
-            BOOL active = [change[NSKeyValueChangeNewKey] boolValue];
-            weakSelf.statusItemController.activeAppearanceEnabled = active;
-        });
-    }
-}
-
-#pragma mark - Default Time Interval
-
-- (NSTimeInterval)defaultTimeInterval
-{
-    return NSUserDefaults.standardUserDefaults.kya_defaultTimeInterval;
-}
-
-#pragma mark - Activate on Launch
-
-- (BOOL)shouldActivateOnLaunch
-{
-    return [NSUserDefaults.standardUserDefaults kya_isActivatedOnLaunch];
-}
-
-- (IBAction)toggleActivateOnLaunch:(id)sender
-{
-    Auto defaults = NSUserDefaults.standardUserDefaults;
-    defaults.kya_activateOnLaunch = ![defaults kya_isActivatedOnLaunch];
-    [defaults synchronize];
-}
-
-#pragma mark - User Notification Center
-
-- (void)configureUserNotificationCenter
-{
-    if(@available(macOS 11.0, *))
-    {
-        Auto center = KYAUserNotificationCenter.sharedCenter;
-        [center requestAuthorizationIfUndetermined];
-        [center clearAllDeliveredNotifications];
-    }
-}
-
-#pragma mark - Sleep Wake Timer Handling
 
 - (void)activateTimer
 {
@@ -191,8 +104,6 @@
 
     Auto defaults = NSUserDefaults.standardUserDefaults;
     
-    [self sleepWakeTimerWillActivate];
-
     Auto timerCompletion = ^(BOOL cancelled) {
         // Post deactivation notification
         if(@available(macOS 11.0, *))
@@ -207,8 +118,6 @@
         {
             [NSApplication.sharedApplication terminate:nil];
         }
-        
-        [self sleepWakeTimerDidDeactivate];
     };
     [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:timerCompletion];
 
@@ -229,6 +138,34 @@
     if([self.sleepWakeTimer isScheduled])
     {
         [self.sleepWakeTimer invalidate];
+    }
+}
+
+#pragma mark - Default Time Interval
+
+- (NSTimeInterval)defaultTimeInterval
+{
+    return NSUserDefaults.standardUserDefaults.kya_defaultTimeInterval;
+}
+
+#pragma mark - Activate on Launch
+
+- (IBAction)toggleActivateOnLaunch:(id)sender
+{
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    defaults.kya_activateOnLaunch = ![defaults kya_isActivatedOnLaunch];
+    [defaults synchronize];
+}
+
+#pragma mark - User Notification Center
+
+- (void)configureUserNotificationCenter
+{
+    if(@available(macOS 11.0, *))
+    {
+        Auto center = KYAUserNotificationCenter.sharedCenter;
+        [center requestAuthorizationIfUndetermined];
+        [center clearAllDeliveredNotifications];
     }
 }
 
@@ -277,6 +214,43 @@
             [self terminateTimer];
         }
     }
+}
+
+- (void)enableDevicePowerMonitoring
+{
+    Auto device = KYADevice.currentDevice;
+    Auto center = NSNotificationCenter.defaultCenter;
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    
+    // Check battery overrides and register for capacity changes.
+    [self checkAndEnableBatteryOverride];
+    
+    [center addObserver:self
+               selector:@selector(deviceParameterDidChange:)
+                   name:KYADeviceParameterDidChangeNotification
+                 object:device];
+    
+    if([defaults kya_isBatteryCapacityThresholdEnabled])
+    {
+        device.batteryMonitoringEnabled = YES;
+    }
+    if([defaults kya_isLowPowerModeMonitoringEnabled])
+    {
+        device.lowPowerModeMonitoringEnabled = YES;
+    }
+}
+
+- (void)disableDevicePowerMonitoring
+{
+    Auto device = KYADevice.currentDevice;
+    Auto center = NSNotificationCenter.defaultCenter;
+    
+    [center removeObserver:self
+                      name:KYADeviceParameterDidChangeNotification
+                    object:device];
+    
+    device.batteryMonitoringEnabled = NO;
+    device.lowPowerModeMonitoringEnabled = NO;
 }
 
 #pragma mark - Battery Capacity Threshold Changes
@@ -389,6 +363,24 @@
 - (NSDate *)fireDateForMenuController:(KYAActivationDurationsMenuController *)controller
 {
     return self.sleepWakeTimer.fireDate;
+}
+
+#pragma mark - KYASleepWakeTimerDelegate
+
+- (void)sleepWakeTimer:(KYASleepWakeTimer *)sleepWakeTimer willActivateWithTimeInterval:(NSTimeInterval)timeInterval
+{
+    // Update the status item
+    self.statusItemController.activeAppearanceEnabled = YES;
+    
+    [self enableDevicePowerMonitoring];
+}
+
+- (void)sleepWakeTimerDidDeactivate:(KYASleepWakeTimer *)sleepWakeTimer
+{
+    // Update the status item
+    self.statusItemController.activeAppearanceEnabled = NO;
+    
+    [self disableDevicePowerMonitoring];
 }
 
 @end

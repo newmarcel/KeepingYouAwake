@@ -45,8 +45,6 @@
 		DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */; };
 		DA987C9C22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */; };
 		DA9A4FE6261631D700C672C4 /* KYALocalizedStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A4FE5261631D700C672C4 /* KYALocalizedStrings.m */; };
-		DA9C58D02611011D005F3A34 /* KYASleepWakeTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9C58CE2611011D005F3A34 /* KYASleepWakeTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA9C58D12611011D005F3A34 /* KYASleepWakeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C58CF2611011D005F3A34 /* KYASleepWakeTimer.m */; };
 		DAB0700A22EC794F004D5BCA /* KYADurationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700922EC794F004D5BCA /* KYADurationCell.m */; };
 		DAB0700C22EC795F004D5BCA /* KYADurationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB0700B22EC795F004D5BCA /* KYADurationCell.xib */; };
 		DAB0701022EC8E6B004D5BCA /* KYADurationPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700E22EC8E6B004D5BCA /* KYADurationPreferencesViewController.m */; };
@@ -302,8 +300,6 @@
 		DA987C9A22FC749D00DD476B /* KYAAddDurationPreferencesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAAddDurationPreferencesViewController.h; sourceTree = "<group>"; };
 		DA987C9B22FC749D00DD476B /* KYAAddDurationPreferencesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAddDurationPreferencesViewController.m; sourceTree = "<group>"; };
 		DA9A4FE5261631D700C672C4 /* KYALocalizedStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYALocalizedStrings.m; sourceTree = "<group>"; };
-		DA9C58CE2611011D005F3A34 /* KYASleepWakeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYASleepWakeTimer.h; sourceTree = "<group>"; };
-		DA9C58CF2611011D005F3A34 /* KYASleepWakeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYASleepWakeTimer.m; sourceTree = "<group>"; };
 		DAA478D3227C233000E609C1 /* KYALocalizedStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYALocalizedStrings.h; sourceTree = "<group>"; };
 		DAAAAAA023B14D04004A44EF /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DAAAAAA223B14D04004A44EF /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/MainMenu.strings; sourceTree = "<group>"; };
@@ -464,7 +460,6 @@
 			children = (
 				DA19F0B32610810E001A6AA6 /* KYAKit.h */,
 				DA3D5C182613860600C7E103 /* KYAKitLocalizedStrings.h */,
-				DA9C58CD2611011D005F3A34 /* KYASleepWakeTimer */,
 				DA19F0B42610810E001A6AA6 /* Info.plist */,
 			);
 			path = KYAKit;
@@ -661,15 +656,6 @@
 			path = KYAStatusItemController;
 			sourceTree = "<group>";
 		};
-		DA9C58CD2611011D005F3A34 /* KYASleepWakeTimer */ = {
-			isa = PBXGroup;
-			children = (
-				DA9C58CE2611011D005F3A34 /* KYASleepWakeTimer.h */,
-				DA9C58CF2611011D005F3A34 /* KYASleepWakeTimer.m */,
-			);
-			path = KYASleepWakeTimer;
-			sourceTree = "<group>";
-		};
 		DAB0701222EC8E74004D5BCA /* KYADurationPreferencesViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -737,7 +723,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9C58D02611011D005F3A34 /* KYASleepWakeTimer.h in Headers */,
 				DA19F0C32610810E001A6AA6 /* KYAKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1023,7 +1008,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9C58D12611011D005F3A34 /* KYASleepWakeTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

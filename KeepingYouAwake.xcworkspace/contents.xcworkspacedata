@@ -26,6 +26,9 @@
          location = "group:Packages/KYADeviceInfo">
       </FileRef>
       <FileRef
+         location = "group:Packages/KYASleepWakeTimer">
+      </FileRef>
+      <FileRef
          location = "group:Packages/KYAUserNotifications">
       </FileRef>
    </Group>
