@@ -1,12 +1,13 @@
 //
 //  KYAActivationDurationsController.m
-//  KeepingYouAwake
+//  KYAActivationDurations
 //
 //  Created by Marcel Dierkes on 28.07.19.
 //  Copyright © 2019 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYAActivationDurationsController.h"
+#import <KYAActivationDurations/KYAActivationDurationsController.h>
+#import <KYAActivationDurations/NSUserDefaults+KYADefaultTimeInterval.h>
 #import "KYADefines.h"
 
 #define KYA_USES_SIMPLE_USER_DEFAULTS_VALUES 1

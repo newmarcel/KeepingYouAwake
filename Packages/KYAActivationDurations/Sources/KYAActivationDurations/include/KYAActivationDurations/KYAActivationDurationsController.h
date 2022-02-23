@@ -1,13 +1,13 @@
 //
 //  KYAActivationDurationsController.h
-//  KeepingYouAwake
+//  KYAActivationDurations
 //
 //  Created by Marcel Dierkes on 28.07.19.
 //  Copyright © 2019 Marcel Dierkes. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <KYAKit/KYAKit.h>
+#import <KYAActivationDurations/KYAActivationDuration.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

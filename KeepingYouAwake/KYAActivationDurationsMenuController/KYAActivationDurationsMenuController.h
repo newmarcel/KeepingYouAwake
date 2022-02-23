@@ -7,8 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <KYAKit/KYAKit.h>
 #import <KYAUserNotifications/KYAUserNotifications.h>
+#import <KYAActivationDurations/KYAActivationDurations.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

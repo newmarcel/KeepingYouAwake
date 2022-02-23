@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 // User Default Keys
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyActivateOnLaunch;
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled;
@@ -26,11 +25,6 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
  Returns YES if the sleep wake timer should be activated on app launch.
  */
 @property (nonatomic, getter = kya_isActivatedOnLaunch) BOOL kya_activateOnLaunch;
-
-/**
- Returns the default time interval for the sleep wake timer.
- */
-@property (nonatomic) NSTimeInterval kya_defaultTimeInterval;
 
 /**
  Returns YES if the app should allow the display to sleep while still keeping the system awake. This exposes the `caffeinate -i` command.

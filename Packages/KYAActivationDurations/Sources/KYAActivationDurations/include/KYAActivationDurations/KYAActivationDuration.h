@@ -1,6 +1,6 @@
 //
 //  KYAActivationDuration.h
-//  KeepingYouAwake
+//  KYAActivationDurations
 //
 //  Created by Marcel Dierkes on 19.12.15.
 //  Copyright © 2015 Marcel Dierkes. All rights reserved.

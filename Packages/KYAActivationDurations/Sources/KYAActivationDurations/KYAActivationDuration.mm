@@ -1,12 +1,12 @@
 //
 //  KYAActivationDuration.mm
-//  KeepingYouAwake
+//  KYAActivationDurations
 //
 //  Created by Marcel Dierkes on 19.12.15.
 //  Copyright © 2015 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYAActivationDuration.h"
+#import <KYAActivationDurations/KYAActivationDuration.h>
 #import "KYADefines.h"
 #include <chrono>
 

@@ -10,7 +10,6 @@
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
 #import "KYADurationCell.h"
-#import "KYAActivationDurationsController.h"
 #import "KYAAddDurationPreferencesViewController.h"
 #import "KYAActivationDuration+KYALocalizedTitle.h"
 

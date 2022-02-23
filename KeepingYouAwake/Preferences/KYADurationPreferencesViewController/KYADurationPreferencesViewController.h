@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <KYAKit/KYAKit.h>
+#import <KYAActivationDurations/KYAActivationDurations.h>
 #import "KYAPreferencesContentViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
