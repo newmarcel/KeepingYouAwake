@@ -7,6 +7,7 @@
 //
 
 #import "KYASleepWakeTimer.h"
+#import <KYAApplicationSupport/KYAApplicationSupport.h>
 #import "KYADefines.h"
 
 NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;

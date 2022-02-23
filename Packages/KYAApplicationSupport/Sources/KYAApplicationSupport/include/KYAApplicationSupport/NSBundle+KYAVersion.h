@@ -1,6 +1,6 @@
 //
 //  NSBundle+KYAVersion.h
-//  KYAKit
+//  KYAApplicationSupport
 //
 //  Created by Marcel Dierkes on 30.03.21.
 //  Copyright © 2021 Marcel Dierkes. All rights reserved.

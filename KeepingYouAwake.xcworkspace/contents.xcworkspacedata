@@ -20,6 +20,9 @@
          location = "group:Packages/KYAApplicationEvents">
       </FileRef>
       <FileRef
+         location = "group:Packages/KYAApplicationSupport">
+      </FileRef>
+      <FileRef
          location = "group:Packages/KYADeviceInfo">
       </FileRef>
       <FileRef

@@ -1,12 +1,12 @@
 //
 //  NSApplication+KYALauncher.m
-//  KeepingYouAwake
+//  KYAApplicationSupport
 //
 //  Created by Marcel Dierkes on 25.12.17.
 //  Copyright © 2017 Marcel Dierkes. All rights reserved.
 //
 
-#import "NSApplication+KYALauncher.h"
+#import <KYAApplicationSupport/NSApplication+KYALauncher.h>
 #import <ServiceManagement/ServiceManagement.h>
 #import "KYADefines.h"
 

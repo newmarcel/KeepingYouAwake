@@ -15,7 +15,3 @@ FOUNDATION_EXPORT double KYAKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char KYAKitVersionString[];
 
 #import <KYAKit/KYASleepWakeTimer.h>
-
-#import <KYAKit/NSApplication+KYALauncher.h>
-#import <KYAKit/NSBundle+KYAVersion.h>
-#import <KYAKit/NSUserDefaults+Keys.h>

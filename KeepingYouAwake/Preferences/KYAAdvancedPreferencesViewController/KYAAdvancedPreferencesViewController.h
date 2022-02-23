@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <KYAKit/KYAKit.h>
+#import <KYAApplicationSupport/KYAApplicationSupport.h>
 #import <KYADeviceInfo/KYADeviceInfo.h>
 #import "KYAPreferencesContentViewController.h"
 

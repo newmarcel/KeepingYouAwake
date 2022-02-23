@@ -1,12 +1,12 @@
 //
 //  NSUserDefaults+Keys.m
-//  KeepingYouAwake
+//  KYAApplicationSupport
 //
 //  Created by Marcel Dierkes on 25.10.15.
 //  Copyright © 2015 Marcel Dierkes. All rights reserved.
 //
 
-#import "NSUserDefaults+Keys.h"
+#import <KYAApplicationSupport/NSUserDefaults+Keys.h>
 #import "KYADefines.h"
 
 // User Default Keys

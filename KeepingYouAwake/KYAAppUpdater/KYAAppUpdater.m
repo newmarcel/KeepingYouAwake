@@ -11,6 +11,7 @@
 
 #if KYA_APP_UPDATER_ENABLED
 
+#import <KYAApplicationSupport/KYAApplicationSupport.h>
 #import <Sparkle/Sparkle.h>
 
 static NSString * const KYAAppUpdaterReleaseFeedURLString = @"https://newmarcel.github.io/KeepingYouAwake/appcast.xml";

@@ -1,12 +1,12 @@
 //
 //  NSBundle+KYAVersion.m
-//  KYAKit
+//  KYAApplicationSupport
 //
 //  Created by Marcel Dierkes on 30.03.21.
 //  Copyright © 2021 Marcel Dierkes. All rights reserved.
 //
 
-#import "NSBundle+KYAVersion.h"
+#import <KYAApplicationSupport/NSBundle+KYAVersion.h>
 #import "KYADefines.h"
 
 static NSString * const KYAShortVersionKey = @"CFBundleShortVersionString";

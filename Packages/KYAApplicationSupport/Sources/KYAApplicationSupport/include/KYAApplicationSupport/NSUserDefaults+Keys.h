@@ -1,6 +1,6 @@
 //
 //  NSUserDefaults+Keys.h
-//  KeepingYouAwake
+//  KYAApplicationSupport
 //
 //  Created by Marcel Dierkes on 25.10.15.
 //  Copyright © 2015 Marcel Dierkes. All rights reserved.
