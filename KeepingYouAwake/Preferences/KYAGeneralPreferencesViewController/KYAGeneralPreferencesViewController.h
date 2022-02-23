@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <KYAKit/KYAKit.h>
 #import <KYAUserNotifications/KYAUserNotifications.h>
 #import "KYAPreferencesContentViewController.h"
 

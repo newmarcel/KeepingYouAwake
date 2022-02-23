@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <KYAKit/KYAKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

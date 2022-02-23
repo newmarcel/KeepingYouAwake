@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <KYAKit/KYAKit.h>
+#import <KYASleepWakeTimer/KYASleepWakeTimer.h>
 #import <KYADeviceInfo/KYADeviceInfo.h>
 #import <KYAApplicationEvents/KYAApplicationEvents.h>
 
