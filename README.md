@@ -32,10 +32,6 @@ This utility will not harm your Mac because it is based on an official command l
 
 Do you want to improve the app or add useful features? Please go ahead and create pull requests. I'm thankful for any help.
 
-## Building the Source Code
-
-*KeepingYouAwake* uses [Sparkle](https://github.com/sparkle-project/Sparkle/tree/ui-separation-and-xpc)'s `ui-separation-and-xpc` branch to deliver updates. You can build and sign Sparkle with `make Vendor`. To build a release version of the app just run `make dist`.
-
 ## License
 
 Everything in this project is licensed under the [MIT license](http://opensource.org/licenses/MIT). Provided image assets are also covered by this license.
