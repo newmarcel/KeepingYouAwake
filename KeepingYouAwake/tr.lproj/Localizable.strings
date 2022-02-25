@@ -1,3 +1,6 @@
+/* Activate for Duration */
+"Activate for Duration" = "Süreyi etkinleştir";
+
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Uyku moduna izin vermek için sağ menüye tıklayın";
 
@@ -9,6 +12,12 @@
 
 /* Indefinitely */
 "Indefinitely" = "Süresiz";
+
+/* Preferences… */
+"Preferences…" = "Tercihler…";
+
+/* Quit */
+"Quit" = "Çıkış";
 
 /* Version */
 "Version" = "Versiyon";

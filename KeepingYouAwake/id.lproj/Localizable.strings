@@ -28,6 +28,12 @@
 /* OK */
 "OK" = "OK";
 
+/* Preferences… */
+"Preferences…" = "Pengaturan…";
+
+/* Quit */
+"Quit" = "Keluar";
+
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Keluar saat durasi aktivasi berakhir";
 

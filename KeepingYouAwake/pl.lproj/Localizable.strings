@@ -1,3 +1,6 @@
+/* Activate for Duration */
+"Activate for Duration" = "Aktywuj przez";
+
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Kliknij aby zezwolić na uśpienie Kliknij prawym aby pokazać menu";
 
@@ -9,6 +12,12 @@
 
 /* Indefinitely */
 "Indefinitely" = "Nieograniczony";
+
+/* Preferences… */
+"Preferences…" = "Ustawienia…";
+
+/* Quit */
+"Quit" = "Zakończ";
 
 /* Version */
 "Version" = "Wersja";

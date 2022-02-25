@@ -1,3 +1,6 @@
+/* Activate for Duration */
+"Activate for Duration" = "Activar durante";
+
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Haz click para permitir que Mac duerma\nClick derecho para mostar el menú";
 
@@ -9,6 +12,12 @@
 
 /* Indefinitely */
 "Indefinitely" = "Indefinidamente";
+
+/* Preferences… */
+"Preferences…" = "Preferencias…";
+
+/* Quit */
+"Quit" = "Salir";
 
 /* Version */
 "Version" = "Versión";

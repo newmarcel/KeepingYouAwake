@@ -1,3 +1,6 @@
+/* Activate for Duration */
+"Activate for Duration" = "활성 기간";
+
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "잠자기를 허용하려면 클릭\n메뉴를 보려면 오른쪽 클릭";
 
@@ -6,6 +9,12 @@
 
 /* Indefinitely */
 "Indefinitely" = "무기한";
+
+/* Preferences… */
+"Preferences…" = "환경설정…";
+
+/* Quit */
+"Quit" = "종료";
 
 /* Version */
 "Version" = "Version";

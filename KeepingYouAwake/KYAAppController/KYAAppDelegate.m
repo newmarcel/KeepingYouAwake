@@ -35,7 +35,7 @@
     return _preferencesWindowController;
 }
 
-- (IBAction)showPreferencesWindow:(id)sender
+- (void)showPreferencesWindow:(id)sender
 {
     [NSApplication.sharedApplication activateIgnoringOtherApps:YES];
 

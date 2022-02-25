@@ -14,16 +14,19 @@
 #define KYA_L10N_CANCEL NSLocalizedString(@"Cancel", @"Cancel")
 #define KYA_L10N_DEFAULT NSLocalizedString(@"Default", @"Default")
 
-#pragma mark -
+#pragma mark - Main Menu
 
 #define KYA_L10N_ACTIVATE_FOR_DURATION NSLocalizedString(@"Activate for Duration", @"Activate for Duration")
+#define KYA_L10N_PREFERENCES NSLocalizedString(@"Preferences…", @"Preferences…")
+#define KYA_L10N_QUIT NSLocalizedString(@"Quit", @"Quit")
+
+#pragma mark -
 
 #define KYA_L10N_IS_DEFAULT_SUFFIX NSLocalizedString(@"(Default)", @"(Default)")
 
 #define KYA_L10N_DURATION_ALREADY_ADDED NSLocalizedString(@"This duration has already been added.", @"This duration has already been added.")
 
 #define KYA_L10N_DURATION_INVALID_INPUT NSLocalizedString(@"The entered duration is invalid. Please try again.", @"The entered duration is invalid. Please try again.")
-
 
 #define KYA_L10N_INDEFINITELY NSLocalizedString(@"Indefinitely", @"Indefinitely")
 

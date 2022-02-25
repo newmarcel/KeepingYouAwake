@@ -1,6 +1,9 @@
 /* (Default) */
 "(Default)" = "(За замовчуванням)";
 
+/* Activate for Duration */
+"Activate for Duration" = "Увімкнути на";
+
 /* Allow the display to sleep */
 "Allow the display to sleep" = "Дозволити дисплею вимикатись";
 
@@ -27,6 +30,12 @@
 
 /* OK */
 "OK" = "Так";
+
+/* Preferences… */
+"Preferences…" = "Налаштування…";
+
+/* Quit */
+"Quit" = "Вийти";
 
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Вийти коли час очікування скінчиться";

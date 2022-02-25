@@ -9,6 +9,7 @@
 #import "KYAAppController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
+#import "KYAMainMenu.h"
 #import "KYAStatusItemController.h"
 #import "KYABatteryCapacityThreshold.h"
 #import "KYAActivationDurationsMenuController.h"
@@ -27,8 +28,7 @@
 @property (nonatomic, getter=isBatteryOverrideEnabled) BOOL batteryOverrideEnabled;
 
 // Menu
-@property (weak, nonatomic) IBOutlet NSMenu *menu;
-@property (weak, nonatomic) IBOutlet NSMenuItem *activationDurationsMenuItem;
+@property (nonatomic) NSMenu *menu;
 @end
 
 @implementation KYAAppController
@@ -46,15 +46,13 @@
         [self configureSleepWakeTimer];
         [self configureEventHandler];
         [self configureUserNotificationCenter];
+        [self configureMainMenu];
 
         Auto center = NSNotificationCenter.defaultCenter;
         [center addObserver:self
                    selector:@selector(applicationWillFinishLaunching:)
                        name:NSApplicationWillFinishLaunchingNotification
                      object:nil];
-
-        self.menuController = [KYAActivationDurationsMenuController new];
-        self.menuController.delegate = self;
     }
     return self;
 }
@@ -66,12 +64,15 @@
     [center removeObserver:self name:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
 }
 
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
+#pragma mark - Main Menu
 
-    [self.menu setSubmenu:self.menuController.menu
-                  forItem:self.activationDurationsMenuItem];
+- (void)configureMainMenu
+{
+    Auto menuController = [KYAActivationDurationsMenuController new];
+    menuController.delegate = self;
+    self.menuController = menuController;
+    
+    self.menu = KYACreateMainMenuWithActivationDurationsSubMenu(menuController.menu);
 }
 
 #pragma mark - Sleep Wake Timer

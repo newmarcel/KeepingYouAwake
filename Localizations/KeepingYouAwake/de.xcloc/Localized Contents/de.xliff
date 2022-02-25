@@ -88,6 +88,11 @@ Rechtsklick, um das Menü anzuzeigen</target>
         <target>OK</target>
         <note>OK</note>
       </trans-unit>
+      <trans-unit id="Preferences…" xml:space="preserve">
+        <source>Preferences…</source>
+        <target>Einstellungen …</target>
+        <note>Preferences…</note>
+      </trans-unit>
       <trans-unit id="Preventing Sleep" xml:space="preserve">
         <source>Preventing Sleep</source>
         <target>Der Ruhezustand wird verhindert</target>
@@ -97,6 +102,11 @@ Rechtsklick, um das Menü anzuzeigen</target>
         <source>Preventing Sleep for %@</source>
         <target>Der Ruhezustand wird für %@ verhindert</target>
         <note>Preventing Sleep for %@</note>
+      </trans-unit>
+      <trans-unit id="Quit" xml:space="preserve">
+        <source>Quit</source>
+        <target>Beenden</target>
+        <note>Quit</note>
       </trans-unit>
       <trans-unit id="Quit when activation duration is over" xml:space="preserve">
         <source>Quit when activation duration is over</source>
@@ -137,28 +147,6 @@ Rechtsklick, um das Menü anzuzeigen</target>
         <source>Your Mac will automatically go to sleep when unused.</source>
         <target>Dein Mac versetzt sich bei Nichtbenutzung selbständig in den Ruhezustand.</target>
         <note>Your Mac will automatically go to sleep when unused.</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" target-language="de" datatype="plaintext">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2.1" build-num="13C100"/>
-    </header>
-    <body>
-      <trans-unit id="7is-vc-kz7.title" xml:space="preserve">
-        <source>Quit</source>
-        <target>Beenden</target>
-        <note>Class = "NSMenuItem"; title = "Quit"; ObjectID = "7is-vc-kz7";</note>
-      </trans-unit>
-      <trans-unit id="Bo6-IE-IbX.title" xml:space="preserve">
-        <source>Activate for Duration</source>
-        <target>Aktivierungsdauer</target>
-        <note>Class = "NSMenuItem"; title = "Activate for Duration"; ObjectID = "Bo6-IE-IbX";</note>
-      </trans-unit>
-      <trans-unit id="OT5-lg-IM6.title" xml:space="preserve">
-        <source>Preferences…</source>
-        <target>Einstellungen …</target>
-        <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "OT5-lg-IM6";</note>
       </trans-unit>
     </body>
   </file>

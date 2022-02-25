@@ -2,7 +2,7 @@
 "(Default)" = "(По умолчанию)";
 
 /* Activate for Duration */
-"Activate for Duration" = "Aktivierungsdauer";
+"Activate for Duration" = "Активировать на срок";
 
 /* Cancel */
 "Cancel" = "Отмена";
@@ -27,6 +27,12 @@
 
 /* OK */
 "OK" = "ОК";
+
+/* Preferences… */
+"Preferences…" = "Настройки…";
+
+/* Quit */
+"Quit" = "Завершить";
 
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Выход по окончании активации";

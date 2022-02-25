@@ -26,6 +26,7 @@
       </trans-unit>
       <trans-unit id="Activate for Duration" xml:space="preserve">
         <source>Activate for Duration</source>
+        <target>在一段时间内启动</target>
         <note>Activate for Duration</note>
       </trans-unit>
       <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
@@ -78,6 +79,11 @@ Right click to show menu</source>
         <source>OK</source>
         <note>OK</note>
       </trans-unit>
+      <trans-unit id="Preferences…" xml:space="preserve">
+        <source>Preferences…</source>
+        <target>偏好设置...</target>
+        <note>Preferences…</note>
+      </trans-unit>
       <trans-unit id="Preventing Sleep" xml:space="preserve">
         <source>Preventing Sleep</source>
         <note>Preventing Sleep</note>
@@ -85,6 +91,11 @@ Right click to show menu</source>
       <trans-unit id="Preventing Sleep for %@" xml:space="preserve">
         <source>Preventing Sleep for %@</source>
         <note>Preventing Sleep for %@</note>
+      </trans-unit>
+      <trans-unit id="Quit" xml:space="preserve">
+        <source>Quit</source>
+        <target>退出</target>
+        <note>Quit</note>
       </trans-unit>
       <trans-unit id="Quit when activation duration is over" xml:space="preserve">
         <source>Quit when activation duration is over</source>
@@ -118,28 +129,6 @@ Right click to show menu</source>
       <trans-unit id="Your Mac will automatically go to sleep when unused." xml:space="preserve">
         <source>Your Mac will automatically go to sleep when unused.</source>
         <note>Your Mac will automatically go to sleep when unused.</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="KeepingYouAwake/Base.lproj/MainMenu.xib" source-language="en" target-language="zh" datatype="plaintext">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2.1" build-num="13C100"/>
-    </header>
-    <body>
-      <trans-unit id="7is-vc-kz7.title" xml:space="preserve">
-        <source>Quit</source>
-        <target>退出</target>
-        <note>Class = "NSMenuItem"; title = "Quit"; ObjectID = "7is-vc-kz7";</note>
-      </trans-unit>
-      <trans-unit id="Bo6-IE-IbX.title" xml:space="preserve">
-        <source>Activate for Duration</source>
-        <target>在一段时间内启动</target>
-        <note>Class = "NSMenuItem"; title = "Activate for Duration"; ObjectID = "Bo6-IE-IbX";</note>
-      </trans-unit>
-      <trans-unit id="OT5-lg-IM6.title" xml:space="preserve">
-        <source>Preferences…</source>
-        <target>偏好设置...</target>
-        <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "OT5-lg-IM6";</note>
       </trans-unit>
     </body>
   </file>

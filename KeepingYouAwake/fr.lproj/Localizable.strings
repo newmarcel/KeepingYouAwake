@@ -1,6 +1,9 @@
 /* (Default) */
 "(Default)" = "(Défaut)";
 
+/* Activate for Duration */
+"Activate for Duration" = "Activer pour...";
+
 /* Cancel */
 "Cancel" = "Annuler";
 
@@ -18,6 +21,12 @@
 
 /* Indefinitely */
 "Indefinitely" = "Indéfiniment";
+
+/* Preferences… */
+"Preferences…" = "Préférences…";
+
+/* Quit */
+"Quit" = "Quitter";
 
 /* Quit when activation duration is over */
 "Quit when activation duration is over" = "Quitter quand la durée d'activation est terminée";

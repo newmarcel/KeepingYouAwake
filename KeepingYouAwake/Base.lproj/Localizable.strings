@@ -7,8 +7,17 @@
 /* Click to prevent sleep\nRight click to show menu */
 "Click to prevent sleep\nRight click to show menu" = "Click to prevent sleep\nRight click to show menu";
 
+/* Activate for Duration */
+"Activate for Duration" = "Activate for Duration";
+
 /* Indefinitely */
 "Indefinitely" = "Indefinitely";
 
 /* Version */
 "Version" = "Version";
+
+/* Preferences… */
+"Preferences…" = "Preferences…";
+
+/* Quit */
+"Quit" = "Quit";

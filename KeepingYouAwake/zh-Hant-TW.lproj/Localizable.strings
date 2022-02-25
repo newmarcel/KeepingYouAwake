@@ -1,3 +1,6 @@
+/* Activate for Duration */
+"Activate for Duration" = "啟用並維持";
+
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "點一下允許進入睡眠模式\n按右鍵顯示選單";
 
@@ -9,6 +12,12 @@
 
 /* Indefinitely */
 "Indefinitely" = "永久";
+
+/* Preferences… */
+"Preferences…" = "偏好設定";
+
+/* Quit */
+"Quit" = "結束";
 
 /* Version */
 "Version" = "版本";

@@ -1,3 +1,6 @@
+/* Activate for Duration */
+"Activate for Duration" = "Ativar durante";
+
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Clique para permitir o computador hibernar\nClique com o botão direito para exibir o menu";
 
@@ -9,6 +12,12 @@
 
 /* Indefinitely */
 "Indefinitely" = "Indefinidamente";
+
+/* Preferences… */
+"Preferences…" = "Preferências…";
+
+/* Quit */
+"Quit" = "Sair";
 
 /* Version */
 "Version" = "Versão";

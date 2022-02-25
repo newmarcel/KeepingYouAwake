@@ -1,3 +1,6 @@
+/* Activate for Duration */
+"Activate for Duration" = "Schakel in voor";
+
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Klik om de sluimerstand toe te staan\nRechtsklik om het menu te tonen";
 
@@ -9,6 +12,12 @@
 
 /* Indefinitely */
 "Indefinitely" = "Onbepaalde duur";
+
+/* Preferences… */
+"Preferences…" = "Voorkeuren…";
+
+/* Quit */
+"Quit" = "Stop";
 
 /* Version */
 "Version" = "Versie";
