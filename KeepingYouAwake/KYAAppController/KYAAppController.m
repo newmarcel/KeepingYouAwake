@@ -53,6 +53,10 @@
                    selector:@selector(applicationWillFinishLaunching:)
                        name:NSApplicationWillFinishLaunchingNotification
                      object:nil];
+        [center addObserver:self
+                   selector:@selector(batteryCapacityThresholdDidChange:)
+                       name:kKYABatteryCapacityThresholdDidChangeNotification
+                     object:nil];
     }
     return self;
 }
@@ -258,9 +262,8 @@
 
 - (void)batteryCapacityThresholdDidChange:(NSNotification *)notification
 {
-    Auto batteryMonitor = KYADevice.currentDevice.batteryMonitor;
-    if([batteryMonitor hasBattery] == NO) { return; }
-
+    if([self.sleepWakeTimer isScheduled] == NO) { return; }
+    
     [self terminateTimer];
 }
 
