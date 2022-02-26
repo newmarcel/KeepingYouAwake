@@ -9,6 +9,7 @@
 #import "KYABatteryPreferencesViewController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
+#import "KYABatteryCapacityThreshold.h"
 
 @interface KYABatteryPreferencesViewController ()
 @end
@@ -43,6 +44,15 @@
 - (KYADevice *)device
 {
     return KYADevice.currentDevice;
+}
+
+#pragma mark - Battery Preferences Did Change
+
+- (void)batteryPreferencesDidChange:(id)sender
+{
+    Auto center = NSNotificationCenter.defaultCenter;
+    [center postNotificationName:kKYABatteryCapacityThresholdDidChangeNotification
+                          object:nil];
 }
 
 @end

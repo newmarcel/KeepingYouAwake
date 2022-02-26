@@ -32,6 +32,7 @@
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
+                        <action selector="batteryPreferencesDidChange:" target="-2" id="iiW-Np-tZJ"/>
                         <binding destination="-2" name="enabled" keyPath="device.batteryMonitor.hasBattery" id="MAh-Qj-xBb"/>
                         <binding destination="emK-Lf-1No" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled" id="o3M-xV-1zK"/>
                     </connections>
@@ -51,6 +52,7 @@
                             <rect key="frame" x="-2" y="9" width="394" height="28"/>
                             <sliderCell key="cell" state="on" alignment="left" minValue="10" maxValue="90" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="9" allowsTickMarkValuesOnly="YES" sliderType="linear" id="9Hs-JO-805"/>
                             <connections>
+                                <action selector="batteryPreferencesDidChange:" target="-2" id="95P-tm-CEJ"/>
                                 <binding destination="-2" name="enabled2" keyPath="device.batteryMonitor.hasBattery" previousBinding="wE0-ra-vGq" id="orT-z8-VLt">
                                     <dictionary key="options">
                                         <integer key="NSMultipleValuesPlaceholder" value="-1"/>
@@ -126,6 +128,7 @@
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
+                        <action selector="batteryPreferencesDidChange:" target="-2" id="nJ2-aa-dGD"/>
                         <binding destination="-2" name="enabled" keyPath="device.lowPowerModeMonitor.supportsLowPowerMode" id="UmW-9Y-9Nc"/>
                         <binding destination="emK-Lf-1No" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.LowPowerModeMonitoringEnabled" id="GdL-wN-B4a"/>
                     </connections>
