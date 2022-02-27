@@ -4,6 +4,7 @@
 
 ### v1.6.3 ###
 
+- added Battery preferences with support for Low Power Mode on compatible Macs ([#181](https://github.com/newmarcel/KeepingYouAwake/pull/181))
 - added a Japanese translation ([#182](https://github.com/newmarcel/KeepingYouAwake/issues/182)
     - *Thank you [hiroto-t](https://github.com/hiroto-t)!*
 - updated the Turkish translation ([#183](https://github.com/newmarcel/KeepingYouAwake/issues/183)
