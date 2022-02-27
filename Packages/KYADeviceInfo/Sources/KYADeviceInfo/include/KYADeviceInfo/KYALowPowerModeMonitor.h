@@ -14,10 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface KYALowPowerModeMonitor : NSObject
 
 /// Returns `YES` if the current device supports the Low Power Mode.
-@property (class, nonatomic, readonly) BOOL supportsLowPowerMode;
-
-/// Convenience property to determine if the current device supports the Low Power Mode.
-/// @note Please prefer using the `+supportsLowPowerMode` class property.
 @property (nonatomic, readonly) BOOL supportsLowPowerMode;
 
 /// Returns `YES` if Low Power Mode is currently enabled.

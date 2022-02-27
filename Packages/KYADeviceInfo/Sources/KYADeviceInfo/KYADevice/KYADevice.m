@@ -96,7 +96,7 @@ const KYADeviceParameter KYADeviceParameterLowPowerMode = @"KYADeviceParameterLo
     if(lowPowerModeMonitoringEnabled)
     {
         // Do not start monitoring if the device does not support this feature
-        if([KYALowPowerModeMonitor supportsLowPowerMode] == NO) { return; }
+        if([lowPowerModeMonitor supportsLowPowerMode] == NO) { return; }
         
         AutoWeak weakSelf = self;
         lowPowerModeMonitor.lowPowerModeChangeHandler = ^(BOOL enabled) {
