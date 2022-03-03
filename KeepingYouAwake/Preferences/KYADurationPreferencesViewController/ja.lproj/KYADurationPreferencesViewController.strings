@@ -1,0 +1,30 @@
+
+/* Class = "NSButtonCell"; title = "Reset…"; ObjectID = "13c-ID-Fgy"; */
+"13c-ID-Fgy.title" = "Reset…";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "2Az-3u-oGb"; */
+"2Az-3u-oGb.title" = "Remove";
+
+/* Class = "NSButtonCell"; title = "Set Default"; ObjectID = "3es-An-BPG"; */
+"3es-An-BPG.title" = "Set Default";
+
+/* Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "4tU-j1-N4m"; */
+"4tU-j1-N4m.title" = "The default activation duration is used when you click on the menu bar icon.";
+
+/* Class = "NSButtonCell"; title = "Set Default"; ObjectID = "Are-vs-Awn"; */
+"Are-vs-Awn.title" = "Set Default";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Btn-FN-s8Z"; Note = "Do not localize"; */
+"Btn-FN-s8Z.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Reset…"; ObjectID = "COs-G1-J6K"; */
+"COs-G1-J6K.title" = "Reset…";
+
+/* Class = "NSMenuItem"; title = "Set Default"; ObjectID = "U86-Hk-nfT"; */
+"U86-Hk-nfT.title" = "Set Default";
+
+/* Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[0] = "Remove"; ObjectID = "dml-Pt-frp"; */
+"dml-Pt-frp.ibShadowedToolTips[0]" = "Remove";
+
+/* Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[1] = "Add"; ObjectID = "dml-Pt-frp"; */
+"dml-Pt-frp.ibShadowedToolTips[1]" = "Add";
