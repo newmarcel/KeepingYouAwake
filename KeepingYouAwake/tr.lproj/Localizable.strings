@@ -1,5 +1,5 @@
 /* Activate for Duration */
-"Activate for Duration" = "Süreyi etkinleştir";
+"Activate for Duration" = "Bir süreliğine etkinleştir";
 
 /* Click to allow sleep\nRight click to show menu */
 "Click to allow sleep\nRight click to show menu" = "Uyku moduna izin vermek için sağ menüye tıklayın";
@@ -21,4 +21,52 @@
 
 /* Version */
 "Version" = "Versiyon";
+
+/* (Default) */
+"(Default)" = "(Varsayılan)";
+
+/* Afterwards your Mac will automatically go to sleep again when unused. */
+"Afterwards your Mac will automatically go to sleep again when unused." = "Daha sonra Mac'iniz kullanılmadığında otomatik olarak tekrar uyku moduna geçer.";
+
+/* Allowing Sleep */
+"Allowing Sleep" = "Uyku moduna izin veriliyor";
+
+/* Cancel */
+"Cancel" = "İptal";
+
+/* Default */
+"Default" = "Varsayılan";
+
+/* Do you really want to reset the activation durations to the default values? */
+"Aktivasyon sürelerini varsayılan değerlere sıfırlamak istiyor musun?";
+
+/* OK */
+"OK" = "Tamam";
+
+/* Preventing Sleep */
+"Preventing Sleep" = "Uyku modu önleniyor";
+
+/* Preventing Sleep for %@ */
+"Preventing Sleep for %@" = "Uyku modu %@ için önleniyor";
+
+/* Quit when activation duration is over */
+"Quit when activation duration is over" = "Aktivasyon süresi bittiğinde çıkış yap";
+
+/* Reset Activation Durations */
+"Reset Activation Durations" = "Aktivasyon Süresini Sıfırla";
+
+/* Set Default: %@ */
+"Set Default: %@" = "Varsayılan Olarak Ayarla: %@";
+
+/* The entered duration is invalid. Please try again. */
+"The entered duration is invalid. Please try again." = "Girilen süre geçersiz. Lütfen tekrar dene.";
+
+/* This duration has already been added. */
+"This duration has already been added." = "Süre zaten daha önce eklenmiş.";
+
+/* You can still manually enable sleep mode for your Mac. */
+"You can still manually enable sleep mode for your Mac." = "Yine de Mac'iniz için uyku modunu manuel olarak etkinleştirebilirsiniz.";
+
+/* Your Mac will automatically go to sleep when unused. */
+"Your Mac will automatically go to sleep when unused." = "Daha sonra Mac'iniz kullanılmadığında otomatik olarak tekrar uyku moduna geçer.";
 
