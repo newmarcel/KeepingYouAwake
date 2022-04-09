@@ -1,8 +1,8 @@
 /* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "3GX-gq-Yaq"; */
-"3GX-gq-Yaq.title" = "Varsayılan ayarları sil";
+"3GX-gq-Yaq.title" = "Varsayılan ayarlara dön";
 
 /* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "a5l-du-7Rf"; */
-"a5l-du-7Rf.title" = "Pil kapasitesi aşıldığın da devre dışı bırak";
+"a5l-du-7Rf.title" = "Pil kapasitesi aşıldığında devre dışı bırak";
 
 /* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "pcX-L6-8PY"; */
 "pcX-L6-8PY.title" = "50 %";
@@ -14,8 +14,8 @@
 "ViM-Dg-sVF.title" = "90 %";
 
 /* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "xdm-wP-gM6"; */
-"xdm-wP-gM6.title" = "Ne yaptığınızı biliyorsanız, yalnızca bu gelişmiş tercihleri değiştirin. Bu tercihler bir uygulamanın yeniden başlatılmasını gerektirir.";
+"xdm-wP-gM6.title" = "Yalnızca ne yaptığınızı biliyorsanız bu gelişmiş tercihleri değiştirin. Bu tercihlerin birçoğu uygulamanın yeniden başlatılmasını gerektirir.";
 
 /* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "z26-wh-jCm"; */
-"z26-wh-jCm.title" = "Pil kapasitesinin altında uygulamayı manuel olarak başlattığınızda bu değer yoksayılır..";
+"z26-wh-jCm.title" = "Uygulamayı bu pil kapasitesinin altında manuel olarak başlattığınızda bu değer yok sayılır.";
 

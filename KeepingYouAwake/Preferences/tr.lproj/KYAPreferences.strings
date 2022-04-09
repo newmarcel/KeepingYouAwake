@@ -2,10 +2,16 @@
 "About" = "Hakkında";
 
 /* (No Comment) */
-"Advanced" = "Gelişmiş ayarlar";
+"Advanced" = "Gelişmiş";
 
 /* (No Comment) */
 "General" = "Genel";
+
+/* (No Comment) */
+"Activation Duration" = "Aktivasyon Süresi";
+
+/* (No Comment) */
+"Updates" = "Güncellemeler";
 
 /* (No Comment) */
 "KeepingYouAwake – Preferences" = "KeepingYouAwake – Tercihler";

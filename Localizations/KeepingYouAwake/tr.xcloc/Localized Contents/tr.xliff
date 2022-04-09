@@ -22,43 +22,47 @@
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
         <source>(Default)</source>
+        <target>(Varsayılan)</target>
         <note>(Default)</note>
       </trans-unit>
       <trans-unit id="Activate for Duration" xml:space="preserve">
         <source>Activate for Duration</source>
-        <target>Süreyi etkinleştir</target>
+        <target>Bir süreliğine etkinleştir</target>
         <note>Activate for Duration</note>
       </trans-unit>
       <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
         <source>Afterwards your Mac will automatically go to sleep again when unused.</source>
+        <target>Daha sonra Mac'iniz kullanılmadığında otomatik olarak tekrar uyku moduna geçer.</target>
         <note>Afterwards your Mac will automatically go to sleep again when unused.</note>
       </trans-unit>
       <trans-unit id="Allow the display to sleep" xml:space="preserve">
         <source>Allow the display to sleep</source>
+        <target>Ekranın uyku moduna geçmesine izin ver</target>
         <note>Allow the display to sleep</note>
       </trans-unit>
       <trans-unit id="Allowing Sleep" xml:space="preserve">
         <source>Allowing Sleep</source>
+        <target>Uyku moduna izin veriliyor</target>
         <note>Allowing Sleep</note>
       </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
         <source>Cancel</source>
+        <target>İptal</target>
         <note>Cancel</note>
       </trans-unit>
       <trans-unit id="Click to allow sleep&#10;Right click to show menu" xml:space="preserve">
-        <source>Click to allow sleep
-Right click to show menu</source>
+        <source>Click to allow sleep\nRight click to show menu</source>
         <target>Uyku moduna izin vermek için sağ menüye tıklayın</target>
         <note>Click to allow sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Click to prevent sleep&#10;Right click to show menu" xml:space="preserve">
-        <source>Click to prevent sleep
-Right click to show menu</source>
+        <source>Click to prevent sleep\nRight click to show menu</source>
         <target>Uyku moduna geçmeyi önleme menüsünü göstermek için sağdaki düğmeye tıklayın</target>
         <note>Click to prevent sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Default" xml:space="preserve">
         <source>Default</source>
+        <target>Varsayılan</target>
         <note>Default</note>
       </trans-unit>
       <trans-unit id="Disable menu bar icon highlight color" xml:space="preserve">
@@ -68,6 +72,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Do you really want to reset the activation durations to the default values?" xml:space="preserve">
         <source>Do you really want to reset the activation durations to the default values?</source>
+        <target>Aktivasyon sürelerini varsayılan değerlere sıfırlamak istiyor musun?</target>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
@@ -77,6 +82,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="OK" xml:space="preserve">
         <source>OK</source>
+        <target>Tamam</target>
         <note>OK</note>
       </trans-unit>
       <trans-unit id="Preferences…" xml:space="preserve">
@@ -86,10 +92,12 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Preventing Sleep" xml:space="preserve">
         <source>Preventing Sleep</source>
+        <target>Uyku modu önleniyor</target>
         <note>Preventing Sleep</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep for %@" xml:space="preserve">
         <source>Preventing Sleep for %@</source>
+        <target>Uyku modu %@ için önleniyor</target>
         <note>Preventing Sleep for %@</note>
       </trans-unit>
       <trans-unit id="Quit" xml:space="preserve">
@@ -99,22 +107,27 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Quit when activation duration is over" xml:space="preserve">
         <source>Quit when activation duration is over</source>
+        <target>Aktivasyon süresi bittiğinde çıkış yap</target>
         <note>Quit when activation duration is over</note>
       </trans-unit>
       <trans-unit id="Reset Activation Durations" xml:space="preserve">
         <source>Reset Activation Durations</source>
+        <target>Aktivasyon süresini sıfırla</target>
         <note>Reset Activation Durations</note>
       </trans-unit>
       <trans-unit id="Set Default: %@" xml:space="preserve">
         <source>Set Default: %@</source>
+        <target>Varsayılanı ayarla: %@</target>
         <note>Set Default: %@</note>
       </trans-unit>
       <trans-unit id="The entered duration is invalid. Please try again." xml:space="preserve">
         <source>The entered duration is invalid. Please try again.</source>
+        <target>Girilen süre geçersiz. Lütfen tekrar dene.</target>
         <note>The entered duration is invalid. Please try again.</note>
       </trans-unit>
       <trans-unit id="This duration has already been added." xml:space="preserve">
         <source>This duration has already been added.</source>
+        <target>Süre zaten daha önce eklenmiş.</target>
         <note>This duration has already been added.</note>
       </trans-unit>
       <trans-unit id="Version" xml:space="preserve">
@@ -124,10 +137,12 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="You can still manually enable sleep mode for your Mac." xml:space="preserve">
         <source>You can still manually enable sleep mode for your Mac.</source>
+        <target>Yine de Mac'iniz için uyku modunu manuel olarak etkinleştirebilirsiniz.</target>
         <note>You can still manually enable sleep mode for your Mac.</note>
       </trans-unit>
       <trans-unit id="Your Mac will automatically go to sleep when unused." xml:space="preserve">
         <source>Your Mac will automatically go to sleep when unused.</source>
+        <target>Mac'iniz kullanılmadığında otomatik olarak uyku moduna geçer.</target>
         <note>Your Mac will automatically go to sleep when unused.</note>
       </trans-unit>
     </body>
@@ -144,6 +159,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Activation Duration" xml:space="preserve">
         <source>Activation Duration</source>
+        <target>Aktivasyon Süresi</target>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced" xml:space="preserve">
@@ -163,6 +179,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Updates" xml:space="preserve">
         <source>Updates</source>
+        <target>Güncellemeler</target>
         <note/>
       </trans-unit>
     </body>
@@ -224,26 +241,32 @@ Right click to show menu</source>
     <body>
       <trans-unit id="5bs-m4-hy9.title" xml:space="preserve">
         <source>Hours</source>
+        <target>Saat</target>
         <note>Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "5bs-m4-hy9";</note>
       </trans-unit>
       <trans-unit id="59l-n2-tD5.title" xml:space="preserve">
         <source>Cancel</source>
+        <target>İptal</target>
         <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "59l-n2-tD5";</note>
       </trans-unit>
       <trans-unit id="kYn-pW-tq6.title" xml:space="preserve">
         <source>Warning Label</source>
+        <target>Uyarı Etiketi</target>
         <note>Class = "NSTextFieldCell"; title = "Warning Label"; ObjectID = "kYn-pW-tq6"; Note = "Do not localize";</note>
       </trans-unit>
       <trans-unit id="oi9-AP-ag4.title" xml:space="preserve">
         <source>Minutes</source>
+        <target>Dakika</target>
         <note>Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "oi9-AP-ag4";</note>
       </trans-unit>
       <trans-unit id="s1J-2f-UeD.title" xml:space="preserve">
         <source>Seconds</source>
+        <target>Saniye</target>
         <note>Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "s1J-2f-UeD";</note>
       </trans-unit>
       <trans-unit id="vTF-HR-j5d.title" xml:space="preserve">
         <source>Add Duration</source>
+        <target>Süre Ekle</target>
         <note>Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "vTF-HR-j5d";</note>
       </trans-unit>
     </body>
@@ -255,42 +278,52 @@ Right click to show menu</source>
     <body>
       <trans-unit id="2Az-3u-oGb.title" xml:space="preserve">
         <source>Remove</source>
+        <target>Kaldır</target>
         <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "2Az-3u-oGb";</note>
       </trans-unit>
       <trans-unit id="3es-An-BPG.title" xml:space="preserve">
         <source>Set Default</source>
+        <target>Varsayılan Olarak Ayarla</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "3es-An-BPG";</note>
       </trans-unit>
       <trans-unit id="4tU-j1-N4m.title" xml:space="preserve">
         <source>The default activation duration is used when you click on the menu bar icon.</source>
+        <target>Menü çubuğu simgesine tıkladığınızda varsayılan etkinleştirme süresi kullanılır.</target>
         <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "4tU-j1-N4m";</note>
       </trans-unit>
       <trans-unit id="13c-ID-Fgy.title" xml:space="preserve">
         <source>Reset…</source>
+        <target>Sıfırla…</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "13c-ID-Fgy";</note>
       </trans-unit>
       <trans-unit id="Are-vs-Awn.title" xml:space="preserve">
         <source>Set Default</source>
+        <target>Varsayılan Olarak Ayarla</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "Are-vs-Awn";</note>
       </trans-unit>
       <trans-unit id="Btn-FN-s8Z.title" xml:space="preserve">
         <source>Text Cell</source>
+        <target>Metin Sütunu</target>
         <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Btn-FN-s8Z"; Note = "Do not localize";</note>
       </trans-unit>
       <trans-unit id="COs-G1-J6K.title" xml:space="preserve">
         <source>Reset…</source>
+        <target>Sıfırla…</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "COs-G1-J6K";</note>
       </trans-unit>
       <trans-unit id="U86-Hk-nfT.title" xml:space="preserve">
         <source>Set Default</source>
+        <target>Varsayılan Olarak Ayarla</target>
         <note>Class = "NSMenuItem"; title = "Set Default"; ObjectID = "U86-Hk-nfT";</note>
       </trans-unit>
       <trans-unit id="dml-Pt-frp.ibShadowedToolTips[0]" xml:space="preserve">
         <source>Remove</source>
+        <target>Kaldır</target>
         <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[0] = "Remove"; ObjectID = "dml-Pt-frp";</note>
       </trans-unit>
       <trans-unit id="dml-Pt-frp.ibShadowedToolTips[1]" xml:space="preserve">
         <source>Add</source>
+        <target>Ekle</target>
         <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[1] = "Add"; ObjectID = "dml-Pt-frp";</note>
       </trans-unit>
     </body>
@@ -307,6 +340,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="7dk-Tj-9aG.title" xml:space="preserve">
         <source>Notification Preferences…</source>
+        <target>Bildirim Tercihleri…</target>
         <note>Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "7dk-Tj-9aG";</note>
       </trans-unit>
       <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
@@ -321,7 +355,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="zql-rZ-9xH.title" xml:space="preserve">
         <source>Activate on Launch</source>
-        <target>Başlat</target>
+        <target>Açılışta başlat</target>
         <note>Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "zql-rZ-9xH";</note>
       </trans-unit>
     </body>
@@ -333,17 +367,17 @@ Right click to show menu</source>
     <body>
       <trans-unit id="F2o-Is-2nW.title" xml:space="preserve">
         <source>Automatically Check for Updates</source>
-        <target>Güncellemeleri otomatik kontrol et</target>
+        <target>Güncellemeleri Otomatik Kontrol Et</target>
         <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "F2o-Is-2nW";</note>
       </trans-unit>
       <trans-unit id="oBK-47-iMk.title" xml:space="preserve">
         <source>Check for Pre-Release Updates</source>
-        <target>Güncellemeleri Kontrol Edin</target>
+        <target>Önsürüm Güncellemelerini Kontrol Et</target>
         <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "oBK-47-iMk";</note>
       </trans-unit>
       <trans-unit id="tAT-1z-ZPp.title" xml:space="preserve">
         <source>Check Now</source>
-        <target>Kontrol et</target>
+        <target>Şimdi Kontrol Et</target>
         <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "tAT-1z-ZPp";</note>
       </trans-unit>
     </body>
