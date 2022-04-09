@@ -98,7 +98,6 @@
 		DAD983A726F9C46600234FB8 /* KYAAddDurationPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD983A926F9C46600234FB8 /* KYAAddDurationPreferencesViewController.xib */; };
 		DAD983C626F9C82900234FB8 /* KYAPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD983C526F9C82900234FB8 /* KYAPreferencesWindowController.xib */; };
 		DAEF160C277C67D800EA9478 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = DAEF160B277C67D800EA9478 /* Sparkle */; };
-		DAFD741C280216BC005FD32F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAFD741A280216BC005FD32F /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -364,7 +363,6 @@
 		DAFD7417280216BC005FD32F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/KYADurationPreferencesViewController.strings; sourceTree = "<group>"; };
 		DAFD7418280216BC005FD32F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/KYAGeneralPreferencesViewController.strings; sourceTree = "<group>"; };
 		DAFD7419280216BC005FD32F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/KYAUpdatePreferencesViewController.strings; sourceTree = "<group>"; };
-		DAFD741B280216BC005FD32F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -542,7 +540,6 @@
 				DA658E7C21CE90F30049F4C1 /* MainMenu.xib */,
 				DA658E7021CE907D0049F4C1 /* Assets.xcassets */,
 				DA658E7521CE907D0049F4C1 /* Info.plist */,
-				DAFD741A280216BC005FD32F /* InfoPlist.strings */,
 				DA658E7821CE907D0049F4C1 /* KYALauncher.entitlements */,
 			);
 			path = KYALauncher;
@@ -838,7 +835,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA658E7121CE907D0049F4C1 /* Assets.xcassets in Resources */,
-				DAFD741C280216BC005FD32F /* InfoPlist.strings in Resources */,
 				DA658E7D21CE90F30049F4C1 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1137,14 +1133,6 @@
 				DAFD7416280216BC005FD32F /* it */,
 			);
 			name = KYAAddDurationPreferencesViewController.xib;
-			sourceTree = "<group>";
-		};
-		DAFD741A280216BC005FD32F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DAFD741B280216BC005FD32F /* it */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
