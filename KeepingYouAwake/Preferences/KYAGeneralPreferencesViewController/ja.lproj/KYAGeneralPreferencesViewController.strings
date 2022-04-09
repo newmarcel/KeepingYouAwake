@@ -1,15 +1,15 @@
+/* Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "7dk-Tj-9aG"; */
+"7dk-Tj-9aG.title" = "通知の設定…";
 
 /* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU"; */
-"7QN-oX-fJU.title" = "Immediately starts preventing sleep when launched.";
-
-/* Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "7dk-Tj-9aG"; */
-"7dk-Tj-9aG.title" = "Notification Preferences…";
-
-/* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "YWD-DY-pgf"; */
-"YWD-DY-pgf.title" = "Start at Login";
+"7QN-oX-fJU.title" = "起動時にすぐにスリープを停止する";
 
 /* Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "jxf-J8-dHN"; */
-"jxf-J8-dHN.title" = "Automatically opens the app when you start your Mac.";
+"jxf-J8-dHN.title" = "Macを起動したときに自動的にアプリを開く";
+
+/* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "YWD-DY-pgf"; */
+"YWD-DY-pgf.title" = "ログイン時に起動する";
 
 /* Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "zql-rZ-9xH"; */
-"zql-rZ-9xH.title" = "Activate on Launch";
+"zql-rZ-9xH.title" = "起動したときに有効にする";
+

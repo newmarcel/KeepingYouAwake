@@ -1,23 +1,24 @@
+/* Activate for Duration */
+"Activate for Duration" = "アクティブ時間";
+
+/* Click to allow sleep\nRight click to show menu */
+"Click to allow sleep\nRight click to show menu" = "クリックでスリープを有効にする\n右クリックでメニューを表示";
+
+/* Click to prevent sleep\nRight click to show menu */
+"Click to prevent sleep\nRight click to show menu" = "クリックでスリープを無効にする\n右クリックでメニューを表示する";
+
 /* Disable menu bar icon highlight color */
 "Disable menu bar icon highlight color" = "Disable menu bar icon highlight color";
 
-/* Click to allow sleep\nRight click to show menu */
-"Click to allow sleep\nRight click to show menu" = "Click to allow sleep\nRight click to show menu";
-
-/* Click to prevent sleep\nRight click to show menu */
-"Click to prevent sleep\nRight click to show menu" = "Click to prevent sleep\nRight click to show menu";
-
-/* Activate for Duration */
-"Activate for Duration" = "Activate for Duration";
-
 /* Indefinitely */
-"Indefinitely" = "Indefinitely";
-
-/* Version */
-"Version" = "Version";
+"Indefinitely" = "無期限";
 
 /* Preferences… */
-"Preferences…" = "Preferences…";
+"Preferences…" = "設定…";
 
 /* Quit */
-"Quit" = "Quit";
+"Quit" = "終了";
+
+/* Version */
+"Version" = "バージョン";
+

@@ -1,11 +1,18 @@
-"KeepingYouAwake – Preferences" = "KeepingYouAwake – Preferences";
-
-"General" = "General";
-
+/* (No Comment) */
 "About" = "About";
 
-"Updates" = "Updates";
+/* (No Comment) */
+"Activation Duration" = "アクティブ時間";
 
-"Advanced" = "Advanced";
+/* (No Comment) */
+"Advanced" = "高度な設定";
 
-"Activation Duration" = "Activation Duration";
+/* (No Comment) */
+"General" = "一般";
+
+/* (No Comment) */
+"KeepingYouAwake – Preferences" = "KeepingYouAwake – 設定";
+
+/* (No Comment) */
+"Updates" = "アップデート";
+
