@@ -4,6 +4,13 @@
 
 ### v1.6.3 ###
 
+- added a Japanese translation ([#182](https://github.com/newmarcel/KeepingYouAwake/issues/182)
+    - *Thank you [hiroto-t](https://github.com/hiroto-t)!*
+- updated the Turkish translation ([#183](https://github.com/newmarcel/KeepingYouAwake/issues/183)
+    - *Thank you [egemenu](https://github.com/egemenu)!*
+- added an Italian translation ([#184](https://github.com/newmarcel/KeepingYouAwake/issues/184)
+    - *Thank you [gmcinalli](https://github.com/gmcinalli)!*
+
 ### v1.6.2 ###
 
 - updated the Danish translation ([#171](https://github.com/newmarcel/KeepingYouAwake/pull/171), [#180](https://github.com/newmarcel/KeepingYouAwake/pull/180))
