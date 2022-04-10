@@ -208,11 +208,11 @@
 		DA48360826F8D2740073A062 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/KYAAdvancedPreferencesViewController.strings; sourceTree = "<group>"; };
 		DA48360A26F8D2BC0073A062 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/KYAAdvancedPreferencesViewController.strings; sourceTree = "<group>"; };
 		DA48360C26F8D2F40073A062 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/KYAAdvancedPreferencesViewController.strings; sourceTree = "<group>"; };
-		DA49760D2802142F00F42D51 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/KYAGeneralPreferencesViewController.strings; sourceTree = "<group>"; };
 		DA4950F827C97EF2008D1747 /* KYABatteryPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYABatteryPreferencesViewController.m; sourceTree = "<group>"; };
+		DA4950F927C97EF2008D1747 /* KYABatteryPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYABatteryPreferencesViewController.h; sourceTree = "<group>"; };
+		DA49760D2802142F00F42D51 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/KYAGeneralPreferencesViewController.strings; sourceTree = "<group>"; };
 		DA49760E2802142F00F42D51 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/KYADurationPreferencesViewController.strings; sourceTree = "<group>"; };
 		DA49760F2802142F00F42D51 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/KYAAddDurationPreferencesViewController.strings; sourceTree = "<group>"; };
-		DA4950F927C97EF2008D1747 /* KYABatteryPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYABatteryPreferencesViewController.h; sourceTree = "<group>"; };
 		DA4976102802142F00F42D51 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/KYAAdvancedPreferencesViewController.strings; sourceTree = "<group>"; };
 		DA4976112802142F00F42D51 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/KYAUpdatePreferencesViewController.strings; sourceTree = "<group>"; };
 		DA497612280214AE00F42D51 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -257,6 +257,8 @@
 		DA82560C22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAActivationDurationsMenuController.m; sourceTree = "<group>"; };
 		DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAGeneralPreferencesViewController.h; sourceTree = "<group>"; };
 		DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAGeneralPreferencesViewController.m; sourceTree = "<group>"; };
+		DA836E462802E69A00E69B32 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/KYABatteryPreferencesViewController.strings; sourceTree = "<group>"; };
+		DA836E482802E69C00E69B32 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/KYABatteryPreferencesViewController.strings; sourceTree = "<group>"; };
 		DA8B21981F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DA8B21991F6057A200BF5013 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DA96768127CA720E00A9DCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KYABatteryPreferencesViewController.xib; sourceTree = "<group>"; };
@@ -1069,6 +1071,8 @@
 				DA96769A27CA721D00A9DCB8 /* es */,
 				DA96769C27CA721E00A9DCB8 /* tr */,
 				DA96769E27CA721F00A9DCB8 /* uk */,
+				DA836E462802E69A00E69B32 /* it */,
+				DA836E482802E69C00E69B32 /* ja */,
 			);
 			name = KYABatteryPreferencesViewController.xib;
 			sourceTree = "<group>";
