@@ -9,10 +9,10 @@
 "aXx-hk-9R9.title" = "Düşük güç modu";
 
 /* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "gx4-rK-1he"; */
-"gx4-rK-1he.title" = "Pil kapasitesi aşıldığın da devre dışı bırak";
+"gx4-rK-1he.title" = "Pil kapasitesi aşıldığında devre dışı bırak";
 
 /* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "l4a-Sa-RAE"; */
-"l4a-Sa-RAE.title" = "Pil kapasitesinin altında uygulamayı manuel olarak başlattığınızda bu değer yoksayılır..";
+"l4a-Sa-RAE.title" = "Uygulamayı bu pil kapasitesinin altında manuel olarak başlattığınızda bu değer yok sayılır.";
 
 /* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "ovF-0F-TMc"; */
 "ovF-0F-TMc.title" = "50 %";
