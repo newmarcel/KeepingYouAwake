@@ -49,6 +49,7 @@
     tabViewController.tabViewItems = @[
         KYAGeneralPreferencesViewController.preferredTabViewItem,
         KYADurationPreferencesViewController.preferredTabViewItem,
+        KYABatteryPreferencesViewController.preferredTabViewItem,
         KYAAdvancedPreferencesViewController.preferredTabViewItem,
 #if KYA_APP_UPDATER_ENABLED
         KYAUpdatePreferencesViewController.preferredTabViewItem,

@@ -171,6 +171,11 @@ Tasto destro per mostrare il menu</target>
         <target>Avanzate</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Battery" xml:space="preserve">
+        <source>Battery</source>
+        <target>Batteria</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="General" xml:space="preserve">
         <source>General</source>
         <target>Generali</target>
@@ -200,43 +205,66 @@ Tasto destro per mostrare il menu</target>
       </trans-unit>
       <trans-unit id="7z8-pS-A86.title" xml:space="preserve">
         <source>Check</source>
-        <target/>
         <note>Class = "NSButtonCell"; title = "Check"; ObjectID = "7z8-pS-A86"; Note = "Do not localize";</note>
       </trans-unit>
       <trans-unit id="HPO-gf-tIY.title" xml:space="preserve">
         <source>Text Cell</source>
-        <target/>
         <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HPO-gf-tIY"; Note = "Do not localize";</note>
-      </trans-unit>
-      <trans-unit id="QZN-1k-USs.title" xml:space="preserve">
-        <source>10 %</source>
-        <target/>
-        <note>Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "QZN-1k-USs";</note>
-      </trans-unit>
-      <trans-unit id="ViM-Dg-sVF.title" xml:space="preserve">
-        <source>90 %</source>
-        <target/>
-        <note>Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "ViM-Dg-sVF";</note>
-      </trans-unit>
-      <trans-unit id="a5l-du-7Rf.title" xml:space="preserve">
-        <source>Deactivate when battery capacity is below</source>
-        <target>Disattiva quando la carica della batteria è sotto</target>
-        <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "a5l-du-7Rf";</note>
-      </trans-unit>
-      <trans-unit id="pcX-L6-8PY.title" xml:space="preserve">
-        <source>50 %</source>
-        <target/>
-        <note>Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "pcX-L6-8PY";</note>
       </trans-unit>
       <trans-unit id="xdm-wP-gM6.title" xml:space="preserve">
         <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
         <target>Modifica queste impostazioni avanzate solo se sai quello che stai facendo. La maggior parte richiede un riavvio dell'app.</target>
         <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "xdm-wP-gM6";</note>
       </trans-unit>
-      <trans-unit id="z26-wh-jCm.title" xml:space="preserve">
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYABatteryPreferencesViewController/Base.lproj/KYABatteryPreferencesViewController.xib" source-language="en" target-language="it" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+    </header>
+    <body>
+      <trans-unit id="HtM-vx-ZuN.title" xml:space="preserve">
+        <source>10 %</source>
+        <target>10 %</target>
+        <note>Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "HtM-vx-ZuN";</note>
+      </trans-unit>
+      <trans-unit id="M11-sw-GhM.title" xml:space="preserve">
+        <source>90 %</source>
+        <target>90 %</target>
+        <note>Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "M11-sw-GhM";</note>
+      </trans-unit>
+      <trans-unit id="SHH-RQ-HPH.title" xml:space="preserve">
+        <source>Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging.</source>
+        <note>Class = "NSTextFieldCell"; title = "Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging."; ObjectID = "SHH-RQ-HPH";</note>
+      </trans-unit>
+      <trans-unit id="aXx-hk-9R9.title" xml:space="preserve">
+        <source>Low Power Mode</source>
+        <target>Risparmio energetico</target>
+        <note>Class = "NSTextFieldCell"; title = "Low Power Mode"; ObjectID = "aXx-hk-9R9";</note>
+      </trans-unit>
+      <trans-unit id="gx4-rK-1he.title" xml:space="preserve">
+        <source>Deactivate when battery capacity is below</source>
+        <target>Disattiva quando la carica della batteria è sotto</target>
+        <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "gx4-rK-1he";</note>
+      </trans-unit>
+      <trans-unit id="l4a-Sa-RAE.title" xml:space="preserve">
         <source>This value will be ignored when you manually start the app below this battery capacity.</source>
         <target>Questo valore verrà ignorato quando avvierai l'app sotto questo livello di carica della batteria.</target>
-        <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "z26-wh-jCm";</note>
+        <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "l4a-Sa-RAE";</note>
+      </trans-unit>
+      <trans-unit id="mcf-JV-nyg.title" xml:space="preserve">
+        <source>Deactivate when Low Power Mode is enabled</source>
+        <note>Class = "NSButtonCell"; title = "Deactivate when Low Power Mode is enabled"; ObjectID = "mcf-JV-nyg";</note>
+      </trans-unit>
+      <trans-unit id="ovF-0F-TMc.title" xml:space="preserve">
+        <source>50 %</source>
+        <target>50 %</target>
+        <note>Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "ovF-0F-TMc";</note>
+      </trans-unit>
+      <trans-unit id="pvY-d7-nKX.title" xml:space="preserve">
+        <source>Battery Level</source>
+        <target>Livello batteria</target>
+        <note>Class = "NSTextFieldCell"; title = "Battery Level"; ObjectID = "pvY-d7-nKX";</note>
       </trans-unit>
     </body>
   </file>

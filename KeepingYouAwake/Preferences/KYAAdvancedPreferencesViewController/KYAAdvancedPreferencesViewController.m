@@ -49,9 +49,6 @@
 {
     [super viewDidLoad];
 
-    // Check the battery status
-    self.batteryStatusAvailable = [[KYABatteryMonitor new] hasBattery];
-
     [self configureAdvancedPreferences];
 }
 
@@ -84,19 +81,6 @@
     }
     [NSUserDefaults.standardUserDefaults synchronize];
     [self.tableView reloadData];
-
-    // Disable battery status integration
-    AutoVar keyPath = [NSString stringWithFormat:@"values.%@", KYAUserDefaultsKeyBatteryCapacityThresholdEnabled];
-    [self.defaultsController setValue:@NO forKeyPath:keyPath];
-    keyPath = [NSString stringWithFormat:@"values.%@", KYAUserDefaultsKeyBatteryCapacityThreshold];
-    [self.defaultsController setValue:@10.0f forKeyPath:keyPath];
-}
-
-#pragma mark - Battery Status Preferences
-
-- (void)batteryStatusPreferencesChanged:(id)sender
-{
-    [NSNotificationCenter.defaultCenter postNotificationName:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
 }
 
 #pragma mark - Table View Delegate & Data Source

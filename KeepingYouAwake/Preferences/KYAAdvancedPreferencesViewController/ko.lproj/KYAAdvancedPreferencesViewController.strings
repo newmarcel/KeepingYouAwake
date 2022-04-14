@@ -1,21 +1,6 @@
 /* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "3GX-gq-Yaq"; */
 "3GX-gq-Yaq.title" = "기본값으로 복원";
 
-/* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "a5l-du-7Rf"; */
-"a5l-du-7Rf.title" = "배터리 잔량이 부족하면 비활성화";
-
-/* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "pcX-L6-8PY"; */
-"pcX-L6-8PY.title" = "50 %";
-
-/* Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "QZN-1k-USs"; */
-"QZN-1k-USs.title" = "10 %";
-
-/* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "ViM-Dg-sVF"; */
-"ViM-Dg-sVF.title" = "90 %";
-
 /* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "xdm-wP-gM6"; */
 "xdm-wP-gM6.title" = "고급 환경설정은 내용을 숙지한 경우만 사용하십시오. 대부분의 고급 환경설정은 재시작이 필요합니다.";
-
-/* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "z26-wh-jCm"; */
-"z26-wh-jCm.title" = "만일 이 배터리 잔량보다 적을 때 활성화한다면 이 값은 무시됩니다.";
 

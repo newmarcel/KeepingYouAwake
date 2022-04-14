@@ -1,0 +1,21 @@
+/* Class = "NSTextFieldCell"; title = "Low Power Mode"; ObjectID = "aXx-hk-9R9"; */
+"aXx-hk-9R9.title" = "Risparmio energetico";
+
+/* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "gx4-rK-1he"; */
+"gx4-rK-1he.title" = "Disattiva quando la carica della batteria è sotto";
+
+/* Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "HtM-vx-ZuN"; */
+"HtM-vx-ZuN.title" = "10 %";
+
+/* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "l4a-Sa-RAE"; */
+"l4a-Sa-RAE.title" = "Questo valore verrà ignorato quando avvierai l'app sotto questo livello di carica della batteria.";
+
+/* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "M11-sw-GhM"; */
+"M11-sw-GhM.title" = "90 %";
+
+/* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "ovF-0F-TMc"; */
+"ovF-0F-TMc.title" = "50 %";
+
+/* Class = "NSTextFieldCell"; title = "Battery Level"; ObjectID = "pvY-d7-nKX"; */
+"pvY-d7-nKX.title" = "Livello batteria";
+

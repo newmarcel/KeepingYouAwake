@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,17 +16,35 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <view id="Zv4-XW-k4Q">
-            <rect key="frame" x="0.0" y="0.0" width="450" height="325"/>
+            <rect key="frame" x="0.0" y="0.0" width="450" height="317"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <scrollView autohidesScrollers="YES" horizontalLineScroll="32" horizontalPageScroll="10" verticalLineScroll="32" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chm-sv-hTs">
-                    <rect key="frame" x="-1" y="-1" width="452" height="120"/>
+                <textField horizontalHuggingPriority="200" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="ybT-RX-3cc">
+                    <rect key="frame" x="18" y="20" width="280" height="42"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart." id="xdm-wP-gM6">
+                        <font key="font" metaFont="message" size="11"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZGV-pi-Clo">
+                    <rect key="frame" x="305" y="13" width="132" height="32"/>
+                    <buttonCell key="cell" type="push" title="Reset to Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3GX-gq-Yaq">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="resetAdvancedPreferences:" target="-2" id="13Y-k4-qM6"/>
+                    </connections>
+                </button>
+                <scrollView borderType="line" autohidesScrollers="YES" horizontalLineScroll="32" horizontalPageScroll="10" verticalLineScroll="32" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chm-sv-hTs">
+                    <rect key="frame" x="-1" y="78" width="452" height="240"/>
                     <clipView key="contentView" id="3ZM-Xr-qJD">
-                        <rect key="frame" x="1" y="1" width="450" height="118"/>
+                        <rect key="frame" x="1" y="1" width="450" height="238"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="30" viewBased="YES" id="cvQ-Gc-Wku">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="118"/>
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="238"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -48,7 +66,7 @@
                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         <prototypeCellViews>
                                             <tableCellView id="SXh-jh-0qO">
-                                                <rect key="frame" x="11" y="1" width="418" height="32"/>
+                                                <rect key="frame" x="1" y="1" width="418" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="nQd-UP-kL9">
@@ -84,7 +102,7 @@
                         </subviews>
                     </clipView>
                     <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="5cL-tu-pJo"/>
+                        <constraint firstAttribute="height" constant="240" id="5cL-tu-pJo"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="vM9-Qo-dXc"/>
                     </constraints>
                     <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="ih5-Kl-o13">
@@ -96,129 +114,19 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>
-                <textField horizontalHuggingPriority="200" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="ybT-RX-3cc">
-                    <rect key="frame" x="18" y="135" width="280" height="42"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart." id="xdm-wP-gM6">
-                        <font key="font" metaFont="message" size="11"/>
-                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
-                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZGV-pi-Clo">
-                    <rect key="frame" x="305" y="128" width="132" height="32"/>
-                    <buttonCell key="cell" type="push" title="Reset to Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3GX-gq-Yaq">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="resetAdvancedPreferences:" target="-2" id="13Y-k4-qM6"/>
-                    </connections>
-                </button>
-                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="bmL-Ck-q0r">
-                    <rect key="frame" x="20" y="191" width="410" height="5"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="410" id="tqN-vo-ML8"/>
-                    </constraints>
-                </box>
-                <button translatesAutoresizingMaskIntoConstraints="NO" id="Bw6-D6-aAX">
-                    <rect key="frame" x="18" y="288" width="282" height="18"/>
-                    <buttonCell key="cell" type="check" title="Deactivate when battery capacity is below" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="a5l-du-7Rf">
-                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="batteryStatusPreferencesChanged:" target="-2" id="zeM-eD-lHq"/>
-                        <binding destination="-2" name="enabled" keyPath="batteryStatusAvailable" id="00s-mL-lzW"/>
-                        <binding destination="GcX-7K-Pfb" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled" id="ULD-67-U8E"/>
-                    </connections>
-                </button>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="pUs-In-LWk" userLabel="Battery Limit Container View">
-                    <rect key="frame" x="40" y="246" width="390" height="35"/>
-                    <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2K-k7-Xof">
-                            <rect key="frame" x="365" y="0.0" width="27" height="11"/>
-                            <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="90 %" id="ViM-Dg-sVF">
-                                <font key="font" metaFont="miniSystem"/>
-                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
-                        <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b4V-5p-55O">
-                            <rect key="frame" x="-2" y="9" width="394" height="28"/>
-                            <sliderCell key="cell" state="on" alignment="left" minValue="10" maxValue="90" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="9" allowsTickMarkValuesOnly="YES" sliderType="linear" id="Ql5-fi-70e"/>
-                            <connections>
-                                <action selector="batteryStatusPreferencesChanged:" target="-2" id="qqq-QN-EXM"/>
-                                <binding destination="GcX-7K-Pfb" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThreshold" id="liV-04-YDN"/>
-                                <binding destination="GcX-7K-Pfb" name="enabled" keyPath="values.info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled" id="GJY-JE-O8U"/>
-                            </connections>
-                        </slider>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4eO-kp-4rw">
-                            <rect key="frame" x="182" y="0.0" width="27" height="11"/>
-                            <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="50 %" id="pcX-L6-8PY">
-                                <font key="font" metaFont="miniSystem"/>
-                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Vz-ay-HVC">
-                            <rect key="frame" x="-2" y="0.0" width="26" height="11"/>
-                            <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="10 %" id="QZN-1k-USs">
-                                <font key="font" metaFont="miniSystem"/>
-                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="J2K-k7-Xof" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4eO-kp-4rw" secondAttribute="trailing" constant="8" symbolic="YES" id="6fy-al-QQz"/>
-                        <constraint firstItem="4eO-kp-4rw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Vz-ay-HVC" secondAttribute="trailing" constant="8" symbolic="YES" id="6qF-If-7jK"/>
-                        <constraint firstItem="4eO-kp-4rw" firstAttribute="centerX" secondItem="pUs-In-LWk" secondAttribute="centerX" id="8pD-K4-mir"/>
-                        <constraint firstAttribute="trailing" secondItem="b4V-5p-55O" secondAttribute="trailing" id="FCB-gG-F4X"/>
-                        <constraint firstItem="J2K-k7-Xof" firstAttribute="top" secondItem="b4V-5p-55O" secondAttribute="bottom" constant="4" id="NbH-hh-dUo"/>
-                        <constraint firstItem="8Vz-ay-HVC" firstAttribute="top" secondItem="b4V-5p-55O" secondAttribute="bottom" constant="4" id="THV-Tq-omE"/>
-                        <constraint firstAttribute="bottom" secondItem="J2K-k7-Xof" secondAttribute="bottom" id="aUd-Ak-1GV"/>
-                        <constraint firstItem="8Vz-ay-HVC" firstAttribute="leading" secondItem="pUs-In-LWk" secondAttribute="leading" id="e2o-CA-819"/>
-                        <constraint firstItem="4eO-kp-4rw" firstAttribute="top" secondItem="b4V-5p-55O" secondAttribute="bottom" constant="4" id="ffT-E4-32P"/>
-                        <constraint firstAttribute="bottom" secondItem="8Vz-ay-HVC" secondAttribute="bottom" id="gXw-Pa-7wt"/>
-                        <constraint firstItem="b4V-5p-55O" firstAttribute="leading" secondItem="pUs-In-LWk" secondAttribute="leading" id="jQJ-6V-cct"/>
-                        <constraint firstAttribute="trailing" secondItem="J2K-k7-Xof" secondAttribute="trailing" id="oLM-Gw-F9k"/>
-                        <constraint firstItem="b4V-5p-55O" firstAttribute="top" secondItem="pUs-In-LWk" secondAttribute="top" id="pyU-Ta-ThG"/>
-                        <constraint firstAttribute="bottom" secondItem="4eO-kp-4rw" secondAttribute="bottom" id="wLF-4s-Sec"/>
-                    </constraints>
-                </customView>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="390" translatesAutoresizingMaskIntoConstraints="NO" id="7uO-wP-n4a">
-                    <rect key="frame" x="38" y="210" width="394" height="28"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="This value will be ignored when you manually start the app below this battery capacity." id="z26-wh-jCm">
-                        <font key="font" metaFont="message" size="11"/>
-                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
             </subviews>
             <constraints>
-                <constraint firstItem="ybT-RX-3cc" firstAttribute="top" secondItem="bmL-Ck-q0r" secondAttribute="bottom" constant="16" id="1py-v6-nHA"/>
-                <constraint firstItem="chm-sv-hTs" firstAttribute="bottom" secondItem="Zv4-XW-k4Q" secondAttribute="bottom" constant="1" id="2aw-Kt-RQG"/>
-                <constraint firstItem="Bw6-D6-aAX" firstAttribute="leading" secondItem="Zv4-XW-k4Q" secondAttribute="leading" constant="20" id="85m-cv-6N0"/>
-                <constraint firstAttribute="trailing" secondItem="bmL-Ck-q0r" secondAttribute="trailing" constant="20" id="8u0-12-pXB"/>
-                <constraint firstItem="bmL-Ck-q0r" firstAttribute="leading" secondItem="Zv4-XW-k4Q" secondAttribute="leading" constant="20" id="9aS-ul-aDf"/>
                 <constraint firstItem="ybT-RX-3cc" firstAttribute="leading" secondItem="Zv4-XW-k4Q" secondAttribute="leading" constant="20" id="Bkg-WQ-p2B"/>
                 <constraint firstAttribute="trailing" secondItem="ZGV-pi-Clo" secondAttribute="trailing" constant="20" id="EeF-cM-fvN"/>
                 <constraint firstItem="ZGV-pi-Clo" firstAttribute="bottom" secondItem="ybT-RX-3cc" secondAttribute="bottom" id="HCf-ED-isH"/>
+                <constraint firstItem="chm-sv-hTs" firstAttribute="top" secondItem="Zv4-XW-k4Q" secondAttribute="top" constant="-1" id="ICW-zb-hmd"/>
                 <constraint firstItem="chm-sv-hTs" firstAttribute="trailing" secondItem="Zv4-XW-k4Q" secondAttribute="trailing" constant="1" id="PSD-6a-etM"/>
                 <constraint firstAttribute="leading" secondItem="chm-sv-hTs" secondAttribute="leading" constant="1" id="SJ2-I2-cuY"/>
-                <constraint firstItem="7uO-wP-n4a" firstAttribute="trailing" secondItem="pUs-In-LWk" secondAttribute="trailing" id="UXe-GD-UBa"/>
-                <constraint firstAttribute="trailing" secondItem="pUs-In-LWk" secondAttribute="trailing" constant="20" id="V2Z-7f-ofb"/>
-                <constraint firstItem="chm-sv-hTs" firstAttribute="top" secondItem="ybT-RX-3cc" secondAttribute="bottom" constant="16" id="cw9-rL-t9M"/>
-                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bw6-D6-aAX" secondAttribute="trailing" constant="20" id="lK9-Se-TpC"/>
-                <constraint firstItem="7uO-wP-n4a" firstAttribute="leading" secondItem="pUs-In-LWk" secondAttribute="leading" id="lR0-Ls-Ckn"/>
-                <constraint firstItem="pUs-In-LWk" firstAttribute="leading" secondItem="Zv4-XW-k4Q" secondAttribute="leading" constant="40" id="laQ-r0-m1S"/>
+                <constraint firstItem="ybT-RX-3cc" firstAttribute="top" secondItem="chm-sv-hTs" secondAttribute="bottom" constant="16" id="Sdu-3K-RDu"/>
+                <constraint firstAttribute="bottom" secondItem="ZGV-pi-Clo" secondAttribute="bottom" constant="20" id="V7v-cs-eL1"/>
                 <constraint firstItem="ZGV-pi-Clo" firstAttribute="leading" secondItem="ybT-RX-3cc" secondAttribute="trailing" constant="16" id="q4J-JL-dqq"/>
-                <constraint firstItem="7uO-wP-n4a" firstAttribute="top" secondItem="pUs-In-LWk" secondAttribute="bottom" constant="8" id="vRh-UR-47h"/>
-                <constraint firstItem="bmL-Ck-q0r" firstAttribute="top" secondItem="7uO-wP-n4a" secondAttribute="bottom" constant="16" id="va4-11-hKl"/>
-                <constraint firstItem="pUs-In-LWk" firstAttribute="top" secondItem="Bw6-D6-aAX" secondAttribute="bottom" constant="8" id="wsQ-V1-f4c"/>
-                <constraint firstItem="Bw6-D6-aAX" firstAttribute="top" secondItem="Zv4-XW-k4Q" secondAttribute="top" constant="20" id="x05-oe-Yd1"/>
             </constraints>
-            <point key="canvasLocation" x="-61" y="148.5"/>
+            <point key="canvasLocation" x="-61" y="220"/>
         </view>
         <userDefaultsController representsSharedInstance="YES" id="GcX-7K-Pfb"/>
     </objects>

@@ -1,27 +1,6 @@
 /* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "3GX-gq-Yaq"; */
 "3GX-gq-Yaq.title" = "デフォルトに戻す";
 
-/* Class = "NSButtonCell"; title = "Check"; ObjectID = "7z8-pS-A86"; Note = "Do not localize"; */
-"7z8-pS-A86.title" = "Check";
-
-/* Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "a5l-du-7Rf"; */
-"a5l-du-7Rf.title" = "バッテリー残量が以下の値より低いときにアプリを無効にする";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HPO-gf-tIY"; Note = "Do not localize"; */
-"HPO-gf-tIY.title" = "Text Cell";
-
-/* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "pcX-L6-8PY"; */
-"pcX-L6-8PY.title" = "50 %";
-
-/* Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "QZN-1k-USs"; */
-"QZN-1k-USs.title" = "10 %";
-
-/* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "ViM-Dg-sVF"; */
-"ViM-Dg-sVF.title" = "90 %";
-
 /* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "xdm-wP-gM6"; */
 "xdm-wP-gM6.title" = "これらの高度な設定は動作内容を理解した上で変更してください。設定を変更した場合アプリの再起動が必要です";
-
-/* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "z26-wh-jCm"; */
-"z26-wh-jCm.title" = "バッテリー残量が少ない状態でアプリを手動で起動した場合この値は無視されます";
 

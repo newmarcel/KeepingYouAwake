@@ -11,7 +11,12 @@
 
 @implementation KYALowPowerModeMonitor
 
-+ (BOOL)supportsLowPowerMode
+- (void)dealloc
+{
+    [self unregisterFromLowPowerModeChanges];
+}
+
+- (BOOL)supportsLowPowerMode
 {
     if(@available(macOS 12.0, *))
     {
@@ -21,11 +26,6 @@
     {
         return NO;
     }
-}
-
-- (void)dealloc
-{
-    [self unregisterFromLowPowerModeChanges];
 }
 
 - (BOOL)isLowPowerModeEnabled
