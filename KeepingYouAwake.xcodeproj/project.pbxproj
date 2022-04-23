@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		DA085D1021D6BAB6003D9B1B /* container-migration.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA085D0F21D6BAB6003D9B1B /* container-migration.plist */; };
 		DA13771A25E969FF00FB0FAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA13771925E969FF00FB0FAD /* Assets.xcassets */; };
-		DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */; };
 		DA25063027C2486D0052CCD8 /* KYADeviceInfo in Frameworks */ = {isa = PBXBuildFile; productRef = DA25062F27C2486D0052CCD8 /* KYADeviceInfo */; };
 		DA25063227C248710052CCD8 /* KYADeviceInfo in Frameworks */ = {isa = PBXBuildFile; productRef = DA25063127C248710052CCD8 /* KYADeviceInfo */; };
-		DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
 		DA2C0E342700629A006E9991 /* KYAAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2C0E332700629A006E9991 /* KYAAppUpdater.m */; };
 		DA2CCD5F26F8754C00568BDD /* KYAPreferencesContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2CCD5E26F8754C00568BDD /* KYAPreferencesContentViewController.m */; };
 		DA4835F026F8CF100073A062 /* KYAAdvancedPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4835F226F8CF100073A062 /* KYAAdvancedPreferencesViewController.xib */; };
@@ -39,6 +37,8 @@
 		DA658E8021CE91540049F4C1 /* KYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA658E7F21CE91540049F4C1 /* KYAAppDelegate.m */; };
 		DA658E8421CE93310049F4C1 /* KeepingYouAwake Launcher.app in Embed Launcher */ = {isa = PBXBuildFile; fileRef = DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA7B53061E16999A00D89A12 /* KYAPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7B53051E16999A00D89A12 /* KYAPreferencesWindowController.m */; };
+		DA814383281D59970004BE71 /* KYAStatusItemUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA814382281D59970004BE71 /* KYAStatusItemUI */; };
+		DA814385281D599D0004BE71 /* KYAStatusItemUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA814384281D599D0004BE71 /* KYAStatusItemUI */; };
 		DA82560D22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82560C22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m */; };
 		DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */; };
 		DA96767F27CA720E00A9DCB8 /* KYABatteryPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA96768227CA720E00A9DCB8 /* KYABatteryPreferencesViewController.xib */; };
@@ -67,14 +67,12 @@
 		DAD3CF64271186720006CA14 /* KYALocalizedStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A4FE5261631D700C672C4 /* KYALocalizedStrings.m */; };
 		DAD3CF65271186720006CA14 /* KYAGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */; };
 		DAD3CF66271186720006CA14 /* KYADurationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700922EC794F004D5BCA /* KYADurationCell.m */; };
-		DAD3CF67271186720006CA14 /* KYAMenuBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */; };
 		DAD3CF68271186720006CA14 /* KYAPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128751C2493DB00831045 /* KYAPreference.m */; };
 		DAD3CF69271186720006CA14 /* KYAAdvancedPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128681C2453F600831045 /* KYAAdvancedPreferencesViewController.m */; };
 		DAD3CF6A271186720006CA14 /* KYAAboutPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1286B1C24540200831045 /* KYAAboutPreferencesViewController.m */; };
 		DAD3CF6B271186720006CA14 /* KYAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B5D19F146B6004C8838 /* KYAAppController.m */; };
 		DAD3CF6C271186720006CA14 /* KYAPreferencesContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2CCD5E26F8754C00568BDD /* KYAPreferencesContentViewController.m */; };
 		DAD3CF6D271186720006CA14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B3E19F14693004C8838 /* main.m */; };
-		DAD3CF6E271186720006CA14 /* KYAStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */; };
 		DAD3CF73271186720006CA14 /* KYAAdvancedPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4835F226F8CF100073A062 /* KYAAdvancedPreferencesViewController.xib */; };
 		DAD3CF74271186720006CA14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA54C1331D69CA0000AF9E9D /* InfoPlist.strings */; };
 		DAD3CF75271186720006CA14 /* KYAPreferences.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAD9831B26F8883E00234FB8 /* KYAPreferences.strings */; };
@@ -182,11 +180,7 @@
 		DA085D0F21D6BAB6003D9B1B /* container-migration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "container-migration.plist"; sourceTree = "<group>"; };
 		DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeepingYouAwake.entitlements; sourceTree = "<group>"; };
 		DA13771925E969FF00FB0FAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA173B351F65B41B00932CE0 /* KYAStatusItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAStatusItemController.h; sourceTree = "<group>"; };
-		DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAStatusItemController.m; sourceTree = "<group>"; };
 		DA249E281F9B7211006BCD2C /* KYADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADefines.h; sourceTree = "<group>"; };
-		DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAMenuBarIcon.h; sourceTree = "<group>"; };
-		DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMenuBarIcon.m; sourceTree = "<group>"; };
 		DA2C0E322700629A006E9991 /* KYAAppUpdater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAAppUpdater.h; sourceTree = "<group>"; };
 		DA2C0E332700629A006E9991 /* KYAAppUpdater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAppUpdater.m; sourceTree = "<group>"; };
 		DA2CCD5D26F8754C00568BDD /* KYAPreferencesContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesContentViewController.h; sourceTree = "<group>"; };
@@ -397,6 +391,7 @@
 				DA52096627C6C56A00ECFDA6 /* KYAActivationDurations in Frameworks */,
 				DA52096A27C6C9B900ECFDA6 /* KYAApplicationSupport in Frameworks */,
 				DA25063027C2486D0052CCD8 /* KYADeviceInfo in Frameworks */,
+				DA814383281D59970004BE71 /* KYAStatusItemUI in Frameworks */,
 				DACF2FCD27C271BA00856FEC /* KYAApplicationEvents in Frameworks */,
 				DACF2FC727C2657800856FEC /* KYAUserNotifications in Frameworks */,
 			);
@@ -418,6 +413,7 @@
 				DACF2FC927C2657C00856FEC /* KYAUserNotifications in Frameworks */,
 				DA25063227C248710052CCD8 /* KYADeviceInfo in Frameworks */,
 				DA52097227C6CBC500ECFDA6 /* KYASleepWakeTimer in Frameworks */,
+				DA814385281D599D0004BE71 /* KYAStatusItemUI in Frameworks */,
 				DA52096827C6C56F00ECFDA6 /* KYAActivationDurations in Frameworks */,
 				DACF2FCB27C271B600856FEC /* KYAApplicationEvents in Frameworks */,
 			);
@@ -431,15 +427,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DA2691CF1B8230AB00B15779 /* KYAMenuBarIcon */ = {
-			isa = PBXGroup;
-			children = (
-				DA2691D01B8231C700B15779 /* KYAMenuBarIcon.h */,
-				DA2691D11B8231C700B15779 /* KYAMenuBarIcon.m */,
-			);
-			path = KYAMenuBarIcon;
 			sourceTree = "<group>";
 		};
 		DA2C0E3527006AF7006E9991 /* KYAAppUpdater */ = {
@@ -555,8 +542,6 @@
 				DAD68A7E27C957E20036ED19 /* KYAMainMenu */,
 				DA82560E22FB5B31005ECB3A /* KYAActivationDurationsMenuController */,
 				DA52B1052617021500D09FE5 /* KYAActivationUserNotification */,
-				DA8F381B1F9BA4360086A84A /* KYAStatusItemController */,
-				DA2691CF1B8230AB00B15779 /* KYAMenuBarIcon */,
 				DA2C0E3527006AF7006E9991 /* KYAAppUpdater */,
 				DA82B1111C2422F600FA46E0 /* Preferences */,
 				DAE9C00C26107E0900F9ED76 /* Other… */,
@@ -604,15 +589,6 @@
 				DA51E7E11C2562CA008AA96C /* KYAAboutPreferencesViewController */,
 			);
 			path = Preferences;
-			sourceTree = "<group>";
-		};
-		DA8F381B1F9BA4360086A84A /* KYAStatusItemController */ = {
-			isa = PBXGroup;
-			children = (
-				DA173B351F65B41B00932CE0 /* KYAStatusItemController.h */,
-				DA173B361F65B41B00932CE0 /* KYAStatusItemController.m */,
-			);
-			path = KYAStatusItemController;
 			sourceTree = "<group>";
 		};
 		DAB0701222EC8E74004D5BCA /* KYADurationPreferencesViewController */ = {
@@ -711,6 +687,7 @@
 				DA52096527C6C56A00ECFDA6 /* KYAActivationDurations */,
 				DA52096927C6C9B900ECFDA6 /* KYAApplicationSupport */,
 				DA52096F27C6CBC000ECFDA6 /* KYASleepWakeTimer */,
+				DA814382281D59970004BE71 /* KYAStatusItemUI */,
 			);
 			productName = KeepingYouAwake;
 			productReference = DA637B3919F14693004C8838 /* KeepingYouAwake.app */;
@@ -757,6 +734,7 @@
 				DA52096727C6C56F00ECFDA6 /* KYAActivationDurations */,
 				DA52096B27C6C9BD00ECFDA6 /* KYAApplicationSupport */,
 				DA52097127C6CBC500ECFDA6 /* KYASleepWakeTimer */,
+				DA814384281D599D0004BE71 /* KYAStatusItemUI */,
 			);
 			productName = KeepingYouAwake;
 			productReference = DAD3CF8F271186720006CA14 /* KeepingYouAwake.app */;
@@ -908,7 +886,6 @@
 				DA9A4FE6261631D700C672C4 /* KYALocalizedStrings.m in Sources */,
 				DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */,
 				DAB0700A22EC794F004D5BCA /* KYADurationCell.m in Sources */,
-				DA2691D21B8231C700B15779 /* KYAMenuBarIcon.m in Sources */,
 				DAB128761C2493DB00831045 /* KYAPreference.m in Sources */,
 				DAB128691C2453F600831045 /* KYAAdvancedPreferencesViewController.m in Sources */,
 				DAB1286C1C24540200831045 /* KYAAboutPreferencesViewController.m in Sources */,
@@ -916,7 +893,6 @@
 				DA4950FB27C97EF2008D1747 /* KYABatteryPreferencesViewController.m in Sources */,
 				DA2CCD5F26F8754C00568BDD /* KYAPreferencesContentViewController.m in Sources */,
 				DA637B3F19F14693004C8838 /* main.m in Sources */,
-				DA173B371F65B41B00932CE0 /* KYAStatusItemController.m in Sources */,
 				DA52096327C6BE6400ECFDA6 /* KYAActivationDuration+KYALocalizedTitle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -946,7 +922,6 @@
 				DAD3CF64271186720006CA14 /* KYALocalizedStrings.m in Sources */,
 				DAD3CF65271186720006CA14 /* KYAGeneralPreferencesViewController.m in Sources */,
 				DAD3CF66271186720006CA14 /* KYADurationCell.m in Sources */,
-				DAD3CF67271186720006CA14 /* KYAMenuBarIcon.m in Sources */,
 				DAD3CF68271186720006CA14 /* KYAPreference.m in Sources */,
 				DAD3CF69271186720006CA14 /* KYAAdvancedPreferencesViewController.m in Sources */,
 				DAD3CF6A271186720006CA14 /* KYAAboutPreferencesViewController.m in Sources */,
@@ -954,7 +929,6 @@
 				DA4950FC27C97EF2008D1747 /* KYABatteryPreferencesViewController.m in Sources */,
 				DAD3CF6C271186720006CA14 /* KYAPreferencesContentViewController.m in Sources */,
 				DAD3CF6D271186720006CA14 /* main.m in Sources */,
-				DAD3CF6E271186720006CA14 /* KYAStatusItemController.m in Sources */,
 				DA52096427C6BE6400ECFDA6 /* KYAActivationDuration+KYALocalizedTitle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1569,6 +1543,14 @@
 		DA52097127C6CBC500ECFDA6 /* KYASleepWakeTimer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = KYASleepWakeTimer;
+		};
+		DA814382281D59970004BE71 /* KYAStatusItemUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KYAStatusItemUI;
+		};
+		DA814384281D599D0004BE71 /* KYAStatusItemUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KYAStatusItemUI;
 		};
 		DACF2FC627C2657800856FEC /* KYAUserNotifications */ = {
 			isa = XCSwiftPackageProductDependency;

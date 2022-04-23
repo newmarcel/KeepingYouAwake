@@ -1,14 +1,15 @@
 //
 //  KYAStatusItemController.m
-//  KeepingYouAwake
+//  KYAStatusItemUI
 //
 //  Created by Marcel Dierkes on 10.09.17.
 //  Copyright © 2017 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYAStatusItemController.h"
+#import <KYAStatusItemUI/KYAStatusItemController.h>
+#import <KYAStatusItemUI/KYAStatusItemImageProvider.h>
 #import "KYADefines.h"
-#import "KYAMenuBarIcon.h"
+#import "KYAStatusItemUILocalizedStrings.h"
 
 @interface KYAStatusItemController ()
 @property (nonatomic, readwrite) NSStatusItem *systemStatusItem;
@@ -90,26 +91,24 @@
 
 - (BOOL)isActiveAppearanceEnabled
 {
-    Auto menubarIcon = KYAMenuBarIcon.currentIcon;
-    return self.systemStatusItem.image == menubarIcon.activeIcon;
+    Auto menubarIcon = KYAStatusItemImageProvider.currentProvider;
+    return self.systemStatusItem.image == menubarIcon.activeIconImage;
 }
 
 - (void)setActiveAppearanceEnabled:(BOOL)activeAppearanceEnabled
 {
     Auto button = self.systemStatusItem.button;
-    Auto menubarIcon = KYAMenuBarIcon.currentIcon;
+    Auto imageProvider = KYAStatusItemImageProvider.currentProvider;
     
-    if(activeAppearanceEnabled)
+    if(activeAppearanceEnabled == YES)
     {
-        button.image = menubarIcon.activeIcon;
-        button.toolTip = NSLocalizedString(@"Click to allow sleep\nRight click to show menu",
-                                           @"Click to allow sleep\nRight click to show menu");
+        button.image = imageProvider.activeIconImage;
+        button.toolTip = KYA_L10N_CLICK_TO_ALLOW_SLEEP;
     }
     else
     {
-        button.image = menubarIcon.inactiveIcon;
-        button.toolTip = NSLocalizedString(@"Click to prevent sleep\nRight click to show menu",
-                                           @"Click to prevent sleep\nRight click to show menu");
+        button.image = imageProvider.inactiveIconImage;
+        button.toolTip = KYA_L10N_CLICK_TO_PREVENT_SLEEP;
     }
 }
 

@@ -10,7 +10,6 @@
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
 #import "KYAMainMenu.h"
-#import "KYAStatusItemController.h"
 #import "KYABatteryCapacityThreshold.h"
 #import "KYAActivationDurationsMenuController.h"
 #import "KYAActivationUserNotification.h"
@@ -40,9 +39,7 @@
     self = [super init];
     if(self)
     {
-        self.statusItemController = [KYAStatusItemController new];
-        self.statusItemController.delegate = self;
-        
+        [self configureStatusItemController];
         [self configureSleepWakeTimer];
         [self configureEventHandler];
         [self configureUserNotificationCenter];
@@ -82,6 +79,15 @@
     self.menuController = menuController;
     
     self.menu = KYACreateMainMenuWithActivationDurationsSubMenu(menuController.menu);
+}
+
+#pragma mark - Status Item Controller
+
+- (void)configureStatusItemController
+{
+    Auto statusItemController = [KYAStatusItemController new];
+    statusItemController.delegate = self;
+    self.statusItemController = statusItemController;
 }
 
 #pragma mark - Sleep Wake Timer
