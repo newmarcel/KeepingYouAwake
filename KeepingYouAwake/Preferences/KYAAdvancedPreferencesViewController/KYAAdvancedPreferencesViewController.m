@@ -67,6 +67,9 @@
     [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_ALLOW_DISPLAY_SLEEP
                                                     defaultsKey:KYAUserDefaultsKeyAllowDisplaySleep
                             ]];
+    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_ACTIVATE_ON_EXTERNAL_DISPLAY
+                                                    defaultsKey:KYAUserDefaultsKeyActivateOnExternalDisplayConnectedEnabled
+                            ]];
 
     self.preferences = [preferences copy];
 }
