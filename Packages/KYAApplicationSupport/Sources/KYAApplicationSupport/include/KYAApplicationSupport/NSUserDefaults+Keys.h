@@ -58,9 +58,7 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
  */
 @property (nonatomic, getter=kya_isQuitOnTimerExpirationEnabled) BOOL kya_quitOnTimerExpirationEnabled;
 
-/**
- Returns YES if the app should activate when external display is connected.
- */
+/// Returns YES if the app should activate when external display is connected.
 
 @property (nonatomic, getter=kya_isActivateOnExternalDisplayConnectedEnabled) BOOL kya_activateOnExternalDisplayConnectedEnabled;
 

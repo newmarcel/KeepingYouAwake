@@ -327,7 +327,7 @@
 
 - (void)externalMonitorStatusChanged:(NSNotification *)notification
 {
-    if ([[NSScreen screens] count] > 1 && [[NSUserDefaults standardUserDefaults] kya_isActivateOnExternalDisplayConnectedEnabled])
+    if (NSScreen.screens.count > 1 && [NSUserDefaults.standardUserDefaults kya_isActivateOnExternalDisplayConnectedEnabled])
     {
         [self activateTimerWithTimeInterval:KYASleepWakeTimeIntervalIndefinite];
     }
