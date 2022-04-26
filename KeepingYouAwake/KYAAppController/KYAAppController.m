@@ -14,6 +14,11 @@
 #import "KYABatteryCapacityThreshold.h"
 #import "KYAActivationDurationsMenuController.h"
 #import "KYAActivationUserNotification.h"
+#import <IOKit/ps/IOPowerSources.h>
+
+#define KYA_POWER_SOURCE_STATE "Power Source State"
+#define KYA_AC_POWER "AC Power"
+#define KYA_CHECK_POWER_SOURCE_CHANGE 10.0
 
 // Deprecated!
 #define KYA_MINUTES(m) (m * 60.0f)
@@ -57,6 +62,13 @@
                    selector:@selector(batteryCapacityThresholdDidChange:)
                        name:kKYABatteryCapacityThresholdDidChangeNotification
                      object:nil];
+        // TODO search for a better way to check for power source change
+        [NSTimer scheduledTimerWithTimeInterval:KYA_CHECK_POWER_SOURCE_CHANGE
+                                         target:self
+                                       selector:@selector(checkPowerSource)
+                                       userInfo:nil
+                                        repeats:YES];
+                
     }
     return self;
 }
@@ -175,6 +187,20 @@
 }
 
 #pragma mark - Device Power Monitoring
+
+- (void)checkPowerSource
+{
+    CFTypeRef powerSourceInfo = IOPSCopyPowerSourcesInfo();
+    CFArrayRef powerSources = IOPSCopyPowerSourcesList(powerSourceInfo);
+
+    NSString *powerSourceState = [(NSDictionary *)CFBridgingRelease(IOPSGetPowerSourceDescription(powerSourceInfo, CFArrayGetValueAtIndex(powerSources, 0))) objectForKey:@KYA_POWER_SOURCE_STATE];
+    if([powerSourceState isEqualToString:@KYA_AC_POWER] && [NSUserDefaults.standardUserDefaults kya_isActivateOnPowerEnabled])
+    {
+        [self activateTimerWithTimeInterval:KYASleepWakeTimeIntervalIndefinite];
+    } else {
+        [self terminateTimer];
+    }
+}
 
 - (void)checkAndEnableBatteryOverride
 {

@@ -12,6 +12,7 @@
 // User Default Keys
 NSString * const KYAUserDefaultsKeyActivateOnLaunch = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnLaunch";
 NSString * const KYAUserDefaultsKeyAllowDisplaySleep = @"info.marcel-dierkes.KeepingYouAwake.AllowDisplaySleep";
+NSString * const KYAUserDefaultsKeyisActivateOnPowerEnabled = @"info.marcel-dierkes.KeepingYouAwake.ActivateOnPower";
 NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled = @"info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled";
 NSString * const KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled = @"info.marcel-dierkes.KeepingYouAwake.QuitOnTimerExpirationEnabled";
 
@@ -23,8 +24,10 @@ NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dier
 @implementation NSUserDefaults (Keys)
 @dynamic kya_activateOnLaunch;
 @dynamic kya_allowDisplaySleep;
+@dynamic kya_activateOnPowerEnabled;
 @dynamic kya_menuBarIconHighlightDisabled;
-@dynamic kya_batteryCapacityThresholdEnabled, kya_batteryCapacityThreshold;
+@dynamic kya_batteryCapacityThresholdEnabled;
+@dynamic kya_batteryCapacityThreshold;
 @dynamic kya_lowPowerModeMonitoringEnabled;
 @dynamic kya_preReleaseUpdatesEnabled;
 @dynamic kya_quitOnTimerExpirationEnabled;
@@ -123,6 +126,18 @@ NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled = @"info.marcel-dier
 - (void)setKya_quitOnTimerExpirationEnabled:(BOOL)quitOnTimerExpirationEnabled
 {
     [self setBool:quitOnTimerExpirationEnabled forKey:KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled];
+}
+
+#pragma mark - Activate on AC Power Enabled
+
+- (BOOL)kya_isActivateOnPowerEnabled
+{
+    return [self boolForKey:KYAUserDefaultsKeyisActivateOnPowerEnabled];
+}
+
+- (void)setKya_activateOnPowerEnabled:(BOOL)activateOnPowerEnabled
+{
+    [self setBool:activateOnPowerEnabled forKey:KYAUserDefaultsKeyisActivateOnPowerEnabled];
 }
 
 @end
