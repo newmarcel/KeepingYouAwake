@@ -54,6 +54,10 @@
                        name:NSApplicationWillFinishLaunchingNotification
                      object:nil];
         [center addObserver:self
+                   selector:@selector(externalMonitorStatusChanged:)
+                       name:NSApplicationDidChangeScreenParametersNotification
+                     object:nil];
+        [center addObserver:self
                    selector:@selector(batteryCapacityThresholdDidChange:)
                        name:kKYABatteryCapacityThresholdDidChangeNotification
                      object:nil];
@@ -65,6 +69,7 @@
 {
     Auto center = NSNotificationCenter.defaultCenter;
     [center removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
+    [center removeObserver:self name:NSApplicationDidChangeScreenParametersNotification object:nil];
     [center removeObserver:self name:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
 }
 
@@ -317,6 +322,18 @@
     else if(hours)
     {
         [self activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
+    }
+}
+
+- (void)externalMonitorStatusChanged:(NSNotification *)notification
+{
+    if (NSScreen.screens.count > 1 && [NSUserDefaults.standardUserDefaults kya_isActivateOnExternalDisplayConnectedEnabled])
+    {
+        [self activateTimerWithTimeInterval:KYASleepWakeTimeIntervalIndefinite];
+    }
+    else
+    {
+        [self terminateTimer];
     }
 }
 
