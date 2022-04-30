@@ -62,8 +62,21 @@
 
 - (void)toggleStatus:(id)sender
 {
-    Auto delegate = self.delegate;
     Auto event = NSApplication.sharedApplication.currentEvent;
+    switch(self.interactionMode)
+    {
+        case KYAStatusItemInteractionModeActivateAndShowMenu:
+            [self performActivateAndMenuInteractionForEvent:event];
+            break;
+        case KYAStatusItemInteractionModeAlwaysShowMenu:
+            [self showMenuFromDataSource];
+            break;
+    }
+}
+
+- (void)performActivateAndMenuInteractionForEvent:(NSEvent *)event
+{
+    Auto delegate = self.delegate;
     
     if((event.modifierFlags & NSEventModifierFlagControl)   // ctrl click
        || (event.modifierFlags & NSEventModifierFlagOption) // alt click

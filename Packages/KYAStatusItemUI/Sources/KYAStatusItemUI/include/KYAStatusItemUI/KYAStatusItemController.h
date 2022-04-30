@@ -20,6 +20,16 @@ typedef NS_ENUM(NSUInteger, KYAStatusItemAppearance)
     KYAStatusItemAppearanceActive
 };
 
+typedef NS_ENUM(NSUInteger, KYAStatusItemInteractionMode)
+{
+    /// An interaction mode where the primary click activates the
+    /// sleep wake timer and the alternative click shows a menu.
+    KYAStatusItemInteractionModeActivateAndShowMenu = 0,
+    /// An interaction mode where the primary click and the
+    /// alternative click both show a menu.
+    KYAStatusItemInteractionModeAlwaysShowMenu,
+};
+
 @protocol KYAStatusItemControllerDataSource;
 @protocol KYAStatusItemControllerDelegate;
 
@@ -31,6 +41,9 @@ typedef NS_ENUM(NSUInteger, KYAStatusItemAppearance)
 
 /// Controls the activate/inactive appearance of the status item image.
 @property (nonatomic) KYAStatusItemAppearance appearance;
+
+/// The click interaction mode of the status item.
+@property (nonatomic) KYAStatusItemInteractionMode interactionMode;
 
 /// A delegate for receiving click events.
 @property (weak, nonatomic, nullable) id<KYAStatusItemControllerDataSource> dataSource;
