@@ -60,11 +60,6 @@
     self.activeAppearanceEnabled = NO;
 }
 
-- (void)toggle
-{
-    [self toggleStatus:nil];
-}
-
 - (void)toggleStatus:(id)sender
 {
     Auto delegate = self.delegate;
@@ -74,16 +69,13 @@
        || (event.modifierFlags & NSEventModifierFlagOption) // alt click
        || (event.type == NSEventTypeRightMouseUp))          // right click
     {
-        if([delegate respondsToSelector:@selector(statusItemControllerShouldPerformAlternativeAction:)])
-        {
-            [delegate statusItemControllerShouldPerformAlternativeAction:self];
-        }
+        [self showMenuFromDataSource];
         return;
     }
     
-    if([delegate respondsToSelector:@selector(statusItemControllerShouldPerformMainAction:)])
+    if([delegate respondsToSelector:@selector(statusItemControllerShouldPerformPrimaryAction:)])
     {
-        [delegate statusItemControllerShouldPerformMainAction:self];
+        [delegate statusItemControllerShouldPerformPrimaryAction:self];
     }
 }
 
@@ -114,9 +106,17 @@
 
 #pragma mark - Menu
 
-- (void)showMenu:(NSMenu *)menu
+- (void)showMenuFromDataSource
 {
-    [self.systemStatusItem popUpStatusItemMenu:menu];
+    Auto dataSource = self.dataSource;
+    if([dataSource respondsToSelector:@selector(menuForStatusItemController:)])
+    {
+        Auto menu = [dataSource menuForStatusItemController:self];
+        if(menu != nil)
+        {
+            [self.systemStatusItem popUpStatusItemMenu:menu];
+        }
+    }
 }
 
 @end

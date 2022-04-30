@@ -11,16 +11,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol KYAStatusItemControllerDataSource;
 @protocol KYAStatusItemControllerDelegate;
 
-/// Manages the display and the toggling of the primary status bar icon.
+/// Manages the display and interaction with the menu bar status item.
 @interface KYAStatusItemController : NSObject
-
-/// Trigger the primary action of the status item
-- (void)toggle;
 
 /// The underlying system status bar item.
 @property (nonatomic, readonly) NSStatusItem *systemStatusItem;
+
+/// A delegate for receiving click events.
+@property (weak, nonatomic, nullable) id<KYAStatusItemControllerDataSource> dataSource;
 
 /// A delegate for receiving click events.
 @property (weak, nonatomic, nullable) id<KYAStatusItemControllerDelegate> delegate;
@@ -32,27 +33,19 @@ NS_ASSUME_NONNULL_BEGIN
 /// The designated initializer.
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 
-/// Presents the supplied menu anchored underneath the
-/// system status bar item.
-/// @param menu A menu
-- (void)showMenu:(NSMenu *)menu;
+@end
 
+@protocol KYAStatusItemControllerDataSource <NSObject>
+@optional
+/// The menu that is displayed when the status item is clicked.
+- (nullable NSMenu *)menuForStatusItemController:(KYAStatusItemController *)controller;
 @end
 
 @protocol KYAStatusItemControllerDelegate <NSObject>
 @optional
-
 /// Notifies the delegate that the primary click action was invoked.
 /// @param controller The delegating status item controller
-- (void)statusItemControllerShouldPerformMainAction:(KYAStatusItemController *)controller;
-
-/// Notifies the delegate that the alternative click action was invoked.
-///
-/// @note This method will be called for `ctrl`-click, `alt`-click and
-///       right click events.
-/// @param controller The delegating status item controller
-- (void)statusItemControllerShouldPerformAlternativeAction:(KYAStatusItemController *)controller;
-
+- (void)statusItemControllerShouldPerformPrimaryAction:(KYAStatusItemController *)controller;
 @end
 
 NS_ASSUME_NONNULL_END

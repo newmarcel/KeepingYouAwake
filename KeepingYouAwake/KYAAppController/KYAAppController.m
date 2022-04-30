@@ -18,7 +18,7 @@
 #define KYA_MINUTES(m) (m * 60.0f)
 #define KYA_HOURS(h) (h * 3600.0f)
 
-@interface KYAAppController () <KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate, KYASleepWakeTimerDelegate>
+@interface KYAAppController () <KYAStatusItemControllerDataSource, KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate, KYASleepWakeTimerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
 @property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
 @property (nonatomic) KYAActivationDurationsMenuController *menuController;
@@ -86,6 +86,7 @@
 - (void)configureStatusItemController
 {
     Auto statusItemController = [KYAStatusItemController new];
+    statusItemController.dataSource = self;
     statusItemController.delegate = self;
     self.statusItemController = statusItemController;
 }
@@ -299,7 +300,8 @@
     }];
     
     [eventHandler registerActionNamed:@"toggle" block:^(KYAEvent *event) {
-        [weakSelf.statusItemController toggle];
+        Auto strongSelf = weakSelf;
+        [strongSelf statusItemControllerShouldPerformPrimaryAction:strongSelf.statusItemController];
     }];
 }
 
@@ -343,9 +345,16 @@
     }
 }
 
+#pragma mark - KYAStatusItemControllerDataSource
+
+- (NSMenu *)menuForStatusItemController:(KYAStatusItemController *)controller
+{
+    return self.menu;
+}
+
 #pragma mark - KYAStatusItemControllerDelegate
 
-- (void)statusItemControllerShouldPerformMainAction:(KYAStatusItemController *)controller
+- (void)statusItemControllerShouldPerformPrimaryAction:(KYAStatusItemController *)controller
 {
     if([self.sleepWakeTimer isScheduled])
     {
@@ -355,11 +364,6 @@
     {
         [self activateTimer];
     }
-}
-
-- (void)statusItemControllerShouldPerformAlternativeAction:(KYAStatusItemController *)controller
-{
-    [self.statusItemController showMenu:self.menu];
 }
 
 #pragma mark - KYAActivationDurationsMenuControllerDelegate
