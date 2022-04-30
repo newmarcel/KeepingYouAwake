@@ -11,6 +11,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// The appearance of the status item icon image.
+typedef NS_ENUM(NSUInteger, KYAStatusItemAppearance)
+{
+    /// Represents the inactive state of the status bar item
+    KYAStatusItemAppearanceInactive = 0,
+    /// Represents the active state of the status bar item
+    KYAStatusItemAppearanceActive
+};
+
 @protocol KYAStatusItemControllerDataSource;
 @protocol KYAStatusItemControllerDelegate;
 
@@ -20,15 +29,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// The underlying system status bar item.
 @property (nonatomic, readonly) NSStatusItem *systemStatusItem;
 
+/// Controls the activate/inactive appearance of the status item image.
+@property (nonatomic) KYAStatusItemAppearance appearance;
+
 /// A delegate for receiving click events.
 @property (weak, nonatomic, nullable) id<KYAStatusItemControllerDataSource> dataSource;
 
 /// A delegate for receiving click events.
 @property (weak, nonatomic, nullable) id<KYAStatusItemControllerDelegate> delegate;
-
-/// Controls the appearance of the status bar item.
-/// YES represents "active" appearance, NO represents "inactive".
-@property (nonatomic, getter=isActiveAppearanceEnabled) BOOL activeAppearanceEnabled;
 
 /// The designated initializer.
 - (instancetype)init NS_DESIGNATED_INITIALIZER;

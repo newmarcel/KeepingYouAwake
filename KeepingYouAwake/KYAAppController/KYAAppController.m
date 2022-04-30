@@ -401,7 +401,7 @@
 - (void)sleepWakeTimer:(KYASleepWakeTimer *)sleepWakeTimer willActivateWithTimeInterval:(NSTimeInterval)timeInterval
 {
     // Update the status item
-    self.statusItemController.activeAppearanceEnabled = YES;
+    self.statusItemController.appearance = KYAStatusItemAppearanceActive;
     
     [self enableDevicePowerMonitoring];
 }
@@ -409,7 +409,7 @@
 - (void)sleepWakeTimerDidDeactivate:(KYASleepWakeTimer *)sleepWakeTimer
 {
     // Update the status item
-    self.statusItemController.activeAppearanceEnabled = NO;
+    self.statusItemController.appearance = KYAStatusItemAppearanceInactive;
     
     [self disableDevicePowerMonitoring];
 }

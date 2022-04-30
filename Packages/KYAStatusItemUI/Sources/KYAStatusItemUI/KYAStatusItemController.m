@@ -57,7 +57,7 @@
 #endif
     
     self.systemStatusItem = statusItem;
-    self.activeAppearanceEnabled = NO;
+    self.appearance = KYAStatusItemAppearanceInactive;
 }
 
 - (void)toggleStatus:(id)sender
@@ -79,20 +79,22 @@
     }
 }
 
-#pragma mark - Active Appearance
+#pragma mark - Appearance
 
-- (BOOL)isActiveAppearanceEnabled
+- (KYAStatusItemAppearance)appearance
 {
     Auto menubarIcon = KYAStatusItemImageProvider.currentProvider;
     return self.systemStatusItem.image == menubarIcon.activeIconImage;
 }
 
-- (void)setActiveAppearanceEnabled:(BOOL)activeAppearanceEnabled
+- (void)setAppearance:(KYAStatusItemAppearance)appearance
 {
+    [self willChangeValueForKey:@"appearance"];
+    
     Auto button = self.systemStatusItem.button;
     Auto imageProvider = KYAStatusItemImageProvider.currentProvider;
     
-    if(activeAppearanceEnabled == YES)
+    if(appearance == KYAStatusItemAppearanceActive)
     {
         button.image = imageProvider.activeIconImage;
         button.toolTip = KYA_L10N_CLICK_TO_ALLOW_SLEEP;
@@ -102,6 +104,8 @@
         button.image = imageProvider.inactiveIconImage;
         button.toolTip = KYA_L10N_CLICK_TO_PREVENT_SLEEP;
     }
+    
+    [self didChangeValueForKey:@"appearance"];
 }
 
 #pragma mark - Menu
