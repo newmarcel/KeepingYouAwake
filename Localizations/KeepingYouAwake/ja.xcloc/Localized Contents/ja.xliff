@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="KeepingYouAwake/Base.lproj/InfoPlist.strings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -17,7 +17,7 @@
   </file>
   <file original="KeepingYouAwake/Base.lproj/Localizable.strings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
     </header>
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
@@ -28,6 +28,10 @@
         <source>Activate for Duration</source>
         <target>アクティブ時間</target>
         <note>Activate for Duration</note>
+      </trans-unit>
+      <trans-unit id="Activate indefinitely when external display is connected" xml:space="preserve">
+        <source>Activate indefinitely when external display is connected</source>
+        <note>Activate indefinitely when external display is connected</note>
       </trans-unit>
       <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
         <source>Afterwards your Mac will automatically go to sleep again when unused.</source>
@@ -136,7 +140,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/en.lproj/KYAPreferences.strings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
     </header>
     <body>
       <trans-unit id="About" xml:space="preserve">
@@ -178,7 +182,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/KYAAdvancedPreferencesViewController/Base.lproj/KYAAdvancedPreferencesViewController.xib" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
     </header>
     <body>
       <trans-unit id="3GX-gq-Yaq.title" xml:space="preserve">
@@ -203,7 +207,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/KYABatteryPreferencesViewController/Base.lproj/KYABatteryPreferencesViewController.xib" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
     </header>
     <body>
       <trans-unit id="HtM-vx-ZuN.title" xml:space="preserve">
@@ -253,7 +257,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYAAddDurationPreferencesViewController.xib" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
     </header>
     <body>
       <trans-unit id="5bs-m4-hy9.title" xml:space="preserve">
@@ -290,7 +294,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYADurationPreferencesViewController.xib" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
     </header>
     <body>
       <trans-unit id="2Az-3u-oGb.title" xml:space="preserve">
@@ -347,7 +351,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/KYAGeneralPreferencesViewController/Base.lproj/KYAGeneralPreferencesViewController.xib" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
     </header>
     <body>
       <trans-unit id="7QN-oX-fJU.title" xml:space="preserve">
@@ -379,7 +383,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/KYAUpdatePreferencesViewController/Base.lproj/KYAUpdatePreferencesViewController.xib" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
     </header>
     <body>
       <trans-unit id="F2o-Is-2nW.title" xml:space="preserve">
@@ -401,7 +405,7 @@ Right click to show menu</source>
   </file>
   <file original="KYALauncher/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="ja">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">

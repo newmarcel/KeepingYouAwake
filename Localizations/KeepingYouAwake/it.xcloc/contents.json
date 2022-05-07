@@ -3,10 +3,10 @@
   "project" : "KeepingYouAwake.xcodeproj",
   "targetLocale" : "it",
   "toolInfo" : {
-    "toolBuildNumber" : "13E113",
+    "toolBuildNumber" : "13E500a",
     "toolID" : "com.apple.dt.xcode",
     "toolName" : "Xcode",
-    "toolVersion" : "13.3"
+    "toolVersion" : "13.3.1"
   },
   "version" : "1.0"
 }

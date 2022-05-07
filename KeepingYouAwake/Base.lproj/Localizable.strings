@@ -21,3 +21,6 @@
 
 /* Quit */
 "Quit" = "Quit";
+
+/* Activate indefinitely when external display is connected */
+"Activate indefinitely when external display is connected" = "Activate indefinitely when external display is connected";
