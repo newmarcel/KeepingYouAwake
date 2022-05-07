@@ -90,7 +90,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     return YES;
 }
 
-- (BOOL)removeActivationDuration:(KYAActivationDuration *)activationDuration error:(NSError *__autoreleasing  _Nullable *)error
+- (BOOL)removeActivationDuration:(KYAActivationDuration *)activationDuration
 {
     NSParameterAssert(activationDuration);
     
@@ -115,26 +115,25 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 - (BOOL)removeActivationDurationAtIndex:(NSUInteger)index
 {
     Auto durations = self.activationDurations;
+    if(index >= durations.count) { return NO; }
+    
     Auto duration = durations[index];
-    if(duration == nil)
-    {
-        return NO;
-    }
+    if(duration == nil) { return NO; }
+    
     if(duration.seconds == KYAActivationDurationIndefinite)
     {
         return NO;
     }
-    return [self removeActivationDuration:duration error:nil];
+    return [self removeActivationDuration:duration];
 }
 
 - (void)setActivationDurationAsDefaultAtIndex:(NSUInteger)index
 {
     Auto durations = self.activationDurations;
+    if(index >= durations.count) { return; }
+    
     Auto duration = durations[index];
-    if(duration == nil)
-    {
-        return;
-    }
+    if(duration == nil) { return; }
     
     [self setDefaultActivationDuration:duration notifyListensers:NO];
     [self didChange];
@@ -145,7 +144,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     [self saveToUserDefaults];
     
     Auto notification = KYAActivationDurationsDidChangeNotification;
-    [NSNotificationCenter.defaultCenter postNotificationName:notification object:nil];
+    [NSNotificationCenter.defaultCenter postNotificationName:notification object:self];
 }
 
 #pragma mark - Default Activation Duration
@@ -167,7 +166,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     if(notify)
     {
         Auto notification = KYAActivationDurationsDidChangeNotification;
-        [NSNotificationCenter.defaultCenter postNotificationName:notification object:nil];
+        [NSNotificationCenter.defaultCenter postNotificationName:notification object:self];
     }
 }
 

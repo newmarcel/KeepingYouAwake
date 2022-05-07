@@ -52,12 +52,14 @@ static NSInteger const KYAActivationDurationLimit = 42;
 {
     [super viewDidLoad];
     
-    self.durationsController = KYAActivationDurationsController.sharedController;
+    Auto durationsController = KYAActivationDurationsController.sharedController;
+    self.durationsController = durationsController;
     
-    [NSNotificationCenter.defaultCenter addObserver:self
-     selector:@selector(activationDurationsDidChange:)
-     name:KYAActivationDurationsDidChangeNotification
-     object:nil];
+    Auto notificationCenter = NSNotificationCenter.defaultCenter;
+    [notificationCenter addObserver:self
+                           selector:@selector(activationDurationsDidChange:)
+                               name:KYAActivationDurationsDidChangeNotification
+                             object:durationsController];
     
     [KYADurationCell registerInTableView:self.tableView];
     

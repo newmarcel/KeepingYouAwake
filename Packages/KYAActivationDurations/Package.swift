@@ -14,6 +14,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "KYAActivationDurations", dependencies: []),
+        .testTarget(name: "KYAActivationDurationsTests", dependencies: ["KYAActivationDurations"]),
     ],
     cxxLanguageStandard: .cxx17
 )

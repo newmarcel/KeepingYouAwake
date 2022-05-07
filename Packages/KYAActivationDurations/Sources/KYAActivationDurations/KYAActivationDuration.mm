@@ -137,7 +137,7 @@ static KYAActivationDurationLocalizationHandler localizationHandler;
 
 - (NSUInteger)hash
 {
-    return (NSUInteger)((uint64_t)self.seconds);
+    return (NSUInteger)self.seconds;
 }
 
 - (BOOL)isEqual:(id)object

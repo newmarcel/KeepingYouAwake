@@ -14,6 +14,8 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
 @interface NSUserDefaults (KYADefaultTimeInterval)
 
 /// Returns the default time interval for the sleep wake timer.
+/// @warning When setting a value with decimal places, these will
+///          be cut off.
 @property (nonatomic) NSTimeInterval kya_defaultTimeInterval;
 
 @end
