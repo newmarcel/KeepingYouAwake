@@ -5,12 +5,14 @@
 ### v1.6.3 ###
 
 - added Battery preferences with support for Low Power Mode on compatible Macs ([#181](https://github.com/newmarcel/KeepingYouAwake/pull/181))
-- added a Japanese translation ([#182](https://github.com/newmarcel/KeepingYouAwake/issues/182)
+- added a Japanese translation ([#182](https://github.com/newmarcel/KeepingYouAwake/issues/182))
     - *Thank you [hiroto-t](https://github.com/hiroto-t)!*
-- updated the Turkish translation ([#183](https://github.com/newmarcel/KeepingYouAwake/issues/183)
+- updated the Turkish translation ([#183](https://github.com/newmarcel/KeepingYouAwake/issues/183))
     - *Thank you [egemenu](https://github.com/egemenu)!*
-- added an Italian translation ([#184](https://github.com/newmarcel/KeepingYouAwake/issues/184)
+- added an Italian translation ([#184](https://github.com/newmarcel/KeepingYouAwake/issues/184))
     - *Thank you [gmcinalli](https://github.com/gmcinalli)!*
+- added an advanced preference to auto-activate when an external screen is connected ([#186](https://github.com/newmarcel/KeepingYouAwake/issues/186), [#84](https://github.com/newmarcel/KeepingYouAwake/issues/84))
+	- *Thank you [sturza](https://github.com/sturza)!*
 
 ### v1.6.2 ###
 
