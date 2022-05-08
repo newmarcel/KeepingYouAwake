@@ -12,23 +12,11 @@
 
 NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
 
-static KYAActivationDurationLocalizationHandler localizationHandler;
-
 @interface KYAActivationDuration ()
 @property (nonatomic, readwrite) NSTimeInterval seconds;
 @end
 
 @implementation KYAActivationDuration
-
-+ (void)setLocalizationHandler:(KYAActivationDurationLocalizationHandler)localizationHandler
-{
-    localizationHandler = [localizationHandler copy];
-}
-
-+ (KYAActivationDurationLocalizationHandler)localizationHandler
-{
-    return localizationHandler;
-}
 
 + (NSArray<KYAActivationDuration *> *)defaultActivationDurations
 {
