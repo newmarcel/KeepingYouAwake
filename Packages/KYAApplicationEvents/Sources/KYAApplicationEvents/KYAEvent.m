@@ -10,14 +10,14 @@
 
 @interface KYAEvent ()
 @property (copy, nonatomic, readwrite) NSString *name;
-@property (copy, nonatomic, readwrite, nullable) NSDictionary *arguments;
+@property (copy, nonatomic, readwrite, nullable) NSDictionary<NSString *, id> *arguments;
 @end
 
 @implementation KYAEvent
 
 #pragma mark - Life Cycle
 
-- (instancetype)initWithName:(NSString *)name arguments:(NSDictionary *)arguments
+- (instancetype)initWithName:(NSString *)name arguments:(NSDictionary<NSString *, id> *)arguments
 {
     NSParameterAssert(name);
     

@@ -16,8 +16,6 @@
 
 @implementation KYAEventHandler
 
-#pragma mark - Singleton
-
 + (instancetype)defaultHandler
 {
     static dispatch_once_t once;
