@@ -1,18 +1,17 @@
 //
-//  KYAEventManager.m
+//  KYAEventHandler+KYADefaultEventHandler.m
 //  KYAApplicationEvents
 //
-//  Created by Marcel Dierkes on 20.02.22.
+//  Created by Marcel Dierkes on 09.05.22.
 //
 
-#import <KYAApplicationEvents/KYAEventManager.h>
+#import <KYAApplicationEvents/KYAEventHandler+KYADefaultEventHandler.h>
 #import <ApplicationServices/ApplicationServices.h>
-#import <KYAApplicationEvents/KYAEventHandler.h>
 #import "KYADefines.h"
 
-@implementation KYAEventManager
+@implementation KYAEventHandler (KYADefaultEventHandler)
 
-+ (void)configureEventHandler
+- (void)registerAsDefaultEventHandler
 {
     Auto eventManager = NSAppleEventManager.sharedAppleEventManager;
     [eventManager setEventHandler:self
@@ -21,12 +20,10 @@
                        andEventID:kAEGetURL];
 }
 
-+ (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)reply
+- (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)reply
 {
     Auto parameter = [event paramDescriptorForKeyword:keyDirectObject].stringValue;
-    
-    Auto eventHandler = KYAEventHandler.defaultHandler;
-    [eventHandler handleEventForURL:[NSURL URLWithString:parameter]];
+    [self handleEventForURL:[NSURL URLWithString:parameter]];
 }
 
 @end

@@ -9,4 +9,4 @@
 
 #import <KYAApplicationEvents/KYAEvent.h>
 #import <KYAApplicationEvents/KYAEventHandler.h>
-#import <KYAApplicationEvents/KYAEventManager.h>
+#import <KYAApplicationEvents/KYAEventHandler+KYADefaultEventHandler.h>

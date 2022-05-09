@@ -44,19 +44,18 @@
 
 - (BOOL)isEqualToEvent:(KYAEvent *)event
 {
+    NSParameterAssert(event);
+    
     return event
-        && [self.name isEqual:event.name]
-        && [self.arguments isEqual:event.arguments];
+        && [self.name isEqualToString:event.name]
+        && [self.arguments isEqualToDictionary:event.arguments];
 }
 
 - (BOOL)isEqual:(id)object
 {
-    if(self == object)
-    {
-        return YES;
-    }
-    
-    if(object && [object isKindOfClass:[self class]])
+    if(object == nil) { return NO; }
+    if(object == self) { return YES; }
+    if([object isKindOfClass:[self class]])
     {
         return [self isEqualToEvent:object];
     }

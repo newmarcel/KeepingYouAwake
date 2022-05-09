@@ -283,7 +283,7 @@
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification
 {
-    [KYAEventManager configureEventHandler];
+    [KYAEventHandler.defaultHandler registerAsDefaultEventHandler];
 }
 
 - (void)configureEventHandler

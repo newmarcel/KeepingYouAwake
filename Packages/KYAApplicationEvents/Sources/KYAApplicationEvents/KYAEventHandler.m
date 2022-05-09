@@ -50,10 +50,7 @@
 
 - (void)handleEventForURL:(NSURL *)URL
 {
-    if(!URL)
-    {
-        return;
-    }
+    if(URL == nil) { return; }
     
     AutoWeak weakSelf = self;
     dispatch_async(self.eventQueue, ^{
