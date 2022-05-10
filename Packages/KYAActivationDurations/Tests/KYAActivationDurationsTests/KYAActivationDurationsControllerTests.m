@@ -7,8 +7,7 @@
 
 #import <XCTest/XCTest.h>
 #import <KYAActivationDurations/KYAActivationDurations.h>
-
-#define Auto const __auto_type
+#import "../../Sources/KYAActivationDurations/KYADefines.h"
 
 @interface KYAActivationDurationsControllerTests : XCTestCase
 @property (nonatomic) KYAActivationDurationsController *controller;

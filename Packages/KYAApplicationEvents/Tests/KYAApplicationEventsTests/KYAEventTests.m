@@ -7,8 +7,7 @@
 
 #import <XCTest/XCTest.h>
 #import <KYAApplicationEvents/KYAApplicationEvents.h>
-
-#define Auto const __auto_type
+#import "../../Sources/KYAApplicationEvents/KYADefines.h"
 
 @interface KYAEventTests : XCTestCase
 @end
