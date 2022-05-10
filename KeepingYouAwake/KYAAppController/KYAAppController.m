@@ -315,7 +315,7 @@
     [self terminateTimer];
 
     // Activate indefinitely if there are no parameters
-    if(parameters.count == 0)
+    if(parameters)
     {
         [self activateTimer];
     }

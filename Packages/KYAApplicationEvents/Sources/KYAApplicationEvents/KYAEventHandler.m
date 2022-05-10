@@ -84,7 +84,7 @@
         arguments[queryItem.name] = value;
     }
     
-    return [[KYAEvent alloc] initWithName:path arguments:arguments];
+    return [[KYAEvent alloc] initWithName:path arguments:arguments.count > 0 ? arguments : nil];
 }
 
 #pragma mark - Event Registration

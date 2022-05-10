@@ -14,5 +14,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "KYAApplicationEvents", dependencies: []),
+        .testTarget(name: "KYAApplicationEventsTests", dependencies: ["KYAApplicationEvents"]),
     ]
 )
