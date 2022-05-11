@@ -9,4 +9,4 @@
 
 #import <KYAApplicationSupport/NSApplication+KYALauncher.h>
 #import <KYAApplicationSupport/NSBundle+KYAVersion.h>
-#import <KYAApplicationSupport/NSUserDefaults+Keys.h>
+#import <KYAApplicationSupport/NSUserDefaults+KYAKeys.h>

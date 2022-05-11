@@ -1,5 +1,5 @@
 //
-//  NSUserDefaults+Keys.h
+//  NSUserDefaults+KYAKeys.h
 //  KYAApplicationSupport
 //
 //  Created by Marcel Dierkes on 25.10.15.
@@ -18,23 +18,19 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisable
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
+FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyLowPowerModeMonitoringEnabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
 
-@interface NSUserDefaults (Keys)
+@interface NSUserDefaults (KYAKeys)
 
-/**
- Returns YES if the sleep wake timer should be activated on app launch.
- */
+/// Returns YES if the sleep wake timer should be activated on app launch.
 @property (nonatomic, getter = kya_isActivatedOnLaunch) BOOL kya_activateOnLaunch;
 
-/**
- Returns YES if the app should allow the display to sleep while still keeping the system awake. This exposes the `caffeinate -i` command.
- */
+/// Returns YES if the app should allow the display to sleep while still keeping
+/// the system awake. This exposes the `caffeinate -i` command.
 @property (nonatomic, getter = kya_shouldAllowDisplaySleep) BOOL kya_allowDisplaySleep;
 
-/**
- Returns YES if the menu bar icon should not be highlighted on left and right click.
- */
+/// Returns YES if the menu bar icon should not be highlighted on left and right click.
 @property (nonatomic, getter = kya_isMenuBarIconHighlightDisabled) BOOL kya_menuBarIconHighlightDisabled;
 
 /// Returns YES if the sleep wake timer should deactivate below a defined battery capacity threshold.
@@ -48,14 +44,10 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
 /// Returns YES if the sleep wake timer should deactivate when Low Power Mode is enabled.
 @property (nonatomic, getter=kya_isLowPowerModeMonitoringEnabled) BOOL kya_lowPowerModeMonitoringEnabled;
 
-/**
- Returns YES if Sparkle should check for pre-release updates.
- */
+/// Returns YES if Sparkle should check for pre-release updates.
 @property (nonatomic, getter = kya_arePreReleaseUpdatesEnabled) BOOL kya_preReleaseUpdatesEnabled;
 
-/**
- Returns YES if the app should quit when the sleep wake timer expires.
- */
+/// Returns YES if the app should quit when the sleep wake timer expires.
 @property (nonatomic, getter=kya_isQuitOnTimerExpirationEnabled) BOOL kya_quitOnTimerExpirationEnabled;
 
 /// Returns YES if the app should activate when external display is connected.
