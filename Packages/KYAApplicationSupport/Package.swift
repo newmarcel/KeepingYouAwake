@@ -14,5 +14,12 @@ let package = Package(
     ],
     targets: [
         .target(name: "KYAApplicationSupport", dependencies: []),
+        .testTarget(
+            name: "KYAApplicationSupportTests",
+            dependencies: ["KYAApplicationSupport"],
+            resources: [
+                .copy("Resources/TestBundle.bundle"),
+            ]
+        ),
     ]
 )

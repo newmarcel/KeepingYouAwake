@@ -48,6 +48,16 @@
                ReferencedContainer = "container:Packages/KYAApplicationEvents">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "KYAApplicationSupportTests"
+               BuildableName = "KYAApplicationSupportTests"
+               BlueprintName = "KYAApplicationSupportTests"
+               ReferencedContainer = "container:Packages/KYAApplicationSupport">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
