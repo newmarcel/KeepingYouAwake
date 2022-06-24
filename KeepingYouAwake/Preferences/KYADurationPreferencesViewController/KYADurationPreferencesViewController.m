@@ -171,8 +171,8 @@ static NSInteger const KYAActivationDurationLimit = 42;
 - (void)updateViewForSelectedRow
 {
     NSInteger row = self.tableView.selectedRow;
-    BOOL enabled = (row >= 0);
-    self.setDefaultButton.enabled = enabled;
+    BOOL enabled = [self.durationsController canRemoveActivationDurationAtIndex:(NSUInteger)row];
+    self.setDefaultButton.enabled = (row >= 0);
     [self.segmentedControl setEnabled:enabled forSegment:0];
     
     self.touchBarSetDefaultButton.enabled = enabled;

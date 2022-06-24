@@ -112,7 +112,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     return YES;
 }
 
-- (BOOL)removeActivationDurationAtIndex:(NSUInteger)index
+- (BOOL)canRemoveActivationDurationAtIndex:(NSUInteger)index
 {
     Auto durations = self.activationDurations;
     if(index >= durations.count) { return NO; }
@@ -124,6 +124,15 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     {
         return NO;
     }
+    
+    return YES;
+}
+
+- (BOOL)removeActivationDurationAtIndex:(NSUInteger)index
+{
+    if([self canRemoveActivationDurationAtIndex:index] == NO) { return NO; }
+    
+    Auto duration = self.activationDurations[index];
     return [self removeActivationDuration:duration];
 }
 

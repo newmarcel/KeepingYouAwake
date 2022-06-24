@@ -49,7 +49,13 @@ FOUNDATION_EXPORT NSNotificationName const KYAActivationDurationsDidChangeNotifi
 
 #pragma mark - Index Access
 
-/// Removes an activation duration at the provided index
+/// Returns YES if the activation duration at the provided index
+/// can be removed.
+/// @param index An index
+/// @returns YES if the activation duration can be removed
+- (BOOL)canRemoveActivationDurationAtIndex:(NSUInteger)index;
+
+/// Removes an activation duration at the provided index.
 /// @param index An index
 /// @returns NO if there is no activation duration at the provided index
 - (BOOL)removeActivationDurationAtIndex:(NSUInteger)index;
