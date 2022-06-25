@@ -14,6 +14,8 @@
 - added an advanced preference to auto-activate when an external screen is connected ([#186](https://github.com/newmarcel/KeepingYouAwake/issues/186), [#84](https://github.com/newmarcel/KeepingYouAwake/issues/84))
 	- *Thank you [sturza](https://github.com/sturza)!*
 
+**Please note: The 1.6.3 release does not support macOS Sierra anymore. You can continue using version 1.6.2 on this version of macOS.**
+
 ### v1.6.2 ###
 
 - updated the Danish translation ([#171](https://github.com/newmarcel/KeepingYouAwake/pull/171), [#180](https://github.com/newmarcel/KeepingYouAwake/pull/180))

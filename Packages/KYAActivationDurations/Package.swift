@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "KYAActivationDurations",
     platforms: [
-        .macOS(.v10_12)
+        .macOS(.v10_13)
     ],
     products: [
         .library(name: "KYAActivationDurations", targets: ["KYAActivationDurations"]),
