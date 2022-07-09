@@ -65,10 +65,7 @@ static NSInteger const KYAActivationDurationLimit = 42;
     
     [self updateViewForSelectedRow];
     
-    if(@available(macOS 10.13, *))
-    {
-        self.touchBarRemoveDurationButton.image = [NSImage imageNamed:NSImageNameTouchBarRemoveTemplate];
-    }
+    self.touchBarRemoveDurationButton.image = [NSImage imageNamed:NSImageNameTouchBarRemoveTemplate];
 }
 
 #pragma mark - Actions

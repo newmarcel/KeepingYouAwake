@@ -217,21 +217,14 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     NSArray *loadedDurations;
     if(data != nil)
     {
-        if(@available(macOS 10.13, *))
+        NSError *error;
+        Auto classes = [NSSet setWithObjects:[NSArray class], [KYAActivationDuration class], nil];
+        loadedDurations = [NSKeyedUnarchiver unarchivedObjectOfClasses:classes
+                                                              fromData:data
+                                                                 error:&error];
+        if(error != nil)
         {
-            NSError *error;
-            Auto classes = [NSSet setWithObjects:[NSArray class], [KYAActivationDuration class], nil];
-            loadedDurations = [NSKeyedUnarchiver unarchivedObjectOfClasses:classes
-                                                                  fromData:data
-                                                                     error:&error];
-            if(error != nil)
-            {
-                KYALog(@"Failed to unarchive durations %@", error.userInfo);
-            }
-        }
-        else
-        {
-            loadedDurations = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+            KYALog(@"Failed to unarchive durations %@", error.userInfo);
         }
     }
 #endif
@@ -265,22 +258,14 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     }
     [self.userDefaults setObject:seconds forKey:KYADefaultsKeyDurations];
 #else
-    NSData *data;
-    if(@available(macOS 10.13, *))
+    NSError *error;
+    Auto data = [NSKeyedArchiver archivedDataWithRootObject:self.storedActivationDurations
+                                      requiringSecureCoding:YES
+                                                      error:&error];
+    if(error != nil)
     {
-        NSError *error;
-        data = [NSKeyedArchiver archivedDataWithRootObject:self.storedActivationDurations
-                                     requiringSecureCoding:YES
-                                                     error:&error];
-        if(error != nil)
-        {
-            KYALog(@"Failed to archive durations %@", error.userInfo);
-            return;
-        }
-    }
-    else
-    {
-        data = [NSKeyedArchiver archivedDataWithRootObject:self.storedActivationDurations];
+        KYALog(@"Failed to archive durations %@", error.userInfo);
+        return;
     }
     [self.userDefaults setObject:data forKey:KYADefaultsKeyDurations];
 #endif
