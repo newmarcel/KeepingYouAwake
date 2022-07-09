@@ -22,13 +22,13 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
 {
     using namespace std::chrono_literals;
     return @[
-             [[KYAActivationDuration alloc]initWithDuration:5min],
-             [[KYAActivationDuration alloc]initWithDuration:10min],
-             [[KYAActivationDuration alloc]initWithDuration:15min],
-             [[KYAActivationDuration alloc]initWithDuration:30min],
-             [[KYAActivationDuration alloc]initWithDuration:1h],
-             [[KYAActivationDuration alloc]initWithDuration:2h],
-             [[KYAActivationDuration alloc]initWithDuration:5h]
+             [[KYAActivationDuration alloc] initWithDuration:5min],
+             [[KYAActivationDuration alloc] initWithDuration:10min],
+             [[KYAActivationDuration alloc] initWithDuration:15min],
+             [[KYAActivationDuration alloc] initWithDuration:30min],
+             [[KYAActivationDuration alloc] initWithDuration:1h],
+             [[KYAActivationDuration alloc] initWithDuration:2h],
+             [[KYAActivationDuration alloc] initWithDuration:5h]
              ];
 }
 
