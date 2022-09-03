@@ -2,11 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21223" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="21008"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21223"/>
-        <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="KYADurationPreferencesViewController">
@@ -14,8 +11,6 @@
                 <outlet property="segmentedControl" destination="6cF-30-del" id="3Pi-wX-W0U"/>
                 <outlet property="setDefaultButton" destination="1Xw-lD-mZ8" id="BRA-EE-jge"/>
                 <outlet property="tableView" destination="A7r-eb-iTg" id="sGp-F6-cK5"/>
-                <outlet property="touchBarRemoveDurationButton" destination="CWk-dz-imH" id="SJU-xI-SCk"/>
-                <outlet property="touchBarSetDefaultButton" destination="Rx7-bQ-ewV" id="tjo-ae-eAN"/>
                 <outlet property="view" destination="K88-La-Qgo" id="SZb-6j-j4Y"/>
             </connections>
         </customObject>
@@ -170,79 +165,9 @@ CA
             </items>
             <point key="canvasLocation" x="392" y="-49"/>
         </menu>
-        <touchBar id="3K8-wh-ljN">
-            <touchBarItems>
-                <touchBarItem id="X9B-p5-PpF">
-                    <viewController key="viewController" id="bdK-Co-pFe">
-                        <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="92r-u6-sfd">
-                            <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSTouchBarAddTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="d20-ZN-8Ly">
-                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                <font key="font" usesAppearanceFont="YES"/>
-                            </buttonCell>
-                            <connections>
-                                <action selector="addDuration:" target="-2" id="PoQ-dm-oc4"/>
-                            </connections>
-                        </button>
-                    </viewController>
-                    <size key="designTimeSize" width="72" height="30"/>
-                </touchBarItem>
-                <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="jtX-X1-tRz"/>
-                <touchBarItem id="N2S-72-zhY">
-                    <viewController key="viewController" id="tMZ-0o-krD">
-                        <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rx7-bQ-ewV">
-                            <rect key="frame" x="0.0" y="0.0" width="108" height="30"/>
-                            <buttonCell key="cell" type="push" title="Set Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3es-An-BPG">
-                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                <font key="font" usesAppearanceFont="YES"/>
-                            </buttonCell>
-                            <color key="bezelColor" name="selectedContentBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            <connections>
-                                <action selector="setDefaultDuration:" target="-2" id="6YC-8n-RcU"/>
-                            </connections>
-                        </button>
-                    </viewController>
-                    <size key="designTimeSize" width="108" height="30"/>
-                </touchBarItem>
-                <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="GkL-Zx-cze"/>
-                <touchBarItem id="x2e-7l-5Lw">
-                    <viewController key="viewController" id="qfN-aa-v00">
-                        <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CWk-dz-imH">
-                            <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSTouchBarDeleteTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h7P-C5-3CD">
-                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                <font key="font" usesAppearanceFont="YES"/>
-                            </buttonCell>
-                            <connections>
-                                <action selector="removeDuration:" target="-2" id="N9O-qk-uhT"/>
-                            </connections>
-                        </button>
-                    </viewController>
-                    <size key="designTimeSize" width="72" height="30"/>
-                </touchBarItem>
-                <touchBarItem id="dtw-sN-Zbu">
-                    <viewController key="viewController" id="UVM-us-x3Y">
-                        <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pcu-bm-wmQ">
-                            <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                            <buttonCell key="cell" type="push" title="Reset…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="13c-ID-Fgy">
-                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                <font key="font" usesAppearanceFont="YES"/>
-                            </buttonCell>
-                            <connections>
-                                <action selector="resetToDefaults:" target="-2" id="hT4-31-a5T"/>
-                            </connections>
-                        </button>
-                    </viewController>
-                    <size key="designTimeSize" width="72" height="30"/>
-                </touchBarItem>
-            </touchBarItems>
-            <point key="canvasLocation" x="14" y="401"/>
-        </touchBar>
     </objects>
     <resources>
         <image name="NSAddTemplate" width="14" height="13"/>
         <image name="NSRemoveTemplate" width="14" height="4"/>
-        <image name="NSTouchBarAddTemplate" width="14" height="13"/>
-        <image name="NSTouchBarDeleteTemplate" width="15" height="17"/>
     </resources>
 </document>
