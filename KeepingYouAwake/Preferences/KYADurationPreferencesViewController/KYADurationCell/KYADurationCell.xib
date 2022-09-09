@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -10,11 +10,11 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <tableCellView id="5WY-9j-GXf" customClass="KYADurationCell">
-            <rect key="frame" x="0.0" y="0.0" width="316" height="24"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="23"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="300" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-Ej-2W4">
-                    <rect key="frame" x="14" y="4" width="236" height="17"/>
+                    <rect key="frame" x="6" y="4" width="256" height="16"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="4 Hours 30 Minutes" id="hzf-iJ-Wss">
                         <font key="font" usesAppearanceFont="YES"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -22,7 +22,7 @@
                     </textFieldCell>
                 </textField>
                 <textField hidden="YES" horizontalHuggingPriority="800" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ABW-sz-EkK">
-                    <rect key="frame" x="254" y="4" width="48" height="17"/>
+                    <rect key="frame" x="266" y="4" width="48" height="16"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Default" id="lc5-K1-x4Z">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -35,14 +35,14 @@
                 <constraint firstItem="Qmt-Ej-2W4" firstAttribute="top" secondItem="5WY-9j-GXf" secondAttribute="top" constant="3" id="Vqk-s6-NY2"/>
                 <constraint firstAttribute="bottom" secondItem="Qmt-Ej-2W4" secondAttribute="bottom" constant="4" id="XL1-0K-wAt"/>
                 <constraint firstItem="ABW-sz-EkK" firstAttribute="leading" secondItem="Qmt-Ej-2W4" secondAttribute="trailing" constant="8" id="mgJ-jF-rmv"/>
-                <constraint firstItem="Qmt-Ej-2W4" firstAttribute="leading" secondItem="5WY-9j-GXf" secondAttribute="leading" constant="16" id="mqW-un-fCR"/>
-                <constraint firstAttribute="trailing" secondItem="ABW-sz-EkK" secondAttribute="trailing" constant="16" id="oKe-jK-DZh"/>
+                <constraint firstItem="Qmt-Ej-2W4" firstAttribute="leading" secondItem="5WY-9j-GXf" secondAttribute="leading" constant="8" id="mqW-un-fCR"/>
+                <constraint firstAttribute="trailing" secondItem="ABW-sz-EkK" secondAttribute="trailing" constant="8" id="oKe-jK-DZh"/>
             </constraints>
             <connections>
                 <outlet property="defaultLabel" destination="ABW-sz-EkK" id="WIH-ie-hBV"/>
                 <outlet property="textLabel" destination="Qmt-Ej-2W4" id="hhd-Kp-9Ft"/>
             </connections>
-            <point key="canvasLocation" x="79" y="84.5"/>
+            <point key="canvasLocation" x="-16.5" y="84.5"/>
         </tableCellView>
     </objects>
 </document>
