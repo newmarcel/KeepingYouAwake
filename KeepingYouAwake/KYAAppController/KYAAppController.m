@@ -24,7 +24,7 @@
 @property (nonatomic) KYAActivationDurationsMenuController *menuController;
 
 // Battery Status
-@property (nonatomic, getter=isBatteryOverrideEnabled) BOOL batteryOverrideEnabled;
+@property (nonatomic, direct, getter=isBatteryOverrideEnabled) BOOL batteryOverrideEnabled;
 
 // Menu
 @property (nonatomic) NSMenu *menu;
@@ -58,6 +58,8 @@
                    selector:@selector(batteryCapacityThresholdDidChange:)
                        name:kKYABatteryCapacityThresholdDidChangeNotification
                      object:nil];
+        
+        [self registerForWorkspaceSessionNotifications];
     }
     return self;
 }
@@ -68,6 +70,8 @@
     [center removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
     [center removeObserver:self name:NSApplicationDidChangeScreenParametersNotification object:nil];
     [center removeObserver:self name:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
+    
+    [self unregisterFromWorkspaceSessionNotifications];
 }
 
 #pragma mark - Main Menu
@@ -274,9 +278,37 @@
 
 - (void)batteryCapacityThresholdDidChange:(NSNotification *)notification
 {
-    if([self.sleepWakeTimer isScheduled] == NO) { return; }
-    
-    [self terminateTimer];
+    if([self.sleepWakeTimer isScheduled])
+    {
+        [self terminateTimer];
+    }
+}
+
+#pragma mark - Workspace Session Handling
+
+- (void)registerForWorkspaceSessionNotifications
+{
+    Auto workspaceCenter = NSWorkspace.sharedWorkspace.notificationCenter;
+    [workspaceCenter addObserver:self
+                        selector:@selector(workspaceSessionDidResignActive:)
+                            name:NSWorkspaceSessionDidResignActiveNotification
+                          object:nil];
+}
+
+- (void)unregisterFromWorkspaceSessionNotifications
+{
+    Auto workspaceCenter = NSWorkspace.sharedWorkspace.notificationCenter;
+    [workspaceCenter removeObserver:self
+                               name:NSWorkspaceSessionDidResignActiveNotification
+                             object:nil];
+}
+
+- (void)workspaceSessionDidResignActive:(NSNotification *)notification
+{
+    if([self.sleepWakeTimer isScheduled])
+    {
+        [self terminateTimer];
+    }
 }
 
 #pragma mark - Event Handling
