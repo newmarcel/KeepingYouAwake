@@ -70,6 +70,9 @@
     [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_ACTIVATE_ON_EXTERNAL_DISPLAY
                                                     defaultsKey:KYAUserDefaultsKeyActivateOnExternalDisplayConnectedEnabled
                             ]];
+    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_DEACTIVATE_ON_USER_SWITCH
+                                                    defaultsKey:KYAUserDefaultsKeyDeactivateOnUserSwitchEnabled
+                            ]];
 
     self.preferences = [preferences copy];
 }

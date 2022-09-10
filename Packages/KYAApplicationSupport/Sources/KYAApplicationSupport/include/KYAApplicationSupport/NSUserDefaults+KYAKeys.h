@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyActivateOnLaunch;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyActivateOnExternalDisplayConnectedEnabled;
+FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyDeactivateOnUserSwitchEnabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled;
 FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
@@ -52,6 +53,9 @@ FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
 
 /// Returns YES if the app should activate when external display is connected.
 @property (nonatomic, getter=kya_isActivateOnExternalDisplayConnectedEnabled) BOOL kya_activateOnExternalDisplayConnectedEnabled;
+
+/// Returns YES if the app should deactivate when the user account is switched.
+@property (nonatomic, getter=kya_isDeactivateOnUserSwitchEnabled) BOOL kya_deactivateOnUserSwitchEnabled;
 
 @end
 

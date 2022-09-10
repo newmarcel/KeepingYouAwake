@@ -62,6 +62,11 @@ KYA_GENERATE_BOOL_PROPERTY(isActivateOnExternalDisplayConnectedEnabled,
                            activateOnExternalDisplayConnectedEnabled,
                            ActivateOnExternalDisplayConnectedEnabled);
 
+
+KYA_GENERATE_BOOL_PROPERTY(isDeactivateOnUserSwitchEnabled,
+                           deactivateOnUserSwitchEnabled,
+                           DeactivateOnUserSwitchEnabled);
+
 KYA_GENERATE_BOOL_PROPERTY(isBatteryCapacityThresholdEnabled,
                            batteryCapacityThresholdEnabled,
                            BatteryCapacityThresholdEnabled);

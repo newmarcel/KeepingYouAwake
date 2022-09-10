@@ -305,7 +305,8 @@
 
 - (void)workspaceSessionDidResignActive:(NSNotification *)notification
 {
-    if([self.sleepWakeTimer isScheduled])
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    if([defaults kya_isDeactivateOnUserSwitchEnabled] && [self.sleepWakeTimer isScheduled])
     {
         [self terminateTimer];
     }

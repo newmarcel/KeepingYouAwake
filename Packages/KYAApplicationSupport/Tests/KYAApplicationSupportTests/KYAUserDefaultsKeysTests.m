@@ -65,6 +65,10 @@ KYA_GENERATE_BOOL_TEST(isActivateOnExternalDisplayConnectedEnabled,
                        activateOnExternalDisplayConnectedEnabled,
                        KYAUserDefaultsKeyActivateOnExternalDisplayConnectedEnabled);
 
+KYA_GENERATE_BOOL_TEST(isDeactivateOnUserSwitchEnabled,
+                       deactivateOnUserSwitchEnabled,
+                       KYAUserDefaultsKeyDeactivateOnUserSwitchEnabled);
+
 KYA_GENERATE_BOOL_TEST(isBatteryCapacityThresholdEnabled,
                        batteryCapacityThresholdEnabled,
                        KYAUserDefaultsKeyBatteryCapacityThresholdEnabled);
