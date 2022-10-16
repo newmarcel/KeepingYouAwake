@@ -23,6 +23,8 @@
 @property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
 @property (nonatomic) KYAActivationDurationsMenuController *menuController;
 
+@property (nonatomic) NSTimeInterval workspaceScheduledTimeInterval;
+
 // Battery Status
 @property (nonatomic, direct, getter=isBatteryOverrideEnabled) BOOL batteryOverrideEnabled;
 
@@ -51,7 +53,7 @@
                        name:NSApplicationWillFinishLaunchingNotification
                      object:nil];
         [center addObserver:self
-                   selector:@selector(externalMonitorStatusChanged:)
+                   selector:@selector(screenParametersDidChange:)
                        name:NSApplicationDidChangeScreenParametersNotification
                      object:nil];
         [center addObserver:self
@@ -290,6 +292,10 @@
 {
     Auto workspaceCenter = NSWorkspace.sharedWorkspace.notificationCenter;
     [workspaceCenter addObserver:self
+                        selector:@selector(workspaceSessionDidBecomeActive:)
+                            name:NSWorkspaceSessionDidBecomeActiveNotification
+                          object:nil];
+    [workspaceCenter addObserver:self
                         selector:@selector(workspaceSessionDidResignActive:)
                             name:NSWorkspaceSessionDidResignActiveNotification
                           object:nil];
@@ -299,8 +305,21 @@
 {
     Auto workspaceCenter = NSWorkspace.sharedWorkspace.notificationCenter;
     [workspaceCenter removeObserver:self
+                               name:NSWorkspaceSessionDidBecomeActiveNotification
+                             object:nil];
+    [workspaceCenter removeObserver:self
                                name:NSWorkspaceSessionDidResignActiveNotification
                              object:nil];
+}
+
+- (void)workspaceSessionDidBecomeActive:(NSNotification *)notification
+{
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    if([defaults kya_isDeactivateOnUserSwitchEnabled] && self.workspaceScheduledTimeInterval >= 0)
+    {
+        [self activateTimerWithTimeInterval:self.workspaceScheduledTimeInterval];
+        self.workspaceScheduledTimeInterval = -1;
+    }
 }
 
 - (void)workspaceSessionDidResignActive:(NSNotification *)notification
@@ -308,6 +327,7 @@
     Auto defaults = NSUserDefaults.standardUserDefaults;
     if([defaults kya_isDeactivateOnUserSwitchEnabled] && [self.sleepWakeTimer isScheduled])
     {
+        self.workspaceScheduledTimeInterval = self.sleepWakeTimer.scheduledTimeInterval;
         [self terminateTimer];
     }
 }
@@ -366,11 +386,18 @@
     }
 }
 
-- (void)externalMonitorStatusChanged:(NSNotification *)notification
+#pragma mark - Internal / External Screen Parameter Changes
+
+- (void)screenParametersDidChange:(NSNotification *)notification
 {
-    if (NSScreen.screens.count > 1 && [NSUserDefaults.standardUserDefaults kya_isActivateOnExternalDisplayConnectedEnabled])
+    if([NSUserDefaults.standardUserDefaults kya_isActivateOnExternalDisplayConnectedEnabled] == NO)
     {
-        [self activateTimerWithTimeInterval:KYASleepWakeTimeIntervalIndefinite];
+        return;
+    }
+    
+    if(NSScreen.screens.count > 1)
+    {
+        [self activateTimer];
     }
     else
     {
