@@ -17,7 +17,7 @@
 #pragma mark - Main Menu
 
 #define KYA_L10N_ACTIVATE_FOR_DURATION NSLocalizedString(@"Activate for Duration", @"Activate for Duration")
-#define KYA_L10N_PREFERENCES NSLocalizedString(@"Preferences…", @"Preferences…")
+#define KYA_L10N_PREFERENCES NSLocalizedString(@"Settings…", @"Settings…")
 #define KYA_L10N_QUIT NSLocalizedString(@"Quit", @"Quit")
 
 #pragma mark -

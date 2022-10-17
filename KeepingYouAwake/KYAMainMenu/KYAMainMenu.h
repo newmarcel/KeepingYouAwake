@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Creates a main menu with common commands like Quit, Preferences… and the
+/// Creates a main menu with common commands like Quit, Settings… and the
 /// activation durations sub menu.
 /// @param activationDurationsSubMenu An activation durations sub menu
 NSMenu *KYACreateMainMenuWithActivationDurationsSubMenu(NSMenu *activationDurationsSubMenu);

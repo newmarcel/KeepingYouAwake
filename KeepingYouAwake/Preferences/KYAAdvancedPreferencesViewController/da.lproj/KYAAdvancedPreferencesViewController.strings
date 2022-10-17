@@ -1,6 +1,6 @@
 /* Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "3GX-gq-Yaq"; */
 "3GX-gq-Yaq.title" = "Nulstil til standard";
 
-/* Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "xdm-wP-gM6"; */
+/* Class = "NSTextFieldCell"; title = "Only change these advanced settings if you know what you are doing. Most of these settings require an app restart."; ObjectID = "xdm-wP-gM6"; */
 "xdm-wP-gM6.title" = "Ændre kun disse avancerede indstillinger, hvis du ved hvad du gør. De fleste af disse indstillinger kræver genstar af applikationen.";
 

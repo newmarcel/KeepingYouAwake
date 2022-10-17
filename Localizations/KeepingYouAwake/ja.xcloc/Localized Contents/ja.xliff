@@ -85,10 +85,10 @@ Right click to show menu</source>
         <source>OK</source>
         <note>OK</note>
       </trans-unit>
-      <trans-unit id="Preferences…" xml:space="preserve">
-        <source>Preferences…</source>
+      <trans-unit id="Settings…" xml:space="preserve">
+        <source>Settings…</source>
         <target>設定…</target>
-        <note>Preferences…</note>
+        <note>Settings…</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep" xml:space="preserve">
         <source>Preventing Sleep</source>
@@ -168,8 +168,8 @@ Right click to show menu</source>
         <target>一般</target>
         <note/>
       </trans-unit>
-      <trans-unit id="KeepingYouAwake – Preferences" xml:space="preserve">
-        <source>KeepingYouAwake – Preferences</source>
+      <trans-unit id="KeepingYouAwake – Settings" xml:space="preserve">
+        <source>KeepingYouAwake – Settings</source>
         <target>KeepingYouAwake – 設定</target>
         <note/>
       </trans-unit>
@@ -199,9 +199,9 @@ Right click to show menu</source>
         <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HPO-gf-tIY"; Note = "Do not localize";</note>
       </trans-unit>
       <trans-unit id="xdm-wP-gM6.title" xml:space="preserve">
-        <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
+        <source>Only change these advanced settings if you know what you are doing. Most of these settings require an app restart.</source>
         <target>これらの高度な設定は動作内容を理解した上で変更してください。設定を変更した場合アプリの再起動が必要です</target>
-        <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "xdm-wP-gM6";</note>
+        <note>Class = "NSTextFieldCell"; title = "Only change these advanced settings if you know what you are doing. Most of these settings require an app restart."; ObjectID = "xdm-wP-gM6";</note>
       </trans-unit>
     </body>
   </file>
@@ -360,9 +360,9 @@ Right click to show menu</source>
         <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU";</note>
       </trans-unit>
       <trans-unit id="7dk-Tj-9aG.title" xml:space="preserve">
-        <source>Notification Preferences…</source>
+        <source>Notification Settings…</source>
         <target>通知の設定…</target>
-        <note>Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "7dk-Tj-9aG";</note>
+        <note>Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "7dk-Tj-9aG";</note>
       </trans-unit>
       <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
         <source>Start at Login</source>

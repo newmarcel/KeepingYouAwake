@@ -28,8 +28,8 @@
 /* OK */
 "OK" = "ОК";
 
-/* Preferences… */
-"Preferences…" = "Настройки…";
+/* Settings… */
+"Settings…" = "Настройки…";
 
 /* Quit */
 "Quit" = "Завершить";

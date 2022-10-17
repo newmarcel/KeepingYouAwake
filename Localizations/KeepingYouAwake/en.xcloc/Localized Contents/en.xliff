@@ -149,9 +149,9 @@ Right click to show menu</target>
         <note>Class = "NSMenuItem"; title = "Activate for Duration"; ObjectID = "Bo6-IE-IbX";</note>
       </trans-unit>
       <trans-unit id="OT5-lg-IM6.title" xml:space="preserve">
-        <source>Preferences…</source>
-        <target>Preferences…</target>
-        <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "OT5-lg-IM6";</note>
+        <source>Settings…</source>
+        <target>Settings…</target>
+        <note>Class = "NSMenuItem"; title = "Settings…"; ObjectID = "OT5-lg-IM6";</note>
       </trans-unit>
     </body>
   </file>
@@ -181,9 +181,9 @@ Right click to show menu</target>
         <note>Class = "NSViewController"; title = "Updates"; ObjectID = "8V0-Sq-Cdu";</note>
       </trans-unit>
       <trans-unit id="AvX-7Q-Bvc.title" xml:space="preserve">
-        <source>KeepingYouAwake – Preferences</source>
-        <target>KeepingYouAwake – Preferences</target>
-        <note>Class = "NSWindow"; title = "KeepingYouAwake – Preferences"; ObjectID = "AvX-7Q-Bvc";</note>
+        <source>KeepingYouAwake – Settings</source>
+        <target>KeepingYouAwake – Settings</target>
+        <note>Class = "NSWindow"; title = "KeepingYouAwake – Settings"; ObjectID = "AvX-7Q-Bvc";</note>
       </trans-unit>
       <trans-unit id="Ax6-W4-7bK.title" xml:space="preserve">
         <source>Deactivate when battery capacity is below</source>
@@ -241,9 +241,9 @@ Right click to show menu</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "LYE-CA-vzC";</note>
       </trans-unit>
       <trans-unit id="OsK-jX-EzO.title" xml:space="preserve">
-        <source>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</source>
-        <target>Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart.</target>
-        <note>Class = "NSTextFieldCell"; title = "Only change these advanced preferences if you know what you are doing. Most of these preferences require an app restart."; ObjectID = "OsK-jX-EzO";</note>
+        <source>Only change these advanced settings if you know what you are doing. Most of these settings require an app restart.</source>
+        <target>Only change these advanced settings if you know what you are doing. Most of these settings require an app restart.</target>
+        <note>Class = "NSTextFieldCell"; title = "Only change these advanced settings if you know what you are doing. Most of these settings require an app restart."; ObjectID = "OsK-jX-EzO";</note>
       </trans-unit>
       <trans-unit id="QIk-WP-qH1.title" xml:space="preserve">
         <source>Start at Login</source>
@@ -271,9 +271,9 @@ Right click to show menu</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "X2a-5O-EuD";</note>
       </trans-unit>
       <trans-unit id="bPs-M9-Azc.title" xml:space="preserve">
-        <source>Notification Preferences…</source>
-        <target>Notification Preferences…</target>
-        <note>Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "bPs-M9-Azc";</note>
+        <source>Notification Settings…</source>
+        <target>Notification Settings…</target>
+        <note>Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "bPs-M9-Azc";</note>
       </trans-unit>
       <trans-unit id="bV3-BW-JOK.title" xml:space="preserve">
         <source>Cancel</source>

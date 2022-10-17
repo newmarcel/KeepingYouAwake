@@ -31,8 +31,8 @@
 /* OK */
 "OK" = "Tamam";
 
-/* Preferences… */
-"Preferences…" = "Tercihler…";
+/* Settings… */
+"Settings…" = "Tercihler…";
 
 /* Preventing Sleep */
 "Preventing Sleep" = "Uyku modu önleniyor";

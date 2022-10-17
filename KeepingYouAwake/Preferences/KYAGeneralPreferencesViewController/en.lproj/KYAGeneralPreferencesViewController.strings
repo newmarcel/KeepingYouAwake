@@ -2,8 +2,8 @@
 /* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU"; */
 "7QN-oX-fJU.title" = "Immediately starts preventing sleep when launched.";
 
-/* Class = "NSButtonCell"; title = "Notification Preferences…"; ObjectID = "7dk-Tj-9aG"; */
-"7dk-Tj-9aG.title" = "Notification Preferences…";
+/* Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "7dk-Tj-9aG"; */
+"7dk-Tj-9aG.title" = "Notification Settings…";
 
 /* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "YWD-DY-pgf"; */
 "YWD-DY-pgf.title" = "Start at Login";

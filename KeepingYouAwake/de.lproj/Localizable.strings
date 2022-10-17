@@ -34,8 +34,8 @@
 /* OK */
 "OK" = "OK";
 
-/* Preferences… */
-"Preferences…" = "Einstellungen …";
+/* Settings… */
+"Settings…" = "Einstellungen …";
 
 /* Preventing Sleep */
 "Preventing Sleep" = "Der Ruhezustand wird verhindert";
