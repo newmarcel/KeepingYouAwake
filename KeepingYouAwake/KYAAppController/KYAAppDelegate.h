@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <KYAApplicationSupport/KYAApplicationSupport.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -7,6 +7,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import <KYAApplicationSupport/NSApplication+KYALauncher.h>
+#import <KYAApplicationSupport/NSApplication+KYALaunchAtLogin.h>
 #import <KYAApplicationSupport/NSBundle+KYAVersion.h>
 #import <KYAApplicationSupport/NSUserDefaults+KYAKeys.h>

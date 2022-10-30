@@ -22,6 +22,11 @@
 #if KYA_APP_UPDATER_ENABLED
     [KYAAppUpdater defaultAppUpdater];
 #endif
+    
+    if(@available(macOS 13.0, *))
+    {
+        [NSApplication.sharedApplication kya_migrateLaunchAtLoginToAppServiceIfNeeded];
+    }
 }
 
 #pragma mark - Preferences Window
