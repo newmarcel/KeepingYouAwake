@@ -6,6 +6,35 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.6.3: Low Power Mode]]></title>
+			<description><![CDATA[<ul>
+<li>added Battery preferences with support for Low Power Mode on compatible Macs (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/181">#181</a>)</li>
+<li>added a Japanese translation (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/182">#182</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/hiroto-t">hiroto-t</a>!</em></li>
+</ul></li>
+<li>updated the Turkish translation (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/183">#183</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/egemenu">egemenu</a>!</em></li>
+</ul></li>
+<li>added an Italian translation (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/184">#184</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/gmcinalli">gmcinalli</a>!</em></li>
+</ul></li>
+<li>added an advanced preference to auto-activate when an external screen is connected (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/186">#186</a>, <a href="https://github.com/newmarcel/KeepingYouAwake/issues/84">#84</a>)
+<ul>
+<li><em>Thank you <a href="https://github.com/sturza">sturza</a>!</em></li>
+<li>added an advanced preference to deactivate while another user account is active</li>
+</ul></li>
+</ul>
+
+<p><strong>Please note: The 1.6.3 release does not support macOS Sierra anymore. You can continue using version 1.6.2 on this version of macOS.</strong></p>
+]]></description>
+			<pubDate>Sun, 30 Oct 2022 08:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.3/KeepingYouAwake-1.6.3.zip" length="1998809" type="application/octet-stream" sparkle:version="1060304" sparkle:shortVersionString="1.6.3">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.6.2: Minor Changes]]></title>
 			<description><![CDATA[<ul>
 <li>updated the Danish translation (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/171">#171</a>, <a href="https://github.com/newmarcel/KeepingYouAwake/pull/180">#180</a>)
