@@ -368,19 +368,19 @@
     [self terminateTimer];
 
     // Activate indefinitely if there are no parameters
-    if(parameters)
+    if(parameters == nil || parameters.count == 0)
     {
         [self activateTimer];
     }
-    else if(seconds)
+    else if(seconds != nil)
     {
         [self activateTimerWithTimeInterval:(NSTimeInterval)ceil(seconds.doubleValue)];
     }
-    else if(minutes)
+    else if(minutes != nil)
     {
         [self activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(ceil(minutes.doubleValue))];
     }
-    else if(hours)
+    else if(hours != nil)
     {
         [self activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
     }
