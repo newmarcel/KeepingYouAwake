@@ -4,7 +4,8 @@
 
 ### v1.6.4 ###
 
-- registers as Login Item on macOS Ventura if "Start at Login" is enabled _(this should be much more reliable for anyone who has had problems with this in previous versions)_
+- shows in the "Login Items" > "Open at Login" section in System Settings on macOS Ventura if "Start at Login" is enabled
+- fixes a regression introduced in 1.6.3 where the `keepingyouawake:///activate` URL scheme stopped working as expected ([#193](https://github.com/newmarcel/KeepingYouAwake/issues/193))
 
 ### v1.6.3 ###
 
