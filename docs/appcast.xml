@@ -6,6 +6,17 @@
 		<description>The most recent changes for KeepingYouAwake.</description>
 		<language>en</language>
 		<item>
+			<title><![CDATA[Version 1.6.4: Ventura Login Item and URL Scheme Fix]]></title>
+			<description><![CDATA[<ul>
+<li>shows in the "Login Items" > "Open at Login" section in System Settings on macOS Ventura if "Start at Login" is enabled</li>
+<li>fixes a regression introduced in 1.6.3 where the <code>keepingyouawake:///activate</code> URL scheme stopped working as expected (<a href="https://github.com/newmarcel/KeepingYouAwake/issues/193">#193</a>)</li>
+</ul>
+]]></description>
+			<pubDate>Mon, 14 Nov 2022 17:00:00 GMT</pubDate>
+			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.4/KeepingYouAwake-1.6.4.zip" length="1999888" type="application/octet-stream" sparkle:version="1060400" sparkle:shortVersionString="1.6.4">
+			</enclosure>
+		</item>
+		<item>
 			<title><![CDATA[Version 1.6.3: Low Power Mode]]></title>
 			<description><![CDATA[<ul>
 <li>added Battery preferences with support for Low Power Mode on compatible Macs (<a href="https://github.com/newmarcel/KeepingYouAwake/pull/181">#181</a>)</li>
