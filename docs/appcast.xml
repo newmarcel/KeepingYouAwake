@@ -13,6 +13,7 @@
 </ul>
 ]]></description>
 			<pubDate>Mon, 14 Nov 2022 17:00:00 GMT</pubDate>
+			<sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
 			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.4/KeepingYouAwake-1.6.4.zip" length="1999888" type="application/octet-stream" sparkle:version="1060400" sparkle:shortVersionString="1.6.4">
 			</enclosure>
 		</item>
@@ -42,6 +43,7 @@
 <p><strong>Please note: The 1.6.3 release does not support macOS Sierra anymore. You can continue using version 1.6.2 on this version of macOS.</strong></p>
 ]]></description>
 			<pubDate>Sun, 30 Oct 2022 08:00:00 GMT</pubDate>
+			<sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
 			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.3/KeepingYouAwake-1.6.3.zip" length="1998809" type="application/octet-stream" sparkle:version="1060304" sparkle:shortVersionString="1.6.3">
 			</enclosure>
 		</item>
@@ -60,6 +62,7 @@
 </ul>
 ]]></description>
 			<pubDate>Sun, 20 Feb 2022 17:00:00 GMT</pubDate>
+			<sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
 			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.2/KeepingYouAwake-1.6.2.zip" length="2736815" type="application/octet-stream" sparkle:version="1060205" sparkle:shortVersionString="1.6.2">
 			</enclosure>
 		</item>
@@ -77,6 +80,7 @@
 </ul>
 ]]></description>
 			<pubDate>Sat, 24 Jul 2021 08:00:00 GMT</pubDate>
+			<sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
 			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.1/KeepingYouAwake-1.6.1.zip" length="3615283" type="application/octet-stream" sparkle:version="1060102" sparkle:shortVersionString="1.6.1">
 			</enclosure>
 		</item>
@@ -96,6 +100,7 @@
 <p><strong>Please note: This release requires macOS Sierra or newer, you can continue using version 1.5.2 if you need support for macOS Yosemite or El Capitan.</strong></p>
 ]]></description>
 			<pubDate>Fri, 06 Nov 2020 18:00:00 GMT</pubDate>
+			<sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
 			<enclosure url="https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.0/KeepingYouAwake-1.6.0.zip" length="3451769" type="application/octet-stream" sparkle:version="1060001" sparkle:shortVersionString="1.6.0">
 			</enclosure>
 		</item>
