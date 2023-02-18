@@ -4,5 +4,6 @@
     "file_length": 3615605,
     "file_version": "1060100",
     "file_short_version": "1.6.1beta1",
+    "minimum_system_version": "10.12",
     "is_prerelease": true
 }

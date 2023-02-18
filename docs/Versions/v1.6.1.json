@@ -3,5 +3,6 @@
     "file_url": "https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.1/KeepingYouAwake-1.6.1.zip",
     "file_length": 3615283,
     "file_version": "1060102",
-    "file_short_version": "1.6.1"
+    "file_short_version": "1.6.1",
+    "minimum_system_version": "10.12"
 }
