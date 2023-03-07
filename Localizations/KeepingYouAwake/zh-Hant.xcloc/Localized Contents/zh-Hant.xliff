@@ -90,7 +90,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Do you really want to reset the activation durations to the default values?" xml:space="preserve">
         <source>Do you really want to reset the activation durations to the default values?</source>
-        <target>是否要將時限列表重置為初始狀態？</target>
+        <target>是否要將時限列表重置為預設值？</target>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
@@ -214,7 +214,7 @@ Right click to show menu</source>
     <body>
       <trans-unit id="3GX-gq-Yaq.title" xml:space="preserve">
         <source>Reset to Default</source>
-        <target>重置設定狀態</target>
+        <target>重設為預設值</target>
         <note>Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "3GX-gq-Yaq";</note>
       </trans-unit>
       <trans-unit id="7z8-pS-A86.title" xml:space="preserve">
@@ -264,7 +264,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="l4a-Sa-RAE.title" xml:space="preserve">
         <source>This value will be ignored when you manually start the app below this battery capacity.</source>
-        <target>若為手動啟用，則會無視此設定值。</target>
+        <target>若手動斟滿，則會無視此設定值。</target>
         <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "l4a-Sa-RAE";</note>
       </trans-unit>
       <trans-unit id="mcf-JV-nyg.title" xml:space="preserve">

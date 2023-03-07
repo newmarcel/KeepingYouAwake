@@ -14,7 +14,7 @@
 "M11-sw-GhM.title" = "90 %";
 
 /* Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "l4a-Sa-RAE"; */
-"l4a-Sa-RAE.title" = "若為手動啟用，則會無視此設定值。";
+"l4a-Sa-RAE.title" = "若手動斟滿，則會無視此設定值。";
 
 /* Class = "NSTextFieldCell"; title = "Low Power Mode"; ObjectID = "aXx-hk-9R9"; */
 "aXx-hk-9R9.title" = "低耗電模式";

@@ -41,7 +41,7 @@
 "Reset Activation Durations" = "重置時限列表";
 
 /* Do you really want to reset the activation durations to the default values? */
-"Do you really want to reset the activation durations to the default values?" = "是否要將時限列表重置為初始狀態？";
+"Do you really want to reset the activation durations to the default values?" = "是否要將時限列表重置為預設值？";
 
 /* Cancel */
 "Cancel" = "取消";
