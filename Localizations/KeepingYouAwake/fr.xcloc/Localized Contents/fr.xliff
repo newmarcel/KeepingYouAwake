@@ -32,18 +32,22 @@
       </trans-unit>
       <trans-unit id="Activate indefinitely when external display is connected" xml:space="preserve">
         <source>Activate indefinitely when external display is connected</source>
+        <target>Activer indéfiniment lorsqu'un moniteur externe est connecté</target>
         <note>Activate indefinitely when external display is connected</note>
       </trans-unit>
       <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
         <source>Afterwards your Mac will automatically go to sleep again when unused.</source>
+        <target>Au-delà, votre Mac ira automatiquement en veille lorsque non utilisé.</target>
         <note>Afterwards your Mac will automatically go to sleep again when unused.</note>
       </trans-unit>
       <trans-unit id="Allow the display to sleep" xml:space="preserve">
         <source>Allow the display to sleep</source>
+        <target>Permettre la veille du moniteur</target>
         <note>Allow the display to sleep</note>
       </trans-unit>
       <trans-unit id="Allowing Sleep" xml:space="preserve">
         <source>Allowing Sleep</source>
+        <target>Mise en veille permise</target>
         <note>Allowing Sleep</note>
       </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
@@ -77,6 +81,7 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="Do you really want to reset the activation durations to the default values?" xml:space="preserve">
         <source>Do you really want to reset the activation durations to the default values?</source>
+        <target>Voulez-vous vraiment rétablir les durées d'activation par défaut ?</target>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
@@ -86,6 +91,7 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="OK" xml:space="preserve">
         <source>OK</source>
+        <target>OK</target>
         <note>OK</note>
       </trans-unit>
       <trans-unit id="Settings…" xml:space="preserve">
@@ -95,10 +101,12 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="Preventing Sleep" xml:space="preserve">
         <source>Preventing Sleep</source>
+        <target>Mise en veille empêchée</target>
         <note>Preventing Sleep</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep for %@" xml:space="preserve">
         <source>Preventing Sleep for %@</source>
+        <target>Mise en veille empêchée pour %@</target>
         <note>Preventing Sleep for %@</note>
       </trans-unit>
       <trans-unit id="Quit" xml:space="preserve">
@@ -113,15 +121,17 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="Reset Activation Durations" xml:space="preserve">
         <source>Reset Activation Durations</source>
+        <target>Rétablir les durées par défaut</target>
         <note>Reset Activation Durations</note>
       </trans-unit>
       <trans-unit id="Set Default: %@" xml:space="preserve">
         <source>Set Default: %@</source>
+        <target>Mettre par défaut: %@</target>
         <note>Set Default: %@</note>
       </trans-unit>
       <trans-unit id="The entered duration is invalid. Please try again." xml:space="preserve">
         <source>The entered duration is invalid. Please try again.</source>
-        <target>La durée entrée est invalide. Veuillez essayer à nouveau.</target>
+        <target>La durée saisie est invalide. Veuillez essayer à nouveau.</target>
         <note>The entered duration is invalid. Please try again.</note>
       </trans-unit>
       <trans-unit id="This duration has already been added." xml:space="preserve">
@@ -136,10 +146,12 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="You can still manually enable sleep mode for your Mac." xml:space="preserve">
         <source>You can still manually enable sleep mode for your Mac.</source>
+        <target>Vous pouvez toujours activer manuellement la veille pour votre Mac.</target>
         <note>You can still manually enable sleep mode for your Mac.</note>
       </trans-unit>
       <trans-unit id="Your Mac will automatically go to sleep when unused." xml:space="preserve">
         <source>Your Mac will automatically go to sleep when unused.</source>
+        <target>Votre Mac ira automatiquement en veille lorsque non utilisé.</target>
         <note>Your Mac will automatically go to sleep when unused.</note>
       </trans-unit>
     </body>
@@ -156,6 +168,7 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="Activation Duration" xml:space="preserve">
         <source>Activation Duration</source>
+        <target>Durée d'activation</target>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced" xml:space="preserve">
@@ -227,6 +240,7 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="SHH-RQ-HPH.title" xml:space="preserve">
         <source>Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging.</source>
+        <target>Le mode économie d'énergie peut être activé sur les Macs supportés dans Préférences Systèmes &gt; Batterie et ne sera pas appliqué lorsqu'en charge.</target>
         <note>Class = "NSTextFieldCell"; title = "Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging."; ObjectID = "SHH-RQ-HPH";</note>
       </trans-unit>
       <trans-unit id="aXx-hk-9R9.title" xml:space="preserve">
@@ -246,6 +260,7 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="mcf-JV-nyg.title" xml:space="preserve">
         <source>Deactivate when Low Power Mode is enabled</source>
+        <target>Désactiver quand le mode économie d'énergie est activé</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when Low Power Mode is enabled"; ObjectID = "mcf-JV-nyg";</note>
       </trans-unit>
       <trans-unit id="ovF-0F-TMc.title" xml:space="preserve">
@@ -308,18 +323,22 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="3es-An-BPG.title" xml:space="preserve">
         <source>Set Default</source>
+        <target>Mettre par défaut</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "3es-An-BPG";</note>
       </trans-unit>
       <trans-unit id="4tU-j1-N4m.title" xml:space="preserve">
         <source>The default activation duration is used when you click on the menu bar icon.</source>
+        <target>La durée d'activation par défaut est utilisée quand vous cliquez sur l'icône du menu.</target>
         <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "4tU-j1-N4m";</note>
       </trans-unit>
       <trans-unit id="13c-ID-Fgy.title" xml:space="preserve">
         <source>Reset…</source>
+        <target>Rétablir</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "13c-ID-Fgy";</note>
       </trans-unit>
       <trans-unit id="Are-vs-Awn.title" xml:space="preserve">
         <source>Set Default</source>
+        <target>Mettre par défaut</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "Are-vs-Awn";</note>
       </trans-unit>
       <trans-unit id="Btn-FN-s8Z.title" xml:space="preserve">
@@ -328,10 +347,12 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="COs-G1-J6K.title" xml:space="preserve">
         <source>Reset…</source>
+        <target>Rétablir...</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "COs-G1-J6K";</note>
       </trans-unit>
       <trans-unit id="U86-Hk-nfT.title" xml:space="preserve">
         <source>Set Default</source>
+        <target>Mettre comme par défaut</target>
         <note>Class = "NSMenuItem"; title = "Set Default"; ObjectID = "U86-Hk-nfT";</note>
       </trans-unit>
       <trans-unit id="dml-Pt-frp.ibShadowedToolTips[0]" xml:space="preserve">
@@ -358,6 +379,7 @@ Clic droit pour le menu</target>
       </trans-unit>
       <trans-unit id="7dk-Tj-9aG.title" xml:space="preserve">
         <source>Notification Settings…</source>
+        <target>Paramètres des notifications...</target>
         <note>Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "7dk-Tj-9aG";</note>
       </trans-unit>
       <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
@@ -384,7 +406,7 @@ Clic droit pour le menu</target>
     <body>
       <trans-unit id="F2o-Is-2nW.title" xml:space="preserve">
         <source>Automatically Check for Updates</source>
-        <target>Vérifier les mise-à-jour automatiquement</target>
+        <target>Vérifier les mises-à-jour automatiquement</target>
         <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "F2o-Is-2nW";</note>
       </trans-unit>
       <trans-unit id="oBK-47-iMk.title" xml:space="preserve">
