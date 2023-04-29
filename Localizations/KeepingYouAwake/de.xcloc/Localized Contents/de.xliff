@@ -32,6 +32,7 @@
       </trans-unit>
       <trans-unit id="Activate indefinitely when external display is connected" xml:space="preserve">
         <source>Activate indefinitely when external display is connected</source>
+        <target>Unbegrenzt aktivieren, wenn ein externer Bildschirm angeschlossen ist</target>
         <note>Activate indefinitely when external display is connected</note>
       </trans-unit>
       <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
@@ -41,6 +42,7 @@
       </trans-unit>
       <trans-unit id="Allow the display to sleep" xml:space="preserve">
         <source>Allow the display to sleep</source>
+        <target>Bildschirm ausschalten zulassen </target>
         <note>Allow the display to sleep</note>
       </trans-unit>
       <trans-unit id="Allowing Sleep" xml:space="preserve">
