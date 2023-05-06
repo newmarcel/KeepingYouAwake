@@ -2,6 +2,11 @@
 
 ## Changelog ##
 
+### v1.6.5 ###
+
+- updated the Traditional Chinese translation ([#198](https://github.com/newmarcel/KeepingYouAwake/pull/198))
+    - *Thank you [YuerLee](https://github.com/YuerLee)!*
+
 ### v1.6.4 ###
 
 - shows in the "Login Items" > "Open at Login" section in System Settings on macOS Ventura if "Start at Login" is enabled
