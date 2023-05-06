@@ -1,0 +1,14 @@
+/* Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "5bs-m4-hy9"; */
+"5bs-m4-hy9.title" = "小時";
+
+/* Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "oi9-AP-ag4"; */
+"oi9-AP-ag4.title" = "分鐘";
+
+/* Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "s1J-2f-UeD"; */
+"s1J-2f-UeD.title" = "秒";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "59l-n2-tD5"; */
+"59l-n2-tD5.title" = "取消";
+
+/* Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "vTF-HR-j5d"; */
+"vTF-HR-j5d.title" = "新增時限";
