@@ -9,6 +9,7 @@
 #import <KYAActivationDurations/KYAActivationDurationsController.h>
 #import <KYAActivationDurations/NSUserDefaults+KYADefaultTimeInterval.h>
 #import "KYADefines.h"
+#import "KYAActivationDurationsLog.h"
 
 #define KYA_USES_SIMPLE_USER_DEFAULTS_VALUES 1
 
@@ -224,7 +225,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
                                                                  error:&error];
         if(error != nil)
         {
-            KYALog(@"Failed to unarchive durations %@", error.userInfo);
+            os_log_error(KYAActivationDurationsLog(), "Failed to unarchive durations %{public}@", error.userInfo);
         }
     }
 #endif
@@ -241,7 +242,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 #else
         self.storedActivationDurations = [NSMutableArray arrayWithArray:loadedDurations];
 #endif
-        KYALog(@"Loaded durations from user defaults: %@", loadedDurations);
+        os_log(KYAActivationDurationsLog(), "Loaded durations from user defaults: %{public}@", loadedDurations);
     }
 }
 
@@ -264,7 +265,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
                                                       error:&error];
     if(error != nil)
     {
-        KYALog(@"Failed to archive durations %@", error.userInfo);
+        os_log(KYAActivationDurationsLog(), "Failed to archive durations %{public}@", error.userInfo);
         return;
     }
     [self.userDefaults setObject:data forKey:KYADefaultsKeyDurations];
@@ -272,7 +273,7 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     
     [self.userDefaults synchronize];
     
-    KYALog(@"Saved durations to user defaults: %@", self.storedActivationDurations);
+    os_log(KYAActivationDurationsLog(), "Saved durations to user defaults: %{public}@", self.storedActivationDurations);
 }
 
 @end

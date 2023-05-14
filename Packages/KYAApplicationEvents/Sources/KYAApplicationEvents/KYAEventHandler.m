@@ -12,6 +12,7 @@
 @interface KYAEventHandler ()
 @property (nonatomic) dispatch_queue_t eventQueue;
 @property (nonatomic) NSMapTable *eventTable;
+@property (nonatomic) os_log_t log;
 @end
 
 @implementation KYAEventHandler
@@ -33,6 +34,7 @@
     {
         self.eventQueue = dispatch_queue_create("info.marcel-dierkes.KeepingYouAwake.EventQueue", DISPATCH_QUEUE_SERIAL);
         self.eventTable = [NSMapTable strongToStrongObjectsMapTable];
+        self.log = KYALogCreateWithCategory("ApplicationEvents");
     }
     return self;
 }
@@ -57,7 +59,7 @@
         KYAEventHandlerActionBlock actionBlock = [self.eventTable objectForKey:event.name];
         if(actionBlock)
         {
-            KYALog(@"Handling event:\n%@\nfor URL: %@", event, URL);
+            os_log(self.log, "Handling event:\n%{public}@\nfor URL: %{public}@", event, URL);
             // Perform the action block on main queue, but in sync with the event queue
             dispatch_sync(dispatch_get_main_queue(), ^{
                 actionBlock(event);

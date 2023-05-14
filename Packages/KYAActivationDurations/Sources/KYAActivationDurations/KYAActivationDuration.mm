@@ -8,6 +8,7 @@
 
 #import <KYAActivationDurations/KYAActivationDuration.h>
 #import "KYADefines.h"
+#import "KYAActivationDurationsLog.h"
 #include <chrono>
 
 NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
@@ -56,21 +57,21 @@ NSTimeInterval const KYAActivationDurationIndefinite = 0.0f;
     auto minutesValue = std::chrono::minutes { minutes };
     if(minutesValue > 1h)
     {
-        KYALog(@"Attempted to add a duration with a minutes component value greater than an hour.");
+        os_log_fault(KYAActivationDurationsLog(), "Attempted to add a duration with a minutes component value greater than an hour.");
         return nil;
     }
     
     auto secondsValue = std::chrono::seconds { seconds };
     if(secondsValue > 1min)
     {
-        KYALog(@"Attempted to add a duration with a seconds component value greater than a minute.");
+        os_log_fault(KYAActivationDurationsLog(), "Attempted to add a duration with a seconds component value greater than a minute.");
         return nil;
     }
     
     std::chrono::seconds totalValue = hoursValue + minutesValue + secondsValue;
     if(totalValue == 0s)
     {
-        KYALog(@"Attempted to add a 0 duration.");
+        os_log_fault(KYAActivationDurationsLog(), "Attempted to add a 0 duration.");
         return nil;
     }
     

@@ -15,6 +15,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 @property (copy, nonatomic, readwrite) NSDate *fireDate;
 @property (nonatomic, readwrite) NSTimeInterval scheduledTimeInterval;
 @property (nonatomic) NSTask *caffeinateTask;
+@property (nonatomic) os_log_t log;
 @end
 
 @implementation KYASleepWakeTimer
@@ -33,6 +34,8 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
                         usingBlock:^(NSNotification *note) {
             [weakSelf invalidate];
         }];
+        
+        self.log = KYALogCreateWithCategory("SleepWakeTimer");
     }
     return self;
 }
@@ -46,7 +49,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
 
 - (void)scheduleWithTimeInterval:(NSTimeInterval)timeInterval completion:(KYASleepWakeTimerCompletionBlock)completion
 {
-    KYALog(@"%@ will activate with time interval %@.", self, @(timeInterval));
+    os_log(self.log, "%{public}@ will activate with time interval %{public}@.", self, @(timeInterval));
     
     Auto delegate = self.delegate;
     if([self.delegate respondsToSelector:@selector(sleepWakeTimer:willActivateWithTimeInterval:)])
@@ -154,7 +157,7 @@ NSTimeInterval const KYASleepWakeTimeIntervalIndefinite = 0;
         }
     });
     
-    KYALog(@"%@ did deactivate.", self);
+    os_log(self.log, "%{public}@ did deactivate.", self);
 }
 
 @end

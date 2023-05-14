@@ -8,24 +8,25 @@
 #import <XCTest/XCTest.h>
 #import <KYAApplicationSupport/KYAApplicationSupport.h>
 #import "../../Sources/KYAApplicationSupport/KYADefines.h"
+#import "../../Sources/KYAApplicationSupport/KYAApplicationSupportLog.h"
 
-#define KYA_GENERATE_BOOL_TEST(_short_getter_name, _property_name, _defaults_key)   \
-- (void)testProperty_##_property_name                                               \
-{                                                                                   \
-    Auto defaults = self.defaults;                                                  \
-    Auto key = _defaults_key;                                                       \
-                                                                                    \
-    defaults.kya_##_property_name = YES;                                            \
-    XCTAssertTrue([defaults kya_##_short_getter_name]);                             \
-    XCTAssertTrue([defaults boolForKey:key]);                                       \
-                                                                                    \
-    defaults.kya_##_property_name = NO;                                             \
-    XCTAssertFalse([defaults kya_##_short_getter_name]);                            \
-    XCTAssertFalse([defaults boolForKey:key]);                                      \
-                                                                                    \
-    [defaults setBool:YES forKey:key];                                              \
-    XCTAssertTrue([defaults kya_##_short_getter_name]);                             \
-    KYALog(@"Tested User Defaults Key '%@'.", key);                                 \
+#define KYA_GENERATE_BOOL_TEST(_short_getter_name, _property_name, _defaults_key)           \
+- (void)testProperty_##_property_name                                                       \
+{                                                                                           \
+    Auto defaults = self.defaults;                                                          \
+    Auto key = _defaults_key;                                                               \
+                                                                                            \
+    defaults.kya_##_property_name = YES;                                                    \
+    XCTAssertTrue([defaults kya_##_short_getter_name]);                                     \
+    XCTAssertTrue([defaults boolForKey:key]);                                               \
+                                                                                            \
+    defaults.kya_##_property_name = NO;                                                     \
+    XCTAssertFalse([defaults kya_##_short_getter_name]);                                    \
+    XCTAssertFalse([defaults boolForKey:key]);                                              \
+                                                                                            \
+    [defaults setBool:YES forKey:key];                                                      \
+    XCTAssertTrue([defaults kya_##_short_getter_name]);                                     \
+    os_log(KYAApplicationSupportLog(), "Tested User Defaults Key '%{public}@'.", key);      \
 }
 
 @interface KYAUserDefaultsKeysTests : XCTestCase

@@ -53,7 +53,8 @@
     {
         button.contentTintColor = NSColor.systemBlueColor;
     }
-    KYALog(@"Blue status bar item color is enabled for DEBUG builds.");
+    Auto log = KYALogCreateWithCategory("StatusItemUI");
+    os_log_debug(log, "Blue status bar item color is enabled for DEBUG builds.");
 #endif
     
     self.systemStatusItem = statusItem;

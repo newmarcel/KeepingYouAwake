@@ -9,6 +9,7 @@
 #import <KYAApplicationSupport/NSApplication+KYALaunchAtLogin.h>
 #import <ServiceManagement/ServiceManagement.h>
 #import "KYADefines.h"
+#import "KYAApplicationSupportLog.h"
 
 @implementation NSApplication (KYALaunchAtLogin)
 
@@ -84,7 +85,7 @@ NS_INLINE void KYALaunchAtLoginAppServiceSetEnabled(BOOL enabled) API_AVAILABLE(
         
         if(error != nil)
         {
-            KYALog(@"Failed to register launch at login %@", error.userInfo);
+            os_log_error(KYAApplicationSupportLog(), "Failed to register launch at login %{public}@", error.userInfo);
         }
     }
     else
@@ -94,7 +95,7 @@ NS_INLINE void KYALaunchAtLoginAppServiceSetEnabled(BOOL enabled) API_AVAILABLE(
         
         if(error != nil)
         {
-            KYALog(@"Failed to unregister launch at login %@", error.userInfo);
+            os_log_error(KYAApplicationSupportLog(), "Failed to unregister launch at login %{public}@", error.userInfo);
         }
     }
 }
@@ -136,7 +137,7 @@ NS_INLINE BOOL KYALaunchAtLoginLoginItemIsEnabled()
     Boolean success = SMLoginItemSetEnabled((__bridge CFStringRef)KYALauncherBundleIdentifier, (Boolean)enabled);
     if(success == false)
     {
-        KYALog(@"Failed to set login item to %@", @(enabled));
+        os_log_fault(KYAApplicationSupportLog(), "Failed to set login item to %{public}@", @(enabled));
     }
     return enabled;
 }
@@ -150,7 +151,7 @@ NS_INLINE void KYALaunchAtLoginLoginItemSetEnabled(BOOL enabled)
     }
     else
     {
-        KYALog(@"Failed to set login item to %@", @(enabled));
+        os_log_fault(KYAApplicationSupportLog(), "Failed to set login item to %{public}@", @(enabled));
     }
 }
 

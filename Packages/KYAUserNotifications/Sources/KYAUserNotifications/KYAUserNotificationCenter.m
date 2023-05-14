@@ -11,6 +11,7 @@
 
 @interface KYAUserNotificationCenter ()
 @property (nonatomic) UNUserNotificationCenter *center;
+@property (nonatomic) os_log_t log;
 @end
 
 @interface KYAUserNotification ()
@@ -41,6 +42,7 @@
     if(self)
     {
         self.center = center;
+        self.log = KYALogCreateWithCategory("UserNotifications");
     }
     return self;
 }
@@ -81,7 +83,7 @@
         KYAUserNotificationAuthorizationStatus status;
         if(error != nil)
         {
-            KYALog(@"Failed to request notification access: %@", error.userInfo);
+            os_log_error(self.log, "Failed to request notification access: %{public}@", error.userInfo);
             status = KYAUserNotificationAuthorizationStatusDenied;
         }
         else if(granted == YES)
@@ -129,10 +131,12 @@
     Auto request = [UNNotificationRequest requestWithIdentifier:identifier
                                                         content:content
                                                         trigger:nil];
+    
+    Auto log = self.log;
     [self.center addNotificationRequest:request withCompletionHandler:^(NSError *error) {
         if(error != nil)
         {
-            KYALog(@"Failed to add notification request. %@", error.userInfo);
+            os_log_error(log, "Failed to add notification request. %{public}@", error.userInfo);
         }
     }];
 }

@@ -19,6 +19,7 @@ const KYADeviceParameter KYADeviceParameterLowPowerMode = @"KYADeviceParameterLo
 @interface KYADevice ()
 @property (nonatomic, readwrite) KYABatteryMonitor *batteryMonitor;
 @property (nonatomic, readwrite) KYALowPowerModeMonitor *lowPowerModeMonitor;
+@property (nonatomic) os_log_t log;
 @end
 
 @implementation KYADevice
@@ -42,6 +43,7 @@ const KYADeviceParameter KYADeviceParameterLowPowerMode = @"KYADeviceParameterLo
     {
         self.batteryMonitor = [KYABatteryMonitor new];
         self.lowPowerModeMonitor = [KYALowPowerModeMonitor new];
+        self.log = KYALogCreateWithCategory("DeviceInfo");
     }
     return self;
 }
@@ -79,7 +81,7 @@ const KYADeviceParameter KYADeviceParameterLowPowerMode = @"KYADeviceParameterLo
         batteryMonitor.capacityChangeHandler = nil;
     }
     
-    KYALog(@"Battery Monitoring: %@", batteryMonitoringEnabled ? @"YES" : @"NO");
+    os_log(self.log, "Battery Monitoring: %{public}@", batteryMonitoringEnabled ? @"YES" : @"NO");
 }
 
 #pragma mark - Lower Power Mode
@@ -115,7 +117,7 @@ const KYADeviceParameter KYADeviceParameterLowPowerMode = @"KYADeviceParameterLo
         lowPowerModeMonitor.lowPowerModeChangeHandler = nil;
     }
     
-    KYALog(@"Low Power Mode Monitoring: %@", lowPowerModeMonitoringEnabled ? @"YES" : @"NO");
+    os_log(self.log, "Low Power Mode Monitoring: %{public}@", lowPowerModeMonitoringEnabled ? @"YES" : @"NO");
 }
 
 #pragma mark - Notifications
@@ -135,7 +137,7 @@ const KYADeviceParameter KYADeviceParameterLowPowerMode = @"KYADeviceParameterLo
                            userInfo:userInfo];
     });
     
-    KYALog(@"Device parameter did change: %@, %@.", deviceParameter, userInfo);
+    os_log(self.log, "Device parameter did change: %{public}@, %{public}@.", deviceParameter, userInfo);
 }
 
 @end
