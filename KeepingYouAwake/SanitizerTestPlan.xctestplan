@@ -1,0 +1,63 @@
+{
+  "configurations" : [
+    {
+      "id" : "84672315-AFF7-4555-9A40-85A2514E11C8",
+      "name" : "Random Repeating Tests",
+      "options" : {
+
+      }
+    },
+    {
+      "id" : "13C378A7-F775-445D-B99E-8C698C3A3D5E",
+      "name" : "Address Sanitization",
+      "options" : {
+        "addressSanitizer" : {
+          "detectStackUseAfterReturn" : true,
+          "enabled" : true
+        },
+        "undefinedBehaviorSanitizerEnabled" : true
+      }
+    },
+    {
+      "id" : "82FA29CB-AAF8-4544-A56F-F8241FAA052C",
+      "name" : "Thread Sanitization",
+      "options" : {
+        "threadSanitizerEnabled" : true
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:KeepingYouAwake.xcodeproj",
+      "identifier" : "DA637B3819F14693004C8838",
+      "name" : "KeepingYouAwake"
+    },
+    "testExecutionOrdering" : "random",
+    "testRepetitionMode" : "fixedIterations"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Packages\/KYAActivationDurations",
+        "identifier" : "KYAActivationDurationsTests",
+        "name" : "KYAActivationDurationsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Packages\/KYAApplicationEvents",
+        "identifier" : "KYAApplicationEventsTests",
+        "name" : "KYAApplicationEventsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Packages\/KYAApplicationSupport",
+        "identifier" : "KYAApplicationSupportTests",
+        "name" : "KYAApplicationSupportTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -195,8 +195,8 @@
 		DA2CCD5D26F8754C00568BDD /* KYAPreferencesContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesContentViewController.h; sourceTree = "<group>"; };
 		DA2CCD5E26F8754C00568BDD /* KYAPreferencesContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAPreferencesContentViewController.m; sourceTree = "<group>"; };
 		DA2CCD6326F87A4500568BDD /* KYAPreferencesContentViewControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesContentViewControllers.h; sourceTree = "<group>"; };
-		DA4121721F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DA4121731F5C07140083B6E6 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA2D55152A3B80FB003E09E3 /* DefaultTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DefaultTestPlan.xctestplan; sourceTree = "<group>"; };
+		DA2D55162A3B8379003E09E3 /* SanitizerTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SanitizerTestPlan.xctestplan; sourceTree = "<group>"; };
 		DA4835F126F8CF100073A062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KYAAdvancedPreferencesViewController.xib; sourceTree = "<group>"; };
 		DA4835F426F8CF160073A062 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/KYAAdvancedPreferencesViewController.strings; sourceTree = "<group>"; };
 		DA4835F826F8CFCC0073A062 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/KYAAdvancedPreferencesViewController.strings; sourceTree = "<group>"; };
@@ -657,6 +657,8 @@
 				DA54C12C1D69C55400AF9E9D /* Localizable.strings */,
 				DA637B3E19F14693004C8838 /* main.m */,
 				DAD68A7B27C957B30036ED19 /* MainMenu.xib */,
+				DA2D55152A3B80FB003E09E3 /* DefaultTestPlan.xctestplan */,
+				DA2D55162A3B8379003E09E3 /* SanitizerTestPlan.xctestplan */,
 			);
 			name = "Other…";
 			sourceTree = "<group>";
