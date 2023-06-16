@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -748,9 +748,10 @@
 		DA637B3119F14693004C8838 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = KYA;
 				DefaultBuildSystemTypeForWorkspace = Latest;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "Marcel Dierkes";
 				TargetAttributes = {
 					DA637B3819F14693004C8838 = {
@@ -986,7 +987,6 @@
 				DA51141D1E214E1600635931 /* nl */,
 				DAF3FB0B1EC6F61300B5BB36 /* da */,
 				DAD3B5771EC6FA5A0022E5D0 /* tr */,
-				DA4121721F5C07140083B6E6 /* zh */,
 				02600CAD29B39B3100441937 /* zh-Hant */,
 				DA66277320CC0688007834DB /* pl */,
 				DA66277420CC0689007834DB /* pt */,
@@ -1010,7 +1010,6 @@
 				DA51141E1E214E1600635931 /* nl */,
 				DAF3FB0C1EC6F61300B5BB36 /* da */,
 				DAD3B5781EC6FA5A0022E5D0 /* tr */,
-				DA4121731F5C07140083B6E6 /* zh */,
 				02600CAC29B39B3100441937 /* zh-Hant */,
 				DA66277520CC0693007834DB /* pl */,
 				DA66277620CC0695007834DB /* pt */,
@@ -1211,6 +1210,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1284,6 +1284,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
