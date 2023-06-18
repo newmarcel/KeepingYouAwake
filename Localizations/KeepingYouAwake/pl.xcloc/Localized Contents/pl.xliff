@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="KeepingYouAwake/Base.lproj/InfoPlist.strings" source-language="en" target-language="pl" datatype="plaintext">
+  <file original="KeepingYouAwake/InfoPlist.xcstrings" source-language="en" target-language="pl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -10,14 +10,14 @@
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2022 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2023 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Base.lproj/Localizable.strings" source-language="en" target-language="pl" datatype="plaintext">
+  <file original="KeepingYouAwake/Localizable.xcstrings" source-language="en" target-language="pl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
     </header>
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
@@ -26,12 +26,16 @@
       </trans-unit>
       <trans-unit id="Activate for Duration" xml:space="preserve">
         <source>Activate for Duration</source>
-        <target>Aktywuj przez</target>
+        <target state="translated">Aktywuj przez</target>
         <note>Activate for Duration</note>
       </trans-unit>
       <trans-unit id="Activate indefinitely when external display is connected" xml:space="preserve">
         <source>Activate indefinitely when external display is connected</source>
         <note>Activate indefinitely when external display is connected</note>
+      </trans-unit>
+      <trans-unit id="Activate when an external display is connected" xml:space="preserve">
+        <source>Activate when an external display is connected</source>
+        <note>Activate when an external display is connected</note>
       </trans-unit>
       <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
         <source>Afterwards your Mac will automatically go to sleep again when unused.</source>
@@ -52,14 +56,18 @@
       <trans-unit id="Click to allow sleep&#10;Right click to show menu" xml:space="preserve">
         <source>Click to allow sleep
 Right click to show menu</source>
-        <target>Kliknij aby zezwolić na uśpienie Kliknij prawym aby pokazać menu</target>
+        <target state="translated">Kliknij aby zezwolić na uśpienie Kliknij prawym aby pokazać menu</target>
         <note>Click to allow sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Click to prevent sleep&#10;Right click to show menu" xml:space="preserve">
         <source>Click to prevent sleep
 Right click to show menu</source>
-        <target>Kliknij aby zapobiegać uśpieniu Kliknij prawym aby pokazać menu</target>
+        <target state="translated">Kliknij aby zapobiegać uśpieniu Kliknij prawym aby pokazać menu</target>
         <note>Click to prevent sleep\nRight click to show menu</note>
+      </trans-unit>
+      <trans-unit id="Deactivate when switched to another user account" xml:space="preserve">
+        <source>Deactivate when switched to another user account</source>
+        <note>Deactivate when switched to another user account</note>
       </trans-unit>
       <trans-unit id="Default" xml:space="preserve">
         <source>Default</source>
@@ -67,7 +75,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Disable menu bar icon highlight color" xml:space="preserve">
         <source>Disable menu bar icon highlight color</source>
-        <target>Wyłącz podświetlenie ikony w menu</target>
+        <target state="translated">Wyłącz podświetlenie ikony w menu</target>
         <note>Disable menu bar icon highlight color</note>
       </trans-unit>
       <trans-unit id="Do you really want to reset the activation durations to the default values?" xml:space="preserve">
@@ -76,17 +84,12 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
         <source>Indefinitely</source>
-        <target>Nieograniczony</target>
+        <target state="translated">Nieograniczony</target>
         <note>Indefinitely</note>
       </trans-unit>
       <trans-unit id="OK" xml:space="preserve">
         <source>OK</source>
         <note>OK</note>
-      </trans-unit>
-      <trans-unit id="Settings…" xml:space="preserve">
-        <source>Settings…</source>
-        <target>Ustawienia…</target>
-        <note>Settings…</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep" xml:space="preserve">
         <source>Preventing Sleep</source>
@@ -98,7 +101,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Quit" xml:space="preserve">
         <source>Quit</source>
-        <target>Zakończ</target>
+        <target state="translated">Zakończ</target>
         <note>Quit</note>
       </trans-unit>
       <trans-unit id="Quit when activation duration is over" xml:space="preserve">
@@ -113,6 +116,11 @@ Right click to show menu</source>
         <source>Set Default: %@</source>
         <note>Set Default: %@</note>
       </trans-unit>
+      <trans-unit id="Settings…" xml:space="preserve">
+        <source>Settings…</source>
+        <target state="translated">Ustawienia…</target>
+        <note>Settings…</note>
+      </trans-unit>
       <trans-unit id="The entered duration is invalid. Please try again." xml:space="preserve">
         <source>The entered duration is invalid. Please try again.</source>
         <note>The entered duration is invalid. Please try again.</note>
@@ -123,7 +131,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Version" xml:space="preserve">
         <source>Version</source>
-        <target>Wersja</target>
+        <target state="translated">Wersja</target>
         <note>Version</note>
       </trans-unit>
       <trans-unit id="You can still manually enable sleep mode for your Mac." xml:space="preserve">
@@ -136,54 +144,14 @@ Right click to show menu</source>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/en.lproj/KYAPreferences.strings" source-language="en" target-language="pl" datatype="plaintext">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
-    </header>
-    <body>
-      <trans-unit id="About" xml:space="preserve">
-        <source>About</source>
-        <target>Informacje</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Activation Duration" xml:space="preserve">
-        <source>Activation Duration</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Advanced" xml:space="preserve">
-        <source>Advanced</source>
-        <target>Zaawansowane</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Battery" xml:space="preserve">
-        <source>Battery</source>
-        <target>Bateria</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="General" xml:space="preserve">
-        <source>General</source>
-        <target>Ogólne</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="KeepingYouAwake – Settings" xml:space="preserve">
-        <source>KeepingYouAwake – Settings</source>
-        <target>KeepingYouAwake – Ustawienia</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Updates" xml:space="preserve">
-        <source>Updates</source>
-        <note/>
-      </trans-unit>
-    </body>
-  </file>
   <file original="KeepingYouAwake/Preferences/KYAAdvancedPreferencesViewController/Base.lproj/KYAAdvancedPreferencesViewController.xib" source-language="en" target-language="pl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
     </header>
     <body>
       <trans-unit id="3GX-gq-Yaq.title" xml:space="preserve">
         <source>Reset to Default</source>
-        <target>Zresetuj ustawienia</target>
+        <target state="translated">Zresetuj ustawienia</target>
         <note>Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "3GX-gq-Yaq";</note>
       </trans-unit>
       <trans-unit id="7z8-pS-A86.title" xml:space="preserve">
@@ -196,24 +164,24 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="xdm-wP-gM6.title" xml:space="preserve">
         <source>Only change these advanced settings if you know what you are doing. Most of these settings require an app restart.</source>
-        <target>Zmień ustawienia zaawansowane tylko, jeśli wiesz co robisz. Większość ustawień wymaga ponownego uruchomienia aplikacji.</target>
+        <target state="translated">Zmień ustawienia zaawansowane tylko, jeśli wiesz co robisz. Większość ustawień wymaga ponownego uruchomienia aplikacji.</target>
         <note>Class = "NSTextFieldCell"; title = "Only change these advanced settings if you know what you are doing. Most of these settings require an app restart."; ObjectID = "xdm-wP-gM6";</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Preferences/KYABatteryPreferencesViewController/Base.lproj/KYABatteryPreferencesViewController.xib" source-language="en" target-language="pl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
     </header>
     <body>
       <trans-unit id="HtM-vx-ZuN.title" xml:space="preserve">
         <source>10 %</source>
-        <target>10 %</target>
+        <target state="translated">10 %</target>
         <note>Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "HtM-vx-ZuN";</note>
       </trans-unit>
       <trans-unit id="M11-sw-GhM.title" xml:space="preserve">
         <source>90 %</source>
-        <target>90 %</target>
+        <target state="translated">90 %</target>
         <note>Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "M11-sw-GhM";</note>
       </trans-unit>
       <trans-unit id="SHH-RQ-HPH.title" xml:space="preserve">
@@ -222,17 +190,17 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="aXx-hk-9R9.title" xml:space="preserve">
         <source>Low Power Mode</source>
-        <target>Tryb niskiego zużycia energii</target>
+        <target state="translated">Tryb niskiego zużycia energii</target>
         <note>Class = "NSTextFieldCell"; title = "Low Power Mode"; ObjectID = "aXx-hk-9R9";</note>
       </trans-unit>
       <trans-unit id="gx4-rK-1he.title" xml:space="preserve">
         <source>Deactivate when battery capacity is below</source>
-        <target>Wyłącz gdy poziom baterii jest poniżej</target>
+        <target state="translated">Wyłącz gdy poziom baterii jest poniżej</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "gx4-rK-1he";</note>
       </trans-unit>
       <trans-unit id="l4a-Sa-RAE.title" xml:space="preserve">
         <source>This value will be ignored when you manually start the app below this battery capacity.</source>
-        <target>Wartość zostanie zignorowana jeśli uruchomisz aplikację gdy poziom baterii będzie mniejszy niż podana wartość.</target>
+        <target state="translated">Wartość zostanie zignorowana jeśli uruchomisz aplikację gdy poziom baterii będzie mniejszy niż podana wartość.</target>
         <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "l4a-Sa-RAE";</note>
       </trans-unit>
       <trans-unit id="mcf-JV-nyg.title" xml:space="preserve">
@@ -241,19 +209,19 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="ovF-0F-TMc.title" xml:space="preserve">
         <source>50 %</source>
-        <target>50 %</target>
+        <target state="translated">50 %</target>
         <note>Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "ovF-0F-TMc";</note>
       </trans-unit>
       <trans-unit id="pvY-d7-nKX.title" xml:space="preserve">
         <source>Battery Level</source>
-        <target>Poziom baterii</target>
+        <target state="translated">Poziom baterii</target>
         <note>Class = "NSTextFieldCell"; title = "Battery Level"; ObjectID = "pvY-d7-nKX";</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYAAddDurationPreferencesViewController.xib" source-language="en" target-language="pl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
     </header>
     <body>
       <trans-unit id="5bs-m4-hy9.title" xml:space="preserve">
@@ -284,7 +252,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYADurationPreferencesViewController.xib" source-language="en" target-language="pl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
     </header>
     <body>
       <trans-unit id="2Az-3u-oGb.title" xml:space="preserve">
@@ -292,7 +260,7 @@ Right click to show menu</source>
         <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "2Az-3u-oGb";</note>
       </trans-unit>
       <trans-unit id="3es-An-BPG.title" xml:space="preserve">
-        <source>Set Default</source>
+        <source>3es-An-BPG.title</source>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "3es-An-BPG";</note>
       </trans-unit>
       <trans-unit id="4tU-j1-N4m.title" xml:space="preserve">
@@ -300,7 +268,7 @@ Right click to show menu</source>
         <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "4tU-j1-N4m";</note>
       </trans-unit>
       <trans-unit id="13c-ID-Fgy.title" xml:space="preserve">
-        <source>Reset…</source>
+        <source>13c-ID-Fgy.title</source>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "13c-ID-Fgy";</note>
       </trans-unit>
       <trans-unit id="Are-vs-Awn.title" xml:space="preserve">
@@ -331,12 +299,12 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Preferences/KYAGeneralPreferencesViewController/Base.lproj/KYAGeneralPreferencesViewController.xib" source-language="en" target-language="pl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
     </header>
     <body>
       <trans-unit id="7QN-oX-fJU.title" xml:space="preserve">
         <source>Immediately starts preventing sleep when launched.</source>
-        <target>Natychmiastowo zapobiegaj uśpieniu przy uruchomieniu.</target>
+        <target state="translated">Natychmiastowo zapobiegaj uśpieniu przy uruchomieniu.</target>
         <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU";</note>
       </trans-unit>
       <trans-unit id="7dk-Tj-9aG.title" xml:space="preserve">
@@ -345,46 +313,86 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
         <source>Start at Login</source>
-        <target>Uruchom podczas logowania</target>
+        <target state="translated">Uruchom podczas logowania</target>
         <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "YWD-DY-pgf";</note>
       </trans-unit>
       <trans-unit id="jxf-J8-dHN.title" xml:space="preserve">
         <source>Automatically opens the app when you start your Mac.</source>
-        <target>Automatycznie uruchom aplikację podczas startu Maca.</target>
+        <target state="translated">Automatycznie uruchom aplikację podczas startu Maca.</target>
         <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "jxf-J8-dHN";</note>
       </trans-unit>
       <trans-unit id="zql-rZ-9xH.title" xml:space="preserve">
         <source>Activate on Launch</source>
-        <target>Włącz po uruchomieniu</target>
+        <target state="translated">Włącz po uruchomieniu</target>
         <note>Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "zql-rZ-9xH";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYAPreferences.xcstrings" source-language="en" target-language="pl" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+    </header>
+    <body>
+      <trans-unit id="About" xml:space="preserve">
+        <source>About</source>
+        <target state="translated">Informacje</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activation Duration" xml:space="preserve">
+        <source>Activation Duration</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Advanced" xml:space="preserve">
+        <source>Advanced</source>
+        <target state="translated">Zaawansowane</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Battery" xml:space="preserve">
+        <source>Battery</source>
+        <target state="translated">Bateria</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="General" xml:space="preserve">
+        <source>General</source>
+        <target state="translated">Ogólne</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="KeepingYouAwake – Settings" xml:space="preserve">
+        <source>KeepingYouAwake – Settings</source>
+        <target state="translated">KeepingYouAwake – Ustawienia</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Updates" xml:space="preserve">
+        <source>Updates</source>
+        <note/>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Preferences/KYAUpdatePreferencesViewController/Base.lproj/KYAUpdatePreferencesViewController.xib" source-language="en" target-language="pl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
     </header>
     <body>
       <trans-unit id="F2o-Is-2nW.title" xml:space="preserve">
         <source>Automatically Check for Updates</source>
-        <target>Automatycznie sprawdzaj aktualizacje</target>
+        <target state="translated">Automatycznie sprawdzaj aktualizacje</target>
         <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "F2o-Is-2nW";</note>
       </trans-unit>
       <trans-unit id="oBK-47-iMk.title" xml:space="preserve">
         <source>Check for Pre-Release Updates</source>
-        <target>Poszukaj aktualizacji wczesnych wersji</target>
+        <target state="translated">Poszukaj aktualizacji wczesnych wersji</target>
         <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "oBK-47-iMk";</note>
       </trans-unit>
       <trans-unit id="tAT-1z-ZPp.title" xml:space="preserve">
         <source>Check Now</source>
-        <target>Sprawdź aktualizacje</target>
+        <target state="translated">Sprawdź aktualizacje</target>
         <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "tAT-1z-ZPp";</note>
       </trans-unit>
     </body>
   </file>
-  <file original="KYALauncher/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="pl">
+  <file original="KYALauncher/InfoPlist.xcstrings" source-language="en" target-language="pl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3.1" build-num="13E500a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -392,7 +400,7 @@ Right click to show menu</source>
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2022 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2023 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
