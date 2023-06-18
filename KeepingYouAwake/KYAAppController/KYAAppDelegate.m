@@ -9,10 +9,10 @@
 #import "KYAAppDelegate.h"
 #import "KYADefines.h"
 #import "KYAAppUpdater.h"
-#import "KYAPreferencesWindowController.h"
+#import "KYASettingsWindow.h"
 
 @interface KYAAppDelegate () <NSWindowDelegate>
-@property (nonatomic, nullable) KYAPreferencesWindowController *preferencesWindowController;
+@property (weak, nonatomic, nullable) KYASettingsWindow *settingsWindow;
 @end
 
 @implementation KYAAppDelegate
@@ -29,30 +29,15 @@
     }
 }
 
-#pragma mark - Preferences Window
-
-- (NSWindowController *)preferencesWindowController
-{
-    if(_preferencesWindowController == nil)
-    {
-        _preferencesWindowController = [KYAPreferencesWindowController new];
-    }
-    return _preferencesWindowController;
-}
+#pragma mark - Settings Window
 
 - (void)showPreferencesWindow:(id)sender
 {
     [NSApplication.sharedApplication activateIgnoringOtherApps:YES];
 
-    [self.preferencesWindowController showWindow:sender];
-    self.preferencesWindowController.window.delegate = self;
-}
-
-#pragma mark - Window Delegate
-
-- (void)windowWillClose:(NSNotification *)notification
-{
-    self.preferencesWindowController = nil;
+    Auto settingsWindow = self.settingsWindow ?: [KYASettingsWindow new];
+    [settingsWindow makeKeyAndOrderFront:sender];
+    self.settingsWindow = settingsWindow;
 }
 
 @end
