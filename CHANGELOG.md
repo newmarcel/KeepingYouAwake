@@ -6,6 +6,8 @@
 
 - updated the Traditional Chinese translation ([#198](https://github.com/newmarcel/KeepingYouAwake/pull/198))
     - *Thank you [YuerLee](https://github.com/YuerLee)!*
+- updated the French translation ([#201](https://github.com/newmarcel/KeepingYouAwake/pull/201))
+    - *Thank you [tmuguet](https://github.com/tmuguet)!*
 
 ### v1.6.4 ###
 

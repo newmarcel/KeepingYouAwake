@@ -1,3 +1,6 @@
+/* Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "7dk-Tj-9aG"; */
+"7dk-Tj-9aG.title" = "Paramètres des notifications...";
+
 /* Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU"; */
 "7QN-oX-fJU.title" = "Empêche la mise en veille dès le lancement de KeepingYouAwake.";
 

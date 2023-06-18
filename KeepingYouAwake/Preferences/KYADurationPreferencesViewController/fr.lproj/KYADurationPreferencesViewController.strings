@@ -1,9 +1,21 @@
 /* Class = "NSMenuItem"; title = "Remove"; ObjectID = "2Az-3u-oGb"; */
 "2Az-3u-oGb.title" = "Enlever";
 
+/* Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "4tU-j1-N4m"; */
+"4tU-j1-N4m.title" = "La durée d'activation par défaut est utilisée quand vous cliquez sur l'icône du menu.";
+
+/* Class = "NSButtonCell"; title = "Set Default"; ObjectID = "Are-vs-Awn"; */
+"Are-vs-Awn.title" = "Mettre par défaut";
+
+/* Class = "NSButtonCell"; title = "Reset…"; ObjectID = "COs-G1-J6K"; */
+"COs-G1-J6K.title" = "Rétablir...";
+
 /* Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[0] = "Remove"; ObjectID = "dml-Pt-frp"; */
 "dml-Pt-frp.ibShadowedToolTips[0]" = "Enlever";
 
 /* Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[1] = "Add"; ObjectID = "dml-Pt-frp"; */
 "dml-Pt-frp.ibShadowedToolTips[1]" = "Ajouter";
+
+/* Class = "NSMenuItem"; title = "Set Default"; ObjectID = "U86-Hk-nfT"; */
+"U86-Hk-nfT.title" = "Mettre comme par défaut";
 

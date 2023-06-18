@@ -13,9 +13,15 @@
 /* Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "M11-sw-GhM"; */
 "M11-sw-GhM.title" = "90 %";
 
+/* Class = "NSButtonCell"; title = "Deactivate when Low Power Mode is enabled"; ObjectID = "mcf-JV-nyg"; */
+"mcf-JV-nyg.title" = "Désactiver quand le mode économie d'énergie est activé";
+
 /* Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "ovF-0F-TMc"; */
 "ovF-0F-TMc.title" = "50 %";
 
 /* Class = "NSTextFieldCell"; title = "Battery Level"; ObjectID = "pvY-d7-nKX"; */
 "pvY-d7-nKX.title" = "Niveau de la batterie";
+
+/* Class = "NSTextFieldCell"; title = "Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging."; ObjectID = "SHH-RQ-HPH"; */
+"SHH-RQ-HPH.title" = "Le mode économie d'énergie peut être activé sur les Macs supportés dans Préférences Systèmes > Batterie et ne sera pas appliqué lorsqu'en charge.";
 
