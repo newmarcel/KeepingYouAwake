@@ -35,7 +35,7 @@
 
 + (NSString *)preferredTitle
 {
-    return KYA_PREFS_L10N_ADVANCED;
+    return KYA_SETTINGS_L10N_ADVANCED;
 }
 
 - (BOOL)resizesView

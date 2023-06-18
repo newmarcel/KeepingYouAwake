@@ -8,6 +8,7 @@
 
 #import "KYAPreferencesWindowController.h"
 #import "KYADefines.h"
+#import "KYASettingsLocalizedStrings.h"
 #import "KYAAppUpdater.h"
 #import "KYAPreferencesContentViewControllers.h"
 
@@ -34,7 +35,7 @@
 {
     [super windowDidLoad];
     
-    self.window.title = KYA_PREFS_L10N_PREFERENCES_TITLE;
+    self.window.title = KYA_SETTINGS_L10N_TITLE;
     
     [self configureTabViewController];
 }

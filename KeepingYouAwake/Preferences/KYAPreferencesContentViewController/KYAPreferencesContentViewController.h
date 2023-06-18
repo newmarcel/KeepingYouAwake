@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "KYAPreferencesLocalizedStrings.h"
+#import "KYASettingsLocalizedStrings.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

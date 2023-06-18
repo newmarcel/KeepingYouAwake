@@ -38,7 +38,7 @@ static NSInteger const KYAActivationDurationLimit = 42;
 
 + (NSString *)preferredTitle
 {
-    return KYA_PREFS_L10N_ACTIVATION_DURATION;
+    return KYA_SETTINGS_L10N_ACTIVATION_DURATION;
 }
 
 - (BOOL)resizesView

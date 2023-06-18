@@ -31,7 +31,7 @@
 
 + (NSString *)preferredTitle
 {
-    return KYA_PREFS_L10N_BATTERY;
+    return KYA_SETTINGS_L10N_BATTERY;
 }
 
 - (BOOL)resizesView

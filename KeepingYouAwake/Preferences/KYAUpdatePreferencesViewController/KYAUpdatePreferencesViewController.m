@@ -28,7 +28,7 @@
 
 + (NSString *)preferredTitle
 {
-    return KYA_PREFS_L10N_UPDATES;
+    return KYA_SETTINGS_L10N_UPDATES;
 }
 
 - (BOOL)resizesView
