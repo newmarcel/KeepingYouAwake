@@ -1,0 +1,246 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "3GX-gq-Yaq.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Reset to Default\"; ObjectID = \"3GX-gq-Yaq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nulstil til standard"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zurücksetzen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Reset to Default"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar valores por defecto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rétablir les réglages par défaut"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setel Ulang Ke Pengaturan Standar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reimposta predefinite"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デフォルトに戻す"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기본값으로 복원"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Herstel standaard"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zresetuj ustawienia"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar valores padrão"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сбросить"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varsayılan ayarlara dön"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скинути до стандарних"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置为初始状态"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重設為預設值"
+          }
+        }
+      }
+    },
+    "7z8-pS-A86.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Check\"; ObjectID = \"7z8-pS-A86\"; Note = \"Do not localize\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Check"
+          }
+        }
+      }
+    },
+    "HPO-gf-tIY.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Text Cell\"; ObjectID = \"HPO-gf-tIY\"; Note = \"Do not localize\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Text Cell"
+          }
+        }
+      }
+    },
+    "xdm-wP-gM6.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Only change these advanced settings if you know what you are doing. Most of these settings require an app restart.\"; ObjectID = \"xdm-wP-gM6\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ændre kun disse avancerede indstillinger, hvis du ved hvad du gør. De fleste af disse indstillinger kræver genstar af applikationen."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ändere diese erweiterten Einstellungen nur, wenn du weißt, was du tust. Die meisten dieser Einstellungen erfordern einen Neustart."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Only change these advanced settings if you know what you are doing. Most of these settings require an app restart."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo cambia estas opciones avanzadas si sabes lo que estas haciendo. La mayoría de estas preferencias requieren reiniciar de la aplicación."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous utilisez ces préférences avancées à vos risques. Ils requièrent un redémarrage de KeepingYouAwake."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubah preferensi lanjutan ini hanya jika Anda tahu apa yang Anda lakukan. Sebagian besar preferensi ini memerlukan Anda untuk merestart aplikasi."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica queste impostazioni avanzate solo se sai quello che stai facendo. La maggior parte richiede un riavvio dell'app."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "これらの高度な設定は動作内容を理解した上で変更してください。設定を変更した場合アプリの再起動が必要です"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "고급 환경설정은 내용을 숙지한 경우만 사용하십시오. 대부분의 고급 환경설정은 재시작이 필요합니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wijzig deze geavanceerde voorkeuren alleen als u weet wat u doet. De meeste worden pas actief na een herstart."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zmień ustawienia zaawansowane tylko, jeśli wiesz co robisz. Większość ustawień wymaga ponownego uruchomienia aplikacji."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifique estas opções avançadas apenas se souber o que está fazendo. A maioria destas configurações requerem reiniciar a aplicação."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не изменяйте эти расширенные настройки, если вы не знаете, что делаете. Большинство из этих настроек требуют перезапуска приложения."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yalnızca ne yaptığınızı biliyorsanız bu gelişmiş tercihleri değiştirin. Bu tercihlerin birçoğu uygulamanın yeniden başlatılmasını gerektirir."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Змінюйте ці налаштування якщо ви добре розумієте що робите. Потрібно буде зробити рестарт додатку."
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请只在了解如下设置的前提下修改。大多数设置都需要重启此软件才能生效。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "修改前，請三思。大部分設定將於程式重啟後生效。"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

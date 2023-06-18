@@ -1,8 +1,0 @@
-/* Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "F2o-Is-2nW"; */
-"F2o-Is-2nW.title" = "自動檢查版本更新";
-
-/* Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "oBK-47-iMk"; */
-"oBK-47-iMk.title" = "包含預覽版更新";
-
-/* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "tAT-1z-ZPp"; */
-"tAT-1z-ZPp.title" = "立即檢查";
