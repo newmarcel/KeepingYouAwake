@@ -1,12 +1,14 @@
 NAME = KeepingYouAwake
-VERSION = 1.6.3
+VERSION = 1.6.5
 
 SCHEME = $(NAME)
+TARGET = $(NAME)
+DIST_TARGET = $(NAME) (Direct)
 WORKSPACE = $(NAME).xcworkspace
-CONFIGURATION = Debug
 
 BUILD_DIR = build
 OUTPUT_DIR = dist
+LOCALIZATIONS_DIR = Localizations
 
 XCODEBUILD = set -o pipefail && env NSUnbufferedIO=YES xcodebuild
 BEAUTIFY = | xcbeautify
@@ -17,20 +19,48 @@ default: clean
 
 clean:
 	$(RM) -r $(BUILD_DIR)
+PHONY: clean
 
 dist-clean:
 	$(RM) -r $(OUTPUT_DIR)
+PHONY: dist-clean
 
 test:
 	@mkdir -p "$(BUILD_DIR)"
 	$(XCODEBUILD) test \
 	-workspace "$(WORKSPACE)" \
 	-scheme "$(SCHEME)" \
-	-configuration "$(CONFIGURATION)" \
 	-derivedDataPath "$(BUILD_DIR)" \
 	$(DISABLE_PACKAGE_RESOLUTION) \
 	$(SAVE_LOG) \
 	$(BEAUTIFY)
+PHONY: test
+
+test-with-sanitizers:
+	@mkdir -p "$(BUILD_DIR)"
+	$(XCODEBUILD) test \
+	-workspace "$(WORKSPACE)" \
+	-scheme "$(SCHEME)" \
+	-testPlan "SanitizerTestPlan" \
+	-derivedDataPath "$(BUILD_DIR)" \
+	$(DISABLE_PACKAGE_RESOLUTION) \
+	$(SAVE_LOG) \
+	$(BEAUTIFY)
+PHONY: test-with-sanitizers
+
+l10n-export:
+	Localizations/l10n-export.sh
+.PHONY: l10n-export
+
+l10n-import:
+	Localizations/l10n-import.sh
+.PHONY: l10n-export
+
+l10n-update:
+	$(MAKE) l10n-export
+	$(MAKE) l10n-import
+	$(MAKE) l10n-export
+.PHONY: l10n-update
 
 $(OUTPUT_DIR)/$(NAME).xcarchive:
 	$(XCODEBUILD) archive \
@@ -58,9 +88,4 @@ $(OUTPUT_DIR)/$(NAME)-$(VERSION).zip:
 dist: $(OUTPUT_DIR)/$(NAME)-$(VERSION).zip
 	@echo "Verifying code signing identity..."
 	@spctl -a -vv $(OUTPUT_DIR)/$(NAME).app
-
-clangformat:
-	$(info Reformatting source files with clang-format...)
-	clang-format -style=file -i $(shell pwd)/**/*.{h,m}
-
-.PHONY: clean dist-clean test dist clang-format
+PHONY: dist
