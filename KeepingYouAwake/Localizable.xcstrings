@@ -161,21 +161,21 @@
         }
       }
     },
-    "Activate indefinitely when external display is connected" : {
-      "comment" : "Activate indefinitely when external display is connected",
-      "extractionState" : "manual",
-      "localizations" : {
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activer indéfiniment lorsqu'un moniteur externe est connecté"
-          }
-        }
-      }
-    },
     "Activate when an external display is connected" : {
       "comment" : "Activate when an external display is connected",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivieren, wenn ein externes Display verbunden wird"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer lorsqu'un moniteur externe est connecté"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -232,6 +232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tillad skærmen at slukke"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Display-Ruhezustand erlauben"
           }
         },
         "fr" : {
@@ -567,6 +573,12 @@
     "Deactivate when switched to another user account" : {
       "comment" : "Deactivate when switched to another user account",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beim Benutzerwechsel deaktivieren"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
