@@ -2,11 +2,11 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="KeepingYouAwake/InfoPlist.xcstrings" source-language="en" target-language="pt" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
-        <source>KeepingYouAwake</source>
+        <source>KeepingYouAwake (Direct)</source>
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
@@ -17,7 +17,7 @@
   </file>
   <file original="KeepingYouAwake/Localizable.xcstrings" source-language="en" target-language="pt" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
@@ -28,10 +28,6 @@
         <source>Activate for Duration</source>
         <target state="translated">Ativar durante</target>
         <note>Activate for Duration</note>
-      </trans-unit>
-      <trans-unit id="Activate indefinitely when external display is connected" xml:space="preserve">
-        <source>Activate indefinitely when external display is connected</source>
-        <note>Activate indefinitely when external display is connected</note>
       </trans-unit>
       <trans-unit id="Activate when an external display is connected" xml:space="preserve">
         <source>Activate when an external display is connected</source>
@@ -148,7 +144,7 @@ Clique com o botão direito para exibir o menu</target>
   </file>
   <file original="KeepingYouAwake/Preferences/KYAAdvancedPreferencesViewController/Base.lproj/KYAAdvancedPreferencesViewController.xib" source-language="en" target-language="pt" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
     <body>
       <trans-unit id="3GX-gq-Yaq.title" xml:space="preserve">
@@ -173,7 +169,7 @@ Clique com o botão direito para exibir o menu</target>
   </file>
   <file original="KeepingYouAwake/Preferences/KYABatteryPreferencesViewController/Base.lproj/KYABatteryPreferencesViewController.xib" source-language="en" target-language="pt" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
     <body>
       <trans-unit id="HtM-vx-ZuN.title" xml:space="preserve">
@@ -223,7 +219,7 @@ Clique com o botão direito para exibir o menu</target>
   </file>
   <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYAAddDurationPreferencesViewController.xib" source-language="en" target-language="pt" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
     <body>
       <trans-unit id="5bs-m4-hy9.title" xml:space="preserve">
@@ -254,7 +250,7 @@ Clique com o botão direito para exibir o menu</target>
   </file>
   <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYADurationPreferencesViewController.xib" source-language="en" target-language="pt" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
     <body>
       <trans-unit id="2Az-3u-oGb.title" xml:space="preserve">
@@ -301,7 +297,7 @@ Clique com o botão direito para exibir o menu</target>
   </file>
   <file original="KeepingYouAwake/Preferences/KYAGeneralPreferencesViewController/Base.lproj/KYAGeneralPreferencesViewController.xib" source-language="en" target-language="pt" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
     <body>
       <trans-unit id="7QN-oX-fJU.title" xml:space="preserve">
@@ -332,7 +328,7 @@ Clique com o botão direito para exibir o menu</target>
   </file>
   <file original="KeepingYouAwake/Preferences/KYAPreferences.xcstrings" source-language="en" target-language="pt" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
     <body>
       <trans-unit id="About" xml:space="preserve">
@@ -372,7 +368,7 @@ Clique com o botão direito para exibir o menu</target>
   </file>
   <file original="KeepingYouAwake/Preferences/KYAUpdatePreferencesViewController/Base.lproj/KYAUpdatePreferencesViewController.xib" source-language="en" target-language="pt" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
     <body>
       <trans-unit id="F2o-Is-2nW.title" xml:space="preserve">
@@ -394,7 +390,7 @@ Clique com o botão direito para exibir o menu</target>
   </file>
   <file original="KYALauncher/InfoPlist.xcstrings" source-language="en" target-language="pt" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
