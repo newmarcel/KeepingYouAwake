@@ -11,7 +11,7 @@
 #define KYA_SETTINGS_LOCALIZED_STRING(__key, __comment) \
     NSLocalizedStringFromTableInBundle( \
     __key, \
-    @"KYAPreferences", \
+    @"KYASettings", \
     NSBundle.mainBundle, \
     __comment)
 
