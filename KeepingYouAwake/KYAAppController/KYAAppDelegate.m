@@ -31,7 +31,7 @@
 
 #pragma mark - Settings Window
 
-- (void)showPreferencesWindow:(id)sender
+- (void)showSettingsWindow:(id)sender
 {
     [NSApplication.sharedApplication activateIgnoringOtherApps:YES];
 

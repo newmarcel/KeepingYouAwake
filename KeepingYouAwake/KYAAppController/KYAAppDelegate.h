@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KYAAppDelegate : NSObject <NSApplicationDelegate>
 
-- (IBAction)showPreferencesWindow:(id)sender;
+- (IBAction)showSettingsWindow:(id)sender;
 
 @end
 
