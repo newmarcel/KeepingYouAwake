@@ -141,7 +141,7 @@ Right click to show menu</source>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/KYAAdvancedPreferencesViewController/Base.lproj/KYAAdvancedPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYAAdvancedPreferencesViewController/Base.lproj/KYAAdvancedPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
@@ -166,7 +166,7 @@ Right click to show menu</source>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/KYABatteryPreferencesViewController/Base.lproj/KYABatteryPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYABatteryPreferencesViewController/Base.lproj/KYABatteryPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
@@ -216,7 +216,7 @@ Right click to show menu</source>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYAAddDurationPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYADurationPreferencesViewController/Base.lproj/KYAAddDurationPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
@@ -247,7 +247,7 @@ Right click to show menu</source>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYADurationPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYADurationPreferencesViewController/Base.lproj/KYADurationPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
@@ -294,7 +294,7 @@ Right click to show menu</source>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/KYAGeneralPreferencesViewController/Base.lproj/KYAGeneralPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYAGeneralPreferencesViewController/Base.lproj/KYAGeneralPreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
@@ -325,7 +325,7 @@ Right click to show menu</source>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/KYAPreferences.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYASettings.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
@@ -365,7 +365,7 @@ Right click to show menu</source>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Preferences/KYAUpdatePreferencesViewController/Base.lproj/KYAUpdatePreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYAUpdatePreferencesViewController/Base.lproj/KYAUpdatePreferencesViewController.xib" source-language="en" target-language="ko" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
