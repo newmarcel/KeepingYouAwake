@@ -1,18 +1,18 @@
 //
-//  KYAPreferencesContentViewController.m
+//  KYASettingsContentViewController.m
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 20.09.21.
 //  Copyright © 2021 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYAPreferencesContentViewController.h"
+#import "KYASettingsContentViewController.h"
 #import "KYADefines.h"
 
-@interface KYAPreferencesContentViewController ()
+@interface KYASettingsContentViewController ()
 @end
 
-@implementation KYAPreferencesContentViewController
+@implementation KYASettingsContentViewController
 
 + (NSTabViewItem *)preferredTabViewItem
 {

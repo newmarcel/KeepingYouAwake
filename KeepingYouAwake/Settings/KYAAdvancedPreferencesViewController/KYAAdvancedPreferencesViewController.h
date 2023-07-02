@@ -8,10 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 #import <KYAApplicationSupport/KYAApplicationSupport.h>
-#import "KYAPreferencesContentViewController.h"
+#import "KYASettingsContentViewController.h"
 
 /// Shows "Advanced" preferences.
-@interface KYAAdvancedPreferencesViewController : KYAPreferencesContentViewController <NSTableViewDataSource, NSTableViewDelegate>
+@interface KYAAdvancedPreferencesViewController : KYASettingsContentViewController <NSTableViewDataSource, NSTableViewDelegate>
 
 /// A table view that lists individual preferences
 @property (weak, nonatomic, nullable) IBOutlet NSTableView *tableView;

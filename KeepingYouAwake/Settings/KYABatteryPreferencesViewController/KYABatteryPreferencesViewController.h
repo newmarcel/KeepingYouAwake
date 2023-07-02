@@ -8,12 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 #import <KYADeviceInfo/KYADeviceInfo.h>
-#import "KYAPreferencesContentViewController.h"
+#import "KYASettingsContentViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// Shows "Battery" preferences.
-@interface KYABatteryPreferencesViewController : KYAPreferencesContentViewController
+@interface KYABatteryPreferencesViewController : KYASettingsContentViewController
 /// Provides access to the battery level and
 /// low power mode of the physical device.
 @property (nonatomic, readonly) KYADevice *device;

@@ -8,13 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import <KYAActivationDurations/KYAActivationDurations.h>
-#import "KYAPreferencesContentViewController.h"
+#import "KYASettingsContentViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// Shows "Activation Durations" preferences and offers an
 /// interface to add and remove durations.
-@interface KYADurationPreferencesViewController : KYAPreferencesContentViewController <NSTableViewDataSource, NSTableViewDelegate>
+@interface KYADurationPreferencesViewController : KYASettingsContentViewController <NSTableViewDataSource, NSTableViewDelegate>
 @property (weak, nonatomic) IBOutlet NSTableView *tableView;
 @property (weak, nonatomic) IBOutlet NSSegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet NSButton *setDefaultButton;

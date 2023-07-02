@@ -8,10 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 #import <KYAUserNotifications/KYAUserNotifications.h>
-#import "KYAPreferencesContentViewController.h"
+#import "KYASettingsContentViewController.h"
 
 /// Shows "General" preferences.
-@interface KYAGeneralPreferencesViewController : KYAPreferencesContentViewController
+@interface KYAGeneralPreferencesViewController : KYASettingsContentViewController
 
 - (IBAction)openNotificationPreferences:(nullable id)sender API_AVAILABLE(macos(11.0));
 

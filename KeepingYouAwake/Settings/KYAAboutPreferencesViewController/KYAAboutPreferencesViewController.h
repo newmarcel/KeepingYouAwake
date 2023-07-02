@@ -8,12 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 #import <KYAApplicationSupport/KYAApplicationSupport.h>
-#import "KYAPreferencesContentViewController.h"
+#import "KYASettingsContentViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// Shows an "About" screen with version and copyright information.
-@interface KYAAboutPreferencesViewController : KYAPreferencesContentViewController
+@interface KYAAboutPreferencesViewController : KYASettingsContentViewController
 @property (copy, nonatomic, readonly) NSString *versionText;
 @property (copy, nonatomic, readonly) NSString *copyrightText;
 

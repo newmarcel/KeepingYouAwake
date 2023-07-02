@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "KYAAppUpdater.h"
-#import "KYAPreferencesContentViewController.h"
+#import "KYASettingsContentViewController.h"
 
 #if KYA_APP_UPDATER_ENABLED
 
@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Shows "Update" settings and allows checking
 /// for available app updates.
-@interface KYAUpdateSettingsViewController : KYAPreferencesContentViewController
+@interface KYAUpdateSettingsViewController : KYASettingsContentViewController
 @property (nonatomic, readonly) KYAAppUpdater *appUpdater;
 
 - (IBAction)checkForUpdates:(id)sender;
