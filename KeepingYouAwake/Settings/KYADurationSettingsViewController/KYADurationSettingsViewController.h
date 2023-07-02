@@ -1,5 +1,5 @@
 //
-//  KYADurationPreferencesViewController.h
+//  KYADurationSettingsViewController.h
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 27.07.19.
@@ -12,9 +12,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Shows "Activation Durations" preferences and offers an
+/// Shows "Activation Durations" settings and offers an
 /// interface to add and remove durations.
-@interface KYADurationPreferencesViewController : KYASettingsContentViewController <NSTableViewDataSource, NSTableViewDelegate>
+@interface KYADurationSettingsViewController : KYASettingsContentViewController <NSTableViewDataSource, NSTableViewDelegate>
 @property (weak, nonatomic) IBOutlet NSTableView *tableView;
 @property (weak, nonatomic) IBOutlet NSSegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet NSButton *setDefaultButton;

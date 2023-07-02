@@ -1,5 +1,5 @@
 //
-//  KYAAddDurationPreferencesViewController.h
+//  KYAAddDurationViewController.h
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 08.08.19.
@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// Allows adding Activation Durations using `KYAActivationDurationsController`.
-@interface KYAAddDurationPreferencesViewController : NSViewController <NSTextFieldDelegate>
+@interface KYAAddDurationViewController : NSViewController <NSTextFieldDelegate>
 @property (nonatomic, readonly) KYAActivationDurationsController *activationDurationsController;
 @property (weak, nonatomic) IBOutlet NSTextField *hoursTextField;
 @property (weak, nonatomic) IBOutlet NSTextField *minutesTextField;

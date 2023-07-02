@@ -237,7 +237,7 @@ Clic droit pour le menu</target>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Settings/KYADurationPreferencesViewController/Base.lproj/KYAAddDurationPreferencesViewController.xib" source-language="en" target-language="fr" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYADurationSettingsViewController/Base.lproj/KYAAddDurationViewController.xib" source-language="en" target-language="fr" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>
@@ -273,7 +273,7 @@ Clic droit pour le menu</target>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Settings/KYADurationPreferencesViewController/Base.lproj/KYADurationPreferencesViewController.xib" source-language="en" target-language="fr" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYADurationSettingsViewController/Base.lproj/KYADurationSettingsViewController.xib" source-language="en" target-language="fr" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>

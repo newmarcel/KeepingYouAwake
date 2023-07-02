@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22113.3" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22113.3"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="KYAAddDurationPreferencesViewController">
+        <customObject id="-2" userLabel="File's Owner" customClass="KYAAddDurationViewController">
             <connections>
                 <outlet property="addButton" destination="YRA-fl-hJT" id="zwv-0N-Coh"/>
                 <outlet property="hoursTextField" destination="kLQ-xU-4AV" id="Dhv-rw-FT2"/>
@@ -64,7 +64,7 @@ DQ
                 <stackView orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="d01-AO-CnF" userLabel="Minutes Stack View">
                     <rect key="frame" x="116" y="90" width="88" height="44"/>
                     <beginningViews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFq-fh-k66">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFq-fh-k66">
                             <rect key="frame" x="-2" y="30" width="46" height="14"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Minutes" id="oi9-AP-ag4">
                                 <font key="font" metaFont="message" size="11"/>
@@ -72,7 +72,7 @@ DQ
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOJ-SM-XZh">
+                        <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOJ-SM-XZh">
                             <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="8kf-85-VQf">
                                 <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="bYF-38-wjT">
@@ -101,7 +101,7 @@ DQ
                 <stackView orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="UKV-hi-ix5" userLabel="Seconds Stack View">
                     <rect key="frame" x="212" y="90" width="88" height="44"/>
                     <beginningViews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lF8-5y-5SD">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lF8-5y-5SD">
                             <rect key="frame" x="-2" y="30" width="50" height="14"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Seconds" id="s1J-2f-UeD">
                                 <font key="font" metaFont="message" size="11"/>
@@ -109,7 +109,7 @@ DQ
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cO-gq-k7g">
+                        <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cO-gq-k7g">
                             <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="y4m-GT-OcX">
                                 <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="gHZ-HA-fVU">
@@ -138,7 +138,7 @@ DQ
                 <stackView orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="0R8-X3-y2B" userLabel="Hours Stack View">
                     <rect key="frame" x="20" y="90" width="88" height="44"/>
                     <beginningViews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POj-Ol-Uay">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POj-Ol-Uay">
                             <rect key="frame" x="-2" y="30" width="36" height="14"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Hours" id="5bs-m4-hy9">
                                 <font key="font" metaFont="message" size="11"/>
@@ -146,7 +146,7 @@ DQ
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-xU-4AV">
+                        <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-xU-4AV">
                             <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="5vB-xk-0dU">
                                 <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="AV6-Cn-dmr">
@@ -175,7 +175,7 @@ DQ
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="cFQ-tY-Iuk" userLabel="Warning Container View">
                     <rect key="frame" x="20" y="48" width="280" height="34"/>
                     <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Pag-Dq-c8L">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Pag-Dq-c8L">
                             <rect key="frame" x="-2" y="8" width="284" height="16"/>
                             <textFieldCell key="cell" alignment="center" title="Warning Label" id="kYn-pW-tq6">
                                 <font key="font" metaFont="system"/>

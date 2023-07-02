@@ -1,27 +1,27 @@
 //
-//  KYADurationPreferencesViewController.m
+//  KYADurationSettingsViewController.m
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 27.07.19.
 //  Copyright © 2019 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYADurationPreferencesViewController.h"
+#import "KYADurationSettingsViewController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
 #import "KYADurationCell.h"
-#import "KYAAddDurationPreferencesViewController.h"
+#import "KYAAddDurationViewController.h"
 #import "KYAActivationDuration+KYALocalizedTitle.h"
 
 /// The allowed number of activation durations. If this limit is reached,
 /// you cannot add more durations to the list.
 static NSInteger const KYAActivationDurationLimit = 42;
 
-@interface KYADurationPreferencesViewController ()
+@interface KYADurationSettingsViewController ()
 @property (nonatomic) KYAActivationDurationsController *durationsController;
 @end
 
-@implementation KYADurationPreferencesViewController
+@implementation KYADurationSettingsViewController
 
 + (NSImage *)tabViewItemImage
 {
@@ -85,7 +85,7 @@ static NSInteger const KYAActivationDurationLimit = 42;
 
 - (IBAction)addDuration:(id)sender
 {
-    Auto controller = [[KYAAddDurationPreferencesViewController alloc] initWithActivationDurationsController:self.durationsController];
+    Auto controller = [[KYAAddDurationViewController alloc] initWithActivationDurationsController:self.durationsController];
     [self presentViewControllerAsSheet:controller];
 }
 

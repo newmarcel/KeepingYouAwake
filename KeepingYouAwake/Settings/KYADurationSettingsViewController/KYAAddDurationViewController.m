@@ -1,12 +1,12 @@
 //
-//  KYAAddDurationPreferencesViewController.m
+//  KYAAddDurationViewController.m
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 08.08.19.
 //  Copyright © 2019 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYAAddDurationPreferencesViewController.h"
+#import "KYAAddDurationViewController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
 
@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, KYAValidationReason)
     KYAValidationReasonAlreadyAdded
 };
 
-@interface KYAAddDurationPreferencesViewController ()
+@interface KYAAddDurationViewController ()
 @property (nonatomic, readwrite) KYAActivationDurationsController *activationDurationsController;
 
 @property (nonatomic) NSNumber *hours;
@@ -31,7 +31,7 @@ typedef NS_ENUM(NSUInteger, KYAValidationReason)
 @property (nonatomic, nullable) NSString *errorMessage;
 @end
 
-@implementation KYAAddDurationPreferencesViewController
+@implementation KYAAddDurationViewController
 
 - (instancetype)initWithActivationDurationsController:(KYAActivationDurationsController *)controller
 {
