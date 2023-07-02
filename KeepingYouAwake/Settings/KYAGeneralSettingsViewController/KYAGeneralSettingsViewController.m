@@ -11,7 +11,7 @@
 
 @interface KYAGeneralSettingsViewController ()
 @property (weak, nonatomic) IBOutlet NSButton *startAtLoginCheckBoxButton;
-@property (weak, nonatomic) IBOutlet NSButton *notificationPreferencesButton;
+@property (weak, nonatomic) IBOutlet NSButton *notificationSettingsButton;
 @end
 
 @implementation KYAGeneralSettingsViewController
@@ -52,7 +52,7 @@
     
     if(@available(macOS 11.0, *)) {} else
     {
-        self.notificationPreferencesButton.hidden = YES;
+        self.notificationSettingsButton.hidden = YES;
     }
 }
 
@@ -61,7 +61,7 @@
     [self.startAtLoginCheckBoxButton unbind:@"value"];
 }
 
-- (void)openNotificationPreferences:(id)sender
+- (void)openNotificationSettings:(id)sender
 {
     Auto workspace = NSWorkspace.sharedWorkspace;
     [workspace kya_openNotificationPreferencesWithCompletionHandler:nil];

@@ -13,6 +13,6 @@
 /// Shows "General" settings.
 @interface KYAGeneralSettingsViewController : KYASettingsContentViewController
 
-- (IBAction)openNotificationPreferences:(nullable id)sender API_AVAILABLE(macos(11.0));
+- (IBAction)openNotificationSettings:(nullable id)sender API_AVAILABLE(macos(11.0));
 
 @end

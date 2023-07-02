@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// A Preferences content view controller that is represented
+/// A settings content view controller that is represented
 /// by a tab view item and loads its view from a Nib file.
 @interface KYASettingsContentViewController : NSViewController
 /// Creates and returns a new tab view item with

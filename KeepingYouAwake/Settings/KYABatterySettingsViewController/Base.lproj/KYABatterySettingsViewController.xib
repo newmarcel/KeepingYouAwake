@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="450" height="268"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UO8-po-rbJ">
+                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UO8-po-rbJ">
                     <rect key="frame" x="18" y="232" width="414" height="16"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Battery Level" id="pvY-d7-nKX">
                         <font key="font" textStyle="headline" name=".SFNS-Bold"/>
@@ -32,7 +32,7 @@
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
-                        <action selector="batteryPreferencesDidChange:" target="-2" id="iiW-Np-tZJ"/>
+                        <action selector="batterySettingsDidChange:" target="-2" id="iiW-Np-tZJ"/>
                         <binding destination="-2" name="enabled" keyPath="device.batteryMonitor.hasBattery" id="MAh-Qj-xBb"/>
                         <binding destination="emK-Lf-1No" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled" id="o3M-xV-1zK"/>
                     </connections>
@@ -40,7 +40,7 @@
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="hj3-BW-E68" userLabel="Battery Limit Container View">
                     <rect key="frame" x="40" y="165" width="390" height="35"/>
                     <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m3I-tD-dCD">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m3I-tD-dCD">
                             <rect key="frame" x="365" y="0.0" width="27" height="11"/>
                             <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="90 %" id="M11-sw-GhM">
                                 <font key="font" metaFont="miniSystem"/>
@@ -52,7 +52,7 @@
                             <rect key="frame" x="-2" y="9" width="394" height="28"/>
                             <sliderCell key="cell" state="on" alignment="left" minValue="10" maxValue="90" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="9" allowsTickMarkValuesOnly="YES" sliderType="linear" id="9Hs-JO-805"/>
                             <connections>
-                                <action selector="batteryPreferencesDidChange:" target="-2" id="95P-tm-CEJ"/>
+                                <action selector="batterySettingsDidChange:" target="-2" id="95P-tm-CEJ"/>
                                 <binding destination="-2" name="enabled2" keyPath="device.batteryMonitor.hasBattery" previousBinding="wE0-ra-vGq" id="orT-z8-VLt">
                                     <dictionary key="options">
                                         <integer key="NSMultipleValuesPlaceholder" value="-1"/>
@@ -65,7 +65,7 @@
                                 <binding destination="emK-Lf-1No" name="enabled" keyPath="values.info.marcel-dierkes.KeepingYouAwake.BatteryCapacityThresholdEnabled" id="wE0-ra-vGq"/>
                             </connections>
                         </slider>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="juu-aR-gQR">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="juu-aR-gQR">
                             <rect key="frame" x="182" y="0.0" width="27" height="11"/>
                             <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="50 %" id="ovF-0F-TMc">
                                 <font key="font" metaFont="miniSystem"/>
@@ -73,7 +73,7 @@
                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DHn-CV-LRv">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DHn-CV-LRv">
                             <rect key="frame" x="-2" y="0.0" width="26" height="11"/>
                             <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="10 %" id="HtM-vx-ZuN">
                                 <font key="font" metaFont="miniSystem"/>
@@ -99,7 +99,7 @@
                         <constraint firstItem="juu-aR-gQR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DHn-CV-LRv" secondAttribute="trailing" constant="8" symbolic="YES" id="zfY-94-wsc"/>
                     </constraints>
                 </customView>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="390" translatesAutoresizingMaskIntoConstraints="NO" id="lqd-cN-FYq">
+                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="390" translatesAutoresizingMaskIntoConstraints="NO" id="lqd-cN-FYq">
                     <rect key="frame" x="38" y="129" width="394" height="28"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="This value will be ignored when you manually start the app below this battery capacity." id="l4a-Sa-RAE">
                         <font key="font" metaFont="message" size="11"/>
@@ -107,7 +107,7 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pJh-c1-fpq">
+                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pJh-c1-fpq">
                     <rect key="frame" x="18" y="80" width="113" height="16"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Low Power Mode" id="aXx-hk-9R9">
                         <font key="font" textStyle="headline" name=".SFNS-Bold"/>
@@ -128,12 +128,12 @@
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
-                        <action selector="batteryPreferencesDidChange:" target="-2" id="nJ2-aa-dGD"/>
+                        <action selector="batterySettingsDidChange:" target="-2" id="nJ2-aa-dGD"/>
                         <binding destination="-2" name="enabled" keyPath="device.lowPowerModeMonitor.supportsLowPowerMode" id="UmW-9Y-9Nc"/>
                         <binding destination="emK-Lf-1No" name="value" keyPath="values.info.marcel-dierkes.KeepingYouAwake.LowPowerModeMonitoringEnabled" id="GdL-wN-B4a"/>
                     </connections>
                 </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="390" translatesAutoresizingMaskIntoConstraints="NO" id="Mze-JO-dez">
+                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" preferredMaxLayoutWidth="390" translatesAutoresizingMaskIntoConstraints="NO" id="Mze-JO-dez">
                     <rect key="frame" x="38" y="20" width="394" height="28"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging." id="SHH-RQ-HPH">
                         <font key="font" metaFont="message" size="11"/>

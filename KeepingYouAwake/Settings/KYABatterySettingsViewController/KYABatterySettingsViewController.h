@@ -19,9 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) KYADevice *device;
 
 /// Is responsible for notifying the app controller about any
-/// battery status preference changes.
+/// battery status settings changes.
 /// @param sender The sending control
-- (IBAction)batteryPreferencesDidChange:(nullable id)sender;
+- (IBAction)batterySettingsDidChange:(nullable id)sender;
 
 @end
 

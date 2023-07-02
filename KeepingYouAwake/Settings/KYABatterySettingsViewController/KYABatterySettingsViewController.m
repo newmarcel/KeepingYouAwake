@@ -46,9 +46,9 @@
     return KYADevice.currentDevice;
 }
 
-#pragma mark - Battery Preferences Did Change
+#pragma mark - Battery Settings Did Change
 
-- (void)batteryPreferencesDidChange:(id)sender
+- (void)batterySettingsDidChange:(id)sender
 {
     Auto center = NSNotificationCenter.defaultCenter;
     [center postNotificationName:kKYABatteryCapacityThresholdDidChangeNotification

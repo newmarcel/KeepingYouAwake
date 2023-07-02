@@ -8,7 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="KYAGeneralSettingsViewController">
             <connections>
-                <outlet property="notificationPreferencesButton" destination="OlQ-t6-SFN" id="aV4-Uq-iP7"/>
+                <outlet property="notificationSettingsButton" destination="OlQ-t6-SFN" id="aV4-Uq-iP7"/>
                 <outlet property="startAtLoginCheckBoxButton" destination="b2B-0v-BKX" id="XmM-6C-DT2"/>
                 <outlet property="view" destination="nJr-ua-jG7" id="MTl-QF-Qea"/>
             </connections>
@@ -88,7 +88,7 @@
                                 <font key="font" metaFont="system"/>
                             </buttonCell>
                             <connections>
-                                <action selector="openNotificationPreferences:" target="-2" id="iMx-Zg-J5p"/>
+                                <action selector="openNotificationSettings:" target="-2" id="iMx-Zg-J5p"/>
                             </connections>
                         </button>
                     </subviews>

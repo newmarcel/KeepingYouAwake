@@ -25,10 +25,10 @@ NSMenu *KYACreateMainMenuWithActivationDurationsSubMenu(NSMenu *activationDurati
     
     [mainMenu addItem:NSMenuItem.separatorItem];
     
-    Auto preferences = [[NSMenuItem alloc] initWithTitle:KYA_L10N_SETTINGS_ELLIPSIS
-                                                  action:@selector(showSettingsWindow:)
-                                           keyEquivalent:@","];
-    [mainMenu addItem:preferences];
+    Auto settings = [[NSMenuItem alloc] initWithTitle:KYA_L10N_SETTINGS_ELLIPSIS
+                                               action:@selector(showSettingsWindow:)
+                                        keyEquivalent:@","];
+    [mainMenu addItem:settings];
     
     [mainMenu addItem:NSMenuItem.separatorItem];
     
