@@ -9,7 +9,6 @@
 #import "KYASettingsWindow.h"
 #import "KYADefines.h"
 #import "KYASettingsLocalizedStrings.h"
-#import "KYAAppUpdater.h"
 #import "KYAPreferencesContentViewControllers.h"
 
 @interface KYASettingsWindow ()
@@ -21,7 +20,28 @@
 #pragma clang diagnostic ignored "-Wobjc-designated-initializers"
 - (instancetype)init
 {
-    Auto tabViewController = [[self class] createTabViewController];
+    return [self initWithAdditionalTabViewItems:nil];
+}
+
+- (instancetype)initWithAdditionalTabViewItems:(NSArray<NSTabViewItem *> *)tabViewItems
+{
+    Auto mutableTabViewItems = [NSMutableArray<NSTabViewItem *> arrayWithArray:@[
+        KYAGeneralPreferencesViewController.preferredTabViewItem,
+        KYADurationPreferencesViewController.preferredTabViewItem,
+        KYABatteryPreferencesViewController.preferredTabViewItem,
+        KYAAdvancedPreferencesViewController.preferredTabViewItem,
+    ]];
+    if(tabViewItems != nil)
+    {
+        [mutableTabViewItems addObjectsFromArray:tabViewItems];
+    }
+    [mutableTabViewItems addObject:KYAAboutPreferencesViewController.preferredTabViewItem];
+    
+    Auto tabViewController = [NSTabViewController new];
+    tabViewController.tabStyle = NSTabViewControllerTabStyleToolbar;
+    tabViewController.transitionOptions = NSViewControllerTransitionNone;
+    tabViewController.tabViewItems = [mutableTabViewItems copy];
+    
     CGRect frame = CGRectMake(150.0f, 430.0f, 480.0f, 320.0f);
     NSWindowStyleMask styleMask = NSWindowStyleMaskTitled | NSWindowStyleMaskClosable;
     NSWindowCollectionBehavior behavior = NSWindowCollectionBehaviorManaged | NSWindowCollectionBehaviorParticipatesInCycle | NSWindowCollectionBehaviorFullScreenNone;
@@ -39,27 +59,6 @@
     return self;
 }
 #pragma clang diagnostic pop
-
-#pragma mark - Tab View Controller
-
-+ (NSTabViewController *)createTabViewController
-{
-    Auto tabViewController = [NSTabViewController new];
-    tabViewController.tabStyle = NSTabViewControllerTabStyleToolbar;
-    tabViewController.transitionOptions = NSViewControllerTransitionNone;
-    tabViewController.tabViewItems = @[
-        KYAGeneralPreferencesViewController.preferredTabViewItem,
-        KYADurationPreferencesViewController.preferredTabViewItem,
-        KYABatteryPreferencesViewController.preferredTabViewItem,
-        KYAAdvancedPreferencesViewController.preferredTabViewItem,
-#if KYA_APP_UPDATER_ENABLED
-        KYAUpdatePreferencesViewController.preferredTabViewItem,
-#endif
-        KYAAboutPreferencesViewController.preferredTabViewItem
-    ];
-    
-    return tabViewController;
-}
 
 #pragma mark - NSResponder
 

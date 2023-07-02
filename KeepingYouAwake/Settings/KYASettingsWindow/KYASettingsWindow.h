@@ -18,7 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithContentRect:(NSRect)contentRect styleMask:(NSWindowStyleMask)style backing:(NSBackingStoreType)backingStoreType defer:(BOOL)flag screen:(nullable NSScreen *)screen NS_UNAVAILABLE;
 - (NSWindow *)initWithWindowRef:(void *)windowRef NS_UNAVAILABLE;
 
-- (instancetype)init NS_DESIGNATED_INITIALIZER;
+- (instancetype)init;
+
+/// Instantiates a new settings window and inserts the provided additional
+/// `tabViewItems` at a pre-defined position besides the default items.
+/// - Parameter tabViewItems: Additional tab view items
+- (instancetype)initWithAdditionalTabViewItems:(nullable NSArray<NSTabViewItem *> *)tabViewItems NS_DESIGNATED_INITIALIZER;
 
 @end
 
