@@ -1,5 +1,5 @@
 //
-//  KYAAdvancedPreferencesViewController.h
+//  KYAAdvancedSettingsViewController.h
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 18.12.15.
@@ -11,7 +11,7 @@
 #import "KYASettingsContentViewController.h"
 
 /// Shows "Advanced" settings.
-@interface KYAAdvancedPreferencesViewController : KYASettingsContentViewController <NSTableViewDataSource, NSTableViewDelegate>
+@interface KYAAdvancedSettingsViewController : KYASettingsContentViewController <NSTableViewDataSource, NSTableViewDelegate>
 
 /// A table view that lists individual settings
 @property (weak, nonatomic, nullable) IBOutlet NSTableView *tableView;

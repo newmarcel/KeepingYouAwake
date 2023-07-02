@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="KYAAdvancedPreferencesViewController">
+        <customObject id="-2" userLabel="File's Owner" customClass="KYAAdvancedSettingsViewController">
             <connections>
                 <outlet property="defaultsController" destination="GcX-7K-Pfb" id="G1r-QT-HYj"/>
                 <outlet property="tableView" destination="cvQ-Gc-Wku" id="Na2-9G-AS9"/>

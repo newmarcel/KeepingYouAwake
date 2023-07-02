@@ -12,7 +12,7 @@
 #import "KYAGeneralSettingsViewController.h"
 #import "KYADurationPreferencesViewController.h"
 #import "KYABatterySettingsViewController.h"
-#import "KYAAdvancedPreferencesViewController.h"
+#import "KYAAdvancedSettingsViewController.h"
 #import "KYAAboutSettingsViewController.h"
 
 @interface KYASettingsWindow ()
@@ -33,7 +33,7 @@
         KYAGeneralSettingsViewController.preferredTabViewItem,
         KYADurationPreferencesViewController.preferredTabViewItem,
         KYABatterySettingsViewController.preferredTabViewItem,
-        KYAAdvancedPreferencesViewController.preferredTabViewItem,
+        KYAAdvancedSettingsViewController.preferredTabViewItem,
     ]];
     if(tabViewItems != nil)
     {

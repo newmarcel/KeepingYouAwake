@@ -1,24 +1,24 @@
 //
-//  KYAAdvancedPreferencesViewController.m
+//  KYAAdvancedSettingsViewController.m
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 18.12.15.
 //  Copyright © 2015 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYAAdvancedPreferencesViewController.h"
+#import "KYAAdvancedSettingsViewController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
 #import "KYAUserDefaultsSetting.h"
 #import "KYABatteryCapacityThreshold.h"
 
-@interface KYAAdvancedPreferencesViewController ()
+@interface KYAAdvancedSettingsViewController ()
 @property (nonatomic) NSArray<KYAUserDefaultsSetting *> *settings;
 @property (nonatomic, readwrite) BOOL batteryStatusAvailable;
 @property (weak, nonatomic) IBOutlet NSUserDefaultsController *defaultsController;
 @end
 
-@implementation KYAAdvancedPreferencesViewController
+@implementation KYAAdvancedSettingsViewController
 
 + (NSImage *)tabViewItemImage
 {
