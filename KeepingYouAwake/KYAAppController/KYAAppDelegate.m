@@ -10,7 +10,7 @@
 #import "KYADefines.h"
 #import "KYAAppUpdater.h"
 #import "KYASettingsWindow.h"
-#import "KYAUpdatePreferencesViewController.h"
+#import "KYAUpdateSettingsViewController.h"
 
 @interface KYAAppDelegate () <NSWindowDelegate>
 @property (weak, nonatomic, nullable) KYASettingsWindow *settingsWindow;
@@ -38,7 +38,7 @@
     
     NSArray<NSTabViewItem *> *additionalTabViewItems;
 #if KYA_APP_UPDATER_ENABLED
-    additionalTabViewItems = @[KYAUpdatePreferencesViewController.preferredTabViewItem];
+    additionalTabViewItems = @[KYAUpdateSettingsViewController.preferredTabViewItem];
 #endif
     Auto settingsWindow = self.settingsWindow ?: [[KYASettingsWindow alloc] initWithAdditionalTabViewItems:additionalTabViewItems];
     [settingsWindow makeKeyAndOrderFront:sender];

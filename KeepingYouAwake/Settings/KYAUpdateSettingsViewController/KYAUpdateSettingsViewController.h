@@ -1,5 +1,5 @@
 //
-//  KYAUpdatePreferencesViewController.h
+//  KYAUpdateSettingsViewController.h
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 30.12.17.
@@ -14,9 +14,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Shows "Update" preferences and allows checking
+/// Shows "Update" settings and allows checking
 /// for available app updates.
-@interface KYAUpdatePreferencesViewController : KYAPreferencesContentViewController
+@interface KYAUpdateSettingsViewController : KYAPreferencesContentViewController
 @property (nonatomic, readonly) KYAAppUpdater *appUpdater;
 
 - (IBAction)checkForUpdates:(id)sender;

@@ -404,7 +404,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Settings/KYAUpdatePreferencesViewController/Base.lproj/KYAUpdatePreferencesViewController.xib" source-language="en" target-language="de" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYAUpdateSettingsViewController/Base.lproj/KYAUpdateSettingsViewController.xib" source-language="en" target-language="de" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>

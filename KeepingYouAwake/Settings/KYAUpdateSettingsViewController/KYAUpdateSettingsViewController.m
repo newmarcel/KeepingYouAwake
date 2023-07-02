@@ -1,17 +1,17 @@
 //
-//  KYAUpdatePreferencesViewController.m
+//  KYAUpdateSettingsViewController.m
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 30.12.17.
 //  Copyright © 2017 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYAUpdatePreferencesViewController.h"
+#import "KYAUpdateSettingsViewController.h"
 #import "KYADefines.h"
 
 #if KYA_APP_UPDATER_ENABLED
 
-@implementation KYAUpdatePreferencesViewController
+@implementation KYAUpdateSettingsViewController
 
 + (NSImage *)tabViewItemImage
 {
