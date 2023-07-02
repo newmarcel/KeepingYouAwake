@@ -1,20 +1,20 @@
 //
-//  KYAGeneralPreferencesViewController.m
+//  KYAGeneralSettingsViewController.m
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 18.12.15.
 //  Copyright © 2015 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYAGeneralPreferencesViewController.h"
+#import "KYAGeneralSettingsViewController.h"
 #import "KYADefines.h"
 
-@interface KYAGeneralPreferencesViewController ()
+@interface KYAGeneralSettingsViewController ()
 @property (weak, nonatomic) IBOutlet NSButton *startAtLoginCheckBoxButton;
 @property (weak, nonatomic) IBOutlet NSButton *notificationPreferencesButton;
 @end
 
-@implementation KYAGeneralPreferencesViewController
+@implementation KYAGeneralSettingsViewController
 
 + (NSImage *)tabViewItemImage
 {

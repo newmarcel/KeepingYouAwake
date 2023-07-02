@@ -43,7 +43,7 @@
 		DA814383281D59970004BE71 /* KYAStatusItemUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA814382281D59970004BE71 /* KYAStatusItemUI */; };
 		DA814385281D599D0004BE71 /* KYAStatusItemUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA814384281D599D0004BE71 /* KYAStatusItemUI */; };
 		DA82560D22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82560C22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m */; };
-		DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */; };
+		DA82B1161C2426E400FA46E0 /* KYAGeneralSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralSettingsViewController.m */; };
 		DA898C6F2A3EEE460005A48A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA898C6E2A3EEE460005A48A /* Credits.rtf */; };
 		DA898C702A3EEE460005A48A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA898C6E2A3EEE460005A48A /* Credits.rtf */; };
 		DA898C732A3EEE8D0005A48A /* KYASettingsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DA898C722A3EEE8D0005A48A /* KYASettingsWindow.m */; };
@@ -70,7 +70,7 @@
 		DAD3CF62271186720006CA14 /* KYAActivationDurationsMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82560C22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m */; };
 		DAD3CF63271186720006CA14 /* KYAActivationUserNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52B1062617021500D09FE5 /* KYAActivationUserNotification.m */; };
 		DAD3CF64271186720006CA14 /* KYALocalizedStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A4FE5261631D700C672C4 /* KYALocalizedStrings.m */; };
-		DAD3CF65271186720006CA14 /* KYAGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */; };
+		DAD3CF65271186720006CA14 /* KYAGeneralSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82B1151C2426E400FA46E0 /* KYAGeneralSettingsViewController.m */; };
 		DAD3CF66271186720006CA14 /* KYADurationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB0700922EC794F004D5BCA /* KYADurationCell.m */; };
 		DAD3CF68271186720006CA14 /* KYAPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128751C2493DB00831045 /* KYAPreference.m */; };
 		DAD3CF69271186720006CA14 /* KYAAdvancedPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB128681C2453F600831045 /* KYAAdvancedPreferencesViewController.m */; };
@@ -85,14 +85,14 @@
 		DAD3CF7C271186720006CA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA13771925E969FF00FB0FAD /* Assets.xcassets */; };
 		DAD3CF7D271186720006CA14 /* KYAUpdateSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD9834E26F8BB0500234FB8 /* KYAUpdateSettingsViewController.xib */; };
 		DAD3CF7E271186720006CA14 /* KYADurationPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD9838C26F9037900234FB8 /* KYADurationPreferencesViewController.xib */; };
-		DAD3CF7F271186720006CA14 /* KYAGeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD982FA26F8849A00234FB8 /* KYAGeneralPreferencesViewController.xib */; };
+		DAD3CF7F271186720006CA14 /* KYAGeneralSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD982FA26F8849A00234FB8 /* KYAGeneralSettingsViewController.xib */; };
 		DAD3CF81271186720006CA14 /* KYADurationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB0700B22EC795F004D5BCA /* KYADurationCell.xib */; };
 		DAD3CF86271186720006CA14 /* KeepingYouAwake Launcher.app in Embed Launcher */ = {isa = PBXBuildFile; fileRef = DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAD68A7C27C957B30036ED19 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD68A7B27C957B30036ED19 /* MainMenu.xib */; };
 		DAD68A7D27C957B30036ED19 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD68A7B27C957B30036ED19 /* MainMenu.xib */; };
 		DAD68A8127C957E20036ED19 /* KYAMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD68A8027C957E20036ED19 /* KYAMainMenu.m */; };
 		DAD68A8227C957E20036ED19 /* KYAMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD68A8027C957E20036ED19 /* KYAMainMenu.m */; };
-		DAD982F826F8849A00234FB8 /* KYAGeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD982FA26F8849A00234FB8 /* KYAGeneralPreferencesViewController.xib */; };
+		DAD982F826F8849A00234FB8 /* KYAGeneralSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD982FA26F8849A00234FB8 /* KYAGeneralSettingsViewController.xib */; };
 		DAD9834926F8A9AE00234FB8 /* KYAAboutSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD9834826F8A9AE00234FB8 /* KYAAboutSettingsViewController.xib */; };
 		DAD9834C26F8BB0500234FB8 /* KYAUpdateSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD9834E26F8BB0500234FB8 /* KYAUpdateSettingsViewController.xib */; };
 		DAD9838A26F9037900234FB8 /* KYADurationPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD9838C26F9037900234FB8 /* KYADurationPreferencesViewController.xib */; };
@@ -180,7 +180,7 @@
 		DA4F7F492A3F218D00C7C076 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/KYABatteryPreferencesViewController.xcstrings; sourceTree = "<group>"; };
 		DA4F7F4A2A3F218D00C7C076 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/KYAAddDurationPreferencesViewController.xcstrings; sourceTree = "<group>"; };
 		DA4F7F4B2A3F218D00C7C076 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/KYADurationPreferencesViewController.xcstrings; sourceTree = "<group>"; };
-		DA4F7F4D2A3F218D00C7C076 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/KYAGeneralPreferencesViewController.xcstrings; sourceTree = "<group>"; };
+		DA4F7F4D2A3F218D00C7C076 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/KYAGeneralSettingsViewController.xcstrings; sourceTree = "<group>"; };
 		DA4F7F4E2A3F218E00C7C076 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/KYAUpdateSettingsViewController.xcstrings; sourceTree = "<group>"; };
 		DA4F7F4F2A3F218E00C7C076 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/KYAAdvancedPreferencesViewController.xcstrings; sourceTree = "<group>"; };
 		DA4F7F502A3F21E100C7C076 /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -208,8 +208,8 @@
 		DA753D391C3714A800955BE3 /* KYABatteryCapacityThreshold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYABatteryCapacityThreshold.h; sourceTree = "<group>"; };
 		DA82560B22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAActivationDurationsMenuController.h; sourceTree = "<group>"; };
 		DA82560C22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAActivationDurationsMenuController.m; sourceTree = "<group>"; };
-		DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAGeneralPreferencesViewController.h; sourceTree = "<group>"; };
-		DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAGeneralPreferencesViewController.m; sourceTree = "<group>"; };
+		DA82B1141C2426E400FA46E0 /* KYAGeneralSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAGeneralSettingsViewController.h; sourceTree = "<group>"; };
+		DA82B1151C2426E400FA46E0 /* KYAGeneralSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAGeneralSettingsViewController.m; sourceTree = "<group>"; };
 		DA898C6E2A3EEE460005A48A /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = SOURCE_ROOT; };
 		DA898C712A3EEE8D0005A48A /* KYASettingsWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYASettingsWindow.h; sourceTree = "<group>"; };
 		DA898C722A3EEE8D0005A48A /* KYASettingsWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYASettingsWindow.m; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 		DAD68A8027C957E20036ED19 /* KYAMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMainMenu.m; sourceTree = "<group>"; };
 		DAD90B5627B001B800F5C186 /* KeepingYouAwake-Direct.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "KeepingYouAwake-Direct.entitlements"; sourceTree = "<group>"; };
 		DAD982F726F883DF00234FB8 /* KYASettingsLocalizedStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYASettingsLocalizedStrings.h; sourceTree = "<group>"; };
-		DAD982F926F8849A00234FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KYAGeneralPreferencesViewController.xib; sourceTree = "<group>"; };
+		DAD982F926F8849A00234FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KYAGeneralSettingsViewController.xib; sourceTree = "<group>"; };
 		DAD9834826F8A9AE00234FB8 /* KYAAboutSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYAAboutSettingsViewController.xib; sourceTree = "<group>"; };
 		DAD9834D26F8BB0500234FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KYAUpdateSettingsViewController.xib; sourceTree = "<group>"; };
 		DAD9838B26F9037900234FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KYADurationPreferencesViewController.xib; sourceTree = "<group>"; };
@@ -319,14 +319,14 @@
 			path = KYABatteryPreferencesViewController;
 			sourceTree = "<group>";
 		};
-		DA51E7DF1C2562BE008AA96C /* KYAGeneralPreferencesViewController */ = {
+		DA51E7DF1C2562BE008AA96C /* KYAGeneralSettingsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DA82B1141C2426E400FA46E0 /* KYAGeneralPreferencesViewController.h */,
-				DA82B1151C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m */,
-				DAD982FA26F8849A00234FB8 /* KYAGeneralPreferencesViewController.xib */,
+				DA82B1141C2426E400FA46E0 /* KYAGeneralSettingsViewController.h */,
+				DA82B1151C2426E400FA46E0 /* KYAGeneralSettingsViewController.m */,
+				DAD982FA26F8849A00234FB8 /* KYAGeneralSettingsViewController.xib */,
 			);
-			path = KYAGeneralPreferencesViewController;
+			path = KYAGeneralSettingsViewController;
 			sourceTree = "<group>";
 		};
 		DA51E7E01C2562C4008AA96C /* KYAAdvancedPreferencesViewController */ = {
@@ -441,7 +441,7 @@
 				DA4F7F462A3F218D00C7C076 /* KYASettings.xcstrings */,
 				DA898C752A3EF37C0005A48A /* KYASettingsWindow */,
 				DA2CCD6226F8763100568BDD /* KYASettingsContentViewController */,
-				DA51E7DF1C2562BE008AA96C /* KYAGeneralPreferencesViewController */,
+				DA51E7DF1C2562BE008AA96C /* KYAGeneralSettingsViewController */,
 				DAB0701222EC8E74004D5BCA /* KYADurationPreferencesViewController */,
 				DA4950F727C97EF2008D1747 /* KYABatteryPreferencesViewController */,
 				DA51E7E01C2562C4008AA96C /* KYAAdvancedPreferencesViewController */,
@@ -691,7 +691,7 @@
 				DAD9838A26F9037900234FB8 /* KYADurationPreferencesViewController.xib in Resources */,
 				DAD68A7C27C957B30036ED19 /* MainMenu.xib in Resources */,
 				DA4F7F512A3F21E100C7C076 /* Localizable.xcstrings in Resources */,
-				DAD982F826F8849A00234FB8 /* KYAGeneralPreferencesViewController.xib in Resources */,
+				DAD982F826F8849A00234FB8 /* KYAGeneralSettingsViewController.xib in Resources */,
 				DAB0700C22EC795F004D5BCA /* KYADurationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -721,7 +721,7 @@
 				DAD3CF7E271186720006CA14 /* KYADurationPreferencesViewController.xib in Resources */,
 				DAD68A7D27C957B30036ED19 /* MainMenu.xib in Resources */,
 				DA4F7F522A3F21E100C7C076 /* Localizable.xcstrings in Resources */,
-				DAD3CF7F271186720006CA14 /* KYAGeneralPreferencesViewController.xib in Resources */,
+				DAD3CF7F271186720006CA14 /* KYAGeneralSettingsViewController.xib in Resources */,
 				DAD3CF81271186720006CA14 /* KYADurationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,7 +743,7 @@
 				DA82560D22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m in Sources */,
 				DA52B1082617021500D09FE5 /* KYAActivationUserNotification.m in Sources */,
 				DA9A4FE6261631D700C672C4 /* KYALocalizedStrings.m in Sources */,
-				DA82B1161C2426E400FA46E0 /* KYAGeneralPreferencesViewController.m in Sources */,
+				DA82B1161C2426E400FA46E0 /* KYAGeneralSettingsViewController.m in Sources */,
 				DAB0700A22EC794F004D5BCA /* KYADurationCell.m in Sources */,
 				DAB128761C2493DB00831045 /* KYAPreference.m in Sources */,
 				DAB128691C2453F600831045 /* KYAAdvancedPreferencesViewController.m in Sources */,
@@ -780,7 +780,7 @@
 				DAD3CF62271186720006CA14 /* KYAActivationDurationsMenuController.m in Sources */,
 				DAD3CF63271186720006CA14 /* KYAActivationUserNotification.m in Sources */,
 				DAD3CF64271186720006CA14 /* KYALocalizedStrings.m in Sources */,
-				DAD3CF65271186720006CA14 /* KYAGeneralPreferencesViewController.m in Sources */,
+				DAD3CF65271186720006CA14 /* KYAGeneralSettingsViewController.m in Sources */,
 				DAD3CF66271186720006CA14 /* KYADurationCell.m in Sources */,
 				DAD3CF68271186720006CA14 /* KYAPreference.m in Sources */,
 				DAD3CF69271186720006CA14 /* KYAAdvancedPreferencesViewController.m in Sources */,
@@ -828,13 +828,13 @@
 			name = KYABatteryPreferencesViewController.xib;
 			sourceTree = "<group>";
 		};
-		DAD982FA26F8849A00234FB8 /* KYAGeneralPreferencesViewController.xib */ = {
+		DAD982FA26F8849A00234FB8 /* KYAGeneralSettingsViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DAD982F926F8849A00234FB8 /* Base */,
 				DA4F7F4D2A3F218D00C7C076 /* mul */,
 			);
-			name = KYAGeneralPreferencesViewController.xib;
+			name = KYAGeneralSettingsViewController.xib;
 			sourceTree = "<group>";
 		};
 		DAD9834E26F8BB0500234FB8 /* KYAUpdateSettingsViewController.xib */ = {

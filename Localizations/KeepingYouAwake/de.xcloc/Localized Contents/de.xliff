@@ -330,7 +330,7 @@ Rechtsklick, um das Menü anzuzeigen</target>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Settings/KYAGeneralPreferencesViewController/Base.lproj/KYAGeneralPreferencesViewController.xib" source-language="en" target-language="de" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYAGeneralSettingsViewController/Base.lproj/KYAGeneralSettingsViewController.xib" source-language="en" target-language="de" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>

@@ -1,5 +1,5 @@
 //
-//  KYAGeneralPreferencesViewController.h
+//  KYAGeneralSettingsViewController.h
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 18.12.15.
@@ -10,8 +10,8 @@
 #import <KYAUserNotifications/KYAUserNotifications.h>
 #import "KYASettingsContentViewController.h"
 
-/// Shows "General" preferences.
-@interface KYAGeneralPreferencesViewController : KYASettingsContentViewController
+/// Shows "General" settings.
+@interface KYAGeneralSettingsViewController : KYASettingsContentViewController
 
 - (IBAction)openNotificationPreferences:(nullable id)sender API_AVAILABLE(macos(11.0));
 
