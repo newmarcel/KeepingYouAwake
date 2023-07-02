@@ -16,7 +16,7 @@ typedef void(^KYAOpenNotificationsCompletionHandler)(NSRunningApplication *_Null
 
 /// Opens the notifications pane in System Settings.
 /// @param completionHandler An optional completion handler, called on a private queue
-- (void)kya_openNotificationPreferencesWithCompletionHandler:(nullable KYAOpenNotificationsCompletionHandler)completionHandler API_AVAILABLE(macos(11.0));
+- (void)kya_openNotificationSettingsWithCompletionHandler:(nullable KYAOpenNotificationsCompletionHandler)completionHandler API_AVAILABLE(macos(11.0));
 
 @end
 

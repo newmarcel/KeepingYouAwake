@@ -11,9 +11,9 @@
 
 @implementation NSWorkspace (KYAUserNotificationCenter)
 
-- (void)kya_openNotificationPreferencesWithCompletionHandler:(KYAOpenNotificationsCompletionHandler)completionHandler
+- (void)kya_openNotificationSettingsWithCompletionHandler:(KYAOpenNotificationsCompletionHandler)completionHandler
 {
-    Auto prefURL = NSURL.kya_notificationPreferencesURL;
+    Auto prefURL = NSURL.kya_notificationSettingsURL;
     Auto config = [NSWorkspaceOpenConfiguration configuration];
     config.addsToRecentItems = NO;
     

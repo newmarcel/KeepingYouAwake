@@ -64,7 +64,7 @@
 - (void)openNotificationSettings:(id)sender
 {
     Auto workspace = NSWorkspace.sharedWorkspace;
-    [workspace kya_openNotificationPreferencesWithCompletionHandler:nil];
+    [workspace kya_openNotificationSettingsWithCompletionHandler:nil];
 }
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation NSURL (KYAUserNotificationCenter)
 
-+ (NSURL *)kya_notificationPreferencesURL
++ (NSURL *)kya_notificationSettingsURL
 {
     return [self URLWithString:@"x-apple.systempreferences:com.apple.preference.notifications"];
 }
