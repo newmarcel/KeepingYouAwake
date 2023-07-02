@@ -9,7 +9,11 @@
 #import "KYASettingsWindow.h"
 #import "KYADefines.h"
 #import "KYASettingsLocalizedStrings.h"
-#import "KYAPreferencesContentViewControllers.h"
+#import "KYAGeneralPreferencesViewController.h"
+#import "KYADurationPreferencesViewController.h"
+#import "KYABatteryPreferencesViewController.h"
+#import "KYAAdvancedPreferencesViewController.h"
+#import "KYAAboutPreferencesViewController.h"
 
 @interface KYASettingsWindow ()
 @end

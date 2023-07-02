@@ -171,7 +171,6 @@
 		DA2C0E332700629A006E9991 /* KYAAppUpdater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAppUpdater.m; sourceTree = "<group>"; };
 		DA2CCD5D26F8754C00568BDD /* KYAPreferencesContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesContentViewController.h; sourceTree = "<group>"; };
 		DA2CCD5E26F8754C00568BDD /* KYAPreferencesContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAPreferencesContentViewController.m; sourceTree = "<group>"; };
-		DA2CCD6326F87A4500568BDD /* KYAPreferencesContentViewControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAPreferencesContentViewControllers.h; sourceTree = "<group>"; };
 		DA2D55152A3B80FB003E09E3 /* DefaultTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DefaultTestPlan.xctestplan; sourceTree = "<group>"; };
 		DA2D55162A3B8379003E09E3 /* SanitizerTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SanitizerTestPlan.xctestplan; sourceTree = "<group>"; };
 		DA4835F126F8CF100073A062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KYAAdvancedPreferencesViewController.xib; sourceTree = "<group>"; };
@@ -304,7 +303,6 @@
 		DA2CCD6226F8763100568BDD /* KYAPreferencesContentViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DA2CCD6326F87A4500568BDD /* KYAPreferencesContentViewControllers.h */,
 				DA2CCD5D26F8754C00568BDD /* KYAPreferencesContentViewController.h */,
 				DA2CCD5E26F8754C00568BDD /* KYAPreferencesContentViewController.m */,
 			);
