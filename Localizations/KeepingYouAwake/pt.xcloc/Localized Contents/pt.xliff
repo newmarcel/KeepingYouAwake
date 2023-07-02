@@ -167,7 +167,7 @@ Clique com o botão direito para exibir o menu</target>
       </trans-unit>
     </body>
   </file>
-  <file original="KeepingYouAwake/Settings/KYABatteryPreferencesViewController/Base.lproj/KYABatteryPreferencesViewController.xib" source-language="en" target-language="pt" datatype="plaintext">
+  <file original="KeepingYouAwake/Settings/KYABatterySettingsViewController/Base.lproj/KYABatterySettingsViewController.xib" source-language="en" target-language="pt" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5161b"/>
     </header>

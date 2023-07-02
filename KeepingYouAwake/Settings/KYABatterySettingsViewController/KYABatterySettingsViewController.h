@@ -1,5 +1,5 @@
 //
-//  KYABatteryPreferencesViewController.h
+//  KYABatterySettingsViewController.h
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 23.09.21.
@@ -12,8 +12,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Shows "Battery" preferences.
-@interface KYABatteryPreferencesViewController : KYASettingsContentViewController
+/// Shows "Battery" settings.
+@interface KYABatterySettingsViewController : KYASettingsContentViewController
 /// Provides access to the battery level and
 /// low power mode of the physical device.
 @property (nonatomic, readonly) KYADevice *device;

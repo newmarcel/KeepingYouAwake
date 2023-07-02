@@ -11,7 +11,7 @@
 #import "KYASettingsLocalizedStrings.h"
 #import "KYAGeneralSettingsViewController.h"
 #import "KYADurationPreferencesViewController.h"
-#import "KYABatteryPreferencesViewController.h"
+#import "KYABatterySettingsViewController.h"
 #import "KYAAdvancedPreferencesViewController.h"
 #import "KYAAboutSettingsViewController.h"
 
@@ -32,7 +32,7 @@
     Auto mutableTabViewItems = [NSMutableArray<NSTabViewItem *> arrayWithArray:@[
         KYAGeneralSettingsViewController.preferredTabViewItem,
         KYADurationPreferencesViewController.preferredTabViewItem,
-        KYABatteryPreferencesViewController.preferredTabViewItem,
+        KYABatterySettingsViewController.preferredTabViewItem,
         KYAAdvancedPreferencesViewController.preferredTabViewItem,
     ]];
     if(tabViewItems != nil)

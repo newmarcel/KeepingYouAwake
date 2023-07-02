@@ -1,20 +1,20 @@
 //
-//  KYABatteryPreferencesViewController.m
+//  KYABatterySettingsViewController.m
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 23.09.21.
 //  Copyright © 2021 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYABatteryPreferencesViewController.h"
+#import "KYABatterySettingsViewController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
 #import "KYABatteryCapacityThreshold.h"
 
-@interface KYABatteryPreferencesViewController ()
+@interface KYABatterySettingsViewController ()
 @end
 
-@implementation KYABatteryPreferencesViewController
+@implementation KYABatterySettingsViewController
 
 + (NSImage *)tabViewItemImage
 {
