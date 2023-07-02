@@ -788,7 +788,7 @@
       }
     },
     "SHH-RQ-HPH.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging.\"; ObjectID = \"SHH-RQ-HPH\";",
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Low Power Mode can be enabled on supported Macs in System Settings › Battery and will not apply while charging.\"; ObjectID = \"SHH-RQ-HPH\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "de" : {
@@ -800,7 +800,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging."
+            "value" : "Low Power Mode can be enabled on supported Macs in System Settings › Battery and will not apply while charging."
           }
         },
         "fr" : {

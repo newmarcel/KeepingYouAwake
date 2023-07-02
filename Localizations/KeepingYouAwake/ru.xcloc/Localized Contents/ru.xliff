@@ -193,8 +193,8 @@ Right click to show menu</source>
         <note>Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "M11-sw-GhM";</note>
       </trans-unit>
       <trans-unit id="SHH-RQ-HPH.title" xml:space="preserve">
-        <source>Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging.</source>
-        <note>Class = "NSTextFieldCell"; title = "Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging."; ObjectID = "SHH-RQ-HPH";</note>
+        <source>Low Power Mode can be enabled on supported Macs in System Settings › Battery and will not apply while charging.</source>
+        <note>Class = "NSTextFieldCell"; title = "Low Power Mode can be enabled on supported Macs in System Settings › Battery and will not apply while charging."; ObjectID = "SHH-RQ-HPH";</note>
       </trans-unit>
       <trans-unit id="aXx-hk-9R9.title" xml:space="preserve">
         <source>Low Power Mode</source>
