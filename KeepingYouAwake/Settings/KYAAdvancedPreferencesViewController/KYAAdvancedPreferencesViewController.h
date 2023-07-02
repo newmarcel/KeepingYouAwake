@@ -10,14 +10,14 @@
 #import <KYAApplicationSupport/KYAApplicationSupport.h>
 #import "KYASettingsContentViewController.h"
 
-/// Shows "Advanced" preferences.
+/// Shows "Advanced" settings.
 @interface KYAAdvancedPreferencesViewController : KYASettingsContentViewController <NSTableViewDataSource, NSTableViewDelegate>
 
-/// A table view that lists individual preferences
+/// A table view that lists individual settings
 @property (weak, nonatomic, nullable) IBOutlet NSTableView *tableView;
 
-/// Resets all advanced preferences to their default values.
+/// Resets all advanced settings to their default values.
 /// @param sender The sending control
-- (IBAction)resetAdvancedPreferences:(nullable id)sender;
+- (IBAction)resetAdvancedSettings:(nullable id)sender;
 
 @end

@@ -9,11 +9,11 @@
 #import "KYAAdvancedPreferencesViewController.h"
 #import "KYADefines.h"
 #import "KYALocalizedStrings.h"
-#import "KYAPreference.h"
+#import "KYAUserDefaultsSetting.h"
 #import "KYABatteryCapacityThreshold.h"
 
 @interface KYAAdvancedPreferencesViewController ()
-@property (nonatomic) NSArray<KYAPreference *> *preferences;
+@property (nonatomic) NSArray<KYAUserDefaultsSetting *> *settings;
 @property (nonatomic, readwrite) BOOL batteryStatusAvailable;
 @property (weak, nonatomic) IBOutlet NSUserDefaultsController *defaultsController;
 @end
@@ -49,41 +49,31 @@
 {
     [super viewDidLoad];
 
-    [self configureAdvancedPreferences];
+    [self configureAdvancedSettings];
 }
 
 #pragma mark - Configuration
 
-- (void)configureAdvancedPreferences
+- (void)configureAdvancedSettings
 {
-    Auto preferences = [NSMutableArray<KYAPreference *> new];
-
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_DISABLE_MENU_BAR_ICON_HIGHLIGHT_COLOR
-                                                    defaultsKey:KYAUserDefaultsKeyMenuBarIconHighlightDisabled
-                            ]];
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_QUIT_ON_TIMER_EXPIRATION
-                                                    defaultsKey:KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled
-                            ]];
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_ALLOW_DISPLAY_SLEEP
-                                                    defaultsKey:KYAUserDefaultsKeyAllowDisplaySleep
-                            ]];
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_ACTIVATE_ON_EXTERNAL_DISPLAY
-                                                    defaultsKey:KYAUserDefaultsKeyActivateOnExternalDisplayConnectedEnabled
-                            ]];
-    [preferences addObject:[[KYAPreference alloc] initWithTitle:KYA_L10N_DEACTIVATE_ON_USER_SWITCH
-                                                    defaultsKey:KYAUserDefaultsKeyDeactivateOnUserSwitchEnabled
-                            ]];
-
-    self.preferences = [preferences copy];
+    Auto settings = [NSMutableArray<KYAUserDefaultsSetting *> new];
+    
+    [settings addObject:[[KYAUserDefaultsSetting alloc] initWithTitle:KYA_L10N_DISABLE_MENU_BAR_ICON_HIGHLIGHT_COLOR key:KYAUserDefaultsKeyMenuBarIconHighlightDisabled]];
+    [settings addObject:[[KYAUserDefaultsSetting alloc] initWithTitle:KYA_L10N_QUIT_ON_TIMER_EXPIRATION key:KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled]];
+    [settings addObject:[[KYAUserDefaultsSetting alloc] initWithTitle:KYA_L10N_ALLOW_DISPLAY_SLEEP key:KYAUserDefaultsKeyAllowDisplaySleep]];
+    [settings addObject:[[KYAUserDefaultsSetting alloc] initWithTitle:KYA_L10N_ACTIVATE_ON_EXTERNAL_DISPLAY key:KYAUserDefaultsKeyActivateOnExternalDisplayConnectedEnabled]];
+    [settings addObject:[[KYAUserDefaultsSetting alloc] initWithTitle:KYA_L10N_DEACTIVATE_ON_USER_SWITCH key:KYAUserDefaultsKeyDeactivateOnUserSwitchEnabled]];
+    
+    self.settings = [settings copy];
 }
 
-#pragma mark - Reset Advanced Preferences
+#pragma mark - Reset Advanced Settings
 
-- (IBAction)resetAdvancedPreferences:(id)sender
+- (IBAction)resetAdvancedSettings:(id)sender
 {
-    for(KYAPreference *pref in self.preferences)
+    for(KYAUserDefaultsSetting *setting in self.settings)
     {
-        [pref reset];
+        [setting reset];
     }
     [NSUserDefaults.standardUserDefaults synchronize];
     [self.tableView reloadData];
@@ -93,12 +83,12 @@
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return (NSInteger)self.preferences.count;
+    return (NSInteger)self.settings.count;
 }
 
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    return self.preferences[(NSUInteger)row];
+    return self.settings[(NSUInteger)row];
 }
 
 @end
