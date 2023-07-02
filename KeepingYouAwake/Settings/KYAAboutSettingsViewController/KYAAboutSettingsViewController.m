@@ -1,18 +1,18 @@
 //
-//  KYAAboutPreferencesViewController.m
+//  KYAAboutSettingsViewController.m
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 18.12.15.
 //  Copyright © 2015 Marcel Dierkes. All rights reserved.
 //
 
-#import "KYAAboutPreferencesViewController.h"
+#import "KYAAboutSettingsViewController.h"
 #import "KYALocalizedStrings.h"
 
-@interface KYAAboutPreferencesViewController ()
+@interface KYAAboutSettingsViewController ()
 @end
 
-@implementation KYAAboutPreferencesViewController
+@implementation KYAAboutSettingsViewController
 
 + (NSImage *)tabViewItemImage
 {

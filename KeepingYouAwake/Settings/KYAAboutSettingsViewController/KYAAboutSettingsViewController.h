@@ -1,5 +1,5 @@
 //
-//  KYAAboutPreferencesViewController.h
+//  KYAAboutSettingsViewController.h
 //  KeepingYouAwake
 //
 //  Created by Marcel Dierkes on 18.12.15.
@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// Shows an "About" screen with version and copyright information.
-@interface KYAAboutPreferencesViewController : KYASettingsContentViewController
+@interface KYAAboutSettingsViewController : KYASettingsContentViewController
 @property (copy, nonatomic, readonly) NSString *versionText;
 @property (copy, nonatomic, readonly) NSString *copyrightText;
 

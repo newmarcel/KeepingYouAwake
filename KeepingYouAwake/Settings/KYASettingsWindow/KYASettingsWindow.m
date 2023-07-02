@@ -13,7 +13,7 @@
 #import "KYADurationPreferencesViewController.h"
 #import "KYABatteryPreferencesViewController.h"
 #import "KYAAdvancedPreferencesViewController.h"
-#import "KYAAboutPreferencesViewController.h"
+#import "KYAAboutSettingsViewController.h"
 
 @interface KYASettingsWindow ()
 @end
@@ -39,7 +39,7 @@
     {
         [mutableTabViewItems addObjectsFromArray:tabViewItems];
     }
-    [mutableTabViewItems addObject:KYAAboutPreferencesViewController.preferredTabViewItem];
+    [mutableTabViewItems addObject:KYAAboutSettingsViewController.preferredTabViewItem];
     
     Auto tabViewController = [NSTabViewController new];
     tabViewController.tabStyle = NSTabViewControllerTabStyleToolbar;
