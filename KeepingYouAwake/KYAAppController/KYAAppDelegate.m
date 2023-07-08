@@ -36,13 +36,17 @@
 {
     [NSApplication.sharedApplication activateIgnoringOtherApps:YES];
     
-    NSArray<NSTabViewItem *> *additionalTabViewItems;
+    AutoVar settingsWindow = self.settingsWindow;
+    if(settingsWindow == nil)
+    {
+        NSArray<NSTabViewItem *> *additionalTabViewItems;
 #if KYA_APP_UPDATER_ENABLED
-    additionalTabViewItems = @[KYAUpdateSettingsViewController.preferredTabViewItem];
+        additionalTabViewItems = @[KYAUpdateSettingsViewController.preferredTabViewItem];
 #endif
-    Auto settingsWindow = self.settingsWindow ?: [[KYASettingsWindow alloc] initWithAdditionalTabViewItems:additionalTabViewItems];
+        settingsWindow = [[KYASettingsWindow alloc] initWithAdditionalTabViewItems:additionalTabViewItems];
+        self.settingsWindow = settingsWindow;
+    }
     [settingsWindow makeKeyAndOrderFront:sender];
-    self.settingsWindow = settingsWindow;
 }
 
 @end
