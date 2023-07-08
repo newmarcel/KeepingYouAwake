@@ -49,7 +49,6 @@
 
 #pragma mark - Settings
 
-#define KYA_L10N_DISABLE_MENU_BAR_ICON_HIGHLIGHT_COLOR NSLocalizedString(@"Disable menu bar icon highlight color", @"Disable menu bar icon highlight color")
 #define KYA_L10N_QUIT_ON_TIMER_EXPIRATION NSLocalizedString(@"Quit when activation duration is over", @"Quit when activation duration is over")
 #define KYA_L10N_ALLOW_DISPLAY_SLEEP NSLocalizedString(@"Allow the display to sleep", @"Allow the display to sleep")
 #define KYA_L10N_ACTIVATE_ON_EXTERNAL_DISPLAY NSLocalizedString(@"Activate when an external display is connected", @"Activate when an external display is connected")

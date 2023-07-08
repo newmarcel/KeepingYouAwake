@@ -58,7 +58,6 @@
 {
     Auto settings = [NSMutableArray<KYAUserDefaultsSetting *> new];
     
-    [settings addObject:[[KYAUserDefaultsSetting alloc] initWithTitle:KYA_L10N_DISABLE_MENU_BAR_ICON_HIGHLIGHT_COLOR key:KYAUserDefaultsKeyMenuBarIconHighlightDisabled]];
     [settings addObject:[[KYAUserDefaultsSetting alloc] initWithTitle:KYA_L10N_QUIT_ON_TIMER_EXPIRATION key:KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled]];
     [settings addObject:[[KYAUserDefaultsSetting alloc] initWithTitle:KYA_L10N_ALLOW_DISPLAY_SLEEP key:KYAUserDefaultsKeyAllowDisplaySleep]];
     [settings addObject:[[KYAUserDefaultsSetting alloc] initWithTitle:KYA_L10N_ACTIVATE_ON_EXTERNAL_DISPLAY key:KYAUserDefaultsKeyActivateOnExternalDisplayConnectedEnabled]];
