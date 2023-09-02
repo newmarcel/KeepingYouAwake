@@ -8,6 +8,7 @@
     - *Thank you [YuerLee](https://github.com/YuerLee)!*
 - updated the French translation ([#201](https://github.com/newmarcel/KeepingYouAwake/pull/201))
     - *Thank you [tmuguet](https://github.com/tmuguet)!*
+- removed the advanced setting "Disable menu bar icon highlight color", this behavior can still be enabled using the `defaults` command: `defaults write info.marcel-dierkes.KeepingYouAwake info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled -bool YES`
 
 ### v1.6.4 ###
 
