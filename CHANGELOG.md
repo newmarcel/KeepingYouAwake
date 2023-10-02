@@ -2,6 +2,8 @@
 
 ## Changelog ##
 
+### v1.6.6 ###
+
 ### v1.6.5 ###
 
 - updated the Traditional Chinese translation ([#198](https://github.com/newmarcel/KeepingYouAwake/pull/198))
