@@ -14,7 +14,11 @@ or install it via [cask](http://caskroom.github.io/): `brew install --cask keepi
 
 ## How does it work?
 
-The app is a small wrapper around Apple's `caffeinate` command line utility. All current versions of macOS ship with this tool by default. You can read the manual page [here](https://web.archive.org/web/20140604153141/https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/caffeinate.8.html). On a MacBook this only works as long as the lid is open.
+The app is a small wrapper around Apple's `caffeinate` command line utility. All current versions of macOS ship with this tool by default. You can read the manual page [here](https://web.archive.org/web/20140604153141/https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/caffeinate.8.html).
+
+### Does it work on a MacBook with a closed lid?
+
+No. Because of _(sensible)_ macOS limitations and out of thermal considerations, KeepingYouAwake will only prevent sleep on desktop Macs and portable Macs with an open lid.
 
 ## Is this dangerous?
 
