@@ -82,6 +82,12 @@
             "value" : "О"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O aplikácii"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -157,6 +163,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Продолжительность"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doba trvania"
           }
         },
         "tr" : {
@@ -258,6 +270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Расширенные"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozšírené"
           }
         },
         "tr" : {
@@ -367,6 +385,12 @@
             "value" : "Аккумулятор"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batéria"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -472,6 +496,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Основные"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Všeobecné"
           }
         },
         "tr" : {
@@ -581,6 +611,12 @@
             "value" : "Настройки – KeepingYouAwake"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KeepingYouAwake – Nastavenia"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -656,6 +692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обновления"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktualizácie"
           }
         },
         "tr" : {

@@ -658,6 +658,7 @@
 				uk,
 				ja,
 				it,
+				sk,
 			);
 			mainGroup = DA637B3019F14693004C8838;
 			packageReferences = (
