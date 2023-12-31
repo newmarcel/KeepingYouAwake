@@ -162,6 +162,7 @@ Pravým kliknutím zobrazíte menu</target>
     <body>
       <trans-unit id="3GX-gq-Yaq.title" xml:space="preserve">
         <source>Reset to Default</source>
+        <target state="translated">Obnoviť predvolené nastavenia</target>
         <note>Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "3GX-gq-Yaq";</note>
       </trans-unit>
       <trans-unit id="7z8-pS-A86.title" xml:space="preserve">
@@ -174,6 +175,7 @@ Pravým kliknutím zobrazíte menu</target>
       </trans-unit>
       <trans-unit id="xdm-wP-gM6.title" xml:space="preserve">
         <source>Only change these advanced settings if you know what you are doing. Most of these settings require an app restart.</source>
+        <target state="translated">Tieto rozšírené nastavenia meňte iba vtedy, ak viete, čo robíte. Väčšina týchto nastavení vyžaduje reštart aplikácie.</target>
         <note>Class = "NSTextFieldCell"; title = "Only change these advanced settings if you know what you are doing. Most of these settings require an app restart."; ObjectID = "xdm-wP-gM6";</note>
       </trans-unit>
     </body>
@@ -193,22 +195,27 @@ Pravým kliknutím zobrazíte menu</target>
       </trans-unit>
       <trans-unit id="SHH-RQ-HPH.title" xml:space="preserve">
         <source>Low Power Mode can be enabled on supported Macs in System Settings › Battery and will not apply while charging.</source>
+        <target state="translated">Režim nízkej spotreby je možné zapnúť na podporovaných Macoch v Systémových nastaveniach › Batéria a počas nabíjania sa nebude používať.</target>
         <note>Class = "NSTextFieldCell"; title = "Low Power Mode can be enabled on supported Macs in System Settings › Battery and will not apply while charging."; ObjectID = "SHH-RQ-HPH";</note>
       </trans-unit>
       <trans-unit id="aXx-hk-9R9.title" xml:space="preserve">
         <source>Low Power Mode</source>
+        <target state="translated">Režim nízkej spotreby</target>
         <note>Class = "NSTextFieldCell"; title = "Low Power Mode"; ObjectID = "aXx-hk-9R9";</note>
       </trans-unit>
       <trans-unit id="gx4-rK-1he.title" xml:space="preserve">
         <source>Deactivate when battery capacity is below</source>
+        <target state="translated">Deaktivovať pri kapacite batérie nižšej ako</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "gx4-rK-1he";</note>
       </trans-unit>
       <trans-unit id="l4a-Sa-RAE.title" xml:space="preserve">
         <source>This value will be ignored when you manually start the app below this battery capacity.</source>
+        <target state="translated">Táto hodnota bude ignorovaná, keď manuálne spustíte aplikáciu pod túto kapacitu batérie.</target>
         <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "l4a-Sa-RAE";</note>
       </trans-unit>
       <trans-unit id="mcf-JV-nyg.title" xml:space="preserve">
         <source>Deactivate when Low Power Mode is enabled</source>
+        <target state="translated">Deaktivovať pri povolenom režime nízkej spotreby</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when Low Power Mode is enabled"; ObjectID = "mcf-JV-nyg";</note>
       </trans-unit>
       <trans-unit id="ovF-0F-TMc.title" xml:space="preserve">
@@ -217,6 +224,7 @@ Pravým kliknutím zobrazíte menu</target>
       </trans-unit>
       <trans-unit id="pvY-d7-nKX.title" xml:space="preserve">
         <source>Battery Level</source>
+        <target state="translated">Úroveň nabitia batérie</target>
         <note>Class = "NSTextFieldCell"; title = "Battery Level"; ObjectID = "pvY-d7-nKX";</note>
       </trans-unit>
     </body>
@@ -228,10 +236,12 @@ Pravým kliknutím zobrazíte menu</target>
     <body>
       <trans-unit id="5bs-m4-hy9.title" xml:space="preserve">
         <source>Hours</source>
+        <target state="translated">Hodiny</target>
         <note>Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "5bs-m4-hy9";</note>
       </trans-unit>
       <trans-unit id="59l-n2-tD5.title" xml:space="preserve">
         <source>Cancel</source>
+        <target state="translated">Zrušiť</target>
         <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "59l-n2-tD5";</note>
       </trans-unit>
       <trans-unit id="kYn-pW-tq6.title" xml:space="preserve">
@@ -240,14 +250,17 @@ Pravým kliknutím zobrazíte menu</target>
       </trans-unit>
       <trans-unit id="oi9-AP-ag4.title" xml:space="preserve">
         <source>Minutes</source>
+        <target state="translated">Minúty</target>
         <note>Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "oi9-AP-ag4";</note>
       </trans-unit>
       <trans-unit id="s1J-2f-UeD.title" xml:space="preserve">
         <source>Seconds</source>
+        <target state="translated">Sekundy</target>
         <note>Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "s1J-2f-UeD";</note>
       </trans-unit>
       <trans-unit id="vTF-HR-j5d.title" xml:space="preserve">
         <source>Add Duration</source>
+        <target state="translated">Pridať dobu trvania</target>
         <note>Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "vTF-HR-j5d";</note>
       </trans-unit>
     </body>
@@ -259,6 +272,7 @@ Pravým kliknutím zobrazíte menu</target>
     <body>
       <trans-unit id="2Az-3u-oGb.title" xml:space="preserve">
         <source>Remove</source>
+        <target state="translated">Odstrániť</target>
         <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "2Az-3u-oGb";</note>
       </trans-unit>
       <trans-unit id="3es-An-BPG.title" xml:space="preserve">
@@ -267,6 +281,7 @@ Pravým kliknutím zobrazíte menu</target>
       </trans-unit>
       <trans-unit id="4tU-j1-N4m.title" xml:space="preserve">
         <source>The default activation duration is used when you click on the menu bar icon.</source>
+        <target state="translated">Predvolená doba trvania sa použije po kliknutí na ikonu v lište.</target>
         <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "4tU-j1-N4m";</note>
       </trans-unit>
       <trans-unit id="13c-ID-Fgy.title" xml:space="preserve">
@@ -275,6 +290,7 @@ Pravým kliknutím zobrazíte menu</target>
       </trans-unit>
       <trans-unit id="Are-vs-Awn.title" xml:space="preserve">
         <source>Set Default</source>
+        <target state="translated">Nastaviť predvolené</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "Are-vs-Awn";</note>
       </trans-unit>
       <trans-unit id="Btn-FN-s8Z.title" xml:space="preserve">
@@ -283,18 +299,22 @@ Pravým kliknutím zobrazíte menu</target>
       </trans-unit>
       <trans-unit id="COs-G1-J6K.title" xml:space="preserve">
         <source>Reset…</source>
+        <target state="translated">Obnoviť…</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "COs-G1-J6K";</note>
       </trans-unit>
       <trans-unit id="U86-Hk-nfT.title" xml:space="preserve">
         <source>Set Default</source>
+        <target state="translated">Nastaviť predvolené</target>
         <note>Class = "NSMenuItem"; title = "Set Default"; ObjectID = "U86-Hk-nfT";</note>
       </trans-unit>
       <trans-unit id="dml-Pt-frp.ibShadowedToolTips[0]" xml:space="preserve">
         <source>Remove</source>
+        <target state="translated">Odstrániť</target>
         <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[0] = "Remove"; ObjectID = "dml-Pt-frp";</note>
       </trans-unit>
       <trans-unit id="dml-Pt-frp.ibShadowedToolTips[1]" xml:space="preserve">
         <source>Add</source>
+        <target state="translated">Pridať</target>
         <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[1] = "Add"; ObjectID = "dml-Pt-frp";</note>
       </trans-unit>
     </body>
@@ -306,22 +326,27 @@ Pravým kliknutím zobrazíte menu</target>
     <body>
       <trans-unit id="7QN-oX-fJU.title" xml:space="preserve">
         <source>Immediately starts preventing sleep when launched.</source>
+        <target state="translated">Po spustení okamžite začne brániť spánku.</target>
         <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU";</note>
       </trans-unit>
       <trans-unit id="7dk-Tj-9aG.title" xml:space="preserve">
         <source>Notification Settings…</source>
+        <target state="translated">Nastavenie hlásení…</target>
         <note>Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "7dk-Tj-9aG";</note>
       </trans-unit>
       <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
         <source>Start at Login</source>
+        <target state="translated">Spustiť pri štarte</target>
         <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "YWD-DY-pgf";</note>
       </trans-unit>
       <trans-unit id="jxf-J8-dHN.title" xml:space="preserve">
         <source>Automatically opens the app when you start your Mac.</source>
+        <target state="translated">Automaticky otvorí aplikáciu pri spustení Macu.</target>
         <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "jxf-J8-dHN";</note>
       </trans-unit>
       <trans-unit id="zql-rZ-9xH.title" xml:space="preserve">
         <source>Activate on Launch</source>
+        <target state="translated">Aktivovať pri štarte</target>
         <note>Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "zql-rZ-9xH";</note>
       </trans-unit>
     </body>
@@ -375,14 +400,17 @@ Pravým kliknutím zobrazíte menu</target>
     <body>
       <trans-unit id="F2o-Is-2nW.title" xml:space="preserve">
         <source>Automatically Check for Updates</source>
+        <target state="translated">Automaticky kontrolovať aktualizácie</target>
         <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "F2o-Is-2nW";</note>
       </trans-unit>
       <trans-unit id="oBK-47-iMk.title" xml:space="preserve">
         <source>Check for Pre-Release Updates</source>
+        <target state="translated">Kontrolovať predbežné aktualizácie</target>
         <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "oBK-47-iMk";</note>
       </trans-unit>
       <trans-unit id="tAT-1z-ZPp.title" xml:space="preserve">
         <source>Check Now</source>
+        <target state="translated">Skontrolovať</target>
         <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "tAT-1z-ZPp";</note>
       </trans-unit>
     </body>

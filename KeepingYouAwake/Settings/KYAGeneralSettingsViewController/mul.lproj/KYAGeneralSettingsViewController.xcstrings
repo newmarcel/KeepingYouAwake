@@ -41,6 +41,12 @@
             "value" : "通知の設定…"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavenie hlásení…"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -141,6 +147,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Предотвращает сон сразу при запуске."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Po spustení okamžite začne brániť spánku."
           }
         },
         "tr" : {
@@ -251,6 +263,12 @@
             "value" : "Открывает приложение автоматически при запуске Mac."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automaticky otvorí aplikáciu pri spustení Macu."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -359,6 +377,12 @@
             "value" : "Запуск при входе"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spustiť pri štarte"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -465,6 +489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Активировать при запуске"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivovať pri štarte"
           }
         },
         "tr" : {

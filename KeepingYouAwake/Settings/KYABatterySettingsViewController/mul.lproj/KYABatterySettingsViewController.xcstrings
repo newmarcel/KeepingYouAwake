@@ -83,6 +83,12 @@
             "value" : "Режим энергосбережения"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Režim nízkej spotreby"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -189,6 +195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Деактивировать, если заряд батареи ниже"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deaktivovať pri kapacite batérie nižšej ako"
           }
         },
         "tr" : {
@@ -407,6 +419,12 @@
             "value" : "Это значение будет игнорироваться, если вы запустите приложение ниже этого предела емкости."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Táto hodnota bude ignorovaná, keď manuálne spustíte aplikáciu pod túto kapacitu batérie."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -561,6 +579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Désactiver quand le mode économie d'énergie est activé"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deaktivovať pri povolenom režime nízkej spotreby"
           }
         },
         "zh-Hant" : {
@@ -761,6 +785,12 @@
             "value" : "Уровень заряда"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Úroveň nabitia batérie"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -807,6 +837,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le mode économie d'énergie peut être activé sur les Macs supportés dans Préférences Systèmes > Batterie et ne sera pas appliqué lorsqu'en charge."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Režim nízkej spotreby je možné zapnúť na podporovaných Macoch v Systémových nastaveniach › Batéria a počas nabíjania sa nebude používať."
           }
         },
         "zh-Hant" : {

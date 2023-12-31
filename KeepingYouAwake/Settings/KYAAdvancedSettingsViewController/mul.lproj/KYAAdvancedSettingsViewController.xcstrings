@@ -83,6 +83,12 @@
             "value" : "Сбросить"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obnoviť predvolené nastavenia"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -213,6 +219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не изменяйте эти расширенные настройки, если вы не знаете, что делаете. Большинство из этих настроек требуют перезапуска приложения."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tieto rozšírené nastavenia meňte iba vtedy, ak viete, čo robíte. Väčšina týchto nastavení vyžaduje reštart aplikácie."
           }
         },
         "tr" : {
