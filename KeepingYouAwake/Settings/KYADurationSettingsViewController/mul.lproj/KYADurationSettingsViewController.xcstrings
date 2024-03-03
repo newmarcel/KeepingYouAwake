@@ -53,6 +53,12 @@
             "value" : "Удалить"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odstrániť"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -177,6 +183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Длительность активации по умолчанию используется при нажатии на значок строки меню."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Predvolená doba trvania sa použije po kliknutí na ikonu v lište."
           }
         },
         "tr" : {
@@ -311,6 +323,12 @@
             "value" : "Установить по умолчанию"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastaviť predvolené"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -413,6 +431,12 @@
             "value" : "Сбросить…"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obnoviť…"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -483,6 +507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удалить"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odstrániť"
           }
         },
         "tr" : {
@@ -557,6 +587,12 @@
             "value" : "Добавить"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pridať"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -627,6 +663,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Установить по умолчанию"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastaviť predvolené"
           }
         },
         "tr" : {

@@ -53,6 +53,12 @@
             "value" : "Часа"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hodiny"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -123,6 +129,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Отмена"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zrušiť"
           }
         },
         "tr" : {
@@ -227,6 +239,12 @@
             "value" : "Минут"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minúty"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -299,6 +317,12 @@
             "value" : "Секунд"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sekundy"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -369,6 +393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавить продолжительность"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pridať dobu trvania"
           }
         },
         "tr" : {
