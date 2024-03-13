@@ -183,6 +183,12 @@
             "value" : "Тривалість"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "激活时长"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -710,6 +716,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Оновлення"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新"
           }
         },
         "zh-Hant" : {

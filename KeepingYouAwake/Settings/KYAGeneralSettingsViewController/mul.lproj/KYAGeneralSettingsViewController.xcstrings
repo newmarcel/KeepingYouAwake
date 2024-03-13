@@ -59,6 +59,12 @@
             "value" : "Налаштування Повідомлень…"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开系统通知设置..."
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
