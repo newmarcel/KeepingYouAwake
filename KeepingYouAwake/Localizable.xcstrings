@@ -814,7 +814,7 @@
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "您确定要将时长列表为默认值？"
+            "value" : "您确定要将时长列表重置为默认值？"
           }
         },
         "zh-Hant" : {
