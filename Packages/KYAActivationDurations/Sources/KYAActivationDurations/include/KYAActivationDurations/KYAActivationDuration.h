@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <KYACommon/KYAExport.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// An indefinite activation duration (represents a time interval of 0.0).
-FOUNDATION_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
+KYA_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 
 /// The object representation of a sleep wake timer activation duration.
 @interface KYAActivationDuration : NSObject <NSSecureCoding>

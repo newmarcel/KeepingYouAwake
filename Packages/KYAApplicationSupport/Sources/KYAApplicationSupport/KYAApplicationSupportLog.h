@@ -7,10 +7,11 @@
 
 #import <Foundation/Foundation.h>
 #import <os/log.h>
+#import <KYACommon/KYACommon.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// Returns the default log for the ApplicationSupport category.
-FOUNDATION_EXPORT os_log_t KYAApplicationSupportLog(void);
+KYA_EXPORT os_log_t KYAApplicationSupportLog(void);
 
 NS_ASSUME_NONNULL_END

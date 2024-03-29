@@ -6,10 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <KYACommon/KYAExport.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
 
 @interface NSUserDefaults (KYADefaultTimeInterval)
 

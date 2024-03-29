@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <KYAApplicationSupport/KYAApplicationSupport.h>
+#import <KYACommon/KYAExport.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT NSTimeInterval const KYASleepWakeTimeIntervalIndefinite;
+KYA_EXPORT NSTimeInterval const KYASleepWakeTimeIntervalIndefinite;
 
 typedef void (^KYASleepWakeTimerCompletionBlock)(BOOL cancelled);
 

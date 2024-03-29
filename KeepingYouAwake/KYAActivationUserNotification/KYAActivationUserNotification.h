@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <KYAUserNotifications/KYAUserNotifications.h>
+#import <KYACommon/KYAExport.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT NSString * const KYAActivationUserNotificationIdentifier;
+KYA_EXPORT NSString * const KYAActivationUserNotificationIdentifier;
 
 /// A user notification representing activation and deactivation
 /// events of a sleep/wake timer.

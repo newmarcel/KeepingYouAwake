@@ -7,20 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <KYACommon/KYAExport.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 // User Default Keys
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyActivateOnLaunch;
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyActivateOnExternalDisplayConnectedEnabled;
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyDeactivateOnUserSwitchEnabled;
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled;
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyLowPowerModeMonitoringEnabled;
-FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyActivateOnLaunch;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyAllowDisplaySleep;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyActivateOnExternalDisplayConnectedEnabled;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyDeactivateOnUserSwitchEnabled;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarIconHighlightDisabled;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyIsQuitOnTimerExpirationEnabled;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyLowPowerModeMonitoringEnabled;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
 
 @interface NSUserDefaults (KYAKeys)
 
