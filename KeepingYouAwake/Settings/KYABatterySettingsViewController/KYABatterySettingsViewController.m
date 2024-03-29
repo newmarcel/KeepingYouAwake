@@ -7,7 +7,7 @@
 //
 
 #import "KYABatterySettingsViewController.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYALocalizedStrings.h"
 #import "KYABatteryCapacityThreshold.h"
 

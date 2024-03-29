@@ -7,7 +7,7 @@
 
 #import <KYAApplicationEvents/KYAEventHandler+KYADefaultEventHandler.h>
 #import <ApplicationServices/ApplicationServices.h>
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 @implementation KYAEventHandler (KYADefaultEventHandler)
 

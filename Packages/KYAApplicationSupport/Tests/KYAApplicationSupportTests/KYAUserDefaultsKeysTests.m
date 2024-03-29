@@ -6,8 +6,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <KYACommon/KYACommon.h>
 #import <KYAApplicationSupport/KYAApplicationSupport.h>
-#import "../../Sources/KYAApplicationSupport/KYADefines.h"
 #import "../../Sources/KYAApplicationSupport/KYAApplicationSupportLog.h"
 
 #define KYA_GENERATE_BOOL_TEST(_short_getter_name, _property_name, _defaults_key)           \

@@ -7,7 +7,7 @@
 //
 
 #import <KYADeviceInfo/KYADevice.h>
-#import "../KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "../KYABatteryMonitor/KYABatteryMonitor+Private.h"
 #import "../KYALowPowerModeMonitor/KYALowPowerModeMonitor+Private.h"
 

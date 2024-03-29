@@ -6,7 +6,7 @@
 //
 
 #import <KYAUserNotifications/NSURL+KYAUserNotificationCenter.h>
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 @implementation NSURL (KYAUserNotificationCenter)
 

@@ -7,7 +7,7 @@
 //
 
 #import <KYAUserNotifications/NSDate+RemainingTime.h>
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 @implementation NSDate (RemainingTime)
 

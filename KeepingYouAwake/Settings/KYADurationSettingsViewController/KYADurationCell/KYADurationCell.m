@@ -7,7 +7,7 @@
 //
 
 #import "KYADurationCell.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYALocalizedStrings.h"
 
 @implementation KYADurationCell

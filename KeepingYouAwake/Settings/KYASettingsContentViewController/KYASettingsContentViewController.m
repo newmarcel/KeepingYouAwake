@@ -7,7 +7,7 @@
 //
 
 #import "KYASettingsContentViewController.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 @interface KYASettingsContentViewController ()
 @end

@@ -6,7 +6,7 @@
 //
 
 #import "NSImage+KYAStatusItemImage.h"
-#import "../KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "NSURL+KYAStatusItemImage.h"
 
 const NSImageName KYAStatusItemActiveImageName = @"ActiveIcon";

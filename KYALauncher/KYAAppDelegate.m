@@ -7,17 +7,16 @@
 //
 
 #import "KYAAppDelegate.h"
-#import "KYADefines.h"
 
 @implementation KYAAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    AutoVar pathComponents = NSBundle.mainBundle.bundlePath.pathComponents;
+    NSArray<NSString *> *pathComponents = NSBundle.mainBundle.bundlePath.pathComponents;
     NSRange pathRange = NSMakeRange(0, pathComponents.count - 4);
     pathComponents = [pathComponents subarrayWithRange:pathRange];
 
-    Auto path = [NSString pathWithComponents:pathComponents];
+    NSString *path = [NSString pathWithComponents:pathComponents];
     [NSWorkspace.sharedWorkspace launchApplication:path];
 
     [NSApplication.sharedApplication terminate:nil];

@@ -7,7 +7,7 @@
 //
 
 #import "KYAAddDurationViewController.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYALocalizedStrings.h"
 
 static const NSInteger KYAMaximumHours = 999;

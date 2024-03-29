@@ -7,8 +7,8 @@
 //
 
 #import <KYAActivationDurations/KYAActivationDurationsController.h>
+#import <KYACommon/KYACommon.h>
 #import <KYAActivationDurations/NSUserDefaults+KYADefaultTimeInterval.h>
-#import "KYADefines.h"
 #import "KYAActivationDurationsLog.h"
 
 #define KYA_USES_SIMPLE_USER_DEFAULTS_VALUES 1

@@ -6,7 +6,7 @@
 //
 
 #import <KYAActivationDurations/NSUserDefaults+KYADefaultTimeInterval.h>
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 NSString * const KYAUserDefaultsKeyDefaultTimeInterval = @"info.marcel-dierkes.KeepingYouAwake.TimeInterval";
 

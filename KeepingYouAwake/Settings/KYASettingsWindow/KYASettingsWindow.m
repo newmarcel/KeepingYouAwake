@@ -7,7 +7,7 @@
 //
 
 #import "KYASettingsWindow.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYASettingsLocalizedStrings.h"
 #import "KYAGeneralSettingsViewController.h"
 #import "KYADurationSettingsViewController.h"

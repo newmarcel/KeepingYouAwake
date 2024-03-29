@@ -7,7 +7,7 @@
 //
 
 #import "KYAGeneralSettingsViewController.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 @interface KYAGeneralSettingsViewController ()
 @property (weak, nonatomic) IBOutlet NSButton *startAtLoginCheckBoxButton;

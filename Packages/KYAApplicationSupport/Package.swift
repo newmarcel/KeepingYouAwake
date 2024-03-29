@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.9
 
 import PackageDescription
 
@@ -11,9 +11,15 @@ let package = Package(
         .library(name: "KYAApplicationSupport", targets: ["KYAApplicationSupport"]),
     ],
     dependencies: [
+        .package(name: "KYACommon", path: "../KYACommon"),
     ],
     targets: [
-        .target(name: "KYAApplicationSupport", dependencies: []),
+        .target(
+            name: "KYAApplicationSupport",
+            dependencies: [
+                .product(name: "KYACommon", package: "KYACommon"),
+            ]
+        ),
         .testTarget(
             name: "KYAApplicationSupportTests",
             dependencies: ["KYAApplicationSupport"],

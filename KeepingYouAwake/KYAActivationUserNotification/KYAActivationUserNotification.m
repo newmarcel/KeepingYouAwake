@@ -7,7 +7,7 @@
 //
 
 #import "KYAActivationUserNotification.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYALocalizedStrings.h"
 
 NSString * const KYAActivationUserNotificationIdentifier = @"KYAActivationIdentifier";

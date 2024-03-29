@@ -7,7 +7,7 @@
 
 #import <KYAUserNotifications/KYAUserNotificationCenter.h>
 #import <UserNotifications/UserNotifications.h>
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 @interface KYAUserNotificationCenter ()
 @property (nonatomic) UNUserNotificationCenter *center;

@@ -7,7 +7,7 @@
 //
 
 #import "KYAAppUpdater.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 #if KYA_APP_UPDATER_ENABLED
 

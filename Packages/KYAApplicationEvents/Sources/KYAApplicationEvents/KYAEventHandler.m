@@ -7,7 +7,7 @@
 //
 
 #import <KYAApplicationEvents/KYAEventHandler.h>
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 @interface KYAEventHandler ()
 @property (nonatomic) dispatch_queue_t eventQueue;

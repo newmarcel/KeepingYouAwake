@@ -7,7 +7,7 @@
 //
 
 #import "KYAActivationDuration+KYALocalizedTitle.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYALocalizedStrings.h"
 
 @implementation KYAActivationDuration (KYALocalizedTitle)

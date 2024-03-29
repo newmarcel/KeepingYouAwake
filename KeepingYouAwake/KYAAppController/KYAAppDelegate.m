@@ -7,7 +7,7 @@
 //
 
 #import "KYAAppDelegate.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYAAppUpdater.h"
 #import "KYASettingsWindow.h"
 #import "KYAUpdateSettingsViewController.h"

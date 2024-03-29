@@ -7,7 +7,7 @@
 //
 
 #import <KYAApplicationSupport/NSUserDefaults+KYAKeys.h>
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 // A macro to define a new user defaults convenience property for BOOL values.
 // - _short_getter_name represents the name of the getter,
