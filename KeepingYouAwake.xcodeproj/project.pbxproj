@@ -1143,6 +1143,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LOCALIZATION_EXPORT_SUPPORTED = NO;
 				PRODUCT_NAME = KeepingYouAwake;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1170,6 +1171,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LOCALIZATION_EXPORT_SUPPORTED = NO;
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) --timestamp";
 				PRODUCT_NAME = KeepingYouAwake;
 				PROVISIONING_PROFILE_SPECIFIER = "";
