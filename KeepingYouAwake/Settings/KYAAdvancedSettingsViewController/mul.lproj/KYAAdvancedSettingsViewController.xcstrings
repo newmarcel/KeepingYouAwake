@@ -124,6 +124,12 @@
             "state" : "new",
             "value" : "Check"
           }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
         }
       }
     },
@@ -135,6 +141,12 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Text Cell"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }

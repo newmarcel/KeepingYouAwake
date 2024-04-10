@@ -71,6 +71,12 @@
             "value" : "Години"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -149,6 +155,12 @@
             "value" : "Відміна"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -183,6 +195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Warning Label"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -255,6 +273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Хвилини"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分"
           }
         },
         "zh-Hant" : {
@@ -335,6 +359,12 @@
             "value" : "Секунди"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "秒"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -411,6 +441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Додати"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加时间"
           }
         },
         "zh-Hant" : {

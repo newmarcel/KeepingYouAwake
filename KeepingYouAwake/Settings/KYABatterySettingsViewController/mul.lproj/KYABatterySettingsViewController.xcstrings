@@ -587,6 +587,12 @@
             "value" : "Deaktivovať pri povolenom režime nízkej spotreby"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在低电量模式下关闭"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -843,6 +849,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Režim nízkej spotreby je možné zapnúť na podporovaných Macoch v Systémových nastaveniach › Batéria a počas nabíjania sa nebude používať."
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在支持低电量模式的 Mac 上可通过系统设置 › 电池中开启，充电时不适用。"
           }
         },
         "zh-Hant" : {
