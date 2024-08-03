@@ -4,8 +4,10 @@
 
 ### v1.6.6 ###
 
-- added a Slovak translation ([#209](https://github.com/newmarcel/KeepingYouAwake/pull/209))
+- added Slovak translations ([#209](https://github.com/newmarcel/KeepingYouAwake/pull/209))
     - *Thank you Tomáš Švec!*
+- updated the Chinese translations ([#213](https://github.com/newmarcel/KeepingYouAwake/pull/213))
+	- *Thank you [LZhenHong](https://github.com/LZhenHong)!*
 
 ### v1.6.5 ###
 
