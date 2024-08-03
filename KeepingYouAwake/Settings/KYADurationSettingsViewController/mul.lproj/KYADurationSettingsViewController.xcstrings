@@ -379,42 +379,6 @@
         }
       }
     },
-    "Btn-FN-s8Z.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Text Cell\"; ObjectID = \"Btn-FN-s8Z\"; Note = \"Do not localize\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Text Cell"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : ""
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Text Cell"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Text Cell"
-          }
-        },
-        "zh" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : ""
-          }
-        }
-      }
-    },
     "COs-G1-J6K.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Reset…\"; ObjectID = \"COs-G1-J6K\";",
       "extractionState" : "extracted_with_value",
