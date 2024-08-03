@@ -71,6 +71,12 @@
             "value" : "Видалити"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -129,6 +135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обрати за замовчуванням"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置为默认"
           }
         }
       }
@@ -203,6 +215,12 @@
             "value" : "Обрана тут тривалість активується за замовчуванням при кліку на іконку додатку в MacOS меню."
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击菜单栏图标会使用默认的激活时长。"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -261,6 +279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скинути…"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置..."
           }
         },
         "zh-Hant" : {
@@ -341,6 +365,12 @@
             "value" : "Обрати за замовчуванням"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置为默认"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -375,6 +405,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Text Cell"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -447,6 +483,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скинути…"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置..."
           }
         },
         "zh-Hant" : {
@@ -527,6 +569,12 @@
             "value" : "Видалити цей інтервал"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -605,6 +653,12 @@
             "value" : "Додати новий інтервал"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -681,6 +735,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обрати за замовчуванням"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置为默认"
           }
         },
         "zh-Hant" : {

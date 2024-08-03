@@ -58,6 +58,12 @@
             "value" : "(За замовчуванням)"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "（默认）"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -194,6 +200,12 @@
             "value" : "Aktivovať, keď je pripojený externý displej"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当外接显示器连接时激活"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -239,6 +251,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daha sonra Mac'iniz kullanılmadığında otomatik olarak tekrar uyku moduna geçer."
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在这之后 Mac 会在闲置时自动进入休眠状态。"
           }
         },
         "zh-Hant" : {
@@ -288,6 +306,12 @@
             "value" : "Дозволити дисплею вимикатись"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允许显示器休眠"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -333,6 +357,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uyku moduna izin veriliyor"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允许休眠"
           }
         },
         "zh-Hant" : {
@@ -398,6 +428,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Відміна"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
           }
         },
         "zh-Hant" : {
@@ -639,6 +675,12 @@
             "value" : "Deaktivovať pri prepnutí na iný používateľský účet"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换用户时结束防止休眠"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -704,6 +746,12 @@
             "value" : "За замовчуванням"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "默认"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -761,6 +809,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ви справді бажаєте скинути всі налаштовані інтервали роботи до установлених за замовчуванням?"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您确定要将时长列表重置为默认值？"
           }
         },
         "zh-Hant" : {
@@ -923,6 +977,12 @@
             "value" : "Так"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好的"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -970,6 +1030,12 @@
             "value" : "Uyku modu önleniyor"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "防止休眠"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1015,6 +1081,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uyku modu %@ için önleniyor"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在%@内防止休眠"
           }
         },
         "zh-Hant" : {
@@ -1189,6 +1261,12 @@
             "value" : "Вийти коли час очікування скінчиться"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当防止休眠结束时退出应用程序"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1254,6 +1332,12 @@
             "value" : "Скинути збережені тривалості часу"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置时长列表"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1317,6 +1401,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Встановити за замовчуванням: %@"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将%@设置为默认"
           }
         },
         "zh-Hant" : {
@@ -1491,6 +1581,12 @@
             "value" : "Введено помилковий інтервал часу. Спробуйте будьласка ще раз."
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入的时长无效，请重试。"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1554,6 +1650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Така тривалість часу вже додана."
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时长已存在。"
           }
         },
         "zh-Hant" : {
@@ -1710,6 +1812,12 @@
             "value" : "Yine de Mac'iniz için uyku modunu manuel olarak etkinleştirebilirsiniz."
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您仍然可以手动让 Mac 进入休眠状态。"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1755,6 +1863,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daha sonra Mac'iniz kullanılmadığında otomatik olarak tekrar uyku moduna geçer."
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在闲置时 Mac 会自动休眠。"
           }
         },
         "zh-Hant" : {
