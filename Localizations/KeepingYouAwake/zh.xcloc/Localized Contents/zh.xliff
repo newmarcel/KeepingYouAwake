@@ -2,26 +2,27 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="KeepingYouAwake/InfoPlist.xcstrings" source-language="en" target-language="zh" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
-        <source>KeepingYouAwake (Direct)</source>
+        <source>KeepingYouAwake</source>
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2023 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2024 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Localizable.xcstrings" source-language="en" target-language="zh" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
         <source>(Default)</source>
+        <target state="translated">（默认）</target>
         <note>(Default)</note>
       </trans-unit>
       <trans-unit id="Activate for Duration" xml:space="preserve">
@@ -31,22 +32,27 @@
       </trans-unit>
       <trans-unit id="Activate when an external display is connected" xml:space="preserve">
         <source>Activate when an external display is connected</source>
+        <target state="translated">当外接显示器连接时激活</target>
         <note>Activate when an external display is connected</note>
       </trans-unit>
       <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
         <source>Afterwards your Mac will automatically go to sleep again when unused.</source>
+        <target state="translated">在这之后 Mac 会在闲置时自动进入休眠状态。</target>
         <note>Afterwards your Mac will automatically go to sleep again when unused.</note>
       </trans-unit>
       <trans-unit id="Allow the display to sleep" xml:space="preserve">
         <source>Allow the display to sleep</source>
+        <target state="translated">允许显示器休眠</target>
         <note>Allow the display to sleep</note>
       </trans-unit>
       <trans-unit id="Allowing Sleep" xml:space="preserve">
         <source>Allowing Sleep</source>
+        <target state="translated">允许休眠</target>
         <note>Allowing Sleep</note>
       </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
         <source>Cancel</source>
+        <target state="translated">取消</target>
         <note>Cancel</note>
       </trans-unit>
       <trans-unit id="Click to allow sleep&#10;Right click to show menu" xml:space="preserve">
@@ -63,14 +69,17 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Deactivate when switched to another user account" xml:space="preserve">
         <source>Deactivate when switched to another user account</source>
+        <target state="translated">切换用户时结束防止休眠</target>
         <note>Deactivate when switched to another user account</note>
       </trans-unit>
       <trans-unit id="Default" xml:space="preserve">
         <source>Default</source>
+        <target state="translated">默认</target>
         <note>Default</note>
       </trans-unit>
       <trans-unit id="Do you really want to reset the activation durations to the default values?" xml:space="preserve">
         <source>Do you really want to reset the activation durations to the default values?</source>
+        <target state="translated">您确定要将时长列表重置为默认值？</target>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
@@ -80,14 +89,17 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="OK" xml:space="preserve">
         <source>OK</source>
+        <target state="translated">好的</target>
         <note>OK</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep" xml:space="preserve">
         <source>Preventing Sleep</source>
+        <target state="translated">防止休眠</target>
         <note>Preventing Sleep</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep for %@" xml:space="preserve">
         <source>Preventing Sleep for %@</source>
+        <target state="translated">在%@内防止休眠</target>
         <note>Preventing Sleep for %@</note>
       </trans-unit>
       <trans-unit id="Quit" xml:space="preserve">
@@ -97,14 +109,17 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Quit when activation duration is over" xml:space="preserve">
         <source>Quit when activation duration is over</source>
+        <target state="translated">当防止休眠结束时退出应用程序</target>
         <note>Quit when activation duration is over</note>
       </trans-unit>
       <trans-unit id="Reset Activation Durations" xml:space="preserve">
         <source>Reset Activation Durations</source>
+        <target state="translated">重置时长列表</target>
         <note>Reset Activation Durations</note>
       </trans-unit>
       <trans-unit id="Set Default: %@" xml:space="preserve">
         <source>Set Default: %@</source>
+        <target state="translated">将%@设置为默认</target>
         <note>Set Default: %@</note>
       </trans-unit>
       <trans-unit id="Settings…" xml:space="preserve">
@@ -114,10 +129,12 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="The entered duration is invalid. Please try again." xml:space="preserve">
         <source>The entered duration is invalid. Please try again.</source>
+        <target state="translated">输入的时长无效，请重试。</target>
         <note>The entered duration is invalid. Please try again.</note>
       </trans-unit>
       <trans-unit id="This duration has already been added." xml:space="preserve">
         <source>This duration has already been added.</source>
+        <target state="translated">时长已存在。</target>
         <note>This duration has already been added.</note>
       </trans-unit>
       <trans-unit id="Version" xml:space="preserve">
@@ -127,17 +144,19 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="You can still manually enable sleep mode for your Mac." xml:space="preserve">
         <source>You can still manually enable sleep mode for your Mac.</source>
+        <target state="translated">您仍然可以手动让 Mac 进入休眠状态。</target>
         <note>You can still manually enable sleep mode for your Mac.</note>
       </trans-unit>
       <trans-unit id="Your Mac will automatically go to sleep when unused." xml:space="preserve">
         <source>Your Mac will automatically go to sleep when unused.</source>
+        <target state="translated">在闲置时 Mac 会自动休眠。</target>
         <note>Your Mac will automatically go to sleep when unused.</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Settings/KYAAdvancedSettingsViewController/Base.lproj/KYAAdvancedSettingsViewController.xib" source-language="en" target-language="zh" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="3GX-gq-Yaq.title" xml:space="preserve">
@@ -147,11 +166,8 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="7z8-pS-A86.title" xml:space="preserve">
         <source>Check</source>
+        <target state="translated"/>
         <note>Class = "NSButtonCell"; title = "Check"; ObjectID = "7z8-pS-A86"; Note = "Do not localize";</note>
-      </trans-unit>
-      <trans-unit id="HPO-gf-tIY.title" xml:space="preserve">
-        <source>Text Cell</source>
-        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HPO-gf-tIY"; Note = "Do not localize";</note>
       </trans-unit>
       <trans-unit id="xdm-wP-gM6.title" xml:space="preserve">
         <source>Only change these advanced settings if you know what you are doing. Most of these settings require an app restart.</source>
@@ -162,7 +178,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Settings/KYABatterySettingsViewController/Base.lproj/KYABatterySettingsViewController.xib" source-language="en" target-language="zh" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="HtM-vx-ZuN.title" xml:space="preserve">
@@ -177,6 +193,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="SHH-RQ-HPH.title" xml:space="preserve">
         <source>Low Power Mode can be enabled on supported Macs in System Settings › Battery and will not apply while charging.</source>
+        <target state="translated">在支持低电量模式的 Mac 上可通过系统设置 › 电池中开启，充电时不适用。</target>
         <note>Class = "NSTextFieldCell"; title = "Low Power Mode can be enabled on supported Macs in System Settings › Battery and will not apply while charging."; ObjectID = "SHH-RQ-HPH";</note>
       </trans-unit>
       <trans-unit id="aXx-hk-9R9.title" xml:space="preserve">
@@ -196,6 +213,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="mcf-JV-nyg.title" xml:space="preserve">
         <source>Deactivate when Low Power Mode is enabled</source>
+        <target state="translated">在低电量模式下关闭</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when Low Power Mode is enabled"; ObjectID = "mcf-JV-nyg";</note>
       </trans-unit>
       <trans-unit id="ovF-0F-TMc.title" xml:space="preserve">
@@ -212,85 +230,96 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Settings/KYADurationSettingsViewController/Base.lproj/KYAAddDurationViewController.xib" source-language="en" target-language="zh" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="5bs-m4-hy9.title" xml:space="preserve">
         <source>Hours</source>
+        <target state="translated">时</target>
         <note>Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "5bs-m4-hy9";</note>
       </trans-unit>
       <trans-unit id="59l-n2-tD5.title" xml:space="preserve">
         <source>Cancel</source>
+        <target state="translated">取消</target>
         <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "59l-n2-tD5";</note>
       </trans-unit>
       <trans-unit id="kYn-pW-tq6.title" xml:space="preserve">
         <source>Warning Label</source>
+        <target state="translated"/>
         <note>Class = "NSTextFieldCell"; title = "Warning Label"; ObjectID = "kYn-pW-tq6"; Note = "Do not localize";</note>
       </trans-unit>
       <trans-unit id="oi9-AP-ag4.title" xml:space="preserve">
         <source>Minutes</source>
+        <target state="translated">分</target>
         <note>Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "oi9-AP-ag4";</note>
       </trans-unit>
       <trans-unit id="s1J-2f-UeD.title" xml:space="preserve">
         <source>Seconds</source>
+        <target state="translated">秒</target>
         <note>Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "s1J-2f-UeD";</note>
       </trans-unit>
       <trans-unit id="vTF-HR-j5d.title" xml:space="preserve">
         <source>Add Duration</source>
+        <target state="translated">添加时间</target>
         <note>Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "vTF-HR-j5d";</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Settings/KYADurationSettingsViewController/Base.lproj/KYADurationSettingsViewController.xib" source-language="en" target-language="zh" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="2Az-3u-oGb.title" xml:space="preserve">
         <source>Remove</source>
+        <target state="translated">删除</target>
         <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "2Az-3u-oGb";</note>
       </trans-unit>
       <trans-unit id="3es-An-BPG.title" xml:space="preserve">
         <source>3es-An-BPG.title</source>
+        <target state="translated">设置为默认</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "3es-An-BPG";</note>
       </trans-unit>
       <trans-unit id="4tU-j1-N4m.title" xml:space="preserve">
         <source>The default activation duration is used when you click on the menu bar icon.</source>
+        <target state="translated">点击菜单栏图标会使用默认的激活时长。</target>
         <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "4tU-j1-N4m";</note>
       </trans-unit>
       <trans-unit id="13c-ID-Fgy.title" xml:space="preserve">
         <source>13c-ID-Fgy.title</source>
+        <target state="translated">重置...</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "13c-ID-Fgy";</note>
       </trans-unit>
       <trans-unit id="Are-vs-Awn.title" xml:space="preserve">
         <source>Set Default</source>
+        <target state="translated">设置为默认</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "Are-vs-Awn";</note>
-      </trans-unit>
-      <trans-unit id="Btn-FN-s8Z.title" xml:space="preserve">
-        <source>Text Cell</source>
-        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Btn-FN-s8Z"; Note = "Do not localize";</note>
       </trans-unit>
       <trans-unit id="COs-G1-J6K.title" xml:space="preserve">
         <source>Reset…</source>
+        <target state="translated">重置...</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "COs-G1-J6K";</note>
       </trans-unit>
       <trans-unit id="U86-Hk-nfT.title" xml:space="preserve">
         <source>Set Default</source>
+        <target state="translated">设置为默认</target>
         <note>Class = "NSMenuItem"; title = "Set Default"; ObjectID = "U86-Hk-nfT";</note>
       </trans-unit>
       <trans-unit id="dml-Pt-frp.ibShadowedToolTips[0]" xml:space="preserve">
         <source>Remove</source>
+        <target state="translated">删除</target>
         <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[0] = "Remove"; ObjectID = "dml-Pt-frp";</note>
       </trans-unit>
       <trans-unit id="dml-Pt-frp.ibShadowedToolTips[1]" xml:space="preserve">
         <source>Add</source>
+        <target state="translated">添加</target>
         <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[1] = "Add"; ObjectID = "dml-Pt-frp";</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Settings/KYAGeneralSettingsViewController/Base.lproj/KYAGeneralSettingsViewController.xib" source-language="en" target-language="zh" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="7QN-oX-fJU.title" xml:space="preserve">
@@ -300,6 +329,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="7dk-Tj-9aG.title" xml:space="preserve">
         <source>Notification Settings…</source>
+        <target state="translated">打开系统通知设置...</target>
         <note>Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "7dk-Tj-9aG";</note>
       </trans-unit>
       <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
@@ -321,7 +351,7 @@ Right click to show menu</source>
   </file>
   <file original="KeepingYouAwake/Settings/KYASettings.xcstrings" source-language="en" target-language="zh" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="About" xml:space="preserve">
@@ -331,6 +361,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Activation Duration" xml:space="preserve">
         <source>Activation Duration</source>
+        <target state="translated">激活时长</target>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced" xml:space="preserve">
@@ -355,13 +386,14 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Updates" xml:space="preserve">
         <source>Updates</source>
+        <target state="translated">更新</target>
         <note/>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Settings/KYAUpdateSettingsViewController/Base.lproj/KYAUpdateSettingsViewController.xib" source-language="en" target-language="zh" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="F2o-Is-2nW.title" xml:space="preserve">
@@ -383,7 +415,7 @@ Right click to show menu</source>
   </file>
   <file original="KYALauncher/InfoPlist.xcstrings" source-language="en" target-language="zh" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -391,7 +423,7 @@ Right click to show menu</source>
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2023 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2024 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
