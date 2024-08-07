@@ -194,6 +194,11 @@
             "value" : "Activer lorsqu'un moniteur externe est connecté"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Harici bir ekran bağlandığında etkinleştir"
+        },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -293,6 +298,11 @@
             "state" : "translated",
             "value" : "Consenti allo schermo di andare in stop"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekranın uyumasına izin ver"
         },
         "sk" : {
           "stringUnit" : {
@@ -669,6 +679,11 @@
             "value" : "Beim Benutzerwechsel deaktivieren"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başka bir kullanıcıya geçişte etkisizleştir"
+        },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -798,6 +813,11 @@
             "state" : "translated",
             "value" : "Вы уверены, что хотите сбросить список продолжительности активации на исходные записи?"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etkinleştirme süresini gerçekten varsayılan değerlere sıfırlamak mı istiyorsun?"
         },
         "sk" : {
           "stringUnit" : {
