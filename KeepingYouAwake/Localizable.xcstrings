@@ -194,15 +194,16 @@
             "value" : "Activer lorsqu'un moniteur externe est connecté"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Harici bir ekran bağlandığında etkinleştir"
-        },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aktivovať, keď je pripojený externý displej"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Harici bir ekran bağlandığında etkinleştir"
           }
         },
         "zh" : {
@@ -299,15 +300,16 @@
             "value" : "Consenti allo schermo di andare in stop"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ekranın uyumasına izin ver"
-        },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Umožniť uspanie displeja"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekranın uyumasına izin ver"
           }
         },
         "uk" : {
@@ -679,15 +681,16 @@
             "value" : "Beim Benutzerwechsel deaktivieren"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Başka bir kullanıcıya geçişte etkisizleştir"
-        },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deaktivovať pri prepnutí na iný používateľský účet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başka bir kullanıcıya geçişte etkisizleştir"
           }
         },
         "zh" : {
@@ -814,15 +817,16 @@
             "value" : "Вы уверены, что хотите сбросить список продолжительности активации на исходные записи?"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Etkinleştirme süresini gerçekten varsayılan değerlere sıfırlamak mı istiyorsun?"
-        },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Naozaj chcete obnoviť doby trvania na predvolené hodnoty?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etkinleştirme süresini gerçekten varsayılan değerlere sıfırlamak mı istiyorsun?"
           }
         },
         "uk" : {
