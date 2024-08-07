@@ -6,10 +6,10 @@
 
 - added Slovak translations ([#209](https://github.com/newmarcel/KeepingYouAwake/pull/209))
     - *Thank you Tomáš Švec!*
-- updated the Chinese translations ([#213](https://github.com/newmarcel/KeepingYouAwake/pull/213))
-	- *Thank you [LZhenHong](https://github.com/LZhenHong)!*
 - updated the Turkish translations ([#212](https://github.com/newmarcel/KeepingYouAwake/pull/212))
 	- *Thank you [egesucu](https://github.com/egesucu)!*
+- updated the Chinese translations ([#213](https://github.com/newmarcel/KeepingYouAwake/pull/213))
+	- *Thank you [LZhenHong](https://github.com/LZhenHong)!*
 - updated Sparkle to v2.6.4 ([#214](https://github.com/newmarcel/KeepingYouAwake/pull/214))
 
 ### v1.6.5 ###
