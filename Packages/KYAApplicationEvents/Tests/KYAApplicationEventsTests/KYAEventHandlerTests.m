@@ -6,8 +6,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <KYACommon/KYACommon.h>
 #import <KYAApplicationEvents/KYAApplicationEvents.h>
-#import "../../Sources/KYAApplicationEvents/KYADefines.h"
 
 @interface KYAEventHandler (Private)
 @property (nonatomic) NSMapTable *eventTable;

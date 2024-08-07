@@ -8,7 +8,7 @@
 
 #import <KYAApplicationSupport/NSApplication+KYALaunchAtLogin.h>
 #import <ServiceManagement/ServiceManagement.h>
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYAApplicationSupportLog.h"
 
 @implementation NSApplication (KYALaunchAtLogin)

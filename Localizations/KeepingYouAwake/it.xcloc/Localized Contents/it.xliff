@@ -2,22 +2,22 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="KeepingYouAwake/InfoPlist.xcstrings" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
-        <source>KeepingYouAwake (Direct)</source>
+        <source>KeepingYouAwake</source>
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2023 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2024 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Localizable.xcstrings" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
@@ -155,7 +155,7 @@ Tasto destro per mostrare il menu</target>
   </file>
   <file original="KeepingYouAwake/Settings/KYAAdvancedSettingsViewController/Base.lproj/KYAAdvancedSettingsViewController.xib" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="3GX-gq-Yaq.title" xml:space="preserve">
@@ -167,10 +167,6 @@ Tasto destro per mostrare il menu</target>
         <source>Check</source>
         <note>Class = "NSButtonCell"; title = "Check"; ObjectID = "7z8-pS-A86"; Note = "Do not localize";</note>
       </trans-unit>
-      <trans-unit id="HPO-gf-tIY.title" xml:space="preserve">
-        <source>Text Cell</source>
-        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HPO-gf-tIY"; Note = "Do not localize";</note>
-      </trans-unit>
       <trans-unit id="xdm-wP-gM6.title" xml:space="preserve">
         <source>Only change these advanced settings if you know what you are doing. Most of these settings require an app restart.</source>
         <target state="translated">Modifica queste impostazioni avanzate solo se sai quello che stai facendo. La maggior parte richiede un riavvio dell'app.</target>
@@ -180,7 +176,7 @@ Tasto destro per mostrare il menu</target>
   </file>
   <file original="KeepingYouAwake/Settings/KYABatterySettingsViewController/Base.lproj/KYABatterySettingsViewController.xib" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="HtM-vx-ZuN.title" xml:space="preserve">
@@ -230,7 +226,7 @@ Tasto destro per mostrare il menu</target>
   </file>
   <file original="KeepingYouAwake/Settings/KYADurationSettingsViewController/Base.lproj/KYAAddDurationViewController.xib" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="5bs-m4-hy9.title" xml:space="preserve">
@@ -267,7 +263,7 @@ Tasto destro per mostrare il menu</target>
   </file>
   <file original="KeepingYouAwake/Settings/KYADurationSettingsViewController/Base.lproj/KYADurationSettingsViewController.xib" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="2Az-3u-oGb.title" xml:space="preserve">
@@ -295,11 +291,6 @@ Tasto destro per mostrare il menu</target>
         <target state="translated">Imposta predefinito</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "Are-vs-Awn";</note>
       </trans-unit>
-      <trans-unit id="Btn-FN-s8Z.title" xml:space="preserve">
-        <source>Text Cell</source>
-        <target state="translated"/>
-        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Btn-FN-s8Z"; Note = "Do not localize";</note>
-      </trans-unit>
       <trans-unit id="COs-G1-J6K.title" xml:space="preserve">
         <source>Reset…</source>
         <target state="translated">Reimposta...</target>
@@ -324,7 +315,7 @@ Tasto destro per mostrare il menu</target>
   </file>
   <file original="KeepingYouAwake/Settings/KYAGeneralSettingsViewController/Base.lproj/KYAGeneralSettingsViewController.xib" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="7QN-oX-fJU.title" xml:space="preserve">
@@ -356,7 +347,7 @@ Tasto destro per mostrare il menu</target>
   </file>
   <file original="KeepingYouAwake/Settings/KYASettings.xcstrings" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="About" xml:space="preserve">
@@ -398,7 +389,7 @@ Tasto destro per mostrare il menu</target>
   </file>
   <file original="KeepingYouAwake/Settings/KYAUpdateSettingsViewController/Base.lproj/KYAUpdateSettingsViewController.xib" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="F2o-Is-2nW.title" xml:space="preserve">
@@ -420,7 +411,7 @@ Tasto destro per mostrare il menu</target>
   </file>
   <file original="KYALauncher/InfoPlist.xcstrings" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5195k"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5211f"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -428,7 +419,7 @@ Tasto destro per mostrare il menu</target>
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2023 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2024 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>

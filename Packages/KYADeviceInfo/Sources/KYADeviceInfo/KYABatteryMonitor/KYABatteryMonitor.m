@@ -7,8 +7,8 @@
 //
 
 #import "KYABatteryMonitor+Private.h"
-#import "../KYADefines.h"
 #import <IOKit/ps/IOPowerSources.h>
+#import <KYACommon/KYACommon.h>
 
 const CGFloat KYABatteryCapacityUnavailable = -1.0;
 

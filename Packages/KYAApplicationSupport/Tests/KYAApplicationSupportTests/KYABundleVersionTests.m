@@ -6,8 +6,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <KYACommon/KYACommon.h>
 #import <KYAApplicationSupport/KYAApplicationSupport.h>
-#import "../../Sources/KYAApplicationSupport/KYADefines.h"
 
 @interface KYABundleVersionTests : XCTestCase
 @property (nonatomic) NSBundle *bundle;

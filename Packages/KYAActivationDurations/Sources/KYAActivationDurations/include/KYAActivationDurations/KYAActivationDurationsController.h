@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <KYAActivationDurations/KYAActivationDuration.h>
+#import <KYACommon/KYAExport.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT NSNotificationName const KYAActivationDurationsDidChangeNotification;
+KYA_EXPORT NSNotificationName const KYAActivationDurationsDidChangeNotification;
 
 /// Manages adding and removing of activation durations, persistence and
 /// provides the ability to mark an activation duration as default duration.

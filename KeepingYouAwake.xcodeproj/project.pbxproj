@@ -22,6 +22,8 @@
 		DA4F7F482A3F218D00C7C076 /* KYASettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DA4F7F462A3F218D00C7C076 /* KYASettings.xcstrings */; };
 		DA4F7F512A3F21E100C7C076 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DA4F7F502A3F21E100C7C076 /* Localizable.xcstrings */; };
 		DA4F7F522A3F21E100C7C076 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DA4F7F502A3F21E100C7C076 /* Localizable.xcstrings */; };
+		DA51CA672BB75A0B0013175E /* KYACommon in Frameworks */ = {isa = PBXBuildFile; productRef = DA51CA662BB75A0B0013175E /* KYACommon */; };
+		DA51CA692BB75A120013175E /* KYACommon in Frameworks */ = {isa = PBXBuildFile; productRef = DA51CA682BB75A120013175E /* KYACommon */; };
 		DA52096327C6BE6400ECFDA6 /* KYAActivationDuration+KYALocalizedTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52096227C6BE6400ECFDA6 /* KYAActivationDuration+KYALocalizedTitle.m */; };
 		DA52096427C6BE6400ECFDA6 /* KYAActivationDuration+KYALocalizedTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52096227C6BE6400ECFDA6 /* KYAActivationDuration+KYALocalizedTitle.m */; };
 		DA52096627C6C56A00ECFDA6 /* KYAActivationDurations in Frameworks */ = {isa = PBXBuildFile; productRef = DA52096527C6C56A00ECFDA6 /* KYAActivationDurations */; };
@@ -166,7 +168,6 @@
 		DA085D0F21D6BAB6003D9B1B /* container-migration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "container-migration.plist"; sourceTree = "<group>"; };
 		DA0CA9FE21D0111600879C8B /* KeepingYouAwake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeepingYouAwake.entitlements; sourceTree = "<group>"; };
 		DA13771925E969FF00FB0FAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA249E281F9B7211006BCD2C /* KYADefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYADefines.h; sourceTree = "<group>"; };
 		DA2C0E322700629A006E9991 /* KYAAppUpdater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAAppUpdater.h; sourceTree = "<group>"; };
 		DA2C0E332700629A006E9991 /* KYAAppUpdater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAppUpdater.m; sourceTree = "<group>"; };
 		DA2CCD5D26F8754C00568BDD /* KYASettingsContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYASettingsContentViewController.h; sourceTree = "<group>"; };
@@ -256,6 +257,7 @@
 				DA814383281D59970004BE71 /* KYAStatusItemUI in Frameworks */,
 				DACF2FCD27C271BA00856FEC /* KYAApplicationEvents in Frameworks */,
 				DACF2FC727C2657800856FEC /* KYAUserNotifications in Frameworks */,
+				DA51CA692BB75A120013175E /* KYACommon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +274,7 @@
 			files = (
 				DA52096C27C6C9BD00ECFDA6 /* KYAApplicationSupport in Frameworks */,
 				DAEF160C277C67D800EA9478 /* Sparkle in Frameworks */,
+				DA51CA672BB75A0B0013175E /* KYACommon in Frameworks */,
 				DACF2FC927C2657C00856FEC /* KYAUserNotifications in Frameworks */,
 				DA25063227C248710052CCD8 /* KYADeviceInfo in Frameworks */,
 				DA52097227C6CBC500ECFDA6 /* KYASleepWakeTimer in Frameworks */,
@@ -394,7 +397,6 @@
 		DA637B3B19F14693004C8838 /* KeepingYouAwake */ = {
 			isa = PBXGroup;
 			children = (
-				DA249E281F9B7211006BCD2C /* KYADefines.h */,
 				DAA478D3227C233000E609C1 /* KYALocalizedStrings.h */,
 				DA9A4FE5261631D700C672C4 /* KYALocalizedStrings.m */,
 				DAD6480B24F14570008E9AA0 /* KYAAppController */,
@@ -550,6 +552,7 @@
 				DA52096927C6C9B900ECFDA6 /* KYAApplicationSupport */,
 				DA52096F27C6CBC000ECFDA6 /* KYASleepWakeTimer */,
 				DA814382281D59970004BE71 /* KYAStatusItemUI */,
+				DA51CA682BB75A120013175E /* KYACommon */,
 			);
 			productName = KeepingYouAwake;
 			productReference = DA637B3919F14693004C8838 /* KeepingYouAwake.app */;
@@ -597,6 +600,7 @@
 				DA52096B27C6C9BD00ECFDA6 /* KYAApplicationSupport */,
 				DA52097127C6CBC500ECFDA6 /* KYASleepWakeTimer */,
 				DA814384281D599D0004BE71 /* KYAStatusItemUI */,
+				DA51CA662BB75A0B0013175E /* KYACommon */,
 			);
 			productName = KeepingYouAwake;
 			productReference = DAD3CF8F271186720006CA14 /* KeepingYouAwake.app */;
@@ -658,6 +662,7 @@
 				uk,
 				ja,
 				it,
+				sk,
 			);
 			mainGroup = DA637B3019F14693004C8838;
 			packageReferences = (
@@ -1142,6 +1147,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LOCALIZATION_EXPORT_SUPPORTED = NO;
 				PRODUCT_NAME = KeepingYouAwake;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1169,6 +1175,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LOCALIZATION_EXPORT_SUPPORTED = NO;
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) --timestamp";
 				PRODUCT_NAME = KeepingYouAwake;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1236,6 +1243,14 @@
 		DA25063127C248710052CCD8 /* KYADeviceInfo */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = KYADeviceInfo;
+		};
+		DA51CA662BB75A0B0013175E /* KYACommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KYACommon;
+		};
+		DA51CA682BB75A120013175E /* KYACommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KYACommon;
 		};
 		DA52096527C6C56A00ECFDA6 /* KYAActivationDurations */ = {
 			isa = XCSwiftPackageProductDependency;

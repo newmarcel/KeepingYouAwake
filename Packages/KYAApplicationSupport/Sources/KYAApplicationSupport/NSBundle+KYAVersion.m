@@ -7,7 +7,7 @@
 //
 
 #import <KYAApplicationSupport/NSBundle+KYAVersion.h>
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 static NSString * const KYAShortVersionKey = @"CFBundleShortVersionString";
 static NSString * const KYABundleVersionKey = @"CFBundleVersion";

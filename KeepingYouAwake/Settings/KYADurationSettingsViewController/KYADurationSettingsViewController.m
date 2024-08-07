@@ -7,7 +7,7 @@
 //
 
 #import "KYADurationSettingsViewController.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYALocalizedStrings.h"
 #import "KYADurationCell.h"
 #import "KYAAddDurationViewController.h"

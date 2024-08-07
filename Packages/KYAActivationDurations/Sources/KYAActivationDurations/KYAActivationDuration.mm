@@ -7,7 +7,7 @@
 //
 
 #import <KYAActivationDurations/KYAActivationDuration.h>
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYAActivationDurationsLog.h"
 #include <chrono>
 

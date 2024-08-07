@@ -6,7 +6,7 @@
 //
 
 #import "NSURL+KYAStatusItemImage.h"
-#import "../KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 @implementation NSURL (KYAStatusItemImage)
 

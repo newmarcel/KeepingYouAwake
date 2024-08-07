@@ -53,6 +53,12 @@
             "value" : "Удалить"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odstrániť"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -63,6 +69,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Видалити"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除"
           }
         },
         "zh-Hant" : {
@@ -124,6 +136,12 @@
             "state" : "translated",
             "value" : "Обрати за замовчуванням"
           }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置为默认"
+          }
         }
       }
     },
@@ -179,6 +197,12 @@
             "value" : "Длительность активации по умолчанию используется при нажатии на значок строки меню."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Predvolená doba trvania sa použije po kliknutí na ikonu v lište."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -189,6 +213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обрана тут тривалість активується за замовчуванням при кліку на іконку додатку в MacOS меню."
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击菜单栏图标会使用默认的激活时长。"
           }
         },
         "zh-Hant" : {
@@ -251,6 +281,12 @@
             "value" : "Скинути…"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置..."
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -311,6 +347,12 @@
             "value" : "Установить по умолчанию"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastaviť predvolené"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -323,40 +365,16 @@
             "value" : "Обрати за замовчуванням"
           }
         },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置为默认"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "設為預設"
-          }
-        }
-      }
-    },
-    "Btn-FN-s8Z.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Text Cell\"; ObjectID = \"Btn-FN-s8Z\"; Note = \"Do not localize\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Text Cell"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : ""
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Text Cell"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Text Cell"
           }
         }
       }
@@ -413,6 +431,12 @@
             "value" : "Сбросить…"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obnoviť…"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -423,6 +447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скинути…"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置..."
           }
         },
         "zh-Hant" : {
@@ -485,6 +515,12 @@
             "value" : "Удалить"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odstrániť"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -495,6 +531,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Видалити цей інтервал"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除"
           }
         },
         "zh-Hant" : {
@@ -557,6 +599,12 @@
             "value" : "Добавить"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pridať"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -567,6 +615,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Додати новий інтервал"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加"
           }
         },
         "zh-Hant" : {
@@ -629,6 +683,12 @@
             "value" : "Установить по умолчанию"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastaviť predvolené"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -639,6 +699,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обрати за замовчуванням"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置为默认"
           }
         },
         "zh-Hant" : {

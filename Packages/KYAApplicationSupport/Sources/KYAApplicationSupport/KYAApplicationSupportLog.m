@@ -6,7 +6,6 @@
 //
 
 #import "KYAApplicationSupportLog.h"
-#import "KYADefines.h"
 
 os_log_t KYAApplicationSupportLog()
 {

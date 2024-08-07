@@ -6,7 +6,6 @@
 //
 
 #import "KYAActivationDurationsLog.h"
-#import "KYADefines.h"
 
 os_log_t KYAActivationDurationsLog()
 {

@@ -7,7 +7,7 @@
 //
 
 #import "KYAStatusItemImageProvider+Private.h"
-#import "../KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "NSURL+KYAStatusItemImage.h"
 #import "NSImage+KYAStatusItemImage.h"
 

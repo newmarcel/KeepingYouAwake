@@ -9,15 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <KYADeviceInfo/KYABatteryMonitor.h>
 #import <KYADeviceInfo/KYALowPowerModeMonitor.h>
+#import <KYACommon/KYAExport.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT const NSNotificationName KYADeviceParameterDidChangeNotification;
-FOUNDATION_EXPORT NSString * const KYADeviceParameterKey;
+KYA_EXPORT const NSNotificationName KYADeviceParameterDidChangeNotification;
+KYA_EXPORT NSString * const KYADeviceParameterKey;
 
 typedef NSString *KYADeviceParameter;
-FOUNDATION_EXPORT const KYADeviceParameter KYADeviceParameterBattery;
-FOUNDATION_EXPORT const KYADeviceParameter KYADeviceParameterLowPowerMode;
+KYA_EXPORT const KYADeviceParameter KYADeviceParameterBattery;
+KYA_EXPORT const KYADeviceParameter KYADeviceParameterLowPowerMode;
 
 /// Provides access to physical device parameters, like battery status and Low Power Mode.
 @interface KYADevice : NSObject

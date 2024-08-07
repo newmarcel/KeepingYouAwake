@@ -6,11 +6,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <KYACommon/KYAExport.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT const NSImageName KYAStatusItemActiveImageName;
-FOUNDATION_EXPORT const NSImageName KYAStatusItemInactiveImageName;
+KYA_EXPORT const NSImageName KYAStatusItemActiveImageName;
+KYA_EXPORT const NSImageName KYAStatusItemInactiveImageName;
 
 BOOL KYACustomIconImageFilesExist(void);
 

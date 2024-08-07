@@ -7,7 +7,7 @@
 //
 
 #import "KYAMainMenu.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYALocalizedStrings.h"
 #import "KYAAppDelegate.h"
 

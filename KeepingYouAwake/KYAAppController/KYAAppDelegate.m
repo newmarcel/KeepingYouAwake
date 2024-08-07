@@ -7,12 +7,12 @@
 //
 
 #import "KYAAppDelegate.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYAAppUpdater.h"
 #import "KYASettingsWindow.h"
 #import "KYAUpdateSettingsViewController.h"
 
-@interface KYAAppDelegate () <NSWindowDelegate>
+@interface KYAAppDelegate ()
 @property (weak, nonatomic, nullable) KYASettingsWindow *settingsWindow;
 @end
 
@@ -34,7 +34,14 @@
 
 - (void)showSettingsWindow:(id)sender
 {
-    [NSApplication.sharedApplication activateIgnoringOtherApps:YES];
+    if(@available(macOS 14.0, *))
+    {
+        [NSApplication.sharedApplication activate];
+    }
+    else
+    {
+        [NSApplication.sharedApplication activateIgnoringOtherApps:YES];
+    }
     
     AutoVar settingsWindow = self.settingsWindow;
     if(settingsWindow == nil)

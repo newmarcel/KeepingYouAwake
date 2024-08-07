@@ -6,8 +6,8 @@
 //
 
 #import <KYAUserNotifications/NSWorkspace+KYAUserNotificationCenter.h>
+#import <KYACommon/KYACommon.h>
 #import <KYAUserNotifications/NSURL+KYAUserNotificationCenter.h>
-#import "KYADefines.h"
 
 @implementation NSWorkspace (KYAUserNotificationCenter)
 

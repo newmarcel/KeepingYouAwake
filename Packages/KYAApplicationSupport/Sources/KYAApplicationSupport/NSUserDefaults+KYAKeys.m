@@ -7,7 +7,7 @@
 //
 
 #import <KYAApplicationSupport/NSUserDefaults+KYAKeys.h>
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 
 // A macro to define a new user defaults convenience property for BOOL values.
 // - _short_getter_name represents the name of the getter,
@@ -20,7 +20,7 @@
 // These values will generate the implementation for a property
 // e.g. `@property (nonatomic, getter=kya_isSomethingEnabled) BOOL kya_somethingEnabled;`
 // and for a user defaults key constant
-// e.g. `FOUNDATION_EXPORT NSString * const KYAUserDefaultsKeySomethingEnabled;`
+// e.g. `KYA_EXPORT NSString * const KYAUserDefaultsKeySomethingEnabled;`
 // which will create an actual string key in the pre-defined format
 // e.g. `info.marcel-dierkes.KeepingYouAwake.SomethingEnabled`
 #define KYA_GENERATE_BOOL_PROPERTY(_short_getter_name, _property_name, _short_defaults_key) \

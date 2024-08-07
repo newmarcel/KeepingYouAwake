@@ -53,6 +53,12 @@
             "value" : "Часа"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hodiny"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -63,6 +69,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Години"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时"
           }
         },
         "zh-Hant" : {
@@ -125,6 +137,12 @@
             "value" : "Отмена"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zrušiť"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -135,6 +153,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Відміна"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
           }
         },
         "zh-Hant" : {
@@ -171,6 +195,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Warning Label"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -227,6 +257,12 @@
             "value" : "Минут"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minúty"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -237,6 +273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Хвилини"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分"
           }
         },
         "zh-Hant" : {
@@ -299,6 +341,12 @@
             "value" : "Секунд"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sekundy"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -309,6 +357,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Секунди"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "秒"
           }
         },
         "zh-Hant" : {
@@ -371,6 +425,12 @@
             "value" : "Добавить продолжительность"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pridať dobu trvania"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -381,6 +441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Додати"
+          }
+        },
+        "zh" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加时间"
           }
         },
         "zh-Hant" : {

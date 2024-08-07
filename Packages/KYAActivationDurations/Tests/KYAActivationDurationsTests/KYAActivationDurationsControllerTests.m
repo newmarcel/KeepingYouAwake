@@ -6,8 +6,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <KYACommon/KYACommon.h>
 #import <KYAActivationDurations/KYAActivationDurations.h>
-#import "../../Sources/KYAActivationDurations/KYADefines.h"
 
 @interface KYAActivationDurationsControllerTests : XCTestCase
 @property (nonatomic) KYAActivationDurationsController *controller;

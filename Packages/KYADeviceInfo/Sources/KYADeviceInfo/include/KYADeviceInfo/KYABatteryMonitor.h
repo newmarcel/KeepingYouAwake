@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <KYACommon/KYAExport.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT const CGFloat KYABatteryCapacityUnavailable;
+KYA_EXPORT const CGFloat KYABatteryCapacityUnavailable;
 
 /// The battery state of the device.
 typedef NS_ENUM(NSUInteger, KYADeviceBatteryState)

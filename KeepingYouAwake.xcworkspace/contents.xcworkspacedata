@@ -14,9 +14,6 @@
       location = "group:"
       name = "Packages">
       <FileRef
-         location = "group:Packages/KYAStatusItemUI">
-      </FileRef>
-      <FileRef
          location = "group:Packages/KYAActivationDurations">
       </FileRef>
       <FileRef
@@ -32,7 +29,13 @@
          location = "group:Packages/KYASleepWakeTimer">
       </FileRef>
       <FileRef
+         location = "group:Packages/KYAStatusItemUI">
+      </FileRef>
+      <FileRef
          location = "group:Packages/KYAUserNotifications">
+      </FileRef>
+      <FileRef
+         location = "group:Packages/KYACommon">
       </FileRef>
    </Group>
 </Workspace>

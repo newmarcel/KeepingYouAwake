@@ -83,6 +83,12 @@
             "value" : "Сбросить"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obnoviť predvolené nastavenia"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -118,17 +124,11 @@
             "state" : "new",
             "value" : "Check"
           }
-        }
-      }
-    },
-    "HPO-gf-tIY.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Text Cell\"; ObjectID = \"HPO-gf-tIY\"; Note = \"Do not localize\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
+        },
+        "zh" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Text Cell"
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
@@ -213,6 +213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не изменяйте эти расширенные настройки, если вы не знаете, что делаете. Большинство из этих настроек требуют перезапуска приложения."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tieto rozšírené nastavenia meňte iba vtedy, ak viete, čo robíte. Väčšina týchto nastavení vyžaduje reštart aplikácie."
           }
         },
         "tr" : {

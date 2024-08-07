@@ -7,8 +7,8 @@
 //
 
 #import <KYAStatusItemUI/KYAStatusItemController.h>
+#import <KYACommon/KYACommon.h>
 #import <KYAStatusItemUI/KYAStatusItemImageProvider.h>
-#import "KYADefines.h"
 #import "KYAStatusItemUILocalizedStrings.h"
 
 @interface KYAStatusItemController ()

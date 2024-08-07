@@ -26,7 +26,7 @@ This utility will not harm your Mac because it is based on an official command l
 
 ## Inspired by Caffeine
 
-*KeepingYouAwake* is inspired by *[Caffeine](http://lightheadsw.com/caffeine/)* from *Lighthead Software*. I used it for many years, but sadly it hasn't been updated in a while. Eventually in 2014 I decided to build a replacement for myself that was optimized for macOS Yosemite and used the [`caffeinate`](https://web.archive.org/web/20140604153141/https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/caffeinate.8.html) command line tool under the hood.
+*KeepingYouAwake* is inspired by *[Caffeine](https://web.archive.org/web/20240625031548/https://www.lightheadsw.com/caffeine/)* from *Lighthead Software*. I used it for many years, but sadly it hasn't been updated in a while. Eventually in 2014 I decided to build a replacement for myself that was optimized for macOS Yosemite and used the [`caffeinate`](https://web.archive.org/web/20140604153141/https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/caffeinate.8.html) command line tool under the hood.
 
 ## Still using old macOS versions?
 

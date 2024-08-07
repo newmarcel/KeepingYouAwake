@@ -83,6 +83,12 @@
             "value" : "Проверять обновления автоматически"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automaticky kontrolovať aktualizácie"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -191,6 +197,12 @@
             "value" : "Поиск предварительных версий"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrolovať predbežné aktualizácie"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -297,6 +309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Проверить сейчас"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skontrolovať"
           }
         },
         "tr" : {

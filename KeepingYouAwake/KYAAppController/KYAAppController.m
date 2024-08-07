@@ -7,7 +7,7 @@
 //
 
 #import "KYAAppController.h"
-#import "KYADefines.h"
+#import <KYACommon/KYACommon.h>
 #import "KYALocalizedStrings.h"
 #import "KYAMainMenu.h"
 #import "KYABatteryCapacityThreshold.h"
