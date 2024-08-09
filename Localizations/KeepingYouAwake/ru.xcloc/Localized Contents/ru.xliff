@@ -31,19 +31,19 @@
         <note>Activate for Duration</note>
       </trans-unit>
       <trans-unit id="Activate when an external display is connected" xml:space="preserve">
-        <source>Activate when an external display is connected</source>
+        <source>Activate when an external display is connected</source><target>Активировать при подключении внешнего монитора</target>
         <note>Activate when an external display is connected</note>
       </trans-unit>
       <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
-        <source>Afterwards your Mac will automatically go to sleep again when unused.</source>
+        <source>Afterwards your Mac will automatically go to sleep again when unused.</source><target>После этого ваш Mac будет автоматически засыпать при неактивности.</target>
         <note>Afterwards your Mac will automatically go to sleep again when unused.</note>
       </trans-unit>
       <trans-unit id="Allow the display to sleep" xml:space="preserve">
-        <source>Allow the display to sleep</source>
+        <source>Allow the display to sleep</source><target>Разрешить системе выключать экран</target>
         <note>Allow the display to sleep</note>
       </trans-unit>
       <trans-unit id="Allowing Sleep" xml:space="preserve">
-        <source>Allowing Sleep</source>
+        <source>Allowing Sleep</source><target>Разрешение сна</target>
         <note>Allowing Sleep</note>
       </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
@@ -54,19 +54,19 @@
       <trans-unit id="Click to allow sleep&#10;Right click to show menu" xml:space="preserve">
         <source>Click to allow sleep
 Right click to show menu</source>
-        <target state="translated">Нажать чтобы разрешить спящий режим
-Прямой щелчок, чтобы отобразить меню</target>
+        <target state="translated">Нажмите чтобы разрешить спящий режим
+Щелчок правой кнопкой откроет меню</target>
         <note>Click to allow sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Click to prevent sleep&#10;Right click to show menu" xml:space="preserve">
         <source>Click to prevent sleep
 Right click to show menu</source>
-        <target state="translated">Нажать чтобы предотвратить спящий режим
-Прямой щелчок, чтобы отобразить меню</target>
+        <target state="translated">Нажмите чтобы предотвратить спящий режим
+Щелчок правой кнопкой откроет меню</target>
         <note>Click to prevent sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Deactivate when switched to another user account" xml:space="preserve">
-        <source>Deactivate when switched to another user account</source>
+        <source>Deactivate when switched to another user account</source><target>Отключить при смене пользователя</target>
         <note>Deactivate when switched to another user account</note>
       </trans-unit>
       <trans-unit id="Default" xml:space="preserve">
@@ -76,7 +76,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Do you really want to reset the activation durations to the default values?" xml:space="preserve">
         <source>Do you really want to reset the activation durations to the default values?</source>
-        <target state="translated">Вы уверены, что хотите сбросить список продолжительности активации на исходные записи?</target>
+        <target state="translated">Вы уверены, что хотите сбросить значения длительностей активации к значениям по-умолчанию?</target>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
@@ -90,11 +90,11 @@ Right click to show menu</source>
         <note>OK</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep" xml:space="preserve">
-        <source>Preventing Sleep</source>
+        <source>Preventing Sleep</source><target>Предотвращение сна</target>
         <note>Preventing Sleep</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep for %@" xml:space="preserve">
-        <source>Preventing Sleep for %@</source>
+        <source>Preventing Sleep for %@</source><target>Предотвращение сна на %@</target>
         <note>Preventing Sleep for %@</note>
       </trans-unit>
       <trans-unit id="Quit" xml:space="preserve">
@@ -109,7 +109,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="Reset Activation Durations" xml:space="preserve">
         <source>Reset Activation Durations</source>
-        <target state="translated">Сбросить продолжительности</target>
+        <target state="translated">Сбросить список длительностей</target>
         <note>Reset Activation Durations</note>
       </trans-unit>
       <trans-unit id="Set Default: %@" xml:space="preserve">
@@ -124,12 +124,12 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="The entered duration is invalid. Please try again." xml:space="preserve">
         <source>The entered duration is invalid. Please try again.</source>
-        <target state="translated">Введенная вами недопустимая продолжительность. Пожалуйста, попробуйте еще раз.</target>
+        <target state="translated">Введенная длительность недопустима. Пожалуйста, попробуйте еще раз.</target>
         <note>The entered duration is invalid. Please try again.</note>
       </trans-unit>
       <trans-unit id="This duration has already been added." xml:space="preserve">
         <source>This duration has already been added.</source>
-        <target state="translated">Эта продолжительность уже была добавлена.</target>
+        <target state="translated">Эта длительность уже была добавлена.</target>
         <note>This duration has already been added.</note>
       </trans-unit>
       <trans-unit id="Version" xml:space="preserve">
@@ -138,11 +138,11 @@ Right click to show menu</source>
         <note>Version</note>
       </trans-unit>
       <trans-unit id="You can still manually enable sleep mode for your Mac." xml:space="preserve">
-        <source>You can still manually enable sleep mode for your Mac.</source>
+        <source>You can still manually enable sleep mode for your Mac.</source><target>Вы по-прежнему можете запустить режим сна вручную.</target>
         <note>You can still manually enable sleep mode for your Mac.</note>
       </trans-unit>
       <trans-unit id="Your Mac will automatically go to sleep when unused." xml:space="preserve">
-        <source>Your Mac will automatically go to sleep when unused.</source>
+        <source>Your Mac will automatically go to sleep when unused.</source><target>Ваш Mac будет автоматически погружаться в сон при неактивности.</target>
         <note>Your Mac will automatically go to sleep when unused.</note>
       </trans-unit>
     </body>
@@ -163,7 +163,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="xdm-wP-gM6.title" xml:space="preserve">
         <source>Only change these advanced settings if you know what you are doing. Most of these settings require an app restart.</source>
-        <target state="translated">Не изменяйте эти расширенные настройки, если вы не знаете, что делаете. Большинство из этих настроек требуют перезапуска приложения.</target>
+        <target state="translated">Изменяйте эти настройки только если понимаете, что делаете. Большинство из них требуют перезапуска приложения.</target>
         <note>Class = "NSTextFieldCell"; title = "Only change these advanced settings if you know what you are doing. Most of these settings require an app restart."; ObjectID = "xdm-wP-gM6";</note>
       </trans-unit>
     </body>
@@ -184,7 +184,7 @@ Right click to show menu</source>
         <note>Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "M11-sw-GhM";</note>
       </trans-unit>
       <trans-unit id="SHH-RQ-HPH.title" xml:space="preserve">
-        <source>Low Power Mode can be enabled on supported Macs in System Settings › Battery and will not apply while charging.</source>
+        <source>Low Power Mode can be enabled on supported Macs in System Settings › Battery and will not apply while charging.</source><target>Режим Энергосбережения может быть включен на поддерживаемых Mac в Системные настройки › Аккумулятор и не будет применен при зарядке.</target>
         <note>Class = "NSTextFieldCell"; title = "Low Power Mode can be enabled on supported Macs in System Settings › Battery and will not apply while charging."; ObjectID = "SHH-RQ-HPH";</note>
       </trans-unit>
       <trans-unit id="aXx-hk-9R9.title" xml:space="preserve">
@@ -194,16 +194,16 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="gx4-rK-1he.title" xml:space="preserve">
         <source>Deactivate when battery capacity is below</source>
-        <target state="translated">Деактивировать, если заряд батареи ниже</target>
+        <target state="translated">Отключить, если заряд батареи ниже</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "gx4-rK-1he";</note>
       </trans-unit>
       <trans-unit id="l4a-Sa-RAE.title" xml:space="preserve">
         <source>This value will be ignored when you manually start the app below this battery capacity.</source>
-        <target state="translated">Это значение будет игнорироваться, если вы запустите приложение ниже этого предела емкости.</target>
+        <target state="translated">Эта настройка будет игнорироваться, если вы запустите приложение при заряде батареи ниже указанного.</target>
         <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "l4a-Sa-RAE";</note>
       </trans-unit>
       <trans-unit id="mcf-JV-nyg.title" xml:space="preserve">
-        <source>Deactivate when Low Power Mode is enabled</source>
+        <source>Deactivate when Low Power Mode is enabled</source><target>Отключить в Режиме Энергосбережения</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when Low Power Mode is enabled"; ObjectID = "mcf-JV-nyg";</note>
       </trans-unit>
       <trans-unit id="ovF-0F-TMc.title" xml:space="preserve">
@@ -225,7 +225,7 @@ Right click to show menu</source>
     <body>
       <trans-unit id="5bs-m4-hy9.title" xml:space="preserve">
         <source>Hours</source>
-        <target state="translated">Часа</target>
+        <target state="translated">Часы</target>
         <note>Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "5bs-m4-hy9";</note>
       </trans-unit>
       <trans-unit id="59l-n2-tD5.title" xml:space="preserve">
@@ -249,7 +249,7 @@ Right click to show menu</source>
       </trans-unit>
       <trans-unit id="vTF-HR-j5d.title" xml:space="preserve">
         <source>Add Duration</source>
-        <target state="translated">Добавить продолжительность</target>
+        <target state="translated">Добавить длительность</target>
         <note>Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "vTF-HR-j5d";</note>
       </trans-unit>
     </body>
@@ -317,12 +317,12 @@ Right click to show menu</source>
         <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU";</note>
       </trans-unit>
       <trans-unit id="7dk-Tj-9aG.title" xml:space="preserve">
-        <source>Notification Settings…</source>
+        <source>Notification Settings…</source><target>Настройки уведомлений…</target>
         <note>Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "7dk-Tj-9aG";</note>
       </trans-unit>
       <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
         <source>Start at Login</source>
-        <target state="translated">Запуск при входе</target>
+        <target state="translated">Запуск программы при входе</target>
         <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "YWD-DY-pgf";</note>
       </trans-unit>
       <trans-unit id="jxf-J8-dHN.title" xml:space="preserve">
@@ -344,12 +344,12 @@ Right click to show menu</source>
     <body>
       <trans-unit id="About" xml:space="preserve">
         <source>About</source>
-        <target state="translated">О</target>
+        <target state="translated">О программе</target>
         <note/>
       </trans-unit>
       <trans-unit id="Activation Duration" xml:space="preserve">
         <source>Activation Duration</source>
-        <target state="translated">Продолжительность</target>
+        <target state="translated">Длительность</target>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced" xml:space="preserve">
