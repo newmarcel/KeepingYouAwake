@@ -587,6 +587,12 @@
             "value" : "Deaktivovať pri povolenom režime nízkej spotreby"
           }
         },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вимкнутись на час роботи у Режимі Низького Заряду"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -849,6 +855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Režim nízkej spotreby je možné zapnúť na podporovaných Macoch v Systémových nastaveniach › Batéria a počas nabíjania sa nebude používať."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Режим Низького Заряду можна увімкнути на підтримуваних Маках у Налаштуваннях › Батарея і це не діє коли йде підзарядка."
           }
         },
         "zh" : {

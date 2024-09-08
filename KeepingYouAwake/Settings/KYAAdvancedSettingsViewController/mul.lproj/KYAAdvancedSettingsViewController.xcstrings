@@ -125,10 +125,34 @@
             "value" : "Check"
           }
         },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Позначити"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : ""
+          }
+        }
+      }
+    },
+    "HPO-gf-tIY.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Text Cell\"; ObjectID = \"HPO-gf-tIY\"; Note = \"Do not localize\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Text Cell"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Комірка"
           }
         }
       }
@@ -230,7 +254,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Змінюйте ці налаштування якщо ви добре розумієте що робите. Потрібно буде зробити рестарт додатку."
+            "value" : "Змінюйте ці налаштування якщо ви добре розумієте що робите. Доведеться перезапустити додаток."
           }
         },
         "zh" : {
