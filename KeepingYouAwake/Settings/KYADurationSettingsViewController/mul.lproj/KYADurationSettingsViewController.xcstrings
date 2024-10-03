@@ -379,6 +379,24 @@
         }
       }
     },
+    "Btn-FN-s8Z.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Text Cell\"; ObjectID = \"Btn-FN-s8Z\"; Note = \"Do not localize\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Text Cell"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Комірка"
+          }
+        }
+      }
+    },
     "COs-G1-J6K.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Reset…\"; ObjectID = \"COs-G1-J6K\";",
       "extractionState" : "extracted_with_value",

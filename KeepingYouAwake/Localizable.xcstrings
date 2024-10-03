@@ -206,6 +206,12 @@
             "value" : "Harici bir ekran bağlandığında etkinleştir"
           }
         },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вмикати коли приєднано зовнішній дисплей"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -257,6 +263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daha sonra Mac'iniz kullanılmadığında otomatik olarak tekrar uyku moduna geçer."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Потім ваш Мак автоматично засне знову, якщо не буде у користуванні"
           }
         },
         "zh" : {
@@ -369,6 +381,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uyku moduna izin veriliyor"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дозволити сон"
           }
         },
         "zh" : {
@@ -547,7 +565,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Клацніть щоб увімкнути\nПравий клік для меню"
+            "value" : "Лівий клік щоб дозволити сон\nПравий клік для меню"
           }
         },
         "zh" : {
@@ -655,7 +673,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Клацніть щоб вимкнути\nПравий клік для меню"
+            "value" : "Лівий клік щоб заборонити сон\nПравий клік для меню"
           }
         },
         "zh" : {
@@ -691,6 +709,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Başka bir kullanıcıya geçişte etkisizleştir"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вимикати при переході до іншого користувача"
           }
         },
         "zh" : {
@@ -1054,6 +1078,12 @@
             "value" : "Uyku modu önleniyor"
           }
         },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запобігати сну"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1105,6 +1135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uyku modu %@ için önleniyor"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запобігати сну на %@"
           }
         },
         "zh" : {
@@ -1282,7 +1318,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Вийти коли час очікування скінчиться"
+            "value" : "Вимкнути додаток коли час очікування скінчиться"
           }
         },
         "zh" : {
@@ -1602,7 +1638,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Введено помилковий інтервал часу. Спробуйте будьласка ще раз."
+            "value" : "Введено не вірну тривалість часу. Спробуйте будь ласка ще раз."
           }
         },
         "zh" : {
@@ -1836,6 +1872,12 @@
             "value" : "Yine de Mac'iniz için uyku modunu manuel olarak etkinleştirebilirsiniz."
           }
         },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ви все одно зможете вручну вмикати режим сну для вашого Маку."
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1887,6 +1929,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daha sonra Mac'iniz kullanılmadığında otomatik olarak tekrar uyku moduna geçer."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваш Мак засне сам якщо ним не користуватись."
           }
         },
         "zh" : {
