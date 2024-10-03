@@ -10,6 +10,10 @@
 	- *Thank you [egesucu](https://github.com/egesucu)!*
 - updated the Chinese translations ([#213](https://github.com/newmarcel/KeepingYouAwake/pull/213))
 	- *Thank you [LZhenHong](https://github.com/LZhenHong)!*
+- updated the Russian translations ([#216](https://github.com/newmarcel/KeepingYouAwake/pull/216))
+	- *Thank you [user334](https://github.com/user334)!*
+- updated the Ukrainian translations ([#218](https://github.com/newmarcel/KeepingYouAwake/pull/218))
+	- *Thank you [gelosi](https://github.com/gelosi)!*
 - updated Sparkle to v2.6.4 ([#214](https://github.com/newmarcel/KeepingYouAwake/pull/214))
 
 ### v1.6.5 ###
