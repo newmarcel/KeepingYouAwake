@@ -41,6 +41,12 @@
             "value" : "通知の設定…"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки уведомлений…"
+          }
+        },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -380,7 +386,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Запуск при входе"
+            "value" : "Запуск программы при входе"
           }
         },
         "sk" : {

@@ -50,7 +50,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Часа"
+            "value" : "Часы"
           }
         },
         "sk" : {
@@ -422,7 +422,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Добавить продолжительность"
+            "value" : "Добавить длительность"
           }
         },
         "sk" : {

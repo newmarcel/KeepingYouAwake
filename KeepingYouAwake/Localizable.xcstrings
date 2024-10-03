@@ -194,6 +194,12 @@
             "value" : "Activer lorsqu'un moniteur externe est connecté"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Активировать при подключении внешнего монитора"
+          }
+        },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -251,6 +257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Successivamente il tuo Mac andrà automaticamente in stop quando non usato."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "После этого ваш Mac будет автоматически засыпать при неактивности."
           }
         },
         "sk" : {
@@ -312,6 +324,12 @@
             "value" : "Consenti allo schermo di andare in stop"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разрешить системе выключать экран"
+          }
+        },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -369,6 +387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stop consentito"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разрешение сна"
           }
         },
         "sk" : {
@@ -547,7 +571,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Нажать чтобы разрешить спящий режим\nПрямой щелчок, чтобы отобразить меню"
+            "value" : "Нажмите чтобы разрешить спящий режим\nЩелчок правой кнопкой откроет меню"
           }
         },
         "sk" : {
@@ -655,7 +679,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Нажать чтобы предотвратить спящий режим\nПрямой щелчок, чтобы отобразить меню"
+            "value" : "Нажмите чтобы предотвратить спящий режим\nЩелчок правой кнопкой откроет меню"
           }
         },
         "sk" : {
@@ -697,6 +721,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Beim Benutzerwechsel deaktivieren"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отключить при смене пользователя"
           }
         },
         "sk" : {
@@ -838,7 +868,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Вы уверены, что хотите сбросить список продолжительности активации на исходные записи?"
+            "value" : "Вы уверены, что хотите сбросить значения длительностей активации к значениям по-умолчанию?"
           }
         },
         "sk" : {
@@ -1066,6 +1096,12 @@
             "value" : "Stop prevenuto"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предотвращение сна"
+          }
+        },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1123,6 +1159,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stop prevenuto per %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предотвращение сна на %@"
           }
         },
         "sk" : {
@@ -1371,7 +1413,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сбросить продолжительности"
+            "value" : "Сбросить список длительностей"
           }
         },
         "sk" : {
@@ -1620,7 +1662,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Введенная вами недопустимая продолжительность. Пожалуйста, попробуйте еще раз."
+            "value" : "Введенная длительность недопустима. Пожалуйста, попробуйте еще раз."
           }
         },
         "sk" : {
@@ -1691,7 +1733,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Эта продолжительность уже была добавлена."
+            "value" : "Эта длительность уже была добавлена."
           }
         },
         "sk" : {
@@ -1860,6 +1902,12 @@
             "value" : "Puoi comunque abilitare manualmente la modalità di stop per il tuo Mac."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы по-прежнему можете запустить режим сна вручную."
+          }
+        },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1917,6 +1965,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Il tuo Mac andrà automaticamente in stop quando non usato."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваш Mac будет автоматически погружаться в сон при неактивности."
           }
         },
         "sk" : {

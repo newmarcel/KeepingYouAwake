@@ -125,37 +125,14 @@
             "value" : "Check"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Позначити"
-          }
-        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : ""
           }
         }
-      }
-    },
-    "HPO-gf-tIY.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Text Cell\"; ObjectID = \"HPO-gf-tIY\"; Note = \"Do not localize\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Text Cell"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Комірка"
-          }
-        }
-      }
+      },
+      "shouldTranslate" : false
     },
     "xdm-wP-gM6.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Only change these advanced settings if you know what you are doing. Most of these settings require an app restart.\"; ObjectID = \"xdm-wP-gM6\";",
@@ -236,7 +213,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Не изменяйте эти расширенные настройки, если вы не знаете, что делаете. Большинство из этих настроек требуют перезапуска приложения."
+            "value" : "Изменяйте эти настройки только если понимаете, что делаете. Большинство из них требуют перезапуска приложения."
           }
         },
         "sk" : {

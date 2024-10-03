@@ -79,7 +79,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "О"
+            "value" : "О программе"
           }
         },
         "sk" : {
@@ -162,7 +162,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Продолжительность"
+            "value" : "Длительность"
           }
         },
         "sk" : {

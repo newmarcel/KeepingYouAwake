@@ -194,7 +194,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Деактивировать, если заряд батареи ниже"
+            "value" : "Отключить, если заряд батареи ниже"
           }
         },
         "sk" : {
@@ -416,7 +416,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Это значение будет игнорироваться, если вы запустите приложение ниже этого предела емкости."
+            "value" : "Эта настройка будет игнорироваться, если вы запустите приложение при заряде батареи ниже указанного."
           }
         },
         "sk" : {
@@ -579,6 +579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Désactiver quand le mode économie d'énergie est activé"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отключить в Режиме Энергосбережения"
           }
         },
         "sk" : {
@@ -849,6 +855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le mode économie d'énergie peut être activé sur les Macs supportés dans Préférences Systèmes > Batterie et ne sera pas appliqué lorsqu'en charge."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Режим Энергосбережения может быть включен на поддерживаемых Mac в Системные настройки › Аккумулятор и не будет применен при зарядке."
           }
         },
         "sk" : {
