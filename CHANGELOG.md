@@ -2,6 +2,12 @@
 
 ## Changelog ##
 
+### v1.6.7 ###
+
+- fixed two issues with the "Activate when an external display is connected" advanced setting:
+	- fixed an issue where multiple `caffeinate` tasks were spawned when an external display was connected ([#203](https://github.com/newmarcel/KeepingYouAwake/pull/203))
+	- fixed an issue where a mirrored display was not treated internally as external display ([#210](https://github.com/newmarcel/KeepingYouAwake/pull/210))
+
 ### v1.6.6 ###
 
 - added Slovak translations ([#209](https://github.com/newmarcel/KeepingYouAwake/pull/209))

@@ -53,7 +53,7 @@
                        name:NSApplicationWillFinishLaunchingNotification
                      object:nil];
         [center addObserver:self
-                   selector:@selector(screenParametersDidChange:)
+                   selector:@selector(applicationDidChangeScreenParameters:)
                        name:NSApplicationDidChangeScreenParametersNotification
                      object:nil];
         [center addObserver:self
@@ -388,20 +388,31 @@
 
 #pragma mark - Internal / External Screen Parameter Changes
 
-- (void)screenParametersDidChange:(NSNotification *)notification
+- (void)applicationDidChangeScreenParameters:(NSNotification *)notification
 {
     if([NSUserDefaults.standardUserDefaults kya_isActivateOnExternalDisplayConnectedEnabled] == NO)
     {
         return;
     }
     
-    if(NSScreen.screens.count > 1)
+    NSUInteger numberOfExternalScreens = KYADisplayParametersGetNumberOfExternalDisplays();
+    Auto sleepWakeTimer = self.sleepWakeTimer;
+    
+    if(numberOfExternalScreens == 0)
     {
-        [self activateTimer];
+        // Only the main screen is connected, deactivate!
+        if([sleepWakeTimer isScheduled])
+        {
+            [self terminateTimer];
+        }
     }
     else
     {
-        [self terminateTimer];
+        // The main screen and at least one external screen, activate!
+        if([sleepWakeTimer isScheduled] == NO)
+        {
+            [self activateTimer];
+        }
     }
 }
 
