@@ -23,6 +23,12 @@
             "value" : "Remove"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -165,6 +171,12 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "The default activation duration is used when you click on the menu bar icon."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La duración de activación predeterminada es usada cuando hagas clic en el ícono de la barra de menú."
           }
         },
         "fr" : {
@@ -317,6 +329,12 @@
             "value" : "Set Default"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Establecer Predeterminado"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -399,6 +417,12 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Reset…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restablecer…"
           }
         },
         "fr" : {
@@ -485,6 +509,12 @@
             "value" : "Remove"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -569,6 +599,12 @@
             "value" : "Add"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -651,6 +687,12 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Set Default"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Establecer Predeterminado"
           }
         },
         "fr" : {

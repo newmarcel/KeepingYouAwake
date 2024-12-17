@@ -135,6 +135,12 @@
             "value" : "Activation Duration"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duración de Activación"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -668,6 +674,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Updates"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualizaciones"
           }
         },
         "fr" : {
