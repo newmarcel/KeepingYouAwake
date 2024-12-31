@@ -349,7 +349,9 @@
     }];
     
     [eventHandler registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
-        [weakSelf terminateTimer];
+        Auto strongSelf = weakSelf;
+        [strongSelf terminateTimer];
+        strongSelf.statusItemController.appearance = KYAStatusItemAppearanceInactive;
     }];
     
     [eventHandler registerActionNamed:@"toggle" block:^(KYAEvent *event) {
@@ -366,23 +368,33 @@
     NSString *hours = parameters[@"hours"];
 
     [self terminateTimer];
+    
+    Auto statusItemController = self.statusItemController;
 
     // Activate indefinitely if there are no parameters
     if(parameters == nil || parameters.count == 0)
     {
         [self activateTimer];
+        statusItemController.appearance = KYAStatusItemAppearanceActive;
     }
     else if(seconds != nil)
     {
         [self activateTimerWithTimeInterval:(NSTimeInterval)ceil(seconds.doubleValue)];
+        statusItemController.appearance = KYAStatusItemAppearanceActive;
     }
     else if(minutes != nil)
     {
         [self activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(ceil(minutes.doubleValue))];
+        statusItemController.appearance = KYAStatusItemAppearanceActive;
     }
     else if(hours != nil)
     {
         [self activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
+        statusItemController.appearance = KYAStatusItemAppearanceActive;
+    }
+    else
+    {
+        statusItemController.appearance = KYAStatusItemAppearanceInactive;
     }
 }
 
