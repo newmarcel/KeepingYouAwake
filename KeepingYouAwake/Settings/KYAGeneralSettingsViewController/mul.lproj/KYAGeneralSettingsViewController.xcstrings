@@ -23,6 +23,12 @@
             "value" : "Notification Settings…"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración de Notificaciones…"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -104,7 +110,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Evita que el Mac duerma inmediatamente al abrir el programa."
+            "value" : "Prevenir el reposo inmediatamente al abrir el programa."
           }
         },
         "fr" : {
@@ -218,7 +224,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abre la aplicación automaticamente cuando enciendes el Mac."
+            "value" : "Abre la aplicación automáticamente cuando enciendes tu Mac."
           }
         },
         "fr" : {
@@ -332,7 +338,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abrir al iniciar la sesión"
+            "value" : "Abrir al iniciar sesión"
           }
         },
         "fr" : {

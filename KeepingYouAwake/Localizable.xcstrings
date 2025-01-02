@@ -16,6 +16,12 @@
             "value" : "(Standard)"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Predeterminado)"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -188,6 +194,12 @@
             "value" : "Aktivieren, wenn ein externes Display verbunden wird"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar cuando se conecta una pantalla externa"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -245,6 +257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dein Mac versetzt sich danach bei Nichtbenutzung wieder selbständig in den Ruhezustand."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Después, tu Mac pasará automáticamente al modo de reposo cuando no esté en uso."
           }
         },
         "fr" : {
@@ -312,6 +330,12 @@
             "value" : "Display-Ruhezustand erlauben"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permitir que la pantalla se apague"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -377,6 +401,12 @@
             "value" : "Der Ruhezustand wird erlaubt"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permitir el Reposo"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -440,6 +470,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abbrechen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
           }
         },
         "fr" : {
@@ -517,7 +553,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Haz click para permitir que Mac duerma\nClick derecho para mostar el menú"
+            "value" : "Haz clic para permitir el reposo\nHaz clic derecho para mostrar el menú"
           }
         },
         "fr" : {
@@ -625,7 +661,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Haz click para evitar que el Mac duerma\nClick derecho para mostar el menú"
+            "value" : "Haz clic para evitar el reposo\nHaz clic derecho para mostrar el menú"
           }
         },
         "fr" : {
@@ -723,6 +759,12 @@
             "value" : "Beim Benutzerwechsel deaktivieren"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivar al cambiar a otra cuenta de usuario"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -774,6 +816,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Standard"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Predeterminado"
           }
         },
         "fr" : {
@@ -845,6 +893,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Soll die Aktivierungsdauer-Liste wirklich auf die ursprünglichen Einträge zurückgesetzt werden?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Realmente deseas restablecer las duraciones de activación a los valores predeterminados?"
           }
         },
         "fr" : {
@@ -1025,6 +1079,12 @@
             "value" : "OK"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aceptar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1082,6 +1142,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Der Ruhezustand wird verhindert"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prevenir el Reposo"
           }
         },
         "fr" : {
@@ -1147,6 +1213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Der Ruhezustand wird für %@ verhindert"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prevenir el Reposo para %@"
           }
         },
         "fr" : {
@@ -1321,6 +1393,12 @@
             "value" : "Beenden, wenn die Aktivierungsdauer abgelaufen ist"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salir cuando la duración de la activación terminó"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1392,6 +1470,12 @@
             "value" : "Aktivierungsdauer zurücksetzen"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restablecer duración de las activaciones"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1461,6 +1545,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Als Standard setzen: %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Establecer Predeterminado: %@"
           }
         },
         "fr" : {
@@ -1641,6 +1731,12 @@
             "value" : "Die eingegebene Dauer ist ungültig. Bitte versuche es erneut."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La duración ingresada es inválida. Por favor, inténtalo nuevamente."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1710,6 +1806,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Diese Dauer wurde bereits hinzugefügt."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta duración ya ha sido añadida."
           }
         },
         "fr" : {
@@ -1890,6 +1992,12 @@
             "value" : "Du kannst deinen Mac weiterhin manuell in den Ruhezustand versetzen."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aún puedes activar manualmente el modo de reposo en tu Mac."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1953,6 +2061,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dein Mac versetzt sich bei Nichtbenutzung selbständig in den Ruhezustand."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu Mac pasará automáticamente al modo de reposo cuando no esté en uso."
           }
         },
         "fr" : {
