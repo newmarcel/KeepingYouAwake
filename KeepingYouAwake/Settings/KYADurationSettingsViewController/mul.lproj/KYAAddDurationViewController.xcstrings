@@ -23,6 +23,12 @@
             "value" : "Hours"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horas"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -107,6 +113,12 @@
             "value" : "Cancel"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -179,6 +191,12 @@
             "value" : "Warning Label"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiqueta de Advertencia"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -225,6 +243,12 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Minutes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minutos"
           }
         },
         "fr" : {
@@ -311,6 +335,12 @@
             "value" : "Seconds"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segundos"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -393,6 +423,12 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Add Duration"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar Duración"
           }
         },
         "fr" : {

@@ -140,7 +140,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Desactivar cuando la carga de la batería sea menor a"
+            "value" : "Desactivar cuando la capacidad de la batería esté por debajo de"
           }
         },
         "fr" : {
@@ -362,7 +362,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Este valor será ignorado cuando inicie manualmente la aplicación por debajo de esta capacidad de la batería."
+            "value" : "Este valor será ignorado cuando inicies manualmente la aplicación por debajo de esta capacidad de la batería."
           }
         },
         "fr" : {
@@ -575,6 +575,12 @@
             "value" : "Deactivate when Low Power Mode is enabled"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivar cuando el modo de bajo consumo esté activado"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -746,7 +752,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nivel de batería"
+            "value" : "Nivel de Batería"
           }
         },
         "fr" : {
@@ -849,6 +855,12 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Low Power Mode can be enabled on supported Macs in System Settings › Battery."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El modo de bajo consumo puede ser activado en las Macs soportadas en Configuración del Sistema > Batería."
           }
         },
         "fr" : {
