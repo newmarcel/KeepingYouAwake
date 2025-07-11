@@ -30,6 +30,18 @@
     }
 }
 
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)hasVisibleWindows
+{
+    // Let's ignore all reopen requests in the first 5 seconds of the app's runtime.
+    // Sometimes multiple reopen events are sent on app launch, which we don't want to handle.
+    Auto launchDate = NSRunningApplication.currentApplication.launchDate;
+    if(hasVisibleWindows == NO && [[launchDate dateByAddingTimeInterval:5.0f] compare:[NSDate date]] == NSOrderedAscending)
+    {
+        [self showSettingsWindow:sender];
+    }
+    return NO;
+}
+
 #pragma mark - Settings Window
 
 - (void)showSettingsWindow:(id)sender
