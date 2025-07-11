@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="KeepingYouAwake/InfoPlist.xcstrings" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.1" build-num="16B40"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -10,18 +10,19 @@
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2024 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2025 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Localizable.xcstrings" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.1" build-num="16B40"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="(Default)" xml:space="preserve">
         <source>(Default)</source>
+        <target state="translated">(Predeterminado)</target>
         <note>(Default)</note>
       </trans-unit>
       <trans-unit id="Activate for Duration" xml:space="preserve">
@@ -31,48 +32,56 @@
       </trans-unit>
       <trans-unit id="Activate when an external display is connected" xml:space="preserve">
         <source>Activate when an external display is connected</source>
+        <target state="translated">Activar cuando se conecta una pantalla externa</target>
         <note>Activate when an external display is connected</note>
       </trans-unit>
       <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
         <source>Afterwards your Mac will automatically go to sleep again when unused.</source>
+        <target state="translated">Después, tu Mac pasará automáticamente al modo de reposo cuando no esté en uso.</target>
         <note>Afterwards your Mac will automatically go to sleep again when unused.</note>
       </trans-unit>
       <trans-unit id="Allow the display to sleep" xml:space="preserve">
         <source>Allow the display to sleep</source>
+        <target state="translated">Permitir que la pantalla se apague</target>
         <note>Allow the display to sleep</note>
       </trans-unit>
       <trans-unit id="Allowing Sleep" xml:space="preserve">
         <source>Allowing Sleep</source>
+        <target state="translated">Permitir el Reposo</target>
         <note>Allowing Sleep</note>
       </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
         <source>Cancel</source>
+        <target state="translated">Cancelar</target>
         <note>Cancel</note>
       </trans-unit>
       <trans-unit id="Click to allow sleep&#10;Right click to show menu" xml:space="preserve">
         <source>Click to allow sleep
 Right click to show menu</source>
-        <target state="translated">Haz click para permitir que Mac duerma
-Click derecho para mostar el menú</target>
+        <target state="translated">Haz clic para permitir el reposo
+Haz clic derecho para mostrar el menú</target>
         <note>Click to allow sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Click to prevent sleep&#10;Right click to show menu" xml:space="preserve">
         <source>Click to prevent sleep
 Right click to show menu</source>
-        <target state="translated">Haz click para evitar que el Mac duerma
-Click derecho para mostar el menú</target>
+        <target state="translated">Haz clic para evitar el reposo
+Haz clic derecho para mostrar el menú</target>
         <note>Click to prevent sleep\nRight click to show menu</note>
       </trans-unit>
       <trans-unit id="Deactivate when switched to another user account" xml:space="preserve">
         <source>Deactivate when switched to another user account</source>
+        <target state="translated">Desactivar al cambiar a otra cuenta de usuario</target>
         <note>Deactivate when switched to another user account</note>
       </trans-unit>
       <trans-unit id="Default" xml:space="preserve">
         <source>Default</source>
+        <target state="translated">Predeterminado</target>
         <note>Default</note>
       </trans-unit>
       <trans-unit id="Do you really want to reset the activation durations to the default values?" xml:space="preserve">
         <source>Do you really want to reset the activation durations to the default values?</source>
+        <target state="translated">¿Realmente deseas restablecer las duraciones de activación a los valores predeterminados?</target>
         <note>Do you really want to reset the activation durations to the default values?</note>
       </trans-unit>
       <trans-unit id="Indefinitely" xml:space="preserve">
@@ -82,14 +91,17 @@ Click derecho para mostar el menú</target>
       </trans-unit>
       <trans-unit id="OK" xml:space="preserve">
         <source>OK</source>
+        <target state="translated">Aceptar</target>
         <note>OK</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep" xml:space="preserve">
         <source>Preventing Sleep</source>
+        <target state="translated">Prevenir el Reposo</target>
         <note>Preventing Sleep</note>
       </trans-unit>
       <trans-unit id="Preventing Sleep for %@" xml:space="preserve">
         <source>Preventing Sleep for %@</source>
+        <target state="translated">Prevenir el Reposo para %@</target>
         <note>Preventing Sleep for %@</note>
       </trans-unit>
       <trans-unit id="Quit" xml:space="preserve">
@@ -99,14 +111,17 @@ Click derecho para mostar el menú</target>
       </trans-unit>
       <trans-unit id="Quit when activation duration is over" xml:space="preserve">
         <source>Quit when activation duration is over</source>
+        <target state="translated">Salir cuando la duración de la activación terminó</target>
         <note>Quit when activation duration is over</note>
       </trans-unit>
       <trans-unit id="Reset Activation Durations" xml:space="preserve">
         <source>Reset Activation Durations</source>
+        <target state="translated">Restablecer duración de las activaciones</target>
         <note>Reset Activation Durations</note>
       </trans-unit>
       <trans-unit id="Set Default: %@" xml:space="preserve">
         <source>Set Default: %@</source>
+        <target state="translated">Establecer Predeterminado: %@</target>
         <note>Set Default: %@</note>
       </trans-unit>
       <trans-unit id="Settings…" xml:space="preserve">
@@ -116,10 +131,12 @@ Click derecho para mostar el menú</target>
       </trans-unit>
       <trans-unit id="The entered duration is invalid. Please try again." xml:space="preserve">
         <source>The entered duration is invalid. Please try again.</source>
+        <target state="translated">La duración ingresada es inválida. Por favor, inténtalo nuevamente.</target>
         <note>The entered duration is invalid. Please try again.</note>
       </trans-unit>
       <trans-unit id="This duration has already been added." xml:space="preserve">
         <source>This duration has already been added.</source>
+        <target state="translated">Esta duración ya ha sido añadida.</target>
         <note>This duration has already been added.</note>
       </trans-unit>
       <trans-unit id="Version" xml:space="preserve">
@@ -129,17 +146,19 @@ Click derecho para mostar el menú</target>
       </trans-unit>
       <trans-unit id="You can still manually enable sleep mode for your Mac." xml:space="preserve">
         <source>You can still manually enable sleep mode for your Mac.</source>
+        <target state="translated">Aún puedes activar manualmente el modo de reposo en tu Mac.</target>
         <note>You can still manually enable sleep mode for your Mac.</note>
       </trans-unit>
       <trans-unit id="Your Mac will automatically go to sleep when unused." xml:space="preserve">
         <source>Your Mac will automatically go to sleep when unused.</source>
+        <target state="translated">Tu Mac pasará automáticamente al modo de reposo cuando no esté en uso.</target>
         <note>Your Mac will automatically go to sleep when unused.</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Settings/KYAAdvancedSettingsViewController/Base.lproj/KYAAdvancedSettingsViewController.xib" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.1" build-num="16B40"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="3GX-gq-Yaq.title" xml:space="preserve">
@@ -160,7 +179,7 @@ Click derecho para mostar el menú</target>
   </file>
   <file original="KeepingYouAwake/Settings/KYABatterySettingsViewController/Base.lproj/KYABatterySettingsViewController.xib" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.1" build-num="16B40"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="HtM-vx-ZuN.title" xml:space="preserve">
@@ -175,6 +194,7 @@ Click derecho para mostar el menú</target>
       </trans-unit>
       <trans-unit id="SHH-RQ-HPH.title" xml:space="preserve">
         <source>Low Power Mode can be enabled on supported Macs in System Settings › Battery.</source>
+        <target state="translated">El modo de bajo consumo puede ser activado en las Macs soportadas en Configuración del Sistema &gt; Batería.</target>
         <note>Class = "NSTextFieldCell"; title = "Low Power Mode can be enabled on supported Macs in System Settings › Battery."; ObjectID = "SHH-RQ-HPH";</note>
       </trans-unit>
       <trans-unit id="aXx-hk-9R9.title" xml:space="preserve">
@@ -184,16 +204,17 @@ Click derecho para mostar el menú</target>
       </trans-unit>
       <trans-unit id="gx4-rK-1he.title" xml:space="preserve">
         <source>Deactivate when battery capacity is below</source>
-        <target state="translated">Desactivar cuando la carga de la batería sea menor a</target>
+        <target state="translated">Desactivar cuando la capacidad de la batería esté por debajo de</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "gx4-rK-1he";</note>
       </trans-unit>
       <trans-unit id="l4a-Sa-RAE.title" xml:space="preserve">
         <source>This value will be ignored when you manually start the app below this battery capacity.</source>
-        <target state="translated">Este valor será ignorado cuando inicie manualmente la aplicación por debajo de esta capacidad de la batería.</target>
+        <target state="translated">Este valor será ignorado cuando inicies manualmente la aplicación por debajo de esta capacidad de la batería.</target>
         <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "l4a-Sa-RAE";</note>
       </trans-unit>
       <trans-unit id="mcf-JV-nyg.title" xml:space="preserve">
         <source>Deactivate when Low Power Mode is enabled</source>
+        <target state="translated">Desactivar cuando el modo de bajo consumo esté activado</target>
         <note>Class = "NSButtonCell"; title = "Deactivate when Low Power Mode is enabled"; ObjectID = "mcf-JV-nyg";</note>
       </trans-unit>
       <trans-unit id="ovF-0F-TMc.title" xml:space="preserve">
@@ -203,49 +224,56 @@ Click derecho para mostar el menú</target>
       </trans-unit>
       <trans-unit id="pvY-d7-nKX.title" xml:space="preserve">
         <source>Battery Level</source>
-        <target state="translated">Nivel de batería</target>
+        <target state="translated">Nivel de Batería</target>
         <note>Class = "NSTextFieldCell"; title = "Battery Level"; ObjectID = "pvY-d7-nKX";</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Settings/KYADurationSettingsViewController/Base.lproj/KYAAddDurationViewController.xib" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.1" build-num="16B40"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="5bs-m4-hy9.title" xml:space="preserve">
         <source>Hours</source>
+        <target state="translated">Horas</target>
         <note>Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "5bs-m4-hy9";</note>
       </trans-unit>
       <trans-unit id="59l-n2-tD5.title" xml:space="preserve">
         <source>Cancel</source>
+        <target state="translated">Cancelar</target>
         <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "59l-n2-tD5";</note>
       </trans-unit>
       <trans-unit id="kYn-pW-tq6.title" xml:space="preserve">
         <source>Warning Label</source>
+        <target state="translated">Etiqueta de Advertencia</target>
         <note>Class = "NSTextFieldCell"; title = "Warning Label"; ObjectID = "kYn-pW-tq6"; Note = "Do not localize";</note>
       </trans-unit>
       <trans-unit id="oi9-AP-ag4.title" xml:space="preserve">
         <source>Minutes</source>
+        <target state="translated">Minutos</target>
         <note>Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "oi9-AP-ag4";</note>
       </trans-unit>
       <trans-unit id="s1J-2f-UeD.title" xml:space="preserve">
         <source>Seconds</source>
+        <target state="translated">Segundos</target>
         <note>Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "s1J-2f-UeD";</note>
       </trans-unit>
       <trans-unit id="vTF-HR-j5d.title" xml:space="preserve">
         <source>Add Duration</source>
+        <target state="translated">Agregar Duración</target>
         <note>Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "vTF-HR-j5d";</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Settings/KYADurationSettingsViewController/Base.lproj/KYADurationSettingsViewController.xib" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.1" build-num="16B40"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="2Az-3u-oGb.title" xml:space="preserve">
         <source>Remove</source>
+        <target state="translated">Eliminar</target>
         <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "2Az-3u-oGb";</note>
       </trans-unit>
       <trans-unit id="3es-An-BPG.title" xml:space="preserve">
@@ -254,6 +282,7 @@ Click derecho para mostar el menú</target>
       </trans-unit>
       <trans-unit id="4tU-j1-N4m.title" xml:space="preserve">
         <source>The default activation duration is used when you click on the menu bar icon.</source>
+        <target state="translated">La duración de activación predeterminada es usada cuando hagas clic en el ícono de la barra de menú.</target>
         <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "4tU-j1-N4m";</note>
       </trans-unit>
       <trans-unit id="13c-ID-Fgy.title" xml:space="preserve">
@@ -262,48 +291,54 @@ Click derecho para mostar el menú</target>
       </trans-unit>
       <trans-unit id="Are-vs-Awn.title" xml:space="preserve">
         <source>Set Default</source>
+        <target state="translated">Establecer Predeterminado</target>
         <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "Are-vs-Awn";</note>
       </trans-unit>
       <trans-unit id="COs-G1-J6K.title" xml:space="preserve">
         <source>Reset…</source>
+        <target state="translated">Restablecer…</target>
         <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "COs-G1-J6K";</note>
       </trans-unit>
       <trans-unit id="U86-Hk-nfT.title" xml:space="preserve">
         <source>Set Default</source>
+        <target state="translated">Establecer Predeterminado</target>
         <note>Class = "NSMenuItem"; title = "Set Default"; ObjectID = "U86-Hk-nfT";</note>
       </trans-unit>
       <trans-unit id="dml-Pt-frp.ibShadowedToolTips[0]" xml:space="preserve">
         <source>Remove</source>
+        <target state="translated">Eliminar</target>
         <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[0] = "Remove"; ObjectID = "dml-Pt-frp";</note>
       </trans-unit>
       <trans-unit id="dml-Pt-frp.ibShadowedToolTips[1]" xml:space="preserve">
         <source>Add</source>
+        <target state="translated">Agregar</target>
         <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[1] = "Add"; ObjectID = "dml-Pt-frp";</note>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Settings/KYAGeneralSettingsViewController/Base.lproj/KYAGeneralSettingsViewController.xib" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.1" build-num="16B40"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="7QN-oX-fJU.title" xml:space="preserve">
         <source>Immediately starts preventing sleep when launched.</source>
-        <target state="translated">Evita que el Mac duerma inmediatamente al abrir el programa.</target>
+        <target state="translated">Prevenir el reposo inmediatamente al abrir el programa.</target>
         <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU";</note>
       </trans-unit>
       <trans-unit id="7dk-Tj-9aG.title" xml:space="preserve">
         <source>Notification Settings…</source>
+        <target state="translated">Configuración de Notificaciones…</target>
         <note>Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "7dk-Tj-9aG";</note>
       </trans-unit>
       <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
         <source>Start at Login</source>
-        <target state="translated">Abrir al iniciar la sesión</target>
+        <target state="translated">Abrir al iniciar sesión</target>
         <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "YWD-DY-pgf";</note>
       </trans-unit>
       <trans-unit id="jxf-J8-dHN.title" xml:space="preserve">
         <source>Automatically opens the app when you start your Mac.</source>
-        <target state="translated">Abre la aplicación automaticamente cuando enciendes el Mac.</target>
+        <target state="translated">Abre la aplicación automáticamente cuando enciendes tu Mac.</target>
         <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "jxf-J8-dHN";</note>
       </trans-unit>
       <trans-unit id="zql-rZ-9xH.title" xml:space="preserve">
@@ -315,7 +350,7 @@ Click derecho para mostar el menú</target>
   </file>
   <file original="KeepingYouAwake/Settings/KYASettings.xcstrings" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.1" build-num="16B40"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="About" xml:space="preserve">
@@ -325,6 +360,7 @@ Click derecho para mostar el menú</target>
       </trans-unit>
       <trans-unit id="Activation Duration" xml:space="preserve">
         <source>Activation Duration</source>
+        <target state="translated">Duración de Activación</target>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced" xml:space="preserve">
@@ -349,13 +385,14 @@ Click derecho para mostar el menú</target>
       </trans-unit>
       <trans-unit id="Updates" xml:space="preserve">
         <source>Updates</source>
+        <target state="translated">Actualizaciones</target>
         <note/>
       </trans-unit>
     </body>
   </file>
   <file original="KeepingYouAwake/Settings/KYAUpdateSettingsViewController/Base.lproj/KYAUpdateSettingsViewController.xib" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.1" build-num="16B40"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="F2o-Is-2nW.title" xml:space="preserve">
@@ -377,7 +414,7 @@ Click derecho para mostar el menú</target>
   </file>
   <file original="KYALauncher/InfoPlist.xcstrings" source-language="en" target-language="es" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.1" build-num="16B40"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -385,7 +422,7 @@ Click derecho para mostar el menú</target>
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2014 – 2024 Marcel Dierkes. All rights reserved.</source>
+        <source>Copyright © 2014 – 2025 Marcel Dierkes. All rights reserved.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>

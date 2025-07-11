@@ -8,6 +8,8 @@
 	- fixed an issue where multiple `caffeinate` tasks were spawned when an external display was connected ([#203](https://github.com/newmarcel/KeepingYouAwake/issues/203))
 	- fixed an issue where a mirrored display was not treated internally as external display ([#210](https://github.com/newmarcel/KeepingYouAwake/issues/210))
 - fixed an issue where the menu bar icon did not update properly when the URL scheme was used to activate or deactivate ([#224](https://github.com/newmarcel/KeepingYouAwake/issues/224))
+- updated the Spanish translations ([#223](https://github.com/newmarcel/KeepingYouAwake/pull/223))
+	- *Thank you [agusbattista](https://github.com/agusbattista)!*
 
 ### v1.6.6 ###
 
