@@ -17,6 +17,12 @@
             "value" : "Entfernen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αφαίρεση"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -27,6 +33,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eliminar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poista"
           }
         },
         "fr" : {
@@ -105,7 +117,6 @@
     },
     "3es-An-BPG.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Set Default\"; ObjectID = \"3es-An-BPG\";",
-      "extractionState" : "manual",
       "localizations" : {
         "da" : {
           "stringUnit" : {
@@ -191,6 +202,12 @@
             "value" : "Die Standard-Aktivierungsdauer wird benutzt, wenn du auf das Menüleistensymbol klickst."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προεπιλεγμένη διάρκεια ενεργοποιείται όταν κλικάρεται το εικονίδιο του μενού."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -201,6 +218,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La duración de activación predeterminada es usada cuando hagas clic en el ícono de la barra de menú."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oletuskesto aktivoituu, kun valikon kuvaketta napsautetaan."
           }
         },
         "fr" : {
@@ -279,7 +302,6 @@
     },
     "13c-ID-Fgy.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Reset…\"; ObjectID = \"13c-ID-Fgy\";",
-      "extractionState" : "manual",
       "localizations" : {
         "da" : {
           "stringUnit" : {
@@ -371,6 +393,12 @@
             "value" : "Als Standard setzen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ορισμός Προεπιλογής"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -381,6 +409,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Establecer Predeterminado"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aseta Oletukseksi"
           }
         },
         "fr" : {
@@ -473,6 +507,12 @@
             "value" : "Zurücksetzen …"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επαναφορά…"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -483,6 +523,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restablecer…"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palauta…"
           }
         },
         "fr" : {
@@ -575,6 +621,12 @@
             "value" : "Entfernen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αφαίρεση"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -585,6 +637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eliminar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poista"
           }
         },
         "fr" : {
@@ -677,6 +735,12 @@
             "value" : "Hinzufügen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθήκη"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -687,6 +751,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Agregar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää"
           }
         },
         "fr" : {
@@ -779,6 +849,12 @@
             "value" : "Als Standard setzen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ορισμός Προεπιλογής"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -789,6 +865,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Establecer Predeterminado"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aseta Oletukseksi"
           }
         },
         "fr" : {

@@ -14,6 +14,8 @@
 	- *Thank you [ksajolaer](https://github.com/ksajolaer)!*
 - added Hindi translations ([#232](https://github.com/newmarcel/KeepingYouAwake/pull/232))
 	- *Thank you [AnandChowdhary](https://github.com/AnandChowdhary)!*
+- added Greek and Finnish translations ([#230](https://github.com/newmarcel/KeepingYouAwake/pull/230))
+	- *Thank you [ziz1zaza](https://github.com/ziz1zaza)!*
 
 ### v1.6.6 ###
 

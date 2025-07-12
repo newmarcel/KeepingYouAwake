@@ -16,6 +16,12 @@
             "value" : "Über"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πληροφορίες για το"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26,6 +32,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Acerca de"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tietoja"
           }
         },
         "fr" : {
@@ -141,6 +153,12 @@
             "value" : "Aktivierungsdauer"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διάρκεια Ενεργοποίησης"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -151,6 +169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duración de Activación"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivoinnin Kesto"
           }
         },
         "fr" : {
@@ -242,6 +266,12 @@
             "value" : "Erweitert"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προηγμένες"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -252,6 +282,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avanzado"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisäasetukset"
           }
         },
         "fr" : {
@@ -367,6 +403,12 @@
             "value" : "Batterie"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μπαταρία"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -377,6 +419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Batería"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akku"
           }
         },
         "fr" : {
@@ -492,6 +540,12 @@
             "value" : "Allgemein"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γενικές"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -502,6 +556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "General"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yleiset"
           }
         },
         "fr" : {
@@ -617,6 +677,12 @@
             "value" : "KeepingYouAwake – Einstellungen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KeepingYouAwake – Ρυθμίσεις"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -627,6 +693,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "KeepingYouAwake – Preferencias"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KeepingYouAwake – Asetukset"
           }
         },
         "fr" : {
@@ -742,6 +814,12 @@
             "value" : "Updates"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ενημερώσεις"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -752,6 +830,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Actualizaciones"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Päivitykset"
           }
         },
         "fr" : {

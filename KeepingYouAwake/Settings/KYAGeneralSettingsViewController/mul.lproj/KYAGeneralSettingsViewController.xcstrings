@@ -17,6 +17,12 @@
             "value" : "Mitteilungseinstellungen …"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ρυθμίσεις Ειδοποιήσεων…"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -27,6 +33,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configuración de Notificaciones…"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoitusasetukset…"
           }
         },
         "fr" : {
@@ -113,6 +125,12 @@
             "value" : "Verhindert direkt beim Start den Ruhezustand."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποτρέπει άμεσα την αδράνεια κατά την εκκίνηση."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -123,6 +141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prevenir el reposo inmediatamente al abrir el programa."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estää välittömästi lepotilan käynnistyksen yhteydessä."
           }
         },
         "fr" : {
@@ -239,6 +263,12 @@
             "value" : "Öffnet die App automatisch beim Start deines Macs."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Άνοιγμα της εφαρμογής αυτόματα κατά την εκκίνηση του Mac."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -249,6 +279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abre la aplicación automáticamente cuando enciendes tu Mac."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sovellus avautuu automaattisesti Macin käynnistyessä."
           }
         },
         "fr" : {
@@ -365,6 +401,12 @@
             "value" : "Beim Anmelden starten"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Άνοιγμα κατά την Έναρξη"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -375,6 +417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abrir al iniciar sesión"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avaa Käynnistyessä"
           }
         },
         "fr" : {
@@ -491,6 +539,12 @@
             "value" : "Beim Start aktivieren"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ενεργοποίηση κατά την Εκκίνηση"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -501,6 +555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Activar al abrir"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivoi Käynnistyessä"
           }
         },
         "fr" : {

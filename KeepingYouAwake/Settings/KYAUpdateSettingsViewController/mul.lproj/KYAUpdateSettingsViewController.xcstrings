@@ -17,6 +17,12 @@
             "value" : "Automatisch nach Updates suchen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτόματος Έλεγχος Ενημερώσεων"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -27,6 +33,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Buscar actualizaciones automáticamente"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automaattinen Päivitysten Tarkistus"
           }
         },
         "fr" : {
@@ -143,6 +155,12 @@
             "value" : "Nach Vorabversionen suchen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έλεγχος Ενημερώσεων Προεκδόσεων"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -153,6 +171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Buscar versiones beta"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esiversiopäivitysten Tarkistus"
           }
         },
         "fr" : {
@@ -269,6 +293,12 @@
             "value" : "Jetzt suchen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έλεγχος Τώρα"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -279,6 +309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Comprobar ahora"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarkista Nyt"
           }
         },
         "fr" : {

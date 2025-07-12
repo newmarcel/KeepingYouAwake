@@ -16,10 +16,22 @@
             "value" : "(Standard)"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Προεπιλογή)"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "(Predeterminado)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Oletus)"
           }
         },
         "fr" : {
@@ -105,10 +117,22 @@
             "value" : "Aktivierungsdauer"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ενεργοποίηση για Διάρκεια"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Activar durante"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivoi ajalle"
           }
         },
         "fr" : {
@@ -218,10 +242,22 @@
             "value" : "Aktivieren, wenn ein externes Display verbunden wird"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ενεργοποίηση όταν συνδέεται εξωτερική οθόνη"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Activar cuando se conecta una pantalla externa"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivoi ulkoisen näytön kytkeytyessä"
           }
         },
         "fr" : {
@@ -295,10 +331,22 @@
             "value" : "Dein Mac versetzt sich danach bei Nichtbenutzung wieder selbständig in den Ruhezustand."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αργότερα, το Mac σας θα μπει σε αδράνεια αυτόματα όταν δεν χρησιμοποιείται."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Después, tu Mac pasará automáticamente al modo de reposo cuando no esté en uso."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Myöhemmin Mac siirtyy automaattisesti lepotilaan, jos sitä ei käytetä."
           }
         },
         "fr" : {
@@ -378,10 +426,22 @@
             "value" : "Display-Ruhezustand erlauben"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Να επιτρέπεται η αδράνεια της οθόνης"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Permitir que la pantalla se apague"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salli näytön lepotila"
           }
         },
         "fr" : {
@@ -461,10 +521,22 @@
             "value" : "Der Ruhezustand wird erlaubt"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Να επιτρέπεται η αδράνεια"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Permitir el Reposo"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salli lepotila"
           }
         },
         "fr" : {
@@ -544,10 +616,22 @@
             "value" : "Abbrechen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακύρωση"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancelar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peruuta"
           }
         },
         "fr" : {
@@ -634,10 +718,22 @@
             "value" : "Klicken, um den Ruhezustand zu erlauben\nRechtsklick, um das Menü anzuzeigen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλικ για αδράνεια\nΔεξί κλικ για μενού"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haz clic para permitir el reposo\nHaz clic derecho para mostrar el menú"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klikkaa salliakseen lepotila\nOikea klikkaus näyttääksesi valikon"
           }
         },
         "fr" : {
@@ -754,10 +850,22 @@
             "value" : "Klicken, um den Ruhezustand zu verhindern\nRechtsklick, um das Menü anzuzeigen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλικ για αποτροπή αδράνειας\nΔεξί κλικ για μενού"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haz clic para evitar el reposo\nHaz clic derecho para mostrar el menú"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klikkaa estääksesi lepotila\nOikea klikkaus näyttääksesi valikon"
           }
         },
         "fr" : {
@@ -867,10 +975,22 @@
             "value" : "Beim Benutzerwechsel deaktivieren"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απενεργοποίηση στην εναλλαγή άλλου λογαριασμού χρήστη"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desactivar al cambiar a otra cuenta de usuario"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deaktivoi toisen käyttäjätilin vaihdon yhteydessä"
           }
         },
         "hi" : {
@@ -938,10 +1058,22 @@
             "value" : "Standard"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προεπιλογή"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Predeterminado"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oletus"
           }
         },
         "fr" : {
@@ -1027,10 +1159,22 @@
             "value" : "Soll die Aktivierungsdauer-Liste wirklich auf die ursprünglichen Einträge zurückgesetzt werden?"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θέλετε πραγματικά να επαναφέρετε τις τιμές διάρκειας στις προεπιλεγμένες;"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "¿Realmente deseas restablecer las duraciones de activación a los valores predeterminados?"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haluatko varmasti palauttaa keston oletusarvoihin?"
           }
         },
         "fr" : {
@@ -1116,10 +1260,22 @@
             "value" : "Unbegrenzt"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επ' αόριστον"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indefinidamente"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loputtomasti"
           }
         },
         "fr" : {
@@ -1235,10 +1391,22 @@
             "value" : "OK"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aceptar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
           }
         },
         "fr" : {
@@ -1306,10 +1474,22 @@
             "value" : "Der Ruhezustand wird verhindert"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποτροπή αδράνειας"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prevenir el Reposo"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estä Lepotila"
           }
         },
         "fr" : {
@@ -1389,10 +1569,22 @@
             "value" : "Der Ruhezustand wird für %@ verhindert"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποτροπή αδράνειας για %@"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prevenir el Reposo para %@"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estä Lepotila %@ ajaksi"
           }
         },
         "fr" : {
@@ -1472,10 +1664,22 @@
             "value" : "Beenden"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έξοδος"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salir"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poistu"
           }
         },
         "fr" : {
@@ -1591,10 +1795,22 @@
             "value" : "Beenden, wenn die Aktivierungsdauer abgelaufen ist"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έξοδος όταν η διάρκεια ενεργοποίησης λήξει"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salir cuando la duración de la activación terminó"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poistu, kun aktivoinnin kesto päättyy"
           }
         },
         "fr" : {
@@ -1680,10 +1896,22 @@
             "value" : "Aktivierungsdauer zurücksetzen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επαναφορά Διαρκειών Ενεργοποίησης"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restablecer duración de las activaciones"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palauta Aktivoinnin Kestot"
           }
         },
         "fr" : {
@@ -1769,10 +1997,22 @@
             "value" : "Als Standard setzen: %@"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ορισμός Προεπιλογής: %@"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Establecer Predeterminado: %@"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aseta Oletukseksi: %@"
           }
         },
         "fr" : {
@@ -1858,10 +2098,22 @@
             "value" : "Einstellungen …"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ρυθμίσεις…"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preferencias…"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asetukset…"
           }
         },
         "fr" : {
@@ -1977,10 +2229,22 @@
             "value" : "Die eingegebene Dauer ist ungültig. Bitte versuche es erneut."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η εισαγόμενη διάρκεια είναι άκυρη. Παρακαλώ δοκιμάστε ξανά."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "La duración ingresada es inválida. Por favor, inténtalo nuevamente."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Syötetty kesto on virheellinen. Yritä uudelleen."
           }
         },
         "fr" : {
@@ -2066,10 +2330,22 @@
             "value" : "Diese Dauer wurde bereits hinzugefügt."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτή η διάρκεια έχει ήδη προστεθεί"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Esta duración ya ha sido añadida."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tämä kesto on jo lisätty."
           }
         },
         "fr" : {
@@ -2155,10 +2431,22 @@
             "value" : "Version"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έκδοση"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Versión"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versio"
           }
         },
         "fr" : {
@@ -2274,10 +2562,22 @@
             "value" : "Du kannst deinen Mac weiterhin manuell in den Ruhezustand versetzen."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μπορείτε ακόμα να ενεργοποιήσετε χειροκίνητα την αδράνεια στο Mac σας"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aún puedes activar manualmente el modo de reposo en tu Mac."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voit silti aktivoida Macin lepotilan manuaalisesti."
           }
         },
         "fr" : {
@@ -2357,10 +2657,22 @@
             "value" : "Dein Mac versetzt sich bei Nichtbenutzung selbständig in den Ruhezustand."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το Mac σας θα πέσει σε αδράνεια αυτόματα όταν δεν χρησιμοποιείται"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tu Mac pasará automáticamente al modo de reposo cuando no esté en uso."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac siirtyy automaattisesti lepotilaan, jos sitä ei käytetä."
           }
         },
         "fr" : {

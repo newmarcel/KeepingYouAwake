@@ -17,6 +17,12 @@
             "value" : "Stromsparmodus"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λειτουργία Χαμηλής Κατανάλωσης"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -27,6 +33,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modo de bajo consumo"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matalan Tehon Tila"
           }
         },
         "fr" : {
@@ -141,6 +153,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deaktivieren, wenn der Ladestand der Batterie niedriger ist als"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απενεργοποίηση όταν η χωρητικότητα μπαταρίας είναι κάτω από"
           }
         },
         "en" : {
@@ -269,6 +287,12 @@
             "value" : "10 %"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 %"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -276,6 +300,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 %"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "10 %"
@@ -383,6 +413,12 @@
             "value" : "Dieser Wert wird ignoriert, wenn du die App unter dieser Kapazitätsgrenze startest."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτή η τιμή θα αγνοηθεί αν εκκινήσετε χειροκίνητα την εφαρμογή με χωρητικότητα μπαταρίας κάτω από αυτό το όριο."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -393,6 +429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Este valor será ignorado cuando inicies manualmente la aplicación por debajo de esta capacidad de la batería."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tätä arvoa ei huomioida, jos käynnistät sovelluksen manuaalisesti akun kapasiteetin ollessa alle tämän rajan."
           }
         },
         "fr" : {
@@ -509,6 +551,12 @@
             "value" : "90 %"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "90 %"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -516,6 +564,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "90 %"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "90 %"
@@ -617,6 +671,12 @@
             "value" : "Deaktivieren, wenn der Stromsparmodus aktiviert ist"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απενεργοποίηση όταν ενεργοποιηθεί η Λειτουργία Χαμηλής Κατανάλωσης"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -627,6 +687,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desactivar cuando el modo de bajo consumo esté activado"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deaktivoi, kun Matalan Tehon Tila on käytössä"
           }
         },
         "fr" : {
@@ -695,6 +761,12 @@
             "value" : "50 %"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50 %"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -702,6 +774,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50 %"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "50 %"
@@ -809,6 +887,12 @@
             "value" : "Batteriestatus"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επίπεδο Μπαταρίας"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -819,6 +903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nivel de Batería"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akun Taso"
           }
         },
         "fr" : {
@@ -929,6 +1019,12 @@
             "value" : "Stromsparmodus kann auf unterstützten Macs in Systemeinstellungen › Batterie aktiviert werden."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η Λειτουργία Χαμηλής Κατανάλωσης ενεργοποιείται στις υποστηριζόμενες συσκευές Mac από τις Ρυθμίσεις Συστήματος › Μπαταρία και δεν ισχύει κατά τη φόρτιση."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -939,6 +1035,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "El modo de bajo consumo puede ser activado en las Macs soportadas en Configuración del Sistema > Batería."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matalan Tehon Tila käynnistyy tuetuissa Mac-laitteissa Järjestelmäasetukset › Akku -kohdassa, eikä se päällä ladataessa."
           }
         },
         "fr" : {

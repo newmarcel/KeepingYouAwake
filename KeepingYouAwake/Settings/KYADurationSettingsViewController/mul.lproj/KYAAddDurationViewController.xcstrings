@@ -17,6 +17,12 @@
             "value" : "Stunden"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ώρες"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -27,6 +33,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Horas"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuntia"
           }
         },
         "fr" : {
@@ -119,6 +131,12 @@
             "value" : "Abbrechen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακύρωση"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -129,6 +147,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancelar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peruuta"
           }
         },
         "fr" : {
@@ -269,6 +293,12 @@
             "value" : "Minuten"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λεπτά"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -279,6 +309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minutos"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minuuttia"
           }
         },
         "fr" : {
@@ -371,6 +407,12 @@
             "value" : "Sekunden"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δευτερόλεπτα"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -381,6 +423,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Segundos"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sekuntia"
           }
         },
         "fr" : {
@@ -473,6 +521,12 @@
             "value" : "Dauer hinzufügen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθήκη Διάρκειας"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -483,6 +537,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Agregar Duración"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää Kesto"
           }
         },
         "fr" : {

@@ -17,6 +17,12 @@
             "value" : "Zurücksetzen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επαναφορά σε Προεπιλογή"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -27,6 +33,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurar valores por defecto"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palauta Oletukseksi"
           }
         },
         "fr" : {
@@ -168,6 +180,12 @@
             "value" : "Ändere diese erweiterten Einstellungen nur, wenn du weißt, was du tust. Die meisten dieser Einstellungen erfordern einen Neustart."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αλλάξτε αυτές τις προηγμένες ρυθμίσεις μόνο αν γνωρίζετε τι κάνετε. Οι περισσότερες από αυτές τις ρυθμίσεις απαιτούν επανεκκίνηση εφαρμογής."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -178,6 +196,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Solo cambia estas opciones avanzadas si sabes lo que estas haciendo. La mayoría de estas preferencias requieren reiniciar de la aplicación."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muuta lisäasetuksia vain, jos tiedät mitä teet. Useimmat näistä asetuksista edellyttävät sovelluksen uudelleenkäynnistystä."
           }
         },
         "fr" : {
