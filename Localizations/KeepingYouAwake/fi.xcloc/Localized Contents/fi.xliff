@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="KeepingYouAwake/InfoPlist.xcstrings" source-language="en" target-language="el" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>KeepingYouAwake</source>
+        <target state="new">KeepingYouAwake</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source>Copyright © 2014 – 2023 Marcel Dierkes. All rights reserved.</source>
+        <target state="new">Copyright © 2014 – 2023 Marcel Dierkes. All rights reserved.</target>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Localizable.xcstrings" source-language="en" target-language="el" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+    </header>
+    <body>
+      <trans-unit id="(Default)" xml:space="preserve">
+        <source>(Default)</source>
+        <target state="new">(Oletus)</target>
+        <note>(Default)</note>
+      </trans-unit>
+      <trans-unit id="Activate for Duration" xml:space="preserve">
+        <source>Activate for Duration</source>
+        <target state="new">Aktivoi ajalle</target>
+        <note>Activate for Duration</note>
+      </trans-unit>
+      <trans-unit id="Activate indefinitely when external display is connected" xml:space="preserve">
+        <source>Activate indefinitely when external display is connected</source>
+        <target state="new">Aktivoi loputtomasti, kun ulkoinen näyttö on kytkettynä</target>
+        <note>Activate indefinitely when external display is connected</note>
+      </trans-unit>
+      <trans-unit id="Activate when an external display is connected" xml:space="preserve">
+        <source>Activate when an external display is connected</source>
+        <target state="new">Aktivoi ulkoisen näytön kytkeytyessä</target>
+        <note>Activate when an external display is connected</note>
+      </trans-unit>
+      <trans-unit id="Afterwards your Mac will automatically go to sleep again when unused." xml:space="preserve">
+        <source>Afterwards your Mac will automatically go to sleep again when unused.</source>
+        <target state="new">Myöhemmin Mac siirtyy automaattisesti lepotilaan, jos sitä ei käytetä.</target>
+        <note>Afterwards your Mac will automatically go to sleep again when unused.</note>
+      </trans-unit>
+      <trans-unit id="Allow the display to sleep" xml:space="preserve">
+        <source>Allow the display to sleep</source>
+        <target state="new">Salli näytön lepotila</target>
+        <note>Allow the display to sleep</note>
+      </trans-unit>
+      <trans-unit id="Allowing Sleep" xml:space="preserve">
+        <source>Allowing Sleep</source>
+        <target state="new">Salli lepotila</target>
+        <note>Allowing Sleep</note>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target state="new">Peruuta</target>
+        <note>Cancel</note>
+      </trans-unit>
+      <trans-unit id="Click to allow sleep&#10;Right click to show menu" xml:space="preserve">
+        <source>Click to allow sleep
+Right click to show menu</source>
+        <target state="new">Klikkaa salliakseen lepotila
+Oikea klikkaus näyttääksesi valikon</target>
+        <note>Click to allow sleep\nRight click to show menu</note>
+      </trans-unit>
+      <trans-unit id="Click to prevent sleep&#10;Right click to show menu" xml:space="preserve">
+        <source>Click to prevent sleep
+Right click to show menu</source>
+        <target state="new">Klikkaa estääksesi lepotila
+Oikea klikkaus näyttääksesi valikon</target>
+        <note>Click to prevent sleep\nRight click to show menu</note>
+      </trans-unit>
+      <trans-unit id="Deactivate when switched to another user account" xml:space="preserve">
+        <source>Deactivate when switched to another user account</source>
+        <target state="new">Deaktivoi toisen käyttäjätilin vaihdon yhteydessä</target>
+        <note>Deactivate when switched to another user account</note>
+      </trans-unit>
+      <trans-unit id="Default" xml:space="preserve">
+        <source>Default</source>
+        <target state="new">Oletus</target>
+        <note>Default</note>
+      </trans-unit>
+      <trans-unit id="Disable menu bar icon highlight color" xml:space="preserve">
+        <source>Disable menu bar icon highlight color</source>
+        <target state="new">Poista valikon kuvakkeen korostusväri</target>
+        <note>Disable menu bar icon highlight color</note>
+      </trans-unit>
+      <trans-unit id="Do you really want to reset the activation durations to the default values?" xml:space="preserve">
+        <source>Do you really want to reset the activation durations to the default values?</source>
+        <target state="new">Haluatko varmasti palauttaa keston oletusarvoihin?</target>
+        <note>Do you really want to reset the activation durations to the default values?</note>
+      </trans-unit>
+      <trans-unit id="Indefinitely" xml:space="preserve">
+        <source>Indefinitely</source>
+        <target state="new">Loputtomasti</target>
+        <note>Indefinitely</note>
+      </trans-unit>
+      <trans-unit id="OK" xml:space="preserve">
+        <source>OK</source>
+        <target state="translated">OK</target>
+        <note>OK</note>
+      </trans-unit>
+      <trans-unit id="Preventing Sleep" xml:space="preserve">
+        <source>Preventing Sleep</source>
+        <target state="translated">Estä Lepotila</target>
+        <note>Preventing Sleep</note>
+      </trans-unit>
+      <trans-unit id="Preventing Sleep for %@" xml:space="preserve">
+        <source>Preventing Sleep for %@</source>
+        <target state="translated">Estä Lepotila %@ ajaksi</target>
+        <note>Preventing Sleep for %@</note>
+      </trans-unit>
+      <trans-unit id="Quit" xml:space="preserve">
+        <source>Quit</source>
+        <target state="new">Poistu</target>
+        <note>Quit</note>
+      </trans-unit>
+      <trans-unit id="Quit when activation duration is over" xml:space="preserve">
+        <source>Quit when activation duration is over</source>
+        <target state="translated">Poistu, kun aktivoinnin kesto päättyy</target>
+        <note>Quit when activation duration is over</note>
+      </trans-unit>
+      <trans-unit id="Reset Activation Durations" xml:space="preserve">
+        <source>Reset Activation Durations</source>
+        <target state="translated">Palauta Aktivoinnin Kestot</target>
+        <note>Reset Activation Durations</note>
+      </trans-unit>
+      <trans-unit id="Set Default: %@" xml:space="preserve">
+        <source>Set Default: %@</source>
+        <target state="translated">Aseta Oletukseksi: %@</target>
+        <note>Set Default: %@</note>
+      </trans-unit>
+      <trans-unit id="Settings…" xml:space="preserve">
+        <source>Settings…</source>
+        <target state="translated">Asetukset…</target>
+        <note>Settings…</note>
+      </trans-unit>
+      <trans-unit id="The entered duration is invalid. Please try again." xml:space="preserve">
+        <source>The entered duration is invalid. Please try again.</source>
+        <target state="translated">Syötetty kesto on virheellinen. Yritä uudelleen.</target>
+        <note>The entered duration is invalid. Please try again.</note>
+      </trans-unit>
+      <trans-unit id="This duration has already been added." xml:space="preserve">
+        <source>This duration has already been added.</source>
+        <target state="translated">Tämä kesto on jo lisätty.</target>
+        <note>This duration has already been added.</note>
+      </trans-unit>
+      <trans-unit id="Version" xml:space="preserve">
+        <source>Version</source>
+        <target state="translated">Versio</target>
+        <note>Version</note>
+      </trans-unit>
+      <trans-unit id="You can still manually enable sleep mode for your Mac." xml:space="preserve">
+        <source>You can still manually enable sleep mode for your Mac.</source>
+        <target state="translated">Voit silti aktivoida Macin lepotilan manuaalisesti.</target>
+        <note>You can still manually enable sleep mode for your Mac.</note>
+      </trans-unit>
+      <trans-unit id="Your Mac will automatically go to sleep when unused." xml:space="preserve">
+        <source>Your Mac will automatically go to sleep when unused.</source>
+        <target state="translated">Mac siirtyy automaattisesti lepotilaan, jos sitä ei käytetä.</target>
+        <note>Your Mac will automatically go to sleep when unused.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYAAdvancedPreferencesViewController/Base.lproj/KYAAdvancedPreferencesViewController.xib" source-language="en" target-language="el" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+    </header>
+    <body>
+      <trans-unit id="3GX-gq-Yaq.title" xml:space="preserve">
+        <source>Reset to Default</source>
+        <target state="translated">Palauta Oletukseksi</target>
+        <note>Class = "NSButtonCell"; title = "Reset to Default"; ObjectID = "3GX-gq-Yaq";</note>
+      </trans-unit>
+      <trans-unit id="7z8-pS-A86.title" xml:space="preserve">
+        <source>Check</source>
+        <target state="new">Check</target>
+        <note>Class = "NSButtonCell"; title = "Check"; ObjectID = "7z8-pS-A86"; Note = "Do not localize";</note>
+      </trans-unit>
+      <trans-unit id="HPO-gf-tIY.title" xml:space="preserve">
+        <source>Text Cell</source>
+        <target state="new">Text Cell</target>
+        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HPO-gf-tIY"; Note = "Do not localize";</note>
+      </trans-unit>
+      <trans-unit id="xdm-wP-gM6.title" xml:space="preserve">
+        <source>Only change these advanced settings if you know what you are doing. Most of these settings require an app restart.</source>
+        <target state="translated">Muuta lisäasetuksia vain, jos tiedät mitä teet. Useimmat näistä asetuksista edellyttävät sovelluksen uudelleenkäynnistystä.</target>
+        <note>Class = "NSTextFieldCell"; title = "Only change these advanced settings if you know what you are doing. Most of these settings require an app restart."; ObjectID = "xdm-wP-gM6";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYABatteryPreferencesViewController/Base.lproj/KYABatteryPreferencesViewController.xib" source-language="en" target-language="el" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+    </header>
+    <body>
+      <trans-unit id="HtM-vx-ZuN.title" xml:space="preserve">
+        <source>10 %</source>
+        <target state="new">10 %</target>
+        <note>Class = "NSTextFieldCell"; title = "10 %"; ObjectID = "HtM-vx-ZuN";</note>
+      </trans-unit>
+      <trans-unit id="M11-sw-GhM.title" xml:space="preserve">
+        <source>90 %</source>
+        <target state="new">90 %</target>
+        <note>Class = "NSTextFieldCell"; title = "90 %"; ObjectID = "M11-sw-GhM";</note>
+      </trans-unit>
+      <trans-unit id="SHH-RQ-HPH.title" xml:space="preserve">
+        <source>Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging.</source>
+        <target state="translated">Matalan Tehon Tila käynnistyy tuetuissa Mac-laitteissa Järjestelmäasetukset › Akku -kohdassa, eikä se päällä ladataessa.</target>
+        <note>Class = "NSTextFieldCell"; title = "Low Power Mode can be enabled on supported Macs in System Preferences › Battery and will not apply while charging."; ObjectID = "SHH-RQ-HPH";</note>
+      </trans-unit>
+      <trans-unit id="aXx-hk-9R9.title" xml:space="preserve">
+        <source>Low Power Mode</source>
+        <target state="translated">Matalan Tehon Tila</target>
+        <note>Class = "NSTextFieldCell"; title = "Low Power Mode"; ObjectID = "aXx-hk-9R9";</note>
+      </trans-unit>
+      <trans-unit id="gx4-rK-1he.title" xml:space="preserve">
+        <source>Deactivate when battery capacity is below</source>
+        <target state="new">Απενεργοποίηση όταν η χωρητικότητα μπαταρίας είναι κάτω από</target>
+        <note>Class = "NSButtonCell"; title = "Deactivate when battery capacity is below"; ObjectID = "gx4-rK-1he";</note>
+      </trans-unit>
+      <trans-unit id="l4a-Sa-RAE.title" xml:space="preserve">
+        <source>This value will be ignored when you manually start the app below this battery capacity.</source>
+        <target state="translated">Tätä arvoa ei huomioida, jos käynnistät sovelluksen manuaalisesti akun kapasiteetin ollessa alle tämän rajan.</target>
+        <note>Class = "NSTextFieldCell"; title = "This value will be ignored when you manually start the app below this battery capacity."; ObjectID = "l4a-Sa-RAE";</note>
+      </trans-unit>
+      <trans-unit id="mcf-JV-nyg.title" xml:space="preserve">
+        <source>Deactivate when Low Power Mode is enabled</source>
+        <target state="translated">Deaktivoi, kun Matalan Tehon Tila on käytössä</target>
+        <note>Class = "NSButtonCell"; title = "Deactivate when Low Power Mode is enabled"; ObjectID = "mcf-JV-nyg";</note>
+      </trans-unit>
+      <trans-unit id="ovF-0F-TMc.title" xml:space="preserve">
+        <source>50 %</source>
+        <target state="new">50 %</target>
+        <note>Class = "NSTextFieldCell"; title = "50 %"; ObjectID = "ovF-0F-TMc";</note>
+      </trans-unit>
+      <trans-unit id="pvY-d7-nKX.title" xml:space="preserve">
+        <source>Battery Level</source>
+        <target state="translated">Akun Taso</target>
+        <note>Class = "NSTextFieldCell"; title = "Battery Level"; ObjectID = "pvY-d7-nKX";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYAAddDurationPreferencesViewController.xib" source-language="en" target-language="el" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+    </header>
+    <body>
+      <trans-unit id="5bs-m4-hy9.title" xml:space="preserve">
+        <source>Hours</source>
+        <target state="translated">Tuntia</target>
+        <note>Class = "NSTextFieldCell"; title = "Hours"; ObjectID = "5bs-m4-hy9";</note>
+      </trans-unit>
+      <trans-unit id="59l-n2-tD5.title" xml:space="preserve">
+        <source>Cancel</source>
+        <target state="translated">Peruuta</target>
+        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "59l-n2-tD5";</note>
+      </trans-unit>
+      <trans-unit id="kYn-pW-tq6.title" xml:space="preserve">
+        <source>Warning Label</source>
+        <target state="new">Warning Label</target>
+        <note>Class = "NSTextFieldCell"; title = "Warning Label"; ObjectID = "kYn-pW-tq6"; Note = "Do not localize";</note>
+      </trans-unit>
+      <trans-unit id="oi9-AP-ag4.title" xml:space="preserve">
+        <source>Minutes</source>
+        <target state="translated">Minuuttia</target>
+        <note>Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "oi9-AP-ag4";</note>
+      </trans-unit>
+      <trans-unit id="s1J-2f-UeD.title" xml:space="preserve">
+        <source>Seconds</source>
+        <target state="translated">Sekuntia</target>
+        <note>Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "s1J-2f-UeD";</note>
+      </trans-unit>
+      <trans-unit id="vTF-HR-j5d.title" xml:space="preserve">
+        <source>Add Duration</source>
+        <target state="translated">Lisää Kesto</target>
+        <note>Class = "NSButtonCell"; title = "Add Duration"; ObjectID = "vTF-HR-j5d";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYADurationPreferencesViewController/Base.lproj/KYADurationPreferencesViewController.xib" source-language="en" target-language="el" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A5160n"/>
+    </header>
+    <body>
+      <trans-unit id="2Az-3u-oGb.title" xml:space="preserve">
+        <source>Remove</source>
+        <target state="translated">Poista</target>
+        <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "2Az-3u-oGb";</note>
+      </trans-unit>
+      <trans-unit id="3es-An-BPG.title" xml:space="preserve">
+        <source>Set Default</source>
+        <target state="translated">Aseta Oletukseksi</target>
+        <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "3es-An-BPG";</note>
+      </trans-unit>
+      <trans-unit id="4tU-j1-N4m.title" xml:space="preserve">
+        <source>The default activation duration is used when you click on the menu bar icon.</source>
+        <target state="translated">Oletuskesto aktivoituu, kun valikon kuvaketta napsautetaan.</target>
+        <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "4tU-j1-N4m";</note>
+      </trans-unit>
+      <trans-unit id="13c-ID-Fgy.title" xml:space="preserve">
+        <source>Reset…</source>
+        <target state="translated">Palauta…</target>
+        <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "13c-ID-Fgy";</note>
+      </trans-unit>
+      <trans-unit id="Are-vs-Awn.title" xml:space="preserve">
+        <source>Set Default</source>
+        <target state="translated">Aseta Oletukseksi</target>
+        <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "Are-vs-Awn";</note>
+      </trans-unit>
+      <trans-unit id="Btn-FN-s8Z.title" xml:space="preserve">
+        <source>Text Cell</source>
+        <target state="new">Text Cell</target>
+        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Btn-FN-s8Z"; Note = "Do not localize";</note>
+      </trans-unit>
+      <trans-unit id="COs-G1-J6K.title" xml:space="preserve">
+        <source>Reset…</source>
+        <target state="translated">Palauta…</target>
+        <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "COs-G1-J6K";</note>
+      </trans-unit>
+      <trans-unit id="U86-Hk-nfT.title" xml:space="preserve">
+        <source>Set Default</source>
+        <target state="translated">Aseta Oletukseksi</target>
+        <note>Class = "NSMenuItem"; title = "Set Default"; ObjectID = "U86-Hk-nfT";</note>
+      </trans-unit>
+      <trans-unit id="dml-Pt-frp.ibShadowedToolTips[0]" xml:space="preserve">
+        <source>Remove</source>
+        <target state="translated">Poista</target>
+        <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[0] = "Remove"; ObjectID = "dml-Pt-frp";</note>
+      </trans-unit>
+      <trans-unit id="dml-Pt-frp.ibShadowedToolTips[1]" xml:space="preserve">
+        <source>Add</source>
+        <target state="translated">Lisää</target>
+        <note>Class = "NSSegmentedCell"; dml-Pt-frp.ibShadowedToolTips[1] = "Add"; ObjectID = "dml-Pt-frp";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYAGeneralPreferencesViewController/Base.lproj/KYAGeneralPreferencesViewController.xib" source-language="en" target-language="el" datatype="plaintext">
+    <body>
+      <trans-unit id="7QN-oX-fJU.title" xml:space="preserve">
+        <source>Immediately starts preventing sleep when launched.</source>
+        <target state="translated">Estää välittömästi lepotilan käynnistyksen yhteydessä.</target>
+        <note>Class = "NSTextFieldCell"; title = "Immediately starts preventing sleep when launched."; ObjectID = "7QN-oX-fJU";</note>
+      </trans-unit>
+      <trans-unit id="7dk-Tj-9aG.title" xml:space="preserve">
+        <source>Notification Settings…</source>
+        <target state="translated">Ilmoitusasetukset…</target>
+        <note>Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "7dk-Tj-9aG";</note>
+      </trans-unit>
+      <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
+        <source>Start at Login</source>
+        <target state="translated">Avaa Käynnistyessä</target>
+        <note>Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "YWD-DY-pgf";</note>
+      </trans-unit>
+      <trans-unit id="jxf-J8-dHN.title" xml:space="preserve">
+        <source>Automatically opens the app when you start your Mac.</source>
+        <target state="translated">Sovellus avautuu automaattisesti Macin käynnistyessä.</target>
+        <note>Class = "NSTextFieldCell"; title = "Automatically opens the app when you start your Mac."; ObjectID = "jxf-J8-dHN";</note>
+      </trans-unit>
+      <trans-unit id="zql-rZ-9xH.title" xml:space="preserve">
+        <source>Activate on Launch</source>
+        <target state="translated">Aktivoi Käynnistyessä</target>
+        <note>Class = "NSButtonCell"; title = "Activate on Launch"; ObjectID = "zql-rZ-9xH";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYAPreferences.xcstrings" source-language="en" target-language="el" datatype="plaintext">
+    <body>
+      <trans-unit id="About" xml:space="preserve">
+        <source>About</source>
+        <target state="translated">Tietoja</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activation Duration" xml:space="preserve">
+        <source>Activation Duration</source>
+        <target state="translated">Aktivoinnin Kesto</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Advanced" xml:space="preserve">
+        <source>Advanced</source>
+        <target state="translated">Lisäasetukset</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Battery" xml:space="preserve">
+        <source>Battery</source>
+        <target state="translated">Akku</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="General" xml:space="preserve">
+        <source>General</source>
+        <target state="translated">Yleiset</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="KeepingYouAwake – Settings" xml:space="preserve">
+        <source>KeepingYouAwake – Settings</source>
+        <target state="translated">KeepingYouAwake – Asetukset</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Updates" xml:space="preserve">
+        <source>Updates</source>
+        <target state="translated">Päivitykset</target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KeepingYouAwake/Preferences/KYAUpdatePreferencesViewController/Base.lproj/KYAUpdatePreferencesViewController.xib" source-language="en" target-language="el" datatype="plaintext">
+    <body>
+      <trans-unit id="F2o-Is-2nW.title" xml:space="preserve">
+        <source>Automatically Check for Updates</source>
+        <target state="translated">Automaattinen Päivitysten Tarkistus</target>
+        <note>Class = "NSButtonCell"; title = "Automatically Check for Updates"; ObjectID = "F2o-Is-2nW";</note>
+      </trans-unit>
+      <trans-unit id="oBK-47-iMk.title" xml:space="preserve">
+        <source>Check for Pre-Release Updates</source>
+        <target state="translated">Esiversiopäivitysten Tarkistus</target>
+        <note>Class = "NSButtonCell"; title = "Check for Pre-Release Updates"; ObjectID = "oBK-47-iMk";</note>
+      </trans-unit>
+      <trans-unit id="tAT-1z-ZPp.title" xml:space="preserve">
+        <source>Check Now</source>
+        <target state="translated">Tarkista Nyt</target>
+        <note>Class = "NSButtonCell"; title = "Check Now"; ObjectID = "tAT-1z-ZPp";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="KYALauncher/InfoPlist.xcstrings" source-language="en" target-language="el" datatype="plaintext">
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>KeepingYouAwake Launcher</source>
+        <target state="translated">Keepingyouawake-Käynnistin</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source>Copyright © 2014 – 2023 Marcel Dierkes. All rights reserved.</source>
+        <target state="new">Copyright © 2014 – 2023 Marcel Dierkes. All rights reserved.</target>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
