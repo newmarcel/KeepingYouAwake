@@ -100,6 +100,12 @@
             "value" : "Про"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Về"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -187,6 +193,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Тривалість"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khoảng thời gian Kích hoạt"
           }
         },
         "zh" : {
@@ -302,6 +314,12 @@
             "value" : "Додаткові"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nâng cao"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -413,6 +431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Акумулятор"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pin"
           }
         },
         "zh" : {
@@ -528,6 +552,12 @@
             "value" : "Загальні"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chung"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -641,6 +671,12 @@
             "value" : "KeepingYouAwake – Налаштування"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KeepingYouAwake – Cài đặt"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -728,6 +764,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Оновлення"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cập nhật"
           }
         },
         "zh" : {

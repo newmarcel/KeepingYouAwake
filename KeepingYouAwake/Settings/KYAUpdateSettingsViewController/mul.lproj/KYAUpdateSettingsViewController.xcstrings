@@ -101,6 +101,12 @@
             "value" : "Автоматично перевіряти оновлення"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự động Kiểm tra Bản cập nhật"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -215,6 +221,12 @@
             "value" : "Повідомляти про експериментальні оновлення"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiểm tra Bản cập nhật Phát hành trước"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -327,6 +339,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Перевірити зараз"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiểm tra bây giờ"
           }
         },
         "zh" : {

@@ -1,12 +1,12 @@
 {
   "developmentRegion" : "en",
-  "project" : "KeepingYouAwake.xcodeproj",
   "targetLocale" : "vi",
   "toolInfo" : {
-    "toolBuildNumber" : "15A5160n",
+    "toolBuildNumber" : "16F6",
     "toolID" : "com.apple.dt.xcode",
     "toolName" : "Xcode",
-    "toolVersion" : "15.0"
+    "toolVersion" : "16.4"
   },
-  "version" : "1.0"
+  "version" : "1.0",
+  "workspace" : "KeepingYouAwake.xcworkspace"
 }

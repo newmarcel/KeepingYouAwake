@@ -101,6 +101,12 @@
             "value" : "Режим низького заряду"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chế độ nguồn điện thấp"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -213,6 +219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вимкнути коли заряд акумулятора нижче ніж"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy kích hoạt khi dung lượng pin dưới"
           }
         },
         "zh" : {
@@ -437,6 +449,12 @@
             "value" : "Ці налаштування будуть проігноровані якщо ви запустите додаток вручну при заряді акумулятора нижче ніж вказано тут."
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giá trị này sẽ bị bỏ qua khi bạn khởi động ứng dụng theo cách thủ công dưới dung lượng pin này."
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -603,6 +621,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вимкнутись на час роботи у Режимі Низького Заряду"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy kích hoạt khi chế độ nguồn điện thấp bật"
           }
         },
         "zh" : {
@@ -827,6 +851,12 @@
             "value" : "Рівень заряду"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phần trăm pin"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -885,6 +915,12 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Режим Низького Заряду можна увімкнути на підтримуваних Маках у Налаштуваннях › Батарея і це не діє коли йде підзарядка."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chế độ nguồn điện thấp có thể bật trên những máy Mac hỗ trợ trong Cài đặt › Pin và sẽ không được áp dụng khi đang sạc."
           }
         },
         "zh" : {

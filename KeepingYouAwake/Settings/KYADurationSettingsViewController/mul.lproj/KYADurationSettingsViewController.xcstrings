@@ -77,6 +77,12 @@
             "value" : "Видалити"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -141,6 +147,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обрати за замовчуванням"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt Mặc định"
           }
         },
         "zh" : {
@@ -227,6 +239,12 @@
             "value" : "Обрана тут тривалість активується за замовчуванням при кліку на іконку додатку в MacOS меню."
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khoảng thời gian mặc định sẽ được sử dụng khi bạn bấm vào biểu tượng trên thanh menu."
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -291,6 +309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скинути…"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt lại…"
           }
         },
         "zh" : {
@@ -383,6 +407,12 @@
             "value" : "Обрати за замовчуванням"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt Mặc định"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -471,6 +501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скинути…"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt lại…"
           }
         },
         "zh" : {
@@ -563,6 +599,12 @@
             "value" : "Видалити цей інтервал"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -653,6 +695,12 @@
             "value" : "Додати новий інтервал"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -741,6 +789,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обрати за замовчуванням"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt Mặc định"
           }
         },
         "zh" : {

@@ -77,6 +77,12 @@
             "value" : "Години"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giờ"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -165,6 +171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Відміна"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy"
           }
         },
         "zh" : {
@@ -299,6 +311,12 @@
             "value" : "Хвилини"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phút"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -389,6 +407,12 @@
             "value" : "Секунди"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giây"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -477,6 +501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Додати"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm khoảng thời gian"
           }
         },
         "zh" : {

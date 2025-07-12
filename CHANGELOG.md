@@ -10,6 +10,8 @@
 - fixed an issue where the menu bar icon did not update properly when the URL scheme was used to activate or deactivate ([#224](https://github.com/newmarcel/KeepingYouAwake/issues/224))
 - updated the Spanish translations ([#223](https://github.com/newmarcel/KeepingYouAwake/pull/223))
 	- *Thank you [agusbattista](https://github.com/agusbattista)!*
+- added Vietnamese translations ([#222](https://github.com/newmarcel/KeepingYouAwake/pull/222))
+	- *Thank you [ksajolaer](https://github.com/ksajolaer)!*
 
 ### v1.6.6 ###
 

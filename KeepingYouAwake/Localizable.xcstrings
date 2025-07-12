@@ -64,6 +64,12 @@
             "value" : "(За замовчуванням)"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Mặc định)"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -171,6 +177,12 @@
             "value" : "Увімкнути на"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kích hoạt trong Khoảng thời gian"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -228,6 +240,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вмикати коли приєднано зовнішній дисплей"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kích hoạt khi màn hình rời được kết nối"
           }
         },
         "zh" : {
@@ -301,6 +319,12 @@
             "value" : "Потім ваш Мак автоматично засне знову, якщо не буде у користуванні"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sau đó máy Mac của bạn sẽ tự động ngủ khi không dùng đến."
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -372,6 +396,12 @@
             "value" : "Дозволити дисплею вимикатись"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cho phép màn hình ngủ"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -441,6 +471,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дозволити сон"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang cho chép Ngủ"
           }
         },
         "zh" : {
@@ -518,6 +554,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Відміна"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy"
           }
         },
         "zh" : {
@@ -628,6 +670,12 @@
             "value" : "Лівий клік щоб дозволити сон\nПравий клік для меню"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bấm để cho phép ngủ\nChuột phải để mở menu"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -736,6 +784,12 @@
             "value" : "Лівий клік щоб заборонити сон\nПравий клік для меню"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bấm để chặn ngủ\nChuột phải để mở menu"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -787,6 +841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вимикати при переході до іншого користувача"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy kích hoạt khi chuyển sang người dùng khác"
           }
         },
         "zh" : {
@@ -866,6 +926,12 @@
             "value" : "За замовчуванням"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mặc định"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -941,6 +1007,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ви справді бажаєте скинути всі налаштовані інтервали роботи до установлених за замовчуванням?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn có chắc chắn muốn đặt lại khoảng thời gian kích hoạt về mặc định?"
           }
         },
         "zh" : {
@@ -1048,6 +1120,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Постійно"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vô thời hạn"
           }
         },
         "zh" : {
@@ -1186,6 +1264,12 @@
             "value" : "Запобігати сну"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang chặn Ngủ"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1255,6 +1339,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Запобігати сну на %@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang chặn Ngủ trong khoảng %@"
           }
         },
         "zh" : {
@@ -1364,6 +1454,12 @@
             "value" : "Вийти"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thoát"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1439,6 +1535,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вимкнути додаток коли час очікування скінчиться"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thoát khi khoảng thời gian kích hoạt kết thúc"
           }
         },
         "zh" : {
@@ -1518,6 +1620,12 @@
             "value" : "Скинути збережені тривалості часу"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt lại Khoảng thời gian Kích hoạt"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1593,6 +1701,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Встановити за замовчуванням: %@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt Mặc định: %@"
           }
         },
         "zh" : {
@@ -1702,6 +1816,12 @@
             "value" : "Налаштування…"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt…"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1779,6 +1899,12 @@
             "value" : "Введено не вірну тривалість часу. Спробуйте будь ласка ще раз."
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời lượng đã nhập không hợp lệ. Vui lòng thử lại."
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1854,6 +1980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Така тривалість часу вже додана."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời lượng đã được thêm vào."
           }
         },
         "zh" : {
@@ -1963,6 +2095,12 @@
             "value" : "Версія"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phiên bản"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2034,6 +2172,12 @@
             "value" : "Ви все одно зможете вручну вмикати режим сну для вашого Маку."
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn vẫn có thể bật chế độ ngủ cho máy Mac theo cách thủ công."
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2103,6 +2247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ваш Мак засне сам якщо ним не користуватись."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Máy Mac của bạn sẽ tự động ngủ khi không dùng đến."
           }
         },
         "zh" : {

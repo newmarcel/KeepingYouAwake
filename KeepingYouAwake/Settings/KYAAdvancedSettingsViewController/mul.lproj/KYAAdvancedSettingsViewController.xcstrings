@@ -101,6 +101,12 @@
             "value" : "Скинути до стандарних"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt lại về Mặc định"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -232,6 +238,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Змінюйте ці налаштування якщо ви добре розумієте що робите. Доведеться перезапустити додаток."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chỉ thay đổi những cài đặt nâng cao khi bạn biết chính xác mình đang làm gì. Hầu hết các cài đặt sau cần khởi động lại ứng dụng."
           }
         },
         "zh" : {

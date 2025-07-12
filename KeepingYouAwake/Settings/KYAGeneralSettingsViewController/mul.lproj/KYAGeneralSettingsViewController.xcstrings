@@ -71,6 +71,12 @@
             "value" : "Налаштування Повідомлень…"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt Thông báo…"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -183,6 +189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Активувати запобігання сну зразу ж при запуску додатка."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngay lập tức chặn ngủ khi khởi động."
           }
         },
         "zh" : {
@@ -299,6 +311,12 @@
             "value" : "Автозапуск додатку при старті вашого Mac."
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự động mở ứng dụng khi bạn khởi động máy Mac."
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -413,6 +431,12 @@
             "value" : "Стартувати при логіні"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chạy khi Khởi động"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -525,6 +549,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Активація при запуску додатку"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kích hoạt khi Khởi chạy"
           }
         },
         "zh" : {
