@@ -35,6 +35,12 @@
             "value" : "Mode économie d’énergie"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लो पावर मोड"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -153,6 +159,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Désactiver quand la batterie est inférieure à "
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बैटरी क्षमता कम होने पर निष्क्रिय करें"
           }
         },
         "id" : {
@@ -275,6 +287,12 @@
             "value" : "10 %"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 %"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -381,6 +399,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ce réglage sera ignoré si vous lancez l'application manuellement et que la batterie se trouve en dessous de cette valeur."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जब आप इस बैटरी क्षमता से नीचे ऐप को मैन्युअल रूप से शुरू करते हैं तो यह मान अनदेखा किया जाएगा।"
           }
         },
         "id" : {
@@ -503,6 +527,12 @@
             "value" : "90 %"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "90 %"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -605,6 +635,12 @@
             "value" : "Désactiver quand le mode économie d'énergie est activé"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लो पावर मोड सक्षम होने पर निष्क्रिय करें"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -672,6 +708,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50 %"
+          }
+        },
+        "hi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "50 %"
@@ -783,6 +825,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Niveau de la batterie"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बैटरी स्तर"
           }
         },
         "id" : {
@@ -897,6 +945,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le mode économie d'énergie peut être activé sur les Macs supportés dans Préférences Systèmes > Batterie."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लो पावर मोड समर्थित Mac पर सिस्टम प्राथमिकताएं › बैटरी में सक्षम किया जा सकता है और चार्जिंग के दौरान लागू नहीं होगा।"
           }
         },
         "ru" : {

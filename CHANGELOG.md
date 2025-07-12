@@ -12,6 +12,8 @@
 	- *Thank you [agusbattista](https://github.com/agusbattista)!*
 - added Vietnamese translations ([#222](https://github.com/newmarcel/KeepingYouAwake/pull/222))
 	- *Thank you [ksajolaer](https://github.com/ksajolaer)!*
+- added Hindi translations ([#232](https://github.com/newmarcel/KeepingYouAwake/pull/232))
+	- *Thank you [AnandChowdhary](https://github.com/AnandChowdhary)!*
 
 ### v1.6.6 ###
 

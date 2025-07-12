@@ -34,6 +34,12 @@
             "value" : "À propos"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जानकारी"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -153,6 +159,12 @@
             "value" : "Durée d'activation"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सक्रियण अवधि"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -246,6 +258,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avancées"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "उन्नत"
           }
         },
         "id" : {
@@ -367,6 +385,12 @@
             "value" : "Batterie"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बैटरी"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -484,6 +508,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Général"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सामान्य"
           }
         },
         "id" : {
@@ -605,6 +635,12 @@
             "value" : "KeepingYouAwake – Préférences"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KeepingYouAwake – सेटिंग्स"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -722,6 +758,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mises à jour"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अपडेट"
           }
         },
         "id" : {

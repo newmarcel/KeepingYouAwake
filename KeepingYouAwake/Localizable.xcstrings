@@ -28,6 +28,12 @@
             "value" : "(Défaut)"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(डिफ़ॉल्ट)"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -109,6 +115,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Activer pour..."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अवधि के लिए सक्रिय करें"
           }
         },
         "id" : {
@@ -218,6 +230,12 @@
             "value" : "Activer lorsqu'un moniteur externe est connecté"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बाहरी डिस्प्ले कनेक्ट होने पर सक्रिय करें"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -287,6 +305,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Au-delà, votre Mac ira automatiquement en veille lorsque non utilisé."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "इसके बाद आपका Mac अनुपयोग के समय स्वचालित रूप से फिर से स्लीप मोड में चला जाएगा।"
           }
         },
         "it" : {
@@ -366,6 +390,12 @@
             "value" : "Permettre la veille du moniteur"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिस्प्ले को स्लीप करने दें"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -443,6 +473,12 @@
             "value" : "Mise en veille permise"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्लीप की अनुमति दे रहा है"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -518,6 +554,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annuler"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रद्द करें"
           }
         },
         "id" : {
@@ -602,6 +644,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cliquer pour autoriser la veille\nClic droit pour le menu"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्लीप की अनुमति देने के लिए क्लिक करें\nमेनू दिखाने के लिए राइट क्लिक करें"
           }
         },
         "id" : {
@@ -718,6 +766,12 @@
             "value" : "Cliquer pour empêcher la veille\nClic droit pour le menu"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्लीप रोकने के लिए क्लिक करें\nमेनू दिखाने के लिए राइट क्लिक करें"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -819,6 +873,12 @@
             "value" : "Desactivar al cambiar a otra cuenta de usuario"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अन्य उपयोगकर्ता खाते पर स्विच करने पर निष्क्रिय करें"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -888,6 +948,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Défaut"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिफ़ॉल्ट"
           }
         },
         "id" : {
@@ -973,6 +1039,12 @@
             "value" : "Voulez-vous vraiment rétablir les durées d'activation par défaut ?"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्या आप वास्तव में सक्रियण अवधि को डिफ़ॉल्ट मान पर रीसेट करना चाहते हैं?"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1054,6 +1126,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indéfiniment"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अनिश्चित काल के लिए"
           }
         },
         "id" : {
@@ -1169,6 +1247,12 @@
             "value" : "OK"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ठीक है"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1232,6 +1316,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mise en veille empêchée"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्लीप रोक रहा है"
           }
         },
         "it" : {
@@ -1311,6 +1401,12 @@
             "value" : "Mise en veille empêchée pour %@"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ के लिए स्लीप रोक रहा है"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1386,6 +1482,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quitter"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बंद करें"
           }
         },
         "id" : {
@@ -1501,6 +1603,12 @@
             "value" : "Quitter quand la durée d'activation est terminée"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सक्रियण अवधि समाप्त होने पर बंद करें"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1582,6 +1690,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rétablir les durées par défaut"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सक्रियण अवधि रीसेट करें"
           }
         },
         "id" : {
@@ -1667,6 +1781,12 @@
             "value" : "Mettre par défaut: %@"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिफ़ॉल्ट सेट करें: %@"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1748,6 +1868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Préférences…"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सेटिंग्स…"
           }
         },
         "id" : {
@@ -1863,6 +1989,12 @@
             "value" : "La durée saisie est invalide. Veuillez essayer à nouveau."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "दर्ज की गई अवधि अमान्य है। कृपया फिर से प्रयास करें।"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1946,6 +2078,12 @@
             "value" : "Cette durée a déjà été ajoutée."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "यह अवधि पहले से ही जोड़ी गई है।"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2027,6 +2165,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Version"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "संस्करण"
           }
         },
         "id" : {
@@ -2142,6 +2286,12 @@
             "value" : "Vous pouvez toujours activer manuellement la veille pour votre Mac."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आप अभी भी अपने Mac के लिए मैन्युअल रूप से स्लीप मोड सक्षम कर सकते हैं।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2217,6 +2367,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Votre Mac ira automatiquement en veille lorsque non utilisé."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आपका Mac अनुपयोग के समय स्वचालित रूप से स्लीप मोड में चला जाएगा।"
           }
         },
         "it" : {

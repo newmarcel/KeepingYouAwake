@@ -35,6 +35,12 @@
             "value" : "Heures"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "घंटे"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -131,6 +137,12 @@
             "value" : "Annuler"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रद्द करें"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -209,6 +221,12 @@
             "value" : "Etiqueta de Advertencia"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warning Label"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -267,6 +285,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minutes"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मिनट"
           }
         },
         "id" : {
@@ -365,6 +389,12 @@
             "value" : "Secondes"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सेकंड"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -459,6 +489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajouter la durée"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अवधि जोड़ें"
           }
         },
         "id" : {

@@ -35,6 +35,12 @@
             "value" : "Enlever"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हटाएं"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -111,6 +117,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Als Standard setzen"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिफ़ॉल्ट सेट करें"
           }
         },
         "id" : {
@@ -197,6 +209,12 @@
             "value" : "La durée d'activation par défaut est utilisée quand vous cliquez sur l'icône du menu."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जब आप मेनू बार आइकन पर क्लिक करते हैं तो डिफ़ॉल्ट सक्रियण अवधि का उपयोग किया जाता है।"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -273,6 +291,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zurücksetzen …"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रीसेट करें…"
           }
         },
         "id" : {
@@ -363,6 +387,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mettre par défaut"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिफ़ॉल्ट सेट करें"
           }
         },
         "id" : {
@@ -461,6 +491,12 @@
             "value" : "Rétablir..."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रीसेट करें…"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -555,6 +591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enlever"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हटाएं"
           }
         },
         "id" : {
@@ -653,6 +695,12 @@
             "value" : "Ajouter"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जोड़ें"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -747,6 +795,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mettre comme par défaut"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिफ़ॉल्ट सेट करें"
           }
         },
         "id" : {

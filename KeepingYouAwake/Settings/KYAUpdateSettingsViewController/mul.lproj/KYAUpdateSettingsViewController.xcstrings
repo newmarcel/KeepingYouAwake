@@ -35,6 +35,12 @@
             "value" : "Vérifier les mises-à-jour automatiquement"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्वचालित रूप से अपडेट की जांच करें"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -155,6 +161,12 @@
             "value" : "Inclure les versions beta"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्री-रिलीज़ अपडेट की जांच करें"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -273,6 +285,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Maintenant"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अभी जांचें"
           }
         },
         "id" : {

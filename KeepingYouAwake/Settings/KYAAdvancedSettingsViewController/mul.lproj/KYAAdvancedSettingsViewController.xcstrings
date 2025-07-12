@@ -35,6 +35,12 @@
             "value" : "Rétablir les réglages par défaut"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिफ़ॉल्ट पर रीसेट करें"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -131,6 +137,12 @@
             "value" : "Check"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check"
+          }
+        },
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
@@ -172,6 +184,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous utilisez ces préférences avancées à vos risques. Ils requièrent un redémarrage de KeepingYouAwake."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "यदि आप जानते हैं कि आप क्या कर रहे हैं तो ही इन उन्नत सेटिंग्स को बदलें। इनमें से अधिकांश सेटिंग्स के लिए ऐप को पुनः प्रारंभ करने की आवश्यकता होती है।"
           }
         },
         "id" : {

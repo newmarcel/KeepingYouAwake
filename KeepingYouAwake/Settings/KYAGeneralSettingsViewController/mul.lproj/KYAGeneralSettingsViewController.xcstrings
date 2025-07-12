@@ -35,6 +35,12 @@
             "value" : "Paramètres des notifications..."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अधिसूचना सेटिंग्स…"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -123,6 +129,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Empêche la mise en veille dès le lancement de KeepingYouAwake."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लॉन्च होने पर तुरंत स्लीप रोकना शुरू कर देता है।"
           }
         },
         "id" : {
@@ -245,6 +257,12 @@
             "value" : "Lance KeepingYouAwake au démarrage du Mac."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जब आप अपना Mac शुरू करते हैं तो ऐप को स्वचालित रूप से खोलता है।"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -365,6 +383,12 @@
             "value" : "Lancer au démarrage"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लॉगिन पर शुरू करें"
+          }
+        },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
@@ -483,6 +507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Activer au lancement"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लॉन्च पर सक्रिय करें"
           }
         },
         "id" : {
