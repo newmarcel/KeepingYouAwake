@@ -16,6 +16,9 @@
 	- *Thank you [AnandChowdhary](https://github.com/AnandChowdhary)!*
 - added Greek and Finnish translations ([#230](https://github.com/newmarcel/KeepingYouAwake/pull/230))
 	- *Thank you [ziz1zaza](https://github.com/ziz1zaza)!*
+- since macOS 26 Tahoe allows hiding the app's menu bar icon, the settings window was extended to handle this situation better:
+	- the settings window will now be presented when the app is launched again while running
+	- added a Quit button to the General settings
 
 ### v1.6.6 ###
 
