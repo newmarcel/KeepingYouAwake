@@ -10,6 +10,7 @@
 #import <KYASleepWakeTimer/KYASleepWakeTimer.h>
 #import <KYADeviceInfo/KYADeviceInfo.h>
 #import <KYAApplicationEvents/KYAApplicationEvents.h>
+#import <KYAApplicationSupport/KYAApplicationSupport.h>
 #import <KYAStatusItemUI/KYAStatusItemUI.h>
 
 NS_ASSUME_NONNULL_BEGIN

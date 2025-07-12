@@ -16,4 +16,4 @@ GENERATE_INFOPLIST_FILE = YES
 INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.utilities
 INFOPLIST_KEY_NSPrincipalClass = NSApplication
 INFOPLIST_KEY_NSMainNibFile = MainMenu
-INFOPLIST_KEY_NSHumanReadableCopyright = Copyright © 2014 – 2024 Marcel Dierkes. All rights reserved.
+INFOPLIST_KEY_NSHumanReadableCopyright = Copyright © 2014 – 2025 Marcel Dierkes. All rights reserved.

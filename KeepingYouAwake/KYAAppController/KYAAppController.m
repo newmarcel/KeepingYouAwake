@@ -53,7 +53,7 @@
                        name:NSApplicationWillFinishLaunchingNotification
                      object:nil];
         [center addObserver:self
-                   selector:@selector(screenParametersDidChange:)
+                   selector:@selector(applicationDidChangeScreenParameters:)
                        name:NSApplicationDidChangeScreenParametersNotification
                      object:nil];
         [center addObserver:self
@@ -349,7 +349,9 @@
     }];
     
     [eventHandler registerActionNamed:@"deactivate" block:^(KYAEvent *event) {
-        [weakSelf terminateTimer];
+        Auto strongSelf = weakSelf;
+        [strongSelf terminateTimer];
+        strongSelf.statusItemController.appearance = KYAStatusItemAppearanceInactive;
     }];
     
     [eventHandler registerActionNamed:@"toggle" block:^(KYAEvent *event) {
@@ -366,42 +368,63 @@
     NSString *hours = parameters[@"hours"];
 
     [self terminateTimer];
+    
+    Auto statusItemController = self.statusItemController;
 
     // Activate indefinitely if there are no parameters
     if(parameters == nil || parameters.count == 0)
     {
         [self activateTimer];
+        statusItemController.appearance = KYAStatusItemAppearanceActive;
     }
     else if(seconds != nil)
     {
         [self activateTimerWithTimeInterval:(NSTimeInterval)ceil(seconds.doubleValue)];
+        statusItemController.appearance = KYAStatusItemAppearanceActive;
     }
     else if(minutes != nil)
     {
         [self activateTimerWithTimeInterval:(NSTimeInterval)KYA_MINUTES(ceil(minutes.doubleValue))];
+        statusItemController.appearance = KYAStatusItemAppearanceActive;
     }
     else if(hours != nil)
     {
         [self activateTimerWithTimeInterval:(NSTimeInterval)KYA_HOURS(ceil(hours.doubleValue))];
+        statusItemController.appearance = KYAStatusItemAppearanceActive;
+    }
+    else
+    {
+        statusItemController.appearance = KYAStatusItemAppearanceInactive;
     }
 }
 
 #pragma mark - Internal / External Screen Parameter Changes
 
-- (void)screenParametersDidChange:(NSNotification *)notification
+- (void)applicationDidChangeScreenParameters:(NSNotification *)notification
 {
     if([NSUserDefaults.standardUserDefaults kya_isActivateOnExternalDisplayConnectedEnabled] == NO)
     {
         return;
     }
     
-    if(NSScreen.screens.count > 1)
+    NSUInteger numberOfExternalScreens = KYADisplayParametersGetNumberOfExternalDisplays();
+    Auto sleepWakeTimer = self.sleepWakeTimer;
+    
+    if(numberOfExternalScreens == 0)
     {
-        [self activateTimer];
+        // Only the main screen is connected, deactivate!
+        if([sleepWakeTimer isScheduled])
+        {
+            [self terminateTimer];
+        }
     }
     else
     {
-        [self terminateTimer];
+        // The main screen and at least one external screen, activate!
+        if([sleepWakeTimer isScheduled] == NO)
+        {
+            [self activateTimer];
+        }
     }
 }
 
