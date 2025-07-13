@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22113.3" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="23727" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22113.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23727"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,11 +16,11 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <view id="nJr-ua-jG7">
-            <rect key="frame" x="0.0" y="0.0" width="450" height="168"/>
+            <rect key="frame" x="0.0" y="0.0" width="450" height="221"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="16" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lXE-0q-dlL">
-                    <rect key="frame" x="80" y="20" width="350" height="128"/>
+                    <rect key="frame" x="80" y="73" width="350" height="128"/>
                     <subviews>
                         <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-Cl-6hc">
                             <rect key="frame" x="0.0" y="90" width="285" height="38"/>
@@ -106,14 +106,35 @@
                         <real value="3.4028234663852886e+38"/>
                     </customSpacing>
                 </stackView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wK9-ob-6oQ">
+                    <rect key="frame" x="377" y="13" width="60" height="32"/>
+                    <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IGL-ft-k8h">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent">q</string>
+                        <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="terminate:" target="-1" id="XXw-Y5-qNc"/>
+                    </connections>
+                </button>
+                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="k7J-Sb-K9x">
+                    <rect key="frame" x="20" y="54" width="410" height="5"/>
+                </box>
             </subviews>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="lXE-0q-dlL" secondAttribute="bottom" constant="20" id="OSA-9R-Zqr"/>
+                <constraint firstAttribute="trailing" secondItem="k7J-Sb-K9x" secondAttribute="trailing" constant="20" id="DxF-Vm-HJj"/>
                 <constraint firstItem="lXE-0q-dlL" firstAttribute="top" secondItem="nJr-ua-jG7" secondAttribute="top" constant="20" id="S25-DR-xJH"/>
+                <constraint firstItem="k7J-Sb-K9x" firstAttribute="top" secondItem="lXE-0q-dlL" secondAttribute="bottom" constant="16" id="Te1-xr-XWO"/>
+                <constraint firstItem="k7J-Sb-K9x" firstAttribute="leading" secondItem="nJr-ua-jG7" secondAttribute="leading" constant="20" id="YEZ-Xc-Vp5"/>
+                <constraint firstAttribute="bottom" secondItem="wK9-ob-6oQ" secondAttribute="bottom" constant="20" id="bPw-fW-QuQ"/>
+                <constraint firstItem="wK9-ob-6oQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nJr-ua-jG7" secondAttribute="leading" constant="20" id="fPk-XF-FZ0"/>
                 <constraint firstAttribute="trailing" secondItem="lXE-0q-dlL" secondAttribute="trailing" constant="20" id="gF9-5c-S1L"/>
+                <constraint firstItem="wK9-ob-6oQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="k7J-Sb-K9x" secondAttribute="bottom" constant="16" id="mfB-LW-xGF"/>
+                <constraint firstAttribute="trailing" secondItem="wK9-ob-6oQ" secondAttribute="trailing" constant="20" id="pj5-3u-q6t"/>
                 <constraint firstItem="lXE-0q-dlL" firstAttribute="leading" secondItem="nJr-ua-jG7" secondAttribute="leading" constant="80" id="sUf-uu-F8J"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="150"/>
+            <point key="canvasLocation" x="139" y="165"/>
         </view>
         <userDefaultsController representsSharedInstance="YES" id="CIJ-dN-fzc"/>
     </objects>
