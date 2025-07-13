@@ -276,18 +276,10 @@ Haz clic derecho para mostrar el menú</target>
         <target state="translated">Eliminar</target>
         <note>Class = "NSMenuItem"; title = "Remove"; ObjectID = "2Az-3u-oGb";</note>
       </trans-unit>
-      <trans-unit id="3es-An-BPG.title" xml:space="preserve">
-        <source>3es-An-BPG.title</source>
-        <note>Class = "NSButtonCell"; title = "Set Default"; ObjectID = "3es-An-BPG";</note>
-      </trans-unit>
       <trans-unit id="4tU-j1-N4m.title" xml:space="preserve">
         <source>The default activation duration is used when you click on the menu bar icon.</source>
         <target state="translated">La duración de activación predeterminada es usada cuando hagas clic en el ícono de la barra de menú.</target>
         <note>Class = "NSTextFieldCell"; title = "The default activation duration is used when you click on the menu bar icon."; ObjectID = "4tU-j1-N4m";</note>
-      </trans-unit>
-      <trans-unit id="13c-ID-Fgy.title" xml:space="preserve">
-        <source>13c-ID-Fgy.title</source>
-        <note>Class = "NSButtonCell"; title = "Reset…"; ObjectID = "13c-ID-Fgy";</note>
       </trans-unit>
       <trans-unit id="Are-vs-Awn.title" xml:space="preserve">
         <source>Set Default</source>
@@ -330,6 +322,11 @@ Haz clic derecho para mostrar el menú</target>
         <source>Notification Settings…</source>
         <target state="translated">Configuración de Notificaciones…</target>
         <note>Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "7dk-Tj-9aG";</note>
+      </trans-unit>
+      <trans-unit id="IGL-ft-k8h.title" xml:space="preserve">
+        <source>Quit</source>
+        <target state="translated">Salir</target>
+        <note>Class = "NSButtonCell"; title = "Quit"; ObjectID = "IGL-ft-k8h";</note>
       </trans-unit>
       <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
         <source>Start at Login</source>

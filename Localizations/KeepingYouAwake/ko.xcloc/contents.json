@@ -2,10 +2,10 @@
   "developmentRegion" : "en",
   "targetLocale" : "ko",
   "toolInfo" : {
-    "toolBuildNumber" : "16B40",
+    "toolBuildNumber" : "16F6",
     "toolID" : "com.apple.dt.xcode",
     "toolName" : "Xcode",
-    "toolVersion" : "16.1"
+    "toolVersion" : "16.4"
   },
   "version" : "1.0",
   "workspace" : "KeepingYouAwake.xcworkspace"

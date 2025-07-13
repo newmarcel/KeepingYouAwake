@@ -321,6 +321,11 @@ Oikea klikkaus näyttääksesi valikon</target>
         <target state="translated">Ilmoitusasetukset…</target>
         <note>Class = "NSButtonCell"; title = "Notification Settings…"; ObjectID = "7dk-Tj-9aG";</note>
       </trans-unit>
+      <trans-unit id="IGL-ft-k8h.title" xml:space="preserve">
+        <source>Quit</source>
+        <target state="translated">Poistu</target>
+        <note>Class = "NSButtonCell"; title = "Quit"; ObjectID = "IGL-ft-k8h";</note>
+      </trans-unit>
       <trans-unit id="YWD-DY-pgf.title" xml:space="preserve">
         <source>Start at Login</source>
         <target state="translated">Avaa Käynnistyessä</target>
