@@ -19,6 +19,7 @@
 - since macOS 26 Tahoe allows hiding the app's menu bar icon, the settings window was extended to handle this situation better:
 	- the settings window will now be presented when the app is launched again while running
 	- added a Quit button to the General settings
+- updated the app icon to not be trapped in a grey box on macOS 26 Tahoe
 
 ### v1.6.6 ###
 
