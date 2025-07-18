@@ -1,8 +1,8 @@
-# KeepingYouAwake #
+# KeepingYouAwake
 
-## Changelog ##
+## Changelog
 
-### v1.6.7 ###
+### v1.6.7 (2025-07-18)
 
 - fixed two issues with the "Activate when an external display is connected" advanced setting:
 	- fixed an issue where multiple `caffeinate` tasks were spawned when an external display was connected ([#203](https://github.com/newmarcel/KeepingYouAwake/issues/203))
@@ -21,7 +21,7 @@
 	- added a Quit button to the General settings
 - updated the app icon to not be trapped in a grey box on macOS 26 Tahoe
 
-### v1.6.6 ###
+### v1.6.6 (2024-10-26)
 
 - added Slovak translations ([#209](https://github.com/newmarcel/KeepingYouAwake/pull/209))
     - *Thank you Tomáš Švec!*
@@ -35,7 +35,7 @@
 	- *Thank you [gelosi](https://github.com/gelosi)!*
 - updated Sparkle to v2.6.4 ([#214](https://github.com/newmarcel/KeepingYouAwake/pull/214))
 
-### v1.6.5 ###
+### v1.6.5 (2023-10-02)
 
 - updated the Traditional Chinese translation ([#198](https://github.com/newmarcel/KeepingYouAwake/pull/198))
     - *Thank you [YuerLee](https://github.com/YuerLee)!*
@@ -43,12 +43,12 @@
     - *Thank you [tmuguet](https://github.com/tmuguet)!*
 - removed the advanced setting "Disable menu bar icon highlight color", this behavior can still be enabled using the `defaults` command: `defaults write info.marcel-dierkes.KeepingYouAwake info.marcel-dierkes.KeepingYouAwake.MenuBarIconHighlightDisabled -bool YES`
 
-### v1.6.4 ###
+### v1.6.4 (2022-11-14)
 
 - shows in the "Login Items" > "Open at Login" section in System Settings on macOS Ventura if "Start at Login" is enabled
 - fixes a regression introduced in 1.6.3 where the `keepingyouawake:///activate` URL scheme stopped working as expected ([#193](https://github.com/newmarcel/KeepingYouAwake/issues/193))
 
-### v1.6.3 ###
+### v1.6.3 (2022-10-30)
 
 - added Battery preferences with support for Low Power Mode on compatible Macs ([#181](https://github.com/newmarcel/KeepingYouAwake/pull/181))
 - added a Japanese translation ([#182](https://github.com/newmarcel/KeepingYouAwake/issues/182))
@@ -63,7 +63,7 @@
 
 **Please note: The 1.6.3 release does not support macOS Sierra anymore. You can continue using version 1.6.2 on this version of macOS.**
 
-### v1.6.2 ###
+### v1.6.2 (2022-02-20)
 
 - updated the Danish translation ([#171](https://github.com/newmarcel/KeepingYouAwake/pull/171), [#180](https://github.com/newmarcel/KeepingYouAwake/pull/180))
     - *Thank you [JacobSchriver](https://github.com/JacobSchriver)!*
@@ -71,14 +71,14 @@
 - added a Ukrainian translation ([#179](https://github.com/newmarcel/KeepingYouAwake/issues/179))
     - *Thank you [gelosi](https://github.com/gelosi)!*
 
-### v1.6.1 ###
+### v1.6.1 (2021-07-24)
 
 - added support for notifications, use `System Preferences` to manage notification settings ([#164](https://github.com/newmarcel/KeepingYouAwake/pull/164))
   - please note, this feature is only available on macOS 11 or newer; the previous experimental notifications support has been removed
 - updated the French translation ([#146](https://github.com/newmarcel/KeepingYouAwake/issues/146), [#169](https://github.com/newmarcel/KeepingYouAwake/pull/169))
     - *Thank you [alexandreleroux](https://github.com/alexandreleroux)!*
 
-### v1.6.0 ###
+### v1.6.0 (2020-11-06)
 
 - raised minimum deployment target to macOS Sierra ([#142](https://github.com/newmarcel/KeepingYouAwake/pull/142))
 - updated icons using the macOS Big Sur style ([#141](https://github.com/newmarcel/KeepingYouAwake/pull/141))
@@ -87,12 +87,12 @@
 - added a Russian translation ([#147](https://github.com/newmarcel/KeepingYouAwake/issues/147), [#155](https://github.com/newmarcel/KeepingYouAwake/pull/155))
     - *Thank you [Kromsator](https://github.com/Kromsator)!*
 
-### v1.5.2 ###
+### v1.5.2 (2020-07-04)
 
 - added the ability to allow the display to sleep ([#148](https://github.com/newmarcel/KeepingYouAwake/issues/148))
 	- _Thanks [creamelectricart](https://github.com/creamelectricart)!_
 
-### v1.5.1 ###
+### v1.5.1 (2019-12-26)
 
 - added the ability to customize activation durations in _Preferences_ ([#132](https://github.com/newmarcel/KeepingYouAwake/pull/132))
 - added an advanced preference to quit the app when the activation duration is over ([#133](https://github.com/newmarcel/KeepingYouAwake/pull/133))
@@ -102,7 +102,7 @@
 
 **Please note: The 1.5.x series of releases will be the last supporting macOS Yosemite and El Capitan. If you see any critical reason for supporting those, please leave a comment on [GitHub](https://github.com/newmarcel/KeepingYouAwake/issues/126).**
 
-### v1.5.0 ###
+### v1.5.0 (2019-01-20)
 
 - added an _Updates_ tab to _Preferences_ ([#107](https://github.com/newmarcel/KeepingYouAwake/pull/107))
 - enabled the _Hardened Runtime_ security feature ([#111](https://github.com/newmarcel/KeepingYouAwake/pull/111))
@@ -113,7 +113,7 @@
     - please check [this wiki page](https://github.com/newmarcel/KeepingYouAwake/wiki/1.5:-Start-at-Login-Problems) if you encounter problems
 - updated Sparkle to the `ui-separation-and-xpc` version ([#109](https://github.com/newmarcel/KeepingYouAwake/pull/109)) ([#113](https://github.com/newmarcel/KeepingYouAwake/pull/113))
 
-### v1.4.3 ###
+### v1.4.3 (2018-08-15)
 
 - the icon can be dragged out of the menubar to quit on macOS Sierra and newer ([#82](https://github.com/newmarcel/KeepingYouAwake/issues/82), suggested by [Eitot](https://github.com/Eitot))
 - support for the `keepingyouawake:///toggle` action ([#96](https://github.com/newmarcel/KeepingYouAwake/pull/96)), *thanks [code918](https://github.com/code918)*!
@@ -123,7 +123,7 @@
 	- Update German for informal style ([#74](https://github.com/newmarcel/KeepingYouAwake/pull/74)) _Thank you [Eitot](https://github.com/Eitot)!_
 - allows Dark Aqua appearance on macOS Mojave
 
-### v1.4.2 ###
+### v1.4.2 (2017-09-16)
 
 - support cmd+w and cmd+q keyboard shortcuts in the preferences window ([#56](https://github.com/newmarcel/KeepingYouAwake/issues/56))
 - preferences now remember the window position
@@ -145,7 +145,7 @@
 		- *Thank you [passerbyid](https://github.com/passerbyid)!*
 - updated Sparkle to 1.18.1
 
-### v1.4.1 ###
+### v1.4.1 (2016-12-30)
 
 - Localization support
 	- German
@@ -157,7 +157,7 @@
 	- the `info.marcel-dierkes.KeepingYouAwake.AllowDisplaySleep` preference was removed
 	- a similar, more powerful replacement feature will be introduced soon
 
-### v1.4 ###
+### v1.4 (2016-04-16)
 
 - Added a preferences window that replaces seldom used menu items and surfaces advanced and experimental preferences
 - You can now set the default activation duration for the menu bar icon in preferences
@@ -167,7 +167,7 @@
 	- *Thank you [timbru31](https://github.com/timbru31) for the suggestion!*
 - Upgraded to Sparkle 1.14.0 to fix potential security issues
 
-### v1.3.1 ###
+### v1.3.1 (2015-12-08)
 
 - Fixed Sparkle Updates *(Broken thanks to App Transport Security in OS X 10.11 and GitHub disabling HTTPS for pages)* If you know someone with Version 1.3.0, please let them know that 1.3.1 is available and can be downloaded manually to receive future updates. This is a nightmare come true… 😱
 - Fixed rendering for custom icons: They are now rendered as template images
@@ -177,7 +177,7 @@
 
 
 
-### v1.3 ###
+### v1.3 (2015-11-02)
 
 - Basic command line interface through URI schemes
 	- *Thank you [KyleKing](https://github.com/KyleKing) for the suggestion!*
@@ -196,7 +196,7 @@
 - hold down the option key and click inside the *"Activate for Duration"* menu to set the default duration for the menu bar icon
 
 
-### v1.2.1 ###
+### v1.2.1 (2015-01-11)
 
 - Fixed an issue where "Start at Login" would crash when clicked multiple times in a row *(Fixed by [registered99](https://github.com/registered99), thank you!)*
 - Less aggressive awake handling when the MacBook lid is closed by using the `caffeinate -di` command instead of `caffeinate -disu`
@@ -206,7 +206,7 @@
 
 - `ctrl` + `click` will now display the menu
 
-### v1.2 ###
+### v1.2 (2014-11-23)
 - There are no significant changes since beta1
 - Tweaked the experimental *(and hidden)* notifications
 - You can enable the notifications preview by pasting the following snippet into *Terminal.app*:
@@ -218,17 +218,17 @@
 		defaults write info.marcel-dierkes.KeepingYouAwake info.marcel-dierkes.KeepingYouAwake.NotificationsEnabled -bool NO
 
 
-### v1.2beta1 ###
+### v1.2beta1
 - Activation timer
 - [Sparkle](http://sparkle-project.org) integration for updates
 	- Sparkle will check for updates once a day
 	- A second beta will follow in the coming days to test automatic updates
 - This is **beta** software. If you notice any issues, please report them [here](https://github.com/newmarcel/KeepingYouAwake/issues/)
 
-### v1.1 ###
+### v1.1 (2014-11-13)
 - Signed with Developer ID
 - Start At Login menu item added
 
-### v1.0 ###
+### v1.0 (2014-10-19)
 - Initial Release
 - Keeps your Mac awake
