@@ -2,6 +2,10 @@
 
 ## Changelog
 
+### v.1.6.8
+
+- added a light/dark/clear app icon for macOS 26 Tahoe
+
 ### v1.6.7 (2025-07-18)
 
 - fixed two issues with the "Activate when an external display is connected" advanced setting:
