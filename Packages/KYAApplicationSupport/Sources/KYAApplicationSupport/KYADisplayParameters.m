@@ -12,6 +12,9 @@
 
 static const NSUInteger KYADisplayCountMax = 64u;
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wgnu-folding-constant"
+
 NSUInteger KYADisplayParametersGetNumberOfExternalDisplays()
 {
     CGDirectDisplayID displaysIDs[KYADisplayCountMax];
@@ -49,3 +52,5 @@ NSUInteger KYADisplayParametersGetNumberOfExternalDisplays()
     
     return displayIDs.count;
 }
+
+#pragma clang diagnostic pop
