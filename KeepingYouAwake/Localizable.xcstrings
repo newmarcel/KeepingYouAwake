@@ -58,6 +58,12 @@
             "value" : "(Predefinito)"
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Pēc noklusējuma)"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -171,6 +177,12 @@
             "value" : "활성 기간"
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivizēt uz laiku"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -272,6 +284,12 @@
             "value" : "बाहरी डिस्प्ले कनेक्ट होने पर सक्रिय करें"
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivizēt, kad pievienots ārējais displejs"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -365,6 +383,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Successivamente il tuo Mac andrà automaticamente in stop quando non usato."
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pēc tam jūsu Mac automātiski atkal pāries miega režīmā, ja netiks izmantots."
           }
         },
         "ru" : {
@@ -462,6 +486,12 @@
             "value" : "Consenti allo schermo di andare in stop"
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atļaut displejam pāriet miega režīmā"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -555,6 +585,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stop consentito"
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atļaut miega režīmu"
           }
         },
         "ru" : {
@@ -656,6 +692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annulla"
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atcelt"
           }
         },
         "ru" : {
@@ -770,6 +812,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "잠자기를 허용하려면 클릭\n메뉴를 보려면 오른쪽 클릭"
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noklikšķiniet, lai atļautu miega režīmu\nAr peles labo taustiņu atvērt izvēlni"
           }
         },
         "nl" : {
@@ -904,6 +952,12 @@
             "value" : "잠자기를 비활성화하려면 클릭\n메뉴를 보려면 오른쪽 클릭"
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noklikšķiniet, lai novērstu miega režīmu\nAr peles labo taustiņu atvērt izvēlni"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -997,6 +1051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "अन्य उपयोगकर्ता खाते पर स्विच करने पर निष्क्रिय करें"
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deaktivizēt, pārejot uz citu lietotāja kontu"
           }
         },
         "ru" : {
@@ -1100,6 +1160,12 @@
             "value" : "Predefinito"
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pēc noklusējuma"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1199,6 +1265,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vuoi veramente reimposare le durate di attivazione ai valori di default?"
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vai tiešām vēlaties atiestatīt aktivizācijas ilgumus uz noklusējuma vērtībām?"
           }
         },
         "ru" : {
@@ -1314,6 +1386,12 @@
             "value" : "무기한"
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beztermiņa"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1427,6 +1505,12 @@
             "value" : "OK"
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1508,6 +1592,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stop prevenuto"
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Miega režīma novēršana"
           }
         },
         "ru" : {
@@ -1603,6 +1693,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stop prevenuto per %@"
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Miega režīma novēršana %@"
           }
         },
         "ru" : {
@@ -1716,6 +1812,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "종료"
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iziet"
           }
         },
         "nl" : {
@@ -1837,6 +1939,12 @@
             "value" : "Chiudi alla scadenza della durata"
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beigt, kad aktivizācijas laiks ir beidzies"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1938,6 +2046,12 @@
             "value" : "Ripristina le durate"
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivizācijas ilguma atiestatīšana"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2037,6 +2151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Imposta predefinito: %@"
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iestatīt noklusējumu: %@"
           }
         },
         "ru" : {
@@ -2150,6 +2270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "환경설정…"
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iestatījumi..."
           }
         },
         "nl" : {
@@ -2271,6 +2397,12 @@
             "value" : "La durata inserita non è valida. Per favore riprova."
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ievadītā ilguma vērtība ir nederīga. Lūdzu, mēģiniet vēlreiz."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2370,6 +2502,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questa durata è già stata aggiunta."
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Šī ilguma vērtība jau ir pievienota."
           }
         },
         "ru" : {
@@ -2485,6 +2623,12 @@
             "value" : "Version"
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versija"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2598,6 +2742,12 @@
             "value" : "Puoi comunque abilitare manualmente la modalità di stop per il tuo Mac."
           }
         },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jūs joprojām varat manuāli ieslēgt miega režīmu savam Mac."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2691,6 +2841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Il tuo Mac andrà automaticamente in stop quando non usato."
+          }
+        },
+        "lv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jūsu Mac automātiski pāries miega režīmā, ja netiks izmantots."
           }
         },
         "ru" : {
