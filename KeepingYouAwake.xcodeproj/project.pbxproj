@@ -37,7 +37,6 @@
 		DA637B3F19F14693004C8838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B3E19F14693004C8838 /* main.m */; };
 		DA637B4219F14693004C8838 /* KYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B4119F14693004C8838 /* KYAAppDelegate.m */; };
 		DA637B5E19F146B6004C8838 /* KYAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA637B5D19F146B6004C8838 /* KYAAppController.m */; };
-		DA658E7121CE907D0049F4C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA658E7021CE907D0049F4C1 /* Assets.xcassets */; };
 		DA658E7721CE907D0049F4C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA658E7621CE907D0049F4C1 /* main.m */; };
 		DA658E7D21CE90F30049F4C1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA658E7C21CE90F30049F4C1 /* MainMenu.xib */; };
 		DA658E8021CE91540049F4C1 /* KYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA658E7F21CE91540049F4C1 /* KYAAppDelegate.m */; };
@@ -50,6 +49,7 @@
 		DA898C702A3EEE460005A48A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA898C6E2A3EEE460005A48A /* Credits.rtf */; };
 		DA898C732A3EEE8D0005A48A /* KYASettingsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DA898C722A3EEE8D0005A48A /* KYASettingsWindow.m */; };
 		DA898C742A3EEE8D0005A48A /* KYASettingsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DA898C722A3EEE8D0005A48A /* KYASettingsWindow.m */; };
+		DA8AF45F2E50594C00EBD156 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = DA8AF45E2E50594C00EBD156 /* AppIcon.icon */; };
 		DA96767F27CA720E00A9DCB8 /* KYABatterySettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA96768227CA720E00A9DCB8 /* KYABatterySettingsViewController.xib */; };
 		DA96768027CA720E00A9DCB8 /* KYABatterySettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA96768227CA720E00A9DCB8 /* KYABatterySettingsViewController.xib */; };
 		DA987C9C22FC749D00DD476B /* KYAAddDurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA987C9B22FC749D00DD476B /* KYAAddDurationViewController.m */; };
@@ -201,7 +201,6 @@
 		DA637B5C19F146B6004C8838 /* KYAAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAAppController.h; sourceTree = "<group>"; };
 		DA637B5D19F146B6004C8838 /* KYAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAAppController.m; sourceTree = "<group>"; };
 		DA658E6B21CE907B0049F4C1 /* KeepingYouAwake Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KeepingYouAwake Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA658E7021CE907D0049F4C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA658E7521CE907D0049F4C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA658E7621CE907D0049F4C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA658E7821CE907D0049F4C1 /* KYALauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KYALauncher.entitlements; sourceTree = "<group>"; };
@@ -217,6 +216,7 @@
 		DA898C712A3EEE8D0005A48A /* KYASettingsWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYASettingsWindow.h; sourceTree = "<group>"; };
 		DA898C722A3EEE8D0005A48A /* KYASettingsWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYASettingsWindow.m; sourceTree = "<group>"; };
 		DA898C762A3EF6080005A48A /* KYASettingsLocalizedStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYASettingsLocalizedStrings.m; sourceTree = "<group>"; };
+		DA8AF45E2E50594C00EBD156 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		DA96768127CA720E00A9DCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KYABatterySettingsViewController.xib; sourceTree = "<group>"; };
 		DA987C9A22FC749D00DD476B /* KYAAddDurationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYAAddDurationViewController.h; sourceTree = "<group>"; };
 		DA987C9B22FC749D00DD476B /* KYAAddDurationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYAAddDurationViewController.m; sourceTree = "<group>"; };
@@ -420,7 +420,7 @@
 				DA658E7F21CE91540049F4C1 /* KYAAppDelegate.m */,
 				DA658E7621CE907D0049F4C1 /* main.m */,
 				DA658E7C21CE90F30049F4C1 /* MainMenu.xib */,
-				DA658E7021CE907D0049F4C1 /* Assets.xcassets */,
+				DA8AF45E2E50594C00EBD156 /* AppIcon.icon */,
 				DA658E7521CE907D0049F4C1 /* Info.plist */,
 				DA658E7821CE907D0049F4C1 /* KYALauncher.entitlements */,
 			);
@@ -714,8 +714,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA658E7121CE907D0049F4C1 /* Assets.xcassets in Resources */,
 				DA658E7D21CE90F30049F4C1 /* MainMenu.xib in Resources */,
+				DA8AF45F2E50594C00EBD156 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
