@@ -27,7 +27,7 @@
       </trans-unit>
       <trans-unit id="Activate for Duration" xml:space="preserve">
         <source>Activate for Duration</source>
-        <target state="translated">在一段时间内启动	</target>
+        <target state="translated">激活时长</target>
         <note>Activate for Duration</note>
       </trans-unit>
       <trans-unit id="Activate when an external display is connected" xml:space="preserve">
