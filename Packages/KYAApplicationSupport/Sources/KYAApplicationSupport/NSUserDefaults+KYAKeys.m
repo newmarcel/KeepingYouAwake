@@ -87,7 +87,9 @@ NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold = @"info.marcel-dier
 
 - (void)setKya_batteryCapacityThreshold:(CGFloat)batteryCapacityThreshold
 {
-    [self setFloat:(float)batteryCapacityThreshold forKey:KYAUserDefaultsKeyBatteryCapacityThreshold];
+    // Clamp value between 10% and 100%
+    CGFloat clampedThreshold = MIN(100.0f, MAX(10.0f, batteryCapacityThreshold));
+    [self setFloat:(float)clampedThreshold forKey:KYAUserDefaultsKeyBatteryCapacityThreshold];
 }
 
 @end
