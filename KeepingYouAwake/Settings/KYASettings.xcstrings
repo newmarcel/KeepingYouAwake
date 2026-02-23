@@ -207,6 +207,12 @@
             "value" : "アクティブ時間"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "활성 기간"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -866,6 +872,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "アップデート"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "업데이트"
           }
         },
         "ru" : {

@@ -65,6 +65,12 @@
             "value" : "通知の設定…"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "알림 설정…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
