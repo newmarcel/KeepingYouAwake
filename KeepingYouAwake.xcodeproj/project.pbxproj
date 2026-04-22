@@ -619,7 +619,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = KYA;
 				DefaultBuildSystemTypeForWorkspace = Latest;
-				LastUpgradeCheck = 2600;
+				LastUpgradeCheck = 2640;
 				ORGANIZATIONNAME = "Marcel Dierkes";
 				TargetAttributes = {
 					DA637B3819F14693004C8838 = {
@@ -953,6 +953,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Debug;
 		};
@@ -1020,6 +1021,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Release;
 		};
@@ -1032,13 +1034,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 5KESHV9W85;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = KeepingYouAwake/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KeepAwake;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1055,13 +1058,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 5KESHV9W85;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = KeepingYouAwake/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KeepAwake;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) --timestamp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1086,16 +1090,16 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 5KESHV9W85;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = KYALauncher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KeepingYouAwake.Launcher";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(KYA_BUNDLE_ID_BASE).Launcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -1120,16 +1124,16 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 5KESHV9W85;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = KYALauncher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_FAST_MATH = YES;
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) --timestamp";
-				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.KeepingYouAwake.Launcher";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(KYA_BUNDLE_ID_BASE).Launcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -1145,7 +1149,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 5KESHV9W85;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1158,6 +1161,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_EXPORT_SUPPORTED = NO;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = KeepingYouAwake;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1174,7 +1178,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 5KESHV9W85;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"KYA_APP_UPDATER_ENABLED=1",
@@ -1186,6 +1189,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_EXPORT_SUPPORTED = NO;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) --timestamp";
 				PRODUCT_NAME = KeepingYouAwake;
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -17,9 +17,15 @@
     pathComponents = [pathComponents subarrayWithRange:pathRange];
 
     NSString *path = [NSString pathWithComponents:pathComponents];
-    [NSWorkspace.sharedWorkspace launchApplication:path];
-
-    [NSApplication.sharedApplication terminate:nil];
+    NSURL *appURL = [NSURL fileURLWithPath:path isDirectory:YES];
+    NSWorkspaceOpenConfiguration *configuration = [NSWorkspaceOpenConfiguration configuration];
+    [NSWorkspace.sharedWorkspace openApplicationAtURL:appURL
+                                        configuration:configuration
+                                    completionHandler:^(NSRunningApplication * _Nullable app, NSError * _Nullable error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [NSApplication.sharedApplication terminate:nil];
+        });
+    }];
 }
 
 @end

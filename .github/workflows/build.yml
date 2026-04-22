@@ -1,0 +1,78 @@
+name: Build (ad-hoc signed)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.app
+
+      - name: Show build environment
+        run: |
+          xcodebuild -version
+          swift --version
+          xcbeautify --version
+
+      - name: Build (ad-hoc signed, Release)
+        run: |
+          set -o pipefail
+          mkdir -p build dist
+          env NSUnbufferedIO=YES xcodebuild \
+            -workspace KeepingYouAwake.xcworkspace \
+            -scheme KeepingYouAwake \
+            -configuration Release \
+            -derivedDataPath build \
+            -disableAutomaticPackageResolution \
+            -onlyUsePackageVersionsFromResolvedFile \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGN_STYLE=Manual \
+            DEVELOPMENT_TEAM="" \
+            CODE_SIGNING_REQUIRED=YES \
+            CODE_SIGNING_ALLOWED=YES \
+            COPY_PHASE_STRIP=NO \
+            STRIP_INSTALLED_PRODUCT=NO \
+            build \
+            2>&1 | xcbeautify
+
+      - name: Stage .app into dist/
+        run: |
+          APP_PATH="$(find build/Build/Products/Release -maxdepth 2 -name 'KeepingYouAwake.app' -type d | head -n1)"
+          if [ -z "$APP_PATH" ]; then
+            echo "KeepingYouAwake.app not found under build/Build/Products/Release"
+            exit 1
+          fi
+          ditto "$APP_PATH" "dist/KeepingYouAwake.app"
+          codesign -dvv "dist/KeepingYouAwake.app" || true
+
+      - name: Read marketing version
+        id: version
+        run: |
+          VERSION="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' dist/KeepingYouAwake.app/Contents/Info.plist)"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Zip app
+        run: |
+          cd dist
+          ditto -c -k --sequesterRsrc --keepParent \
+            KeepingYouAwake.app \
+            "KeepingYouAwake-${{ steps.version.outputs.version }}-adhoc.zip"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v5
+        with:
+          name: KeepingYouAwake-${{ steps.version.outputs.version }}-adhoc
+          path: dist/KeepingYouAwake-${{ steps.version.outputs.version }}-adhoc.zip
+          if-no-files-found: error
