@@ -82,16 +82,50 @@ NSNotificationName const KYAStatusItemImageProviderDidChangeNotification = @"KYA
 - (void)reloadFromDefaults
 {
     Auto defaults = NSUserDefaults.standardUserDefaults;
-    NSString *activeID = defaults.kya_menuBarActiveIconStyle;
-    NSString *inactiveID = defaults.kya_menuBarInactiveIconStyle;
 
-    self.activeIconImage = [self imageForStyle:[KYAMenuBarIconStyle activeStyleForIdentifier:activeID]
-                                      isActive:YES];
-    self.inactiveIconImage = [self imageForStyle:[KYAMenuBarIconStyle inactiveStyleForIdentifier:inactiveID]
-                                        isActive:NO];
+    NSImage *activeImage = [self customImageForFilename:defaults.kya_menuBarActiveCustomIconFile];
+    if(activeImage == nil)
+    {
+        activeImage = [self imageForStyle:[KYAMenuBarIconStyle activeStyleForIdentifier:defaults.kya_menuBarActiveIconStyle]
+                                 isActive:YES];
+    }
+    self.activeIconImage = activeImage;
+
+    NSImage *inactiveImage = [self customImageForFilename:defaults.kya_menuBarInactiveCustomIconFile];
+    if(inactiveImage == nil)
+    {
+        inactiveImage = [self imageForStyle:[KYAMenuBarIconStyle inactiveStyleForIdentifier:defaults.kya_menuBarInactiveIconStyle]
+                                   isActive:NO];
+    }
+    self.inactiveIconImage = inactiveImage;
 
     [NSNotificationCenter.defaultCenter postNotificationName:KYAStatusItemImageProviderDidChangeNotification
                                                       object:self];
+}
+
+- (nullable NSImage *)customImageForFilename:(nullable NSString *)filename
+{
+    if(filename.length == 0) { return nil; }
+    Auto url = [NSURL.kya_documentsDirectoryURL URLByAppendingPathComponent:filename];
+    if(![NSFileManager.defaultManager fileExistsAtPath:url.path]) { return nil; }
+
+    NSImage *image = [[NSImage alloc] initWithContentsOfURL:url];
+    if(image == nil) { return nil; }
+
+    // Scale down to roughly menu-bar size while preserving aspect ratio.
+    NSSize size = image.size;
+    const CGFloat target = 18.0;
+    if(size.width > 0 && size.height > 0)
+    {
+        CGFloat longSide = MAX(size.width, size.height);
+        if(longSide > target)
+        {
+            CGFloat scale = target / longSide;
+            image.size = NSMakeSize(size.width * scale, size.height * scale);
+        }
+    }
+    image.template = YES;
+    return image;
 }
 
 - (NSImage *)imageForStyle:(KYAMenuBarIconStyle *)style isActive:(BOOL)isActive

@@ -24,6 +24,8 @@ KYA_EXPORT NSString * const KYAUserDefaultsKeyLowPowerModeMonitoringEnabled;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarActiveIconStyle;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarInactiveIconStyle;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarActiveCustomIconFile;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarInactiveCustomIconFile;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyShowRemainingTimeInMenuBar;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyRemainingTimeFormat;
 
@@ -78,6 +80,16 @@ KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatMinutes;
 /// Identifier of the selected menu bar icon style for the inactive state.
 /// A nil/empty value means the built-in default icon.
 @property (nonatomic, nullable, copy) NSString *kya_menuBarInactiveIconStyle;
+
+/// Filename (relative to the app's Documents directory) of the user-picked
+/// custom icon file for the active state. When set, this overrides the
+/// catalog style for that slot.
+@property (nonatomic, nullable, copy) NSString *kya_menuBarActiveCustomIconFile;
+
+/// Filename (relative to the app's Documents directory) of the user-picked
+/// custom icon file for the inactive state. When set, this overrides the
+/// catalog style for that slot.
+@property (nonatomic, nullable, copy) NSString *kya_menuBarInactiveCustomIconFile;
 
 /// Returns YES if the remaining timer time should be rendered next to the
 /// menu bar icon while the timer is active.

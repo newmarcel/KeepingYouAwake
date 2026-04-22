@@ -94,6 +94,8 @@ NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold = @"info.marcel-dier
 
 NSString * const KYAUserDefaultsKeyMenuBarActiveIconStyle = @"info.marcel-dierkes.KeepingYouAwake.MenuBarActiveIconStyle";
 NSString * const KYAUserDefaultsKeyMenuBarInactiveIconStyle = @"info.marcel-dierkes.KeepingYouAwake.MenuBarInactiveIconStyle";
+NSString * const KYAUserDefaultsKeyMenuBarActiveCustomIconFile = @"info.marcel-dierkes.KeepingYouAwake.MenuBarActiveCustomIconFile";
+NSString * const KYAUserDefaultsKeyMenuBarInactiveCustomIconFile = @"info.marcel-dierkes.KeepingYouAwake.MenuBarInactiveCustomIconFile";
 NSString * const KYAUserDefaultsKeyShowRemainingTimeInMenuBar = @"info.marcel-dierkes.KeepingYouAwake.ShowRemainingTimeInMenuBar";
 NSString * const KYAUserDefaultsKeyRemainingTimeFormat = @"info.marcel-dierkes.KeepingYouAwake.RemainingTimeFormat";
 
@@ -119,6 +121,40 @@ KYARemainingTimeFormat const KYARemainingTimeFormatMinutes = @"minutes";
 - (void)setKya_menuBarInactiveIconStyle:(NSString *)kya_menuBarInactiveIconStyle
 {
     [self setObject:kya_menuBarInactiveIconStyle forKey:KYAUserDefaultsKeyMenuBarInactiveIconStyle];
+}
+
+- (NSString *)kya_menuBarActiveCustomIconFile
+{
+    return [self stringForKey:KYAUserDefaultsKeyMenuBarActiveCustomIconFile];
+}
+
+- (void)setKya_menuBarActiveCustomIconFile:(NSString *)filename
+{
+    if(filename.length == 0)
+    {
+        [self removeObjectForKey:KYAUserDefaultsKeyMenuBarActiveCustomIconFile];
+    }
+    else
+    {
+        [self setObject:filename forKey:KYAUserDefaultsKeyMenuBarActiveCustomIconFile];
+    }
+}
+
+- (NSString *)kya_menuBarInactiveCustomIconFile
+{
+    return [self stringForKey:KYAUserDefaultsKeyMenuBarInactiveCustomIconFile];
+}
+
+- (void)setKya_menuBarInactiveCustomIconFile:(NSString *)filename
+{
+    if(filename.length == 0)
+    {
+        [self removeObjectForKey:KYAUserDefaultsKeyMenuBarInactiveCustomIconFile];
+    }
+    else
+    {
+        [self setObject:filename forKey:KYAUserDefaultsKeyMenuBarInactiveCustomIconFile];
+    }
 }
 
 #pragma mark - Remaining Time Display
