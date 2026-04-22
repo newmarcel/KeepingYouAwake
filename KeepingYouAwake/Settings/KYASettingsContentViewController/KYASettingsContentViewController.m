@@ -54,11 +54,11 @@
 - (void)viewWillAppear
 {
     [super viewWillAppear];
-    
-    if([self resizesView])
-    {
-        self.preferredContentSize = self.view.fittingSize;
-    }
+
+    // Use a unified size across every tab so the preferences window stays
+    // a constant size rather than jumping around as the user switches tabs.
+    // Sized for the largest tab (Menu Bar) with headroom.
+    self.preferredContentSize = NSMakeSize(480.0, 600.0);
 }
 
 @end
