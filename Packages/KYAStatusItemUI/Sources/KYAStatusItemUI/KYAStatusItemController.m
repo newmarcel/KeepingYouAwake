@@ -137,6 +137,7 @@
         button.image = imageProvider.inactiveIconImage;
         button.toolTip = KYA_L10N_CLICK_TO_PREVENT_SLEEP;
         self.fireDate = nil;
+        self.startDate = nil;
     }
 
     [self refreshTitleAndTimer];
@@ -153,14 +154,21 @@
     [self refreshTitleAndTimer];
 }
 
+- (void)setStartDate:(NSDate *)startDate
+{
+    if(startDate == _startDate || [startDate isEqualToDate:_startDate]) { return; }
+    _startDate = [startDate copy];
+    [self refreshTitleAndTimer];
+}
+
 - (void)refreshTitleAndTimer
 {
     Auto defaults = NSUserDefaults.standardUserDefaults;
     BOOL active = (self.currentAppearance == KYAStatusItemAppearanceActive);
     BOOL enabled = defaults.kya_isShowRemainingTimeInMenuBarEnabled;
-    BOOL hasFireDate = (self.fireDate != nil);
+    BOOL hasDate = (self.fireDate != nil) || (self.startDate != nil);
 
-    if(active && enabled && hasFireDate)
+    if(active && enabled && hasDate)
     {
         [self updateRemainingTimeTitle];
         [self startRemainingTimeTimerIfNeeded];
@@ -194,24 +202,33 @@
 
 - (void)updateRemainingTimeTitle
 {
+    NSTimeInterval interval = 0;
     Auto fireDate = self.fireDate;
-    if(fireDate == nil)
+    if(fireDate != nil)
     {
-        self.systemStatusItem.button.title = @"";
-        return;
+        interval = [fireDate timeIntervalSinceNow];
+        if(interval <= 0)
+        {
+            self.systemStatusItem.button.title = @"";
+            [self stopRemainingTimeTimer];
+            return;
+        }
     }
-
-    NSTimeInterval remaining = [fireDate timeIntervalSinceNow];
-    if(remaining <= 0)
+    else
     {
-        self.systemStatusItem.button.title = @"";
-        [self stopRemainingTimeTimer];
-        return;
+        Auto startDate = self.startDate;
+        if(startDate == nil)
+        {
+            self.systemStatusItem.button.title = @"";
+            return;
+        }
+        interval = -[startDate timeIntervalSinceNow];
+        if(interval < 0) { interval = 0; }
     }
 
     Auto defaults = NSUserDefaults.standardUserDefaults;
     KYARemainingTimeFormat format = defaults.kya_remainingTimeFormat;
-    NSString *title = [[self class] formatRemaining:remaining format:format];
+    NSString *title = [[self class] formatRemaining:interval format:format];
     self.systemStatusItem.button.title = [NSString stringWithFormat:@" %@", title];
 }
 

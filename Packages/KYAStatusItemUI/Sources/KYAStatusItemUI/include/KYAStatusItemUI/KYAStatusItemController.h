@@ -37,6 +37,11 @@ typedef NS_ENUM(NSUInteger, KYAStatusItemAppearance)
 /// render a live-updating remaining-time label next to the status item icon.
 @property (copy, nonatomic, nullable) NSDate *fireDate;
 
+/// The date at which the active session started. When set and `fireDate` is
+/// nil (indefinite activation), the controller renders a live-updating
+/// elapsed-time label next to the status item icon.
+@property (copy, nonatomic, nullable) NSDate *startDate;
+
 /// A delegate for receiving click events.
 @property (weak, nonatomic, nullable) id<KYAStatusItemControllerDataSource> dataSource;
 

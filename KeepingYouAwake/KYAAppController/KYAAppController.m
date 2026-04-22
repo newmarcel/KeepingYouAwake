@@ -60,7 +60,7 @@
                    selector:@selector(batteryCapacityThresholdDidChange:)
                        name:kKYABatteryCapacityThresholdDidChangeNotification
                      object:nil];
-        
+
         [self registerForWorkspaceSessionNotifications];
     }
     return self;
@@ -72,7 +72,7 @@
     [center removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
     [center removeObserver:self name:NSApplicationDidChangeScreenParametersNotification object:nil];
     [center removeObserver:self name:kKYABatteryCapacityThresholdDidChangeNotification object:nil];
-    
+
     [self unregisterFromWorkspaceSessionNotifications];
 }
 
@@ -483,12 +483,14 @@
 
 - (void)sleepWakeTimer:(KYASleepWakeTimer *)sleepWakeTimer willActivateWithTimeInterval:(NSTimeInterval)timeInterval
 {
-    // Update the status item
-    self.statusItemController.appearance = KYAStatusItemAppearanceActive;
-
-    // The timer sets its own fireDate after notifying the delegate, so compute
-    // one here to drive the menu-bar remaining-time label immediately.
-    self.statusItemController.fireDate = (timeInterval > 0)
+    // Update the status item. The underlying timer sets its own fireDate after
+    // this callback returns, so compute one here to drive the menu-bar label
+    // immediately. For indefinite activations, leave fireDate nil and fall
+    // back to elapsed time using startDate.
+    Auto statusItemController = self.statusItemController;
+    statusItemController.appearance = KYAStatusItemAppearanceActive;
+    statusItemController.startDate = [NSDate date];
+    statusItemController.fireDate = (timeInterval > 0)
         ? [NSDate dateWithTimeIntervalSinceNow:timeInterval]
         : nil;
 
@@ -498,8 +500,10 @@
 - (void)sleepWakeTimerDidDeactivate:(KYASleepWakeTimer *)sleepWakeTimer
 {
     // Update the status item
-    self.statusItemController.fireDate = nil;
-    self.statusItemController.appearance = KYAStatusItemAppearanceInactive;
+    Auto statusItemController = self.statusItemController;
+    statusItemController.fireDate = nil;
+    statusItemController.startDate = nil;
+    statusItemController.appearance = KYAStatusItemAppearanceInactive;
 
     [self disableDevicePowerMonitoring];
 }
