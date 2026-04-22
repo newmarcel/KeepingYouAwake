@@ -9,3 +9,5 @@
 
 #import <KYAStatusItemUI/KYAStatusItemImageProvider.h>
 #import <KYAStatusItemUI/KYAStatusItemController.h>
+#import <KYAStatusItemUI/KYAMenuBarIconStyle.h>
+#import <KYAStatusItemUI/KYAIconSettingsViewController.h>

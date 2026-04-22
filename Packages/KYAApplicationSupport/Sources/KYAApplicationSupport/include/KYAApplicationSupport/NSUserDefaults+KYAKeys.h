@@ -22,6 +22,8 @@ KYA_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyLowPowerModeMonitoringEnabled;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarActiveIconStyle;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarInactiveIconStyle;
 
 @interface NSUserDefaults (KYAKeys)
 
@@ -57,6 +59,14 @@ KYA_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
 
 /// Returns YES if the app should deactivate when the user account is switched.
 @property (nonatomic, getter=kya_isDeactivateOnUserSwitchEnabled) BOOL kya_deactivateOnUserSwitchEnabled;
+
+/// Identifier of the selected menu bar icon style for the active state.
+/// A nil/empty value means the built-in default icon.
+@property (nonatomic, nullable, copy) NSString *kya_menuBarActiveIconStyle;
+
+/// Identifier of the selected menu bar icon style for the inactive state.
+/// A nil/empty value means the built-in default icon.
+@property (nonatomic, nullable, copy) NSString *kya_menuBarInactiveIconStyle;
 
 @end
 

@@ -13,6 +13,7 @@
 
 @interface KYAStatusItemController ()
 @property (nonatomic, readwrite) NSStatusItem *systemStatusItem;
+@property (nonatomic) KYAStatusItemAppearance currentAppearance;
 @end
 
 @implementation KYAStatusItemController
@@ -23,8 +24,23 @@
     if(self)
     {
         [self configureStatusItem];
+        [NSNotificationCenter.defaultCenter addObserver:self
+                                               selector:@selector(imageProviderDidChange:)
+                                                   name:KYAStatusItemImageProviderDidChangeNotification
+                                                 object:nil];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [NSNotificationCenter.defaultCenter removeObserver:self];
+}
+
+- (void)imageProviderDidChange:(NSNotification *)notification
+{
+    // Reapply current appearance so the button picks up the fresh images.
+    self.appearance = self.appearance;
 }
 
 #pragma mark - Configuration
@@ -84,17 +100,18 @@
 
 - (KYAStatusItemAppearance)appearance
 {
-    Auto menubarIcon = KYAStatusItemImageProvider.currentProvider;
-    return self.systemStatusItem.image == menubarIcon.activeIconImage;
+    return self.currentAppearance;
 }
 
 - (void)setAppearance:(KYAStatusItemAppearance)appearance
 {
     [self willChangeValueForKey:@"appearance"];
-    
+
+    self.currentAppearance = appearance;
+
     Auto button = self.systemStatusItem.button;
     Auto imageProvider = KYAStatusItemImageProvider.currentProvider;
-    
+
     if(appearance == KYAStatusItemAppearanceActive)
     {
         button.image = imageProvider.activeIconImage;
@@ -105,7 +122,7 @@
         button.image = imageProvider.inactiveIconImage;
         button.toolTip = KYA_L10N_CLICK_TO_PREVENT_SLEEP;
     }
-    
+
     [self didChangeValueForKey:@"appearance"];
 }
 

@@ -90,4 +90,29 @@ NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold = @"info.marcel-dier
     [self setFloat:(float)batteryCapacityThreshold forKey:KYAUserDefaultsKeyBatteryCapacityThreshold];
 }
 
+#pragma mark - Menu Bar Icon Styles
+
+NSString * const KYAUserDefaultsKeyMenuBarActiveIconStyle = @"info.marcel-dierkes.KeepingYouAwake.MenuBarActiveIconStyle";
+NSString * const KYAUserDefaultsKeyMenuBarInactiveIconStyle = @"info.marcel-dierkes.KeepingYouAwake.MenuBarInactiveIconStyle";
+
+- (NSString *)kya_menuBarActiveIconStyle
+{
+    return [self stringForKey:KYAUserDefaultsKeyMenuBarActiveIconStyle];
+}
+
+- (void)setKya_menuBarActiveIconStyle:(NSString *)kya_menuBarActiveIconStyle
+{
+    [self setObject:kya_menuBarActiveIconStyle forKey:KYAUserDefaultsKeyMenuBarActiveIconStyle];
+}
+
+- (NSString *)kya_menuBarInactiveIconStyle
+{
+    return [self stringForKey:KYAUserDefaultsKeyMenuBarInactiveIconStyle];
+}
+
+- (void)setKya_menuBarInactiveIconStyle:(NSString *)kya_menuBarInactiveIconStyle
+{
+    [self setObject:kya_menuBarInactiveIconStyle forKey:KYAUserDefaultsKeyMenuBarInactiveIconStyle];
+}
+
 @end

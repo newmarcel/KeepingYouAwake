@@ -14,11 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readwrite) NSImage *activeIconImage;
 @property (nonatomic, readwrite) NSImage *inactiveIconImage;
 
-/// The designated initializer for an image provider.
-/// @param activeIcon An NSImage representing the active state, a nil value sets the default icon.
-/// @param inactiveIcon An NSImage representing the inactive state, a nil value sets the default icon.
+/// Convenience initializer that bypasses the defaults-driven style lookup
+/// and pins the provider to a specific pair of images. Used by the
+/// `standardProvider` / `customProvider` class accessors.
 - (instancetype)initWithActiveIconName:(NSImage *)activeIcon
-                      inactiveIconName:(NSImage *)inactiveIcon NS_DESIGNATED_INITIALIZER;
+                      inactiveIconName:(NSImage *)inactiveIcon;
 
 @end
 

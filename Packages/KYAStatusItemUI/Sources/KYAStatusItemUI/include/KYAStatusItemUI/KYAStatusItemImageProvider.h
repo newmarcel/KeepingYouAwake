@@ -8,18 +8,26 @@
 
 #import <Foundation/Foundation.h>
 #import <AppKit/NSImage.h>
+#import <KYACommon/KYAExport.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+/// Posted when the current provider's icon images have been reloaded.
+KYA_EXPORT NSNotificationName const KYAStatusItemImageProviderDidChangeNotification;
 
 /// Provides active and inactive icon images for the status item.
 @interface KYAStatusItemImageProvider : NSObject
 
-/// Returns a status item icon provider for either the default
-/// or custom icon images.
+/// Returns a status item icon provider for the currently-selected icon styles.
 ///
 /// @note This class method will always return the same instance
-///       during the lifetime of the app.
+///       during the lifetime of the app. Call `-reloadFromDefaults` after
+///       changing the selected icon styles in user defaults.
 @property (class, nonatomic, readonly) KYAStatusItemImageProvider *currentProvider;
+
+/// Re-resolves `activeIconImage`/`inactiveIconImage` from the current user
+/// defaults selection and posts `KYAStatusItemImageProviderDidChangeNotification`.
+- (void)reloadFromDefaults;
 
 /// Returns a menu bar icon provider for the built-in icon images.
 /// @note This provider requires 'ActiveIcon' and 'InactiveIcon' assets
@@ -35,8 +43,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// An icon image representing the inactive state.
 @property (nonatomic, readonly) NSImage *inactiveIconImage;
-
-- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
