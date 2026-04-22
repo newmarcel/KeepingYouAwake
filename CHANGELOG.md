@@ -2,6 +2,12 @@
 
 ## Changelog
 
+### Unreleased
+
+- added a live remaining-time label next to the menu bar icon while the timer is running, with three formats (compact `2h 30m`, digital `2:30:00`, minutes `150m`)
+- replaced the menu bar icon dropdowns with a full searchable SF Symbols picker grouped by category (Eyes, Energy, Weather, Time, Nature, Devices, Objects, Abstract)
+- renamed the "Icon" settings tab to "Menu Bar" and consolidated icon + remaining-time options there
+
 ### v.1.6.8 (2025-09-12)
 
 - added a light/dark/clear app icon for macOS 26 Tahoe
