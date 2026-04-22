@@ -32,6 +32,11 @@ typedef NS_ENUM(NSUInteger, KYAStatusItemAppearance)
 /// Controls the activate/inactive appearance of the status item image.
 @property (nonatomic) KYAStatusItemAppearance appearance;
 
+/// The date at which the timer will fire. When set to a non-nil date and the
+/// user has opted in (`kya_showRemainingTimeInMenuBar`), the controller will
+/// render a live-updating remaining-time label next to the status item icon.
+@property (copy, nonatomic, nullable) NSDate *fireDate;
+
 /// A delegate for receiving click events.
 @property (weak, nonatomic, nullable) id<KYAStatusItemControllerDataSource> dataSource;
 

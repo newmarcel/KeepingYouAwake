@@ -485,15 +485,22 @@
 {
     // Update the status item
     self.statusItemController.appearance = KYAStatusItemAppearanceActive;
-    
+
+    // The timer sets its own fireDate after notifying the delegate, so compute
+    // one here to drive the menu-bar remaining-time label immediately.
+    self.statusItemController.fireDate = (timeInterval > 0)
+        ? [NSDate dateWithTimeIntervalSinceNow:timeInterval]
+        : nil;
+
     [self enableDevicePowerMonitoring];
 }
 
 - (void)sleepWakeTimerDidDeactivate:(KYASleepWakeTimer *)sleepWakeTimer
 {
     // Update the status item
+    self.statusItemController.fireDate = nil;
     self.statusItemController.appearance = KYAStatusItemAppearanceInactive;
-    
+
     [self disableDevicePowerMonitoring];
 }
 
