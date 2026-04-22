@@ -24,6 +24,17 @@ KYA_EXPORT NSString * const KYAUserDefaultsKeyLowPowerModeMonitoringEnabled;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarActiveIconStyle;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarInactiveIconStyle;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyShowRemainingTimeInMenuBar;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyRemainingTimeFormat;
+
+/// Raw values for `KYAUserDefaultsKeyRemainingTimeFormat`.
+typedef NSString *KYARemainingTimeFormat NS_TYPED_EXTENSIBLE_ENUM;
+/// "2h 30m" — compact natural-language style.
+KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatCompact;
+/// "2:30:00" — digital clock style.
+KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatDigital;
+/// "150m" — total minutes remaining.
+KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatMinutes;
 
 @interface NSUserDefaults (KYAKeys)
 
@@ -67,6 +78,14 @@ KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarInactiveIconStyle;
 /// Identifier of the selected menu bar icon style for the inactive state.
 /// A nil/empty value means the built-in default icon.
 @property (nonatomic, nullable, copy) NSString *kya_menuBarInactiveIconStyle;
+
+/// Returns YES if the remaining timer time should be rendered next to the
+/// menu bar icon while the timer is active.
+@property (nonatomic, getter=kya_isShowRemainingTimeInMenuBarEnabled) BOOL kya_showRemainingTimeInMenuBar;
+
+/// Format for the remaining-time label rendered next to the menu bar icon.
+/// Defaults to `KYARemainingTimeFormatCompact` when unset.
+@property (nonatomic, copy) KYARemainingTimeFormat kya_remainingTimeFormat;
 
 @end
 

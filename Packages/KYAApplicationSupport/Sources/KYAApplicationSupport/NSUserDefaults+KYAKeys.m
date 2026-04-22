@@ -94,6 +94,12 @@ NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold = @"info.marcel-dier
 
 NSString * const KYAUserDefaultsKeyMenuBarActiveIconStyle = @"info.marcel-dierkes.KeepingYouAwake.MenuBarActiveIconStyle";
 NSString * const KYAUserDefaultsKeyMenuBarInactiveIconStyle = @"info.marcel-dierkes.KeepingYouAwake.MenuBarInactiveIconStyle";
+NSString * const KYAUserDefaultsKeyShowRemainingTimeInMenuBar = @"info.marcel-dierkes.KeepingYouAwake.ShowRemainingTimeInMenuBar";
+NSString * const KYAUserDefaultsKeyRemainingTimeFormat = @"info.marcel-dierkes.KeepingYouAwake.RemainingTimeFormat";
+
+KYARemainingTimeFormat const KYARemainingTimeFormatCompact = @"compact";
+KYARemainingTimeFormat const KYARemainingTimeFormatDigital = @"digital";
+KYARemainingTimeFormat const KYARemainingTimeFormatMinutes = @"minutes";
 
 - (NSString *)kya_menuBarActiveIconStyle
 {
@@ -113,6 +119,30 @@ NSString * const KYAUserDefaultsKeyMenuBarInactiveIconStyle = @"info.marcel-dier
 - (void)setKya_menuBarInactiveIconStyle:(NSString *)kya_menuBarInactiveIconStyle
 {
     [self setObject:kya_menuBarInactiveIconStyle forKey:KYAUserDefaultsKeyMenuBarInactiveIconStyle];
+}
+
+#pragma mark - Remaining Time Display
+
+- (BOOL)kya_isShowRemainingTimeInMenuBarEnabled
+{
+    return [self boolForKey:KYAUserDefaultsKeyShowRemainingTimeInMenuBar];
+}
+
+- (void)setKya_showRemainingTimeInMenuBar:(BOOL)enabled
+{
+    [self setBool:enabled forKey:KYAUserDefaultsKeyShowRemainingTimeInMenuBar];
+}
+
+- (KYARemainingTimeFormat)kya_remainingTimeFormat
+{
+    NSString *value = [self stringForKey:KYAUserDefaultsKeyRemainingTimeFormat];
+    if(value.length == 0) { return KYARemainingTimeFormatCompact; }
+    return value;
+}
+
+- (void)setKya_remainingTimeFormat:(KYARemainingTimeFormat)format
+{
+    [self setObject:format forKey:KYAUserDefaultsKeyRemainingTimeFormat];
 }
 
 @end
