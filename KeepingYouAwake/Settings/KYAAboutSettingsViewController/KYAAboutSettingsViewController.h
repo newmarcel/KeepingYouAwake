@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface KYAAboutSettingsViewController : KYASettingsContentViewController
 @property (copy, nonatomic, readonly) NSString *versionText;
 @property (copy, nonatomic, readonly) NSString *copyrightText;
+@property (copy, nonatomic, readonly) NSURL *repositoryURL;
 
 @end
 

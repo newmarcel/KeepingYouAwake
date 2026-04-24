@@ -129,7 +129,7 @@ typedef NS_ENUM(NSInteger, KYAIconSlot) {
 + (NSTabViewItem *)preferredTabViewItem
 {
     KYAIconSettingsViewController *controller = [self new];
-    controller.title = NSLocalizedString(@"Menu Bar", @"Menu Bar settings tab title");
+    controller.title = NSLocalizedString(@"Appearance", @"Appearance settings tab title");
 
     Auto item = [NSTabViewItem tabViewItemWithViewController:controller];
     if(@available(macOS 11.0, *))

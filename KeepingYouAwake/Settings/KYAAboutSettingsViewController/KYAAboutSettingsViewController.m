@@ -9,6 +9,8 @@
 #import "KYAAboutSettingsViewController.h"
 #import "KYALocalizedStrings.h"
 
+static NSString * const KYARepositoryURLString = @"https://github.com/joyjeet-sarkar/KeepingYouAwake";
+
 @interface KYAAboutSettingsViewController ()
 @end
 
@@ -46,6 +48,11 @@
     return NSBundle.mainBundle.kya_localizedCopyrightString;
 }
 
+- (NSURL *)repositoryURL
+{
+    return [NSURL URLWithString:KYARepositoryURLString];
+}
+
 - (id)creditsFileURL
 {
     return [NSBundle.mainBundle URLForResource:@"Credits" withExtension:@"rtf"];
@@ -54,6 +61,56 @@
 - (BOOL)isEditable
 {
     return NO;
+}
+
+#pragma mark - Life Cycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self installRepositoryLinkLabel];
+}
+
+- (void)installRepositoryLinkLabel
+{
+    NSView *root = self.view;
+    NSView *copyrightContainer = [self bottommostContainerInView:root];
+    if(copyrightContainer == nil) { return; }
+
+    NSString *displayText = [KYARepositoryURLString stringByReplacingOccurrencesOfString:@"https://" withString:@""];
+    NSMutableAttributedString *attributed = [[NSMutableAttributedString alloc] initWithString:displayText];
+    NSRange range = NSMakeRange(0, displayText.length);
+    [attributed addAttribute:NSLinkAttributeName value:self.repositoryURL range:range];
+    [attributed addAttribute:NSFontAttributeName
+                       value:[NSFont systemFontOfSize:NSFont.smallSystemFontSize]
+                       range:range];
+
+    NSTextField *linkField = [NSTextField labelWithAttributedString:attributed];
+    linkField.translatesAutoresizingMaskIntoConstraints = NO;
+    linkField.allowsEditingTextAttributes = YES;
+    linkField.selectable = YES;
+    linkField.alignment = NSTextAlignmentCenter;
+    [root addSubview:linkField];
+
+    [NSLayoutConstraint activateConstraints:@[
+        [linkField.centerXAnchor constraintEqualToAnchor:root.centerXAnchor],
+        [linkField.bottomAnchor constraintEqualToAnchor:copyrightContainer.topAnchor constant:-4],
+    ]];
+}
+
+- (nullable NSView *)bottommostContainerInView:(NSView *)parent
+{
+    NSView *bottom = nil;
+    CGFloat minY = CGFLOAT_MAX;
+    for(NSView *subview in parent.subviews)
+    {
+        if(subview.frame.origin.y < minY)
+        {
+            minY = subview.frame.origin.y;
+            bottom = subview;
+        }
+    }
+    return bottom;
 }
 
 @end
