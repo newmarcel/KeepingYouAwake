@@ -55,7 +55,25 @@ jobs:
             exit 1
           fi
           ditto "$APP_PATH" "dist/KeepingYouAwake.app"
-          codesign -dvv "dist/KeepingYouAwake.app" || true
+
+      - name: Embed fallback app icon
+        # Xcode 16 doesn't process AppIcon.icon (Icon Composer, Xcode 26+),
+        # so the build ships without an icon. Inject a pre-rendered .icns
+        # and point Info.plist at it, then re-seal the outer bundle.
+        run: |
+          set -euo pipefail
+          APP="dist/KeepingYouAwake.app"
+          cp Extras/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
+          PLIST="$APP/Contents/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Set :CFBundleIconFile AppIcon' "$PLIST" \
+            || /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFile string AppIcon' "$PLIST"
+          /usr/libexec/PlistBuddy -c 'Set :CFBundleIconName AppIcon' "$PLIST" \
+            || /usr/libexec/PlistBuddy -c 'Add :CFBundleIconName string AppIcon' "$PLIST"
+          codesign --force --sign - \
+            --preserve-metadata=entitlements,requirements,flags,runtime \
+            "$APP"
+          codesign --verify --strict "$APP"
+          codesign -dvv "$APP" || true
 
       - name: Read marketing version
         id: version
