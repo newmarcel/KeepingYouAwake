@@ -26,6 +26,8 @@ KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarActiveIconStyle;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarInactiveIconStyle;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarActiveCustomIconFile;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarInactiveCustomIconFile;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarActiveIconColor;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyMenuBarInactiveIconColor;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyShowRemainingTimeInMenuBar;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyRemainingTimeFormat;
 
@@ -35,8 +37,16 @@ typedef NSString *KYARemainingTimeFormat NS_TYPED_EXTENSIBLE_ENUM;
 KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatCompact;
 /// "2:30:00" — digital clock style.
 KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatDigital;
+/// "2:30" — hours and minutes, colon separator, no seconds.
+KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatHoursMinutes;
 /// "150m" — total minutes remaining.
 KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatMinutes;
+/// "2h" — total hours remaining, rounded up.
+KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatHours;
+/// "9000s" — total seconds remaining.
+KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatSeconds;
+/// "2 hours 30 minutes" — verbose natural-language.
+KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatVerbose;
 
 @interface NSUserDefaults (KYAKeys)
 
@@ -90,6 +100,15 @@ KYA_EXPORT KYARemainingTimeFormat const KYARemainingTimeFormatMinutes;
 /// custom icon file for the inactive state. When set, this overrides the
 /// catalog style for that slot.
 @property (nonatomic, nullable, copy) NSString *kya_menuBarInactiveCustomIconFile;
+
+/// Hex color string ("#RRGGBB" or "#RRGGBBAA") used to tint the active-state
+/// menu bar icon. A nil/empty value means use the system label color
+/// (auto-adapts to light/dark appearance).
+@property (nonatomic, nullable, copy) NSString *kya_menuBarActiveIconColor;
+
+/// Hex color string for the inactive-state menu bar icon tint.
+/// A nil/empty value means use the system label color.
+@property (nonatomic, nullable, copy) NSString *kya_menuBarInactiveIconColor;
 
 /// Returns YES if the remaining timer time should be rendered next to the
 /// menu bar icon while the timer is active.

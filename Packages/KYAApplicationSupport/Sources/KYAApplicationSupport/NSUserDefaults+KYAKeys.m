@@ -96,12 +96,18 @@ NSString * const KYAUserDefaultsKeyMenuBarActiveIconStyle = @"info.marcel-dierke
 NSString * const KYAUserDefaultsKeyMenuBarInactiveIconStyle = @"info.marcel-dierkes.KeepingYouAwake.MenuBarInactiveIconStyle";
 NSString * const KYAUserDefaultsKeyMenuBarActiveCustomIconFile = @"info.marcel-dierkes.KeepingYouAwake.MenuBarActiveCustomIconFile";
 NSString * const KYAUserDefaultsKeyMenuBarInactiveCustomIconFile = @"info.marcel-dierkes.KeepingYouAwake.MenuBarInactiveCustomIconFile";
+NSString * const KYAUserDefaultsKeyMenuBarActiveIconColor = @"info.marcel-dierkes.KeepingYouAwake.MenuBarActiveIconColor";
+NSString * const KYAUserDefaultsKeyMenuBarInactiveIconColor = @"info.marcel-dierkes.KeepingYouAwake.MenuBarInactiveIconColor";
 NSString * const KYAUserDefaultsKeyShowRemainingTimeInMenuBar = @"info.marcel-dierkes.KeepingYouAwake.ShowRemainingTimeInMenuBar";
 NSString * const KYAUserDefaultsKeyRemainingTimeFormat = @"info.marcel-dierkes.KeepingYouAwake.RemainingTimeFormat";
 
-KYARemainingTimeFormat const KYARemainingTimeFormatCompact = @"compact";
-KYARemainingTimeFormat const KYARemainingTimeFormatDigital = @"digital";
-KYARemainingTimeFormat const KYARemainingTimeFormatMinutes = @"minutes";
+KYARemainingTimeFormat const KYARemainingTimeFormatCompact       = @"compact";
+KYARemainingTimeFormat const KYARemainingTimeFormatDigital       = @"digital";
+KYARemainingTimeFormat const KYARemainingTimeFormatHoursMinutes  = @"hoursMinutes";
+KYARemainingTimeFormat const KYARemainingTimeFormatMinutes       = @"minutes";
+KYARemainingTimeFormat const KYARemainingTimeFormatHours         = @"hours";
+KYARemainingTimeFormat const KYARemainingTimeFormatSeconds       = @"seconds";
+KYARemainingTimeFormat const KYARemainingTimeFormatVerbose       = @"verbose";
 
 - (NSString *)kya_menuBarActiveIconStyle
 {
@@ -154,6 +160,42 @@ KYARemainingTimeFormat const KYARemainingTimeFormatMinutes = @"minutes";
     else
     {
         [self setObject:filename forKey:KYAUserDefaultsKeyMenuBarInactiveCustomIconFile];
+    }
+}
+
+#pragma mark - Menu Bar Icon Colors
+
+- (NSString *)kya_menuBarActiveIconColor
+{
+    return [self stringForKey:KYAUserDefaultsKeyMenuBarActiveIconColor];
+}
+
+- (void)setKya_menuBarActiveIconColor:(NSString *)color
+{
+    if(color.length == 0)
+    {
+        [self removeObjectForKey:KYAUserDefaultsKeyMenuBarActiveIconColor];
+    }
+    else
+    {
+        [self setObject:color forKey:KYAUserDefaultsKeyMenuBarActiveIconColor];
+    }
+}
+
+- (NSString *)kya_menuBarInactiveIconColor
+{
+    return [self stringForKey:KYAUserDefaultsKeyMenuBarInactiveIconColor];
+}
+
+- (void)setKya_menuBarInactiveIconColor:(NSString *)color
+{
+    if(color.length == 0)
+    {
+        [self removeObjectForKey:KYAUserDefaultsKeyMenuBarInactiveIconColor];
+    }
+    else
+    {
+        [self setObject:color forKey:KYAUserDefaultsKeyMenuBarInactiveIconColor];
     }
 }
 

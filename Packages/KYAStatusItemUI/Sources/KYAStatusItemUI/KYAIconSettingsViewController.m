@@ -8,120 +8,26 @@
 #import <KYAStatusItemUI/KYAStatusItemImageProvider.h>
 #import <KYAApplicationSupport/NSUserDefaults+KYAKeys.h>
 #import <KYACommon/KYACommon.h>
-#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 
 typedef NS_ENUM(NSInteger, KYAIconSlot) {
     KYAIconSlotActive = 0,
     KYAIconSlotInactive = 1,
 };
 
-#pragma mark - Grid Item
-
-@interface KYAIconGridItem : NSCollectionViewItem
-@property (nonatomic, nullable) KYAMenuBarIconStyle *style;
-@end
-
-@implementation KYAIconGridItem {
-    NSImageView *_iconView;
-    NSView *_selectionBackdrop;
-}
-
-- (void)loadView
-{
-    NSView *view = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, 40, 40)];
-    view.wantsLayer = YES;
-
-    _selectionBackdrop = [[NSView alloc] initWithFrame:view.bounds];
-    _selectionBackdrop.wantsLayer = YES;
-    _selectionBackdrop.layer.cornerRadius = 6.0;
-    _selectionBackdrop.layer.backgroundColor = NSColor.clearColor.CGColor;
-    _selectionBackdrop.translatesAutoresizingMaskIntoConstraints = NO;
-    [view addSubview:_selectionBackdrop];
-
-    _iconView = [[NSImageView alloc] initWithFrame:NSZeroRect];
-    _iconView.imageScaling = NSImageScaleProportionallyUpOrDown;
-    _iconView.translatesAutoresizingMaskIntoConstraints = NO;
-    if(@available(macOS 11.0, *))
-    {
-        _iconView.contentTintColor = NSColor.labelColor;
-    }
-    [view addSubview:_iconView];
-
-    [NSLayoutConstraint activateConstraints:@[
-        [_selectionBackdrop.topAnchor constraintEqualToAnchor:view.topAnchor],
-        [_selectionBackdrop.leadingAnchor constraintEqualToAnchor:view.leadingAnchor],
-        [_selectionBackdrop.trailingAnchor constraintEqualToAnchor:view.trailingAnchor],
-        [_selectionBackdrop.bottomAnchor constraintEqualToAnchor:view.bottomAnchor],
-
-        [_iconView.centerXAnchor constraintEqualToAnchor:_selectionBackdrop.centerXAnchor],
-        [_iconView.centerYAnchor constraintEqualToAnchor:_selectionBackdrop.centerYAnchor],
-        [_iconView.widthAnchor constraintEqualToConstant:22],
-        [_iconView.heightAnchor constraintEqualToConstant:22],
-    ]];
-
-    self.view = view;
-}
-
-- (void)setStyle:(KYAMenuBarIconStyle *)style
-{
-    _style = style;
-    self.view.toolTip = style.displayName ?: @"";
-
-    NSImage *image = nil;
-    if(style.symbolName != nil)
-    {
-        if(@available(macOS 11.0, *))
-        {
-            image = [NSImage imageWithSystemSymbolName:style.symbolName
-                              accessibilityDescription:style.displayName];
-        }
-    }
-    else
-    {
-        image = [NSImage imageNamed:@"ActiveIcon"];
-    }
-    _iconView.image = image;
-}
-
-- (void)setSelected:(BOOL)selected
-{
-    [super setSelected:selected];
-    NSColor *accent = NSColor.alternateSelectedControlColor;
-    if(@available(macOS 10.14, *))
-    {
-        accent = NSColor.controlAccentColor;
-    }
-    _selectionBackdrop.layer.backgroundColor = selected
-        ? [accent colorWithAlphaComponent:0.25].CGColor
-        : NSColor.clearColor.CGColor;
-    _selectionBackdrop.layer.borderColor = selected
-        ? accent.CGColor
-        : NSColor.clearColor.CGColor;
-    _selectionBackdrop.layer.borderWidth = selected ? 1.5 : 0.0;
-}
-
-@end
+static const CGFloat kKYAAppearanceTabWidth = 480.0;
 
 #pragma mark - Controller
 
-@interface KYAIconSettingsViewController () <NSCollectionViewDataSource, NSCollectionViewDelegate, NSSearchFieldDelegate>
-@property (nonatomic) NSSegmentedControl *slotSegment;
-@property (nonatomic) NSSearchField *searchField;
-@property (nonatomic) NSPopUpButton *categoryPopUp;
-@property (nonatomic) NSCollectionView *collectionView;
-@property (nonatomic) NSTextField *activePreviewLabel;
-@property (nonatomic) NSImageView *activePreviewIcon;
-@property (nonatomic) NSTextField *inactivePreviewLabel;
-@property (nonatomic) NSImageView *inactivePreviewIcon;
+@interface KYAIconSettingsViewController ()
+@property (nonatomic) NSPopUpButton *activeIconPopUp;
+@property (nonatomic) NSPopUpButton *inactiveIconPopUp;
+@property (nonatomic) NSColorWell *activeColorWell;
+@property (nonatomic) NSColorWell *inactiveColorWell;
+@property (nonatomic) NSButton *activeColorResetButton;
+@property (nonatomic) NSButton *inactiveColorResetButton;
 
 @property (nonatomic) NSButton *showRemainingTimeCheckbox;
 @property (nonatomic) NSPopUpButton *formatPopUp;
-
-@property (nonatomic) NSButton *chooseCustomFileButton;
-@property (nonatomic) NSButton *clearCustomFileButton;
-@property (nonatomic) NSTextField *customFileLabel;
-
-@property (nonatomic) NSArray<KYAMenuBarIconStyle *> *filteredStyles;
 @end
 
 @implementation KYAIconSettingsViewController
@@ -149,118 +55,62 @@ typedef NS_ENUM(NSInteger, KYAIconSlot) {
     return YES;
 }
 
-static const CGFloat kKYAMenuBarTabWidth = 480.0;
-
 - (void)loadView
 {
-    NSView *container = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, kKYAMenuBarTabWidth, 520)];
+    NSView *container = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, kKYAAppearanceTabWidth, 360)];
 
-    // --- Slot segmented control (Active / Inactive) -------------------
-    Auto slotSegment = [NSSegmentedControl segmentedControlWithLabels:@[
-        NSLocalizedString(@"Active Icon", @""),
-        NSLocalizedString(@"Inactive Icon", @""),
-    ] trackingMode:NSSegmentSwitchTrackingSelectOne target:self action:@selector(slotChanged:)];
-    slotSegment.segmentStyle = NSSegmentStyleTexturedSquare;
-    slotSegment.translatesAutoresizingMaskIntoConstraints = NO;
-    [slotSegment setSelected:YES forSegment:KYAIconSlotActive];
-    self.slotSegment = slotSegment;
+    // --- Icon / color rows --------------------------------------------
+    Auto iconHeader = [self sectionHeader:NSLocalizedString(@"Menu Bar Icon", @"")];
 
-    // --- Search + category row ----------------------------------------
-    Auto searchField = [NSSearchField new];
-    searchField.placeholderString = NSLocalizedString(@"Search symbols", @"");
-    searchField.delegate = self;
-    searchField.translatesAutoresizingMaskIntoConstraints = NO;
-    self.searchField = searchField;
+    Auto inactiveLabel = [NSTextField labelWithString:NSLocalizedString(@"Inactive", @"")];
+    inactiveLabel.translatesAutoresizingMaskIntoConstraints = NO;
 
-    Auto categoryPopUp = [NSPopUpButton new];
-    categoryPopUp.translatesAutoresizingMaskIntoConstraints = NO;
-    categoryPopUp.bezelStyle = NSBezelStyleRounded;
-    [categoryPopUp addItemWithTitle:NSLocalizedString(@"All Categories", @"")];
-    for(KYAMenuBarIconCategory category in [KYAMenuBarIconStyle orderedCategories])
-    {
-        NSString *title = [KYAMenuBarIconStyle displayNameForCategory:category];
-        NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:title action:nil keyEquivalent:@""];
-        item.representedObject = category;
-        [categoryPopUp.menu addItem:item];
-    }
-    categoryPopUp.target = self;
-    categoryPopUp.action = @selector(categoryChanged:);
-    self.categoryPopUp = categoryPopUp;
+    Auto inactivePopUp = [self newIconPopUpForSlot:KYAIconSlotInactive];
+    self.inactiveIconPopUp = inactivePopUp;
 
-    // --- Collection view ----------------------------------------------
-    Auto layout = [NSCollectionViewFlowLayout new];
-    layout.itemSize = NSMakeSize(40, 40);
-    layout.minimumInteritemSpacing = 6;
-    layout.minimumLineSpacing = 6;
-    layout.sectionInset = NSEdgeInsetsMake(8, 8, 8, 8);
+    Auto inactiveColorWell = [self newColorWell];
+    inactiveColorWell.action = @selector(inactiveColorChanged:);
+    inactiveColorWell.target = self;
+    self.inactiveColorWell = inactiveColorWell;
 
-    Auto collectionView = [[NSCollectionView alloc] initWithFrame:NSZeroRect];
-    collectionView.collectionViewLayout = layout;
-    collectionView.dataSource = self;
-    collectionView.delegate = self;
-    collectionView.selectable = YES;
-    collectionView.allowsEmptySelection = NO;
-    collectionView.allowsMultipleSelection = NO;
-    collectionView.backgroundColors = @[NSColor.clearColor];
-    [collectionView registerClass:[KYAIconGridItem class]
-            forItemWithIdentifier:@"KYAIconGridItem"];
+    Auto inactiveReset = [self newResetButtonWithAction:@selector(resetInactiveColor:)];
+    self.inactiveColorResetButton = inactiveReset;
 
-    Auto scrollView = [NSScrollView new];
-    scrollView.translatesAutoresizingMaskIntoConstraints = NO;
-    scrollView.hasVerticalScroller = YES;
-    scrollView.borderType = NSBezelBorder;
-    scrollView.documentView = collectionView;
-    self.collectionView = collectionView;
+    Auto inactiveRow = [NSStackView stackViewWithViews:@[inactiveLabel, inactivePopUp, inactiveColorWell, inactiveReset]];
+    inactiveRow.orientation = NSUserInterfaceLayoutOrientationHorizontal;
+    inactiveRow.spacing = 10;
+    inactiveRow.alignment = NSLayoutAttributeCenterY;
+    inactiveRow.translatesAutoresizingMaskIntoConstraints = NO;
 
-    // --- Previews ------------------------------------------------------
-    Auto activePreviewIcon = [NSImageView new];
-    activePreviewIcon.translatesAutoresizingMaskIntoConstraints = NO;
-    activePreviewIcon.imageScaling = NSImageScaleProportionallyUpOrDown;
-    self.activePreviewIcon = activePreviewIcon;
+    Auto activeLabel = [NSTextField labelWithString:NSLocalizedString(@"Active", @"")];
+    activeLabel.translatesAutoresizingMaskIntoConstraints = NO;
 
-    Auto activePreviewLabel = [NSTextField labelWithString:@""];
-    activePreviewLabel.font = [NSFont systemFontOfSize:NSFont.smallSystemFontSize];
-    activePreviewLabel.textColor = NSColor.secondaryLabelColor;
-    activePreviewLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.activePreviewLabel = activePreviewLabel;
+    Auto activePopUp = [self newIconPopUpForSlot:KYAIconSlotActive];
+    self.activeIconPopUp = activePopUp;
 
-    Auto activeHeader = [NSTextField labelWithString:NSLocalizedString(@"Active:", @"")];
-    activeHeader.font = [NSFont boldSystemFontOfSize:NSFont.smallSystemFontSize];
-    activeHeader.translatesAutoresizingMaskIntoConstraints = NO;
+    Auto activeColorWell = [self newColorWell];
+    activeColorWell.action = @selector(activeColorChanged:);
+    activeColorWell.target = self;
+    self.activeColorWell = activeColorWell;
 
-    Auto inactivePreviewIcon = [NSImageView new];
-    inactivePreviewIcon.translatesAutoresizingMaskIntoConstraints = NO;
-    inactivePreviewIcon.imageScaling = NSImageScaleProportionallyUpOrDown;
-    self.inactivePreviewIcon = inactivePreviewIcon;
+    Auto activeReset = [self newResetButtonWithAction:@selector(resetActiveColor:)];
+    self.activeColorResetButton = activeReset;
 
-    Auto inactivePreviewLabel = [NSTextField labelWithString:@""];
-    inactivePreviewLabel.font = [NSFont systemFontOfSize:NSFont.smallSystemFontSize];
-    inactivePreviewLabel.textColor = NSColor.secondaryLabelColor;
-    inactivePreviewLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.inactivePreviewLabel = inactivePreviewLabel;
+    Auto activeRow = [NSStackView stackViewWithViews:@[activeLabel, activePopUp, activeColorWell, activeReset]];
+    activeRow.orientation = NSUserInterfaceLayoutOrientationHorizontal;
+    activeRow.spacing = 10;
+    activeRow.alignment = NSLayoutAttributeCenterY;
+    activeRow.translatesAutoresizingMaskIntoConstraints = NO;
 
-    Auto inactiveHeader = [NSTextField labelWithString:NSLocalizedString(@"Inactive:", @"")];
-    inactiveHeader.font = [NSFont boldSystemFontOfSize:NSFont.smallSystemFontSize];
-    inactiveHeader.translatesAutoresizingMaskIntoConstraints = NO;
+    // Keep the two labels the same width so popups line up vertically.
+    CGFloat labelWidth = 70.0;
 
-    Auto previewRow = [NSStackView stackViewWithViews:@[
-        activeHeader, activePreviewIcon, activePreviewLabel,
-        [NSView new],
-        inactiveHeader, inactivePreviewIcon, inactivePreviewLabel,
-    ]];
-    previewRow.orientation = NSUserInterfaceLayoutOrientationHorizontal;
-    previewRow.alignment = NSLayoutAttributeCenterY;
-    previewRow.spacing = 6;
-    previewRow.translatesAutoresizingMaskIntoConstraints = NO;
-
+    // --- Remaining time section ---------------------------------------
     Auto divider = [NSBox new];
     divider.boxType = NSBoxSeparator;
     divider.translatesAutoresizingMaskIntoConstraints = NO;
 
-    // --- Remaining time section ---------------------------------------
-    Auto timeHeader = [NSTextField labelWithString:NSLocalizedString(@"Remaining Time", @"")];
-    timeHeader.font = [NSFont boldSystemFontOfSize:NSFont.systemFontSize];
-    timeHeader.translatesAutoresizingMaskIntoConstraints = NO;
+    Auto timeHeader = [self sectionHeader:NSLocalizedString(@"Remaining Time", @"")];
 
     Auto showRemaining = [NSButton checkboxWithTitle:NSLocalizedString(@"Show remaining time next to menu bar icon", @"")
                                               target:self
@@ -275,21 +125,13 @@ static const CGFloat kKYAMenuBarTabWidth = 480.0;
     showRemainingHelp.lineBreakMode = NSLineBreakByWordWrapping;
     showRemainingHelp.maximumNumberOfLines = 2;
 
-    Auto formatLabel = [NSTextField labelWithString:NSLocalizedString(@"Format:", @"")];
+    Auto formatLabel = [NSTextField labelWithString:NSLocalizedString(@"Date Format:", @"")];
     formatLabel.translatesAutoresizingMaskIntoConstraints = NO;
 
     Auto formatPopUp = [NSPopUpButton new];
     formatPopUp.translatesAutoresizingMaskIntoConstraints = NO;
     formatPopUp.bezelStyle = NSBezelStyleRounded;
-    [self addFormatItem:formatPopUp
-                  title:NSLocalizedString(@"Compact (2h 30m)", @"")
-                  value:KYARemainingTimeFormatCompact];
-    [self addFormatItem:formatPopUp
-                  title:NSLocalizedString(@"Digital (2:30:00)", @"")
-                  value:KYARemainingTimeFormatDigital];
-    [self addFormatItem:formatPopUp
-                  title:NSLocalizedString(@"Minutes (150m)", @"")
-                  value:KYARemainingTimeFormatMinutes];
+    [self populateFormatPopUp:formatPopUp];
     formatPopUp.target = self;
     formatPopUp.action = @selector(formatChanged:);
     self.formatPopUp = formatPopUp;
@@ -297,53 +139,18 @@ static const CGFloat kKYAMenuBarTabWidth = 480.0;
     Auto formatRow = [NSStackView stackViewWithViews:@[formatLabel, formatPopUp]];
     formatRow.orientation = NSUserInterfaceLayoutOrientationHorizontal;
     formatRow.spacing = 8;
+    formatRow.alignment = NSLayoutAttributeCenterY;
     formatRow.translatesAutoresizingMaskIntoConstraints = NO;
 
-    Auto filterRow = [NSStackView stackViewWithViews:@[searchField, categoryPopUp]];
-    filterRow.orientation = NSUserInterfaceLayoutOrientationHorizontal;
-    filterRow.spacing = 8;
-    filterRow.distribution = NSStackViewDistributionFill;
-    filterRow.translatesAutoresizingMaskIntoConstraints = NO;
-
-    // --- Custom file row ----------------------------------------------
-    Auto chooseCustom = [NSButton buttonWithTitle:NSLocalizedString(@"Custom File…", @"")
-                                           target:self
-                                           action:@selector(chooseCustomFile:)];
-    chooseCustom.translatesAutoresizingMaskIntoConstraints = NO;
-    chooseCustom.bezelStyle = NSBezelStyleRounded;
-    self.chooseCustomFileButton = chooseCustom;
-
-    Auto clearCustom = [NSButton buttonWithTitle:NSLocalizedString(@"Reset", @"")
-                                          target:self
-                                          action:@selector(clearCustomFile:)];
-    clearCustom.translatesAutoresizingMaskIntoConstraints = NO;
-    clearCustom.bezelStyle = NSBezelStyleRounded;
-    self.clearCustomFileButton = clearCustom;
-
-    Auto customLabel = [NSTextField labelWithString:@""];
-    customLabel.font = [NSFont systemFontOfSize:NSFont.smallSystemFontSize];
-    customLabel.textColor = NSColor.secondaryLabelColor;
-    customLabel.lineBreakMode = NSLineBreakByTruncatingMiddle;
-    customLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.customFileLabel = customLabel;
-
-    Auto customRow = [NSStackView stackViewWithViews:@[chooseCustom, clearCustom, customLabel]];
-    customRow.orientation = NSUserInterfaceLayoutOrientationHorizontal;
-    customRow.spacing = 8;
-    customRow.alignment = NSLayoutAttributeCenterY;
-    customRow.translatesAutoresizingMaskIntoConstraints = NO;
-
-    // Layout root stack
+    // --- Root stack ---------------------------------------------------
     Auto stack = [NSStackView new];
     stack.orientation = NSUserInterfaceLayoutOrientationVertical;
     stack.alignment = NSLayoutAttributeLeading;
-    stack.spacing = 10;
+    stack.spacing = 12;
     stack.translatesAutoresizingMaskIntoConstraints = NO;
-    [stack addArrangedSubview:slotSegment];
-    [stack addArrangedSubview:filterRow];
-    [stack addArrangedSubview:scrollView];
-    [stack addArrangedSubview:customRow];
-    [stack addArrangedSubview:previewRow];
+    [stack addArrangedSubview:iconHeader];
+    [stack addArrangedSubview:inactiveRow];
+    [stack addArrangedSubview:activeRow];
     [stack addArrangedSubview:divider];
     [stack addArrangedSubview:timeHeader];
     [stack addArrangedSubview:showRemaining];
@@ -352,39 +159,29 @@ static const CGFloat kKYAMenuBarTabWidth = 480.0;
 
     [container addSubview:stack];
     [NSLayoutConstraint activateConstraints:@[
-        [container.widthAnchor constraintEqualToConstant:kKYAMenuBarTabWidth],
+        [container.widthAnchor constraintEqualToConstant:kKYAAppearanceTabWidth],
 
         [stack.topAnchor constraintEqualToAnchor:container.topAnchor constant:20],
         [stack.leadingAnchor constraintEqualToAnchor:container.leadingAnchor constant:20],
         [stack.trailingAnchor constraintEqualToAnchor:container.trailingAnchor constant:-20],
-        [stack.bottomAnchor constraintEqualToAnchor:container.bottomAnchor constant:-20],
-
-        [slotSegment.leadingAnchor constraintEqualToAnchor:stack.leadingAnchor],
-        [slotSegment.trailingAnchor constraintEqualToAnchor:stack.trailingAnchor],
-
-        [filterRow.leadingAnchor constraintEqualToAnchor:stack.leadingAnchor],
-        [filterRow.trailingAnchor constraintEqualToAnchor:stack.trailingAnchor],
-        [categoryPopUp.widthAnchor constraintGreaterThanOrEqualToConstant:160],
-
-        [scrollView.leadingAnchor constraintEqualToAnchor:stack.leadingAnchor],
-        [scrollView.trailingAnchor constraintEqualToAnchor:stack.trailingAnchor],
-        [scrollView.heightAnchor constraintEqualToConstant:260],
-
-        [customRow.leadingAnchor constraintEqualToAnchor:stack.leadingAnchor],
-        [customRow.trailingAnchor constraintEqualToAnchor:stack.trailingAnchor],
-
-        [previewRow.leadingAnchor constraintEqualToAnchor:stack.leadingAnchor],
-        [previewRow.trailingAnchor constraintEqualToAnchor:stack.trailingAnchor],
-        [activePreviewIcon.widthAnchor constraintEqualToConstant:16],
-        [activePreviewIcon.heightAnchor constraintEqualToConstant:16],
-        [inactivePreviewIcon.widthAnchor constraintEqualToConstant:16],
-        [inactivePreviewIcon.heightAnchor constraintEqualToConstant:16],
+        [stack.bottomAnchor constraintLessThanOrEqualToAnchor:container.bottomAnchor constant:-20],
 
         [divider.leadingAnchor constraintEqualToAnchor:stack.leadingAnchor],
         [divider.trailingAnchor constraintEqualToAnchor:stack.trailingAnchor],
 
         [showRemainingHelp.leadingAnchor constraintEqualToAnchor:stack.leadingAnchor],
         [showRemainingHelp.trailingAnchor constraintEqualToAnchor:stack.trailingAnchor],
+
+        [inactiveLabel.widthAnchor constraintEqualToConstant:labelWidth],
+        [activeLabel.widthAnchor constraintEqualToConstant:labelWidth],
+
+        [inactivePopUp.widthAnchor constraintGreaterThanOrEqualToConstant:200],
+        [activePopUp.widthAnchor constraintGreaterThanOrEqualToConstant:200],
+
+        [inactiveColorWell.widthAnchor constraintEqualToConstant:44],
+        [inactiveColorWell.heightAnchor constraintEqualToConstant:24],
+        [activeColorWell.widthAnchor constraintEqualToConstant:44],
+        [activeColorWell.heightAnchor constraintEqualToConstant:24],
     ]];
 
     self.view = container;
@@ -399,21 +196,122 @@ static const CGFloat kKYAMenuBarTabWidth = 480.0;
         ? NSControlStateValueOn
         : NSControlStateValueOff;
     [self selectFormat:defaults.kya_remainingTimeFormat];
-
-    [self reloadFilteredStyles];
-    [self refreshPreviewLabels];
-    [self selectCurrentStyleInGrid];
+    [self refreshIconSelection];
+    [self refreshColorWells];
 }
 
 - (void)viewWillAppear
 {
     [super viewWillAppear];
-    // Keep in sync with KYASettingsContentViewController's unified size so the
-    // preferences window stays a constant size across tabs.
-    self.preferredContentSize = NSMakeSize(kKYAMenuBarTabWidth, 600.0);
+    self.preferredContentSize = NSMakeSize(kKYAAppearanceTabWidth, 360.0);
 }
 
-#pragma mark - Helpers
+#pragma mark - Factories
+
+- (NSTextField *)sectionHeader:(NSString *)title
+{
+    NSTextField *label = [NSTextField labelWithString:title];
+    label.font = [NSFont boldSystemFontOfSize:NSFont.systemFontSize];
+    label.translatesAutoresizingMaskIntoConstraints = NO;
+    return label;
+}
+
+- (NSPopUpButton *)newIconPopUpForSlot:(KYAIconSlot)slot
+{
+    NSPopUpButton *popUp = [NSPopUpButton new];
+    popUp.translatesAutoresizingMaskIntoConstraints = NO;
+    popUp.bezelStyle = NSBezelStyleRounded;
+    popUp.pullsDown = NO;
+    popUp.target = self;
+    popUp.action = (slot == KYAIconSlotActive) ? @selector(activeIconChanged:) : @selector(inactiveIconChanged:);
+    popUp.tag = slot;
+
+    [self populateIconMenu:popUp.menu];
+    return popUp;
+}
+
+- (void)populateIconMenu:(NSMenu *)menu
+{
+    Auto styles = [KYAMenuBarIconStyle allStyles];
+    KYAMenuBarIconCategory lastCategory = nil;
+
+    for(KYAMenuBarIconStyle *style in styles)
+    {
+        if(lastCategory != nil && ![style.category isEqualToString:lastCategory])
+        {
+            [menu addItem:[NSMenuItem separatorItem]];
+        }
+        lastCategory = style.category;
+
+        NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:style.displayName action:nil keyEquivalent:@""];
+        item.representedObject = style.identifier;
+        item.image = [self menuIconImageForStyle:style];
+        [menu addItem:item];
+    }
+}
+
+- (nullable NSImage *)menuIconImageForStyle:(KYAMenuBarIconStyle *)style
+{
+    NSImage *image = nil;
+    if(style.symbolName != nil)
+    {
+        if(@available(macOS 11.0, *))
+        {
+            image = [NSImage imageWithSystemSymbolName:style.symbolName
+                              accessibilityDescription:style.displayName];
+        }
+    }
+    if(image == nil)
+    {
+        image = [NSImage imageNamed:@"ActiveIcon"];
+    }
+    image.size = NSMakeSize(16, 16);
+    return image;
+}
+
+- (NSColorWell *)newColorWell
+{
+    NSColorWell *well = [NSColorWell new];
+    well.translatesAutoresizingMaskIntoConstraints = NO;
+    well.color = NSColor.labelColor;
+    return well;
+}
+
+- (NSButton *)newResetButtonWithAction:(SEL)action
+{
+    NSButton *button = [NSButton buttonWithTitle:NSLocalizedString(@"Auto", @"Reset icon color to default")
+                                          target:self
+                                          action:action];
+    button.bezelStyle = NSBezelStyleRounded;
+    button.translatesAutoresizingMaskIntoConstraints = NO;
+    button.toolTip = NSLocalizedString(@"Reset to the system default (auto-adapts to light / dark mode).", @"");
+    return button;
+}
+
+- (void)populateFormatPopUp:(NSPopUpButton *)popUp
+{
+    [self addFormatItem:popUp
+                  title:NSLocalizedString(@"Compact (2h 30m)", @"")
+                  value:KYARemainingTimeFormatCompact];
+    [self addFormatItem:popUp
+                  title:NSLocalizedString(@"Digital HH:MM:SS (2:30:00)", @"")
+                  value:KYARemainingTimeFormatDigital];
+    [self addFormatItem:popUp
+                  title:NSLocalizedString(@"Digital HH:MM (2:30)", @"")
+                  value:KYARemainingTimeFormatHoursMinutes];
+    [self addFormatItem:popUp
+                  title:NSLocalizedString(@"Minutes (150m)", @"")
+                  value:KYARemainingTimeFormatMinutes];
+    [self addFormatItem:popUp
+                  title:NSLocalizedString(@"Hours (3h)", @"")
+                  value:KYARemainingTimeFormatHours];
+    [self addFormatItem:popUp
+                  title:NSLocalizedString(@"Seconds (9000s)", @"")
+                  value:KYARemainingTimeFormatSeconds];
+    [self addFormatItem:popUp
+                  title:NSLocalizedString(@"Verbose (2 hours 30 minutes)", @"")
+                  value:KYARemainingTimeFormatVerbose];
+}
 
 - (void)addFormatItem:(NSPopUpButton *)popUp title:(NSString *)title value:(KYARemainingTimeFormat)value
 {
@@ -421,6 +319,8 @@ static const CGFloat kKYAMenuBarTabWidth = 480.0;
     item.representedObject = value;
     [popUp.menu addItem:item];
 }
+
+#pragma mark - Selection sync
 
 - (void)selectFormat:(KYARemainingTimeFormat)format
 {
@@ -435,161 +335,84 @@ static const CGFloat kKYAMenuBarTabWidth = 480.0;
     [self.formatPopUp selectItemAtIndex:0];
 }
 
-- (KYAIconSlot)currentSlot
-{
-    return (KYAIconSlot)self.slotSegment.selectedSegment;
-}
-
-- (KYAMenuBarIconStyleID)currentSlotStyleID
+- (void)refreshIconSelection
 {
     Auto defaults = NSUserDefaults.standardUserDefaults;
-    return (self.currentSlot == KYAIconSlotActive)
-        ? defaults.kya_menuBarActiveIconStyle
-        : defaults.kya_menuBarInactiveIconStyle;
+    [self selectStyleID:defaults.kya_menuBarActiveIconStyle inPopUp:self.activeIconPopUp];
+    [self selectStyleID:defaults.kya_menuBarInactiveIconStyle inPopUp:self.inactiveIconPopUp];
 }
 
-- (void)setCurrentSlotStyleID:(KYAMenuBarIconStyleID)identifier
+- (void)selectStyleID:(nullable KYAMenuBarIconStyleID)styleID inPopUp:(NSPopUpButton *)popUp
 {
-    Auto defaults = NSUserDefaults.standardUserDefaults;
-    if(self.currentSlot == KYAIconSlotActive)
+    NSString *target = styleID.length > 0 ? styleID : KYAMenuBarIconStyleIDDefault;
+    for(NSMenuItem *item in popUp.menu.itemArray)
     {
-        defaults.kya_menuBarActiveIconStyle = identifier;
-    }
-    else
-    {
-        defaults.kya_menuBarInactiveIconStyle = identifier;
-    }
-    [KYAStatusItemImageProvider.currentProvider reloadFromDefaults];
-}
-
-- (void)reloadFilteredStyles
-{
-    NSString *query = self.searchField.stringValue.lowercaseString;
-    KYAMenuBarIconCategory selectedCategory = self.categoryPopUp.selectedItem.representedObject;
-
-    Auto all = [KYAMenuBarIconStyle allStyles];
-    Auto result = [NSMutableArray<KYAMenuBarIconStyle *> new];
-    for(KYAMenuBarIconStyle *style in all)
-    {
-        if(selectedCategory.length > 0 && ![style.category isEqualToString:selectedCategory])
+        if([item.representedObject isEqualToString:target])
         {
-            continue;
-        }
-        if(query.length > 0)
-        {
-            NSString *haystack = [NSString stringWithFormat:@"%@ %@ %@",
-                                  style.displayName, style.symbolName ?: @"", style.category];
-            if([haystack.lowercaseString rangeOfString:query].location == NSNotFound)
-            {
-                continue;
-            }
-        }
-        [result addObject:style];
-    }
-    self.filteredStyles = [result copy];
-    [self.collectionView reloadData];
-}
-
-- (void)selectCurrentStyleInGrid
-{
-    KYAMenuBarIconStyleID current = [self currentSlotStyleID];
-    NSString *targetID = current.length > 0 ? current : KYAMenuBarIconStyleIDDefault;
-    for(NSInteger i = 0; i < self.filteredStyles.count; i++)
-    {
-        if([self.filteredStyles[i].identifier isEqualToString:targetID])
-        {
-            NSIndexPath *path = [NSIndexPath indexPathForItem:i inSection:0];
-            [self.collectionView selectItemsAtIndexPaths:[NSSet setWithObject:path]
-                                          scrollPosition:NSCollectionViewScrollPositionCenteredVertically];
+            [popUp selectItem:item];
             return;
         }
     }
+    [popUp selectItemAtIndex:0];
 }
 
-- (void)refreshPreviewLabels
+- (void)refreshColorWells
 {
     Auto defaults = NSUserDefaults.standardUserDefaults;
-    NSString *activeCustom = defaults.kya_menuBarActiveCustomIconFile;
-    NSString *inactiveCustom = defaults.kya_menuBarInactiveCustomIconFile;
-
-    if(activeCustom.length > 0)
-    {
-        self.activePreviewLabel.stringValue = [NSString stringWithFormat:@"📎 %@", activeCustom];
-        self.activePreviewIcon.image = [self customPreviewImageForFilename:activeCustom];
-    }
-    else
-    {
-        Auto active = [KYAMenuBarIconStyle styleForIdentifier:defaults.kya_menuBarActiveIconStyle];
-        self.activePreviewLabel.stringValue = active.displayName ?: @"";
-        self.activePreviewIcon.image = [self previewImageForStyle:active];
-    }
-
-    if(inactiveCustom.length > 0)
-    {
-        self.inactivePreviewLabel.stringValue = [NSString stringWithFormat:@"📎 %@", inactiveCustom];
-        self.inactivePreviewIcon.image = [self customPreviewImageForFilename:inactiveCustom];
-    }
-    else
-    {
-        Auto inactive = [KYAMenuBarIconStyle styleForIdentifier:defaults.kya_menuBarInactiveIconStyle];
-        self.inactivePreviewLabel.stringValue = inactive.displayName ?: @"";
-        self.inactivePreviewIcon.image = [self previewImageForStyle:inactive];
-    }
-
-    [self refreshCustomFileRow];
+    self.activeColorWell.color = [self colorForHexString:defaults.kya_menuBarActiveIconColor];
+    self.inactiveColorWell.color = [self colorForHexString:defaults.kya_menuBarInactiveIconColor];
+    self.activeColorResetButton.enabled = (defaults.kya_menuBarActiveIconColor.length > 0);
+    self.inactiveColorResetButton.enabled = (defaults.kya_menuBarInactiveIconColor.length > 0);
 }
 
-- (void)refreshCustomFileRow
+- (NSColor *)colorForHexString:(nullable NSString *)hex
 {
-    NSString *filename = [self currentSlotCustomFilename];
-    if(filename.length > 0)
-    {
-        self.customFileLabel.stringValue = filename;
-        self.customFileLabel.toolTip = filename;
-        self.clearCustomFileButton.enabled = YES;
-    }
-    else
-    {
-        self.customFileLabel.stringValue = NSLocalizedString(@"No custom file — using grid selection", @"");
-        self.customFileLabel.toolTip = nil;
-        self.clearCustomFileButton.enabled = NO;
-    }
-}
-
-- (nullable NSImage *)customPreviewImageForFilename:(NSString *)filename
-{
-    Auto url = [[self customIconsDirectoryURL] URLByAppendingPathComponent:filename];
-    NSImage *image = [[NSImage alloc] initWithContentsOfURL:url];
-    image.template = YES;
-    return image;
-}
-
-- (nullable NSImage *)previewImageForStyle:(KYAMenuBarIconStyle *)style
-{
-    if(style.symbolName == nil)
-    {
-        return [NSImage imageNamed:@"ActiveIcon"];
-    }
-    if(@available(macOS 11.0, *))
-    {
-        return [NSImage imageWithSystemSymbolName:style.symbolName
-                         accessibilityDescription:style.displayName];
-    }
-    return nil;
+    NSColor *parsed = [[self class] colorFromHexString:hex];
+    return parsed ?: NSColor.labelColor;
 }
 
 #pragma mark - Actions
 
-- (void)slotChanged:(id)sender
+- (void)activeIconChanged:(NSPopUpButton *)sender
 {
-    [self selectCurrentStyleInGrid];
-    [self refreshCustomFileRow];
+    NSString *identifier = sender.selectedItem.representedObject;
+    if(identifier.length == 0) { return; }
+    NSUserDefaults.standardUserDefaults.kya_menuBarActiveIconStyle = identifier;
+    [KYAStatusItemImageProvider.currentProvider reloadFromDefaults];
 }
 
-- (void)categoryChanged:(id)sender
+- (void)inactiveIconChanged:(NSPopUpButton *)sender
 {
-    [self reloadFilteredStyles];
-    [self selectCurrentStyleInGrid];
+    NSString *identifier = sender.selectedItem.representedObject;
+    if(identifier.length == 0) { return; }
+    NSUserDefaults.standardUserDefaults.kya_menuBarInactiveIconStyle = identifier;
+    [KYAStatusItemImageProvider.currentProvider reloadFromDefaults];
+}
+
+- (void)activeColorChanged:(NSColorWell *)sender
+{
+    NSUserDefaults.standardUserDefaults.kya_menuBarActiveIconColor = [[self class] hexStringFromColor:sender.color];
+    self.activeColorResetButton.enabled = YES;
+}
+
+- (void)inactiveColorChanged:(NSColorWell *)sender
+{
+    NSUserDefaults.standardUserDefaults.kya_menuBarInactiveIconColor = [[self class] hexStringFromColor:sender.color];
+    self.inactiveColorResetButton.enabled = YES;
+}
+
+- (void)resetActiveColor:(id)sender
+{
+    NSUserDefaults.standardUserDefaults.kya_menuBarActiveIconColor = nil;
+    self.activeColorWell.color = NSColor.labelColor;
+    self.activeColorResetButton.enabled = NO;
+}
+
+- (void)resetInactiveColor:(id)sender
+{
+    NSUserDefaults.standardUserDefaults.kya_menuBarInactiveIconColor = nil;
+    self.inactiveColorWell.color = NSColor.labelColor;
+    self.inactiveColorResetButton.enabled = NO;
 }
 
 - (void)showRemainingTimeChanged:(NSButton *)sender
@@ -607,159 +430,53 @@ static const CGFloat kKYAMenuBarTabWidth = 480.0;
     }
 }
 
-- (void)chooseCustomFile:(id)sender
+#pragma mark - Hex helpers
+
++ (nullable NSColor *)colorFromHexString:(nullable NSString *)hex
 {
-    NSOpenPanel *panel = [NSOpenPanel openPanel];
-    panel.canChooseFiles = YES;
-    panel.canChooseDirectories = NO;
-    panel.allowsMultipleSelection = NO;
-    panel.message = NSLocalizedString(@"Pick an image (SVG, PDF, or PNG recommended). It will be rendered as a template — colors are ignored.", @"");
-    if(@available(macOS 11.0, *))
+    if(hex.length == 0) { return nil; }
+
+    NSString *trimmed = hex;
+    if([trimmed hasPrefix:@"#"])
     {
-        NSMutableArray<UTType *> *types = [NSMutableArray arrayWithObjects:UTTypeSVG, UTTypePDF, UTTypePNG, UTTypeTIFF, UTTypeImage, nil];
-        panel.allowedContentTypes = types;
+        trimmed = [trimmed substringFromIndex:1];
+    }
+    if(trimmed.length != 6 && trimmed.length != 8) { return nil; }
+
+    unsigned int value = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:trimmed];
+    if(![scanner scanHexInt:&value]) { return nil; }
+
+    CGFloat r, g, b, a = 1.0;
+    if(trimmed.length == 6)
+    {
+        r = ((value >> 16) & 0xFF) / 255.0;
+        g = ((value >> 8) & 0xFF) / 255.0;
+        b = (value & 0xFF) / 255.0;
     }
     else
     {
-        panel.allowedFileTypes = @[@"svg", @"pdf", @"png", @"tiff", @"tif"];
+        r = ((value >> 24) & 0xFF) / 255.0;
+        g = ((value >> 16) & 0xFF) / 255.0;
+        b = ((value >> 8) & 0xFF) / 255.0;
+        a = (value & 0xFF) / 255.0;
     }
-
-    NSWindow *window = self.view.window;
-    void (^handler)(NSModalResponse) = ^(NSModalResponse response) {
-        if(response != NSModalResponseOK) { return; }
-        NSURL *src = panel.URLs.firstObject;
-        if(src == nil) { return; }
-        [self importCustomFileAtURL:src];
-    };
-    if(window != nil) { [panel beginSheetModalForWindow:window completionHandler:handler]; }
-    else              { handler([panel runModal]); }
+    return [NSColor colorWithSRGBRed:r green:g blue:b alpha:a];
 }
 
-- (void)importCustomFileAtURL:(NSURL *)sourceURL
++ (NSString *)hexStringFromColor:(NSColor *)color
 {
-    NSURL *directory = [self customIconsDirectoryURL];
-    NSError *error = nil;
-    if(![NSFileManager.defaultManager createDirectoryAtURL:directory
-                               withIntermediateDirectories:YES
-                                                attributes:nil
-                                                     error:&error])
-    {
-        [self presentError:error];
-        return;
-    }
+    NSColor *srgb = [color colorUsingColorSpace:NSColorSpace.sRGBColorSpace];
+    if(srgb == nil) { srgb = color; }
 
-    NSString *ext = sourceURL.pathExtension.length > 0 ? sourceURL.pathExtension : @"png";
-    NSString *slotName = (self.currentSlot == KYAIconSlotActive) ? @"CustomActive" : @"CustomInactive";
-    NSString *filename = [NSString stringWithFormat:@"%@.%@", slotName, ext];
-    NSURL *dest = [directory URLByAppendingPathComponent:filename];
+    CGFloat r = 0, g = 0, b = 0, a = 0;
+    [srgb getRed:&r green:&g blue:&b alpha:&a];
 
-    // Replace any previous file (including a different extension) for this slot.
-    [self removeExistingCustomFilesForSlot:self.currentSlot inDirectory:directory];
+    unsigned int ri = (unsigned int)round(MAX(0, MIN(1, r)) * 255);
+    unsigned int gi = (unsigned int)round(MAX(0, MIN(1, g)) * 255);
+    unsigned int bi = (unsigned int)round(MAX(0, MIN(1, b)) * 255);
 
-    if(![NSFileManager.defaultManager copyItemAtURL:sourceURL toURL:dest error:&error])
-    {
-        [self presentError:error];
-        return;
-    }
-
-    [self setCurrentSlotCustomFilename:filename];
-    [KYAStatusItemImageProvider.currentProvider reloadFromDefaults];
-    [self refreshPreviewLabels];
-}
-
-- (void)clearCustomFile:(id)sender
-{
-    NSString *filename = [self currentSlotCustomFilename];
-    if(filename.length > 0)
-    {
-        NSURL *url = [[self customIconsDirectoryURL] URLByAppendingPathComponent:filename];
-        [NSFileManager.defaultManager removeItemAtURL:url error:nil];
-    }
-    [self setCurrentSlotCustomFilename:nil];
-    [KYAStatusItemImageProvider.currentProvider reloadFromDefaults];
-    [self refreshPreviewLabels];
-}
-
-- (void)removeExistingCustomFilesForSlot:(KYAIconSlot)slot inDirectory:(NSURL *)directory
-{
-    NSString *prefix = (slot == KYAIconSlotActive) ? @"CustomActive." : @"CustomInactive.";
-    NSArray<NSURL *> *contents = [NSFileManager.defaultManager contentsOfDirectoryAtURL:directory
-                                                            includingPropertiesForKeys:nil
-                                                                               options:0
-                                                                                 error:nil];
-    for(NSURL *url in contents)
-    {
-        if([url.lastPathComponent hasPrefix:prefix])
-        {
-            [NSFileManager.defaultManager removeItemAtURL:url error:nil];
-        }
-    }
-}
-
-- (NSURL *)customIconsDirectoryURL
-{
-    NSURL *docs = [NSFileManager.defaultManager URLsForDirectory:NSDocumentDirectory
-                                                       inDomains:NSUserDomainMask].lastObject;
-    return docs;
-}
-
-- (nullable NSString *)currentSlotCustomFilename
-{
-    Auto defaults = NSUserDefaults.standardUserDefaults;
-    return (self.currentSlot == KYAIconSlotActive)
-        ? defaults.kya_menuBarActiveCustomIconFile
-        : defaults.kya_menuBarInactiveCustomIconFile;
-}
-
-- (void)setCurrentSlotCustomFilename:(nullable NSString *)filename
-{
-    Auto defaults = NSUserDefaults.standardUserDefaults;
-    if(self.currentSlot == KYAIconSlotActive)
-    {
-        defaults.kya_menuBarActiveCustomIconFile = filename;
-    }
-    else
-    {
-        defaults.kya_menuBarInactiveCustomIconFile = filename;
-    }
-}
-
-#pragma mark - NSSearchFieldDelegate
-
-- (void)controlTextDidChange:(NSNotification *)obj
-{
-    if(obj.object == self.searchField)
-    {
-        [self reloadFilteredStyles];
-        [self selectCurrentStyleInGrid];
-    }
-}
-
-#pragma mark - NSCollectionViewDataSource
-
-- (NSInteger)collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return (NSInteger)self.filteredStyles.count;
-}
-
-- (NSCollectionViewItem *)collectionView:(NSCollectionView *)collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
-{
-    KYAIconGridItem *item = [collectionView makeItemWithIdentifier:@"KYAIconGridItem"
-                                                      forIndexPath:indexPath];
-    KYAMenuBarIconStyle *style = self.filteredStyles[(NSUInteger)indexPath.item];
-    item.style = style;
-    return item;
-}
-
-#pragma mark - NSCollectionViewDelegate
-
-- (void)collectionView:(NSCollectionView *)collectionView didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
-{
-    NSIndexPath *path = indexPaths.anyObject;
-    if(path == nil) { return; }
-    KYAMenuBarIconStyle *style = self.filteredStyles[(NSUInteger)path.item];
-    [self setCurrentSlotStyleID:style.identifier];
-    [self refreshPreviewLabels];
+    return [NSString stringWithFormat:@"#%02X%02X%02X", ri, gi, bi];
 }
 
 @end

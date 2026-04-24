@@ -55,6 +55,8 @@
 {
     // Remaining-time toggle/format may have changed — re-render.
     [self refreshTitleAndTimer];
+    // Icon color for either slot may have changed — re-apply tint.
+    self.appearance = self.currentAppearance;
 }
 
 #pragma mark - Configuration
@@ -78,15 +80,6 @@
     button.target = self;
     button.action = @selector(toggleStatus:);
     button.imagePosition = NSImageLeft;
-
-#if DEBUG
-    if(@available(macOS 10.14, *))
-    {
-        button.contentTintColor = NSColor.systemBlueColor;
-    }
-    Auto log = KYALogCreateWithCategory("StatusItemUI");
-    os_log_debug(log, "Blue status bar item color is enabled for DEBUG builds.");
-#endif
 
     self.systemStatusItem = statusItem;
     self.appearance = KYAStatusItemAppearanceInactive;
@@ -126,16 +119,25 @@
 
     Auto button = self.systemStatusItem.button;
     Auto imageProvider = KYAStatusItemImageProvider.currentProvider;
+    Auto defaults = NSUserDefaults.standardUserDefaults;
 
     if(appearance == KYAStatusItemAppearanceActive)
     {
         button.image = imageProvider.activeIconImage;
         button.toolTip = KYA_L10N_CLICK_TO_ALLOW_SLEEP;
+        if(@available(macOS 10.14, *))
+        {
+            button.contentTintColor = [[self class] colorFromHexString:defaults.kya_menuBarActiveIconColor];
+        }
     }
     else
     {
         button.image = imageProvider.inactiveIconImage;
         button.toolTip = KYA_L10N_CLICK_TO_PREVENT_SLEEP;
+        if(@available(macOS 10.14, *))
+        {
+            button.contentTintColor = [[self class] colorFromHexString:defaults.kya_menuBarInactiveIconColor];
+        }
         self.fireDate = nil;
         self.startDate = nil;
     }
@@ -143,6 +145,38 @@
     [self refreshTitleAndTimer];
 
     [self didChangeValueForKey:@"appearance"];
+}
+
++ (nullable NSColor *)colorFromHexString:(nullable NSString *)hex
+{
+    if(hex.length == 0) { return nil; }
+
+    NSString *trimmed = hex;
+    if([trimmed hasPrefix:@"#"])
+    {
+        trimmed = [trimmed substringFromIndex:1];
+    }
+    if(trimmed.length != 6 && trimmed.length != 8) { return nil; }
+
+    unsigned int value = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:trimmed];
+    if(![scanner scanHexInt:&value]) { return nil; }
+
+    CGFloat r, g, b, a = 1.0;
+    if(trimmed.length == 6)
+    {
+        r = ((value >> 16) & 0xFF) / 255.0;
+        g = ((value >> 8) & 0xFF) / 255.0;
+        b = (value & 0xFF) / 255.0;
+    }
+    else
+    {
+        r = ((value >> 24) & 0xFF) / 255.0;
+        g = ((value >> 16) & 0xFF) / 255.0;
+        b = ((value >> 8) & 0xFF) / 255.0;
+        a = (value & 0xFF) / 255.0;
+    }
+    return [NSColor colorWithSRGBRed:r green:g blue:b alpha:a];
 }
 
 #pragma mark - Remaining Time
@@ -250,10 +284,54 @@
                 (unsigned long)minutes, (unsigned long)seconds];
     }
 
+    if([format isEqualToString:KYARemainingTimeFormatHoursMinutes])
+    {
+        NSUInteger roundedMinutes = minutes + (seconds >= 30 ? 1 : 0);
+        NSUInteger carryHours = hours + (roundedMinutes >= 60 ? 1 : 0);
+        NSUInteger finalMinutes = roundedMinutes % 60;
+        return [NSString stringWithFormat:@"%lu:%02lu",
+                (unsigned long)carryHours, (unsigned long)finalMinutes];
+    }
+
     if([format isEqualToString:KYARemainingTimeFormatMinutes])
     {
         NSUInteger totalMinutes = (total + 59) / 60; // round up
         return [NSString stringWithFormat:@"%lum", (unsigned long)totalMinutes];
+    }
+
+    if([format isEqualToString:KYARemainingTimeFormatHours])
+    {
+        NSUInteger totalHours = (total + 3599) / 3600; // round up
+        return [NSString stringWithFormat:@"%luh", (unsigned long)totalHours];
+    }
+
+    if([format isEqualToString:KYARemainingTimeFormatSeconds])
+    {
+        return [NSString stringWithFormat:@"%lus", (unsigned long)total];
+    }
+
+    if([format isEqualToString:KYARemainingTimeFormatVerbose])
+    {
+        NSMutableArray<NSString *> *parts = [NSMutableArray new];
+        if(hours > 0)
+        {
+            [parts addObject:[NSString stringWithFormat:@"%lu %@",
+                              (unsigned long)hours,
+                              hours == 1 ? @"hour" : @"hours"]];
+        }
+        if(minutes > 0)
+        {
+            [parts addObject:[NSString stringWithFormat:@"%lu %@",
+                              (unsigned long)minutes,
+                              minutes == 1 ? @"minute" : @"minutes"]];
+        }
+        if(parts.count == 0)
+        {
+            [parts addObject:[NSString stringWithFormat:@"%lu %@",
+                              (unsigned long)seconds,
+                              seconds == 1 ? @"second" : @"seconds"]];
+        }
+        return [parts componentsJoinedByString:@" "];
     }
 
     // Compact (default): "2h 30m", "45m", "30s"
