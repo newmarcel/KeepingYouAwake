@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <KYAApplicationSupport/KYAApplicationSupport.h>
 #import <KYACommon/KYAExport.h>
+#import <KYASleepWakeTimer/KYAUserActivityPoker.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

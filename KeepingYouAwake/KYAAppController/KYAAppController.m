@@ -20,6 +20,7 @@
 
 @interface KYAAppController () <KYAStatusItemControllerDataSource, KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate, KYASleepWakeTimerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
+@property (nonatomic) KYAUserActivityPoker *userActivityPoker;
 @property (nonatomic, readwrite) KYAStatusItemController *statusItemController;
 @property (nonatomic) KYAActivationDurationsMenuController *menuController;
 
@@ -104,7 +105,9 @@
     Auto sleepWakeTimer = [KYASleepWakeTimer new];
     sleepWakeTimer.delegate = self;
     self.sleepWakeTimer = sleepWakeTimer;
-    
+
+    self.userActivityPoker = [KYAUserActivityPoker new];
+
     // Activate on launch if needed
     if([NSUserDefaults.standardUserDefaults kya_isActivatedOnLaunch])
     {
@@ -143,6 +146,7 @@
         }
     };
     [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:timerCompletion];
+    [self.userActivityPoker start];
 
     // Post activation notification
     if(@available(macOS 11.0, *))
@@ -157,6 +161,7 @@
 - (void)terminateTimer
 {
     [self disableBatteryOverride];
+    [self.userActivityPoker stop];
 
     if([self.sleepWakeTimer isScheduled])
     {
