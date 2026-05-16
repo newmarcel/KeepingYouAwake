@@ -22,6 +22,7 @@ KYA_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThresholdEnabled;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyBatteryCapacityThreshold;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyLowPowerModeMonitoringEnabled;
 KYA_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyRestoreActivationStateOnRestart;
 
 @interface NSUserDefaults (KYAKeys)
 
@@ -57,6 +58,9 @@ KYA_EXPORT NSString * const KYAUserDefaultsKeyPreReleaseUpdatesEnabled;
 
 /// Returns YES if the app should deactivate when the user account is switched.
 @property (nonatomic, getter=kya_isDeactivateOnUserSwitchEnabled) BOOL kya_deactivateOnUserSwitchEnabled;
+
+/// Returns YES if the app should restore the activation state after a restart.
+@property (nonatomic, getter=kya_shouldRestoreActivationStateOnRestart) BOOL kya_restoreActivationStateOnRestart;
 
 @end
 

@@ -1982,6 +1982,9 @@
         }
       }
     },
+    "Restore activation state after restart" : {
+      "comment" : "Restore activation state after restart"
+    },
     "Set Default: %@" : {
       "comment" : "Set Default: %@",
       "localizations" : {

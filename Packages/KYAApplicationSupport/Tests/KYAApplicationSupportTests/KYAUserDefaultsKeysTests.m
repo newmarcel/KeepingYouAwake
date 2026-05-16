@@ -78,6 +78,10 @@ KYA_GENERATE_BOOL_TEST(isLowPowerModeMonitoringEnabled,
                        lowPowerModeMonitoringEnabled,
                        KYAUserDefaultsKeyLowPowerModeMonitoringEnabled);
 
+KYA_GENERATE_BOOL_TEST(shouldRestoreActivationStateOnRestart,
+                       restoreActivationStateOnRestart,
+                       KYAUserDefaultsKeyRestoreActivationStateOnRestart);
+
 - (void)testBatteryCapacityThreshold
 {
     Auto defaults = self.defaults;

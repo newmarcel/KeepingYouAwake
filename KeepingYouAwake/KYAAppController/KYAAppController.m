@@ -13,10 +13,19 @@
 #import "KYABatteryCapacityThreshold.h"
 #import "KYAActivationDurationsMenuController.h"
 #import "KYAActivationUserNotification.h"
+#import <math.h>
+#import <sys/sysctl.h>
 
 // Deprecated!
 #define KYA_MINUTES(m) (m * 60.0f)
 #define KYA_HOURS(h) (h * 3600.0f)
+
+static NSString * const KYARestorableActivationStatePendingDefaultsKey = @"info.marcel-dierkes.KeepingYouAwake.RestorableActivationState.Pending";
+static NSString * const KYARestorableActivationStateWasScheduledDefaultsKey = @"info.marcel-dierkes.KeepingYouAwake.RestorableActivationState.WasScheduled";
+static NSString * const KYARestorableActivationStateTimeIntervalDefaultsKey = @"info.marcel-dierkes.KeepingYouAwake.RestorableActivationState.TimeInterval";
+static NSString * const KYARestorableActivationStateFireDateDefaultsKey = @"info.marcel-dierkes.KeepingYouAwake.RestorableActivationState.FireDate";
+static NSString * const KYARestorableActivationStateBootDateDefaultsKey = @"info.marcel-dierkes.KeepingYouAwake.RestorableActivationState.BootDate";
+static NSTimeInterval const KYASameBootDateTolerance = 1.0f;
 
 @interface KYAAppController () <KYAStatusItemControllerDataSource, KYAStatusItemControllerDelegate, KYAActivationDurationsMenuControllerDelegate, KYASleepWakeTimerDelegate>
 @property (nonatomic, readwrite) KYASleepWakeTimer *sleepWakeTimer;
@@ -104,7 +113,12 @@
     Auto sleepWakeTimer = [KYASleepWakeTimer new];
     sleepWakeTimer.delegate = self;
     self.sleepWakeTimer = sleepWakeTimer;
-    
+
+    if([self restoreActivationStateAfterRestartIfNeeded])
+    {
+        return;
+    }
+
     // Activate on launch if needed
     if([NSUserDefaults.standardUserDefaults kya_isActivatedOnLaunch])
     {
@@ -169,6 +183,133 @@
 - (NSTimeInterval)defaultTimeInterval
 {
     return NSUserDefaults.standardUserDefaults.kya_defaultTimeInterval;
+}
+
+#pragma mark - Restore Activation State After Restart
+
+- (BOOL)restoreActivationStateAfterRestartIfNeeded
+{
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    if([defaults kya_shouldRestoreActivationStateOnRestart] == NO)
+    {
+        [self clearRestorableActivationState];
+        return NO;
+    }
+
+    if([defaults boolForKey:KYARestorableActivationStatePendingDefaultsKey] == NO)
+    {
+        return NO;
+    }
+
+    id storedBootDate = [defaults objectForKey:KYARestorableActivationStateBootDateDefaultsKey];
+    if([storedBootDate isKindOfClass:NSDate.class] == NO || [self isCurrentSystemBootDateEqualToDate:storedBootDate])
+    {
+        [self clearRestorableActivationState];
+        return NO;
+    }
+
+    BOOL wasScheduled = [defaults boolForKey:KYARestorableActivationStateWasScheduledDefaultsKey];
+    NSTimeInterval timeInterval = [defaults doubleForKey:KYARestorableActivationStateTimeIntervalDefaultsKey];
+    NSDate *fireDate = nil;
+
+    id storedFireDate = [defaults objectForKey:KYARestorableActivationStateFireDateDefaultsKey];
+    if([storedFireDate isKindOfClass:NSDate.class])
+    {
+        fireDate = storedFireDate;
+    }
+
+    [self clearRestorableActivationState];
+
+    if(wasScheduled == NO || timeInterval < 0)
+    {
+        return YES;
+    }
+
+    NSTimeInterval restoreTimeInterval = timeInterval;
+    if(fireDate != nil)
+    {
+        restoreTimeInterval = ceil(fireDate.timeIntervalSinceNow);
+        if(restoreTimeInterval <= 0)
+        {
+            return YES;
+        }
+    }
+
+    [self activateTimerWithTimeInterval:restoreTimeInterval];
+    return YES;
+}
+
+- (void)persistActivationStateForRestart
+{
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    if([defaults kya_shouldRestoreActivationStateOnRestart] == NO)
+    {
+        [self clearRestorableActivationState];
+        return;
+    }
+
+    Auto sleepWakeTimer = self.sleepWakeTimer;
+    BOOL wasScheduled = [sleepWakeTimer isScheduled];
+
+    [defaults setBool:YES forKey:KYARestorableActivationStatePendingDefaultsKey];
+    [defaults setBool:wasScheduled forKey:KYARestorableActivationStateWasScheduledDefaultsKey];
+    [defaults setObject:self.currentSystemBootDate forKey:KYARestorableActivationStateBootDateDefaultsKey];
+
+    if(wasScheduled)
+    {
+        [defaults setDouble:sleepWakeTimer.scheduledTimeInterval
+                    forKey:KYARestorableActivationStateTimeIntervalDefaultsKey];
+
+        Auto fireDate = sleepWakeTimer.fireDate;
+        if(fireDate != nil)
+        {
+            [defaults setObject:fireDate forKey:KYARestorableActivationStateFireDateDefaultsKey];
+        }
+        else
+        {
+            [defaults removeObjectForKey:KYARestorableActivationStateFireDateDefaultsKey];
+        }
+    }
+    else
+    {
+        [defaults removeObjectForKey:KYARestorableActivationStateTimeIntervalDefaultsKey];
+        [defaults removeObjectForKey:KYARestorableActivationStateFireDateDefaultsKey];
+    }
+
+    [defaults synchronize];
+}
+
+- (void)clearRestorableActivationState
+{
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    [defaults removeObjectForKey:KYARestorableActivationStatePendingDefaultsKey];
+    [defaults removeObjectForKey:KYARestorableActivationStateWasScheduledDefaultsKey];
+    [defaults removeObjectForKey:KYARestorableActivationStateTimeIntervalDefaultsKey];
+    [defaults removeObjectForKey:KYARestorableActivationStateFireDateDefaultsKey];
+    [defaults removeObjectForKey:KYARestorableActivationStateBootDateDefaultsKey];
+    [defaults synchronize];
+}
+
+- (NSDate *)currentSystemBootDate
+{
+    struct timeval bootTime;
+    size_t bootTimeSize = sizeof(bootTime);
+    int result = sysctlbyname("kern.boottime", &bootTime, &bootTimeSize, NULL, 0);
+    if(result == 0 && bootTime.tv_sec > 0)
+    {
+        NSTimeInterval seconds = (NSTimeInterval)bootTime.tv_sec + ((NSTimeInterval)bootTime.tv_usec / 1000000.0f);
+        return [NSDate dateWithTimeIntervalSince1970:seconds];
+    }
+
+    return [NSDate dateWithTimeIntervalSinceNow:-NSProcessInfo.processInfo.systemUptime];
+}
+
+- (BOOL)isCurrentSystemBootDateEqualToDate:(NSDate *)date
+{
+    NSParameterAssert(date);
+
+    NSTimeInterval distance = fabs([self.currentSystemBootDate timeIntervalSinceDate:date]);
+    return distance < KYASameBootDateTolerance;
 }
 
 #pragma mark - Activate on Launch
@@ -299,6 +440,10 @@
                         selector:@selector(workspaceSessionDidResignActive:)
                             name:NSWorkspaceSessionDidResignActiveNotification
                           object:nil];
+    [workspaceCenter addObserver:self
+                        selector:@selector(workspaceWillPowerOff:)
+                            name:NSWorkspaceWillPowerOffNotification
+                          object:nil];
 }
 
 - (void)unregisterFromWorkspaceSessionNotifications
@@ -309,6 +454,9 @@
                              object:nil];
     [workspaceCenter removeObserver:self
                                name:NSWorkspaceSessionDidResignActiveNotification
+                             object:nil];
+    [workspaceCenter removeObserver:self
+                               name:NSWorkspaceWillPowerOffNotification
                              object:nil];
 }
 
@@ -330,6 +478,11 @@
         self.workspaceScheduledTimeInterval = self.sleepWakeTimer.scheduledTimeInterval;
         [self terminateTimer];
     }
+}
+
+- (void)workspaceWillPowerOff:(NSNotification *)notification
+{
+    [self persistActivationStateForRestart];
 }
 
 #pragma mark - Event Handling
