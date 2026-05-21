@@ -16,6 +16,7 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
 
 @interface KYAActivationDurationsMenuController ()
 @property (nonatomic, readwrite) NSMenu *menu;
+@property (nonatomic) NSTimer *updateTimer;
 @end
 
 @implementation KYAActivationDurationsMenuController
@@ -111,7 +112,7 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
     return menuItem;
 }
 
-// TODO: Use this for live updates of the menu item
+// Live updates of the remaining time menu item
 - (void)updateRemainingTime:(id)sender
 {
     Auto delegate = self.delegate;
@@ -125,6 +126,26 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
     {
         menuItem.title = fireDate.kya_localizedRemainingTime;
     }
+}
+
+- (void)startUpdateTimer
+{
+    if(self.updateTimer != nil) { return; }
+    
+    // Create timer manually and add to common modes so it fires while menu is open
+    // (menu tracking uses NSEventTrackingRunLoopMode, not NSDefaultRunLoopMode)
+    self.updateTimer = [NSTimer timerWithTimeInterval:1.0
+                                               target:self
+                                             selector:@selector(updateRemainingTime:)
+                                             userInfo:nil
+                                              repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:self.updateTimer forMode:NSRunLoopCommonModes];
+}
+
+- (void)stopUpdateTimer
+{
+    [self.updateTimer invalidate];
+    self.updateTimer = nil;
 }
 
 #pragma mark - NSMenuDelegate
@@ -176,6 +197,16 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
             }
         }
     }
+}
+
+- (void)menuWillOpen:(NSMenu *)menu
+{
+    [self startUpdateTimer];
+}
+
+- (void)menuDidClose:(NSMenu *)menu
+{
+    [self stopUpdateTimer];
 }
 
 @end
