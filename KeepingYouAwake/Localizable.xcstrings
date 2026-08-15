@@ -222,7 +222,7 @@
         "zh" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在一段时间内启动\t"
+            "value" : "激活时长"
           }
         },
         "zh-Hant" : {
