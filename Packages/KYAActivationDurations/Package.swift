@@ -1,11 +1,11 @@
-// swift-tools-version:5.9
+// swift-tools-version: 6.1
 
 import PackageDescription
 
 let package = Package(
     name: "KYAActivationDurations",
     platforms: [
-        .macOS(.v10_13)
+        .macOS(.v12)
     ],
     products: [
         .library(name: "KYAActivationDurations", targets: ["KYAActivationDurations"]),
@@ -22,5 +22,5 @@ let package = Package(
         ),
         .testTarget(name: "KYAActivationDurationsTests", dependencies: ["KYAActivationDurations"]),
     ],
-    cxxLanguageStandard: .cxx17
+    cxxLanguageStandard: .cxx2b
 )
