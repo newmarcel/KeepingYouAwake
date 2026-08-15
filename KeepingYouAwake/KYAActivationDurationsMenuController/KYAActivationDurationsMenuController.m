@@ -86,14 +86,7 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
 
 - (NSColor *)defaultAttributeTextColor
 {
-    if(@available(macOS 11.0, *))
-    {
-        return NSColor.secondaryLabelColor;
-    }
-    else
-    {
-        return NSColor.tertiaryLabelColor;
-    }
+    return NSColor.secondaryLabelColor;
 }
 
 - (nullable NSMenuItem *)menuItemForRemainingTime

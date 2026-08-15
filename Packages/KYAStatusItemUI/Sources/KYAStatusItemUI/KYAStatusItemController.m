@@ -49,10 +49,7 @@
     button.action = @selector(toggleStatus:);
     
 #if DEBUG
-    if(@available(macOS 10.14, *))
-    {
-        button.contentTintColor = NSColor.systemBlueColor;
-    }
+    button.contentTintColor = NSColor.systemBlueColor;
     Auto log = KYALogCreateWithCategory("StatusItemUI");
     os_log_debug(log, "Blue status bar item color is enabled for DEBUG builds.");
 #endif

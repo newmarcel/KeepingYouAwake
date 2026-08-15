@@ -16,15 +16,7 @@
 
 + (NSImage *)tabViewItemImage
 {
-    if(@available(macOS 11.0, *))
-    {
-        return [NSImage imageWithSystemSymbolName:@"info.circle"
-                         accessibilityDescription:nil];
-    }
-    else
-    {
-        return [NSImage imageNamed:NSImageNameInfo];
-    }
+    return [NSImage imageWithSystemSymbolName:@"info.circle" accessibilityDescription:nil];
 }
 
 + (NSString *)preferredTitle

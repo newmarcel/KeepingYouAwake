@@ -25,15 +25,7 @@ static NSInteger const KYAActivationDurationLimit = 42;
 
 + (NSImage *)tabViewItemImage
 {
-    if(@available(macOS 11.0, *))
-    {
-        return [NSImage imageWithSystemSymbolName:@"timer"
-                         accessibilityDescription:nil];
-    }
-    else
-    {
-        return [NSImage imageNamed:@"ToolbarDurations"];
-    }
+    return [NSImage imageWithSystemSymbolName:@"timer" accessibilityDescription:nil];
 }
 
 + (NSString *)preferredTitle

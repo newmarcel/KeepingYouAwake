@@ -18,58 +18,38 @@
 
 - (BOOL)supportsLowPowerMode
 {
-    if(@available(macOS 12.0, *))
-    {
-        return YES;
-    }
-    else
-    {
-        return NO;
-    }
+    return YES;
 }
 
 - (BOOL)isLowPowerModeEnabled
 {
-    if(@available(macOS 12.0, *))
-    {
-        return [NSProcessInfo.processInfo isLowPowerModeEnabled];
-    }
-    else
-    {
-        return NO;
-    }
+    return [NSProcessInfo.processInfo isLowPowerModeEnabled];
 }
 
 #pragma mark - Low Power Mode Changes
 
 - (void)registerForLowPowerModeChanges
 {
-    if(@available(macOS 12.0, *))
-    {
-        if([self isRegistered]) return;
-        
-        Auto center = NSNotificationCenter.defaultCenter;
-        [center addObserver:self
-                   selector:@selector(handlePowerModeDidChange:)
-                       name:NSProcessInfoPowerStateDidChangeNotification
-                     object:nil];
-        
-        self.registered = YES;
-    }
+    if([self isRegistered]) return;
+    
+    Auto center = NSNotificationCenter.defaultCenter;
+    [center addObserver:self
+               selector:@selector(handlePowerModeDidChange:)
+                   name:NSProcessInfoPowerStateDidChangeNotification
+                 object:nil];
+    
+    self.registered = YES;
 }
 
 - (void)unregisterFromLowPowerModeChanges
 {
-    if(@available(macOS 12.0, *))
-    {
-        if([self isRegistered] == NO) { return; }
-        
-        Auto center = NSNotificationCenter.defaultCenter;
-        [center removeObserver:self
-                          name:NSProcessInfoPowerStateDidChangeNotification
-                        object:nil];
-        self.registered = NO;
-    }
+    if([self isRegistered] == NO) { return; }
+    
+    Auto center = NSNotificationCenter.defaultCenter;
+    [center removeObserver:self
+                      name:NSProcessInfoPowerStateDidChangeNotification
+                    object:nil];
+    self.registered = NO;
 }
 
 - (void)handlePowerModeDidChange:(NSNotification *)notification API_AVAILABLE(macos(12.0))

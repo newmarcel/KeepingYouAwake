@@ -18,15 +18,7 @@
 
 + (NSImage *)tabViewItemImage
 {
-    if(@available(macOS 11.0, *))
-    {
-        return [NSImage imageWithSystemSymbolName:@"gearshape"
-                         accessibilityDescription:nil];
-    }
-    else
-    {
-        return [NSImage imageNamed:NSImageNamePreferencesGeneral];
-    }
+    return [NSImage imageWithSystemSymbolName:@"gearshape" accessibilityDescription:nil];
 }
 
 + (NSString *)preferredTitle
@@ -49,11 +41,6 @@
                                       NSConditionallySetsEnabledBindingOption: @YES
                                   }
      ];
-    
-    if(@available(macOS 11.0, *)) {} else
-    {
-        self.notificationSettingsButton.hidden = YES;
-    }
 }
 
 - (void)dealloc

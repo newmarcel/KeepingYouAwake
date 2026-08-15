@@ -22,15 +22,7 @@
 
 + (NSImage *)tabViewItemImage
 {
-    if(@available(macOS 11.0, *))
-    {
-        return [NSImage imageWithSystemSymbolName:@"gearshape.2"
-                         accessibilityDescription:nil];
-    }
-    else
-    {
-        return [NSImage imageNamed:NSImageNameAdvanced];
-    }
+    return [NSImage imageWithSystemSymbolName:@"gearshape.2" accessibilityDescription:nil];
 }
 
 + (NSString *)preferredTitle

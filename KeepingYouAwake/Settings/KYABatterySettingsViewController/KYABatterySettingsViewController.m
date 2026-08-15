@@ -18,15 +18,7 @@
 
 + (NSImage *)tabViewItemImage
 {
-    if(@available(macOS 11.0, *))
-    {
-        return [NSImage imageWithSystemSymbolName:@"battery.100"
-                         accessibilityDescription:nil];
-    }
-    else
-    {
-        return [NSImage imageNamed:NSImageNameComputer];
-    }
+    return [NSImage imageWithSystemSymbolName:@"battery.100" accessibilityDescription:nil];
 }
 
 + (NSString *)preferredTitle

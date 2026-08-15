@@ -15,15 +15,7 @@
 
 + (NSImage *)tabViewItemImage
 {
-    if(@available(macOS 11.0, *))
-    {
-        return [NSImage imageWithSystemSymbolName:@"network"
-                         accessibilityDescription:nil];
-    }
-    else
-    {
-        return [NSImage imageNamed:NSImageNameNetwork];
-    }
+    return [NSImage imageWithSystemSymbolName:@"network" accessibilityDescription:nil];
 }
 
 + (NSString *)preferredTitle

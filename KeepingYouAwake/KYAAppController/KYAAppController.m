@@ -129,12 +129,8 @@
     
     Auto timerCompletion = ^(BOOL cancelled) {
         // Post deactivation notification
-        if(@available(macOS 11.0, *))
-        {
-            Auto notification = [[KYAActivationUserNotification alloc] initWithFireDate:nil
-                                                                             activating:NO];
-            [KYAUserNotificationCenter.sharedCenter postNotification:notification];
-        }
+        Auto notification = [[KYAActivationUserNotification alloc] initWithFireDate:nil activating:NO];
+        [KYAUserNotificationCenter.sharedCenter postNotification:notification];
 
         // Quit on timer expiration
         if(cancelled == NO && [defaults kya_isQuitOnTimerExpirationEnabled])
@@ -145,13 +141,9 @@
     [self.sleepWakeTimer scheduleWithTimeInterval:timeInterval completion:timerCompletion];
 
     // Post activation notification
-    if(@available(macOS 11.0, *))
-    {
-        Auto fireDate = self.sleepWakeTimer.fireDate;
-        Auto notification = [[KYAActivationUserNotification alloc] initWithFireDate:fireDate
-                                                                         activating:YES];
-        [KYAUserNotificationCenter.sharedCenter postNotification:notification];
-    }
+    Auto fireDate = self.sleepWakeTimer.fireDate;
+    Auto notification = [[KYAActivationUserNotification alloc] initWithFireDate:fireDate activating:YES];
+    [KYAUserNotificationCenter.sharedCenter postNotification:notification];
 }
 
 - (void)terminateTimer
@@ -184,12 +176,9 @@
 
 - (void)configureUserNotificationCenter
 {
-    if(@available(macOS 11.0, *))
-    {
-        Auto center = KYAUserNotificationCenter.sharedCenter;
-        [center requestAuthorizationIfUndetermined];
-        [center clearAllDeliveredNotifications];
-    }
+    Auto center = KYAUserNotificationCenter.sharedCenter;
+    [center requestAuthorizationIfUndetermined];
+    [center clearAllDeliveredNotifications];
 }
 
 #pragma mark - Device Power Monitoring
