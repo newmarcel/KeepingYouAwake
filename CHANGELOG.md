@@ -2,7 +2,11 @@
 
 ## Changelog
 
-### v.1.6.8 (2025-09-12)
+### v1.6.9
+
+- raised minimum deployment target to macOS 12 _(sadly, this is an external requirement by Apple's Xcode developer tools)_
+
+### v1.6.8 (2025-09-12)
 
 - added a light/dark/clear app icon for macOS 26 Tahoe
 

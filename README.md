@@ -30,6 +30,7 @@ This utility will not harm your Mac because it is based on an official command l
 
 ## Still using old macOS versions?
 
+- [Version 1.6.8](https://github.com/newmarcel/KeepingYouAwake/releases/tag/1.6.8) is the last release that supports macOS Big Sur and older (11.0, 10.15, 10.14, 10.13)
 - [Version 1.6.2](https://github.com/newmarcel/KeepingYouAwake/releases/tag/1.6.2) is the last release that supports macOS Sierra (10.12)
 - [Version 1.5.2](https://github.com/newmarcel/KeepingYouAwake/releases/tag/1.5.2) is the last release that supports macOS Yosemite (10.10) and El Capitan (10.11)
 
