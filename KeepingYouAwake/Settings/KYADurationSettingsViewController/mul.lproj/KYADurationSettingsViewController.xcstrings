@@ -71,6 +71,12 @@
             "value" : "削除"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "삭제"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -183,6 +189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "デフォルトのアクティブ時間はメニューバーアイコンをクリックした際に使用されます"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "메뉴 막대 아이콘을 클릭하면 기본 활성 기간이 사용됩니다."
           }
         },
         "ru" : {
@@ -299,6 +311,12 @@
             "value" : "デフォルトにする"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기본값으로 설정"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -411,6 +429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "リセット…"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "재설정…"
           }
         },
         "ru" : {
@@ -527,6 +551,12 @@
             "value" : "削除"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "삭제"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -641,6 +671,12 @@
             "value" : "追加"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "추가"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -753,6 +789,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "デフォルトにする"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기본값으로 설정"
           }
         },
         "ru" : {

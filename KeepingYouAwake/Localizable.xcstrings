@@ -58,6 +58,12 @@
             "value" : "(Predefinito)"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(기본값)"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -272,6 +278,12 @@
             "value" : "बाहरी डिस्प्ले कनेक्ट होने पर सक्रिय करें"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "외부 디스플레이가 연결되면 활성화"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -365,6 +377,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Successivamente il tuo Mac andrà automaticamente in stop quando non usato."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이후 Mac은 사용하지 않을 때 자동으로 다시 잠자기 모드로 전환됩니다."
           }
         },
         "ru" : {
@@ -462,6 +480,12 @@
             "value" : "Consenti allo schermo di andare in stop"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "디스플레이 잠자기 허용"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -555,6 +579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stop consentito"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠자기 허용 중"
           }
         },
         "ru" : {
@@ -656,6 +686,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annulla"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "취소"
           }
         },
         "ru" : {
@@ -999,6 +1035,12 @@
             "value" : "अन्य उपयोगकर्ता खाते पर स्विच करने पर निष्क्रिय करें"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다른 사용자 계정으로 전환 시 비활성화"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1100,6 +1142,12 @@
             "value" : "Predefinito"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기본값"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1199,6 +1247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vuoi veramente reimposare le durate di attivazione ai valori di default?"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "활성 기간을 기본값으로 재설정하시겠습니까?"
           }
         },
         "ru" : {
@@ -1427,6 +1481,12 @@
             "value" : "OK"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "확인"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1508,6 +1568,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stop prevenuto"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠자기 방지 중"
           }
         },
         "ru" : {
@@ -1603,6 +1669,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stop prevenuto per %@"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 동안 잠자기 방지 중"
           }
         },
         "ru" : {
@@ -1837,6 +1909,12 @@
             "value" : "Chiudi alla scadenza della durata"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "활성 기간이 끝나면 종료"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1938,6 +2016,12 @@
             "value" : "Ripristina le durate"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "활성 기간 재설정"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2037,6 +2121,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Imposta predefinito: %@"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기본값으로 설정: %@"
           }
         },
         "ru" : {
@@ -2271,6 +2361,12 @@
             "value" : "La durata inserita non è valida. Per favore riprova."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "입력한 기간이 올바르지 않습니다. 다시 시도해 주세요."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2370,6 +2466,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questa durata è già stata aggiunta."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 기간은 이미 추가되어 있습니다."
           }
         },
         "ru" : {
@@ -2598,6 +2700,12 @@
             "value" : "Puoi comunque abilitare manualmente la modalità di stop per il tuo Mac."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac의 잠자기 모드를 수동으로 활성화할 수 있습니다."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2691,6 +2799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Il tuo Mac andrà automaticamente in stop quando non usato."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac은 사용하지 않을 때 자동으로 잠자기 모드로 전환됩니다."
           }
         },
         "ru" : {
