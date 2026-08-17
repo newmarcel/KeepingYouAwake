@@ -26,7 +26,15 @@ NSMenu *KYACreateMainMenuWithActivationDurationsSubMenu(NSMenu *activationDurati
     }
     activateForDuration.submenu = activationDurationsSubMenu;
     [mainMenu addItem:activateForDuration];
-    
+
+    [mainMenu addItem:NSMenuItem.separatorItem];
+
+    Auto allowDisplaySleep = [[NSMenuItem alloc] initWithTitle:KYA_L10N_ALLOW_DISPLAY_SLEEP
+                                                       action:@selector(toggleAllowDisplaySleep:)
+                                                keyEquivalent:@""];
+    allowDisplaySleep.target = NSApplication.sharedApplication.delegate;
+    [mainMenu addItem:allowDisplaySleep];
+
     [mainMenu addItem:NSMenuItem.separatorItem];
     
     Auto settings = [[NSMenuItem alloc] initWithTitle:KYA_L10N_SETTINGS_ELLIPSIS

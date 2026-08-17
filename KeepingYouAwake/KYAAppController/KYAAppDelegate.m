@@ -68,4 +68,27 @@
     [settingsWindow makeKeyAndOrderFront:sender];
 }
 
+#pragma mark - Menu Actions
+
+- (void)toggleAllowDisplaySleep:(id)sender
+{
+    Auto defaults = NSUserDefaults.standardUserDefaults;
+    BOOL currentValue = [defaults kya_shouldAllowDisplaySleep];
+    [defaults setKya_allowDisplaySleep:!currentValue];
+    [defaults synchronize];
+}
+
+- (BOOL)validateMenuItem:(NSMenuItem *)menuItem
+{
+    if(menuItem.action == @selector(toggleAllowDisplaySleep:))
+    {
+        Auto defaults = NSUserDefaults.standardUserDefaults;
+        BOOL allowDisplaySleep = [defaults kya_shouldAllowDisplaySleep];
+        menuItem.state = allowDisplaySleep ? NSControlStateValueOn : NSControlStateValueOff;
+        return YES;
+    }
+
+    return YES;
+}
+
 @end
