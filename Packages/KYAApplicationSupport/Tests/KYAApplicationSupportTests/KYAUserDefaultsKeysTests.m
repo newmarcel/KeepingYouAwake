@@ -90,18 +90,18 @@ KYA_GENERATE_BOOL_TEST(isLowPowerModeMonitoringEnabled,
     [defaults setFloat:50.0f forKey:key];
     XCTAssertEqual([defaults kya_batteryCapacityThreshold], 50.0f);
     
-    // Below 10%
+    // Below 10% - should clamp to 10%
     defaults.kya_batteryCapacityThreshold = 0.1f;
     XCTAssertEqual([defaults kya_batteryCapacityThreshold], 10.0f);
-    XCTAssertEqual([defaults floatForKey:key], 0.1f); // TODO: Maybe the setter should catch this?
+    XCTAssertEqual([defaults floatForKey:key], 10.0f); // Setter now clamps the value
     
     [defaults setFloat:0.2f forKey:key];
     XCTAssertEqual([defaults kya_batteryCapacityThreshold], 10.0f);
     
-    // Over 100%
-    defaults.kya_batteryCapacityThreshold = 512.0f; // TODO: Maybe this should be invalid?
-    XCTAssertEqual([defaults kya_batteryCapacityThreshold], 512.0f);
-    XCTAssertEqual([defaults floatForKey:key], 512.0f);
+    // Over 100% - should clamp to 100%
+    defaults.kya_batteryCapacityThreshold = 512.0f;
+    XCTAssertEqual([defaults kya_batteryCapacityThreshold], 100.0f); // Clamped to 100%
+    XCTAssertEqual([defaults floatForKey:key], 100.0f); // Setter now clamps the value
 }
 
 @end
