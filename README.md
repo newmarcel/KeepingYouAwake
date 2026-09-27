@@ -1,6 +1,6 @@
 # KeepingYouAwake
 
-KeepingYouAwake is a small menu bar utility for macOS *(Version 10.13 and newer)* that can prevent your Mac from entering sleep mode for a predefined duration or as long as it is activated.
+KeepingYouAwake is a small menu bar utility for macOS *(version 12 and newer)* that can prevent your Mac from entering sleep mode for a predefined duration or as long as it is activated. Version 1.6.9 runs natively on Apple silicon, including macOS 27. Intel Macs are supported through macOS 26.
 
 https://keepingyouawake.app/
 
