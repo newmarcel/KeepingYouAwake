@@ -2,9 +2,10 @@
 
 ## Changelog
 
-### v1.6.9
+### v1.6.9 (2026-09-27)
 
 - raised minimum deployment target to macOS 12 _(sadly, this is an external requirement by Apple's Xcode developer tools)_
+- verified the universal build runs natively on Apple silicon with macOS 27; Intel Macs remain supported through macOS 26
 
 ### v1.6.8 (2025-09-12)
 

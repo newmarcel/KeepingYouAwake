@@ -1,5 +1,5 @@
 NAME = KeepingYouAwake
-VERSION = 1.6.6
+VERSION = 1.6.9
 
 SCHEME = $(NAME)
 TARGET = $(NAME)
