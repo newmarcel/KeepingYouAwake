@@ -79,4 +79,64 @@
     XCTAssertEqual(durations[6].seconds, 18000.0f);
 }
 
+#pragma mark - Clock Time
+
+- (void)testClockTimeInitializerRejectsInvalidInput
+{
+    XCTAssertNil([[KYAActivationDuration alloc] initWithClockTimeSeconds:-1]);
+    XCTAssertNil([[KYAActivationDuration alloc] initWithClockTimeSeconds:24 * 60 * 60]);
+    XCTAssertNil([[KYAActivationDuration alloc] initWithClockTimeHour:24 minute:0]);
+    XCTAssertNil([[KYAActivationDuration alloc] initWithClockTimeHour:17 minute:60]);
+}
+
+- (void)testClockTimeDurationEndsAtNextOccurrence
+{
+    Auto duration = [[KYAActivationDuration alloc] initWithClockTimeHour:17 minute:0];
+    XCTAssertNotNil(duration);
+    XCTAssertTrue(duration.isClockTime);
+    XCTAssertEqual(duration.clockTimeSeconds, 17 * 60 * 60);
+    
+    Auto fireDate = duration.nextClockTimeDate;
+    XCTAssertNotNil(fireDate);
+    XCTAssertGreaterThan(fireDate.timeIntervalSinceNow, 0);
+    XCTAssertLessThanOrEqual(fireDate.timeIntervalSinceNow, 24 * 60 * 60 + 1);
+    
+    Auto components = [NSCalendar.currentCalendar components:NSCalendarUnitHour | NSCalendarUnitMinute
+                                                    fromDate:fireDate];
+    XCTAssertEqual(components.hour, 17);
+    XCTAssertEqual(components.minute, 0);
+    
+    XCTAssertGreaterThan(duration.seconds, KYAActivationDurationIndefinite);
+    XCTAssertEqualWithAccuracy(duration.seconds, fireDate.timeIntervalSinceNow, 2.0);
+}
+
+- (void)testClockTimeEquality
+{
+    Auto five = [[KYAActivationDuration alloc] initWithClockTimeHour:17 minute:0];
+    Auto fiveAgain = [[KYAActivationDuration alloc] initWithClockTimeSeconds:17 * 60 * 60];
+    Auto six = [[KYAActivationDuration alloc] initWithClockTimeHour:18 minute:0];
+    Auto fixed = [[KYAActivationDuration alloc] initWithSeconds:five.seconds];
+    
+    XCTAssertEqualObjects(five, fiveAgain);
+    XCTAssertEqual(five.hash, fiveAgain.hash);
+    XCTAssertNotEqualObjects(five, six);
+    XCTAssertNotEqualObjects(five, fixed);
+    XCTAssertFalse(fixed.isClockTime);
+    XCTAssertEqual(fixed.clockTimeSeconds, -1);
+}
+
+- (void)testClockTimeSecureCoding
+{
+    Auto duration = [[KYAActivationDuration alloc] initWithClockTimeHour:17 minute:30];
+    NSError *error;
+    Auto data = [NSKeyedArchiver archivedDataWithRootObject:duration requiringSecureCoding:YES error:&error];
+    XCTAssertNil(error);
+    KYAActivationDuration *decoded = [NSKeyedUnarchiver unarchivedObjectOfClass:[KYAActivationDuration class]
+                                                                       fromData:data
+                                                                          error:&error];
+    XCTAssertNil(error);
+    XCTAssertEqualObjects(decoded, duration);
+    XCTAssertTrue(decoded.isClockTime);
+}
+
 @end

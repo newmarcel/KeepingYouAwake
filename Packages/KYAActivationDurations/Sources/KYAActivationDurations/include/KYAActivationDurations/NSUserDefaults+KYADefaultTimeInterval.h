@@ -11,6 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 KYA_EXPORT NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
+KYA_EXPORT NSString * const KYAUserDefaultsKeyDefaultClockTimeSeconds;
+
+/// Marks that no clock time is set as the default activation duration.
+KYA_EXPORT NSInteger const KYADefaultClockTimeSecondsNone;
 
 @interface NSUserDefaults (KYADefaultTimeInterval)
 
@@ -18,6 +22,11 @@ KYA_EXPORT NSString * const KYAUserDefaultsKeyDefaultTimeInterval;
 /// @warning When setting a value with decimal places, these will
 ///          be cut off.
 @property (nonatomic) NSTimeInterval kya_defaultTimeInterval;
+
+/// Seconds since midnight of a clock time that is the default activation
+/// duration, or KYADefaultClockTimeSecondsNone. Takes precedence over
+/// kya_defaultTimeInterval when set.
+@property (nonatomic) NSInteger kya_defaultClockTimeSeconds;
 
 @end
 

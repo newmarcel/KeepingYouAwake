@@ -17,6 +17,11 @@
 #pragma mark - Main Menu
 
 #define KYA_L10N_ACTIVATE_FOR_DURATION NSLocalizedString(@"Activate for Duration", @"Activate for Duration")
+#define KYA_L10N_UNTIL_ELLIPSIS NSLocalizedString(@"Until…", @"Until…")
+#define KYA_L10N_ACTIVATE_UNTIL_DATE_TITLE NSLocalizedString(@"Activate Until Date", @"Activate Until Date")
+#define KYA_L10N_KEEP_AWAKE_UNTIL NSLocalizedString(@"Keep awake until:", @"Keep awake until:")
+#define KYA_L10N_ACTIVATE NSLocalizedString(@"Activate", @"Activate")
+#define KYA_L10N_DATE_MUST_BE_IN_THE_FUTURE NSLocalizedString(@"Please choose a date and time in the future.", @"Please choose a date and time in the future.")
 #define KYA_L10N_SETTINGS_ELLIPSIS NSLocalizedString(@"Settings…", @"Settings…")
 #define KYA_L10N_QUIT NSLocalizedString(@"Quit", @"Quit")
 
@@ -29,6 +34,7 @@
 #define KYA_L10N_DURATION_INVALID_INPUT NSLocalizedString(@"The entered duration is invalid. Please try again.", @"The entered duration is invalid. Please try again.")
 
 #define KYA_L10N_INDEFINITELY NSLocalizedString(@"Indefinitely", @"Indefinitely")
+#define KYA_L10N_UNTIL_CLOCK_TIME(_str) [NSString stringWithFormat:NSLocalizedString(@"Until %@", @"Until %@"), (NSString *)(_str)]
 
 #define KYA_L10N_VERSION NSLocalizedString(@"Version", @"Version")
 

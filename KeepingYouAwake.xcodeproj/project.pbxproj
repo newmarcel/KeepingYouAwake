@@ -95,6 +95,8 @@
 		DAD68A7C27C957B30036ED19 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD68A7B27C957B30036ED19 /* MainMenu.xib */; };
 		DAD68A7D27C957B30036ED19 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD68A7B27C957B30036ED19 /* MainMenu.xib */; };
 		DAD68A8127C957E20036ED19 /* KYAMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD68A8027C957E20036ED19 /* KYAMainMenu.m */; };
+		AT0000012026093000000004 /* KYAActivateUntilDateWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AT0000012026093000000003 /* KYAActivateUntilDateWindowController.m */; };
+		AT0000012026093000000005 /* KYAActivateUntilDateWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AT0000012026093000000003 /* KYAActivateUntilDateWindowController.m */; };
 		DAD68A8227C957E20036ED19 /* KYAMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD68A8027C957E20036ED19 /* KYAMainMenu.m */; };
 		DAD982F826F8849A00234FB8 /* KYAGeneralSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD982FA26F8849A00234FB8 /* KYAGeneralSettingsViewController.xib */; };
 		DAD9834926F8A9AE00234FB8 /* KYAAboutSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD9834826F8A9AE00234FB8 /* KYAAboutSettingsViewController.xib */; };
@@ -237,6 +239,8 @@
 		DAD3CF8F271186720006CA14 /* KeepingYouAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepingYouAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD68A7B27C957B30036ED19 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		DAD68A7F27C957E20036ED19 /* KYAMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAMainMenu.h; sourceTree = "<group>"; };
+		AT0000012026093000000002 /* KYAActivateUntilDateWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAActivateUntilDateWindowController.h; sourceTree = "<group>"; };
+		AT0000012026093000000003 /* KYAActivateUntilDateWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAActivateUntilDateWindowController.m; sourceTree = "<group>"; };
 		DAD68A8027C957E20036ED19 /* KYAMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAMainMenu.m; sourceTree = "<group>"; };
 		DAD90B5627B001B800F5C186 /* KeepingYouAwake-Direct.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "KeepingYouAwake-Direct.entitlements"; sourceTree = "<group>"; };
 		DAD982F726F883DF00234FB8 /* KYASettingsLocalizedStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYASettingsLocalizedStrings.h; sourceTree = "<group>"; };
@@ -404,6 +408,7 @@
 				DA9A4FE5261631D700C672C4 /* KYALocalizedStrings.m */,
 				DAD6480B24F14570008E9AA0 /* KYAAppController */,
 				DAD68A7E27C957E20036ED19 /* KYAMainMenu */,
+				AT0000012026093000000001 /* KYAActivateUntilDate */,
 				DA82560E22FB5B31005ECB3A /* KYAActivationDurationsMenuController */,
 				DA52B1052617021500D09FE5 /* KYAActivationUserNotification */,
 				DA2C0E3527006AF7006E9991 /* KYAAppUpdater */,
@@ -498,6 +503,15 @@
 				DA637B5D19F146B6004C8838 /* KYAAppController.m */,
 			);
 			path = KYAAppController;
+			sourceTree = "<group>";
+		};
+		AT0000012026093000000001 /* KYAActivateUntilDate */ = {
+			isa = PBXGroup;
+			children = (
+				AT0000012026093000000002 /* KYAActivateUntilDateWindowController.h */,
+				AT0000012026093000000003 /* KYAActivateUntilDateWindowController.m */,
+			);
+			path = KYAActivateUntilDate;
 			sourceTree = "<group>";
 		};
 		DAD68A7E27C957E20036ED19 /* KYAMainMenu */ = {
@@ -754,6 +768,7 @@
 				DA637B4219F14693004C8838 /* KYAAppDelegate.m in Sources */,
 				DA2C0E342700629A006E9991 /* KYAAppUpdater.m in Sources */,
 				DAD68A8127C957E20036ED19 /* KYAMainMenu.m in Sources */,
+				AT0000012026093000000004 /* KYAActivateUntilDateWindowController.m in Sources */,
 				DAB0701022EC8E6B004D5BCA /* KYADurationSettingsViewController.m in Sources */,
 				DA82560D22FB5AFC005ECB3A /* KYAActivationDurationsMenuController.m in Sources */,
 				DA52B1082617021500D09FE5 /* KYAActivationUserNotification.m in Sources */,
@@ -791,6 +806,7 @@
 				DAD3CF5F271186720006CA14 /* KYAAppDelegate.m in Sources */,
 				DAD3CF60271186720006CA14 /* KYAAppUpdater.m in Sources */,
 				DAD68A8227C957E20036ED19 /* KYAMainMenu.m in Sources */,
+				AT0000012026093000000005 /* KYAActivateUntilDateWindowController.m in Sources */,
 				DAD3CF61271186720006CA14 /* KYADurationSettingsViewController.m in Sources */,
 				DAD3CF62271186720006CA14 /* KYAActivationDurationsMenuController.m in Sources */,
 				DAD3CF63271186720006CA14 /* KYAActivationUserNotification.m in Sources */,

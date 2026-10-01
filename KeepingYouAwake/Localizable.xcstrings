@@ -102,6 +102,9 @@
         }
       }
     },
+    "Activate" : {
+      "comment" : "Activate"
+    },
     "Activate for Duration" : {
       "comment" : "Activate for Duration",
       "localizations" : {
@@ -232,6 +235,9 @@
           }
         }
       }
+    },
+    "Activate Until Date" : {
+      "comment" : "Activate Until Date"
     },
     "Activate when an external display is connected" : {
       "comment" : "Activate when an external display is connected",
@@ -1376,6 +1382,9 @@
         }
       }
     },
+    "Keep awake until:" : {
+      "comment" : "Keep awake until:"
+    },
     "OK" : {
       "comment" : "OK",
       "localizations" : {
@@ -1458,6 +1467,9 @@
           }
         }
       }
+    },
+    "Please choose a date and time in the future." : {
+      "comment" : "Please choose a date and time in the future."
     },
     "Preventing Sleep" : {
       "comment" : "Preventing Sleep",
@@ -2415,6 +2427,12 @@
           }
         }
       }
+    },
+    "Until %@" : {
+      "comment" : "Until %@"
+    },
+    "Until…" : {
+      "comment" : "Until…"
     },
     "Version" : {
       "comment" : "Version",

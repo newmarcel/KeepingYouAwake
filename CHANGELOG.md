@@ -5,6 +5,10 @@
 ### v1.6.9
 
 - raised minimum deployment target to macOS 12 _(sadly, this is an external requirement by Apple's Xcode developer tools)_
+- added activation durations that end at a time of day, e.g. _"Until 5:00 PM"_ ([#161](https://github.com/newmarcel/KeepingYouAwake/issues/161))
+	- add one in _Settings > Activation Duration > +_ by switching the sheet from _Duration_ to _Until_, and set it as the default like any other duration
+	- _Activate for Duration > Until…_ keeps the Mac awake until a one-off date and time without saving a preset
+	- the URL scheme accepts `keepingyouawake:///activate?until=17:00` and `until=2026-10-03T17:00`
 
 ### v1.6.8 (2025-09-12)
 

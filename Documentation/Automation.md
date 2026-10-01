@@ -36,7 +36,23 @@ keepingyouawake:///activate?hours=2
 
 Activates and prevents sleep for exactly 2 hours.
 
-_Please note: the seconds, minutes and hours parameters cannot be combined at the moment._
+#### activate?until=HH:MM
+
+```
+keepingyouawake:///activate?until=17:00
+```
+
+Activates and prevents sleep until the next 5:00 PM local time. The time uses the 24-hour clock; if it has already passed today, the timer runs until that time tomorrow.
+
+#### activate?until=YYYY-MM-DDTHH:MM
+
+```
+keepingyouawake:///activate?until=2026-10-03T17:00
+```
+
+Activates and prevents sleep until that local date and time. A date in the past is ignored.
+
+_Please note: the seconds, minutes, hours and until parameters cannot be combined at the moment._
 
 ### deactivate
 

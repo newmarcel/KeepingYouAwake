@@ -24,13 +24,34 @@ KYA_EXPORT NSTimeInterval const KYAActivationDurationIndefinite;
 @property (class, nonatomic, readonly) KYAActivationDuration *indefiniteActivationDuration;
 
 /// An activation duration. 0 seconds represent KYAActivationDurationIndefinite.
+/// For a clock time duration this is the time remaining until the next
+/// occurrence of that clock time and changes every time it is read.
 @property (nonatomic, readonly) NSTimeInterval seconds;
+
+/// Seconds since midnight of the local clock time this duration ends at,
+/// or -1 for a fixed-length duration.
+@property (nonatomic, readonly) NSInteger clockTimeSeconds;
+
+/// YES if this duration ends at a clock time instead of after a fixed length.
+@property (nonatomic, readonly, getter=isClockTime) BOOL clockTime;
 
 - (instancetype)init NS_UNAVAILABLE;
 
 /// The designated initializer for the activation duration.
 /// @param seconds Some seconds.
 - (instancetype)initWithSeconds:(NSTimeInterval)seconds NS_DESIGNATED_INITIALIZER;
+
+/// Creates a duration that ends at the next occurrence of a local clock time.
+/// @param clockTimeSeconds Seconds since midnight, 0 to 86399
+- (nullable instancetype)initWithClockTimeSeconds:(NSInteger)clockTimeSeconds;
+
+/// Creates a duration that ends at the next occurrence of a local clock time.
+/// @param hour Hour component, 0 to 23
+/// @param minute Minute component, 0 to 59
+- (nullable instancetype)initWithClockTimeHour:(NSInteger)hour minute:(NSInteger)minute;
+
+/// The next date at which a clock time duration ends, nil for fixed-length durations.
+@property (nonatomic, readonly, nullable) NSDate *nextClockTimeDate;
 
 /// Convenience initializer to create a new activation duration
 /// from the provided components.

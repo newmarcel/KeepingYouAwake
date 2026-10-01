@@ -20,6 +20,25 @@
     
     Auto userDefaults = NSUserDefaults.standardUserDefaults;
     [userDefaults removeObjectForKey:KYAUserDefaultsKeyDefaultTimeInterval];
+    [userDefaults removeObjectForKey:KYAUserDefaultsKeyDefaultClockTimeSeconds];
+}
+
+- (void)testDefaultClockTimeSeconds
+{
+    Auto userDefaults = NSUserDefaults.standardUserDefaults;
+    XCTAssertEqual(userDefaults.kya_defaultClockTimeSeconds, KYADefaultClockTimeSecondsNone);
+    
+    userDefaults.kya_defaultClockTimeSeconds = 61200;
+    XCTAssertEqual(userDefaults.kya_defaultClockTimeSeconds, 61200);
+    XCTAssertEqual([userDefaults integerForKey:KYAUserDefaultsKeyDefaultClockTimeSeconds], 61200);
+    
+    // Midnight is a valid clock time and must not read as "none"
+    userDefaults.kya_defaultClockTimeSeconds = 0;
+    XCTAssertEqual(userDefaults.kya_defaultClockTimeSeconds, 0);
+    
+    userDefaults.kya_defaultClockTimeSeconds = KYADefaultClockTimeSecondsNone;
+    XCTAssertNil([userDefaults objectForKey:KYAUserDefaultsKeyDefaultClockTimeSeconds]);
+    XCTAssertEqual(userDefaults.kya_defaultClockTimeSeconds, KYADefaultClockTimeSecondsNone);
 }
 
 - (void)testDefaultTimeInterval

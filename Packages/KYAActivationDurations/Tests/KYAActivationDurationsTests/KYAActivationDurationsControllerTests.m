@@ -157,4 +157,59 @@
     [self waitForExpectations:@[resetExpectation] timeout:5.0f];
 }
 
+#pragma mark - Clock Time
+
+- (void)testClockTimesSortAfterFixedDurationsByTimeOfDay
+{
+    Auto controller = self.controller;
+    Auto calendar = NSCalendar.currentCalendar;
+    Auto now = [calendar components:NSCalendarUnitHour | NSCalendarUnitMinute fromDate:[NSDate date]];
+    
+    NSInteger soonMinute = (now.hour * 60 + now.minute + 1) % (24 * 60);
+    Auto soon = [[KYAActivationDuration alloc] initWithClockTimeHour:soonMinute / 60 minute:soonMinute % 60];
+    NSInteger laterMinute = (soonMinute + 12 * 60) % (24 * 60);
+    Auto later = [[KYAActivationDuration alloc] initWithClockTimeHour:laterMinute / 60 minute:laterMinute % 60];
+    [controller addActivationDuration:later];
+    [controller addActivationDuration:soon];
+    
+    Auto durations = controller.activationDurations;
+    NSUInteger fixedCount = durations.count - 2;
+    for(NSUInteger i = 0; i < fixedCount; i++)
+    {
+        XCTAssertFalse(durations[i].isClockTime);
+    }
+    XCTAssertTrue(durations[fixedCount].isClockTime);
+    XCTAssertTrue(durations[fixedCount + 1].isClockTime);
+    XCTAssertLessThan(durations[fixedCount].clockTimeSeconds, durations[fixedCount + 1].clockTimeSeconds);
+}
+
+- (void)testClockTimeDurationPersistsAndCanBeDefault
+{
+    Auto controller = self.controller;
+    Auto five = [[KYAActivationDuration alloc] initWithClockTimeHour:18 minute:30];
+    XCTAssertTrue([controller addActivationDuration:five]);
+    XCTAssertFalse([controller addActivationDuration:five]);
+    XCTAssertTrue([controller.activationDurations containsObject:five]);
+    
+    controller.defaultActivationDuration = five;
+    XCTAssertEqualObjects(controller.defaultActivationDuration, five);
+    XCTAssertEqual(controller.userDefaults.kya_defaultClockTimeSeconds, 18 * 60 * 60 + 30 * 60);
+    
+    Auto reloaded = [[KYAActivationDurationsController alloc] initWithUserDefaults:controller.userDefaults];
+    XCTAssertTrue([reloaded.activationDurations containsObject:five]);
+    XCTAssertEqualObjects(reloaded.defaultActivationDuration, five);
+    XCTAssertTrue(reloaded.defaultActivationDuration.isClockTime);
+    
+    Auto fixed = reloaded.activationDurations[1];
+    XCTAssertFalse(fixed.isClockTime);
+    reloaded.defaultActivationDuration = fixed;
+    XCTAssertEqual(reloaded.userDefaults.kya_defaultClockTimeSeconds, KYADefaultClockTimeSecondsNone);
+    XCTAssertEqualObjects(reloaded.defaultActivationDuration, fixed);
+    
+    reloaded.defaultActivationDuration = five;
+    XCTAssertTrue([reloaded removeActivationDuration:five]);
+    XCTAssertFalse([reloaded.activationDurations containsObject:five]);
+    XCTAssertEqualObjects(reloaded.defaultActivationDuration, KYAActivationDuration.indefiniteActivationDuration);
+}
+
 @end

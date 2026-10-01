@@ -10,3 +10,4 @@
 #import <KYAActivationDurations/KYAActivationDuration.h>
 #import <KYAActivationDurations/KYAActivationDurationsController.h>
 #import <KYAActivationDurations/NSUserDefaults+KYADefaultTimeInterval.h>
+#import <KYAActivationDurations/KYAResumePlan.h>

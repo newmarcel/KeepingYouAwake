@@ -37,23 +37,38 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
     Auto delegate = self.delegate;
     if([delegate respondsToSelector:@selector(activationDurationsMenuController:didSelectActivationDuration:)])
     {
-        NSTimeInterval seconds = (NSTimeInterval)sender.tag;
-        Auto duration = [[KYAActivationDuration alloc] initWithSeconds:seconds];
+        KYAActivationDuration *duration = sender.representedObject;
+        if(duration == nil)
+        {
+            NSTimeInterval seconds = (NSTimeInterval)sender.tag;
+            duration = [[KYAActivationDuration alloc] initWithSeconds:seconds];
+        }
         [delegate activationDurationsMenuController:self didSelectActivationDuration:duration];
+    }
+}
+
+- (void)requestUntilDate:(nullable NSMenuItem *)sender
+{
+    Auto delegate = self.delegate;
+    if([delegate respondsToSelector:@selector(activationDurationsMenuControllerDidRequestUntilDate:)])
+    {
+        [delegate activationDurationsMenuControllerDidRequestUntilDate:self];
     }
 }
 
 - (void)setDefaultActivationDuration:(nullable NSMenuItem *)sender
 {
-    NSTimeInterval seconds = (NSTimeInterval)sender.tag;
+    KYAActivationDuration *duration = sender.representedObject;
+    if(duration == nil)
+    {
+        NSTimeInterval seconds = (NSTimeInterval)sender.tag;
+        Auto durations = self.activationDurationsController.activationDurations;
+        Auto predicate = [NSPredicate predicateWithFormat:@"clockTimeSeconds == -1 AND seconds == %@", @(seconds)];
+        duration = [durations filteredArrayUsingPredicate:predicate].firstObject;
+    }
+    if(duration == nil) { return; }
     
-    Auto controller = self.activationDurationsController;
-    Auto durations = controller.activationDurations;
-    
-    Auto predicate = [NSPredicate predicateWithFormat:@"seconds == %@", @(seconds)];
-    Auto results = [durations filteredArrayUsingPredicate:predicate];
-    
-    self.activationDurationsController.defaultActivationDuration = results.firstObject;
+    self.activationDurationsController.defaultActivationDuration = duration;
 }
 
 #pragma mark -
@@ -135,13 +150,21 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
         [menu addItem:NSMenuItem.separatorItem];
     }
     
+    BOOL didAddClockTimeSeparator = NO;
     for(KYAActivationDuration *duration in controller.activationDurations)
     {
+        if(duration.isClockTime && !didAddClockTimeSeparator)
+        {
+            [menu addItem:NSMenuItem.separatorItem];
+            didAddClockTimeSeparator = YES;
+        }
+        
         Auto menuItem = [menu addItemWithTitle:duration.localizedTitle
                                         action:@selector(selectActivationDuration:)
                                  keyEquivalent:@""];
         menuItem.target = self;
         menuItem.tag = (NSInteger)duration.seconds;
+        menuItem.representedObject = duration;
         
         // Alternate state
         Auto alternateTitle = KYA_L10N_SET_DEFAULT_ACTIVATION_DURATION(duration.localizedTitle);
@@ -152,6 +175,7 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
         alternateMenuItem.alternate = YES;
         alternateMenuItem.keyEquivalentModifierMask = NSEventModifierFlagOption;
         alternateMenuItem.tag = (NSInteger)duration.seconds;
+        alternateMenuItem.representedObject = duration;
         
         // Is Default
         BOOL isDefault = [controller.defaultActivationDuration isEqualToActivationDuration:duration];
@@ -169,6 +193,15 @@ static const CGFloat KYAMenuItemDefaultFontSize = 14.0f;
             }
         }
     }
+    
+    if(!didAddClockTimeSeparator)
+    {
+        [menu addItem:NSMenuItem.separatorItem];
+    }
+    Auto untilItem = [menu addItemWithTitle:KYA_L10N_UNTIL_ELLIPSIS
+                                     action:@selector(requestUntilDate:)
+                              keyEquivalent:@""];
+    untilItem.target = self;
 }
 
 @end

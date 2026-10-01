@@ -229,6 +229,30 @@
         }
       }
     },
+    "cKt-md-Dur.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"Duration\"; ObjectID = \"cKt-md-Dur\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Duration"
+          }
+        }
+      }
+    },
+    "cKt-md-Unt.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"Until\"; ObjectID = \"cKt-md-Unt\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Until"
+          }
+        }
+      }
+    },
     "kYn-pW-tq6.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Warning Label\"; ObjectID = \"kYn-pW-tq6\"; Note = \"Do not localize\";",
       "extractionState" : "extracted_with_value",

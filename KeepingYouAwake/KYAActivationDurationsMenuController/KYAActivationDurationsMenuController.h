@@ -76,6 +76,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)activationDurationsMenuController:(KYAActivationDurationsMenuController *)controller
               didSelectActivationDuration:(KYAActivationDuration *)activationDuration;
+
+/**
+ Tells the receiver that the user chose "Until…" and wants to pick a
+ one-off date and time.
+
+ @param controller The delegating menu controller
+ */
+- (void)activationDurationsMenuControllerDidRequestUntilDate:(KYAActivationDurationsMenuController *)controller;
 @end
 
 NS_ASSUME_NONNULL_END

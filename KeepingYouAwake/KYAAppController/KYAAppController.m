@@ -13,6 +13,7 @@
 #import "KYABatteryCapacityThreshold.h"
 #import "KYAActivationDurationsMenuController.h"
 #import "KYAActivationUserNotification.h"
+#import "KYAActivateUntilDateWindowController.h"
 
 // Deprecated!
 #define KYA_MINUTES(m) (m * 60.0f)
@@ -24,6 +25,14 @@
 @property (nonatomic) KYAActivationDurationsMenuController *menuController;
 
 @property (nonatomic) NSTimeInterval workspaceScheduledTimeInterval;
+
+// Captured on session resign so a clock time or one-off resumes at its original end
+@property (nonatomic, nullable) KYAActivationDuration *workspaceActivationDuration;
+@property (nonatomic, nullable) NSDate *workspaceFireDate;
+
+@property (nonatomic, nullable) KYAActivationDuration *activeActivationDuration;
+
+@property (nonatomic, nullable) KYAActivateUntilDateWindowController *activateUntilDateWindowController;
 
 // Battery Status
 @property (nonatomic, direct, getter=isBatteryOverrideEnabled) BOOL batteryOverrideEnabled;
@@ -87,6 +96,31 @@
     self.menu = KYACreateMainMenuWithActivationDurationsSubMenu(menuController.menu);
 }
 
+- (void)showActivateUntilDatePanel
+{
+    AutoVar controller = self.activateUntilDateWindowController;
+    if(controller == nil)
+    {
+        controller = [KYAActivateUntilDateWindowController new];
+        AutoWeak weakSelf = self;
+        controller.completionHandler = ^(NSDate *endDate) {
+            [weakSelf activateTimerUntilDate:endDate];
+        };
+        self.activateUntilDateWindowController = controller;
+    }
+    [controller showPanel];
+}
+
+- (void)activateTimerUntilDate:(NSDate *)endDate
+{
+    NSTimeInterval seconds = ceil(endDate.timeIntervalSinceNow);
+    if(seconds < 1.0f) { return; }
+    
+    [self terminateTimer];
+    [self activateTimerWithTimeInterval:seconds];
+    self.statusItemController.appearance = KYAStatusItemAppearanceActive;
+}
+
 #pragma mark - Status Item Controller
 
 - (void)configureStatusItemController
@@ -114,7 +148,21 @@
 
 - (void)activateTimer
 {
+    Auto duration = KYAActivationDurationsController.sharedController.defaultActivationDuration;
+    if(duration != nil)
+    {
+        [self activateTimerWithActivationDuration:duration];
+        return;
+    }
     [self activateTimerWithTimeInterval:self.defaultTimeInterval];
+}
+
+- (void)activateTimerWithActivationDuration:(KYAActivationDuration *)duration
+{
+    NSParameterAssert(duration);
+    
+    [self activateTimerWithTimeInterval:duration.seconds];
+    self.activeActivationDuration = duration;
 }
 
 - (void)activateTimerWithTimeInterval:(NSTimeInterval)timeInterval
@@ -124,6 +172,7 @@
     {
         return;
     }
+    self.activeActivationDuration = nil;
 
     Auto defaults = NSUserDefaults.standardUserDefaults;
     
@@ -306,8 +355,28 @@
     Auto defaults = NSUserDefaults.standardUserDefaults;
     if([defaults kya_isDeactivateOnUserSwitchEnabled] && self.workspaceScheduledTimeInterval >= 0)
     {
-        [self activateTimerWithTimeInterval:self.workspaceScheduledTimeInterval];
+        Auto plan = [KYAResumePlan planForResumingDuration:self.workspaceActivationDuration
+                                                  fireDate:self.workspaceFireDate
+                                              timeInterval:self.workspaceScheduledTimeInterval
+                                                       now:[NSDate date]];
         self.workspaceScheduledTimeInterval = -1;
+        self.workspaceActivationDuration = nil;
+        self.workspaceFireDate = nil;
+        
+        switch(plan.action)
+        {
+            case KYAResumeActionNone:
+                break;
+            case KYAResumeActionActivationDuration:
+                [self activateTimerWithActivationDuration:plan.activationDuration];
+                break;
+            case KYAResumeActionUntilDate:
+                [self activateTimerUntilDate:plan.endDate];
+                break;
+            case KYAResumeActionTimeInterval:
+                [self activateTimerWithTimeInterval:plan.timeInterval];
+                break;
+        }
     }
 }
 
@@ -317,6 +386,8 @@
     if([defaults kya_isDeactivateOnUserSwitchEnabled] && [self.sleepWakeTimer isScheduled])
     {
         self.workspaceScheduledTimeInterval = self.sleepWakeTimer.scheduledTimeInterval;
+        self.workspaceActivationDuration = self.activeActivationDuration;
+        self.workspaceFireDate = self.sleepWakeTimer.fireDate;
         [self terminateTimer];
     }
 }
@@ -355,6 +426,7 @@
     NSString *seconds = parameters[@"seconds"];
     NSString *minutes = parameters[@"minutes"];
     NSString *hours = parameters[@"hours"];
+    NSString *until = parameters[@"until"];
 
     [self terminateTimer];
     
@@ -365,6 +437,52 @@
     {
         [self activateTimer];
         statusItemController.appearance = KYAStatusItemAppearanceActive;
+    }
+    else if(until != nil)
+    {
+        if([until containsString:@"T"])
+        {
+            // A fixed machine format must not follow the user's 12-hour or calendar settings
+            Auto formatter = [NSDateFormatter new];
+            formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+            formatter.calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
+            formatter.timeZone = NSTimeZone.localTimeZone;
+            formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm";
+            Auto endDate = [formatter dateFromString:until];
+            if(endDate != nil && endDate.timeIntervalSinceNow >= 1.0f)
+            {
+                [self activateTimerUntilDate:endDate];
+            }
+            else
+            {
+                statusItemController.appearance = KYAStatusItemAppearanceInactive;
+            }
+            return;
+        }
+        
+        Auto components = [until componentsSeparatedByString:@":"];
+        Auto digits = NSCharacterSet.decimalDigitCharacterSet.invertedSet;
+        KYAActivationDuration *duration;
+        if(components.count == 2
+           && [components[0] length] > 0 && [components[0] length] <= 2 && [components[0] rangeOfCharacterFromSet:digits].location == NSNotFound
+           && [components[1] length] == 2 && [components[1] rangeOfCharacterFromSet:digits].location == NSNotFound)
+        {
+            NSInteger hour = [components[0] integerValue];
+            NSInteger minute = [components[1] integerValue];
+            if(hour <= 23 && minute <= 59)
+            {
+                duration = [[KYAActivationDuration alloc] initWithClockTimeHour:hour minute:minute];
+            }
+        }
+        if(duration != nil)
+        {
+            [self activateTimerWithActivationDuration:duration];
+            statusItemController.appearance = KYAStatusItemAppearanceActive;
+        }
+        else
+        {
+            statusItemController.appearance = KYAStatusItemAppearanceInactive;
+        }
     }
     else if(seconds != nil)
     {
@@ -447,6 +565,11 @@
     {
         return nil;
     }
+    
+    if(self.activeActivationDuration != nil)
+    {
+        return self.activeActivationDuration;
+    }
 
     NSTimeInterval seconds = sleepWakeTimer.scheduledTimeInterval;
     return [[KYAActivationDuration alloc] initWithSeconds:seconds];
@@ -458,9 +581,13 @@
 
     AutoWeak weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSTimeInterval seconds = activationDuration.seconds;
-        [weakSelf activateTimerWithTimeInterval:seconds];
+        [weakSelf activateTimerWithActivationDuration:activationDuration];
     });
+}
+
+- (void)activationDurationsMenuControllerDidRequestUntilDate:(KYAActivationDurationsMenuController *)controller
+{
+    [self showActivateUntilDatePanel];
 }
 
 - (NSDate *)fireDateForMenuController:(KYAActivationDurationsMenuController *)controller

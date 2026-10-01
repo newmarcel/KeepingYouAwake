@@ -9,6 +9,9 @@
         <customObject id="-2" userLabel="File's Owner" customClass="KYAAddDurationViewController">
             <connections>
                 <outlet property="addButton" destination="YRA-fl-hJT" id="zwv-0N-Coh"/>
+                <outlet property="clockTimeDatePicker" destination="cKt-dp-Pkr" id="cKt-ol-Dp1"/>
+                <outlet property="fieldsStackView" destination="cKt-hm-Row" id="cKt-ol-Row"/>
+                <outlet property="inputStackView" destination="cKt-vs-Col" id="cKt-ol-Col"/>
                 <outlet property="hoursTextField" destination="kLQ-xU-4AV" id="Dhv-rw-FT2"/>
                 <outlet property="minutesTextField" destination="xOJ-SM-XZh" id="nhW-pV-uMW"/>
                 <outlet property="secondsTextField" destination="4cO-gq-k7g" id="WVe-ND-sJG"/>
@@ -19,7 +22,7 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <view id="Fxu-fm-XP3">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <stackView orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="4Vk-NX-Blv" userLabel="Buttons Stack View">
@@ -61,33 +64,152 @@ DQ
                         <real value="3.4028234663852886e+38"/>
                     </customSpacing>
                 </stackView>
-                <stackView orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="d01-AO-CnF" userLabel="Minutes Stack View">
-                    <rect key="frame" x="116" y="90" width="88" height="44"/>
+                <stackView orientation="vertical" alignment="leading" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-vs-Col" userLabel="Input Column Stack View">
+                    <rect key="frame" x="20" y="90" width="280" height="44"/>
                     <beginningViews>
-                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFq-fh-k66">
-                            <rect key="frame" x="-2" y="30" width="46" height="14"/>
-                            <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Minutes" id="oi9-AP-ag4">
-                                <font key="font" metaFont="message" size="11"/>
-                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
-                        <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOJ-SM-XZh">
-                            <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="8kf-85-VQf">
-                                <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="bYF-38-wjT">
-                                    <real key="minimum" value="0.0"/>
-                                    <real key="maximum" value="59"/>
-                                </numberFormatter>
+                        <stackView orientation="horizontal" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-hm-Row" userLabel="Fields Row Stack View">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="44"/>
+                            <beginningViews>
+                        <stackView orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="0R8-X3-y2B" userLabel="Hours Stack View">
+                            <rect key="frame" x="20" y="90" width="88" height="44"/>
+                            <beginningViews>
+                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POj-Ol-Uay">
+                                    <rect key="frame" x="-2" y="30" width="36" height="14"/>
+                                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Hours" id="5bs-m4-hy9">
+                                        <font key="font" metaFont="message" size="11"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-xU-4AV">
+                                    <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="5vB-xk-0dU">
+                                        <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="AV6-Cn-dmr">
+                                            <real key="minimum" value="0.0"/>
+                                            <real key="maximum" value="999"/>
+                                        </numberFormatter>
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <binding destination="-2" name="value" keyPath="self.hours" id="jxn-7h-TcT"/>
+                                        <outlet property="delegate" destination="-2" id="DwW-Zy-ea7"/>
+                                    </connections>
+                                </textField>
+                            </beginningViews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                        <stackView orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="d01-AO-CnF" userLabel="Minutes Stack View">
+                            <rect key="frame" x="116" y="90" width="88" height="44"/>
+                            <beginningViews>
+                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFq-fh-k66">
+                                    <rect key="frame" x="-2" y="30" width="46" height="14"/>
+                                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Minutes" id="oi9-AP-ag4">
+                                        <font key="font" metaFont="message" size="11"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOJ-SM-XZh">
+                                    <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="8kf-85-VQf">
+                                        <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="bYF-38-wjT">
+                                            <real key="minimum" value="0.0"/>
+                                            <real key="maximum" value="59"/>
+                                        </numberFormatter>
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <binding destination="-2" name="value" keyPath="self.minutes" id="7ws-6c-DIo"/>
+                                        <outlet property="delegate" destination="-2" id="QgJ-Ad-R9B"/>
+                                    </connections>
+                                </textField>
+                            </beginningViews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                        <stackView orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="UKV-hi-ix5" userLabel="Seconds Stack View">
+                            <rect key="frame" x="212" y="90" width="88" height="44"/>
+                            <beginningViews>
+                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lF8-5y-5SD">
+                                    <rect key="frame" x="-2" y="30" width="50" height="14"/>
+                                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Seconds" id="s1J-2f-UeD">
+                                        <font key="font" metaFont="message" size="11"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cO-gq-k7g">
+                                    <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="y4m-GT-OcX">
+                                        <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="gHZ-HA-fVU">
+                                            <real key="minimum" value="0.0"/>
+                                            <real key="maximum" value="59"/>
+                                        </numberFormatter>
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <binding destination="-2" name="value" keyPath="self.seconds" id="qV9-m7-F8h"/>
+                                        <outlet property="delegate" destination="-2" id="0qH-yQ-at1"/>
+                                    </connections>
+                                </textField>
+                            </beginningViews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                            </beginningViews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                            <constraints>
+                                <constraint firstItem="d01-AO-CnF" firstAttribute="width" secondItem="0R8-X3-y2B" secondAttribute="width" id="cKt-cn-EqA"/>
+                                <constraint firstItem="UKV-hi-ix5" firstAttribute="width" secondItem="0R8-X3-y2B" secondAttribute="width" id="cKt-cn-EqB"/>
+                            </constraints>
+                        </stackView>
+                        <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-dp-Pkr" userLabel="Clock Time Date Picker">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="cKt-cn-DpW"/>
+                            </constraints>
+                            <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="cKt-dp-Cel">
                                 <font key="font" metaFont="system"/>
-                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
+                                <date key="date" timeIntervalSinceReferenceDate="0.0"/>
+                            </datePickerCell>
                             <connections>
-                                <binding destination="-2" name="value" keyPath="self.minutes" id="7ws-6c-DIo"/>
-                                <outlet property="delegate" destination="-2" id="QgJ-Ad-R9B"/>
+                                <binding destination="-2" name="value" keyPath="self.clockTime" id="cKt-bd-Dat"/>
                             </connections>
-                        </textField>
+                        </datePicker>
                     </beginningViews>
                     <visibilityPriorities>
                         <integer value="1000"/>
@@ -98,80 +220,22 @@ DQ
                         <real value="3.4028234663852886e+38"/>
                     </customSpacing>
                 </stackView>
-                <stackView orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="UKV-hi-ix5" userLabel="Seconds Stack View">
-                    <rect key="frame" x="212" y="90" width="88" height="44"/>
-                    <beginningViews>
-                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lF8-5y-5SD">
-                            <rect key="frame" x="-2" y="30" width="50" height="14"/>
-                            <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Seconds" id="s1J-2f-UeD">
-                                <font key="font" metaFont="message" size="11"/>
-                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
-                        <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cO-gq-k7g">
-                            <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="y4m-GT-OcX">
-                                <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="gHZ-HA-fVU">
-                                    <real key="minimum" value="0.0"/>
-                                    <real key="maximum" value="59"/>
-                                </numberFormatter>
-                                <font key="font" metaFont="system"/>
-                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                            <connections>
-                                <binding destination="-2" name="value" keyPath="self.seconds" id="qV9-m7-F8h"/>
-                                <outlet property="delegate" destination="-2" id="0qH-yQ-at1"/>
-                            </connections>
-                        </textField>
-                    </beginningViews>
-                    <visibilityPriorities>
-                        <integer value="1000"/>
-                        <integer value="1000"/>
-                    </visibilityPriorities>
-                    <customSpacing>
-                        <real value="3.4028234663852886e+38"/>
-                        <real value="3.4028234663852886e+38"/>
-                    </customSpacing>
-                </stackView>
-                <stackView orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="0R8-X3-y2B" userLabel="Hours Stack View">
-                    <rect key="frame" x="20" y="90" width="88" height="44"/>
-                    <beginningViews>
-                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POj-Ol-Uay">
-                            <rect key="frame" x="-2" y="30" width="36" height="14"/>
-                            <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Hours" id="5bs-m4-hy9">
-                                <font key="font" metaFont="message" size="11"/>
-                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
-                        <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-xU-4AV">
-                            <rect key="frame" x="0.0" y="0.0" width="88" height="22"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="5vB-xk-0dU">
-                                <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="AV6-Cn-dmr">
-                                    <real key="minimum" value="0.0"/>
-                                    <real key="maximum" value="999"/>
-                                </numberFormatter>
-                                <font key="font" metaFont="system"/>
-                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                            <connections>
-                                <binding destination="-2" name="value" keyPath="self.hours" id="jxn-7h-TcT"/>
-                                <outlet property="delegate" destination="-2" id="DwW-Zy-ea7"/>
-                            </connections>
-                        </textField>
-                    </beginningViews>
-                    <visibilityPriorities>
-                        <integer value="1000"/>
-                        <integer value="1000"/>
-                    </visibilityPriorities>
-                    <customSpacing>
-                        <real value="3.4028234663852886e+38"/>
-                        <real value="3.4028234663852886e+38"/>
-                    </customSpacing>
-                </stackView>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-md-Pop" userLabel="Mode Pop Up Button">
+                    <rect key="frame" x="20" y="151" width="110" height="25"/>
+                    <popUpButtonCell key="cell" type="push" title="Duration" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="cKt-md-Dur" id="cKt-md-Cel">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="cKt-md-Mnu">
+                            <items>
+                                <menuItem title="Duration" state="on" tag="0" id="cKt-md-Dur"/>
+                                <menuItem title="Until" tag="1" id="cKt-md-Unt"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="-2" name="selectedTag" keyPath="self.durationMode" id="cKt-bd-Mod"/>
+                    </connections>
+                </popUpButton>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="cFQ-tY-Iuk" userLabel="Warning Container View">
                     <rect key="frame" x="20" y="48" width="280" height="34"/>
                     <subviews>
@@ -199,21 +263,18 @@ DQ
                 </customView>
             </subviews>
             <constraints>
+                <constraint firstItem="cKt-md-Pop" firstAttribute="top" secondItem="Fxu-fm-XP3" secondAttribute="top" constant="20" id="cKt-cn-MdT"/>
+                <constraint firstItem="cKt-md-Pop" firstAttribute="leading" secondItem="Fxu-fm-XP3" secondAttribute="leading" constant="20" id="cKt-cn-MdL"/>
+                <constraint firstItem="cKt-vs-Col" firstAttribute="top" secondItem="cKt-md-Pop" secondAttribute="bottom" constant="12" id="cKt-cn-ClT"/>
+                <constraint firstItem="cKt-vs-Col" firstAttribute="leading" secondItem="Fxu-fm-XP3" secondAttribute="leading" constant="20" id="cKt-cn-ClL"/>
+                <constraint firstAttribute="trailing" secondItem="cKt-vs-Col" secondAttribute="trailing" constant="20" id="cKt-cn-ClR"/>
+                <constraint firstItem="cKt-hm-Row" firstAttribute="width" secondItem="cKt-vs-Col" secondAttribute="width" id="cKt-cn-RwW"/>
+                <constraint firstItem="cFQ-tY-Iuk" firstAttribute="top" secondItem="cKt-vs-Col" secondAttribute="bottom" constant="8" id="y7O-Wz-O1Q"/>
                 <constraint firstItem="4Vk-NX-Blv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fxu-fm-XP3" secondAttribute="leading" constant="20" id="5v5-mo-kCV"/>
-                <constraint firstItem="0R8-X3-y2B" firstAttribute="width" secondItem="d01-AO-CnF" secondAttribute="width" id="6Hz-Lh-vRS"/>
                 <constraint firstAttribute="bottom" secondItem="4Vk-NX-Blv" secondAttribute="bottom" constant="20" id="8Dn-Rf-NJa"/>
-                <constraint firstItem="0R8-X3-y2B" firstAttribute="width" secondItem="UKV-hi-ix5" secondAttribute="width" id="9ye-bM-rXr"/>
-                <constraint firstItem="0R8-X3-y2B" firstAttribute="leading" secondItem="Fxu-fm-XP3" secondAttribute="leading" constant="20" id="CzB-bH-ZWS"/>
                 <constraint firstItem="cFQ-tY-Iuk" firstAttribute="leading" secondItem="Fxu-fm-XP3" secondAttribute="leading" constant="20" id="PTs-n0-y0G"/>
-                <constraint firstItem="d01-AO-CnF" firstAttribute="leading" secondItem="0R8-X3-y2B" secondAttribute="trailing" constant="8" id="SkW-e1-6ze"/>
-                <constraint firstItem="0R8-X3-y2B" firstAttribute="top" secondItem="Fxu-fm-XP3" secondAttribute="top" constant="20" id="UdQ-iW-vFb"/>
-                <constraint firstItem="UKV-hi-ix5" firstAttribute="leading" secondItem="d01-AO-CnF" secondAttribute="trailing" constant="8" id="amd-Qn-Gn8"/>
                 <constraint firstAttribute="trailing" secondItem="cFQ-tY-Iuk" secondAttribute="trailing" constant="20" id="dDe-BA-aff"/>
-                <constraint firstAttribute="trailing" secondItem="UKV-hi-ix5" secondAttribute="trailing" constant="20" id="maQ-CJ-rHz"/>
-                <constraint firstItem="0R8-X3-y2B" firstAttribute="top" secondItem="UKV-hi-ix5" secondAttribute="top" id="qLa-bj-TWY"/>
                 <constraint firstItem="4Vk-NX-Blv" firstAttribute="top" secondItem="cFQ-tY-Iuk" secondAttribute="bottom" constant="8" id="skT-eT-wXU"/>
-                <constraint firstItem="0R8-X3-y2B" firstAttribute="top" secondItem="d01-AO-CnF" secondAttribute="top" id="tCQ-XR-usD"/>
-                <constraint firstItem="cFQ-tY-Iuk" firstAttribute="top" secondItem="d01-AO-CnF" secondAttribute="bottom" constant="8" id="y7O-Wz-O1Q"/>
                 <constraint firstAttribute="trailing" secondItem="4Vk-NX-Blv" secondAttribute="trailing" constant="20" id="yQV-Ku-ZGD"/>
             </constraints>
             <point key="canvasLocation" x="-2" y="135"/>

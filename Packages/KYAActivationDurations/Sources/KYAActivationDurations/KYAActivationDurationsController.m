@@ -16,6 +16,7 @@
 NSNotificationName const KYAActivationDurationsDidChangeNotification = @"KYAActivationDurationsDidChangeNotification";
 
 static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingYouAwake.Durations";
+static NSString * const KYADefaultsKeyClockTimeDurations = @"info.marcel-dierkes.KeepingYouAwake.ClockTimeDurations";
 
 @interface KYAActivationDurationsController ()
 @property (nonatomic, readwrite) NSUserDefaults *userDefaults;
@@ -73,8 +74,19 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     Auto durations = [NSMutableArray arrayWithArray:self.storedActivationDurations];
     [durations insertObject:KYAActivationDuration.indefiniteActivationDuration atIndex:0];
     
-    Auto sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"seconds" ascending:YES];
-    return [durations sortedArrayUsingDescriptors:@[sortDescriptor]];
+    // Clock times sort by time of day, after the fixed lengths: their seconds
+    // is the remaining time and would wander through the list during the day.
+    return [durations sortedArrayUsingComparator:^NSComparisonResult(KYAActivationDuration *a, KYAActivationDuration *b) {
+        if(a.isClockTime != b.isClockTime)
+        {
+            return a.isClockTime ? NSOrderedDescending : NSOrderedAscending;
+        }
+        if(a.isClockTime)
+        {
+            return [@(a.clockTimeSeconds) compare:@(b.clockTimeSeconds)];
+        }
+        return [@(a.seconds) compare:@(b.seconds)];
+    }];
 }
 
 - (BOOL)addActivationDuration:(KYAActivationDuration *)activationDuration
@@ -169,8 +181,16 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     NSParameterAssert(duration);
     
     NSAssert([self.activationDurations containsObject:duration], @"The passed duration must be contained in self.activationDurations.");
-    
-    self.userDefaults.kya_defaultTimeInterval = duration.seconds;
+
+    if([duration isClockTime])
+    {
+        self.userDefaults.kya_defaultClockTimeSeconds = duration.clockTimeSeconds;
+    }
+    else
+    {
+        self.userDefaults.kya_defaultClockTimeSeconds = KYADefaultClockTimeSecondsNone;
+        self.userDefaults.kya_defaultTimeInterval = duration.seconds;
+    }
     [self.userDefaults synchronize];
     
     if(notify)
@@ -182,17 +202,29 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 
 - (KYAActivationDuration *)defaultActivationDuration
 {
+    NSInteger clockTimeSeconds = self.userDefaults.kya_defaultClockTimeSeconds;
+    if(clockTimeSeconds != KYADefaultClockTimeSecondsNone)
+    {
+        Auto clockPredicate = [NSPredicate predicateWithFormat:@"clockTimeSeconds == %@",
+                               @(clockTimeSeconds)
+        ];
+        Auto clockResults = [self.storedActivationDurations filteredArrayUsingPredicate:clockPredicate];
+
+        // Not stored any more means no default, same as a stale seconds value below
+        return clockResults.firstObject;
+    }
+
     NSTimeInterval seconds = self.userDefaults.kya_defaultTimeInterval;
     if(seconds == KYAActivationDurationIndefinite)
     {
         return KYAActivationDuration.indefiniteActivationDuration;
     }
-    
-    Auto defaultPredicate = [NSPredicate predicateWithFormat:@"seconds == %@",
+
+    Auto defaultPredicate = [NSPredicate predicateWithFormat:@"clockTimeSeconds == -1 AND seconds == %@",
                              @(seconds)
     ];
     Auto results = [self.storedActivationDurations filteredArrayUsingPredicate:defaultPredicate];
-    
+
     return results.firstObject;
 }
 
@@ -230,10 +262,11 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
     }
 #endif
     
+    BOOL needsSave = NO;
     if(loadedDurations == nil || loadedDurations.count == 0)
     {
         [self restoreDefaultDurations];
-        [self saveToUserDefaults];
+        needsSave = YES;
     }
     else
     {
@@ -244,6 +277,24 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 #endif
         os_log(KYAActivationDurationsLog(), "Loaded durations from user defaults: %{public}@", loadedDurations);
     }
+
+    NSArray<NSNumber *> *clockTimes = [self.userDefaults objectForKey:KYADefaultsKeyClockTimeDurations];
+    if(clockTimes != nil && [clockTimes isKindOfClass:[NSArray class]])
+    {
+        for(NSNumber *value in clockTimes)
+        {
+            Auto duration = [[KYAActivationDuration alloc] initWithClockTimeSeconds:value.integerValue];
+            if(duration != nil && ![self.storedActivationDurations containsObject:duration])
+            {
+                [self.storedActivationDurations addObject:duration];
+            }
+        }
+    }
+
+    if(needsSave)
+    {
+        [self saveToUserDefaults];
+    }
 }
 
 - (void)saveToUserDefaults
@@ -253,11 +304,20 @@ static NSString * const KYADefaultsKeyDurations = @"info.marcel-dierkes.KeepingY
 #if KYA_USES_SIMPLE_USER_DEFAULTS_VALUES
     NSArray<KYAActivationDuration *> *durations = [self.storedActivationDurations copy];
     Auto seconds = [NSMutableArray<NSNumber *> new];
+    Auto clockTimes = [NSMutableArray<NSNumber *> new];
     for(KYAActivationDuration *duration in durations)
     {
-        [seconds addObject:@(duration.seconds)];
+        if([duration isClockTime])
+        {
+            [clockTimes addObject:@(duration.clockTimeSeconds)];
+        }
+        else
+        {
+            [seconds addObject:@(duration.seconds)];
+        }
     }
     [self.userDefaults setObject:seconds forKey:KYADefaultsKeyDurations];
+    [self.userDefaults setObject:clockTimes forKey:KYADefaultsKeyClockTimeDurations];
 #else
     NSError *error;
     Auto data = [NSKeyedArchiver archivedDataWithRootObject:self.storedActivationDurations

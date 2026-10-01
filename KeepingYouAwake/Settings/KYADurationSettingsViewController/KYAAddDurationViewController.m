@@ -14,6 +14,12 @@ static const NSInteger KYAMaximumHours = 999;
 static const NSInteger KYAMaximumMinutes = 59;
 static const NSInteger KYAMaximumSeconds = 59;
 
+typedef NS_ENUM(NSInteger, KYADurationMode)
+{
+    KYADurationModeFixed = 0,
+    KYADurationModeClockTime = 1
+};
+
 typedef NS_ENUM(NSUInteger, KYAValidationReason)
 {
     KYAValidationReasonSuccess = 0,
@@ -29,6 +35,10 @@ typedef NS_ENUM(NSUInteger, KYAValidationReason)
 @property (nonatomic) NSNumber *seconds;
 
 @property (nonatomic, nullable) NSString *errorMessage;
+
+@property (nonatomic) KYADurationMode durationMode;
+@property (nonatomic, readonly) BOOL usesClockTime;
+@property (nonatomic) NSDate *clockTime;
 @end
 
 @implementation KYAAddDurationViewController
@@ -50,7 +60,14 @@ typedef NS_ENUM(NSUInteger, KYAValidationReason)
 {
     [super viewDidLoad];
     
+    // A hidden row must give up its space, which nib-created stack views don't do by default
+    self.inputStackView.detachesHiddenViews = YES;
+    
+    self.clockTimeDatePicker.datePickerElements = NSDatePickerElementFlagHourMinute;
+    self.clockTimeDatePicker.datePickerStyle = NSDatePickerStyleTextFieldAndStepper;
+    
     [self resetValues];
+    [self updateInputVisibility];
 }
 
 - (void)addDuration:(id)sender
@@ -76,6 +93,11 @@ typedef NS_ENUM(NSUInteger, KYAValidationReason)
 
 - (KYAValidationReason)validateInputs
 {
+    if(self.usesClockTime)
+    {
+        return [self validateClockTimeInput];
+    }
+
     if(self.hours.integerValue > KYAMaximumHours)
     {
         self.hours = @(KYAMaximumHours);
@@ -114,15 +136,79 @@ typedef NS_ENUM(NSUInteger, KYAValidationReason)
     return KYAValidationReasonSuccess;
 }
 
+- (KYAValidationReason)validateClockTimeInput
+{
+    Auto components = [NSCalendar.currentCalendar components:NSCalendarUnitHour | NSCalendarUnitMinute
+                                                    fromDate:self.clockTime];
+    Auto duration = [[KYAActivationDuration alloc] initWithClockTimeHour:components.hour
+                                                                  minute:components.minute];
+    if(duration == nil)
+    {
+        return KYAValidationReasonInvalid;
+    }
+
+    BOOL didAdd = [self.activationDurationsController addActivationDuration:duration];
+    if(didAdd == NO)
+    {
+        return KYAValidationReasonAlreadyAdded;
+    }
+
+    return KYAValidationReasonSuccess;
+}
+
++ (NSSet<NSString *> *)keyPathsForValuesAffectingUsesClockTime
+{
+    return [NSSet setWithObject:@"durationMode"];
+}
+
+- (BOOL)usesClockTime
+{
+    return self.durationMode == KYADurationModeClockTime;
+}
+
+- (void)setDurationMode:(KYADurationMode)durationMode
+{
+    _durationMode = durationMode;
+    self.errorMessage = nil;
+    [self setInputsEnabled:YES];
+    [self updateInputVisibility];
+}
+
+- (void)updateInputVisibility
+{
+    BOOL clockTime = self.usesClockTime;
+    self.fieldsStackView.hidden = clockTime;
+    self.clockTimeDatePicker.hidden = !clockTime;
+    
+    Auto window = self.view.window;
+    if(window == nil) { return; }
+    [self.view layoutSubtreeIfNeeded];
+    Auto fittingSize = self.view.fittingSize;
+    NSRect frame = window.frame;
+    CGFloat delta = fittingSize.height - NSHeight(window.contentView.frame);
+    frame.size.height += delta;
+    frame.origin.y -= delta;
+    [window setFrame:frame display:YES animate:YES];
+}
+
+- (void)viewDidAppear
+{
+    [super viewDidAppear];
+    [self updateInputVisibility];
+}
+
 - (void)setInputsEnabled:(BOOL)enabled
 {
+    self.clockTimeDatePicker.enabled = enabled && self.usesClockTime;
+    enabled = enabled && !self.usesClockTime;
+
     if(enabled == NO)
     {
         [self.hoursTextField resignFirstResponder];
         [self.minutesTextField resignFirstResponder];
         [self.secondsTextField resignFirstResponder];
     }
-    
+
     self.hoursTextField.editable = enabled;
     self.minutesTextField.editable = enabled;
     self.secondsTextField.editable = enabled;
@@ -133,6 +219,10 @@ typedef NS_ENUM(NSUInteger, KYAValidationReason)
     self.hours = @1;
     self.minutes = @0;
     self.seconds = @0;
+
+    Auto calendar = NSCalendar.currentCalendar;
+    self.clockTime = [calendar dateBySettingHour:17 minute:0 second:0 ofDate:[NSDate date] options:0] ?: [NSDate date];
+    self.durationMode = KYADurationModeFixed;
 }
 
 #pragma mark - NSTextFieldDelegate

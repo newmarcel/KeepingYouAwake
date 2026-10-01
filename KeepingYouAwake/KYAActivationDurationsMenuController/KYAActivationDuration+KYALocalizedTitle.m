@@ -14,6 +14,13 @@
 
 - (NSString *)localizedTitle
 {
+    if([self isClockTime])
+    {
+        Auto fireDate = self.nextClockTimeDate;
+        Auto formatter = [self sharedTimeFormatter];
+        return KYA_L10N_UNTIL_CLOCK_TIME([formatter stringFromDate:fireDate]);
+    }
+    
     NSTimeInterval interval = self.seconds;
     
     if(interval == 0)
@@ -26,6 +33,18 @@
 }
 
 #pragma mark - Localized Formatter
+
+- (NSDateFormatter *)sharedTimeFormatter
+{
+    static dispatch_once_t once;
+    static NSDateFormatter *sharedFormatter;
+    dispatch_once(&once, ^{
+        sharedFormatter = [NSDateFormatter new];
+        sharedFormatter.dateStyle = NSDateFormatterNoStyle;
+        sharedFormatter.timeStyle = NSDateFormatterShortStyle;
+    });
+    return sharedFormatter;
+}
 
 - (NSDateComponentsFormatter *)sharedDateComponentsFormatter
 {
